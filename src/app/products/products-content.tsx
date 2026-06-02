@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useMemo } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { ProductCard } from "@/components/product-card";
@@ -10,14 +10,28 @@ import { cn } from "@/lib/utils";
 export function ProductsContent() {
   const searchParams = useSearchParams();
   const activeCategory = searchParams.get("category") || "";
+  const searchQuery = searchParams.get("q") || "";
   const counts = getCategoryCounts();
 
   const filtered = useMemo(
-    () =>
-      activeCategory
-        ? getProducts().filter((p) => p.category === activeCategory)
-        : getProducts(),
-    [activeCategory]
+    () => {
+      let items = getProducts();
+      if (activeCategory) {
+        items = items.filter((p) => p.category === activeCategory);
+      }
+      if (searchQuery) {
+        const q = searchQuery.toLowerCase();
+        items = items.filter(
+          (p) =>
+            p.name.toLowerCase().includes(q) ||
+            p.sku.toLowerCase().includes(q) ||
+            p.category.toLowerCase().includes(q) ||
+            p.tags.some((t) => t.toLowerCase().includes(q))
+        );
+      }
+      return items;
+    },
+    [activeCategory, searchQuery]
   );
 
   return (
@@ -27,7 +41,9 @@ export function ProductsContent() {
         <div className="max-w-7xl mx-auto px-4 py-12">
           <h1 className="text-3xl md:text-4xl font-bold mb-2">Our Products</h1>
           <p className="text-gray-200 text-lg">
-            {activeCategory || "Complete range of industrial cleaning machines"}
+            {searchQuery
+              ? `Search results for "${searchQuery}"`
+              : activeCategory || "Complete range of industrial cleaning machines"}
           </p>
         </div>
       </section>
@@ -51,10 +67,10 @@ export function ProductsContent() {
                         : "text-gray-700 hover:bg-gray-100"
                     )}
                   >
-                    All Products ({getProducts().length})
+                    All Products ({getProducts().filter((p) => p.category !== "Parts").length})
                   </Link>
                 </li>
-                {categories.map((cat) => (
+                {categories.filter((cat) => cat !== "Parts").map((cat) => (
                   <li key={cat}>
                     <Link
                       href={`/products?category=${encodeURIComponent(cat)}`}
@@ -78,11 +94,19 @@ export function ProductsContent() {
             <p className="text-sm text-gray-500 mb-4">
               Showing {filtered.length} product{filtered.length !== 1 ? "s" : ""}
               {activeCategory && ` in "${activeCategory}"`}
+              {searchQuery && ` for "${searchQuery}"`}
             </p>
 
             {filtered.length === 0 ? (
               <div className="text-center py-16">
-                <p className="text-gray-500 text-lg mb-4">No products found in this category.</p>
+                <p className="text-gray-500 text-lg mb-2">
+                  {searchQuery
+                    ? `No products found for "${searchQuery}".`
+                    : activeCategory
+                      ? 'No products found in this category.'
+                      : 'No products found.'}
+                </p>
+                <p className="text-gray-400 text-sm mb-4">Try a different search term or browse all products.</p>
                 <Link href="/products" className="text-primary hover:text-primary-light font-medium">
                   View all products
                 </Link>

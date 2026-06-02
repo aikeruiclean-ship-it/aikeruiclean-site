@@ -1,0 +1,373 @@
+type,category,sku,name_en,name_cn,price,price_status,pricing_tier,pricing_label,price_suggestion_cn
+整机 Machine,Floor Scrubber / 洗地机,WALK BEHIND K500BT,Walk Behind K500BT Floor Scrubber,手推式 K500BT 洗地机,询单 Inquiry,询单,Machines,整机·询单模式,整机→询单表单，不发公开价格
+整机 Machine,Floor Scrubber / 洗地机,WALK BEHIND K500,Walk Behind K500 Floor Scrubber,手推式 K500 洗地机,询单 Inquiry,询单,Machines,整机·询单模式,整机→询单表单，不发公开价格
+整机 Machine,Floor Scrubber / 洗地机,RIDE ON K660,Ride On K660 Floor Scrubber,驾驶式 K660 洗地机,询单 Inquiry,询单,Machines,整机·询单模式,整机→询单表单，不发公开价格
+整机 Machine,Floor Scrubber / 洗地机,WALK BEHIND A650T,Walk Behind A650T Floor Scrubber,手推式 A650T 洗地机,询单 Inquiry,询单,Machines,整机·询单模式,整机→询单表单，不发公开价格
+整机 Machine,Floor Scrubber / 洗地机,WALK BEHIND A500BT,Walk Behind A500BT Floor Scrubber,手推式 A500BT 洗地机,询单 Inquiry,询单,Machines,整机·询单模式,整机→询单表单，不发公开价格
+整机 Machine,Floor Scrubber / 洗地机,RIDE ON A650R,Ride On A650R Floor Scrubber,驾驶式 A650R 洗地机,询单 Inquiry,询单,Machines,整机·询单模式,整机→询单表单，不发公开价格
+整机 Machine,Floor Scrubber / 洗地机,RIDE ON A660,Ride On A660 Floor Scrubber,驾驶式 A660 洗地机,询单 Inquiry,询单,Machines,整机·询单模式,整机→询单表单，不发公开价格
+整机 Machine,Floor Scrubber / 洗地机,RIDE ON A860,Ride On A860 Floor Scrubber,驾驶式 A860 洗地机,询单 Inquiry,询单,Machines,整机·询单模式,整机→询单表单，不发公开价格
+整机 Machine,Floor Scrubber / 洗地机,RIDE ON A800R,Ride On A800R Floor Scrubber,驾驶式 A800R 洗地机,询单 Inquiry,询单,Machines,整机·询单模式,整机→询单表单，不发公开价格
+整机 Machine,Floor Scrubber / 洗地机,WALK BEHIND A380,Walk Behind A380 Floor Scrubber,手推式 A380 洗地机,询单 Inquiry,询单,Machines,整机·询单模式,整机→询单表单，不发公开价格
+整机 Machine,Floor Scrubber / 洗地机,WALK BEHIND A330,Walk Behind A330 Floor Scrubber,手推式 A330 洗地机,询单 Inquiry,询单,Machines,整机·询单模式,整机→询单表单，不发公开价格
+整机 Machine,Floor Scrubber / 洗地机,WALK BEHIND A400,Walk Behind A400 Floor Scrubber,手推式 A400 洗地机,询单 Inquiry,询单,Machines,整机·询单模式,整机→询单表单，不发公开价格
+整机 Machine,Floor Scrubber / 洗地机,WALK BEHIND A518,Walk Behind A518 Floor Scrubber,手推式 A518 洗地机,询单 Inquiry,询单,Machines,整机·询单模式,整机→询单表单，不发公开价格
+整机 Machine,Floor Sweeper / 扫地车,WALK BEHIND A1000,Walk Behind A1000 Floor Sweeper,手推式 A1000 扫地车,询单 Inquiry,询单,Machines,整机·询单模式,整机→询单表单，不发公开价格
+整机 Machine,Floor Sweeper / 扫地车,WALK BEHIND A1050,Walk Behind A1050 Floor Sweeper,手推式 A1050 扫地车,询单 Inquiry,询单,Machines,整机·询单模式,整机→询单表单，不发公开价格
+整机 Machine,Floor Sweeper / 扫地车,RIDE ON S1250,Ride On S1250 Floor Sweepers,驾驶式 S1250 扫地车s,询单 Inquiry,询单,Machines,整机·询单模式,整机→询单表单，不发公开价格
+整机 Machine,Floor Sweeper / 扫地车,RIDE ON A1350,Ride On A1350 Floor Sweepers,驾驶式 A1350 扫地车s,询单 Inquiry,询单,Machines,整机·询单模式,整机→询单表单，不发公开价格
+整机 Machine,Floor Sweeper / 扫地车,RIDE ON S2000,Ride On S2000 Floor Sweepers,驾驶式 S2000 扫地车s,询单 Inquiry,询单,Machines,整机·询单模式,整机→询单表单，不发公开价格
+整机 Machine,Dust Collection Cart / 吸尘车,RIDE ON A2,Ride On A2 Dust Collection Cart,驾驶式 A2 吸尘车,询单 Inquiry,询单,Machines,整机·询单模式,整机→询单表单，不发公开价格
+整机 Machine,Dust Collection Cart / 吸尘车,RIDE ON A3,Ride On A3 Dust Collection Cart,驾驶式 A3 吸尘车,询单 Inquiry,询单,Machines,整机·询单模式,整机→询单表单，不发公开价格
+整机 Machine,Dust Collection Cart / 吸尘车,RIDE ON K5,Ride On K5 Dust Collection Cart,驾驶式 K5 吸尘车,询单 Inquiry,询单,Machines,整机·询单模式,整机→询单表单，不发公开价格
+整机 Machine,Dust Collection Cart / 吸尘车,RIDE ON K6,Ride On K6 Dust Collection Cart,驾驶式 K6 吸尘车,询单 Inquiry,询单,Machines,整机·询单模式,整机→询单表单，不发公开价格
+整机 Machine,Carpet Extractor / 地毯清洗机,WALK BEHIND D15,Walk-Behind D15 Carpet Extractor Washer,Walk-Behind D15 地毯清洗机,询单 Inquiry,询单,Machines,整机·询单模式,整机→询单表单，不发公开价格
+整机 Machine,Carpet Extractor / 地毯清洗机,WALK BEHIND D55,Walk-Behind D55 Carpet Extractor Washer,Walk-Behind D55 地毯清洗机,询单 Inquiry,询单,Machines,整机·询单模式,整机→询单表单，不发公开价格
+整机 Machine,Carpet Extractor / 地毯清洗机,WALK BEHIND D24,Walk-Behind D24 Carpet Extractor Washer,Walk-Behind D24 地毯清洗机,询单 Inquiry,询单,Machines,整机·询单模式,整机→询单表单，不发公开价格
+整机 Machine,Floor Scrubber / 洗地机,WALK BEHIND A500,Walk Behind A500 Floor Scrubber,手推式 A500 洗地机,询单 Inquiry,询单,Machines,整机·询单模式,整机→询单表单，不发公开价格
+整机 Machine,Floor Scrubber / 洗地机,WALK BEHIND B460,Walk Behind B460 Floor Scrubber,手推式 B460 洗地机,询单 Inquiry,询单,Machines,整机·询单模式,整机→询单表单，不发公开价格
+整机 Machine,Floor Scrubber / 洗地机,WALK BEHIND A50,Walk Behind A50 Floor Scrubbers,手推式 A50 洗地机s,询单 Inquiry,询单,Machines,整机·询单模式,整机→询单表单，不发公开价格
+整机 Machine,Floor Sweeper / 扫地车,RIDE ON B260R60,Ride On B260R60 Floor Scrubber Sweeper All-in-One Machine,驾驶式 B260R60 洗地机 Sweeper All-in-One Machine,询单 Inquiry,询单,Machines,整机·询单模式,整机→询单表单，不发公开价格
+整机 Machine,Floor Sweeper / 扫地车,RIDE ON A1280,Ride On A1280 Floor Sweepers,驾驶式 A1280 扫地车s,询单 Inquiry,询单,Machines,整机·询单模式,整机→询单表单，不发公开价格
+配件 Part,Disc Brush / 盘刷,103859748515,China Factory Floor Scrubber Spare Part Disc Brush  for Kacher BD530,中国工厂 洗地机 配件 盘刷  for Kacher BD530,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Clutch Plate / 离合器盘,103099374883,Good Quality Clutch Plate for Scrubbing Machine Accessories,优质 离合器盘 for Scrubbing Machine 配件,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Pad Holder / 针盘,11477313796,Pad Holder - 17 Inch - Advance 56380378 - 3 Lug,针盘 - 17 Inch - Advance 56380378 - 3 Lug,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Hose / 水管,103775024782,Floor Scrubber Spare Part Drain Hose Assembly Scrubber Hose Set,洗地机 配件 排水管 总成 Scrubber 管 套,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,103699350051,Clutch Plate Center Locator for Scrubbing Brush Pad Retainer Retainer Centering Device Buckles,离合器盘 Center Locator for Scrubbing 刷 百洁垫 Retainer Retainer Centering Device Buckles,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Hose / 水管,102503483951,Kacher OEM Drain Hose  ID38*1100mm for Kacher B40 B60,Kacher OEM 排水管  ID38*1100mm for Kacher B40 B60,,缺价,L3-OEM,OEM/定制·仅询单,OEM/定制配件（不公开价格）
+配件 Part,Brush / 刷类,103655156338,Forklift Road Sweeper Attachment Brushes Forklift Brush Replacement Strip Brush,Forklift Road Sweeper Attachment 刷es Forklift 刷 替换 Strip 刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,103860143191,Viper 20Inch Floor Scrubbing Brush for AS510B AS5160 Auto Scrubbers,Viper 20Inch Floor Scrubbing 刷 for AS510B AS5160 Auto Scrubbers,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Clutch Plate / 离合器盘,101548652397,Cleaning Equipment Floor Scrubber Machine Parts Clutch Plate NP-9200,清洁设备 洗地机 Machine Parts 离合器盘 NP-9200,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,11701766457,"Cleaning Equipment Floor Scrubber Machine Parts Disc Brush for Kacher BD530 , BD90,BD140, BD45,BD40","清洁设备 洗地机 Machine Parts 盘刷 for Kacher BD530 , BD90,BD140, BD45,BD40",,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Brush / 刷类,103862201645,PP 430mm Floor Scrubber Cleaning Machine Brush for Tennant T2/T3,PP 430mm 洗地机 清洁机 刷 for Tennant T2/T3,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Brush / 刷类,103854277933,"Part#399242, 1220214 T5 Grit Abrasive/Stripping Brushes Fits Tennant","Part#399242, 1220214 T5 Grit Abrasive/Stripping 刷es Fits Tennant",,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,103851699691,China Factory Directly Sale Carpet Scrubbing Brush for Any Brand,中国工厂 Directly Sale Carpet Scrubbing 刷 for Any Brand,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Solenoid Valve / 电磁阀,104430594920,Floor Scrubber Universal Solenoid Valve Water Solenoid Valve Fits Tennat/Nilfik/Karch,洗地机 通用 电磁阀 Water 电磁阀 Fits Tennat/Nilfik/Karch,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Squeegee / 吸水胶条,102722220914,Auto Scrubber Parts Rubber Strip /squeegee for Tennant T16,Auto Scrubber Parts Rubber Strip /吸水胶条 for Tennant T16,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,102013107468,Nilfisk Viper FANG 18C Floor Scrubber Disc Brush---VF80211B,Nilfisk Viper FANG 18C 洗地机 盘刷---VF80211B,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Carbon Brush / 碳刷,104387336096,Carbon Brush for Floor Scrubber Machine,碳刷 for 洗地机 Machine,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Hose / 水管,102498811796,Drain Hose--Tennant T3 &T5--1043538 for Floor Scrubber,排水管--Tennant T3 &T5--1043538 for 洗地机,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Roller Brush / 滚刷,103138399643,349mm Roller Brush Replacement Nylon Brush Kits for Cleaning Equipment Apply to 420 Machine Duplex,349mm 滚刷 替换 Nylon 刷 套件s for 清洁设备 Apply to 420 Machine Duplex,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Pad Holder / 针盘,103113429415,Pad Holder Driver Accessories for Sweeper Machine for Viper,针盘 Driver 配件 for Sweeper Machine for Viper,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Clutch Plate / 离合器盘,101539693092,Floor Cleaning Equipment Spare Part Kacher NP-700  Clutch Plate,Floor 清洁设备 配件 Kacher NP-700  离合器盘,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Roller Brush / 滚刷,103131390763,45 Inch Cylindrical Scrub Brush PP/Abrasive Roller Brush High Quality,45 Inch Cylindrical Scrub 刷 PP/Abrasive 滚刷 高品质,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Hose / 水管,102500143157,Floor Scrubber Spare Part Drain Hose for Tennant T300/T500,洗地机 配件 排水管 for Tennant T300/T500,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Brush / 刷类,101720530,Dulevo5000 Sweeper 800mm Front Brush,Dulevo5000 Sweeper 800mm Front 刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Brush / 刷类,103324466186,China Cleaning Parts Factory Lug Fixing for Scrub Brush,China Cleaning Parts Factory Lug Fixing for Scrub 刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,102005253936,Nilfisk Viper AS4325/AS4335 17 Inch Floor Scrubber Disc Brush __ VS15374,Nilfisk Viper AS4325/AS4335 17 Inch 洗地机 盘刷 __ VS15374,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Squeegee / 吸水胶条,101440719895,Scrubber Spare Part Squeegee Assembly Suitable for Various Scrubber Models,Scrubber 配件 吸水胶条 总成 Suitable for Various Scrubber Models,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,103916792396,Diamond Products 17Inch Floor Scrubbing Brush,Diamond Products 17Inch Floor Scrubbing 刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,103569939119,Nilfisk L08812891 Floor Scrubber Disc/Disk Brush Suitable for Nilfisk,Nilfisk L08812891 洗地机 Disc/盘刷 Suitable for Nilfisk,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Side Brush / 边刷,87141258,Dulevo 6000 Sweeper Gutter Broom 5050041877,Dulevo 6000 Sweeper 边刷 5050041877,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Clutch Plate / 离合器盘,103320457980,Single Disc Machine T290 T300 T300e Clutch Plate Clutch Disc Clutch Cover for Scrubbers,Single Disc Machine T290 T300 T300e 离合器盘 Clutch Disc Clutch Cover for Scrubbers,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Squeegee / 吸水胶条,103655310946,Floor Machine Spare Parts for Different Brands Squeegee Assembly Floor Scrubber Squeegee Assembly,Floor Machine 配件s for Different Brands 吸水胶条 总成 洗地机 吸水胶条 总成,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Side Brush / 边刷,65749296,City Sweeper Custom PP Mixed Steel Wire 4 Rows Sweeper Side Brush,City Sweeper Custom PP Mixed Steel Wire 4 Rows Sweeper 边刷,,缺价,L3-OEM,OEM/定制·仅询单,OEM/定制配件（不公开价格）
+配件 Part,Pad Holder / 针盘,103854650360,Tennant 605123 Pad Driver Assembly,Tennant 605123 针盘驱动 总成,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Disc Brush / 盘刷,12344458268,"Kacher BDS 43/150 C, BDS 43/Duo C, BDS 43/410 C Floor Scrubber Dryer Spare Parts - Floor Disc Brush","Kacher BDS 43/150 C, BDS 43/Duo C, BDS 43/410 C 洗地机 Dryer 配件s - Floor 盘刷",,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Brush / 刷类,103820116731,Produce Any Brand Floor Scrubber Machine Brushes Accessories Polishing Rotary Floor Scrubber Cleaning Brushes,Produce Any Brand 洗地机 Machine 刷es 配件 Polishing Rotary 洗地机 Cleaning 刷es,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Squeegee / 吸水胶条,104155251862,Cleaning Equipment Parts Tennat Spare Part Brush/Pad Holder/Motor Filter/Drain Hose/Pads/Rubber/Squeegee,清洁设备 Parts Tennat 配件 刷/针盘/电机 过滤器/排水管/百洁垫s/Rubber/吸水胶条,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Roller Brush / 滚刷,101521510723,"Dulevo 5000 Sweeper Spare Parts, Main Brush/Roller Brush/PPL","Dulevo 5000 Sweeper 配件s, Main 刷/滚刷/PPL",,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,83869572,Kelenco Floor Cleaning Machine Parts & Accessories 16inch Scrubber Disc Brush,Kelenco Floor 清洁机 Parts & 配件 16inch Scrubber 盘刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Side Brush / 边刷,103210457648,Gutter Broom Road Snow Sweeper Poly Circular Brush Sweeper Side Brush,边刷 Road Snow Sweeper Poly Circular 刷 Sweeper 边刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Brush / 刷类,65673327,Snow Sweeping Disc Wafer Brush-PP Ring/Mixed Ring/ Steel Wire Ring,Snow Sweeping Disc Wafer 刷-PP Ring/Mixed Ring/ Steel Wire Ring,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,103321052061,Clutch Plate for Scrubbers Machine Disc Brush,离合器盘 for Scrubbers Machine 盘刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,11675059376,Kacher BD40/12C PP Red Disc Brush,Kacher BD40/12C PP Red 盘刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Squeegee / 吸水胶条,103636270746,Floor Machine Spare Parts for Scrubber Dryer Tanjie Squeegee Assembly Floor Scrubber Squeegee Assembly,Floor Machine 配件s for Scrubber Dryer Tanjie 吸水胶条 总成 洗地机 吸水胶条 总成,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,103743012354,Industrial Round Floor Cleaning Disc Brush Used for Washing Floor Machine,工业 Round Floor Cleaning 盘刷 Used for Washing Floor Machine,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Squeegee / 吸水胶条,104646272798,Floor Scrubber Karch BD50/50 Squeegee Rubber Natural Rubber/polyurethane  Material,洗地机 Karch BD50/50 吸水胶条 Rubber Natural Rubber/polyurethane  地垫erial,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,103612505105,16inch Taski Floor Scrubber Disc Brush with PP Material Scrubbing Brush Floor Buffer Brushes,16inch Taski 洗地机 盘刷 with PP 地垫erial Scrubbing 刷 Floor Buffer 刷es,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Brush / 刷类,103555457882,Factory Directly Sale Comac/Fimap Cleaning Floor Scrubber Brush,工厂直销ly Sale Comac/Fimap Cleaning 洗地机 刷,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Disc Brush / 盘刷,11920183886,HAKO B45 Scrubber Machine Spare Part- Disc Brush / Pad Holder,HAKO B45 Scrubber Machine 配件- 盘刷 / 针盘,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Brush / 刷类,103857638931,"TENNANT NOBLES 1016810 NYLON 3 LUG BRUSH 20"" for T300E SPEED SCRUB 300","TENNANT NOBLES 1016810 NYLON 3 LUG 刷 20"" for T300E SPEED SCRUB 300",,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,102029927808,VIPER LS160/LS160HD 17 Inch PA Floor Scrubber Disc Brush for Cleaning Machine,VIPER LS160/LS160HD 17 Inch PA 洗地机 盘刷 for 清洁机,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Mat / 地垫,103154334942,The Sense of Goods Is Easy to Use Numatic Cleaning Equipment Parts Sweeper Floor Scrubber Brush,The Sense of Goods Is Easy to Use Nu地垫ic 清洁设备 Parts Sweeper 洗地机 刷,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Pad Holder / 针盘,102282413983,"17"" Scrub Pad Driver for Viper AS4325/AS4335 Floor Scrubber  Part # VS15440","17"" Scrub 针盘驱动 for Viper AS4325/AS4335 洗地机  Part # VS15440",,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Disc Brush / 盘刷,103144666457,Cleaning Equipment Parts 13inch Floor Scrubber Disc Brush Suitable for Nilfisk SC3500,清洁设备 Parts 13inch 洗地机 盘刷 Suitable for Nilfisk SC3500,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Wheel / 轮子,104629863014,Tennant T7 Drive Wheel Floor Scrubber Machine Amer Drive Wheel Motor,Tennant T7 Drive 轮子 洗地机 Machine Amer Drive 轮子 电机,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Pad Holder / 针盘,102494191141,"NP9200 Clutch Plate Universal Pad Driver Clutch Plate for Most Standard Machines with a 5"" Center Hole","NP9200 离合器盘 通用 针盘驱动 离合器盘 for Most Standard Machines with a 5"" Center Hole",,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Pad Holder / 针盘,103895966886,Floor Scrubber Spare Part Pad Driver With NP-9200 Clutch Plate for Singe Disc Machine,洗地机 配件 针盘驱动 With NP-9200 离合器盘 for Singe Disc Machine,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Vacuum Motor / 真空电机,104152244725,Vacuum Motor Tennant Vacuum Motor for Floor Scrubber Machine,真空电机 Tennant 真空电机 for 洗地机 Machine,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Disc Brush / 盘刷,66284266,Kacher BD50/50C Floor Scrubber Brush  PP Red Disc Brush,Kacher BD50/50C 洗地机 刷  PP Red 盘刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Hose / 水管,103008793434,Floor Scrubber Spare Part Vacuum Hose and Drain Hose for Tenant T500/T500E and Nobles SS 500,洗地机 配件 吸水管 and 排水管 for Tenant T500/T500E and Nobles SS 500,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Brush / 刷类,104940123244,Nilfisk/Viper/Gaomei Single Disc Machine Spare Part Carpet Shampoo Brush,Nilfisk/Viper/Gaomei Single Disc Machine 配件 Carpet Shampoo 刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Clutch Plate / 离合器盘,101535080815,Floor Cleaning Equipment Spare Part Magnet Buckle Clutch Plate,Floor 清洁设备 配件 Magnet Buckle 离合器盘,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Solenoid Valve / 电磁阀,104161545443,Tennant T5 Electromagnetic Valve Solenoid Valve,Tennant T5 Electromagnetic 阀 电磁阀,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Pad Holder / 针盘,12343596523,Hawk Floor Machine 19'' Pad Driver with NP9200,Hawk Floor Machine 19'' 针盘驱动 with NP9200,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Disc Brush / 盘刷,102484930197,Factory Sale Kacher  BD50-50 19inch Floor Scrubber Disc Brush for Floor Scrubber,Factory Sale Kacher  BD50-50 19inch 洗地机 盘刷 for 洗地机,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Brush / 刷类,101539965819,GaoMei 1900/Hako E800 Floor Sweeper  Roller Sweeper Brush,GaoMei 1900/Hako E800 扫地车  Roller Sweeper 刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Squeegee / 吸水胶条,11672380833,Comac 86B  Floor Scrubber Parts Squeegee,Comac 86B  洗地机 Parts 吸水胶条,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Pad Holder / 针盘,103774487871,Clutch Plate With Brush Holder Tufted Pad/Disc Driver Floor Buffer Pad Holder for Polishing/Cleaning,离合器盘 With 刷 Holder Tufted 百洁垫/Disc Driver Floor Buffer 针盘 for Polishing/Cleaning,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Brush / 刷类,104941081863,Nilfisk/Viper/Gaomei Single Disc Machine Spare Part Carpet Shampoo Brush,Nilfisk/Viper/Gaomei Single Disc Machine 配件 Carpet Shampoo 刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Brush / 刷类,104940987673,Nilfisk/Viper/Gaomei Electric Spin Scrubber Power Brush Floor Scrubber Cleaning Brush,Nilfisk/Viper/Gaomei Electric Spin Scrubber Power 刷 洗地机 Cleaning 刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,103105081014,First Quality Brushstrip Disc Brush  for Weizhuo Auto Scrubber X9-105 Scrubber Bush 21 Inches,First Quality 刷strip 盘刷  for Weizhuo Auto Scrubber X9-105 Scrubber Bush 21 Inches,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Roller Brush / 滚刷,104786452939,Minuteman Port a Scrub 12 Spare Part -  Roller Brush Sweeper Brush,Minuteman Port a Scrub 12 配件 -  滚刷 Sweeper 刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,11701761732,Gaomei Floor Scrubber GM50B Spare Part Disc Brush/ Pad Driver,Gaomei 洗地机 GM50B 配件 盘刷/ 针盘驱动,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Disc Brush / 盘刷,102511577886,Factory Sale IPC CT40 18inch Floor Scrubber Disc Brush for Floor Scrubber,Factory Sale IPC CT40 18inch 洗地机 盘刷 for 洗地机,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Brush / 刷类,104425081122,Tenant Floor Scrubber Machine Brush with PP Bristles Polypropylene Brush,Tenant 洗地机 Machine 刷 with PP Bristles Polypropylene 刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Side Brush / 边刷,103206399694,The Newest Road Sweeper Parts Brushes Broom Side Brush for Electric Road Sweeper,The Newest Road Sweeper Parts 刷es Broom 边刷 for Electric Road Sweeper,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Brush / 刷类,65669315,Nilfisk/Viper/Gaomei Single Disc Machine Spare Part Carpet Shampoo Brush,Nilfisk/Viper/Gaomei Single Disc Machine 配件 Carpet Shampoo 刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,102631231,16inch Comac 85B Electric Scrubber Machine Spare Part- Disc Brush/ Pad Driver,16inch Comac 85B Electric Scrubber Machine 配件- 盘刷/ 针盘驱动,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Hose / 水管,104445213799,Floor Scrubber Machine Parts Tennnt 1014274 Drain Hose Fits T7 Scrubber,洗地机 Machine Parts Tennnt 1014274 排水管 Fits T7 Scrubber,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,102858791034,Floor Scrubber Spare Parts Disc Brush for  Kacher BDS 43 Floor Scrubber Brush,洗地机 配件s 盘刷 for  Kacher BDS 43 洗地机 刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Squeegee / 吸水胶条,104353808532,SQUEEGEE RUBBER SET FITS TENNANT 500MM 1011456 1011232 T3 T3E T5 T5E,吸水胶条 RUBBER 套 FITS TENNANT 500MM 1011456 1011232 T3 T3E T5 T5E,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,104340418624,China Factory Wholesale Single Disc Machine Rotary Brush Single Disc Brush,中国工厂 批发 Single Disc Machine Rotary 刷 Single 盘刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Pad Holder / 针盘,104790988611,Pad Holder with 3 Lugs&np-9200 for Floor Cleaning Machine - 13 Inch Box Cleaning Brushes Anhui WHEEL Nylon Roller Brush Machine,针盘 with 3 Lugs&np-9200 for Floor 清洁机 - 13 Inch Box Cleaning 刷es Anhui 轮子 Nylon 滚刷 Machine,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Clutch Plate / 离合器盘,101539483146,Floor Cleaning Equipment Spare Part  Scrubber Black Clutch Plate for 175 Flange,Floor 清洁设备 配件  Scrubber Black 离合器盘 for 175 法兰,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,106458238195,Nilfisk 9099999000 PP Disk Brush 370MM/14inch for Nilfisk SC351,Nilfisk 9099999000 PP 盘刷 370MM/14inch for Nilfisk SC351,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,101559442162,Cleaning Equipment Part PP Tenant T17 16inch Floor Scrubber Disc Brush,清洁设备 Part PP Tenant T17 16inch 洗地机 盘刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Clutch Plate / 离合器盘,101535303149,Floor Cleaning Equipment Spare Part Tenant Clutch Plate,Floor 清洁设备 配件 Tenant 离合器盘,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Squeegee / 吸水胶条,104461908694,KARCHE KIT SQUEEGE SUCTION RUBBER STANDARD for SCRUBBER MACHINE,KARCHE 套件 SQUEEGE SUCTION RUBBER STANDARD for SCRUBBER MACHINE,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,103126300274,Floor Buffer Brush Stripping Brush for Carpet Cleaning Monobrush,Floor Buffer 刷 Stripping 刷 for Carpet Cleaning Mono刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,104453924843,PP/Steel Mixed Street Road Sweeper Wafer Disc Brush for Bobcat,PP/Steel Mixed Street Road Sweeper Wafer 盘刷 for Bobcat,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,103221357071,High Quality Rotary Brush and Good Quantity Assured Main Broom for Sweeper Equipment,高品质 Rotary 刷 and Good Quantity Assured 主刷 for Sweeper Equipment,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Squeegee / 吸水胶条,103717136309,Factory Directly Sale Scrubber Cleaning Machine Part Squeegee Assembly,工厂直销ly Sale Scrubber 清洁机 Part 吸水胶条 总成,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Pad Holder / 针盘,11476190455,Short Trim Pad Driver - 13 Inch - Advance - 30758A,Short Trim 针盘驱动 - 13 Inch - Advance - 30758A,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Brush / 刷类,103851462823,China Factory Directly Sale Floor Scrubber Machine Brush for Any Brand,中国工厂 Directly Sale 洗地机 Machine 刷 for Any Brand,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Roller Brush / 滚刷,101521634780,Kacher City Sweeper Spare Parts 53inch PP Mixed Steel Wire/PPL  Cylindrical  Brushes,Kacher City Sweeper 配件s 53inch PP Mixed Steel Wire/PPL  Cylindrical  刷es,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Vacuum Motor / 真空电机,104074500810,36V 3-stg Vacuum Motor Tennant Vacuum Motor,36V 3-stg 真空电机 Tennant 真空电机,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Brush / 刷类,104941417043,Nilfisk/Viper/Gaomei Carpet Shampoo Brush High Quality Brush for Floor Scrubber,Nilfisk/Viper/Gaomei Carpet Shampoo 刷 高品质 刷 for 洗地机,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,11717037938,Gaomei Floor Scrubber Machine GM230/GM160 Spare Part Roatary Disc Brush,Gaomei 洗地机 Machine GM230/GM160 配件 Roatary 盘刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Pad Holder / 针盘,134966441,Pad Driver for Auto Scrubber Machine Single Disc Machine,针盘驱动 for Auto Scrubber Machine Single Disc Machine,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Pad Holder / 针盘,102012843348,Nilfisk Viper LS160/LS160HD 16 Inch Pad Driver Holder  for Floor Scrubber __ VF75421,Nilfisk Viper LS160/LS160HD 16 Inch 针盘驱动 Holder  for 洗地机 __ VF75421,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Clutch Plate / 离合器盘,104482453716,Floor Scrubber Machine Parts Numatic Brush Buckle Center Lock Clutch Plate,洗地机 Machine Parts Nu地垫ic 刷 Buckle 中心锁扣 离合器盘,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Hose / 水管,104353914601,Drain Hose Assembly TENNANT for Floor Scrubber Machine,排水管 总成 TENNANT for 洗地机 Machine,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Clutch Plate / 离合器盘,103322772606,T7AMR T16AMR T16 Competitive Price Clutch Plate Scrubber Spare Parts,T7AMR T16AMR T16 Competitive Price 离合器盘 Scrubber 配件s,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,101794807564,I-MOP XL  Floor Scrubber Brush Disc Brush,I-MOP XL  洗地机 刷 盘刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,11701884110,GAOMEI Auto Floor Scrubber GM70BT/GM110BT70 Disc Rotary Brush / Pad Holder,GAOMEI Auto 洗地机 GM70BT/GM110BT70 Disc Rotary 刷 / 针盘,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Roller Brush / 滚刷,103215452184,Road Sweeper Nylon Brush Main Roller Brush Cylindrical Scrub Brush,Road Sweeper Nylon 刷 Main 滚刷 Cylindrical Scrub 刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,102451676435,Tennant T300E Floor Scrubber Disc Brush Factory Sales for Floor Scrubber,Tennant T300E 洗地机 盘刷 Factory Sales for 洗地机,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,101570361535,Cleaning Equipment Part - Customized Tynex Abrasive Floor Scrubber Disc Brush,清洁设备 Part - Customized Tynex Abrasive 洗地机 盘刷,,缺价,L3-OEM,OEM/定制·仅询单,OEM/定制配件（不公开价格）
+配件 Part,Clutch Plate / 离合器盘,103347384167,Wholesale a Variety of Styles to Suit a Variety Scrubbers Clutch Disc Clutch Plate Making Machinery,批发 a Variety of Styles to Suit a Variety Scrubbers Clutch Disc 离合器盘 Making Machinery,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Brush / 刷类,103860452005,For Tennant/karche/hako Floor Scrubber Machine Rotary Stripping Brush Black Cleaning Brushes Cartoon Solar Panel Cleaning Brush,For Tennant/karche/hako 洗地机 Machine Rotary Stripping 刷 Black Cleaning 刷es Cartoon Solar Panel Cleaning 刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Mat / 地垫,104567660740,Commercial Anti slip Custom Printed Welcome logo Door Mat Outdoor Floor Hotel Entrance Carpet with Pvc Backing,商用 Anti slip Custom Printed Welcome logo Door 地垫 Outdoor Floor Hotel Entrance Carpet with Pvc Backing,,缺价,L3-OEM,OEM/定制·仅询单,OEM/定制配件（不公开价格）
+配件 Part,Clutch Plate / 离合器盘,11096774455,Auto Floor Scrubber Cleaning Equipment Parts Clutch Plate,Auto 洗地机 清洁设备 Parts 离合器盘,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,102272210001,14 Inch Disc Brush for Viper AS380,14 Inch 盘刷 for Viper AS380,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Hose / 水管,103775291549,Recovery Tank Drain Hose Assembly Suction Hose/Drain Hose,Recovery Tank 排水管 总成 Suction 管/排水管,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Other / 其他,103853667740,China Factory Directly Sale Long Lasting TASKI Swingo XP-R BMS,中国工厂 Directly Sale Long Lasting TASKI Swingo XP-R BMS,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Pad Holder / 针盘,12343562955,Hawk Floor Cleaning Equipment Spare Part - 16'' Tufted Pad Driver with Riser and NP9200 Clutch Plate,Hawk Floor 清洁设备 配件 - 16'' Tufted 针盘驱动 with Riser and NP9200 离合器盘,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Pad Holder / 针盘,102013200216,Nilfisk Viper FANG 18C 430mm Pad Driver Holder  for Floor Scrubber __VF80212A,Nilfisk Viper FANG 18C 430mm 针盘驱动 Holder  for 洗地机 __VF80212A,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Disc Brush / 盘刷,12062630493,Kacher BD530 Floor Scrubber Spare Parts- Sweeper Disc Brush/ Pad Driver,Kacher BD530 洗地机 配件s- Sweeper 盘刷/ 针盘驱动,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Disc Brush / 盘刷,1000141211365,Nilfisk Advance/Lavor Cleaning Equipment Part 13 Inch Floor Scrubber Disc Brush,Nilfisk Advance/Lavor 清洁设备 Part 13 Inch 洗地机 盘刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,66373427,Weizhuo CWZ-X2D Auoto Scrubber Parts Disc Brush,Weizhuo CWZ-X2D Auoto Scrubber Parts 盘刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Solenoid Valve / 电磁阀,104124642370,Suitable for Tennant 1062393  Water Solenoid Valve Water Solution Valve,Suitable for Tennant 1062393  Water 电磁阀 Water Solution 阀,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Disc Brush / 盘刷,11756940369,Weizhuo Auto Scrubber Machine X7-85 Spare Part Floor Disc Brush and Pad Driver,Weizhuo Auto Scrubber Machine X7-85 配件 Floor 盘刷 and 针盘驱动,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Filter / 过滤器,104156945621,Cleaning Equipment Parts Water Filter for Floor Scrubber Machine,清洁设备 Parts Water 过滤器 for 洗地机 Machine,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,104386642322,OEM Replacement Parts Aftermarket Nilfisk  Disc Brush,OEM 替换 Parts Aftermarket Nilfisk  盘刷,,缺价,L3-OEM,OEM/定制·仅询单,OEM/定制配件（不公开价格）
+配件 Part,Wheel / 轮子,105580309184,Floor Scrubber Machine Amer Drive Wheel Motor Wheel Traction Wheel,洗地机 Machine Amer Drive 轮子 电机 轮子 Traction 轮子,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Disc Brush / 盘刷,12146263221,Cleaning Machine Spare Part Kacher B140 PPL 17.5 Inch Floor Scrubber Disc Brush,清洁机 配件 Kacher B140 PPL 17.5 Inch 洗地机 盘刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Brush / 刷类,104941162657,Floor Rotating Cleaning Tile Scrubber Brush Single Disc Machine Spare Part Carpet Shampoo Brush,Floor Rotating Cleaning Tile Scrubber 刷 Single Disc Machine 配件 Carpet Shampoo 刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Squeegee / 吸水胶条,101939920202,Factory Sales Squeegee Blade for Floor Scrubber with NR&PU Material,Factory Sales 吸水胶条 Blade for 洗地机 with NR&PU 地垫erial,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Side Brush / 边刷,11697883237,"Dulevo 5000 Sweeper Spare Part, Steel Wire Mixed PP Side Brush","Dulevo 5000 Sweeper 配件, Steel Wire Mixed PP 边刷",,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Roller Brush / 滚刷,65654189,"Dulevo 5000 Sweeper Spare Parts, Main Brush/Roller Brush/ Steel Wire Mixed PP/PPL Cylindrical Brush","Dulevo 5000 Sweeper 配件s, Main 刷/滚刷/ Steel Wire Mixed PP/PPL Cylindrical 刷",,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Roller Brush / 滚刷,101558246394,Floor Scrubber Main Brush Cleaning Equipment Parts Roller Brush for Tennant T12,洗地机 Main 刷 清洁设备 Parts 滚刷 for Tennant T12,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Roller Brush / 滚刷,103211539526,Main Hard Roller Brush Polypropylene Cylindrical Sweep Roller Brush,Main Hard 滚刷 Polypropylene Cylindrical Sweep 滚刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Hose / 水管,104567989135,Good Quality Bathroom Anti-slip Mat Shower Anti-fall Rubber Outdoor Drainage and Pvc Swimming Pool Mats,优质 Bathroom Anti-slip 地垫 Shower Anti-fall Rubber Outdoor Drainage and Pvc Swimming Pool 地垫s,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Squeegee / 吸水胶条,101942138567,Factory Sales Floor Scrubber Squeegee  with NR&PU Material,Factory Sales 洗地机 吸水胶条  with NR&PU 地垫erial,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,103126271154,Scrubmaster Rotary Brush I-MOP Monobrush/Cleaning Brush Kit Nylon Brush,Scrubmaster Rotary 刷 I-MOP Mono刷/Cleaning 刷 套件 Nylon 刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,101562835129,Hot Sale  Floor Scrubber Disk Brush for Taski,热销  洗地机 盘刷 for Taski,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,102033468084,17 Inch PP Floor Scrubber Disc Brush for VIPER FANG 18C,17 Inch PP 洗地机 盘刷 for VIPER FANG 18C,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,101560194300,Cleaning Equipment Floor Scrubber Machine Parts PPL Disc Brush for Tennant T7,清洁设备 洗地机 Machine Parts PPL 盘刷 for Tennant T7,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Pad Holder / 针盘,103859939671,High Quality Single Disc Machine Spare Part Pad Driver for Viper LS160,高品质 Single Disc Machine 配件 针盘驱动 for Viper LS160,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Pad Holder / 针盘,266257736,Floor Scrubber Machine Spare Part 16 Inch Pad Driver for Nilfisk Pad Holder,洗地机 Machine 配件 16 Inch 针盘驱动 for Nilfisk 针盘,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Hose / 水管,103635968707,Universal Washing Machine Spare Part Accessory Pe 1m 2m Flexible Wash Machine Dishwasher Extension Water Outlet Drain Pipe Hose,通用 Washing Machine 配件 Accessory Pe 1m 2m Flexible Wash Machine Dishwasher Extension Water Outlet Drain Pipe 管,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Squeegee / 吸水胶条,103707738977,"Factory Direct Sales Floor Scrubber Spare Part Squeegee Assembly Suitable Tennant,Nilfisk,Hako Cleaning Supplies","工厂直销 Sales 洗地机 配件 吸水胶条 总成 Suitable Tennant,Nilfisk,Hako Cleaning Supplies",,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,102005918795,Nilfisk Viper AS530R 20 Inch Floor Scrubber Disc Brush __ VR25014,Nilfisk Viper AS530R 20 Inch 洗地机 盘刷 __ VR25014,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Disc Brush / 盘刷,103008396284,Factory Direct Sales 20inch Floor Scrubber Disc Brush for Tenant T300/T300E 1213032,工厂直销 Sales 20inch 洗地机 盘刷 for Tenant T300/T300E 1213032,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Pad / 百洁垫,104649744346,5pcs Floor Pads for Scrubbing/Polishing/Stripping and Burnishing 380MM,5pcs Floor 百洁垫s for Scrubbing/Polishing/Stripping and Burnishing 380MM,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Brush / 刷类,103126423386,Cleaning Rotary Floor Scrubber Brush Style High Plate Marble High Cost Performance New Anhui Plastic Customized Washing Low Cost,Cleaning Rotary 洗地机 刷 Style High Plate Marble High Cost Performance New Anhui Plastic Customized Washing Low Cost,,缺价,L3-OEM,OEM/定制·仅询单,OEM/定制配件（不公开价格）
+配件 Part,Disc Brush / 盘刷,102012819567,Nilfisk Viper LS160/LS160HD 17 Inch Floor Scrubber Disc Brush __VF75434,Nilfisk Viper LS160/LS160HD 17 Inch 洗地机 盘刷 __VF75434,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Disc Brush / 盘刷,104461924750,Floor Scrubber Machine Brush Disc Rotary Brush with Different Size/brand/color/material,洗地机 Machine 刷 Disc Rotary 刷 with Different Size/brand/color/地垫erial,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,103115116776,VR25014--20 Inch Floor Scrubber Disc Brush Suitable for Nilfisk Viper AS530R on Sale,VR25014--20 Inch 洗地机 盘刷 Suitable for Nilfisk Viper AS530R on Sale,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Disc Brush / 盘刷,104671308906,17 Inch Round Nylon pp Floor Polishing Disc Brush for Floor Scrubber From China,17 Inch Round Nylon pp Floor Polishing 盘刷 for 洗地机 From China,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,66571551,Comac L20 B / E Scrubber Dryer Spare Part -  Floor Cleaning Rotary Brush 19inch,Comac L20 B / E Scrubber Dryer 配件 -  Floor Cleaning Rotary 刷 19inch,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Filter / 过滤器,104159916560,Tennant 103782 Dust Panel Filter Vacuum Filter for T7/5680/5700 Floor Scrubbers Machine,Tennant 103782 Dust Panel 过滤器 Vacuum 过滤器 for T7/5680/5700 洗地机s Machine,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Hose / 水管,104567194832,Pvc Tube Removable Diy Splice Foldable Drainage Anti slip Swimming Pool Mat Roll Super Absorbent Non-slip Mat,Pvc Tube Removable Diy Splice Foldable Drainage Anti slip Swimming Pool 地垫 Roll Super Absorbent Non-slip 地垫,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,104674362747,17 Inch Floor Cleaning Machine Accessories Auto Scrubber Disc Brushes,17 Inch Floor 清洁机 配件 Auto Scrubber 盘刷es,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Hose / 水管,102500220088,Scrubber Black Semi-drawn Drain Hose for Tennant T3E,Scrubber Black Semi-drawn 排水管 for Tennant T3E,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Hose / 水管,102498993381,Vacuum Hose --Tennant T3  T5 and T7 --1014026 for Floor Scrubber,吸水管 --Tennant T3  T5 and T7 --1014026 for 洗地机,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Pad Holder / 针盘,104426608814,Floor Scrubber Machine 16inch Sponge Pad of Pad Driver/Pad Holder Tennant/Nilfisk/Viper/Comac/Karche,洗地机 Machine 16inch Sponge 百洁垫 of 针盘驱动/针盘 Tennant/Nilfisk/Viper/Comac/Karche,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Carbon Brush / 碳刷,104386960504,Carbon Brush for Floor Scrubber Machine,碳刷 for 洗地机 Machine,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,83726161,22 Inch PPL Floor Rotary Brush for Comac/Fimap Auto Scrubber Machine,22 Inch PPL Floor Rotary 刷 for Comac/Fimap Auto Scrubber Machine,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,102004908611,Nilfisk Viper AS380/15  15 Inch Floor Scrubber Disc Brush __ VF89801,Nilfisk Viper AS380/15  15 Inch 洗地机 盘刷 __ VF89801,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Electrical / 电气件,104156930512,Long Service Life Tennant Contactor Complete,Long Service Life Tennant 接触器 Complete,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Disc Brush / 盘刷,102033283942,VIPER FANG 18C 17 Inch PA Floor Scrubber Disc Brush for Cleaning Machine,VIPER FANG 18C 17 Inch PA 洗地机 盘刷 for 清洁机,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,103142297056,Cleaning Equipment Spare Parts Floor Scrubber Sweeper Disc Brush/ Pad Driver for BD530,清洁设备 配件s 洗地机 Sweeper 盘刷/ 针盘驱动 for BD530,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Brush / 刷类,103859641084,Taski Carpet Shampoo Brush 17Inch Disc Floor Polisher,Taski Carpet Shampoo 刷 17Inch Disc Floor Polisher,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,103851372125,Floor Scrubber Spare Part Disk Brush for Taski Swingo 450/ 455/750/ 755,洗地机 配件 盘刷 for Taski Swingo 450/ 455/750/ 755,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Squeegee / 吸水胶条,103636604023,Floor Scrubber Spare Blades Part Squeegee Water Absorbing Scraper Squeegee Blade for Scrubber,洗地机 Spare Blades Part 吸水胶条 Water Absorbing Scraper 吸水胶条 Blade for Scrubber,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Roller Brush / 滚刷,103215915956,Sweeper Cylindrical Brush Roller Sweeper Main Broom,Sweeper Cylindrical 刷 Roller Sweeper 主刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,62276226,Weizhuo Auto Scrubber X3B/3D Floor Rotary Brush and Pad Drive,Weizhuo Auto Scrubber X3B/3D Floor Rotary 刷 and 百洁垫 Drive,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Pad Holder / 针盘,102012878476,20 Inch Floor Scrubber Pad Driver for VIPER AS530R,20 Inch 洗地机 针盘驱动 for VIPER AS530R,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Brush / 刷类,103210702163,High Quality Marble Stainless Steel Wire Boat Hull Underwater Floor Cleaning Brush,高品质 Marble Stainless Steel Wire Boat Hull Underwater Floor Cleaning 刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Brush / 刷类,66564829,Soft Carpet Shampoo Brush with Shower Feed Holes,Soft Carpet Shampoo 刷 with Shower Feed Holes,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Side Brush / 边刷,103187042561,The Manufacturer Recommended Big Sales Brush Steel Wire Gutter Broom Side Brushes for Road Sweeper,The Manufacturer Recommended Big Sales 刷 Steel Wire 边刷 边刷es for Road Sweeper,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Solenoid Valve / 电磁阀,104385891129,Tennat 1213803 Water Solenoid Valve 24 Volt Water Solenoid Valve Fits Tennnt T2/T3/T5e,Tennat 1213803 Water 电磁阀 24 Volt Water 电磁阀 Fits Tennnt T2/T3/T5e,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Pad Holder / 针盘,104941102056,Floor Scrubber Machine Spare Part 16 Inch Pad Driver Machine Brush,洗地机 Machine 配件 16 Inch 针盘驱动 Machine 刷,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Other / 其他,103386464427,Tenant S20 S30 Asphalt Road Cement Floor Push Dust Cleaner Industrial Floor Sweeper,Tenant S20 S30 Asphalt Road Cement Floor Push Dust Cleaner 工业 扫地车,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Brush / 刷类,103391604264,Tenant 6100 800 S10 Anhui Factory Made Big Roller Sweeper Brush Dulevo 5000 Main Central Broom,Tenant 6100 800 S10 Anhui Factory Made Big Roller Sweeper 刷 Dulevo 5000 Main Central Broom,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Side Brush / 边刷,11117587233,Johnston 650 Steel Wire Sweeper Side Brush,Johnston 650 Steel Wire Sweeper 边刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Brush / 刷类,103856773876,Taski 15.5inch Rider Floor Scrubber Cleaning Brush Soft Nylon Disc Scrub Brush,Taski 15.5inch Rider 洗地机 Cleaning 刷 Soft Nylon Disc Scrub 刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,29793555118,12inch Magnet Disc Brush for Floor Cleaning Equipment,12inch Magnet 盘刷 for Floor 清洁设备,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,101905818,"IPC Cleantime 100 BT 85, Cleantime 160 BT 85 Floor Scrubber DISC Brush","IPC Cleantime 100 BT 85, Cleantime 160 BT 85 洗地机 盘刷",,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Pad Holder / 针盘,103115387387,Scrubber Attachment Pad Holder Driver for Vipe AS1050R -VF82057,Scrubber Attachment 针盘 Driver for Vipe AS1050R -VF82057,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Disc Brush / 盘刷,102489750753,Factory Sale Nilfisk SC3500 13inch  Floor Scrubber Disc Brush for Floor Scrubber,Factory Sale Nilfisk SC3500 13inch  洗地机 盘刷 for 洗地机,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Brush / 刷类,65661363,HAKO Citymaster 600 Steel Wire Mixed PP Gutter Sweeper Brush,HAKO Citymaster 600 Steel Wire Mixed PP Gutter Sweeper 刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Clutch Plate / 离合器盘,101535642567,Floor Cleaning Equipment Spare Part NP-9200 Aluminum Alloy Clutch Plate,Floor 清洁设备 配件 NP-9200 Aluminum Alloy 离合器盘,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Brush / 刷类,103423680956,Tenant T300e T500e Industrial Floor Cleaning Brush 12 Inch to 21inch Workshop Scrubber Machine Brushes China,Tenant T300e T500e 工业 Floor Cleaning 刷 12 Inch to 21inch Workshop Scrubber Machine 刷es China,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Pad Holder / 针盘,103774246776,Pad Holder/Pad Driver for Floor Machine Buffer/Polisher/Scrubber,针盘/针盘驱动 for Floor Machine Buffer/Polisher/Scrubber,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Brush / 刷类,106910220276,Flexible Cylinder Silicone Carbide Flex Hone Brush for Polishing&amp;Deburring,Flexible Cylinder Silicone Carbide Flex Hone 刷 for Polishing&amp;Deburring,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Clutch Plate / 离合器盘,101536061230,Floor Scrubber Equipment Parts-175 Al Alloy Clutch Plate,洗地机 Equipment Parts-175 Al Alloy 离合器盘,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Clutch Plate / 离合器盘,101536037905,Floor Scrubber Equipment Parts- Tenant Clutch Plate,洗地机 Equipment Parts- Tenant 离合器盘,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Side Brush / 边刷,11120500874,Scarab Magnum Sweeper Steel Wire Side Brush From China Factory,Scarab Magnum Sweeper Steel Wire 边刷 From 中国工厂,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Vacuum Motor / 真空电机,104405094338,"24V, 3 Stage Vacuum Motor Suitable for Tenant T7","24V, 3 Stage 真空电机 Suitable for Tenant T7",,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Disc Brush / 盘刷,103856870150,Anhui Changzhong Floor Scrubber Spare Part Disc Brush for Tennant T12,Anhui Changzhong 洗地机 配件 盘刷 for Tennant T12,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Squeegee / 吸水胶条,101939797515,High Quality Squeegee for Floor Scrubber with NR&PU Material,高品质 吸水胶条 for 洗地机 with NR&PU 地垫erial,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Brush / 刷类,103193590764,Large Commercial City Road Cleaning Brush Efficient Street Side Sweeper Brush,Large 商用 City Road Cleaning 刷 Efficient Street Side Sweeper 刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Mat / 地垫,104568220016,Factory Sale Multicolor square Bath Mat  Floor Spa Shower Mat Washable Pvc Bathroom Non slip Mat,Factory Sale Multicolor square Bath 地垫  Floor Spa Shower 地垫 Washable Pvc Bathroom Non slip 地垫,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Brush / 刷类,103854357212,Professional Brush Factory Floor Scrubber Machine Brush Cleaning Supplies China Roller Solar Panel Cleaning Brush 10PCS,专业 刷 Factory 洗地机 Machine 刷 Cleaning Supplies China Roller Solar Panel Cleaning 刷 10PCS,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Side Brush / 边刷,87026133,Dulevo/Fuan 200 Cleaning Equipment Part Steel Wire Sweeper Side Brush,Dulevo/Fuan 200 清洁设备 Part Steel Wire Sweeper 边刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Side Brush / 边刷,103185857178,High Quality Economical and Practical Gutter Sweeper Side Brush for Road Sweeping Machine,高品质 Economical and Practical Gutter Sweeper 边刷 for Road Sweeping Machine,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,103802569915,Cleaning Equipment Parts Rotary Brush Monobrush With Red Buckle,清洁设备 Parts Rotary 刷 Mono刷 With Red Buckle,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,63279046,Floor Scrubber Spare Parts Center Lock Pad Retainer,洗地机 配件s 中心锁扣 百洁垫 Retainer,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Pad Holder / 针盘,104411739465,Floor Scrubber Machine Brush Floor Buffer/pad Driver/pad Holder for  Single Disc Machine,洗地机 Machine 刷 Floor Buffer/针盘驱动/针盘 for  Single Disc Machine,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Disc Brush / 盘刷,62675375,ICE Ride Scrubber Dryer RS32 Floor Rotary Brush,ICE Ride Scrubber Dryer RS32 Floor Rotary 刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Clutch Plate / 离合器盘,101540180217,Floor Scrubber Equipment Parts- Viper Clutch Plate,洗地机 Equipment Parts- Viper 离合器盘,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,104941150846,Nilfisk/Viper/Gaomei Machine Spare Part Carpet Shampoo Brush Carpet Washing Floor Scrubber Disc Brush,Nilfisk/Viper/Gaomei Machine 配件 Carpet Shampoo 刷 Carpet Washing 洗地机 盘刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Clutch Plate / 离合器盘,101540420408,Cleaning Equipment Floor Scrubber Machine Parts Invincible Clutch Plate for Taski,清洁设备 洗地机 Machine Parts Invincible 离合器盘 for Taski,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Motor / 电机,101793279887,SJ50 Walk-behind Compact Floor Scrubber or Cleaning Machine Electric Motor Plastic Provided Restaurant Equipment DC 24V 510 Mm,SJ50 Walk-behind Compact 洗地机 or 清洁机 Electric 电机 Plastic Provided Restaurant Equipment DC 24V 510 Mm,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Vacuum Motor / 真空电机,104462585771,36V 24V 3-stg Vacuum Motor Tennant/Viper/Comac/Karche/Nilfisk/IPC Vacuum Cleaner Motor,36V 24V 3-stg 真空电机 Tennant/Viper/Comac/Karche/Nilfisk/IPC Vacuum Cleaner 电机,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Disc Brush / 盘刷,101559536107,Floor Scrubber Spare Part Disk Brush for Tennant T5/T5e,洗地机 配件 盘刷 for Tennant T5/T5e,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Clutch Plate / 离合器盘,102016435573,"Floor Scrubber Clutch Plate for Kacher,Tennant,Nilfisk,Viper,Comac","洗地机 离合器盘 for Kacher,Tennant,Nilfisk,Viper,Comac",,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Pad Holder / 针盘,102013081191,Nilfisk Viper AS510B 20 Inch Pad Driver Holder  for Floor Scrubber __ VF90416,Nilfisk Viper AS510B 20 Inch 针盘驱动 Holder  for 洗地机 __ VF90416,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Disc Brush / 盘刷,102317205523,Single Disc Brush Carpet Brush for Floor Scrubber and Single Disc Machine,Single 盘刷 Carpet 刷 for 洗地机 and Single Disc Machine,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,103764246699,Hard Bristle Scrubbing Brush Pad Driver/Pad Holder With Short Hard Bristles for Carpet Cleaning,Hard Bristle Scrubbing 刷 针盘驱动/针盘 With Short Hard Bristles for Carpet Cleaning,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Disc Brush / 盘刷,11755941778,Cleaning Equipment Spare Part 15 Inch Floor Scrubber Disc Brush,清洁设备 配件 15 Inch 洗地机 盘刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Squeegee / 吸水胶条,103708832802,Floor Machine Spare Parts Squeegee Assembly Squeegee Kit Floor Scrubber Squeegee Assembly,Floor Machine 配件s 吸水胶条 总成 吸水胶条 套件 洗地机 吸水胶条 总成,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Clutch Plate / 离合器盘,101534842595,Cleaning Equipment Scrubber Spare Part Red NP-500 Clutch Plate,清洁设备 Scrubber 配件 Red NP-500 离合器盘,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Pad Holder / 针盘,102005762209,15 Inch Floor Scrubber Pad Driver for VIPER AS380,15 Inch 洗地机 针盘驱动 for VIPER AS380,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Squeegee / 吸水胶条,103716916645,Scrubber Cleaning Machine Parts Squeegee Tool Assembly,Scrubber 清洁机 Parts 吸水胶条 Tool 总成,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Hose / 水管,103636201049,China Factory Directly Sale Wholesale Tenant T3E Drain Hose/Suction Hose,中国工厂 Directly Sale 批发 Tenant T3E 排水管/Suction 管,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,11703693794,GAOMEI Auto Scrubber Machine GM110BT85 Spare Part Floor Rotary Disc Brush/ Pad Driver,GAOMEI Auto Scrubber Machine GM110BT85 配件 Floor Rotary 盘刷/ 针盘驱动,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Disc Brush / 盘刷,29999367172,17 Inch Nylon Disc Brush for Tennant,17 Inch Nylon 盘刷 for Tennant,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Brush / 刷类,104677526589,Quality Wholesale Rotary Circular Industrial Floor Cleaning Brush with Factory Price,Quality 批发 Rotary Circular 工业 Floor Cleaning 刷 with Factory Price,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,102013005760,Nilfisk Viper AS510B Floor Scrubber Disc Brush,Nilfisk Viper AS510B 洗地机 盘刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,103854046483,High Quality Floor Scrubber Spare Part Disc Brush for Tenant T12,高品质 洗地机 配件 盘刷 for Tenant T12,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Other / 其他,102865046123,Factory Sales Floor Scrubber Spare Parts for Tennant T3/T3e/T300/T300e,Factory Sales 洗地机 配件s for Tennant T3/T3e/T300/T300e,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Disc Brush / 盘刷,162621838,"17 Inch Fiorentini 80 M, Smile 85 Floor Scrubber Disc Brush","17 Inch Fiorentini 80 M, Smile 85 洗地机 盘刷",,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Squeegee / 吸水胶条,101940364715,High Quality Floor Scrubber Squeegee  with NR&PU Material,高品质 洗地机 吸水胶条  with NR&PU 地垫erial,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Brush / 刷类,103821455343,Hot Product Floor Scrubber Cleaning Machine Brush Supplies for Tenant/Karchr/Viper/Nilfisk/Comac/Hako/IPC/Fimap,Hot Product 洗地机 清洁机 刷 Supplies for Tenant/Karchr/Viper/Nilfisk/Comac/Hako/IPC/Fimap,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,103117233721,Karche Medium Nylon Brush Rotary Brush for Floor Scrubber Components Bristle,Karche Medium Nylon 刷 Rotary 刷 for 洗地机 Components Bristle,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Roller Brush / 滚刷,104430614171,Floor Scrubber Machine Roller Brush Karche Red Roller Brush Scrubber Drier,洗地机 Machine 滚刷 Karche Red 滚刷 Scrubber Drier,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,103854042528,High Quality Floor Scrubber Spare Part Disc Brush for IPC CT40,高品质 洗地机 配件 盘刷 for IPC CT40,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Brush / 刷类,103772002824,Floor Buffer Single Brush Disc Rotary Stripping Brush for Carpet Cleaning,Floor Buffer Single 刷 Disc Rotary Stripping 刷 for Carpet Cleaning,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Side Brush / 边刷,103184551546,Rotary Side Brush Gutter Broom for Gasoline Cleaning Truck Road Sweeper Brushes Gutter Broom,Rotary 边刷 边刷 for Gasoline Cleaning Truck Road Sweeper 刷es 边刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Squeegee / 吸水胶条,104353959385,Cleaning Equipment Parts Floor Scrubber Squeegee Blades Front and Back Rubber Fits Tennant 1011232,清洁设备 Parts 洗地机 吸水胶条 Blades Front and Back Rubber Fits Tennant 1011232,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,102012701424,VIPER AS4325/AS4335 17 Inch PA Floor Scrubber Disc Brush for Cleaning Machine,VIPER AS4325/AS4335 17 Inch PA 洗地机 盘刷 for 清洁机,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,104414711336,Floor Scrubber Machine Brush Taski Swingo 455 Disc Brush 17inch with PP Bristle_8504750,洗地机 Machine 刷 Taski Swingo 455 盘刷 17inch with PP Bristle_8504750,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Roller Brush / 滚刷,103112150590,Sweeper Brush/Roller Brush 50 Inch Polypropylene/Wire Double Row for Tennant 800D 35324,Sweeper 刷/滚刷 50 Inch Polypropylene/Wire Double Row for Tennant 800D 35324,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,102489653805,Factory Sale Taski 15.5inch Floor Scrubber Disc Brush for Floor Scrubber,Factory Sale Taski 15.5inch 洗地机 盘刷 for 洗地机,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,11698632039,Gaomei GM50 Cleaning Equipment Part 19 Inch Floor Scrubber Disc Brush,Gaomei GM50 清洁设备 Part 19 Inch 洗地机 盘刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Brush / 刷类,104500676903,Wooden Gap Cleaning Brush Hard-Bristled Crevice Cleaning Brush for Bathroom Kitchens Tile Floors Gap,Wooden Gap Cleaning 刷 Hard-Bristled Crevice Cleaning 刷 for Bathroom 套件chens Tile Floors Gap,,缺价,L3-OEM,OEM/定制·仅询单,OEM/定制配件（不公开价格）
+配件 Part,Hose / 水管,102503415461,Tenant OEM # 1204663 HOSE ASSY Vacuum  W/Z Cuff 1.5D*31L Tenant T300,Tenant OEM # 1204663 管 ASSY Vacuum  W/Z Cuff 1.5D*31L Tenant T300,,缺价,L3-OEM,OEM/定制·仅询单,OEM/定制配件（不公开价格）
+配件 Part,Pad Holder / 针盘,102004841157,Nilfisk Viper AS380/15  15 Inch Pad Driver Holder  for Floor Scrubber __ VF89804,Nilfisk Viper AS380/15  15 Inch 针盘驱动 Holder  for 洗地机 __ VF89804,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Lock & Flange / 锁扣·法兰,101558344300,Hako B75R Floor Scrubber Brush-13 Inch Gray Chrysanthemum Buckle Brush,Hako B75R 洗地机 刷-13 Inch Gray Chrysanthemum Buckle 刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Brush / 刷类,103851425475,ICE Floor Machine Brush Natural Fibre With Nylon Bristles Cleaning Brushes,ICE Floor Machine 刷 Natural Fibre With Nylon Bristles Cleaning 刷es,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,103853699589,Factory Direct Sales Floor Scrubber Spare Part Disk Brush for Hako B75R/B70/B90,工厂直销 Sales 洗地机 配件 盘刷 for Hako B75R/B70/B90,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Clutch Plate / 离合器盘,103314100705,Single Disc Machine Clutch Plate for Cleaning Machines 154 Clutch Plate,Single Disc Machine 离合器盘 for 清洁机s 154 离合器盘,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Hose / 水管,104567904494,Recycled Rubber Non-slip Foldable Floor Mat Multicolor 100% Pvc Drainage Water Bathing Area Anti slip Mat for Pool Area,Recycled Rubber Non-slip Foldable Floor 地垫 Multicolor 100% Pvc Drainage Water Bathing Area Anti slip 地垫 for Pool Area,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Brush / 刷类,103861942931,Nylon Disk Scrub Brush Assembly-20Inch 508MM 1210386,Nylon Disk Scrub 刷 总成-20Inch 508MM 1210386,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Pad / 百洁垫,104329347395,15inch 17inch 18inch 20inch White/Black/Red Floor Pad for Single Disc Machine Floor Scrubber Machine Polishing,15inch 17inch 18inch 20inch White/Black/Red Floor 百洁垫 for Single Disc Machine 洗地机 Machine Polishing,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Squeegee / 吸水胶条,104646805965,Nilfisk Advance SC800 Floor Scrubber Machine NilfiSK 56601538 Squeegee Rubber,Nilfisk Advance SC800 洗地机 Machine NilfiSK 56601538 吸水胶条 Rubber,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Brush / 刷类,102012941006,Nilfisk Viper LS160/LS160HD 17 Inch Floor Scrubber Carpet Brush __ VF75420,Nilfisk Viper LS160/LS160HD 17 Inch 洗地机 Carpet 刷 __ VF75420,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Side Brush / 边刷,103196889005,Cleaning Equipment Parts Road Sweeper Brushes Gutter Broom Rotary Side Brush for Gasoline Cleaning,清洁设备 Parts Road Sweeper 刷es 边刷 Rotary 边刷 for Gasoline Cleaning,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Side Brush / 边刷,102013306318,Viper PS480 150mm*310mm Sweeper Side Brush__VP11406,Viper PS480 150mm*310mm Sweeper 边刷__VP11406,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Squeegee / 吸水胶条,100053360385,Hako B45 PU Suction Rubber for Floor Scrubber Squeegee,Hako B45 PU Suction Rubber for 洗地机 吸水胶条,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Side Brush / 边刷,103205871781,High Quality Wholesale Customization Truck Street Sweeper Side Brush Gutter Broom,高品质 批发 Customization Truck Street Sweeper 边刷 边刷,,缺价,L3-OEM,OEM/定制·仅询单,OEM/定制配件（不公开价格）
+配件 Part,Disc Brush / 盘刷,101559266208,Cleaning Equipment Part PP Floor Scrubber Disc Brush for Tennant T5E,清洁设备 Part PP 洗地机 盘刷 for Tennant T5E,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,84314300,Bennett Hussar 660B Auto Floor Scrubber Disc Brush,Bennett Hussar 660B Auto 洗地机 盘刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Brush / 刷类,104678017449,Best Sale Road Cleaning Brush Floor Scrubber Brush Customized pp and Nylon Disc Floor Cleaning Brush,Best Sale Road Cleaning 刷 洗地机 刷 Customized pp and Nylon Disc Floor Cleaning 刷,,缺价,L3-OEM,OEM/定制·仅询单,OEM/定制配件（不公开价格）
+配件 Part,Roller Brush / 滚刷,101748253843,High Quality Tenant T20 Road Sweeper Roller Brush for Floor Scrubber in Factory,高品质 Tenant T20 Road Sweeper 滚刷 for 洗地机 in Factory,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Pad Holder / 针盘,102005135851,Nilfisk Viper AS4325/AS4335  17 Inch Pad Driver Holder  for Floor Scrubber __ VS15440,Nilfisk Viper AS4325/AS4335  17 Inch 针盘驱动 Holder  for 洗地机 __ VS15440,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Filter / 过滤器,104353862224,Viper Auto Scrubber  Solution Line Filter (#VF82168A) Water Filter,Viper Auto Scrubber  Solution Line 过滤器 (#VF82168A) Water 过滤器,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Brush / 刷类,12343985408,Dulevo Garant 506 Floor Scubber Spare Part Abrasive Brushes,Dulevo Garant 506 Floor Scubber 配件 Abrasive 刷es,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,102220363426,17inch PPL Factory Cat GTX Floor Scrubber Disc Brush,17inch PPL Factory Cat GTX 洗地机 盘刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Pad / 百洁垫,105016094288,Tennant 370095 Centering Device Pad Retainer,Tennant 370095 Centering Device 百洁垫 Retainer,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Motor / 电机,104430484305,Tennant Brush Motor Aftermarket Replaces Tennant,Tennant 刷 电机 Aftermarket Replaces Tennant,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Pad Holder / 针盘,103154697251,Excellent Quality Custom Wholesale Floor Scrubber Machine Pad Driver,Excellent Quality Custom 批发 洗地机 Machine 针盘驱动,,缺价,L3-OEM,OEM/定制·仅询单,OEM/定制配件（不公开价格）
+配件 Part,Disc Brush / 盘刷,103792803890,Scrub Brush with Lugs Grit Brush Rotary Brush Floor Polishing,Scrub 刷 with Lugs Grit 刷 Rotary 刷 Floor Polishing,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,104343126210,China Factory Directly Sale Wholesale Replacement Clutch Plate for Disc Brush,中国工厂 Directly Sale 批发 替换 离合器盘 for 盘刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Clutch Plate / 离合器盘,103098210561,Wholesale Double Reed Price Clutch Plate for Floor Cleaning Scrubber,批发 Double Reed Price 离合器盘 for Floor Cleaning Scrubber,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Squeegee / 吸水胶条,103737974024,Floor Scrubber Spare Part Blades / Rubber / Squeegee Scrubber Dryer Blade Cleaning Supplies,洗地机 配件 Blades / Rubber / 吸水胶条 Scrubber Dryer Blade Cleaning Supplies,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,101559806690,Floor Scrubber 19inch Polypropylene Disc Brush for Tenant T300E,洗地机 19inch Polypropylene 盘刷 for Tenant T300E,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Roller Brush / 滚刷,103128173750,Kacher B140 PP Roller Brush Rotary Broom Central Brush,Kacher B140 PP 滚刷 Rotary Broom Central 刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,103856659415,Factory Direct Sales Floor Scrubber Spare Part Disc Brush for Viper AS430  VF90411,工厂直销 Sales 洗地机 配件 盘刷 for Viper AS430  VF90411,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Hose / 水管,103635651783,Manufacturers Flexible Braided Plastic Vacuum Hose 6mm 8mm 10mm Plastic Heater Hose,Manufacturers Flexible Braided Plastic 吸水管 6mm 8mm 10mm Plastic Heater 管,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Hose / 水管,11674008569,Kacher B90R Scrubber Spare Part  Drain Hose,Kacher B90R Scrubber 配件  排水管,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Clutch Plate / 离合器盘,101530132440,Cleaning Equipment Scrubber Spare Part Clutch Plate NP-9200,清洁设备 Scrubber 配件 离合器盘 NP-9200,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,66804443,"Aditek Amber 66 / Baby 43 / Coral 65 / Jade 66 / Opal 66 /Quartz 66 / Sapphire 65 Floor Scrubber Disc Brush, 330mm","Aditek Amber 66 / Baby 43 / Coral 65 / Jade 66 / Opal 66 /Quartz 66 / Sapphire 65 洗地机 盘刷, 330mm",,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,103113875576,PP Purpose Rotary Brushes Carpet Brush for Floor Scrubber Machine Cleaning,PP Purpose Rotary 刷es Carpet 刷 for 洗地机 Machine Cleaning,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Brush / 刷类,103131362489,Hard Plate Brush Rotary Stripping Brush for Carpet Cleaning,Hard Plate 刷 Rotary Stripping 刷 for Carpet Cleaning,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,104368066424,Disc Brush Aftermarket Tennant 1221541 Fits Tennant A5/T5/T5e/T500/T500E,盘刷 Aftermarket Tennant 1221541 Fits Tennant A5/T5/T5e/T500/T500E,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Vacuum Motor / 真空电机,104364346649,Floor Scrubber Spare Parts Tennant T300e Vacuum Motor 2stage 360W,洗地机 配件s Tennant T300e 真空电机 2stage 360W,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Squeegee / 吸水胶条,101705628647,Comac Innova 55 Spare Part Squeegee for Floor Scrubber,Comac Innova 55 配件 吸水胶条 for 洗地机,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Squeegee / 吸水胶条,104365594195,Comac Vispa 35B Spare Part Squeegee Rubber for Floor Scrubber Machine,Comac Vispa 35B 配件 吸水胶条 Rubber for 洗地机 Machine,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Squeegee / 吸水胶条,101704011949,Comac Vispa 35B  Spare Part Squeegee for Floor Scrubber,Comac Vispa 35B  配件 吸水胶条 for 洗地机,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Squeegee / 吸水胶条,104368478542,Tennant 222415 Squeegee Blade Rubber Kits Fits 5680 5700 7200 T15 Floor Scrubber Machine,Tennant 222415 吸水胶条 Blade Rubber 套件s Fits 5680 5700 7200 T15 洗地机 Machine,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Squeegee / 吸水胶条,101711695823,Taski Swingo 1250 Spare Part Squeegee for Floor Scrubber,Taski Swingo 1250 配件 吸水胶条 for 洗地机,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Battery / 电池,104365479773,Tennant T12 Compact Battery Ride-On Floor Scrubber 1220241 Polypropylene Disk Scrub Brush Assembly,Tennant T12 Compact 电池 Ride-On 洗地机 1220241 Polypropylene Disk Scrub 刷 总成,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Hose / 水管,104371798545,"Drain Hose - Tennant T3, T5 - 1043538 Aftermarket Parts Cleaning Supplies","排水管 - Tennant T3, T5 - 1043538 Aftermarket Parts Cleaning Supplies",,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Squeegee / 吸水胶条,101705320686,Comac Innova 60 Spare Part Squeegee for Floor Scrubber,Comac Innova 60 配件 吸水胶条 for 洗地机,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Bumper / 保险杠,104386244989,Factory Directly Sale T3 Tennant 9011849 Bumper Head Bristle Skirt Retaining Strap Bristle Skirt Head Bumper,工厂直销ly Sale T3 Tennant 9011849 保险杠 Head Bristle Skirt Retaining Strap Bristle Skirt Head 保险杠,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Disc Brush / 盘刷,101693621322,Hako B75R Cleaning Machine Part  13inch  Floor Scrubber Disc Brush,Hako B75R 清洁机 Part  13inch  洗地机 盘刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Brush / 刷类,101650654640,Hako B115R Floor Scrubber Spare Part-18 Inch Scrubber  Brush,Hako B115R 洗地机 配件-18 Inch Scrubber  刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Hose / 水管,104371686419,"Suction Hose - Tennant T3, T5, and T7 - 1014026 Fits Floor Scrubber Machine","Suction 管 - Tennant T3, T5, and T7 - 1014026 Fits 洗地机 Machine",,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Squeegee / 吸水胶条,104371666361,Squeegee Rubber Kits for Floor Scrubber Machine,吸水胶条 Rubber 套件s for 洗地机 Machine,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Squeegee / 吸水胶条,104365207500,KARCHE KIT SQUEEGE SUCTION RUBBER STANDARD BD50/40 RS (1010 MM),KARCHE 套件 SQUEEGE SUCTION RUBBER STANDARD BD50/40 RS (1010 MM),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Squeegee / 吸水胶条,101711325869,Comac Innova 75 Spare Part Squeegee for Floor Scrubber,Comac Innova 75 配件 吸水胶条 for 洗地机,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Electrical / 电气件,104360096788,Long Service Life Relay Switch for Floor Scrubber Machine,Long Service Life 继电器 开关 for 洗地机 Machine,,缺价,L2-Quote,中高价·询价,中高价工业配件（询价）
+配件 Part,Brush / 刷类,101650838979,Hako B45 Floor Scrubber Spare Part-20 Inch Scrubber Brush,Hako B45 洗地机 配件-20 Inch Scrubber 刷,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,Center Lock CZ-L1,中心锁扣 CZ-L1,6,已有价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,Center Lock CZ-L2,中心锁扣 CZ-L2,4,已有价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,Center Lock CZ-L3,中心锁扣 CZ-L3,4,已有价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,Center Lock CZ-L7,中心锁扣 CZ-L7,6,已有价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,Center Lock CZ-L8,中心锁扣 CZ-L8,6,已有价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,Center Lock CZ-L9,中心锁扣 CZ-L9,6,已有价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,Center Lock CZ-L4/CZ-L5/CZ-L6,中心锁扣 CZ-L4/CZ-L5/CZ-L6,,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,Snap Fit Floor Scrubber Flange (CZ-F1-1),Snap Fit 洗地机 法兰 (CZ-F1-1),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,Positive Reverse Thread Floor Scrubber Flange (CZ-F1-2),Positive Reverse Thread 洗地机 法兰 (CZ-F1-2),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,Small Snap Fit Floor Scrubber Flange (CZ-F2-1),Small Snap Fit 洗地机 法兰 (CZ-F2-1),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,Small Dual Thread Floor Scrubber Flange (CZ-F2-2),Small Dual Thread 洗地机 法兰 (CZ-F2-2),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,Hako Chrysanthemum Snap Floor Scrubber Flange (CZ-F3-1),Hako Chrysanthemum Snap 洗地机 法兰 (CZ-F3-1),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,Hako Dual Thread Floor Scrubber Flange (CZ-F3-2),Hako Dual Thread 洗地机 法兰 (CZ-F3-2),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,Nilfisk Compatible Floor Scrubber Flange (CZ-F4),Nilfisk Compatible 洗地机 法兰 (CZ-F4),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,Taski 4000 Compatible Floor Scrubber Flange (CZ-F5-1),Taski 4000 Compatible 洗地机 法兰 (CZ-F5-1),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,Taski Compatible Floor Scrubber Flange (CZ-F5-2),Taski Compatible 洗地机 法兰 (CZ-F5-2),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,175 Snap Lock Floor Scrubber Flange (CZ-F6-1),175 Snap Lock 洗地机 法兰 (CZ-F6-1),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,175 Dual Thread Floor Scrubber Flange (CZ-F6-2),175 Dual Thread 洗地机 法兰 (CZ-F6-2),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,175 Thick Snap Lock Floor Scrubber Flange (CZ-F6-3),175 Thick Snap Lock 洗地机 法兰 (CZ-F6-3),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,175 Thick Dual Thread Floor Scrubber Flange (CZ-F6-4),175 Thick Dual Thread 洗地机 法兰 (CZ-F6-4),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,WZ-01 Snap Lock Floor Scrubber Flange (CZ-F7-1),WZ-01 Snap Lock 洗地机 法兰 (CZ-F7-1),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,WZ-01 Dual Thread Floor Scrubber Flange (CZ-F7-2),WZ-01 Dual Thread 洗地机 法兰 (CZ-F7-2),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,CLB-01 Left-Rotate Floor Scrubber Flange (CZ-F9),CLB-01 Left-Rotate 洗地机 法兰 (CZ-F9),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,148 Dual Thread Floor Scrubber Flange (CZ-F10-2),148 Dual Thread 洗地机 法兰 (CZ-F10-2),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,CZ-148 Snap Lock Floor Scrubber Flange (CZ-F10-1),CZ-148 Snap Lock 洗地机 法兰 (CZ-F10-1),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,Ghibli Triangular Floor Scrubber Flange (CZ-F11-1),Ghibli Triangular 洗地机 法兰 (CZ-F11-1),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,Ghibli Triangular Dual Thread Floor Scrubber Flange (CZ-F11-2),Ghibli Triangular Dual Thread 洗地机 法兰 (CZ-F11-2),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,HK-b45 Floor Scrubber Flange (CZ-F12-1),HK-b45 洗地机 法兰 (CZ-F12-1),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,HK-b45 Left-Rotate Floor Scrubber Flange (CZ-F14-1),HK-b45 Left-Rotate 洗地机 法兰 (CZ-F14-1),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,HK-b45 Right-Rotate Floor Scrubber Flange (CZ-F14-2),HK-b45 Right-Rotate 洗地机 法兰 (CZ-F14-2),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,CT 8-Tooth Snap Lock Floor Scrubber Flange (CZ-F13-1),CT 8-Tooth Snap Lock 洗地机 法兰 (CZ-F13-1),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,CT 8-Tooth Dual Thread Floor Scrubber Flange (CZ-F13-2),CT 8-Tooth Dual Thread 洗地机 法兰 (CZ-F13-2),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,CT 10-Tooth Snap Lock Floor Scrubber Flange (CZ-F15-1),CT 10-Tooth Snap Lock 洗地机 法兰 (CZ-F15-1),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,CT 10-Tooth Dual Thread Floor Scrubber Flange (CZ-F15-2),CT 10-Tooth Dual Thread 洗地机 法兰 (CZ-F15-2),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,CT 32-Tooth Snap Lock Floor Scrubber Flange (CZ-F17-1),CT 32-Tooth Snap Lock 洗地机 法兰 (CZ-F17-1),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,CT 32-Tooth Dual Thread Floor Scrubber Flange (CZ-F17-2),CT 32-Tooth Dual Thread 洗地机 法兰 (CZ-F17-2),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,PSD Snap Lock Floor Scrubber Flange (CZ-F19-1),PSD Snap Lock 洗地机 法兰 (CZ-F19-1),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,NF-02 Dual Thread Floor Scrubber Flange (CZ-F20-2),NF-02 Dual Thread 洗地机 法兰 (CZ-F20-2),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,PSD Dual Thread Floor Scrubber Flange (CZ-F19-2),PSD Dual Thread 洗地机 法兰 (CZ-F19-2),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,NF-02 Snap Lock Floor Scrubber Flange (CZ-F20-1),NF-02 Snap Lock 洗地机 法兰 (CZ-F20-1),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,174-03 Snap Lock Floor Scrubber Flange (CZ-F21-1),174-03 Snap Lock 洗地机 法兰 (CZ-F21-1),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,174 Large Dual Thread Floor Scrubber Flange (CZ-F21-2),174 Large Dual Thread 洗地机 法兰 (CZ-F21-2),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,XSJ Snap Lock Floor Scrubber Flange (CZ-F22-1),XSJ Snap Lock 洗地机 法兰 (CZ-F22-1),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,XSJ Dual Thread Floor Scrubber Flange (CZ-F22-2),XSJ Dual Thread 洗地机 法兰 (CZ-F22-2),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）
+配件 Part,Lock & Flange / 锁扣·法兰,,GS50 Floor Scrubber Flange (CZ-F23),GS50 洗地机 法兰 (CZ-F23),,缺价,L1-Priced,标准耗材·公开价,标准低价耗材（公开价格）

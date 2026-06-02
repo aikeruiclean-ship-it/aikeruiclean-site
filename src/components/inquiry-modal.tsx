@@ -24,18 +24,24 @@ export function InquiryModal({ isOpen, onClose, productName }: InquiryModalProps
     e.preventDefault();
     setSending(true);
 
-    // For now, log the inquiry. Will integrate with email service later.
-    const inquiry = {
-      ...formData,
-      product: productName || "General Inquiry",
-      timestamp: new Date().toISOString(),
-    };
-    console.log("Inquiry:", inquiry);
+    try {
+      const res = await fetch("/api/inquiry", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          ...formData,
+          product: productName || "General Inquiry",
+        }),
+      });
 
-    // Simulate send
-    await new Promise((r) => setTimeout(r, 1000));
-    setSending(false);
-    setSubmitted(true);
+      if (!res.ok) throw new Error("Failed to submit");
+      setSubmitted(true);
+    } catch (err) {
+      console.error("Submit error:", err);
+      alert("Failed to send inquiry. Please try again or email us directly.");
+    } finally {
+      setSending(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {

@@ -1,10 +1,12 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { Menu, X, Phone, Mail, ChevronDown } from "lucide-react";
-import { categories, getCategoryCounts } from "@/lib/products";
+import { categories, getCategoryCounts, getPartSubcategories } from "@/lib/products";
 import { cn } from "@/lib/utils";
+import { SearchBar } from "@/components/search-bar";
 
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -15,11 +17,14 @@ export function Header() {
     {
       href: "/products",
       label: "Products",
-      children: categories.map((cat) => ({
-        href: `/products?category=${encodeURIComponent(cat)}`,
-        label: `${cat} (${counts[cat] || 0})`,
-      })),
+      children: categories
+        .filter((cat) => cat !== "Parts")
+        .map((cat) => ({
+          href: `/products?category=${encodeURIComponent(cat)}`,
+          label: `${cat} (${counts[cat] || 0})`,
+        })),
     },
+    { href: "/parts", label: "Parts" },
     { href: "/about", label: "About Us" },
     { href: "/contact", label: "Contact" },
   ];
@@ -29,9 +34,9 @@ export function Header() {
       {/* Top bar */}
       <div className="hidden lg:block bg-primary text-white text-sm">
         <div className="max-w-7xl mx-auto px-4 py-1.5 flex items-center justify-end gap-6">
-          <a href="tel:+8613521234567" className="flex items-center gap-1.5 hover:text-accent transition-colors">
+          <a href="tel:+8619965236428" className="flex items-center gap-1.5 hover:text-accent transition-colors">
             <Phone size={14} />
-            <span>+86 135 2123 4567</span>
+            <span>+86 199 6523 6428</span>
           </a>
           <a href="mailto:info@aikeruiclean.com" className="flex items-center gap-1.5 hover:text-accent transition-colors">
             <Mail size={14} />
@@ -44,14 +49,15 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">A</span>
-            </div>
-            <div>
-              <span className="text-xl font-bold text-primary">Aikerui</span>
-              <span className="text-xs text-gray-500 block leading-tight">Floor Cleaning Machines</span>
-            </div>
+          <Link href="/" className="block shrink-0">
+            <Image
+              src="/logo.svg"
+              alt="Aikerui"
+              width={160}
+              height={42}
+              className="h-9 md:h-10 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop nav */}
@@ -90,6 +96,7 @@ export function Header() {
                 </Link>
               )
             )}
+            <SearchBar />
             <Link
               href="/contact"
               className="ml-3 px-5 py-2 bg-accent hover:bg-accent-hover text-white text-sm font-semibold rounded-lg transition-colors"
@@ -156,8 +163,8 @@ export function Header() {
             </div>
           ))}
           <div className="pt-4 space-y-2">
-            <a href="tel:+8613521234567" className="flex items-center gap-2 px-3 py-2 text-sm text-gray-600">
-              <Phone size={14} /> +86 135 2123 4567
+            <a href="tel:+8619965236428" className="flex items-center gap-2 px-3 py-2 text-sm text-gray-600">
+              <Phone size={14} /> +86 199 6523 6428
             </a>
             <a href="mailto:info@aikeruiclean.com" className="flex items-center gap-2 px-3 py-2 text-sm text-gray-600">
               <Mail size={14} /> info@aikeruiclean.com

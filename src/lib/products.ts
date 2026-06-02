@@ -15,6 +15,7 @@ export interface Product {
   visible: boolean;
   category: string;
   categoryFull: string;
+  partSubcategory?: string;
   shortDescription: string;
   description: string;
   price: number | null;
@@ -26,6 +27,8 @@ export interface Product {
   tags: string[];
   specs: ProductSpecs;
   inStock: boolean;
+  variantGroupId?: string;
+  variantLabel?: string;
 }
 
 const products = raw as Product[];
@@ -50,6 +53,24 @@ export function getProductsByCategory(category: string): Product[] {
 
 export function getProductBySlug(slug: string): Product | undefined {
   return products.find((p) => p.slug === slug && p.published && p.visible);
+}
+
+export function getPartSubcategories(): { name: string; count: number; slug: string }[] {
+  const map = new Map<string, number>();
+  for (const p of products) {
+    if (p.published && p.visible && p.category === "Parts" && p.partSubcategory) {
+      map.set(p.partSubcategory, (map.get(p.partSubcategory) || 0) + 1);
+    }
+  }
+  return Array.from(map.entries())
+    .map(([name, count]) => ({ name, count, slug: name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-+$/, "") }))
+    .sort((a, b) => b.count - a.count);
+}
+
+export function getPartsBySubcategory(subcategory: string): Product[] {
+  return products.filter(
+    (p) => p.published && p.visible && p.category === "Parts" && p.partSubcategory === subcategory
+  );
 }
 
 export function getCategoryCounts(): Record<string, number> {

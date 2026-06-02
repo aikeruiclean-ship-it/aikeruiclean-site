@@ -2,17 +2,48 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Shield, Truck, HeadphonesIcon, Settings } from "lucide-react";
+import { ArrowRight, Shield, Truck, HeadphonesIcon, Brush } from "lucide-react";
 import { ProductCard } from "@/components/product-card";
-import { getProducts, getFeaturedProducts, categories, getCategoryCounts } from "@/lib/products";
+import { JsonLd } from "@/components/json-ld";
+import { getFeaturedProducts, categories, getCategoryCounts } from "@/lib/products";
 
 export default function HomePage() {
   const featured = getFeaturedProducts().slice(0, 8);
-  const allProducts = getProducts();
   const counts = getCategoryCounts();
+
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Aikerui Cleaning Technology Co., Ltd.",
+    url: "https://aikeruiclean.com",
+    logo: "https://aikeruiclean.com/wp-content/uploads/2025/11/WALK-BEHIND-K500BT.webp",
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+86-199-6523-6428",
+      contactType: "sales",
+      email: "info@aikeruiclean.com",
+      availableLanguage: ["English", "Chinese"],
+    },
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Hefei",
+      addressRegion: "Anhui",
+      addressCountry: "CN",
+    },
+    description: "Professional manufacturer of industrial floor scrubbers, sweepers, and cleaning accessories.",
+  };
+
+  const categoryImages: Record<string, string> = {
+    "Floor Scrubbers": "/images/categories/floor-scrubbers.webp",
+    "Floor Sweepers": "/images/categories/floor-sweepers.webp",
+    "Dust-pushing carts": "/images/categories/dust-carts.webp",
+    "Carpet Extractor Washers": "/images/categories/carpet-extractors.webp",
+    Parts: "/images/categories/parts.png",
+  };
 
   return (
     <div>
+      <JsonLd data={organizationSchema} />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-light text-white overflow-hidden">
         <div className="absolute inset-0 opacity-10">
@@ -50,7 +81,7 @@ export default function HomePage() {
       <section className="bg-gray-50 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 py-8 grid grid-cols-2 md:grid-cols-4 gap-6">
           {[
-            { icon: Settings, title: "Factory Direct", desc: "Manufacturer pricing, no middlemen" },
+            { icon: Brush, title: "Factory Direct", desc: "Manufacturer pricing, no middlemen" },
             { icon: Shield, title: "Quality Guaranteed", desc: "CE, ISO certified machines" },
             { icon: Truck, title: "Global Shipping", desc: "Sea, air, express available" },
             { icon: HeadphonesIcon, title: "24/7 Support", desc: "Technical support & after-sales" },
@@ -82,11 +113,17 @@ export default function HomePage() {
             {categories.map((cat) => (
               <Link
                 key={cat}
-                href={`/products?category=${encodeURIComponent(cat)}`}
+                href={cat === "Parts" ? "/parts" : `/products?category=${encodeURIComponent(cat)}`}
                 className="group p-6 bg-gray-50 rounded-xl border border-gray-200 hover:border-accent hover:bg-accent/5 transition-all duration-200 text-center"
               >
-                <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:bg-primary/20 transition-colors">
-                  <Settings size={24} className="text-primary" />
+                <div className="w-20 h-20 rounded-xl overflow-hidden mx-auto mb-3 border border-gray-200 bg-white">
+                  <Image
+                    src={categoryImages[cat] || ""}
+                    alt={cat}
+                    width={80}
+                    height={80}
+                    className="w-full h-full object-contain p-1"
+                  />
                 </div>
                 <h3 className="text-sm font-semibold text-gray-900 group-hover:text-primary transition-colors">
                   {cat}
@@ -188,7 +225,7 @@ export default function HomePage() {
             { number: "2000+", label: "Machines Sold" },
             { number: "50+", label: "Export Countries" },
             { number: "10+", label: "Years Experience" },
-            { number: "48", label: "Product Models" },
+            { number: "30+", label: "Machine Models" },
           ].map((stat) => (
             <div key={stat.label}>
               <p className="text-3xl md:text-4xl font-bold text-primary">{stat.number}</p>

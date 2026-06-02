@@ -34,7 +34,7 @@ export function Footer() {
             {categories.map((cat) => (
               <li key={cat}>
                 <Link
-                  href={`/products?category=${encodeURIComponent(cat)}`}
+                  href={cat === "Parts" ? "/parts" : `/products?category=${encodeURIComponent(cat)}`}
                   className="text-sm text-gray-300 hover:text-accent transition-colors"
                 >
                   {cat} ({counts[cat] || 0})
@@ -79,9 +79,9 @@ export function Footer() {
               <span>Industrial Zone, Hefei City, Anhui, China</span>
             </li>
             <li>
-              <a href="tel:+8613521234567" className="flex items-center gap-2 text-sm text-gray-300 hover:text-accent transition-colors">
+              <a href="tel:+8619965236428" className="flex items-center gap-2 text-sm text-gray-300 hover:text-accent transition-colors">
                 <Phone size={16} className="shrink-0 text-accent" />
-                <span>+86 135 2123 4567</span>
+                <span>+86 199 6523 6428</span>
               </a>
             </li>
             <li>

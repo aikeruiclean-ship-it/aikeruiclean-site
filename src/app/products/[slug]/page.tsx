@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ChevronRight } from "lucide-react";
 import { InquiryButton } from "@/components/inquiry-button";
+import { JsonLd } from "@/components/json-ld";
 import { getProductBySlug, getProducts } from "@/lib/products";
 
 interface Props {
@@ -24,13 +25,34 @@ export default async function ProductDetailPage({ params }: Props) {
 
   return (
     <div>
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "Product",
+        name: product.name,
+        description: product.shortDescription || product.description.replace(/<[^>]*>/g, "").slice(0, 300),
+        sku: product.sku,
+        brand: { "@type": "Brand", name: "Aikerui" },
+        category: product.category,
+        image: product.images,
+        offers: {
+          "@type": "Offer",
+          availability: product.inStock
+            ? "https://schema.org/InStock"
+            : "https://schema.org/OutOfStock",
+          priceCurrency: "USD",
+          price: product.price ?? undefined,
+        },
+      }} />
+
       {/* Breadcrumb */}
       <div className="bg-gray-50 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 py-3">
           <div className="flex items-center gap-2 text-sm text-gray-500">
             <Link href="/" className="hover:text-primary">Home</Link>
             <ChevronRight size={14} />
-            <Link href="/products" className="hover:text-primary">Products</Link>
+            <Link href={product.category === "Parts" ? "/parts" : "/products"} className="hover:text-primary">
+              {product.category === "Parts" ? "Parts" : "Products"}
+            </Link>
             <ChevronRight size={14} />
             <span className="text-gray-900">{product.name}</span>
           </div>
@@ -84,12 +106,9 @@ export default async function ProductDetailPage({ params }: Props) {
             </span>
             <h1 className="text-3xl font-bold text-gray-900 mb-4">{product.name}</h1>
 
-            <div
-              className="text-gray-600 leading-relaxed mb-6 prose prose-sm max-w-none"
-              dangerouslySetInnerHTML={{
-                __html: product.description.slice(0, 800),
-              }}
-            />
+            <p className="text-gray-600 leading-relaxed mb-6">
+              {product.shortDescription || product.description.replace(/<[^>]*>/g, "").slice(0, 300)}
+            </p>
 
             <InquiryButton productName={product.name} />
 
@@ -128,6 +147,7 @@ export default async function ProductDetailPage({ params }: Props) {
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Description</h2>
             <div
               className="text-gray-600 leading-relaxed prose prose-sm max-w-none"
+              suppressHydrationWarning
               dangerouslySetInnerHTML={{ __html: product.description }}
             />
           </section>

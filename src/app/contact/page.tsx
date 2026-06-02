@@ -20,10 +20,22 @@ export default function ContactPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSending(true);
-    // Simulate sending
-    await new Promise((r) => setTimeout(r, 1500));
-    setSending(false);
-    setSubmitted(true);
+
+    try {
+      const res = await fetch("/api/inquiry", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (!res.ok) throw new Error("Failed to submit");
+      setSubmitted(true);
+    } catch (err) {
+      console.error("Submit error:", err);
+      alert("Failed to send inquiry. Please try again or email us directly.");
+    } finally {
+      setSending(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -54,7 +66,7 @@ export default function ContactPage() {
             <div className="space-y-4">
               {[
                 { icon: MapPin, label: "Address", value: "Industrial Zone, Hefei City, Anhui, China" },
-                { icon: Phone, label: "Phone", value: "+86 135 2123 4567", href: "tel:+8613521234567" },
+                { icon: Phone, label: "Phone", value: "+86 199 6523 6428", href: "tel:+8619965236428" },
                 { icon: Mail, label: "Email", value: "info@aikeruiclean.com", href: "mailto:info@aikeruiclean.com" },
                 { icon: Clock, label: "Working Hours", value: "Mon–Fri: 8:30 AM – 6:00 PM (CST)" },
               ].map((item) => (
