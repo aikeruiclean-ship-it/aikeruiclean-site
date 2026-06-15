@@ -5,18 +5,19 @@ import Image from "next/image";
 import { ArrowRight, Shield, Truck, HeadphonesIcon, Brush } from "lucide-react";
 import { ProductCard } from "@/components/product-card";
 import { JsonLd } from "@/components/json-ld";
-import { getFeaturedProducts, categories, getCategoryCounts } from "@/lib/products";
+import { getFeaturedProducts, getPartsProducts, categories, getCategoryCounts } from "@/lib/products";
 
 export default function HomePage() {
   const featured = getFeaturedProducts().slice(0, 8);
+  const parts = getPartsProducts().slice(0, 8);
   const counts = getCategoryCounts();
 
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Aikerui Cleaning Technology Co., Ltd.",
-    url: "https://aikeruiclean.com",
-    logo: "https://aikeruiclean.com/wp-content/uploads/2025/11/WALK-BEHIND-K500BT.webp",
+    url: "https://www.aikeruiclean.com",
+    logo: "https://www.aikeruiclean.com/images/WALK-BEHIND-K500BT.webp",
     contactPoint: {
       "@type": "ContactPoint",
       telephone: "+86-199-6523-6428",
@@ -46,9 +47,17 @@ export default function HomePage() {
       <JsonLd data={organizationSchema} />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary-light text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 left-10 w-72 h-72 bg-accent rounded-full blur-3xl" />
-          <div className="absolute bottom-10 right-10 w-96 h-96 bg-white rounded-full blur-3xl" />
+        {/* Background image with dark overlay */}
+        <div className="absolute inset-0">
+          <Image
+            src="/images/aikerui-hero-bg.webp"
+            alt=""
+            fill
+            className="object-cover"
+            sizes="100vw"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/75 to-primary/60" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 py-20 md:py-32">
           <div className="max-w-3xl">
@@ -163,6 +172,39 @@ export default function HomePage() {
               className="inline-flex items-center gap-1 text-primary font-medium text-sm"
             >
               View All Products <ArrowRight size={16} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Parts */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex items-end justify-between mb-8">
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-2">Replacement Parts & Accessories</h2>
+              <p className="text-gray-600">Disc brushes, squeegees, batteries, and more for all Aikerui machines</p>
+            </div>
+            <Link
+              href="/parts"
+              className="hidden sm:flex items-center gap-1 text-primary hover:text-primary-light font-medium text-sm transition-colors"
+            >
+              View All Parts <ArrowRight size={16} />
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {parts.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+
+          <div className="mt-8 text-center sm:hidden">
+            <Link
+              href="/parts"
+              className="inline-flex items-center gap-1 text-primary font-medium text-sm"
+            >
+              View All Parts <ArrowRight size={16} />
             </Link>
           </div>
         </div>
