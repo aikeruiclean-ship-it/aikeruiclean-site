@@ -194,7 +194,30 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ===== DOUBTS FAQ ===== */}
+      {
+      {/* ===== CUSTOMER SUCCESS ===== */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Real Customers, Real Success</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">We have shipped to distributors, rental companies, and facility managers in 50+ countries. Here are some of our recent deliveries.</p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {["28603cdc-32de-4edd-8e0b-ad2698cf6a1a","29f8cd15-b922-4581-8ba2-da456f26b3d3","87ef49e0-96c1-4040-8ce8-bd871b11f397","91627666-cd88-4b8c-8e13-bf0f33bf4bf6","a71ae593-fbc6-4e36-944f-e553c95d2859","d707642a-5e6a-4c6b-a21d-08ab584fa7d5","e406f60f-222d-4333-8bec-3c61fe7bc09b"].map((id) => (
+              <div key={id} className="relative aspect-[4/3] rounded-xl overflow-hidden bg-gray-100 border border-gray-200">
+                <Image src={`/images/testimonials/${id}.jpg`} alt="Aikerui customer delivery photo" fill className="object-cover hover:scale-105 transition-transform duration-300" sizes="200px" />
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-8">
+            <Link href="/contact" className="inline-flex items-center gap-2 text-primary font-semibold hover:text-primary-light transition-colors">
+              Join Our 2000+ Satisfied Customers <ArrowRight size={16} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      /* ===== DOUBTS FAQ ===== */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="text-2xl font-bold text-gray-900 text-center mb-10">Still Have Doubts? Here Are Honest Answers.</h2>
