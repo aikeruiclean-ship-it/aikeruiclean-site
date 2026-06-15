@@ -2,7 +2,9 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { ShoppingCart } from "lucide-react";
 import type { Product } from "@/lib/products";
+import { useCart } from "@/lib/cart-context";
 
 interface ProductCardProps {
   product: Product;
@@ -10,8 +12,9 @@ interface ProductCardProps {
 
 export function ProductCard({ product }: ProductCardProps) {
   const mainImage = product.images[0] || "";
+  const { addItem } = useCart();
+  const canBuy = product.price !== null && product.price !== undefined;
 
-  // Extract key specs for display
   const specLines: string[] = [];
   if (product.specs["Working width"]) specLines.push(`Width: ${product.specs["Working width"]}`);
   if (product.specs["Cleaning path"]) specLines.push(`Path: ${product.specs["Cleaning path"]}`);
@@ -56,6 +59,11 @@ export function ProductCard({ product }: ProductCardProps) {
           </h3>
         </Link>
 
+        {/* Price */}
+        {canBuy && (
+          <p className="text-lg font-bold text-primary mt-1">${product.price!.toFixed(2)}</p>
+        )}
+
         {/* Quick specs */}
         {specLines.length > 0 && (
           <div className="mt-2 space-y-0.5">
@@ -66,12 +74,22 @@ export function ProductCard({ product }: ProductCardProps) {
         )}
 
         <div className="mt-auto pt-4">
-          <Link
-            href={`/products/${product.slug}`}
-            className="block w-full text-center px-4 py-2.5 bg-accent hover:bg-accent-hover text-white text-sm font-semibold rounded-lg transition-colors"
-          >
-            Inquire Now
-          </Link>
+          {canBuy ? (
+            <button
+              onClick={() => addItem(product)}
+              className="flex items-center justify-center gap-2 w-full px-4 py-2.5 bg-accent hover:bg-accent-hover text-white text-sm font-semibold rounded-lg transition-colors"
+            >
+              <ShoppingCart size={16} />
+              Add to Cart — ${product.price!.toFixed(2)}
+            </button>
+          ) : (
+            <Link
+              href={`/products/${product.slug}`}
+              className="block w-full text-center px-4 py-2.5 bg-accent hover:bg-accent-hover text-white text-sm font-semibold rounded-lg transition-colors"
+            >
+              Inquire Now
+            </Link>
+          )}
         </div>
       </div>
     </div>

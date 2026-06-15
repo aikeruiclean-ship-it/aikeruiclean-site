@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import { ChevronRight } from "lucide-react";
 import { InquiryButton } from "@/components/inquiry-button";
 import { JsonLd } from "@/components/json-ld";
@@ -14,6 +15,28 @@ export function generateStaticParams() {
   return getProducts().map((p) => ({ slug: p.slug }));
 }
 
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const product = getProductBySlug(slug);
+  if (!product) return { title: "Product Not Found" };
+
+  const cleanDesc = product.description
+    .replace(/<[^>]*>/g, "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, 160);
+
+  return {
+    title: `${product.name} | ${product.category} | Aikerui Industrial Cleaning Equipment`,
+    description: product.shortDescription || cleanDesc || `Professional ${product.category.toLowerCase()} - ${product.name}. SKU: ${product.sku}. B2B wholesale and OEM available. Contact us for pricing.`,
+    openGraph: {
+      title: `${product.name} | Aikerui`,
+      description: cleanDesc.slice(0, 200),
+      images: product.images[0] ? [{ url: product.images[0], width: 800, height: 800 }] : [],
+    },
+  };
+}
+
 export default async function ProductDetailPage({ params }: Props) {
   const { slug } = await params;
   const product = getProductBySlug(slug);
@@ -25,23 +48,100 @@ export default async function ProductDetailPage({ params }: Props) {
 
   return (
     <div>
+      <JsonLd data={(() => {
+        const productUrl = `https://www.aikeruiclean.com/products/${slug}`;
+        const isMachine = product.category !== "Parts";
+
+        // Parse "1300*800*1060mm" dimensions → depth/width/height
+        let dims: Record<string, unknown> | null = null;
+        const dimRaw = product.specs?.["Dimensions"];
+        if (dimRaw) {
+          const dm = String(dimRaw).match(/^([\d.]+)\s*\*\s*([\d.]+)\s*\*\s*([\d.]+)\s*(mm|cm|m)?$/);
+          if (dm) {
+            const uc = dm[4] === "cm" ? "CMT" : dm[4] === "m" ? "MTR" : "MMT";
+            dims = {
+              depth: { "@type": "QuantitativeValue", value: parseFloat(dm[1]), unitCode: uc },
+              width: { "@type": "QuantitativeValue", value: parseFloat(dm[2]), unitCode: uc },
+              height: { "@type": "QuantitativeValue", value: parseFloat(dm[3]), unitCode: uc },
+            };
+          }
+        }
+
+        // Parse Net weight / Weight / Product Weight
+        let weight: Record<string, unknown> | null = null;
+        const rawWt = product.specs?.["Net weight"] || product.specs?.["Weight"] || product.specs?.["Product Weight"];
+        if (rawWt != null) {
+          const wm = String(rawWt).replace(/\s+/g, "").match(/^([\d.]+)(kg|lbs)?$/i);
+          if (wm) {
+            weight = {
+              "@type": "QuantitativeValue",
+              value: parseFloat(wm[1]),
+              unitCode: wm[2]?.toLowerCase() === "lbs" ? "LBR" : "KGM",
+            };
+          }
+        }
+
+        return {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          name: product.name,
+          description: product.shortDescription || product.description.replace(/<[^>]*>/g, "").slice(0, 300),
+          sku: product.sku,
+          mpn: product.sku,
+          manufacturer: {
+            "@type": "Organization",
+            name: "Aikerui Cleaning Technology Co., Ltd.",
+            url: "https://www.aikeruiclean.com",
+          },
+          brand: { "@type": "Brand", name: "Aikerui" },
+          category: product.category,
+          image: product.images,
+          ...(isMachine && { countryOfOrigin: "CN" }),
+          ...(weight && { weight }),
+          ...(dims && { ...dims }),
+          ...(isMachine && {
+            warranty: {
+              "@type": "WarrantyPromise",
+              durationOfWarranty: "P1Y",
+              warrantyScope: "https://schema.org/PartsAndLaborBasis",
+            },
+          }),
+          offers: {
+            "@type": "Offer",
+            url: productUrl,
+            availability: product.inStock
+              ? "https://schema.org/InStock"
+              : "https://schema.org/OutOfStock",
+            priceCurrency: "USD",
+            ...(product.price != null && { price: product.price }),
+            ...(isMachine && {
+              shippingDetails: {
+                "@type": "OfferShippingDetails",
+                shippingDestination: {
+                  "@type": "DefinedRegion",
+                  addressCountry: "US",
+                },
+              },
+              hasMerchantReturnPolicy: {
+                "@type": "MerchantReturnPolicy",
+                applicableCountry: "US",
+                returnPolicyCategory: "https://schema.org/MerchantReturnFiniteReturnWindow",
+                merchantReturnDays: 30,
+                returnMethod: "https://schema.org.ReturnByMail",
+                returnFees: "https://schema.org.FreeReturn",
+              },
+            }),
+          },
+        };
+      })()} />
       <JsonLd data={{
         "@context": "https://schema.org",
-        "@type": "Product",
-        name: product.name,
-        description: product.shortDescription || product.description.replace(/<[^>]*>/g, "").slice(0, 300),
-        sku: product.sku,
-        brand: { "@type": "Brand", name: "Aikerui" },
-        category: product.category,
-        image: product.images,
-        offers: {
-          "@type": "Offer",
-          availability: product.inStock
-            ? "https://schema.org/InStock"
-            : "https://schema.org/OutOfStock",
-          priceCurrency: "USD",
-          price: product.price ?? undefined,
-        },
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://www.aikeruiclean.com/" },
+          { "@type": "ListItem", position: 2, name: product.category === "Parts" ? "Parts" : "Products", item: `https://www.aikeruiclean.com/${product.category === "Parts" ? "parts" : "products"}` },
+          { "@type": "ListItem", position: 3, name: product.name },
+        ],
       }} />
 
       {/* Breadcrumb */}

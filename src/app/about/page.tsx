@@ -216,7 +216,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      /* ===== DOUBTS FAQ ===== */}
+      /* ===== DOUBTS FAQ ===== */
       <section className="py-16 bg-gray-50">
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="text-2xl font-bold text-gray-900 text-center mb-10">Still Have Doubts? Here Are Honest Answers.</h2>

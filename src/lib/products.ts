@@ -73,6 +73,10 @@ export function getPartsBySubcategory(subcategory: string): Product[] {
   );
 }
 
+export function getPartsProducts(): Product[] {
+  return products.filter((p) => p.published && p.visible && p.category === "Parts");
+}
+
 export function getCategoryCounts(): Record<string, number> {
   const counts: Record<string, number> = {};
   for (const p of products) {
@@ -88,3 +92,26 @@ export function getAllSlugs(): string[] {
     .filter((p) => p.published && p.visible)
     .map((p) => p.slug);
 }
+
+export const categoryMeta: Record<string, { title: string; description: string }> = {
+  "Floor Scrubbers": {
+    title: "Industrial Floor Scrubbers for Sale | Walk-Behind & Ride-On | Aikerui",
+    description: "Professional industrial floor scrubbers for warehouses, factories, and commercial facilities. Walk-behind and ride-on models with CE certification. B2B wholesale and OEM available.",
+  },
+  "Floor Sweepers": {
+    title: "Industrial Floor Sweepers | Walk-Behind & Ride-On | Aikerui",
+    description: "Heavy-duty industrial floor sweepers for warehouses, parking lots, and large facilities. Efficient debris collection with reliable performance. Global shipping.",
+  },
+  "Dust Collection Carts": {
+    title: "Dust Collection Carts & Trolleys for Industrial Cleaning | Aikerui",
+    description: "Industrial dust collection carts and waste collection trolleys for efficient debris management in factories, warehouses, and cleaning operations.",
+  },
+  "Carpet Extractor Washers": {
+    title: "Carpet Extractor Washers & Upholstery Cleaners | Aikerui",
+    description: "Professional carpet extractor washers for deep cleaning carpets, rugs, and upholstery in commercial and industrial settings.",
+  },
+  Parts: {
+    title: "Industrial Floor Scrubber Parts & Accessories | Replacement Parts | Aikerui",
+    description: "Genuine and compatible replacement parts for floor scrubbers and sweepers. Disc brushes, squeegees, filters, batteries, controllers, and OEM components. Global shipping.",
+  },
+};
