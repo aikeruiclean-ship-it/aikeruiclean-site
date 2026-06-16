@@ -129,12 +129,10 @@ export function PartPageContent() {
       {/* Header */}
       <section className="bg-gradient-to-r from-primary to-primary-light text-white">
         <div className="max-w-7xl mx-auto px-4 py-12">
-          <h1 className="text-3xl md:text-4xl font-bold mb-2">Replacement Parts & Accessories</h1>
-          <p className="text-gray-200 text-lg">
-            {activeSub
-              ? `${subEn(activeSub)} — ${filtered.length} products`
-              : `${allParts.length} compatible parts for floor scrubbers & sweepers`}
-          </p>
+          <div className="max-w-2xl">
+            <h1 className="text-3xl md:text-4xl font-bold mb-2">Replacement Parts & Accessories</h1>
+            <p className="text-gray-200 text-lg">Genuine replacement parts manufactured to OEM specs. In stock at our factory warehouse in Hefei, China — ready to ship.</p>
+          </div>
         </div>
       </section>
 
