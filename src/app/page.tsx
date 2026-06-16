@@ -48,7 +48,7 @@ export default function HomePage() {
 
       {/* ===== HERO ===== */}
       <section className="relative h-[80vh] min-h-[500px] max-h-[700px] overflow-hidden">
-        <Image src="/images/factory/_MG_3302.JPG" alt="Aikerui real factory" fill className="object-cover" sizes="100vw" priority />
+        <Image src="/images/factory/_MG_3302.webp" alt="Aikerui real factory" fill className="object-cover" sizes="100vw" priority />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
         <div className="absolute inset-0 flex items-center">
           <div className="max-w-7xl mx-auto px-4 w-full">
@@ -231,7 +231,7 @@ export default function HomePage() {
 
       {/* ===== CTA ===== */}
       <section className="py-16 bg-primary text-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10"><Image src="/images/factory/_MG_3307.JPG" alt="" fill className="object-cover" /></div>
+        <div className="absolute inset-0 opacity-10"><Image src="/images/factory/_MG_3307.webp" alt="" fill className="object-cover" /></div>
         <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
           <h2 className="text-3xl font-bold mb-4">Not Sure Yet? Let Us Show You.</h2>
           <p className="text-lg text-gray-200 mb-8 max-w-2xl mx-auto">Schedule a live video tour of our factory. See the production line, meet the team, and inspect the quality — all from your phone.</p>

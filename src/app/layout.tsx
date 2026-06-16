@@ -63,6 +63,36 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
+      <head>
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX" />
+        <script dangerouslySetInnerHTML={{
+          __html: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-XXXXXXXXXX');`
+        }} />
+        {/* LocalBusiness Schema */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            name: "Aikerui Cleaning Technology Co., Ltd.",
+            image: "https://www.aikeruiclean.com/opengraph-image",
+            telephone: "+86-199-6523-6428",
+            email: "info@aikeruiclean.com",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "No. 058, Yuantan Road, Yuantan Town, Qianshan City",
+              addressLocality: "Anqing",
+              addressRegion: "Anhui",
+              postalCode: "246300",
+              addressCountry: "CN"
+            },
+            url: "https://www.aikeruiclean.com",
+            description: "Professional manufacturer of industrial floor scrubbers, sweepers, and cleaning accessories. Factory-direct pricing, CE certified.",
+            areaServed: { "@type": "Country", name: "Worldwide" },
+            priceRange: "$$"
+          })
+        }} />
+      </head>
       <body className="min-h-full flex flex-col">
         <CartProvider>
           <Header />

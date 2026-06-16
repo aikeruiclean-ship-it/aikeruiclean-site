@@ -5,12 +5,12 @@ import { JsonLd } from "@/components/json-ld";
 import { breadcrumbJsonLd, ABOUT_BREADCRUMB } from "@/lib/breadcrumb";
 
 const factoryImages = [
-  { src: "/images/factory/1.jpg", alt: "Aikerui factory entrance - real manufacturer", label: "Factory Entrance" },
-  { src: "/images/factory/2.jpg", alt: "Aikerui production line", label: "Production Workshop" },
-  { src: "/images/factory/3.jpg", alt: "Aikerui assembly line", label: "Assembly Line" },
-  { src: "/images/factory/5.jpg", alt: "Aikerui quality control", label: "Quality Control" },
-  { src: "/images/factory/_MG_3280.JPG", alt: "Aikerui CNC workshop", label: "CNC Workshop" },
-  { src: "/images/factory/_MG_3285.JPG", alt: "Aikerui warehouse", label: "Warehouse & Inventory" },
+  { src: "/images/factory/1.webp", alt: "Aikerui factory entrance - real manufacturer", label: "Factory Entrance" },
+  { src: "/images/factory/2.webp", alt: "Aikerui production line", label: "Production Workshop" },
+  { src: "/images/factory/3.webp", alt: "Aikerui assembly line", label: "Assembly Line" },
+  { src: "/images/factory/5.webp", alt: "Aikerui quality control", label: "Quality Control" },
+  { src: "/images/factory/_MG_3280.webp", alt: "Aikerui CNC workshop", label: "CNC Workshop" },
+  { src: "/images/factory/_MG_3285.webp", alt: "Aikerui warehouse", label: "Warehouse & Inventory" },
 ];
 
 export default function AboutPage() {
@@ -20,7 +20,7 @@ export default function AboutPage() {
 
       {/* ===== HERO ===== */}
       <section className="relative h-[60vh] min-h-[400px] max-h-[600px] overflow-hidden">
-        <Image src="/images/factory/_MG_3302.JPG" alt="Aikerui real factory" fill className="object-cover" sizes="100vw" priority />
+        <Image src="/images/factory/_MG_3302.webp" alt="Aikerui real factory" fill className="object-cover" sizes="100vw" priority />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
         <div className="absolute inset-0 flex items-center">
           <div className="max-w-7xl mx-auto px-4 w-full">
@@ -216,7 +216,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      /* ===== DOUBTS FAQ ===== */
+      {/* ===== DOUBTS FAQ ===== */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="text-2xl font-bold text-gray-900 text-center mb-10">Still Have Doubts? Here Are Honest Answers.</h2>
@@ -257,7 +257,7 @@ export default function AboutPage() {
 
       {/* ===== FINAL CTA ===== */}
       <section className="py-20 bg-primary text-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10"><Image src="/images/factory/_MG_3307.JPG" alt="" fill className="object-cover" /></div>
+        <div className="absolute inset-0 opacity-10"><Image src="/images/factory/_MG_3307.webp" alt="" fill className="object-cover" /></div>
         <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
           <Video size={48} className="mx-auto mb-6 text-accent" />
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Let Us Prove It — Live Video Tour</h2>
