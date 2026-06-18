@@ -94,8 +94,8 @@ export async function POST(request: NextRequest) {
         method: "POST",
         headers: { "api-key": process.env.BREVO_API_KEY, "Content-Type": "application/json" },
         body: JSON.stringify({
-          sender: { name: "Aikerui Website", email: "noreply@aikeruiclean.com" },
-          to: [{ email: assigneeEmail, name: assigneeName }],
+          sender: { name: "Aikerui Website", email: "info@aikeruiclean.com" },
+          to: [{ email: "aikeruiclean@gmail.com", name: "Aikerui Sales" }],
           // 同时 CC 所有业务员，方便大家看到
           cc: SALES_TEAM.filter(s => s.email !== assigneeEmail).map(s => ({ email: s.email, name: s.name })),
           replyTo: { email },
