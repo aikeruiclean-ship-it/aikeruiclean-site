@@ -37,10 +37,10 @@ export function Header() {
       {/* Top bar */}
       <div className="hidden lg:block bg-primary text-white text-sm">
         <div className="max-w-7xl mx-auto px-4 py-1.5 flex items-center justify-end gap-6">
-          <a href="tel:+8619965236428" className="flex items-center gap-1.5 hover:text-accent transition-colors">
+          <span className="flex items-center gap-1.5">
             <Phone size={14} />
             <span>+86 199 6523 6428</span>
-          </a>
+          </span>
           <a href="mailto:info@aikeruiclean.com" className="flex items-center gap-1.5 hover:text-accent transition-colors">
             <Mail size={14} />
             <span>info@aikeruiclean.com</span>
