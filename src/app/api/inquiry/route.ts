@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-var SCRIPT_URL = "https://script.google.com/macros/s/AKfycby20GTtVktqsVny34_kEJA3wg0LvbwxmZd4JNDqqqYFZgC88L6ZG2j5m-mQoPl0Wv7c/exec";
+var SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwx7qOuIXLQSGv7UbDxyDNXsFcxi9i3TMuICL0FKnRJpLUFoFbsw2mm1zaTbOftOqFC/exec";
 
 export async function POST(request: NextRequest) {
   try {
@@ -15,6 +15,7 @@ export async function POST(request: NextRequest) {
     var result = await fetch(SCRIPT_URL, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
+      redirect: "follow",
       body: JSON.stringify({
         name, email, phone: phone || "", company: company || "",
         country: country || "", product: product || "General Inquiry",
