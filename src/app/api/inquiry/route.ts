@@ -9,9 +9,10 @@ const BREVO_API_URL = "https://api.brevo.com/v3/smtp/email";
 //    有几个写几个
 // ============================================================
 const SALES_TEAM = [
-  { name: "业务员A", email: "sales1@aikeruiclean.com" },
-  { name: "业务员B", email: "sales2@aikeruiclean.com" },
-  // { name: "业务员C", email: "sales3@aikeruiclean.com" },
+  { name: "Jennifer", email: "jennifer@czhclean.com" },
+  { name: "Wisdom", email: "wisdom@czhcelan.com" },
+  { name: "Keke", email: "keke@czhclean.com" },
+  { name: "Liv", email: "liv@czhclean.com" },
 ];
 // ============================================================
 
