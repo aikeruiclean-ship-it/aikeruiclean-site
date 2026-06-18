@@ -1,15 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import nodemailer from "nodemailer";
 
-var transporter = nodemailer.createTransport({
-  host: "smtp.gmail.com",
-  port: 465,
-  secure: true,
-  auth: {
-    user: "aikeruiclean@gmail.com",
-    pass: "akr13855623601",
-  },
-});
+var SCRIPT_URL = "https://script.google.com/macros/s/AKfycby20GTtVktqsVny34_kEJA3wg0LvbwxmZd4JNDqqqYFZgC88L6ZG2j5m-mQoPl0Wv7c/exec";
 
 export async function POST(request: NextRequest) {
   try {
@@ -20,36 +11,17 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Name, email, and message are required." }, { status: 400 });
     }
 
-    var inquiry = {
-      name, email, phone: phone || "", company: company || "",
-      country: country || "", product: product || "General Inquiry",
-      quantity: quantity || "", message,
-      timestamp: new Date().toISOString(),
-    };
-
-    var emailHtml = [
-      '<html><body style="font-family:Arial,sans-serif;padding:20px">',
-      "<h2>New Website Inquiry</h2>",
-      '<table style="border-collapse:collapse;width:100%">',
-      "<tr><td style=\"padding:8px;border:1px solid #ddd;font-weight:bold;background:#f5f5f5\">Name</td><td style=\"padding:8px;border:1px solid #ddd\">" + inquiry.name + "</td></tr>",
-      "<tr><td style=\"padding:8px;border:1px solid #ddd;font-weight:bold;background:#f5f5f5\">Email</td><td style=\"padding:8px;border:1px solid #ddd\">" + inquiry.email + "</td></tr>",
-      "<tr><td style=\"padding:8px;border:1px solid #ddd;font-weight:bold;background:#f5f5f5\">Phone</td><td style=\"padding:8px;border:1px solid #ddd\">" + inquiry.phone + "</td></tr>",
-      "<tr><td style=\"padding:8px;border:1px solid #ddd;font-weight:bold;background:#f5f5f5\">Company</td><td style=\"padding:8px;border:1px solid #ddd\">" + inquiry.company + "</td></tr>",
-      "<tr><td style=\"padding:8px;border:1px solid #ddd;font-weight:bold;background:#f5f5f5\">Country</td><td style=\"padding:8px;border:1px solid #ddd\">" + inquiry.country + "</td></tr>",
-      "<tr><td style=\"padding:8px;border:1px solid #ddd;font-weight:bold;background:#f5f5f5\">Product</td><td style=\"padding:8px;border:1px solid #ddd\">" + inquiry.product + "</td></tr>",
-      "<tr><td style=\"padding:8px;border:1px solid #ddd;font-weight:bold;background:#f5f5f5\">Quantity</td><td style=\"padding:8px;border:1px solid #ddd\">" + inquiry.quantity + "</td></tr>",
-      "<tr><td style=\"padding:8px;border:1px solid #ddd;font-weight:bold;background:#f5f5f5\">Message</td><td style=\"padding:8px;border:1px solid #ddd\">" + inquiry.message + "</td></tr>",
-      "</table>",
-      '<p style="color:#666;font-size:12px">Received: ' + inquiry.timestamp + "</p>",
-      "</body></html>",
-    ].join("\n");
-
-    await transporter.sendMail({
-      from: '"Aikerui Website" <aikeruiclean@gmail.com>',
-      to: "aikeruiclean@gmail.com",
-      replyTo: inquiry.email,
-      subject: "New Inquiry: " + inquiry.product,
-      html: emailHtml,
+    // 转发到 Google Apps Script
+    var result = await fetch(SCRIPT_URL, {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name, email, phone: phone || "", company: company || "",
+        country: country || "", product: product || "General Inquiry",
+        quantity: quantity || "", message,
+        timestamp: new Date().toISOString(),
+      }),
     });
 
     return NextResponse.json({ success: true, message: "Inquiry submitted successfully." });
