@@ -2,9 +2,10 @@ import Link from "next/link";
 import { JsonLd } from "@/components/json-ld";
 import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 
-const PRIVACY_BREADCRUMB = {
-  items: [{ name: "Home", item: "/" }, { name: "Privacy Policy", item: "/privacy" }],
-};
+const PRIVACY_BREADCRUMB = [
+  { name: "Home", item: "/" },
+  { name: "Privacy Policy", item: "/privacy" },
+];
 
 export const metadata = {
   title: "Privacy Policy | Aikerui Cleaning Technology Co., Ltd.",

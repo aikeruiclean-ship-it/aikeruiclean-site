@@ -2,9 +2,10 @@ import Link from "next/link";
 import { JsonLd } from "@/components/json-ld";
 import { breadcrumbJsonLd } from "@/lib/breadcrumb";
 
-const TERMS_BREADCRUMB = {
-  items: [{ name: "Home", item: "/" }, { name: "Terms & Conditions", item: "/terms" }],
-};
+const TERMS_BREADCRUMB = [
+  { name: "Home", item: "/" },
+  { name: "Terms & Conditions", item: "/terms" },
+];
 
 export const metadata = {
   title: "Terms & Conditions | Aikerui Cleaning Technology Co., Ltd.",
