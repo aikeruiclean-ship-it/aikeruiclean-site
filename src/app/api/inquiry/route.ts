@@ -14,7 +14,6 @@ export async function POST(request: NextRequest) {
     // 转发到 Google Apps Script
     var result = await fetch(SCRIPT_URL, {
       method: "POST",
-      mode: "no-cors",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         name, email, phone: phone || "", company: company || "",
