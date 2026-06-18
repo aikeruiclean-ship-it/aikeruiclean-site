@@ -73,7 +73,7 @@ export async function POST(request: NextRequest) {
       const emailHtml = `
         <html><body style="font-family:Arial,sans-serif;padding:20px">
           <h2>🔔 New Lead Assigned to: ${assigneeName}</h2>
-          <p style="color:#666;font-size:13px">This lead was automatically assigned by round-robin.</p>
+          <p style="color:#666;font-size:13px">All leads routed to info@aikeruiclean.com. Google Apps Script handles distribution.</p>
           <table style="border-collapse:collapse;width:100%">
             <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold;background:#f5f5f5">Name</td><td style="padding:8px;border:1px solid #ddd">${inquiry.name}</td></tr>
             <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold;background:#f5f5f5">Email</td><td style="padding:8px;border:1px solid #ddd">${inquiry.email}</td></tr>
