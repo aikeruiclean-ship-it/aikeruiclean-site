@@ -272,7 +272,7 @@ export default function AboutPage() {
               Browse Products
             </Link>
           </div>
-          <p className="text-gray-400 text-sm mt-6">Or call us directly: <a href="tel:+8619965236428" className="text-white underline">+86 199 6523 6428</a></p>
+          <p className="text-gray-400 text-sm mt-6">Or call us directly: <a href="https://wa.me/8619965236428" className="text-white underline">+86 199 6523 6428</a></p>
         </div>
       </section>
     </div>

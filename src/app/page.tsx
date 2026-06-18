@@ -71,7 +71,7 @@ export default function HomePage() {
                 <Link href="/about#verify" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg border border-white/20 transition-colors text-base">
                   Verify Our Factory
                 </Link>
-                <a href="tel:+8619965236428" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg transition-colors text-base">
+                <a href="https://wa.me/8619965236428" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg transition-colors text-base">
                   <Phone size={16} /> Call Factory Direct
                 </a>
               </div>
@@ -131,7 +131,7 @@ export default function HomePage() {
               <Link href="/about#verify" className="inline-flex items-center gap-1.5 px-4 py-2 bg-white border border-gray-300 rounded-lg text-sm text-gray-700 hover:border-primary hover:text-primary transition-colors">
                 <CheckCircle size={14} /> Third-Party Inspection
               </Link>
-              <a href="tel:+8619965236428" className="inline-flex items-center gap-1.5 px-4 py-2 bg-white border border-gray-300 rounded-lg text-sm text-gray-700 hover:border-primary hover:text-primary transition-colors">
+              <a href="https://wa.me/8619965236428" className="inline-flex items-center gap-1.5 px-4 py-2 bg-white border border-gray-300 rounded-lg text-sm text-gray-700 hover:border-primary hover:text-primary transition-colors">
                 <Phone size={14} /> Call Factory Floor
               </a>
             </div>
@@ -258,7 +258,7 @@ export default function HomePage() {
             </Link>
             <Link href="/products" className="inline-flex items-center gap-2 px-8 py-3.5 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg border border-white/20 transition-colors">Browse Products</Link>
           </div>
-          <p className="text-gray-400 text-sm mt-6">Or call us directly: <a href="tel:+8619965236428" className="text-white underline font-semibold">+86 199 6523 6428</a></p>
+          <p className="text-gray-400 text-sm mt-6">Or call us directly: <a href="https://wa.me/8619965236428" className="text-white underline font-semibold">+86 199 6523 6428</a></p>
         </div>
       </section>
     </div>
