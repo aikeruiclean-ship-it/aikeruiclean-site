@@ -80,6 +80,23 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ===== FACTORY GALLERY STRIP ===== */}
+      <section className="bg-gray-50 border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 py-6">
+          <div className="flex items-center justify-between mb-4">
+            <p className="text-sm font-semibold text-gray-900">📸 Real photos from our factory floor</p>
+            <Link href="/about" className="text-xs text-primary hover:text-primary-light font-medium transition-colors">View all →</Link>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            {["/images/factory/1.webp","/images/factory/3.webp","/images/factory/5.webp","/images/factory/_MG_3280.webp"].map((src, i) => (
+              <Link key={i} href="/about" className="relative aspect-[4/3] rounded-lg overflow-hidden border border-gray-200 group">
+                <Image src={src} alt="Aikerui factory" fill className="object-cover group-hover:scale-105 transition-transform duration-300" sizes="(max-width: 768px) 50vw, 25vw" />
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ===== TRUST STRIP ===== */}
       <section className="bg-primary text-white">
         <div className="max-w-7xl mx-auto px-4 py-5">
