@@ -56,10 +56,10 @@ export default function ContactPage() {
               <div className="w-12 h-12 bg-green-600 rounded-xl flex items-center justify-center shrink-0"><Phone size={22} className="text-white" /></div>
               <div><p className="text-xs text-green-700 font-medium uppercase">Call Factory Direct</p><p className="text-sm font-bold text-gray-900 group-hover:text-green-700">+86 199 6523 6428</p></div>
             </a>
-            <a href="mailto:info@aikeruiclean.com" className="flex items-center gap-3 p-4 bg-blue-50 rounded-xl border border-blue-200 hover:bg-blue-100 transition-colors group">
+            <div className="flex items-center gap-3 p-4 bg-blue-50 rounded-xl border border-blue-200">
               <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center shrink-0"><Mail size={22} className="text-white" /></div>
               <div><p className="text-xs text-blue-700 font-medium uppercase">Email Us</p><p className="text-sm font-bold text-gray-900 group-hover:text-blue-700">info@aikeruiclean.com</p></div>
-            </a>
+            </div>
             <Link href="/about#verify" className="flex items-center gap-3 p-4 bg-purple-50 rounded-xl border border-purple-200 hover:bg-purple-100 transition-colors group">
               <div className="w-12 h-12 bg-purple-600 rounded-xl flex items-center justify-center shrink-0"><Video size={22} className="text-white" /></div>
               <div><p className="text-xs text-purple-700 font-medium uppercase">Schedule Video Tour</p><p className="text-sm font-bold text-gray-900 group-hover:text-purple-700">See Our Factory Live →</p></div>
@@ -82,7 +82,7 @@ export default function ContactPage() {
                 { icon: Factory, label: "Factory Address", value: "No. 058, Yuantan Road, Yuantan Town, Qianshan City, Anqing City, Anhui Province, China" },
                 { icon: Phone, label: "Phone (Factory Direct)", value: "+86 199 6523 6428", href: "https://wa.me/8619965236428", highlight: true },
                 { icon: MessageCircle, label: "WhatsApp / WeChat", value: "+86 199 6523 6428", href: "https://wa.me/8619965236428" },
-                { icon: Mail, label: "Email", value: "info@aikeruiclean.com", href: "mailto:info@aikeruiclean.com" },
+                { icon: Mail, label: "Email", value: "info@aikeruiclean.com" },
                 { icon: Clock, label: "Working Hours", value: "Mon–Fri: 8:30 AM – 6:00 PM (CST)" },
               ].map((item) => (
                 <div key={item.label} className="flex items-start gap-3">
