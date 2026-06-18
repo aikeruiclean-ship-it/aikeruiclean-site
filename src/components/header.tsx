@@ -41,10 +41,10 @@ export function Header() {
             <Phone size={14} />
             <span>+86 199 6523 6428</span>
           </span>
-          <a href="mailto:info@aikeruiclean.com" className="flex items-center gap-1.5 hover:text-accent transition-colors">
+          <Link href="/contact" className="flex items-center gap-1.5 hover:text-accent transition-colors">
             <Mail size={14} />
             <span>info@aikeruiclean.com</span>
-          </a>
+          </Link>
         </div>
       </div>
 
