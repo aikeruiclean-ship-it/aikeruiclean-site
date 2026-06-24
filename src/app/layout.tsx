@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     "Aikerui",
     "cleaning equipment manufacturer",
   ],
-  metadataBase: new URL("https://www.aikeruiclean.com"),
+  metadataBase: new URL("https://aikeruiclean.com"),
   alternates: {
     canonical: "/",
   },
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     siteName: "Aikerui",
     locale: "en_US",
     type: "website",
-    url: "https://www.aikeruiclean.com",
+    url: "https://aikeruiclean.com",
     images: [
       {
         url: "/opengraph-image",
@@ -64,18 +64,20 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
       <head>
-        {/* Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX" />
-        <script dangerouslySetInnerHTML={{
-          __html: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-XXXXXXXXXX');`
-        }} />
+        {/* Google Tag Manager — set NEXT_PUBLIC_GTM_ID=GTM-XXXXXXX in your Vercel env */}
+        {process.env.NEXT_PUBLIC_GTM_ID && (
+          <script dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${process.env.NEXT_PUBLIC_GTM_ID}');`
+          }} />
+        )}
+
         {/* LocalBusiness Schema */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             name: "Aikerui Cleaning Technology Co., Ltd.",
-            image: "https://www.aikeruiclean.com/opengraph-image",
+            image: "https://aikeruiclean.com/opengraph-image",
             telephone: "+86-199-6523-6428",
             email: "info@aikeruiclean.com",
             address: {
@@ -86,7 +88,7 @@ export default function RootLayout({
               postalCode: "246300",
               addressCountry: "CN"
             },
-            url: "https://www.aikeruiclean.com",
+            url: "https://aikeruiclean.com",
             description: "Professional manufacturer of industrial floor scrubbers, sweepers, and cleaning accessories. Factory-direct pricing, CE certified.",
             areaServed: { "@type": "Country", name: "Worldwide" },
             priceRange: "$$"
@@ -94,6 +96,17 @@ export default function RootLayout({
         }} />
       </head>
       <body className="min-h-full flex flex-col">
+        {/* GTM noscript fallback */}
+        {process.env.NEXT_PUBLIC_GTM_ID && (
+          <noscript>
+            <iframe
+              src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GTM_ID}`}
+              height="0"
+              width="0"
+              style={{ display: "none", visibility: "hidden" }}
+            />
+          </noscript>
+        )}
         <CartProvider>
           <Header />
           <main className="flex-1">{children}</main>

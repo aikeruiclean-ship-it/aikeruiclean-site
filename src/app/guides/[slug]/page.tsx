@@ -56,12 +56,12 @@ export default async function GuideDetailPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.aikeruiclean.com/" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://aikeruiclean.com/" },
       {
         "@type": "ListItem",
         position: 2,
         name: "Guides",
-        item: "https://www.aikeruiclean.com/guides",
+        item: "https://aikeruiclean.com/guides",
       },
       {
         "@type": "ListItem",

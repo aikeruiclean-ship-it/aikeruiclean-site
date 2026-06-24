@@ -6,6 +6,7 @@ import { ChevronRight } from "lucide-react";
 import { InquiryButton } from "@/components/inquiry-button";
 import { JsonLd } from "@/components/json-ld";
 import { getProductBySlug, getProducts } from "@/lib/products";
+import { sanitizeHtml } from "@/lib/utils";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -49,7 +50,7 @@ export default async function ProductDetailPage({ params }: Props) {
   return (
     <div>
       <JsonLd data={(() => {
-        const productUrl = `https://www.aikeruiclean.com/products/${slug}`;
+        const productUrl = `https://aikeruiclean.com/products/${slug}`;
         const isMachine = product.category !== "Parts";
 
         // Parse "1300*800*1060mm" dimensions → depth/width/height
@@ -91,7 +92,7 @@ export default async function ProductDetailPage({ params }: Props) {
           manufacturer: {
             "@type": "Organization",
             name: "Aikerui Cleaning Technology Co., Ltd.",
-            url: "https://www.aikeruiclean.com",
+            url: "https://aikeruiclean.com",
           },
           brand: { "@type": "Brand", name: "Aikerui" },
           category: product.category,
@@ -138,8 +139,8 @@ export default async function ProductDetailPage({ params }: Props) {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: "https://www.aikeruiclean.com/" },
-          { "@type": "ListItem", position: 2, name: product.category === "Parts" ? "Parts" : "Products", item: `https://www.aikeruiclean.com/${product.category === "Parts" ? "parts" : "products"}` },
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://aikeruiclean.com/" },
+          { "@type": "ListItem", position: 2, name: product.category === "Parts" ? "Parts" : "Products", item: `https://aikeruiclean.com/${product.category === "Parts" ? "parts" : "products"}` },
           { "@type": "ListItem", position: 3, name: product.name },
         ],
       }} />
@@ -248,7 +249,7 @@ export default async function ProductDetailPage({ params }: Props) {
             <div
               className="text-gray-600 leading-relaxed prose prose-sm max-w-none"
               suppressHydrationWarning
-              dangerouslySetInnerHTML={{ __html: product.description }}
+              dangerouslySetInnerHTML={{ __html: sanitizeHtml(product.description) }}
             />
           </section>
         )}

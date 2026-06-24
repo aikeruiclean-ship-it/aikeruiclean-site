@@ -13,6 +13,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/images/",
       },
     ],
-    sitemap: "https://www.aikeruiclean.com/sitemap.xml",
+    sitemap: "https://aikeruiclean.com/sitemap.xml",
   };
 }

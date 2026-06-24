@@ -16,8 +16,8 @@ export default function HomePage() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Aikerui Cleaning Technology Co., Ltd.",
-    url: "https://www.aikeruiclean.com",
-    logo: "https://www.aikeruiclean.com/images/WALK-BEHIND-K500BT.webp",
+    url: "https://aikeruiclean.com",
+    logo: "https://aikeruiclean.com/images/WALK-BEHIND-K500BT.webp",
     contactPoint: {
       "@type": "ContactPoint",
       telephone: "+86-199-6523-6428",

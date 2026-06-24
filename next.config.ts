@@ -11,6 +11,35 @@ const nextConfig: NextConfig = {
     ],
   },
 
+  // Security headers applied to all routes
+  async headers() {
+    return [
+      {
+        source: "/(.*)",
+        headers: [
+          { key: "X-Content-Type-Options", value: "nosniff" },
+          { key: "X-Frame-Options", value: "DENY" },
+          { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+          {
+            key: "Content-Security-Policy",
+            value: [
+              "default-src 'self'",
+              "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://*.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com",
+              "style-src 'self' 'unsafe-inline'",
+              "img-src 'self' data: blob: https://www.aikeruiclean.com https://aikeruiclean.com https://www.googletagmanager.com",
+              "font-src 'self'",
+              "connect-src 'self' https://api.brevo.com https://*.stripe.com https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com",
+              "frame-src 'self' https://*.stripe.com https://www.googletagmanager.com",
+              "object-src 'none'",
+              "base-uri 'self'",
+              "form-action 'self'",
+            ].join("; "),
+          },
+        ],
+      },
+    ];
+  },
+
 
 async redirects() {
   return [
