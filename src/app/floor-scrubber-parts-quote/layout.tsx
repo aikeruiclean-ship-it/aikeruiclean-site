@@ -20,3 +20,11 @@ export const metadata: Metadata = {
   },
   alternates: { canonical: "https://aikeruiclean.com/floor-scrubber-parts-quote" },
 };
+
+export default function PartsQuoteLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return <>{children}</>;
+}
