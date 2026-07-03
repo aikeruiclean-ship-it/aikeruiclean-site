@@ -52,6 +52,34 @@ export default async function GuideDetailPage({ params }: Props) {
       }
     : null;
 
+  // Generate FAQPage schema from guide sections that look like questions or problem descriptions
+  const faqSection = guide.sections.filter(
+    (s) =>
+      s.heading.includes("?") ||
+      s.heading.includes("How ") ||
+      s.heading.includes("Why ") ||
+      s.heading.includes("What ") ||
+      s.heading.includes("Which ") ||
+      s.heading.includes("When ") ||
+      s.heading.includes("Symptom") ||
+      s.heading.includes("Cause")
+  );
+  const faqJsonLd =
+    faqSection.length >= 2
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqSection.slice(0, 10).map((s) => ({
+            "@type": "Question",
+            name: s.heading.replace(/\d+分钟|Step \d+:?\s*/g, "").trim(),
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: (s.content + (s.items ? " " + s.items.join(" ") : "")).slice(0, 500),
+            },
+          })),
+        }
+      : null;
+
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -84,6 +112,12 @@ export default async function GuideDetailPage({ params }: Props) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
+        />
+      )}
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
         />
       )}
 
@@ -182,12 +216,13 @@ export default async function GuideDetailPage({ params }: Props) {
               </h3>
               <div className="flex flex-wrap gap-2">
                 {guide.relatedProducts.map((sku) => (
-                  <span
+                  <Link
                     key={sku}
-                    className="px-3 py-1.5 bg-white text-sm text-gray-700 rounded-lg border border-blue-100"
+                    href={`/products?q=${encodeURIComponent(sku)}`}
+                    className="px-3 py-1.5 bg-white text-sm text-primary rounded-lg border border-blue-100 hover:border-primary transition-colors"
                   >
                     {sku}
-                  </span>
+                  </Link>
                 ))}
               </div>
               <Link
@@ -195,9 +230,34 @@ export default async function GuideDetailPage({ params }: Props) {
                 className="inline-flex items-center gap-2 mt-4 text-sm font-medium text-primary hover:text-primary-light transition-colors"
               >
                 <BookOpen size={14} />
-                Inquire about these products
+                Get a Quote for These Products
               </Link>
             </div>
+
+          {/* CTA Section */}
+          <div className="mt-12 p-8 bg-primary text-white rounded-2xl text-center">
+            <h2 className="text-2xl font-bold mb-3">
+              Ready to Get Factory-Direct Pricing?
+            </h2>
+            <p className="text-gray-200 mb-6 max-w-lg mx-auto">
+              Get a quote within 24 hours. No middlemen — buy direct from the
+              manufacturer and save 30-50%.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link
+                href="/floor-scrubber-parts-quote"
+                className="inline-flex items-center gap-2 px-8 py-3.5 bg-accent hover:bg-accent-hover text-white font-bold rounded-lg transition-colors"
+              >
+                Get Your Quote Now
+              </Link>
+              <a
+                href="https://wa.me/8619965236428"
+                className="inline-flex items-center gap-2 px-8 py-3.5 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-colors"
+              >
+                WhatsApp
+              </a>
+            </div>
+          </div>
           )}
         </div>
       
