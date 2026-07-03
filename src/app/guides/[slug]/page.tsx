@@ -233,6 +233,7 @@ export default async function GuideDetailPage({ params }: Props) {
                 Get a Quote for These Products
               </Link>
             </div>
+          )}
 
           {/* CTA Section */}
           <div className="mt-12 p-8 bg-primary text-white rounded-2xl text-center">
@@ -258,7 +259,6 @@ export default async function GuideDetailPage({ params }: Props) {
               </a>
             </div>
           </div>
-          )}
         </div>
       
 
