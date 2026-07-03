@@ -21,19 +21,75 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const product = getProductBySlug(slug);
   if (!product) return { title: "Product Not Found" };
 
+  // ── Strip HTML for plain-text description ──
   const cleanDesc = product.description
     .replace(/<[^>]*>/g, "")
+    .replace(/&[a-z]+;/g, " ")
     .replace(/\s+/g, " ")
-    .trim()
-    .slice(0, 160);
+    .trim();
+
+  // ── Build a rich, product-specific description ──
+  let description = product.shortDescription || "";
+  if (!description) {
+    const parts: string[] = [];
+    if (product.category) parts.push(product.category);
+    if (product.specs?.["Working width"])
+      parts.push(`Width: ${product.specs["Working width"]}`);
+    if (product.specs?.["Tank Capacity"])
+      parts.push(`Tank: ${product.specs["Tank Capacity"]}`);
+    if (product.specs?.["Battery"])
+      parts.push(`Battery: ${product.specs["Battery"]}`);
+    if (product.specs?.["Productivity"])
+      parts.push(`Capacity: ${product.specs["Productivity"]}`);
+    description = parts.join(". ") + ".";
+  }
+  if (description.length > 160) description = description.slice(0, 157) + "...";
+
+  // ── Build a keyword-rich title ──
+  let title = product.name;
+  // Add key spec if title is short
+  if (title.length < 60 && product.specs?.["Working width"]) {
+    title += ` — ${product.specs["Working width"]} ${product.category || "Cleaning Equipment"}`;
+  }
+  if (!title.includes("Aikerui")) title += " | Aikerui";
+
+  // ── OG description: use short description or clean intro ──
+  const ogDesc =
+    (product.shortDescription && product.shortDescription.length >= 80
+      ? product.shortDescription
+      : cleanDesc.slice(0, 200)) ||
+    `${product.name} — professional ${product.category?.toLowerCase() || "cleaning"} equipment by Aikerui. Factory-direct pricing. CE certified. Global shipping.`;
+
+  // ── OG images: use all available ──
+  const ogImages = product.images.slice(0, 6).map((url) => ({
+    url,
+    width: 800,
+    height: 800,
+    alt: product.name,
+  }));
 
   return {
-    title: `${product.name} | ${product.category} | Aikerui Industrial Cleaning Equipment`,
-    description: product.shortDescription || cleanDesc || `Professional ${product.category.toLowerCase()} - ${product.name}. SKU: ${product.sku}. B2B wholesale and OEM available. Contact us for pricing.`,
+    title,
+    description,
+    keywords: [
+      product.name,
+      product.category,
+      product.sku,
+      ...product.tags.slice(0, 5),
+    ].filter(Boolean),
     openGraph: {
       title: `${product.name} | Aikerui`,
-      description: cleanDesc.slice(0, 200),
-      images: product.images[0] ? [{ url: product.images[0], width: 800, height: 800 }] : [],
+      description: ogDesc.slice(0, 200),
+      images: ogImages.length > 0 ? ogImages : [],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: product.name,
+      description: ogDesc.slice(0, 200),
+      images: product.images[0] ? [product.images[0]] : [],
+    },
+    alternates: {
+      canonical: `https://aikeruiclean.com/products/${slug}`,
     },
   };
 }
