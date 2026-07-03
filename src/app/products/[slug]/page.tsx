@@ -200,6 +200,16 @@ export default async function ProductDetailPage({ params }: Props) {
           { "@type": "ListItem", position: 3, name: product.name },
         ],
       }} />
+      <JsonLd data={(() => {
+        const faqs: { q: string; a: string }[] = [];
+        const s = product.specs;
+        if (s["Working width"]) faqs.push({ q: `What is the cleaning width of ${product.name}?`, a: `The ${product.name} has a working width of ${s["Working width"]}.` });
+        if (s["Productivity"]) faqs.push({ q: `How much area can ${product.name} clean per hour?`, a: `The ${product.name} can clean up to ${s["Productivity"]}.` });
+        if (s["Battery"]) faqs.push({ q: `What battery does ${product.name} use?`, a: `The ${product.name} uses ${s["Battery"]}.` });
+        if (s["Tank Capacity"] || s["Tank of fresh"]) faqs.push({ q: `What is the tank capacity?`, a: `Tank capacity: ${s["Tank Capacity"] || s["Tank of fresh"]}.` });
+        if (s["Dimensions"]) faqs.push({ q: `What are the dimensions?`, a: `Dimensions: ${s["Dimensions"]}.` });
+        return faqs.length >= 2 ? { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map(f => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) } : {};
+      })()} />
 
       {/* Breadcrumb */}
       <div className="bg-gray-50 border-b border-gray-200">
@@ -336,6 +346,25 @@ export default async function ProductDetailPage({ params }: Props) {
             Contact us for pricing, specifications, shipping quotes, and customization options.
           </p>
           <InquiryButton productName={product.name} />
+        </section>
+
+        {/* Related Guides */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Related Guides</h2>
+          <div className="flex flex-wrap gap-3">
+            <Link href="/guides" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">
+              📖 All Buying Guides
+            </Link>
+            <Link href="/guides/walk-behind-vs-ride-on-scrubber" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">
+              Walk-Behind vs Ride-On
+            </Link>
+            <Link href="/guides/disc-brush-vs-roller-brush-scrubber" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">
+              Disc vs Roller Brush
+            </Link>
+            <Link href="/guides/lead-acid-vs-lithium-battery-scrubber" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">
+              Lead-Acid vs Lithium Battery
+            </Link>
+          </div>
         </section>
 
         {/* Related products */}
