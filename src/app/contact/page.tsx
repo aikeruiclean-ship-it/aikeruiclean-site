@@ -110,6 +110,19 @@ export default function ContactPage() {
               <p className="text-xs font-semibold text-amber-800 uppercase">Want to Verify Us?</p>
               <p className="text-sm text-amber-700 mt-1">We welcome third-party inspections and live video tours. <Link href="/about#verify" className="underline font-medium">Learn how →</Link></p>
             </div>
+
+            {/* Payment Methods */}
+            <div className="p-4 bg-gray-50 rounded-xl border border-gray-200">
+              <p className="text-xs font-semibold text-gray-800 uppercase">Payment Methods We Accept</p>
+              <div className="grid grid-cols-2 gap-2 mt-2 text-sm text-gray-700">
+                <span>🏦 T/T (Wire Transfer)</span>
+                <span>💳 PayPal</span>
+                <span>📄 L/C (Letter of Credit)</span>
+                <span>🛡️ Trade Assurance</span>
+                <span>💰 Western Union</span>
+                <span>📦 30/70 Payment Terms</span>
+              </div>
+            </div>
           </div>
 
           {/* Right: Form */}
