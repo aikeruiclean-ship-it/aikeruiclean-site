@@ -11,13 +11,13 @@ import {
 import { JsonLd } from "@/components/json-ld";
 
 const PART_CATEGORIES = [
-  { value: "Disc Brush", label: "Disc Brush / 盘刷", icon: Disc, count: 98 },
-  { value: "Squeegee Rubber", label: "Squeegee Rubber / 胶条", icon: Droplets, count: 33 },
-  { value: "Pad Holder", label: "Pad Holder / 针盘", icon: Circle, count: 28 },
-  { value: "Roller Brush", label: "Roller Brush / 滚刷", icon: Disc, count: 16 },
-  { value: "Side Brush", label: "Side Brush / 边刷", icon: Disc, count: 15 },
-  { value: "Clutch Plate", label: "Clutch Plate / 离合器", icon: Wrench, count: 22 },
-  { value: "Hose", label: "Hose / 水管", icon: Droplets, count: 21 },
+  { value: "Disc Brush", label: "Disc Brush", icon: Disc, count: 98 },
+  { value: "Squeegee Rubber", label: "Squeegee Rubber", icon: Droplets, count: 33 },
+  { value: "Pad Holder", label: "Pad Holder", icon: Circle, count: 28 },
+  { value: "Roller Brush", label: "Roller Brush", icon: Disc, count: 16 },
+  { value: "Side Brush", label: "Side Brush", icon: Disc, count: 15 },
+  { value: "Clutch Plate", label: "Clutch Plate", icon: Wrench, count: 22 },
+  { value: "Hose", label: "Hose", icon: Droplets, count: 21 },
   { value: "Other", label: "Other Part", icon: Wrench, count: 127 },
 ];
 
