@@ -1,6 +1,13 @@
 "use client";
 
-import { createContext, useContext, useState, useCallback, type ReactNode } from "react";
+import {
+  createContext,
+  useContext,
+  useState,
+  useCallback,
+  createElement,
+  type ReactNode,
+} from "react";
 import type { Product } from "@/lib/products";
 
 interface CartItem {
@@ -45,12 +52,10 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   const totalItems = items.reduce((sum, item) => sum + item.quantity, 0);
 
-  return (
-    <CartContext.Provider
-      value={{ items, totalItems, addItem, removeItem, clearCart }}
-    >
-      {children}
-    </CartContext.Provider>
+  return createElement(
+    CartContext.Provider,
+    { value: { items, totalItems, addItem, removeItem, clearCart } },
+    children
   );
 }
 
