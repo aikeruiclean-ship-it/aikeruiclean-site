@@ -921,4 +921,263 @@ export const guideCategories = [
     ],
     relatedProducts: ["K500BT", "A660T", "K660", "A650T"],
   },
+  // ── Parts Guide ──
+  {
+    slug: "floor-scrubber-parts-guide-types-lifespan-cost",
+    title: "Floor Scrubber Parts Guide: Types, Lifespan & Replacement Cost (2026)",
+    description:
+      "Complete guide to floor scrubber replacement parts. Disc brushes, squeegee rubber, pad holders, clutch plates — typical lifespan, when to replace, and OEM vs aftermarket cost comparison. 30-50% savings with factory-direct sourcing.",
+    category: "maintenance",
+    readTime: "9 min",
+    difficulty: "beginner",
+    published: "2026-07-04",
+    sections: [
+      {
+        heading: "Why Understanding Your Scrubber Parts Matters",
+        content: "Floor scrubbers are mechanical workhorses — and like any machine, wear parts need regular replacement. Knowing which parts wear out, how long they typically last, and what they cost empowers you to budget accurately and avoid emergency breakdowns. Factory-direct sourcing can cut your annual parts cost by 30-50% without sacrificing quality.",
+      },
+      {
+        heading: "Complete Parts Overview: Every Replaceable Component on a Floor Scrubber",
+        content: "A typical walk-behind or ride-on floor scrubber has 15-20 regularly replaceable wear components. Here is every part organized by function:",
+      },
+      {
+        heading: "1. Disc Brushes (Main Scrubbing Brush)",
+        content: "The disc brush is the primary scrubbing component. It's a flat circular brush that spins against the floor at 150-300 RPM, agitating soil and suspending it in the cleaning solution. Disc brushes come in several bristle materials for different floor types and soil levels.",
+        items: [
+          "Typical lifespan: 3-6 months with daily use, longer on smooth floors, shorter on rough concrete",
+          "Replacement sign: Bristles worn to less than 10mm length, uneven wear, or visible bald spots",
+          "OEM dealer price: $120-180 per disc brush",
+          "Factory-direct price: $45-75 per disc brush — saving ~50%",
+          "Tennant, Nilfisk, Karcher replacement: Factory-direct brushes use same nylon/PPL materials at 40-60% less",
+        ],
+      },
+      {
+        heading: "2. Squeegee Rubber Blades (Front & Rear)",
+        content: "The squeegee system uses two rubber blades — a front blade for pre-squeegee and a rear blade for final water pickup. These blades are the most frequently replaced consumable after brushes. A worn squeegee leaves puddles and streaks.",
+        items: [
+          "Typical lifespan: 2-4 months — blades can be rotated once before full replacement",
+          "Replacement sign: Rounded or rippled edge (should be square), visible cracks, water left on floor after cleaning",
+          "OEM dealer price: $80-140 per set (front + rear)",
+          "Factory-direct price: $30-55 per set — saving ~55%",
+          "Material: Natural rubber, polyurethane, or oil-resistant Linatex for industrial use",
+        ],
+      },
+      {
+        heading: "3. Pad Holders / Pad Drivers",
+        content: "The pad holder (also called pad driver) attaches to the brush deck and holds the cleaning pad or brush. Over time, the gripping surface wears down and the pad slips during operation. The centering ring on the pad holder can also bend from impact.",
+        items: [
+          "Typical lifespan: 6-12 months",
+          "Replacement sign: Pad slips or wobbles during operation, visible wear on gripping surface, bent centering ring",
+          "OEM dealer price: $90-150 per pad holder",
+          "Factory-direct price: $35-65 — saving ~55%",
+          "Sizes: 13-inch to 20-inch — measure your existing holder before ordering",
+        ],
+      },
+      {
+        heading: "4. Clutch Plates",
+        content: "The clutch plate connects the drive motor to the brush or pad holder. It transmits rotational force and also acts as a safety mechanism — if the brush jams, the clutch plate absorbs the shock rather than damaging the motor.",
+        items: [
+          "Typical lifespan: 12-18 months, longer if the machine rarely hits obstacles",
+          "Replacement sign: Brush stops spinning but motor runs, grinding noise when brush is engaged, visible cracks in the plate",
+          "OEM dealer price: $40-80 per clutch plate",
+          "Factory-direct price: $15-30 — saving ~60%",
+        ],
+      },
+      {
+        heading: "5. Roller Brushes (Cylindrical Scrubbers)",
+        content: "Roller brushes (also called cylindrical brushes) are used on roller-type scrubbers instead of disc brushes. The horizontal roller spins vertically, working bristles into grout lines and textured surfaces. Roller brushes pick up small debris while scrubbing.",
+        items: [
+          "Typical lifespan: 4-8 months",
+          "Replacement sign: Bristles worn unevenly, reduced debris pickup, visible bald patches",
+          "OEM dealer price: $150-400 per roller brush",
+          "Factory-direct price: $80-200 — saving ~50%",
+          "Note: Roller brushes are more expensive than disc brushes but last longer on uneven surfaces",
+        ],
+      },
+      {
+        heading: "6. Side Brushes (Sweeper Models)",
+        content: "Side brushes are found on sweeper and sweeper-scrubber combination machines. They rotate to sweep debris from edges and corners into the main debris path. These are often overlooked but critical for edge-to-edge cleaning.",
+        items: [
+          "Typical lifespan: 2-4 months with daily outdoor use",
+          "Replacement sign: Bristles worn to less than 50% of original length, uneven wear, bristles breaking off",
+          "OEM dealer price: $60-110 per side brush",
+          "Factory-direct price: $20-45 — saving ~55%",
+        ],
+      },
+      {
+        heading: "7. Hoses (Solution, Recovery, Drain)",
+        content: "Floor scrubbers have multiple hoses — solution delivery hose from clean water tank to brush deck, recovery hose from squeegee to recovery tank, and drain hoses for emptying tanks. Hoses crack with age and chemical exposure.",
+        items: [
+          "Typical lifespan: 1-3 years depending on chemical exposure",
+          "Replacement sign: Visible cracks, leaks during operation, hose appears brittle or discolored",
+          "OEM dealer price: $50-90 per hose assembly",
+          "Factory-direct price: $18-35 — saving ~60%",
+        ],
+      },
+      {
+        heading: "8. Vacuum Motor & Filter",
+        content: "The vacuum motor creates suction to pull dirty water through the squeegee into the recovery tank. The filter prevents debris from entering the motor. A failing vacuum motor results in poor water pickup even with new squeegee blades.",
+        items: [
+          "Typical lifespan: 2-4 years for the motor, 3-6 months for the filter",
+          "Replacement sign: Weak suction despite clean hoses and new squeegee, unusual motor noise, tripping circuit breaker",
+          "OEM dealer price: $300-600 for motor, $30-60 for filter",
+          "Factory-direct price: $150-350 for motor, $15-30 for filter",
+        ],
+      },
+      {
+        heading: "9. Batteries (Lead-Acid vs Lithium)",
+        content: "Battery replacement is the single largest maintenance expense over a scrubber's lifetime. The choice between lead-acid and lithium significantly impacts total cost of ownership. See our dedicated battery comparison guide for an in-depth analysis.",
+        items: [
+          "Lead-acid lifespan: 1-3 years (300-500 cycles), replacement cost $400-800 per pack",
+          "Lithium lifespan: 3-5 years (1,500-2,000 cycles), replacement cost $1,200-2,400 per pack",
+          "Factory-direct lithium: $1,000-1,800 — saving 20-30% vs dealer pricing",
+          "Read: /guides/lead-acid-vs-lithium-battery-scrubber for detailed cost breakdown",
+        ],
+      },
+      {
+        heading: "Parts Lifespan & Replacement Schedule — Quick Reference Table",
+        content: "Summary of all consumable parts with replacement frequency:",
+        items: [
+          "Disc Brush: Every 3-6 months | Cost: $45-75 fd | Warning sign: Bristles < 10mm",
+          "Squeegee Rubber: Every 2-4 months | Cost: $30-55 fd | Warning sign: Rounded edge, streaks",
+          "Pad Holder: Every 6-12 months | Cost: $35-65 fd | Warning sign: Pad slipping, wobbling",
+          "Clutch Plate: Every 12-18 months | Cost: $15-30 fd | Warning sign: Grinding noise, brush stops",
+          "Roller Brush: Every 4-8 months | Cost: $80-200 fd | Warning sign: Bald spots, poor debris pickup",
+          "Side Brush: Every 2-4 months | Cost: $20-45 fd | Warning sign: 50% bristle loss",
+          "Hoses: Every 1-3 years | Cost: $18-35 fd | Warning sign: Cracks, leaks",
+          "Vacuum Filter: Every 3-6 months | Cost: $15-30 fd | Warning sign: Reduced suction",
+        ],
+      },
+      {
+        heading: "OEM vs Aftermarket Parts: What's the Real Difference?",
+        content: "The biggest myth in the floor cleaning industry is that you must use OEM parts for reliable performance. In reality, most 'OEM' parts are manufactured by the same factories that produce aftermarket alternatives. The difference is the brand label and the dealer markup. Key facts:",
+        items: [
+          "Most OEMs don't manufacture their own brushes — they source from specialized brush factories",
+          "Aftermarket brushes use identical materials: nylon 6.6, PPL, or abrasive-infused bristles",
+          "Squeegee rubber comes from the same rubber compound suppliers (natural or polyurethane)",
+          "The only functional difference: OEM parts cost 50-100% more because of multi-tier distribution",
+          "Quality check: Always request material specification sheets and batch test reports",
+        ],
+      },
+      {
+        heading: "How to Identify Your Part Before Ordering",
+        content: "Getting the right replacement part is critical. Follow this process to ensure accuracy:",
+        items: [
+          "Find your OEM part number from the machine manual or existing part — it may be stamped on the part itself",
+          "Measure the part: brush diameter, center hole size, bristle length; squeegee blade length and mounting type",
+          "Note your machine brand and model (e.g., Tennant T7, Karcher BD 50/50)",
+          "Take a photo of the existing part — this helps us confirm compatibility before shipping",
+          "Contact us with this information — we'll match your part within 24 hours",
+        ],
+      },
+      {
+        heading: "Annual Parts Cost Comparison: Dealer vs Factory Direct",
+        content: "For a facility running one ride-on scrubber 5 days per week, here is the typical annual parts spend:",
+        items: [
+          "Dealer path: Disc brushes (4/yr × $150) + Squeegees (6/yr × $110) + Filters (2/yr × $45) + Misc = $1,350/year",
+          "Factory-direct: Disc brushes (4/yr × $60) + Squeegees (6/yr × $42) + Filters (2/yr × $22) + Misc = $680/year",
+          "Annual savings: ~$670 per machine — multiply by your fleet size",
+          "10-machine fleet: $6,700/year saved with factory-direct parts",
+        ],
+      },
+      {
+        heading: "Ready to Cut Your Parts Costs?",
+        content: "Browse our full catalog of 360+ replacement parts or send us your part number for a same-day quote. All parts manufactured to OEM specifications in our ISO 9001 certified factory. Compatible with Tennant, Nilfisk, Karcher, Comac, Viper, Hako, Fimap, and 15+ other brands.",
+      },
+    ],
+    relatedProducts: [],
+  },
+  // ── Industrial Floor Scrubber Complete Guide ──
+  {
+    slug: "industrial-floor-scrubber-complete-guide",
+    title: "Industrial Floor Scrubber: The Complete 2026 Buyer's Guide",
+    description:
+      "Everything you need to know about industrial floor scrubbers. Compare walk-behind vs ride-on, disc vs roller brush, lead-acid vs lithium. Includes selection checklist, ROI calculator, and industry-specific recommendations.",
+    category: "buying-guide",
+    readTime: "12 min",
+    difficulty: "beginner",
+    published: "2026-07-04",
+    sections: [
+      {
+        heading: "What Makes a Floor Scrubber 'Industrial'?",
+        content: "An industrial floor scrubber is designed for heavy-duty continuous use in demanding environments — factories, warehouses, and manufacturing plants. Unlike commercial scrubbers for retail or office use, industrial machines feature reinforced steel frames, larger tanks, higher brush pressure, and longer runtime. If your facility exceeds 20,000 sq ft or operates multiple shifts, you need an industrial-grade machine.",
+      },
+      {
+        heading: "Decision 1: Walk-Behind vs Ride-On",
+        content: "This is the most important choice. Walk-behind scrubbers are compact, maneuverable, and cost $3,000-12,000 — ideal for facilities under 20,000 sq ft. Ride-on scrubbers cost $9,000-35,000 but clean 2-3x more area per hour. For any facility over 30,000 sq ft, a ride-on machine pays for itself in labor savings within 12-18 months.",
+        items: [
+          "Walk-behind: Best for <20,000 sq ft, narrow aisles, multi-floor, lower budget",
+          "Ride-on: Best for >30,000 sq ft, open floor plans, daily 4+ hour cleaning",
+          "Full comparison: /guides/walk-behind-vs-ride-on-scrubber",
+        ],
+      },
+      {
+        heading: "Decision 2: Disc Brush vs Roller Brush",
+        content: "Disc brushes scrub with flat rotation — best for smooth floors like sealed concrete and epoxy. Roller brushes spin vertically and penetrate grout lines — best for textured factory floors. Disc brushes cost $45-75 to replace; roller brushes cost $80-200 but last longer on rough surfaces.",
+        items: [
+          "Disc brush: Best for smooth floors — supermarkets, hospitals, sealed concrete",
+          "Roller brush: Best for textured floors — factories, tile with grout, safety flooring",
+          "Full comparison: /guides/disc-brush-vs-roller-brush-scrubber",
+        ],
+      },
+      {
+        heading: "Decision 3: Battery — Lead-Acid vs Lithium",
+        content: "Lead-acid costs $400-800 upfront but needs replacement every 1-3 years with monthly maintenance. Lithium costs $1,200-2,400 upfront but lasts 3-5 years with zero maintenance and charges 3x faster. For single-shift operations, lead-acid works. For multi-shift facilities, lithium's fast charging pays for itself by year 3.",
+        items: [
+          "Lead-acid: Lower upfront, higher maintenance, 8-10hr charge, no opportunity charging",
+          "Lithium: Higher upfront, zero maintenance, 2-3hr charge, opportunity charging",
+          "Full comparison: /guides/lead-acid-vs-lithium-battery-scrubber",
+        ],
+      },
+      {
+        heading: "Decision 4: Cleaning Width and Tank Capacity",
+        content: "Match width to your aisle layout. Match tank to your cleaning schedule.",
+        items: [
+          "17-20 inch: Small shops, narrow aisles, ~15,000 sq ft/hr",
+          "20-28 inch: Medium warehouses, schools, ~30,000 sq ft/hr",
+          "28-34 inch: Large warehouses, factories, ~50,000 sq ft/hr",
+          "34-50 inch: Logistics centers, airports, ~80,000+ sq ft/hr",
+        ],
+      },
+      {
+        heading: "Decision 5: Total Cost of Ownership vs Sticker Price",
+        content: "A $6,000 machine with $2,000/year parts costs more over 5 years than a $10,000 machine with $500/year maintenance. Calculate TCO: purchase price + (annual parts × 5) + battery replacements.",
+        items: [
+          "Entry-level walk-behind: $3,000-5,000 purchase, ~$500-800/yr maintenance",
+          "Mid-range walk-behind: $5,000-8,000 purchase, ~$600-1,000/yr maintenance",
+          "Compact ride-on: $9,000-15,000 purchase, ~$800-1,500/yr maintenance",
+          "Full-size ride-on: $15,000-35,000 purchase, ~$1,000-2,000/yr maintenance",
+          "Factory-direct: subtract 30-40% from all above ranges",
+        ],
+      },
+      {
+        heading: "Industry-Specific Recommendations",
+        content: "Different industries have different cleaning requirements:",
+        items: [
+          "Warehouse: Ride-on disc scrubber, 28-34 inch, sealed concrete, lithium battery",
+          "Manufacturing: Ride-on roller or abrasive disc brush, 28-42 inch, oil-resistant squeegee",
+          "Food Processing: Stainless steel components, wash-down capable, food-grade materials",
+          "Supermarket: Compact walk-behind, <65dB quiet, fast-drying for daytime use",
+          "Hospital: Walk-behind with HEPA, ultra-quiet, chemical-resistant",
+          "Parking Garage: Sweeper-scrubber combo, heavy debris, outdoor-capable",
+        ],
+      },
+      {
+        heading: "Red Flags When Buying Used",
+        content: "Check these deal-breakers before buying any used scrubber:",
+        items: [
+          "Hour meter: 3,000+ hours on ride-on or 1,500+ on walk-behind = expect major repairs",
+          "Battery age: 2+ years lead-acid or 4+ years lithium = budget replacement",
+          "Bent squeegee deck: Machine was driven into obstacles — check frame alignment",
+          "Rust in recovery tank: Machine stored wet — vacuum motor likely compromised",
+          "Missing service records: Assume the worst",
+        ],
+      },
+      {
+        heading: "Ready to Choose?",
+        content: "Browse our factory-direct walk-behind and ride-on scrubbers. Send us your facility details for a personalized recommendation and quote within 24 hours.",
+      },
+    ],
+    relatedProducts: ["K500BT", "A650T", "A660T", "K660"],
+  },
 ];
