@@ -29,6 +29,15 @@ export default function WarehouseSolutionPage() {
           "Complete guide to choosing industrial floor cleaning machines for warehouses. Walk-behind and ride-on scrubbers, sweepers, and combination machines.",
         author: { "@type": "Organization", name: "Aikerui Cleaning Technology Co., Ltd." },
       }} />
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: [
+          { "@type": "Question", name: "What is the best floor scrubber for a warehouse?", acceptedAnswer: { "@type": "Answer", text: "Under 20,000 sq ft: walk-behind scrubber (17-28 inch). Over 30,000 sq ft: ride-on scrubber (28-50 inch) for 2-3x higher productivity." } },
+          { "@type": "Question", name: "How often should warehouse floors be cleaned?", acceptedAnswer: { "@type": "Answer", text: "High-traffic aisles: daily. Low-traffic zones: 2-3x/week. Loading docks: daily due to forklift traffic and outdoor debris." } },
+          { "@type": "Question", name: "What brush type works best on concrete warehouse floors?", acceptedAnswer: { "@type": "Answer", text: "Unsealed concrete: medium-stiff nylon or PPL brush. Sealed concrete/epoxy: soft nylon or white pad. Heavy soil requires 60-100kg brush pressure." } },
+        ],
+      }} />
 
       {/* Hero */}
       <section className="bg-gradient-to-r from-primary to-primary-light text-white py-16">
@@ -158,6 +167,17 @@ export default function WarehouseSolutionPage() {
                 ))}
               </tbody>
             </table>
+          </div>
+        </section>
+
+        {/* Related Guides */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Related Guides</h2>
+          <div className="flex flex-wrap gap-3">
+            <Link href="/guides/industrial-floor-scrubber-complete-guide" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Industrial Floor Scrubber Guide</Link>
+            <Link href="/guides/walk-behind-vs-ride-on-scrubber" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Walk-Behind vs Ride-On</Link>
+            <Link href="/guides/how-much-does-floor-scrubber-cost" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Floor Scrubber Cost Guide</Link>
+            <Link href="/guides/warehouse-cleaning-equipment-complete-guide" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Warehouse Equipment Setup</Link>
           </div>
         </section>
 

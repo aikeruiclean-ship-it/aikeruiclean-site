@@ -27,6 +27,15 @@ export default function SupermarketSolutionPage() {
         description: "Quiet, compact floor cleaning machines designed for supermarkets, grocery stores, and retail environments.",
         author: { "@type": "Organization", name: "Aikerui Cleaning Technology Co., Ltd." },
       }} />
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: [
+          { "@type": "Question", name: "Can floor scrubbers be used during supermarket business hours?", acceptedAnswer: { "@type": "Answer", text: "Yes. Ultra-quiet scrubbers operating at 58-62dB can clean during business hours without disturbing customers. Fast-drying squeegees leave floors walkable immediately, eliminating wet floor hazards." } },
+          { "@type": "Question", name: "What is the best floor scrubber for a grocery store?", acceptedAnswer: { "@type": "Answer", text: "A compact 17-20 inch walk-behind scrubber with quiet operation and fast-drying capability. Compact size navigates narrow supermarket aisles and checkout areas." } },
+          { "@type": "Question", name: "How often should supermarket floors be cleaned?", acceptedAnswer: { "@type": "Answer", text: "Entrance and lobby: multiple times daily. Main aisles: daily. Produce section: daily with spot cleaning. Checkout area: daily. Backroom: 2-3x per week." } },
+        ],
+      }} />
 
       <section className="bg-gradient-to-r from-primary to-primary-light text-white py-16">
         <div className="max-w-7xl mx-auto px-4">
@@ -154,6 +163,17 @@ export default function SupermarketSolutionPage() {
                 ))}
               </tbody>
             </table>
+          </div>
+        </section>
+
+        {/* Related Guides */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Related Guides</h2>
+          <div className="flex flex-wrap gap-3">
+            <Link href="/guides/best-floor-scrubber-small-business" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Best Scrubber for Small Business</Link>
+            <Link href="/guides/walk-behind-vs-ride-on-scrubber" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Walk-Behind vs Ride-On</Link>
+            <Link href="/guides/how-much-does-floor-scrubber-cost" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Floor Scrubber Cost Guide</Link>
+            <Link href="/guides/floor-scrubber-maintenance-checklist" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Maintenance Checklist</Link>
           </div>
         </section>
 

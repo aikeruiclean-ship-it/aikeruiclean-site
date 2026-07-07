@@ -27,6 +27,15 @@ export default function FactorySolutionPage() {
         description: "Heavy-duty industrial floor cleaning machines for factories and manufacturing plants.",
         author: { "@type": "Organization", name: "Aikerui Cleaning Technology Co., Ltd." },
       }} />
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: [
+          { "@type": "Question", name: "What is the best floor scrubber for a factory?", acceptedAnswer: { "@type": "Answer", text: "For factories over 30,000 sq ft, a ride-on scrubber with heavy-duty brush pressure (60-100kg) and oil-resistant squeegee is recommended. For smaller production areas, a walk-behind scrubber with degreasing capability works well." } },
+          { "@type": "Question", name: "How do you clean oil and grease off factory floors?", acceptedAnswer: { "@type": "Answer", text: "Use a scrubber with degreasing injection system and oil-resistant squeegee rubber. High brush pressure (80-100kg) cuts through oil deposits. For extreme grease, pre-treat with industrial degreaser before scrubbing." } },
+          { "@type": "Question", name: "Can floor scrubbers handle metal shavings on factory floors?", acceptedAnswer: { "@type": "Answer", text: "Yes. Use a sweeper-scrubber combination machine that sweeps metal debris first, then scrubs. For heavy metal debris, a dedicated industrial sweeper should run before the scrubber to prevent brush damage." } },
+        ],
+      }} />
 
       <section className="bg-gradient-to-r from-primary to-primary-light text-white py-16">
         <div className="max-w-7xl mx-auto px-4">
@@ -127,6 +136,17 @@ export default function FactorySolutionPage() {
                 <p className="text-sm text-gray-600">{item.need}</p>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* Related Guides */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Related Guides</h2>
+          <div className="flex flex-wrap gap-3">
+            <Link href="/guides/industrial-floor-scrubber-complete-guide" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Industrial Floor Scrubber Guide</Link>
+            <Link href="/guides/disc-brush-vs-roller-brush-scrubber" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Disc vs Roller Brush</Link>
+            <Link href="/guides/floor-scrubber-maintenance-checklist" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Maintenance Checklist</Link>
+            <Link href="/guides/floor-scrubber-food-processing-plants" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Food Processing Guide</Link>
           </div>
         </section>
 
