@@ -1180,4 +1180,219 @@ export const guideCategories = [
     ],
     relatedProducts: ["K500BT", "A650T", "A660T", "K660"],
   },
+  // ── Floor Scrubber Cost Guide ──
+  {
+    slug: "how-much-does-floor-scrubber-cost",
+    title: "How Much Does a Floor Scrubber Cost? Complete 2026 Price Breakdown",
+    description:
+      "Real 2026 floor scrubber prices: walk-behind $3,000-12,000, ride-on $9,000-35,000. TCO analysis including parts, batteries, and maintenance. Factory-direct vs dealer pricing comparison.",
+    category: "buying-guide",
+    readTime: "8 min",
+    difficulty: "beginner",
+    published: "2026-07-04",
+    sections: [
+      {
+        heading: "The Real Cost of a Floor Scrubber — Beyond the Sticker Price",
+        content: "When someone asks 'how much does a floor scrubber cost,' they usually mean the purchase price. But the real cost includes parts, batteries, maintenance, chemicals, and operator training over the machine's 5-10 year lifespan. A $6,000 scrubber that costs $2,000/year to maintain is more expensive than a $10,000 scrubber costing $500/year. This guide breaks down every cost component so you can budget accurately.",
+      },
+      {
+        heading: "Walk-Behind Floor Scrubber Prices by Tier",
+        content: "Walk-behind scrubbers range from $3,000 for basic models to $12,000 for heavy-duty industrial units. Here's what you get at each price point:",
+        items: [
+          "Budget ($3,000-5,000): 17-20 inch, pad-assisted or basic disc brush, lead-acid battery, 10-15 gallon tanks. Best for small shops, restaurants, gas stations.",
+          "Mid-Range ($5,000-8,000): 20-28 inch, self-propelled drive, disc or roller brush, 15-25 gallon tanks, optional lithium. Best for medium warehouses, schools, supermarkets.",
+          "Heavy-Duty ($8,000-12,000): 28-34 inch, high brush pressure (60-100kg), 25-40 gallon tanks, lithium standard. Best for factories, large warehouses, heavy soil.",
+          "Factory-direct pricing: Subtract 30-40% from dealer prices. Same machine, no middleman markup.",
+        ],
+      },
+      {
+        heading: "Ride-On Floor Scrubber Prices by Tier",
+        content: "Ride-on scrubbers start at $9,000 for compact models and can exceed $35,000 for full-size industrial machines. The jump in productivity (2-3x vs walk-behind) often pays for the higher purchase price within 12-18 months through labor savings.",
+        items: [
+          "Compact ($9,000-15,000): 28-34 inch, 50-70 gallon tanks, basic controls. Best for medium warehouses, distribution centers, retail big-box.",
+          "Mid-Size ($15,000-25,000): 34-42 inch, 70-100 gallon tanks, LCD display, eco mode, traction drive. Best for large warehouses, airports, convention centers.",
+          "Full-Size ($25,000-35,000+): 42-50+ inch, 100+ gallon tanks, advanced controls, auto-dosing, telematics. Best for massive logistics centers, automotive plants.",
+          "Factory-direct pricing: $6,000-24,000 — saving $3,000-11,000 per machine vs dealer.",
+        ],
+      },
+      {
+        heading: "What Drives the Price Difference Between Models?",
+        content: "Two machines that look similar can differ by $5,000+. These six factors explain why:",
+        items: [
+          "Cleaning width: Each 2-inch increase in width adds ~$500-1,000 (wider = fewer passes = faster)",
+          "Battery type: Lithium adds $800-2,000 upfront vs lead-acid, but saves $1,000+ in maintenance over 5 years",
+          "Drive system: Self-propelled adds $1,000-2,000 vs push-only; ride-on drive adds $5,000-15,000",
+          "Tank capacity: Larger tanks cost more upfront but reduce refill downtime — each 10-gallon increase adds ~$500",
+          "Brush pressure: Higher pressure (60-100kg vs 30-40kg) requires stronger motors and frame — adds $1,000-3,000",
+          "Special features: Auto-dosing (+$500), LCD panel (+$300), traction drive (+$1,000), telematics (+$800)",
+        ],
+      },
+      {
+        heading: "Annual Operating Costs — The Hidden Half of Your Budget",
+        content: "Purchase price is only 40-50% of the 5-year total cost. Here's what you'll spend annually:",
+        items: [
+          "Disc brushes: 3-4 replacements/year × $45-75 each = $180-300/year (factory-direct) vs $360-720 (dealer)",
+          "Squeegee blades: 4-6 replacements/year × $30-55/set = $180-330/year (factory-direct) vs $320-840 (dealer)",
+          "Battery replacement: Lead-acid every 2 years = $200-400/year amortized; Lithium every 4 years = $300-600/year",
+          "Cleaning chemicals: $50-150/month = $600-1,800/year depending on floor area and soil level",
+          "Preventive maintenance: $300-800/year for professional service if not done in-house",
+          "Total annual operating cost: $1,500-4,000/year for a walk-behind, $2,500-6,000/year for a ride-on",
+        ],
+      },
+      {
+        heading: "5-Year Total Cost of Ownership Comparison",
+        content: "Let's compare three realistic scenarios for a warehouse running one machine 5 days/week:",
+        items: [
+          "Scenario A — Dealer walk-behind: $6,000 purchase + $2,000/yr parts = $16,000 over 5 years",
+          "Scenario B — Factory-direct walk-behind: $3,800 purchase + $1,000/yr parts = $8,800 over 5 years. Saves $7,200.",
+          "Scenario C — Dealer ride-on: $18,000 purchase + $3,000/yr parts = $33,000 over 5 years",
+          "Scenario D — Factory-direct ride-on: $11,000 purchase + $1,600/yr parts = $19,000 over 5 years. Saves $14,000.",
+          "Fleet of 5 machines × Scenario D vs C: $70,000 saved in 5 years.",
+        ],
+      },
+      {
+        heading: "New vs Used: When Does Buying Used Make Sense?",
+        content: "A used floor scrubber can save 40-60% upfront, but the risk of hidden problems can wipe out those savings. Our rule of thumb:",
+        items: [
+          "Buy used if: budget is tight, you need a backup/second machine, the hour meter shows <1,500 hours, service records are available, and the seller allows a demo run.",
+          "Buy new if: this is your primary machine, you need warranty coverage, uptime is critical, or you can't verify the machine's history.",
+          "Used price guide: 1-3 year old walk-behind: $1,500-4,000 (50-60% of new). 1-3 year old ride-on: $5,000-12,000 (50-60% of new).",
+        ],
+      },
+      {
+        heading: "Financing and Payment Options for Floor Scrubbers",
+        content: "Most manufacturers and dealers offer financing to spread the upfront cost over 12-60 months. Factory-direct manufacturers typically offer the most flexible terms since they have more margin to work with. Common options:",
+        items: [
+          "Equipment financing: 12-60 month terms, 5-15% APR depending on credit, machine serves as collateral",
+          "Leasing: Lower monthly payments, upgrade to new model after term ends, but you don't own the machine",
+          "30/70 payment terms: 30% deposit to start production, 70% before shipment — common for factory-direct orders",
+          "Letter of Credit (L/C): Bank-guaranteed payment for international orders, protects both buyer and seller",
+          "Trade Assurance (Alibaba): Payment held in escrow until delivery confirmed",
+        ],
+      },
+      {
+        heading: "Hidden Costs First-Time Buyers Miss",
+        content: "These six costs catch new buyers off guard. Budget for them from day one:",
+        items: [
+          "Shipping/freight: $500-2,000 domestic, $1,000-5,000 international (factory-direct from China)",
+          "Import duties: 0-10% depending on country and trade agreements — check your local customs",
+          "Operator training: 1-2 hours for walk-behind, 2-4 hours for ride-on — factor in labor cost",
+          "Battery watering system: $50-150 (lead-acid only) — saves hours of manual maintenance monthly",
+          "Spare parts inventory: $200-500 initial stock (brushes, squeegees, filters) to avoid downtime",
+          "Charging station installation: $200-1,000 for electrical work if your facility doesn't have a suitable outlet near the storage area",
+        ],
+      },
+      {
+        heading: "Get Your Factory-Direct Quote",
+        content: "Tell us your facility size, floor type, and daily cleaning hours. We'll recommend the right machine at factory-direct pricing — typically 30-40% less than your local dealer. Quote within 24 hours. No obligation.",
+      },
+    ],
+    relatedProducts: ["K500BT", "A650T", "A660T", "K660"],
+  },
+  // ── Small Business Guide ──
+  {
+    slug: "best-floor-scrubber-small-business",
+    title: "Best Floor Scrubber for Small Business: Top 5 Picks & Buying Guide (2026)",
+    description:
+      "The best floor scrubbers for small businesses in 2026. Compact walk-behind models under $5,000 reviewed. Compare features, prices, and best use cases for restaurants, retail shops, small warehouses, and auto shops.",
+    category: "buying-guide",
+    readTime: "7 min",
+    difficulty: "beginner",
+    published: "2026-07-04",
+    sections: [
+      {
+        heading: "Why a Floor Scrubber Is the Best Investment for Your Small Business",
+        content: "Small business owners often default to mops and buckets — but a compact floor scrubber costs less than a part-time cleaner's annual salary and does a far better job. A $3,000-5,000 walk-behind scrubber cleans 10-20x faster than mopping, uses less water and chemical, and leaves floors dry and safe immediately. For restaurants, retail stores, auto shops, and small warehouses, it's the highest-ROI equipment purchase you can make.",
+      },
+      {
+        heading: "What Makes a Floor Scrubber Right for a Small Business?",
+        content: "Small businesses need machines that are compact (fit through standard doorways), simple to operate (minimal training), affordable (under $5,000), and reliable (low maintenance). You don't need a ride-on machine — a quality walk-behind with a 17-20 inch cleaning path is ideal for spaces up to 15,000 sq ft.",
+        items: [
+          "Compact size: Must fit through 32-inch doorways and navigate tight spaces between displays, tables, or equipment",
+          "Simple controls: One-button operation preferred — your staff aren't professional cleaners",
+          "Quick drying: Floors should be walkable immediately after cleaning — no 'wet floor' signs for hours",
+          "Low noise: Under 65dB so you can clean during business hours without disturbing customers",
+          "Easy storage: Folds or stores vertically to save space in back rooms",
+        ],
+      },
+      {
+        heading: "Top 5 Floor Scrubbers for Small Business in 2026",
+        content: "Based on cleaning performance, reliability, value for money, and small-business suitability:",
+      },
+      {
+        heading: "#1 — Best Overall: 17-inch Walk-Behind Disc Scrubber",
+        content: "The ideal all-around machine for most small businesses. A 17-inch cleaning path covers ~12,000 sq ft per hour — enough to clean a 5,000 sq ft restaurant in under 30 minutes. Disc brush system handles tile, sealed concrete, and vinyl floors. Compact enough to store in a closet.",
+        items: [
+          "Best for: Restaurants, cafes, retail shops, small offices",
+          "Price: $3,000-4,500 (factory-direct: $1,800-3,000)",
+          "Key specs: 17-inch width, 10-12 gallon tanks, lead-acid battery, 3-4hr runtime",
+          "Why we picked it: Best balance of price, performance, and simplicity",
+        ],
+      },
+      {
+        heading: "#2 — Best for Auto Shops: 20-inch Heavy-Duty Disc Scrubber",
+        content: "Auto repair shops deal with oil, grease, and tire marks. This machine features higher brush pressure and oil-resistant squeegee rubber that won't degrade from petroleum exposure. The 20-inch width is still compact enough for shop bays.",
+        items: [
+          "Best for: Auto repair shops, tire shops, motorcycle dealers",
+          "Price: $4,500-6,000 (factory-direct: $2,800-4,000)",
+          "Key specs: 20-inch width, oil-resistant squeegee, higher brush pressure, 15-18 gallon tanks",
+          "Why we picked it: Handles automotive soil that destroys standard scrubbers",
+        ],
+      },
+      {
+        heading: "#3 — Best for Small Warehouses: 20-inch Self-Propelled Scrubber",
+        content: "For warehouses up to 10,000 sq ft, a self-propelled walk-behind scrubber eliminates operator fatigue while maintaining compact dimensions. The self-propelled drive means anyone can operate it comfortably for 2+ hours.",
+        items: [
+          "Best for: Small warehouses, distribution centers, wholesale clubs",
+          "Price: $5,000-7,000 (factory-direct: $3,200-4,500)",
+          "Key specs: 20-inch, self-propelled, 15-20 gallon tanks, optional lithium",
+          "Why we picked it: Self-propelled drive makes all-day cleaning effortless",
+        ],
+      },
+      {
+        heading: "#4 — Best Budget: 17-inch PAD-Assisted Scrubber",
+        content: "For the tightest budgets, a pad-assisted walk-behind scrubber uses the pad's rotation to help propel the machine — reducing operator effort without the cost of a full self-propelled drive. Same cleaning quality as higher-priced models, just requires slightly more operator push.",
+        items: [
+          "Best for: Startups, seasonal businesses, low-traffic facilities",
+          "Price: $2,500-3,500 (factory-direct: $1,500-2,200)",
+          "Key specs: 17-inch, pad-assisted, 8-10 gallon tanks, basic controls",
+          "Why we picked it: Lowest entry price without sacrificing cleaning quality",
+        ],
+      },
+      {
+        heading: "#5 — Best for Multi-Surface: 20-inch Multi-Purpose Scrubber",
+        content: "If your business has multiple floor types — tile in the front, concrete in the back — this versatile machine handles everything. Quick-change pad driver lets you switch between scrubbing brush and polishing pad in seconds. Adjustable solution flow prevents over-wetting on delicate surfaces.",
+        items: [
+          "Best for: Hotels, event venues, mixed-use commercial buildings",
+          "Price: $4,000-5,500 (factory-direct: $2,500-3,500)",
+          "Key specs: 20-inch, quick-change pad, adjustable flow, 12-15 gallon tanks",
+          "Why we picked it: One machine handles tile, concrete, vinyl, and sealed wood",
+        ],
+      },
+      {
+        heading: "Scrubber vs Auto-Scrubber vs Floor Buffer — What's the Difference?",
+        content: "Many small business owners confuse these three machines. Here's the quick breakdown: A floor scrubber (or auto-scrubber) applies cleaning solution, scrubs, and vacuums up dirty water — all in one pass. A floor buffer only polishes — it doesn't clean or pick up water. If you need to actually clean floors (not just polish), you need a scrubber.",
+        items: [
+          "Floor scrubber: Applies solution → scrubs → vacuums dirty water → leaves floor dry. The complete solution.",
+          "Floor buffer/burnisher: Rotates a pad at high speed to polish. No water pickup. Only for already-clean floors.",
+          "Floor sweeper: Picks up dry debris only. No scrubbing. Often used as a pre-step before scrubbing.",
+        ],
+      },
+      {
+        heading: "Renting vs Buying: The Break-Even Calculator",
+        content: "If you're on the fence, here's the math: Renting a walk-behind scrubber costs $75-150/day or $300-600/week. If you clean 2+ times per week, buying breaks even in 6-12 months. After that, you're saving money every time you clean.",
+        items: [
+          "Rental cost: $100/day × 2 days/week × 52 weeks = $10,400/year",
+          "Purchase cost: $3,500 once + $700/year parts = $3,500 (year 1), $700 (years 2-5)",
+          "Break-even: Month 4-5 — after that, every cleaning session is essentially free",
+          "5-year savings vs renting: ~$46,000",
+        ],
+      },
+      {
+        heading: "Get Your Small Business Scrubber Quote",
+        content: "Tell us about your business — floor type, square footage, and cleaning frequency. We'll recommend the right machine at factory-direct pricing. Most small business orders ship within 48 hours.",
+      },
+    ],
+    relatedProducts: ["K500BT", "A380"],
+  },
 ];
