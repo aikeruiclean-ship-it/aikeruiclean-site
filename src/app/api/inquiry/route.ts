@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { pickRoundRobin } from "@/lib/sales-team";
 
 const SCRIPT_URL =
   "https://script.google.com/macros/s/AKfycbwx7qOuIXLQSGv7UbDxyDNXsFcxi9i3TMuICL0FKnRJpLUFoFbsw2mm1zaTbOftOqFC/exec";
@@ -181,6 +182,8 @@ export async function POST(request: NextRequest) {
         </body></html>
       `;
 
+      const assigned = pickRoundRobin();
+
       const res = await fetch(BREVO_API_URL, {
         method: "POST",
         headers: {
@@ -190,8 +193,9 @@ export async function POST(request: NextRequest) {
         body: JSON.stringify({
           sender: { name: "Aikerui Website", email: "noreply@aikeruiclean.com" },
           to: [{ email: "info@aikeruiclean.com" }],
+          cc: [{ email: assigned.email, name: assigned.name }],
           replyTo: { email: data.email },
-          subject: `New Inquiry: ${data.product}`,
+          subject: `[${assigned.name}] New Inquiry: ${data.product}`,
           htmlContent: emailHtml,
         }),
       });
