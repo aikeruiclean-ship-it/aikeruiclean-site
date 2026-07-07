@@ -21,6 +21,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/solutions/warehouse-floor-cleaning`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/solutions/factory-floor-cleaning`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/solutions/supermarket-floor-cleaning`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/solutions/airport-floor-cleaning`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/solutions/shopping-mall-floor-cleaning`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/solutions/pharmaceutical-cleanroom-floor-cleaning`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/solutions/cold-storage-floor-cleaning`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/solutions/hotel-floor-cleaning`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
   ];
 
   const guidePages: MetadataRoute.Sitemap = getGuides().map((g) => ({
