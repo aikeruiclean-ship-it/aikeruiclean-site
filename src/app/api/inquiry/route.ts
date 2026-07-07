@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { pickRoundRobin } from "@/lib/sales-team";
+import { saveLead } from "@/lib/lead-store";
 
 const SCRIPT_URL =
   "https://script.google.com/macros/s/AKfycbwx7qOuIXLQSGv7UbDxyDNXsFcxi9i3TMuICL0FKnRJpLUFoFbsw2mm1zaTbOftOqFC/exec";
@@ -208,6 +209,21 @@ export async function POST(request: NextRequest) {
         console.error("Brevo API error:", res.status, err);
       }
     }
+
+    // Save locally for admin panel
+    saveLead({
+      name: data.name,
+      email: data.email,
+      phone: data.phone,
+      company: data.company,
+      country: data.country,
+      product: data.product,
+      quantity: data.quantity,
+      message: data.message,
+      assignedTo: assigned.name,
+      assignedEmail: assigned.email,
+      timestamp: new Date().toISOString(),
+    });
 
     return NextResponse.json({
       success: true,
