@@ -152,6 +152,9 @@ export async function POST(request: NextRequest) {
 
     const data = validation.data;
 
+    // Assign to salesperson (round-robin) — used for both Sheets and email
+    const assigned = pickRoundRobin();
+
     // 1) Forward to Google Apps Script (Google Sheets)
     await fetch(SCRIPT_URL, {
       method: "POST",
@@ -159,6 +162,8 @@ export async function POST(request: NextRequest) {
       redirect: "follow",
       body: JSON.stringify({
         ...data,
+        assignedTo: assigned.name,
+        assignedEmail: assigned.email,
         timestamp: new Date().toISOString(),
       }),
     }).catch((err) => console.error("Google Script error:", err));
@@ -181,8 +186,6 @@ export async function POST(request: NextRequest) {
           <p style="color:#666;font-size:12px">Received: ${new Date().toISOString()}</p>
         </body></html>
       `;
-
-      const assigned = pickRoundRobin();
 
       const res = await fetch(BREVO_API_URL, {
         method: "POST",
