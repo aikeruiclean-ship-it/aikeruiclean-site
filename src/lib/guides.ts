@@ -1706,4 +1706,117 @@ export const guideCategories = [
     ],
     relatedProducts: [],
   },
+  // ── School & University Guide ──
+  {
+    slug: "school-university-floor-cleaning-equipment",
+    title: "School & University Floor Cleaning Equipment: Complete K-12 & Campus Guide",
+    description:
+      "Floor scrubbers for schools, universities, and educational campuses. Quiet operation for classrooms, durable for hallways, compact for restrooms. Factory-direct pricing for education budgets.",
+    category: "buying-guide",
+    readTime: "6 min",
+    difficulty: "beginner",
+    published: "2026-07-04",
+    sections: [
+      {
+        heading: "The School Cleaning Challenge",
+        content: "Schools combine every floor type in one campus — tile classrooms, polished hallways, concrete gymnasiums, vinyl cafeteria floors, and carpeted libraries. Add thousands of students tracking in dirt daily, and you have one of the most demanding cleaning environments. The right equipment makes the difference between consistently clean floors and a never-ending battle.",
+      },
+      {
+        heading: "Zone-by-Zone Equipment Recommendations",
+        content: "Different school zones need different approaches:",
+        items: [
+          "Classrooms: Compact 17-inch scrubber. Ultra-quiet. Clean after hours. Tile and vinyl flooring. Quick-drying to avoid slip hazard for morning classes.",
+          "Hallways & Corridors: 20-28 inch walk-behind or compact ride-on. Thousands of students × 180 school days = heavy traffic. Daily cleaning during off-hours essential.",
+          "Gymnasium & Sports Halls: 28-34 inch ride-on scrubber. Large open area. Polished wood or synthetic sports flooring requires specific pad selection. Clean 2-3x/week.",
+          "Cafeteria & Kitchen: 20-inch scrubber with degreasing. Food spills and grease. Clean after every meal service. Stainless steel components resist food acids.",
+          "Restrooms & Locker Rooms: Compact 17-inch unit. Tight spaces. Chemical-resistant for disinfectants and bleach. Clean daily.",
+          "Parking Lots & Walkways: Sweeper or sweeper-scrubber combo. Outdoor-capable. Clean weekly or as needed.",
+        ],
+      },
+      {
+        heading: "Budgeting for Educational Facilities",
+        content: "School budgets are tight. A single well-chosen walk-behind scrubber ($3,000-5,000 factory-direct) can replace 3-4 janitors with mops, saving $60,000-100,000 annually in labor costs. Many schools qualify for equipment financing with annual payments that fit within existing cleaning supply budgets.",
+      },
+      {
+        heading: "Get Your School Cleaning Equipment Quote",
+        content: "Tell us about your campus — building count, floor types, and current cleaning staff. We'll recommend the right equipment mix for your budget. Education discounts available on bulk orders.",
+      },
+    ],
+    relatedProducts: ["K500BT", "A380", "K660"],
+  },
+  // ── Parking Garage Guide ──
+  {
+    slug: "parking-garage-floor-scrubber-guide",
+    title: "Parking Garage Floor Scrubber Guide: Heavy-Duty Cleaning for Multi-Level Garages",
+    description:
+      "Best floor scrubbers and sweepers for parking garages. Handle tire marks, oil, salt, and heavy debris. Outdoor-rated machines for covered and open-air structures. Factory-direct pricing.",
+    category: "buying-guide",
+    readTime: "5 min",
+    difficulty: "intermediate",
+    published: "2026-07-04",
+    sections: [
+      {
+        heading: "Why Parking Garages Need Specialized Equipment",
+        content: "Parking garages face unique challenges: tire marks ground into concrete, road salt corrosion in winter, oil and transmission fluid leaks, and debris ranging from gravel to fast-food wrappers. Standard commercial scrubbers aren't built for this environment — you need higher brush pressure, chemical resistance, and often a sweeper function to pre-clear heavy debris.",
+      },
+      {
+        heading: "Sweeper-Scrubber Combos: The Best Solution for Garages",
+        content: "A sweeper-scrubber combination machine sweeps debris first, then scrubs — all in one pass. This is the ideal tool for parking garages because pre-sweeping prevents gravel and debris from being ground into the concrete by the scrubbing brush. One machine, one pass, one operator.",
+        items: [
+          "Best for: Multi-level parking structures, open-air lots, airport parking, stadium parking",
+          "Price range: $12,000-25,000 dealer; $8,000-16,000 factory-direct",
+          "Key features: Large debris hopper, high-pressure scrubbing, optional side brush for edges",
+        ],
+      },
+      {
+        heading: "Handling Oil, Grease, and Road Salt",
+        content: "These three contaminants demand specific equipment features: Oil-resistant squeegee rubber (Linatex or oil-resistant polyurethane) won't degrade from petroleum exposure. Higher brush pressure (60-100kg) cuts through oil and rubber deposits. Corrosion-resistant frame and components survive winter salt exposure. Degreasing-capable solution system handles industrial degreasers.",
+      },
+      {
+        heading: "Get Your Parking Garage Quote",
+        content: "Tell us about your facility — number of levels, total square footage, and whether it's open-air or covered. We'll recommend the right machine. Factory-direct pricing for parking operators.",
+      },
+    ],
+    relatedProducts: ["K660", "A660T"],
+  },
+  // ── Warehouse Equipment Guide ──
+  {
+    slug: "warehouse-cleaning-equipment-complete-guide",
+    title: "Warehouse Cleaning Equipment: Complete Setup Guide for Distribution Centers",
+    description:
+      "Complete warehouse cleaning equipment guide. Ride-on scrubbers, sweepers, and sweeper-scrubber combos for distribution centers up to 500,000+ sq ft. Budgeting and fleet planning included.",
+    category: "buying-guide",
+    readTime: "8 min",
+    difficulty: "intermediate",
+    published: "2026-07-04",
+    sections: [
+      {
+        heading: "Why Warehouses Need More Than Just a Scrubber",
+        content: "A modern distribution center or 3PL warehouse is essentially a small city under one roof — 200,000 to 1,000,000+ sq ft of concrete floors, 24/7 forklift traffic, and constant debris from broken pallets, packing materials, and vehicle exhaust. A single scrubber running 8 hours a day can't keep up. You need a planned fleet with the right mix of equipment.",
+      },
+      {
+        heading: "Building Your Warehouse Cleaning Fleet",
+        content: "Based on facility size, here's what a properly equipped warehouse needs:",
+        items: [
+          "Under 50,000 sq ft: 1 ride-on scrubber (28-34 inch) + 1 walk-behind sweeper. Total: $12,000-20,000 factory-direct.",
+          "50,000-150,000 sq ft: 1 full-size ride-on scrubber (34-42 inch) + 1 compact ride-on sweeper. Total: $20,000-35,000 factory-direct.",
+          "150,000-500,000 sq ft: 2 ride-on scrubbers (different zones) + 1 ride-on sweeper + 1 compact walk-behind for tight areas. Total: $35,000-60,000 factory-direct.",
+          "500,000+ sq ft: 3+ ride-on scrubbers, 2 sweepers, dedicated battery charging station, spare parts inventory. Total: $60,000-120,000 factory-direct with fleet discount.",
+        ],
+      },
+      {
+        heading: "The Sweeper-First Strategy",
+        content: "In warehouses, always sweep before you scrub. Running a scrubber over debris grinds it into the concrete, permanently etching the floor and wearing out brushes 2-3x faster. A dedicated ride-on sweeper clears aisles in one pass — then the scrubber follows for a deep clean. For smaller warehouses, a sweeper-scrubber combo handles both steps in one machine.",
+      },
+      {
+        heading: "Fleet Management: Batteries, Charging, and Shift Planning",
+        content: "Multi-shift warehouses need a battery strategy. Lithium batteries with opportunity charging (charge during operator breaks and shift changes) eliminate the need for spare batteries. For lead-acid fleets, budget 1 spare battery per machine plus a dedicated charging room with proper ventilation.",
+      },
+      {
+        heading: "Get Your Warehouse Fleet Quote",
+        content: "Tell us your square footage, number of shifts, and aisle configuration. We'll design a cleaning fleet with the right equipment mix. Fleet discounts available on 3+ machines. Factory-direct pricing.",
+      },
+    ],
+    relatedProducts: ["K660", "A660T", "RS32"],
+  },
 ];
