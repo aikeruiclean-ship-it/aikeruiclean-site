@@ -1819,4 +1819,204 @@ export const guideCategories = [
     ],
     relatedProducts: ["K660", "A660T", "RS32"],
   },
+  // ── Maintenance Schedule ──
+  {
+    slug: "floor-scrubber-maintenance-checklist",
+    title: "Floor Scrubber Maintenance Checklist: Daily, Weekly & Monthly Schedule",
+    description:
+      "Complete floor scrubber maintenance checklist. Daily (10 min), weekly (30 min), and monthly (1 hour) schedules. Prevent 80% of breakdowns with regular maintenance. Printable checklist included.",
+    category: "maintenance",
+    readTime: "7 min",
+    difficulty: "beginner",
+    published: "2026-07-04",
+    sections: [
+      {
+        heading: "Why Maintenance Matters More Than You Think",
+        content: "80% of floor scrubber breakdowns are caused by skipped maintenance — not component failure. A $20 squeegee blade ignored for an extra month damages the $200 squeegee assembly. A recovery tank never rinsed breeds bacteria that corrode the vacuum motor. Ten minutes of daily maintenance prevents thousands in repairs and days of downtime.",
+      },
+      {
+        heading: "Daily Checklist (10 Minutes — After Every Use)",
+        content: "These 8 tasks take 10 minutes and prevent 60% of all service calls:",
+        items: [
+          "☐ Empty and rinse recovery tank — never leave dirty water overnight (bacteria + odor + corrosion)",
+          "☐ Empty solution tank — residual chemicals can crystallize and clog lines",
+          "☐ Rinse squeegee assembly — remove debris caught between blades",
+          "☐ Check squeegee blade edges — look for rounded edges, cracks, or uneven wear",
+          "☐ Remove and rinse brush/pad holder — debris left on brush hardens overnight",
+          "☐ Check for debris wrapped around brush drive hub — string, plastic, tape",
+          "☐ Wipe down machine exterior — prevents chemical residue buildup",
+          "☐ Plug in charger (lead-acid) or connect lithium charger — never store batteries discharged",
+        ],
+      },
+      {
+        heading: "Weekly Checklist (30 Minutes)",
+        content: "These 7 tasks catch problems before they become repairs:",
+        items: [
+          "☐ Inspect vacuum hose for cracks, kinks, or blockages — blow through to verify",
+          "☐ Clean solution filter/screen — unscrew, rinse, reinstall",
+          "☐ Check all hoses for leaks — look for damp spots while machine runs",
+          "☐ Test battery water levels (lead-acid only) — top up with distilled water to just above plates",
+          "☐ Clean battery terminals — remove corrosion with wire brush, apply terminal protector",
+          "☐ Check brush bristle length — measure against new spec; replace if <10mm",
+          "☐ Test all controls — brush engage, solution flow, squeegee lift, forward/reverse",
+        ],
+      },
+      {
+        heading: "Monthly Checklist (1 Hour)",
+        content: "These 6 deeper checks ensure long-term reliability:",
+        items: [
+          "☐ Inspect drive belt tension and condition — look for cracks, glazing, or missing teeth",
+          "☐ Clean recovery tank thoroughly — scrub interior with mild disinfectant, check drain valve",
+          "☐ Check all bolts and fasteners — vibration loosens them; tighten brush deck, squeegee, wheels",
+          "☐ Inspect squeegee mount for damage — bent assembly from hitting obstacles = poor water pickup",
+          "☐ Test vacuum motor suction — should feel strong suction at the squeegee hose connection",
+          "☐ Equalization charge (lead-acid only) — controlled overcharge to balance cells, every 30-60 days",
+        ],
+      },
+      {
+        heading: "Seasonal Checklist (Every 3-6 Months)",
+        content: "Deeper maintenance for seasonal transitions or high-use periods:",
+        items: [
+          "☐ Replace HEPA/air filter if equipped",
+          "☐ Flush solution system with warm water and descaling solution (removes mineral buildup)",
+          "☐ Grease all pivot points and bearings per manufacturer specifications",
+          "☐ Test battery load capacity — a battery reading good voltage but failing under load needs replacement",
+          "☐ Professional service inspection — have a technician check motor brushes, electrical connections, and software updates",
+        ],
+      },
+      {
+        heading: "Printable Maintenance Log Template",
+        content: "Keep a maintenance log for each machine. Record date, operator, tasks completed, and any issues noted. This log is invaluable for warranty claims, resale value, and diagnosing recurring problems. We provide a free printable template with every machine purchase.",
+      },
+      {
+        heading: "Get Your Maintenance Parts Kit",
+        content: "Order a pre-assembled maintenance kit with the most commonly replaced parts — squeegee blades, brushes, filters, and terminal protectors. Have them on your shelf before you need them.",
+      },
+    ],
+    relatedProducts: [],
+  },
+  // ── Case Study 1: Distribution Center ──
+  {
+    slug: "case-study-warehouse-distribution-center-floor-scrubbing",
+    title: "Case Study: How a 150,000 Sq Ft Distribution Center Cut Cleaning Costs by 55%",
+    description:
+      "Real customer case study: US distribution center replaced outsourced cleaning with in-house ride-on scrubbers. Saved $48,000/year, improved floor cleanliness, and achieved ROI in 4 months.",
+    category: "buying-guide",
+    readTime: "5 min",
+    difficulty: "beginner",
+    published: "2026-07-04",
+    sections: [
+      {
+        heading: "The Customer",
+        content: "A third-party logistics (3PL) provider operating a 150,000 sq ft distribution center in the Midwest United States. The facility handles consumer goods for e-commerce fulfillment, operating two shifts with 80+ forklifts in constant motion. Floors are sealed concrete with high traffic in shipping/receiving zones.",
+      },
+      {
+        heading: "The Problem",
+        content: "The facility was paying an external cleaning company $72,000/year for nightly floor cleaning. Despite the cost, results were inconsistent — contractors changed frequently, equipment was poorly maintained, and the facility manager received complaints about tire marks and dust accumulation in pick zones. With the contract up for renewal with a 15% increase proposed, they explored bringing cleaning in-house.",
+      },
+      {
+        heading: "The Solution",
+        content: "We recommended a fleet of two ride-on scrubbers — one 34-inch for main aisles and shipping docks, and one 28-inch for tighter pick zones and pack stations. Both machines equipped with lithium batteries for opportunity charging between shifts. Total investment: $18,000 factory-direct (equivalent dealer quote: $32,000).",
+      },
+      {
+        heading: "The Results",
+        content: "After 6 months of in-house cleaning with factory-direct equipment, the facility reported:",
+        items: [
+          "Annual cleaning cost: $24,000 (one part-time operator × 20 hrs/week + parts) — down from $72,000",
+          "Annual savings: $48,000 — 67% reduction",
+          "ROI: Equipment paid for itself in 4.5 months",
+          "Floor cleanliness: Audit scores improved from 78% to 96%",
+          "Operator feedback: 'The machine is so simple, our warehouse associate learned it in 30 minutes. We clean every night now — not just when the contractor showed up.'",
+        ],
+      },
+      {
+        heading: "Key Takeaway",
+        content: "For facilities over 50,000 sq ft, in-house cleaning with factory-direct equipment almost always beats outsourced services on both cost and quality. The breakeven point is typically 3-6 months.",
+      },
+    ],
+    relatedProducts: ["K660", "A660T"],
+  },
+  // ── Case Study 2: Manufacturing Plant ──
+  {
+    slug: "case-study-manufacturing-plant-floor-cleaning",
+    title: "Case Study: Automotive Parts Manufacturer Achieves ISO Cleanliness with Factory-Direct Scrubber",
+    description:
+      "Real case study: Automotive parts plant switched from manual cleaning to ride-on scrubber with degreasing capability. Passed ISO audit, reduced slip incidents by 80%, operator cleans 3x faster.",
+    category: "buying-guide",
+    readTime: "5 min",
+    difficulty: "beginner",
+    published: "2026-07-04",
+    sections: [
+      {
+        heading: "The Customer",
+        content: "A Tier-2 automotive parts manufacturer in Eastern Europe supplying transmission components to major automakers. 45,000 sq ft production floor operating 24/6. Floors are unsealed concrete with heavy oil and cutting fluid contamination. ISO 14001 certified — environmental and cleanliness audits every 6 months.",
+      },
+      {
+        heading: "The Problem",
+        content: "The plant relied on 2-3 workers with mops and degreaser to clean production areas between shifts. Each cleaning session took 3 hours and still left visible oil residue. During a supplier audit, the automaker flagged floor cleanliness as a concern. Additionally, the plant recorded 5 slip incidents in 6 months related to oily floors — a serious safety issue.",
+      },
+      {
+        heading: "The Solution",
+        content: "A heavy-duty 28-inch ride-on scrubber with degreasing capability, oil-resistant squeegee, and high brush pressure (100kg). The machine is operated by one worker between shift changes — 45 minutes instead of 3 hours. The degreasing system injects industrial degreaser at the brush deck, cutting through oil and cutting fluid in a single pass.",
+      },
+      {
+        heading: "The Results",
+        content: "After 6 months:",
+        items: [
+          "Cleaning time: 45 minutes vs 3 hours previously — 75% reduction",
+          "Labor freed: 1.5 workers' worth of cleaning time reallocated to production",
+          "Slip incidents: 0 in 6 months after implementation — down from 5 in the previous 6 months",
+          "ISO audit: Passed without floor cleanliness observations for the first time",
+          "Parts cost: $350/month for degreaser and replacement squeegees — factory-direct pricing",
+          "Machine cost: $12,000 factory-direct (equivalent dealer quote: $19,500)",
+        ],
+      },
+      {
+        heading: "Key Takeaway",
+        content: "For manufacturing plants, a proper ride-on scrubber with degreasing capability isn't just about cleanliness — it's about safety, compliance, and passing supplier audits. The machine paid for itself in reduced labor and eliminated slip incidents within 6 months.",
+      },
+    ],
+    relatedProducts: ["K660", "A660T"],
+  },
+  // ── Case Study 3: Supermarket Chain ──
+  {
+    slug: "case-study-supermarket-chain-floor-cleaning",
+    title: "Case Study: Regional Supermarket Chain Switches to Factory-Direct Scrubbers — Saves $15,000 Per Store",
+    description:
+      "Real case study: 12-store supermarket chain replaced dealer-purchased scrubbers with factory-direct models. Saved $180,000 fleet-wide over 3 years. Quieter operation for daytime cleaning.",
+    category: "buying-guide",
+    readTime: "5 min",
+    difficulty: "beginner",
+    published: "2026-07-04",
+    sections: [
+      {
+        heading: "The Customer",
+        content: "A 12-store regional supermarket chain in the Middle East with stores averaging 25,000 sq ft. Floors are polished tile in customer areas and sealed concrete in back-of-house. Each store cleans daily — during business hours in customer areas (requiring quiet operation), and after closing in storage areas.",
+      },
+      {
+        heading: "The Problem",
+        content: "The chain had been purchasing scrubbers through a local dealer at $8,500-11,000 per machine. With 12 stores each needing one machine, plus replacements every 4-5 years, fleet costs were substantial. Parts prices were equally inflated — $140 for a squeegee set that should cost $45. The chain's operations director researched alternatives and discovered factory-direct sourcing.",
+      },
+      {
+        heading: "The Solution",
+        content: "After testing one sample unit at their flagship store, the chain ordered 12 compact walk-behind scrubbers (20-inch, ultra-quiet <62dB) factory-direct. The machines were customized with quick-drying squeegees suitable for polished tile. Total investment: $36,000 for 12 machines ($3,000 each factory-direct vs $9,500 dealer).",
+      },
+      {
+        heading: "The Results",
+        content: "Over 3 years of operation with factory-direct machines and parts:",
+        items: [
+          "Machine purchase savings: $78,000 saved on initial fleet purchase (12 × $6,500 per machine)",
+          "Annual parts savings: $4,000/year across all stores (factory-direct vs dealer pricing)",
+          "3-year total savings: $78,000 (machines) + $12,000 (parts) = $90,000 — that's $7,500 per store per year",
+          "Customer feedback: 'Our store managers actually prefer these machines — they're quieter, so we can clean during shopping hours. The previous model was too loud.'",
+          "Unexpected benefit: Standardized fleet simplified training — all 12 stores use identical machines",
+        ],
+      },
+      {
+        heading: "Key Takeaway",
+        content: "For multi-site operations, the savings from factory-direct sourcing multiply dramatically. A $6,500 saving per machine × 12 stores = $78,000 that goes straight to the bottom line. Standardization across locations reduces training time and parts inventory complexity.",
+      },
+    ],
+    relatedProducts: ["K500BT", "A380"],
+  },
 ];
