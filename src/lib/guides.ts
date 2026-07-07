@@ -1512,4 +1512,198 @@ export const guideCategories = [
     ],
     relatedProducts: ["K500BT", "A380"],
   },
+  // ── Hotel & Hospitality Guide ──
+  {
+    slug: "hotel-hospitality-floor-cleaning-solutions",
+    title: "Hotel & Hospitality Floor Cleaning Equipment: Complete Solutions Guide",
+    description:
+      "Floor scrubbers and cleaning solutions for hotels, resorts, and hospitality. Ultra-quiet operation for guest areas, fast-drying for lobbies, compact for elevators. Factory-direct pricing.",
+    category: "buying-guide",
+    readTime: "6 min",
+    difficulty: "beginner",
+    published: "2026-07-04",
+    sections: [
+      {
+        heading: "The Unique Floor Cleaning Challenges of Hotels",
+        content: "Hotels clean diverse floor types — polished marble in lobbies, carpet in corridors, tile in bathrooms, sealed concrete in back-of-house. They clean around guests 24/7, so noise and appearance matter as much as cleaning effectiveness. A machine running in the lobby at 8 AM is not the same as one running in a factory at midnight.",
+      },
+      {
+        heading: "Zone-by-Zone Equipment Guide",
+        content: "One machine can't handle every hotel zone. Here's what works where:",
+        items: [
+          "Lobby & Atrium: Ultra-quiet scrubber (<60dB), fast-drying squeegee. Clean during low-traffic hours (2-5 AM). Marble-safe pads to avoid etching polished stone.",
+          "Guest Corridors: Compact walk-behind (17-20 inch), low profile to fit under wall art and handrails. Clean mid-morning when guests are out.",
+          "Ballrooms & Event Spaces: Multi-purpose scrubber with quick-change pads. Setup and breakdown between events requires rapid cleaning.",
+          "Restaurant & Kitchen: Stainless steel machine with degreasing capability. Clean after dinner service. Non-slip floors critical.",
+          "Pool & Spa Area: Anti-slip floor treatment. Water-resistant all components. Handle chlorine and chemical exposure.",
+          "Back-of-House & Loading Dock: Standard industrial scrubber. Tire marks, delivery debris. Noise not a concern.",
+        ],
+      },
+      {
+        heading: "Why Guest Experience Depends on Clean Floors",
+        content: "TripAdvisor and Google reviews mention 'cleanliness' more than any other factor except location. A dirty lobby floor is the first thing guests notice — and it colors their entire stay. Hotels that invest in proper cleaning equipment see measurable improvements in review scores within 3-6 months.",
+      },
+      {
+        heading: "Choosing Between One Multi-Purpose Machine vs Multiple Specialized Units",
+        content: "A 200-room hotel typically needs: 1 compact scrubber for guest areas (17-20 inch), 1 heavy-duty scrubber for kitchen/BOH (20-28 inch), and 1 sweeper for parking areas. Total investment: $8,000-15,000 factory-direct. The ROI comes from reduced housekeeping hours — proper equipment cleans 3-5x faster than mopping.",
+      },
+      {
+        heading: "Get Your Hotel Cleaning Equipment Quote",
+        content: "Tell us about your property — number of rooms, floor types, and current cleaning schedule. We'll recommend the right equipment mix. Factory-direct pricing for hospitality groups.",
+      },
+    ],
+    relatedProducts: ["K500BT", "A380", "K660"],
+  },
+  // ── Import from China Guide ──
+  {
+    slug: "how-to-import-floor-scrubbers-from-china",
+    title: "How to Import Floor Scrubbers from China: Complete Guide for 2026",
+    description:
+      "Step-by-step guide to importing floor scrubbers and parts from China. Factory verification, shipping methods, customs, duties, and payment terms. Save 30-50% buying factory-direct.",
+    category: "buying-guide",
+    readTime: "10 min",
+    difficulty: "intermediate",
+    published: "2026-07-04",
+    sections: [
+      {
+        heading: "Why Import Floor Scrubbers from China? The Numbers",
+        content: "Chinese floor scrubber manufacturers have closed the quality gap with Western brands while maintaining a 30-50% price advantage. A ride-on scrubber costing $18,000 from a US dealer can be sourced factory-direct from China for $10,000-12,000 — same specifications, same build quality, no dealer markup. For businesses ordering 3+ machines or establishing ongoing parts supply, the savings multiply into six figures over 5 years.",
+      },
+      {
+        heading: "Step 1: Find and Verify the Right Manufacturer",
+        content: "Not all Chinese manufacturers are equal. Distinguish between real factories and trading companies:",
+        items: [
+          "Real factory indicators: They invite you to video-tour the production line. They have an export license you can verify. Their business license says 'manufacturing' — not 'trading'.",
+          "Trading company red flags: They claim to 'represent multiple factories.' They can't show you a production line on video. Their prices are 15-25% higher because they add a middleman markup.",
+          "Verification must-dos: Video call showing production in real-time. Request their business registration number and verify on Chinese government databases. Ask for 3 customer references in your country.",
+        ],
+      },
+      {
+        heading: "Step 2: Negotiate Pricing and Payment Terms",
+        content: "Factory-direct pricing is straightforward — you're paying the real manufacturing cost plus a reasonable margin. Key negotiation points:",
+        items: [
+          "Standard payment: 30% deposit to start production, 70% before shipment (30/70 terms). Never pay 100% upfront.",
+          "Letter of Credit (L/C): Bank-guaranteed payment for orders over $10,000. Protects both parties.",
+          "Trade Assurance (Alibaba): Payment held in escrow until you confirm delivery. Good for first-time orders.",
+          "Sample orders: Always order 1 unit first to verify quality and compatibility before committing to volume.",
+          "MOQ (Minimum Order Quantity): Typically 1-5 units for standard models, 50-100+ for custom/OEM orders.",
+        ],
+      },
+      {
+        heading: "Step 3: Choose the Right Shipping Method",
+        content: "Three shipping options, each for different scenarios:",
+        items: [
+          "Sea freight (FCL): Full container load. 2-8 machines per 20ft container. $2,000-4,000 to US/Europe. Transit: 25-40 days. Best for: bulk orders of 3+ machines.",
+          "Sea freight (LCL): Less than container load. Shared container. $500-1,000 per machine. Transit: 30-45 days. Best for: 1-2 machines.",
+          "Air freight: 3-7 day transit. $3,000-8,000 per machine. Best for: urgent orders, sample units, high-value ride-on machines where time is money.",
+          "Express (DHL/FedEx): For parts and consumables only. $50-200 per shipment. Transit: 3-5 days.",
+        ],
+      },
+      {
+        heading: "Step 4: Navigate Customs and Import Duties",
+        content: "Floor scrubbers fall under HS code 8479.89 (machines with individual functions). Import duties vary by country:",
+        items: [
+          "US: 0-2.5% duty on most industrial cleaning equipment. No special tariffs on this category as of 2026.",
+          "EU: 1.7% duty. CE certification required — ensure manufacturer provides CE documentation.",
+          "UK: 0-2% duty. UKCA marking may be required in addition to CE.",
+          "Australia: 0-5% duty. RCM compliance for electrical safety.",
+          "Middle East: 5% GCC duty. SASO/SABER certification for Saudi Arabia.",
+          "Always confirm with your customs broker before ordering — rates change.",
+        ],
+      },
+      {
+        heading: "Step 5: Quality Inspection Before Shipment",
+        content: "Protect your investment with pre-shipment inspection:",
+        items: [
+          "Factory self-inspection: Manufacturer tests each machine before packing. Request video of your specific machines running.",
+          "Third-party inspection: SGS, Bureau Veritas, or TUV inspect at the factory. Cost: $300-500 per inspection. Worth it for orders over $5,000.",
+          "Container loading supervision: Ensure machines are properly packed, secured, and container is sealed. Prevents shipping damage claims.",
+          "Spare parts: Always order 1-2 sets of wear parts (brushes, squeegees) with the machine order — same shipping cost, no downtime later.",
+        ],
+      },
+      {
+        heading: "Common Import Mistakes to Avoid",
+        content: "Learn from others' costly errors:",
+        items: [
+          "Mistake 1: Not budgeting for shipping and duties. A $10,000 machine can cost $13,000-15,000 landed. Calculate total landed cost before comparing to local prices.",
+          "Mistake 2: Not confirming voltage and plug type. Chinese standard is 220V/50Hz. US machines need 110V/60Hz or 220V/60Hz — specify when ordering.",
+          "Mistake 3: Assuming warranty is the same as local. Factory warranties are typically 1 year on parts, but labor is not covered internationally. Factor in local repair costs.",
+          "Mistake 4: Not ordering spare parts with the machine. A $50 squeegee blade that costs $200 to air-freight later is a preventable cost.",
+        ],
+      },
+      {
+        heading: "Start Your Import Journey",
+        content: "Ready to import? Tell us which models you're interested in, your country, and order quantity. We'll provide a detailed quote including shipping and estimated duties. Sample units available for evaluation before committing to volume orders.",
+      },
+    ],
+    relatedProducts: ["K500BT", "A650T", "A660T", "K660"],
+  },
+  // ── OEM vs Aftermarket Parts ──
+  {
+    slug: "oem-vs-aftermarket-floor-scrubber-parts",
+    title: "OEM vs Aftermarket Floor Scrubber Parts: The Truth About Quality and Cost",
+    description:
+      "Should you buy OEM or aftermarket floor scrubber parts? Compare cost, quality, warranty, and compatibility. Aftermarket parts save 30-60% — but here's when OEM is worth the premium.",
+    category: "comparison",
+    readTime: "6 min",
+    difficulty: "beginner",
+    published: "2026-07-04",
+    sections: [
+      {
+        heading: "The OEM Parts Myth",
+        content: "There's a persistent myth in the cleaning equipment industry: 'You must use OEM parts, or you'll damage your machine.' This myth is perpetuated by OEMs and dealers who make 40-60% margin on parts sales. The reality: most OEMs do not manufacture their own brushes, squeegees, or filters. They source from the same specialized factories that produce aftermarket alternatives — then add their label and markup.",
+      },
+      {
+        heading: "OEM Parts: What You're Actually Paying For",
+        content: "When you buy an OEM disc brush from your Tennant or Nilfisk dealer, here's where your $150 goes:",
+        items: [
+          "$30-40: Manufacturing cost (brush factory makes it for the OEM)",
+          "$20-30: OEM's logistics, warehousing, and packaging",
+          "$20-30: Distributor margin",
+          "$40-50: Dealer margin",
+          "Verdict: You're paying $150 for a $35 brush — 77% of the price is middleman markup.",
+        ],
+      },
+      {
+        heading: "Aftermarket Parts: Same Factory, Different Label",
+        content: "Aftermarket parts from a reputable factory-direct supplier are manufactured using the same materials (nylon 6.6, PPL, natural rubber, polyurethane) on the same production equipment. The only difference is the packaging. A factory-direct disc brush costs $45-75 because there are zero middlemen — you're buying from the factory that makes them.",
+      },
+      {
+        heading: "When OEM Parts Are Worth the Premium",
+        content: "There are legitimate cases where OEM makes sense:",
+        items: [
+          "Under warranty: Using non-OEM parts may void your machine warranty. Check your warranty terms. Once out of warranty, switch to aftermarket.",
+          "Specialized electronics: Control boards, proprietary sensors, and software-driven components often can't be replicated. For these, OEM is your only option.",
+          "Emergency same-day need: Local dealers stock OEM parts for immediate pickup. If your machine is down and you need a part today, the premium may be worth avoiding a day of lost productivity.",
+          "Highly specialized materials: Some OEM squeegee compounds are proprietary formulations. If you have unusual floor conditions, confirm the aftermarket alternative matches before buying.",
+        ],
+      },
+      {
+        heading: "Side-by-Side Cost Comparison: Annual Parts for One Ride-On Scrubber",
+        content: "Running one ride-on scrubber 5 days/week, here's the annual parts spend:",
+        items: [
+          "OEM path: 4 disc brushes ($150 each) + 6 squeegee sets ($110 each) + 2 filters ($45 each) + 2 pad holders ($120 each) + misc = $1,710/year",
+          "Aftermarket factory-direct: 4 disc brushes ($60 each) + 6 squeegee sets ($42 each) + 2 filters ($22 each) + 2 pad holders ($50 each) + misc = $726/year",
+          "Annual savings: $984 per machine — nearly $1,000",
+          "10-machine fleet: $9,840 saved every year — enough to buy a new scrubber",
+        ],
+      },
+      {
+        heading: "How to Verify Aftermarket Part Quality Before Ordering",
+        content: "Not all aftermarket parts are equal. Here's how to separate quality suppliers from low-grade copies:",
+        items: [
+          "Request material certification: Reputable suppliers provide spec sheets showing exact material composition (e.g., nylon 6.6 with 30% glass fill for brushes)",
+          "Ask for test reports: Batch testing data for wear resistance, hardness (Shore A for rubber), and chemical compatibility",
+          "Order one sample first: Test a single brush or squeegee against your OEM part before committing to a full year's supply",
+          "Check dimensional accuracy: Compare diameter, center hole, bristle length, and mounting pattern against your original part",
+          "Read the refund policy: Quality suppliers offer replacement or refund if parts don't fit or perform",
+        ],
+      },
+      {
+        heading: "Start Saving on Parts Today",
+        content: "Browse our catalog of 360+ replacement parts — all manufactured to OEM specifications at factory-direct prices. Send us your OEM part number for a same-day quote. Sample quantities available for quality verification.",
+      },
+    ],
+    relatedProducts: [],
+  },
 ];
