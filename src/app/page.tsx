@@ -65,16 +65,17 @@ export default function HomePage() {
                 30+ machine models, 360+ parts. Factory-direct pricing, no middlemen.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
-                <Link href="/products" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-accent hover:bg-accent-hover text-white font-semibold rounded-lg transition-colors text-base">
-                  Browse Products <ArrowRight size={18} />
-                </Link>
-                <Link href="/about#verify" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg border border-white/20 transition-colors text-base">
-                  Verify Our Factory
+                <Link href="/floor-scrubber-parts-quote" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-accent hover:bg-accent-hover text-white font-bold rounded-lg transition-colors text-base shadow-lg shadow-accent/30">
+                  Get Factory Price <ArrowRight size={18} />
                 </Link>
                 <a href="https://wa.me/8619965236428" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg transition-colors text-base">
-                  <Phone size={16} /> Call Factory Direct
+                  <Phone size={16} /> WhatsApp: +86 199 6523 6428
                 </a>
               </div>
+              <p className="text-sm text-gray-300 mt-3 flex items-center gap-2">
+                <span className="inline-block w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+                24-Hour Quote Response — Engineer-Level Support
+              </p>
             </div>
           </div>
         </div>
