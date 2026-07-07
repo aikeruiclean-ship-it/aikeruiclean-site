@@ -105,7 +105,7 @@ export default function HomePage() {
               { icon: Factory, text: "Own 10,000+㎡ Factory" },
               { icon: Award, text: "CE & ISO Certified" },
               { icon: Globe, text: "Export to 50+ Countries" },
-              { icon: Phone, text: "Call Us: +86 199 6523 6428" },
+              { icon: Phone, text: "Talk to Our Sales Team" },
             ].map((item) => (
               <div key={item.text} className="flex items-center justify-center gap-2">
                 <item.icon size={16} className="text-accent shrink-0" />
@@ -258,7 +258,7 @@ export default function HomePage() {
             </Link>
             <Link href="/products" className="inline-flex items-center gap-2 px-8 py-3.5 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg border border-white/20 transition-colors">Browse Products</Link>
           </div>
-          <p className="text-gray-400 text-sm mt-6">Or call us directly: <a href="https://api.whatsapp.com/send?phone=8619965236428&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20pricing." className="text-white underline font-semibold">+86 199 6523 6428</a></p>
+          <p className="text-gray-400 text-sm mt-6">Or call us directly: <a href="https://api.whatsapp.com/send?phone=8619159116875&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20pricing." className="text-white underline font-semibold">WhatsApp Sales Team</a></p>
         </div>
       </section>
     </div>
