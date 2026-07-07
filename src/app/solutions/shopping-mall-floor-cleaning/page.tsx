@@ -61,7 +61,7 @@ export default function MallSolutionPage() {
           <p className="text-gray-200 mb-6 max-w-lg mx-auto">Tell us about your mall layout and floor types. We'll recommend the right equipment mix. Factory-direct pricing.</p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/industrial-floor-scrubber-quote" className="inline-flex items-center gap-2 px-8 py-3.5 bg-accent hover:bg-accent-hover text-white font-bold rounded-lg transition-colors"><Send size={18} /> Get Quote</Link>
-            <a href="https://wa.me/8619965236428" className="inline-flex items-center gap-2 px-8 py-3.5 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-colors"><Phone size={16} /> WhatsApp</a>
+            <a href="https://api.whatsapp.com/send?phone=8619965236428&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20pricing." className="inline-flex items-center gap-2 px-8 py-3.5 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-colors"><Phone size={16} /> WhatsApp</a>
           </div>
         </section>
       </div>

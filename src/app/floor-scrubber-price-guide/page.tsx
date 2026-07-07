@@ -216,7 +216,7 @@ export default function PriceGuidePage() {
               <Send size={18} /> Get Quote Now
             </Link>
             <a
-              href="https://wa.me/8619965236428"
+              href="https://api.whatsapp.com/send?phone=8619965236428&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20pricing."
               className="inline-flex items-center gap-2 px-8 py-3.5 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-colors"
             >
               <Phone size={16} /> WhatsApp

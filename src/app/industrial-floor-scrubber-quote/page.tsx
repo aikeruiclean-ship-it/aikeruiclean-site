@@ -121,7 +121,7 @@ export default function IndustrialFloorScrubberQuotePage() {
                   <Send size={18} /> Get Your Quote Now
                 </a>
                 <a
-                  href="https://wa.me/8619965236428"
+                  href="https://api.whatsapp.com/send?phone=8619965236428&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20pricing."
                   className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-colors text-lg"
                 >
                   <Phone size={18} /> WhatsApp: +86 199 6523 6428
@@ -359,7 +359,7 @@ export default function IndustrialFloorScrubberQuotePage() {
               <p className="text-sm text-gray-500 mb-6">
                 For urgent requests, call us:{" "}
                 <a
-                  href="https://wa.me/8619965236428"
+                  href="https://api.whatsapp.com/send?phone=8619965236428&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20pricing."
                   className="text-primary font-bold"
                 >
                   +86 199 6523 6428
@@ -559,7 +559,7 @@ export default function IndustrialFloorScrubberQuotePage() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="https://wa.me/8619965236428"
+              href="https://api.whatsapp.com/send?phone=8619965236428&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20pricing."
               className="inline-flex items-center gap-2 px-8 py-3.5 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-colors"
             >
               <Phone size={18} /> Call Factory on WhatsApp

@@ -272,7 +272,7 @@ export default function AboutPage() {
               Browse Products
             </Link>
           </div>
-          <p className="text-gray-400 text-sm mt-6">Or call us directly: <a href="https://wa.me/8619965236428" className="text-white underline">+86 199 6523 6428</a></p>
+          <p className="text-gray-400 text-sm mt-6">Or call us directly: <a href="https://api.whatsapp.com/send?phone=8619965236428&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20pricing." className="text-white underline">+86 199 6523 6428</a></p>
         </div>
       </section>
     </div>

@@ -102,7 +102,7 @@ export default function PartsLandingPage() {
                 <a href="#quote-form" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-accent hover:bg-accent-hover text-white font-bold rounded-lg transition-colors text-lg shadow-lg">
                   <Send size={18} /> Get Parts Quote Now
                 </a>
-                <a href="https://wa.me/8619965236428" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-colors text-lg">
+                <a href="https://api.whatsapp.com/send?phone=8619965236428&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20pricing." className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-colors text-lg">
                   <Phone size={18} /> WhatsApp
                 </a>
               </div>
@@ -304,7 +304,7 @@ export default function PartsLandingPage() {
               <p className="text-gray-600 mb-2">Our parts team will reply with pricing and compatibility confirmation within 24 hours.</p>
               <p className="text-sm text-gray-500 mb-6">
                 Urgent? WhatsApp us:{" "}
-                <a href="https://wa.me/8619965236428" className="text-primary font-bold">+86 199 6523 6428</a>
+                <a href="https://api.whatsapp.com/send?phone=8619965236428&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20pricing." className="text-primary font-bold">+86 199 6523 6428</a>
               </p>
               <button onClick={() => { setSubmitted(false); setFormData({ name: "", email: "", phone: "", company: "", country: "", partCategory: "", brand: "", quantity: "", message: "" }); }}
                 className="px-6 py-2.5 bg-primary text-white font-medium rounded-lg hover:bg-primary-light transition-colors">
@@ -435,7 +435,7 @@ export default function PartsLandingPage() {
             Call or WhatsApp us directly. Tell us the part number — we&apos;ll confirm stock and ship same day.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="https://wa.me/8619965236428" className="inline-flex items-center gap-2 px-8 py-3.5 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-colors">
+            <a href="https://api.whatsapp.com/send?phone=8619965236428&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20pricing." className="inline-flex items-center gap-2 px-8 py-3.5 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-colors">
               <Phone size={18} /> WhatsApp: +86 199 6523 6428
             </a>
             <Link href="/parts" className="inline-flex items-center gap-2 px-8 py-3.5 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg border border-white/20 transition-colors">

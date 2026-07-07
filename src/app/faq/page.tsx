@@ -75,7 +75,7 @@ const FAQ_DATA = [
   },
   {
     q: "How do I get a quote?",
-    a: "Fill out the form on our <a href='/floor-scrubber-parts-quote'>Get a Quote</a> page, email us at <a href='mailto:info@aikeruiclean.com'>info@aikeruiclean.com</a>, or WhatsApp us at <a href='https://wa.me/8619965236428'>+86 199 6523 6428</a>. We respond within 24 hours with detailed pricing, specifications, and shipping options.",
+    a: "Fill out the form on our <a href='/floor-scrubber-parts-quote'>Get a Quote</a> page, email us at <a href='mailto:info@aikeruiclean.com'>info@aikeruiclean.com</a>, or WhatsApp us at <a href='https://api.whatsapp.com/send?phone=8619965236428&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20pricing.'>+86 199 6523 6428</a>. We respond within 24 hours with detailed pricing, specifications, and shipping options.",
   },
 ];
 
@@ -144,7 +144,7 @@ export default function FAQPage() {
               Contact Us
             </Link>
             <a
-              href="https://wa.me/8619965236428"
+              href="https://api.whatsapp.com/send?phone=8619965236428&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20pricing."
               className="inline-flex items-center gap-2 px-8 py-3.5 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-colors"
             >
               WhatsApp

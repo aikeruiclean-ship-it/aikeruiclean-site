@@ -52,7 +52,7 @@ export default function ContactPage() {
       <section className="py-6 bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <a href="https://wa.me/8619965236428" className="flex items-center gap-3 p-4 bg-green-50 rounded-xl border border-green-200 hover:bg-green-100 transition-colors group">
+            <a href="https://api.whatsapp.com/send?phone=8619965236428&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20pricing." className="flex items-center gap-3 p-4 bg-green-50 rounded-xl border border-green-200 hover:bg-green-100 transition-colors group">
               <div className="w-12 h-12 bg-green-600 rounded-xl flex items-center justify-center shrink-0"><Phone size={22} className="text-white" /></div>
               <div><p className="text-xs text-green-700 font-medium uppercase">Call Factory Direct</p><p className="text-sm font-bold text-gray-900 group-hover:text-green-700">+86 199 6523 6428</p></div>
             </a>
@@ -80,8 +80,8 @@ export default function ContactPage() {
             <div className="space-y-5">
               {[
                 { icon: Factory, label: "Factory Address", value: "No. 058, Yuantan Road, Yuantan Town, Qianshan City, Anqing City, Anhui Province, China" },
-                { icon: Phone, label: "Phone (Factory Direct)", value: "+86 199 6523 6428", href: "https://wa.me/8619965236428", highlight: true },
-                { icon: MessageCircle, label: "WhatsApp / WeChat", value: "+86 199 6523 6428", href: "https://wa.me/8619965236428" },
+                { icon: Phone, label: "Phone (Factory Direct)", value: "+86 199 6523 6428", href: "https://api.whatsapp.com/send?phone=8619965236428&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20pricing.", highlight: true },
+                { icon: MessageCircle, label: "WhatsApp / WeChat", value: "+86 199 6523 6428", href: "https://api.whatsapp.com/send?phone=8619965236428&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20pricing." },
                 { icon: Mail, label: "Email", value: "info@aikeruiclean.com" },
                 { icon: Clock, label: "Working Hours", value: "Mon–Fri: 8:30 AM – 6:00 PM (CST)" },
               ].map((item) => (
@@ -133,7 +133,7 @@ export default function ContactPage() {
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Inquiry Submitted Successfully!</h3>
                 <p className="text-gray-600 mb-2">Thank you for contacting Aikerui. Our team will respond within 24 hours.</p>
                 {formData.wantVideoTour && <p className="text-sm text-primary font-semibold mb-4">We will contact you to arrange a live factory video tour.</p>}
-                <p className="text-sm text-gray-500 mb-6">For urgent inquiries, call us directly: <a href="https://wa.me/8619965236428" className="text-primary font-bold">+86 199 6523 6428</a></p>
+                <p className="text-sm text-gray-500 mb-6">For urgent inquiries, call us directly: <a href="https://api.whatsapp.com/send?phone=8619965236428&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20pricing." className="text-primary font-bold">+86 199 6523 6428</a></p>
                 <button onClick={() => { setSubmitted(false); setFormData({ name: "", email: "", phone: "", company: "", country: "", product: "", quantity: "", message: "", wantVideoTour: false }); }}
                   className="px-6 py-2.5 bg-primary text-white font-medium rounded-lg hover:bg-primary-light transition-colors">Send Another Inquiry</button>
               </div>
