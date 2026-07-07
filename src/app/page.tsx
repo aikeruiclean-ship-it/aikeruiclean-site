@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Shield, Truck, HeadphonesIcon, Brush, Factory, CheckCircle, Phone, Video, Award, Globe } from "lucide-react";
 import { ProductCard } from "@/components/product-card";
+import { WhatsAppHeroButton } from "@/components/whatsapp-hero-button";
 import { JsonLd } from "@/components/json-ld";
 import { getFeaturedProducts, getPartsProducts, categories, getCategoryCounts } from "@/lib/products";
 
@@ -68,9 +69,7 @@ export default function HomePage() {
                 <Link href="/floor-scrubber-parts-quote" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-accent hover:bg-accent-hover text-white font-bold rounded-lg transition-colors text-base shadow-lg shadow-accent/30">
                   Get Factory Price <ArrowRight size={18} />
                 </Link>
-                <a href="https://api.whatsapp.com/send?phone=8619965236428&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20pricing." className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg transition-colors text-base">
-                  <Phone size={16} /> WhatsApp: +86 199 6523 6428
-                </a>
+                <WhatsAppHeroButton />
               </div>
               <p className="text-sm text-gray-300 mt-3 flex items-center gap-2">
                 <span className="inline-block w-2 h-2 bg-green-400 rounded-full animate-pulse" />
