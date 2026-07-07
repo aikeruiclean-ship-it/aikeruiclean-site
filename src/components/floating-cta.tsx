@@ -12,8 +12,8 @@ export function FloatingCTA() {
     setPerson(pickRandom());
   }, []);
 
-  const phone = person?.phone ?? "8619965236428";
-  const name = person?.name;
+  const phone = person?.phone ?? "8619159116875";
+  const name = person?.name ?? "Keke";
 
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">

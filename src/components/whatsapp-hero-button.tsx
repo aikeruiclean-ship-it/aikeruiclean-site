@@ -11,8 +11,8 @@ export function WhatsAppHeroButton() {
     setPerson(pickRandom());
   }, []);
 
-  const phone = person?.phone ?? "8619965236428";
-  const name = person?.name;
+  const phone = person?.phone ?? "8619159116875";
+  const name = person?.name ?? "Keke";
 
   return (
     <a
