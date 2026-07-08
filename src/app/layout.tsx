@@ -97,6 +97,7 @@ export default function RootLayout({
             priceRange: "$$",
             sameAs: [
               "https://youtube.com/@markxu-u8h",
+              "https://x.com/mark_xu71710",
               "https://aikeruiclean.com",
             ]
           })
