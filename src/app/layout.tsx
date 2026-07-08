@@ -94,7 +94,11 @@ export default function RootLayout({
             url: "https://aikeruiclean.com",
             description: "Professional manufacturer of industrial floor scrubbers, sweepers, and cleaning accessories. Factory-direct pricing, CE certified.",
             areaServed: { "@type": "Country", name: "Worldwide" },
-            priceRange: "$$"
+            priceRange: "$$",
+            sameAs: [
+              "https://youtube.com/@markxu-u8h",
+              "https://aikeruiclean.com",
+            ]
           })
         }} />
       </head>
