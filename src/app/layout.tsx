@@ -98,6 +98,8 @@ export default function RootLayout({
             sameAs: [
               "https://youtube.com/@markxu-u8h",
               "https://x.com/mark_xu71710",
+              "https://instagram.com/aikeruiclean",
+              "https://instagram.com/aikerui",
               "https://aikeruiclean.com",
             ]
           })
