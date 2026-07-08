@@ -181,13 +181,13 @@ export default function AdminLeadsPage() {
             />
           </div>
           <div className="flex gap-1 overflow-x-auto">
-            {[
+            {([
               ["all", counts.all],
               ["new", counts.new],
               ["contacted", counts.contacted],
               ["quoted", counts.quoted],
               ["won", counts.won],
-            ].map(([k, v]: [string, number]) => (
+            ] as [string, number][]).map(([k, v]) => (
               <button
                 key={k}
                 onClick={() => setStatusFilter(k)}
