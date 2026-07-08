@@ -89,7 +89,7 @@ const guides: Guide[] = [
     ],
   },
   {
-    slug: "walk-behind-vs-ride-on-scrubber",
+    slug: "walk-behind-vs-ride-on-scrubber-overview",
     title: "Walk-Behind vs Ride-On Floor Scrubber: Which Is Better?",
     description:
       "A detailed comparison of walk-behind and ride-on floor scrubbers. Compare productivity, cost, operator experience, and find the right match for your facility size and cleaning needs.",
@@ -262,7 +262,7 @@ export const guideCategories = [
   }
 ,
   {
-    slug: "top-10-floor-scrubber-manufacturers-2026",
+    slug: "top-floor-scrubber-brands-buyers-guide",
     title: "Top 10 Floor Scrubber Manufacturers in 2026 — Complete Comparison",
     description: "Compare the top 10 floor scrubber manufacturers in 2026. From global brands like Tennant and Karcher to factory-direct options like Aikerui. Find the best manufacturer for your needs.",
     category: "buying-guide",
