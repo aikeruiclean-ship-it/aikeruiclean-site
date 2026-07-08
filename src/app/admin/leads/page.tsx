@@ -187,7 +187,7 @@ export default function AdminLeadsPage() {
               ["contacted", counts.contacted],
               ["quoted", counts.quoted],
               ["won", counts.won],
-            ].map(([k, v]) => (
+            ].map(([k, v]: [string, number]) => (
               <button
                 key={k}
                 onClick={() => setStatusFilter(k)}
