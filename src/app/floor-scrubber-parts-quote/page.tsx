@@ -99,6 +99,17 @@ export default function PartsQuotePage() {
         </div>
       </section>
 
+      {/* Phone / WhatsApp */}
+      <section className="py-6 bg-primary text-white">
+        <div className="max-w-5xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-center gap-4 text-center">
+          <p className="font-semibold">Need Parts Urgently?</p>
+          <a href="https://api.whatsapp.com/send?phone=8619159116875&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20parts." target="_blank" rel="noopener"
+            className="inline-flex items-center gap-2 px-6 py-2.5 bg-green-500 hover:bg-green-600 text-white font-bold rounded-lg transition-colors">
+            <Phone size={16} /> WhatsApp: +86 191 5911 6875
+          </a>
+        </div>
+      </section>
+
       {/* Price highlight */}
       <section className="py-8 bg-amber-50 border-y border-amber-200">
         <div className="max-w-3xl mx-auto px-4 text-center">
