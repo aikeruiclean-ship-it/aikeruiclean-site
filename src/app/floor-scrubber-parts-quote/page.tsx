@@ -17,7 +17,7 @@ const PRODUCTS = [
 export default function PartsQuotePage() {
   const [submitted, setSubmitted] = useState(false);
   const [sending, setSending] = useState(false);
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -99,17 +99,6 @@ export default function PartsQuotePage() {
         </div>
       </section>
 
-      {/* Phone / WhatsApp */}
-      <section className="py-6 bg-primary text-white">
-        <div className="max-w-5xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-center gap-4 text-center">
-          <p className="font-semibold">Need Parts Urgently?</p>
-          <a href="https://api.whatsapp.com/send?phone=8619159116875&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20parts." target="_blank" rel="noopener"
-            className="inline-flex items-center gap-2 px-6 py-2.5 bg-green-500 hover:bg-green-600 text-white font-bold rounded-lg transition-colors">
-            <Phone size={16} /> WhatsApp: +86 191 5911 6875
-          </a>
-        </div>
-      </section>
-
       {/* Price highlight */}
       <section className="py-8 bg-amber-50 border-y border-amber-200">
         <div className="max-w-3xl mx-auto px-4 text-center">
@@ -140,6 +129,9 @@ export default function PartsQuotePage() {
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" />
                 <input type="email" name="email" required placeholder="Email Address *" value={form.email}
                   onChange={e => setForm({...form, email: e.target.value})}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" />
+                <input type="text" name="phone" placeholder="Phone / WhatsApp" value={form.phone}
+                  onChange={e => setForm({...form, phone: e.target.value})}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" />
                 <textarea name="message" required rows={4} placeholder="Tell us which part you need (OEM number, machine model, or description) *" value={form.message}
                   onChange={e => setForm({...form, message: e.target.value})}
