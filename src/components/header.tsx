@@ -143,7 +143,7 @@ export function Header() {
       >
         <div className="p-4 border-b border-gray-200 flex items-center justify-between">
           <span className="font-bold text-primary">Menu</span>
-          <button onClick={() => setMobileOpen(false)} className="p-1 text-gray-500 hover:text-primary">
+          <button onClick={() => setMobileOpen(false)} className="p-1 text-gray-500 hover:text-primary" aria-label="Close menu">
             <X size={20} />
           </button>
         </div>
