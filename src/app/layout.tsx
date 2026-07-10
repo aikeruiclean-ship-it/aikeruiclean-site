@@ -65,6 +65,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
       <head>
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
         {/* Google Search Console verification */}
         <meta name="google-site-verification" content="9n-ScR2ZUM3VI7e8ACJvhSk7hRefGI-XdnihD4DkYx8" />
         {/* Google Tag Manager */}
