@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { Factory, Truck, BadgeCheck, Phone, Send, CheckCircle } from "lucide-react";
 import { JsonLd } from "@/components/json-ld";
-import { YouTubeEmbed } from "@/components/youtube-embed";
+import { YouTubeLink } from "@/components/youtube-link";
 
 const PRODUCTS = [
   { name: "Disc Brush", img: "/images/categories/Disc-Brush.webp" },
@@ -114,7 +114,7 @@ export default function PartsQuotePage() {
       <section className="py-8 bg-white">
         <div className="max-w-2xl mx-auto px-4">
           <h2 className="text-xl font-bold text-gray-900 text-center mb-4">See Our Parts in Action</h2>
-          <YouTubeEmbed videoId="uboqkY17M48" title="Floor Scrubber Charger — Compatible Replacement" />
+          <YouTubeLink videoId="uboqkY17M48" title="Floor Scrubber Charger — Compatible Replacement" />
         </div>
       </section>
 
