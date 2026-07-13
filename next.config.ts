@@ -25,7 +25,7 @@ const nextConfig: NextConfig = {
               "default-src 'self'",
               "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://*.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com",
               "style-src 'self' 'unsafe-inline'",
-              "img-src 'self' data: blob: https://www.aikeruiclean.com https://aikeruiclean.com https://www.googletagmanager.com",
+              "img-src 'self' data: blob: https://www.aikeruiclean.com https://aikeruiclean.com https://www.googletagmanager.com https://img.youtube.com",
               "font-src 'self'",
               "connect-src 'self' https://api.brevo.com https://*.stripe.com https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com",
               "frame-src 'self' https://*.stripe.com https://www.googletagmanager.com",
