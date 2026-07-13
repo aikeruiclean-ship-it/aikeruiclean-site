@@ -2,12 +2,13 @@ export interface Guide {
   slug: string;
   title: string;
   description: string;
-  category: "buying-guide" | "maintenance" | "comparison" | "troubleshooting";
+  category: "buying-guide" | "maintenance" | "comparison" | "troubleshooting" | "product-showcase" | "installation";
   readTime: string;
   difficulty: "beginner" | "intermediate" | "advanced";
   published: string;
   sections: GuideSection[];
   relatedProducts?: string[];
+  videoUrl?: string;
 }
 
 interface GuideSection {
