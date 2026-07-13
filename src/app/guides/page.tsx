@@ -28,12 +28,12 @@ const CATEGORY_LABELS: Record<string, { label: string; icon: string }> = {
   "product-showcase": { label: "Product Showcase", icon: "🏭" },
 };
 
-const CATEGORY_IMAGES: Record<string, string> = {
-  "buying-guide": "/images/categories/floor-scrubbers.webp",
-  maintenance: "/images/categories/Disc-Brush.webp",
-  comparison: "/images/categories/Roller-Brush.webp",
-  troubleshooting: "/images/categories/Squeegee-Rubber.webp",
-  "product-showcase": "/images/categories/floor-sweepers.webp",
+const CATEGORY_STYLES: Record<string, { gradient: string; icon: string }> = {
+  "buying-guide": { gradient: "from-blue-600 to-blue-800", icon: "📖" },
+  maintenance: { gradient: "from-emerald-600 to-emerald-800", icon: "🔧" },
+  comparison: { gradient: "from-purple-600 to-purple-800", icon: "⚖️" },
+  troubleshooting: { gradient: "from-amber-500 to-amber-700", icon: "🩺" },
+  "product-showcase": { gradient: "from-rose-600 to-rose-800", icon: "🏭" },
 };
 
 export default function GuidesPage() {
@@ -101,12 +101,9 @@ export default function GuidesPage() {
                             loading="lazy"
                           />
                         ) : (
-                          <img
-                            src={CATEGORY_IMAGES[guide.category] || "/images/categories/floor-scrubbers.webp"}
-                            alt=""
-                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                            loading="lazy"
-                          />
+                          <div className={`w-full h-full bg-gradient-to-br ${(CATEGORY_STYLES[guide.category] || CATEGORY_STYLES["buying-guide"]).gradient} flex items-center justify-center`}>
+                            <span className="text-5xl opacity-90">{(CATEGORY_STYLES[guide.category] || CATEGORY_STYLES["buying-guide"]).icon}</span>
+                          </div>
                         )}
                         {guide.videoId && (
                           <div className="absolute top-2 right-2 bg-red-600 text-white text-xs px-2 py-0.5 rounded-full font-medium">
