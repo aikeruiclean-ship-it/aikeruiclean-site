@@ -8,7 +8,7 @@ export function YouTubeEmbed({
   return (
     <div className="relative aspect-video rounded-xl overflow-hidden bg-gray-100 my-8">
       <iframe
-        src={`https://www.youtube.com/embed/${videoId}`}
+        src={`https://www.youtube-nocookie.com/embed/${videoId}`}
         title={title}
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
