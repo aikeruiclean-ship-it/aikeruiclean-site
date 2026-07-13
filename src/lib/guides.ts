@@ -194,7 +194,7 @@ const guides: Guide[] = [
 ];
 
 export function getGuides(): Guide[] {
-  return guides;
+  return [...guides, ...extraGuides];
 }
 
 export function getGuideBySlug(slug: string): Guide | undefined {
@@ -209,8 +209,11 @@ export const guideCategories = [
   { slug: "buying-guide" as const, label: "Buying Guides" },
   { slug: "maintenance" as const, label: "Maintenance" },
   { slug: "comparison" as const, label: "Comparisons" },
-  { slug: "troubleshooting" as const, label: "Troubleshooting" }
-,
+  { slug: "troubleshooting" as const, label: "Troubleshooting" },
+];
+
+// Additional guides (content sprint)
+const extraGuides: Guide[] = [
   {
     slug: "how-to-set-up-your-floor-scrubber",
     title: "How to Set Up Your Floor Scrubber: Complete Installation Guide",
