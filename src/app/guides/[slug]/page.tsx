@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getGuideBySlug, getGuides, guideCategories } from "@/lib/guides";
 import { Clock, BookOpen, ArrowLeft, Tag } from "lucide-react";
 import type { Metadata } from "next";
+import { YouTubeEmbed } from "@/components/youtube-embed";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -181,6 +182,13 @@ export default async function GuideDetailPage({ params }: Props) {
               ))}
             </ul>
           </div>
+
+          {/* Video embed */}
+          {guide.videoId && (
+            <div className="mt-6">
+              <YouTubeEmbed videoId={guide.videoId} title={guide.title} />
+            </div>
+          )}
 
           {/* Content sections */}
           <div className="space-y-10">

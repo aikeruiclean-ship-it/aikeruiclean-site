@@ -9,6 +9,7 @@ export interface Guide {
   sections: GuideSection[];
   relatedProducts?: string[];
   videoUrl?: string;
+  videoId?: string;
 }
 
 interface GuideSection {
@@ -390,6 +391,7 @@ const extraGuides: Guide[] = [
           "If the recovery tank drain valve or hose is partially clogged, water backs up in the tank and overflows onto the floor. Clean the drain thoroughly and check the tank for sludge buildup. A full tank should be emptied when 80% capacity is reached — do not wait until it overflows.",
       },
     ],
+    videoId: "JwAKLzf4JAY",
     relatedProducts: [],
   },
   {
@@ -1111,6 +1113,7 @@ const extraGuides: Guide[] = [
         content: "Browse our full catalog of 360+ replacement parts or send us your part number for a same-day quote. All parts manufactured to OEM specifications in our ISO 9001 certified factory. Compatible with Tennant, Nilfisk, Karcher, Comac, Viper, Hako, Fimap, and 15+ other brands.",
       },
     ],
+    videoId: "fdISROzR0fQ",
     relatedProducts: [],
   },
   // ── Industrial Floor Scrubber Complete Guide ──
@@ -2224,6 +2227,7 @@ const extraGuides: Guide[] = [
         content: "All Aikerui scrubbers meet CE and ISO 9001 safety standards. Factory-direct pricing with full documentation for your safety compliance records. Quote within 24 hours.",
       },
     ],
+    videoId: "-vnsEuzpTAg",
     relatedProducts: [],
   },
 ];
