@@ -75,22 +75,43 @@ export default function GuidesPage() {
                     <Link
                       key={guide.slug}
                       href={`/guides/${guide.slug}`}
-                      className="group p-6 bg-white rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition-all"
+                      className="group bg-white rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition-all overflow-hidden"
                     >
-                      <div className="flex items-center justify-between mb-3">
-                        <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded">
-                          {guide.difficulty}
-                        </span>
-                        <span className="text-xs text-gray-400">
-                          {guide.readTime}
-                        </span>
+                      <div className="relative aspect-[2/1] bg-gray-100 overflow-hidden">
+                        {guide.videoId ? (
+                          <img
+                            src={`https://img.youtube.com/vi/${guide.videoId}/mqdefault.jpg`}
+                            alt=""
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                            loading="lazy"
+                          />
+                        ) : (
+                          <div className="w-full h-full flex items-center justify-center text-4xl">
+                            {info.icon}
+                          </div>
+                        )}
+                        {guide.videoId && (
+                          <div className="absolute top-2 right-2 bg-red-600 text-white text-xs px-2 py-0.5 rounded-full font-medium">
+                            ▶ Video
+                          </div>
+                        )}
                       </div>
-                      <h3 className="font-bold text-gray-900 group-hover:text-primary transition-colors mb-2 line-clamp-2">
-                        {guide.title}
-                      </h3>
-                      <p className="text-sm text-gray-600 line-clamp-2">
-                        {guide.description}
-                      </p>
+                      <div className="p-5">
+                        <div className="flex items-center justify-between mb-3">
+                          <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded">
+                            {guide.difficulty}
+                          </span>
+                          <span className="text-xs text-gray-400">
+                            {guide.readTime}
+                          </span>
+                        </div>
+                        <h3 className="font-bold text-gray-900 group-hover:text-primary transition-colors mb-2 line-clamp-2">
+                          {guide.title}
+                        </h3>
+                        <p className="text-sm text-gray-600 line-clamp-2">
+                          {guide.description}
+                        </p>
+                      </div>
                     </Link>
                   ))}
                 </div>
@@ -102,4 +123,3 @@ export default function GuidesPage() {
     </div>
   );
 }
-// force rebuild
