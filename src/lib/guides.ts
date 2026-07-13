@@ -218,7 +218,7 @@ const extraGuides: Guide[] = [
     slug: "how-to-set-up-your-floor-scrubber",
     title: "How to Set Up Your Floor Scrubber: Complete Installation Guide",
     description: "Step-by-step installation guide for Aikerui floor scrubbers. Learn how to unpack, assemble the squeegee, install brushes, connect the battery, and prepare your machine for first use.",
-    category: "installation",
+    category: "maintenance",
     readTime: "5 min",
     difficulty: "beginner",
     published: "2026-06-08",
