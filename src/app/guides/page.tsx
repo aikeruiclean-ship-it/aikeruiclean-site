@@ -56,7 +56,7 @@ export default function GuidesPage() {
       </section>
 
       <div className="max-w-7xl mx-auto px-4 py-12">
-        {["buying-guide", "maintenance", "troubleshooting", "comparison"].map(
+        {["buying-guide", "maintenance", "troubleshooting", "comparison", "product-showcase"].map(
           (cat) => {
             const catGuides = guides.filter((g) => g.category === cat);
             if (catGuides.length === 0) return null;
