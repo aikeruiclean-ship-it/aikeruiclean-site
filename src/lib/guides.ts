@@ -198,11 +198,11 @@ export function getGuides(): Guide[] {
 }
 
 export function getGuideBySlug(slug: string): Guide | undefined {
-  return guides.find((g) => g.slug === slug);
+  return [...guides, ...extraGuides].find((g) => g.slug === slug);
 }
 
 export function getGuidesByCategory(category: Guide["category"]): Guide[] {
-  return guides.filter((g) => g.category === category);
+  return [...guides, ...extraGuides].filter((g) => g.category === category);
 }
 
 export const guideCategories = [
