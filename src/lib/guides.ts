@@ -10,6 +10,7 @@ export interface Guide {
   relatedProducts?: string[];
   videoUrl?: string;
   videoId?: string;
+  thumbnail?: string;
 }
 
 interface GuideSection {
