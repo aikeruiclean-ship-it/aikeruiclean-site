@@ -4,6 +4,7 @@ import { getGuides } from "@/lib/guides";
 import { JsonLd } from "@/components/json-ld";
 
 export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 export const metadata: Metadata = {
   title: "Floor Scrubber Guides & Resources | Buying Tips, Maintenance & Comparison | Aikerui",
