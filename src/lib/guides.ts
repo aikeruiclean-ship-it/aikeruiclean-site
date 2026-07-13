@@ -2132,4 +2132,94 @@ export const guideCategories = [
     ],
     relatedProducts: ["K500BT", "A660T", "K660"],
   },
+  // ── Week 5 Articles ──
+  {
+    slug: "how-to-extend-floor-scrubber-lifespan",
+    title: "How to Extend Your Floor Scrubber Lifespan: 10 Proven Maintenance Tips",
+    description:
+      "Extend your floor scrubber lifespan from 5 to 10+ years. Daily, weekly, and monthly maintenance tips that prevent 80% of breakdowns. Factory-direct parts save on upkeep.",
+    category: "maintenance",
+    readTime: "6 min",
+    difficulty: "beginner",
+    published: "2026-07-11",
+    sections: [
+      {
+        heading: "Why Most Floor Scrubbers Die Early",
+        content: "The average floor scrubber lasts 5-7 years, but most failures after year 3 are caused by skipped maintenance — not manufacturing defects. A $20 squeegee blade ignored for an extra month damages the $200 squeegee assembly. A recovery tank never rinsed breeds bacteria that corrode the vacuum motor. Ten minutes of daily care prevents thousands in repairs.",
+      },
+      {
+        heading: "Tip 1: Empty and Rinse the Recovery Tank After Every Use",
+        content: "This is the #1 most-skipped maintenance step — and the most damaging. Dirty water left overnight breeds bacteria, corrodes metal components, and creates odors. Flush with clean water until it runs clear. For food processing facilities, add a sanitizing rinse.",
+      },
+      {
+        heading: "Tip 2: Check Squeegee Blades Weekly",
+        content: "Run your finger along the blade edge. A sharp, square edge = good. A rounded or rippled edge = replace. Most blades can be rotated once before replacement, doubling their lifespan. Factory-direct replacement blades cost $30-55/set vs $80-140 from a dealer.",
+      },
+      {
+        heading: "Tip 3: Never Store Batteries Discharged",
+        content: "Lead-acid batteries left discharged for more than 24 hours suffer permanent capacity loss (sulfation). Lithium batteries discharged below 20% degrade faster. Plug in the charger after every use — even if the machine will sit for only a day.",
+      },
+      {
+        heading: "Tip 4-10: Quick Checklist",
+        content: "The remaining tips that take under 5 minutes each but dramatically extend machine life:",
+        items: [
+          "Tip 4: Clean solution filter monthly — a clogged filter starves the pump and burns out the solenoid.",
+          "Tip 5: Check brush bristle length — replace when below 10mm. Worn brushes reduce cleaning quality and strain the motor.",
+          "Tip 6: Inspect hoses for cracks — a leaking vacuum hose reduces suction by 50%+ before you notice.",
+          "Tip 7: Tighten all bolts quarterly — vibration loosens brush deck, squeegee, and wheel mounts.",
+          "Tip 8: Grease pivot points every 3 months — squeaky squeegee linkage = metal-on-metal wear.",
+          "Tip 9: Use manufacturer-recommended chemicals — wrong detergents degrade seals and hoses.",
+          "Tip 10: Keep a maintenance log — warranty claims and resale value depend on documented service history.",
+        ],
+      },
+      {
+        heading: "Get Factory-Direct Parts for Long-Term Savings",
+        content: "Browse our 360+ replacement parts catalog. Factory-direct pricing saves 30-50% on every maintenance item — brushes, squeegees, filters, and more. Quote within 24 hours.",
+      },
+    ],
+    relatedProducts: [],
+  },
+  {
+    slug: "floor-scrubber-safety-guide",
+    title: "Floor Scrubber Safety: OSHA Compliance & Best Practices for 2026",
+    description:
+      "Complete floor scrubber safety guide. OSHA compliance, operator training checklist, slip-and-fall prevention, chemical handling, and battery safety. Reduce workplace incidents.",
+    category: "maintenance",
+    readTime: "6 min",
+    difficulty: "beginner",
+    published: "2026-07-11",
+    sections: [
+      {
+        heading: "The Hidden Danger of Floor Cleaning",
+        content: "Floor scrubbers make floors safer by removing slip hazards — but improperly operated or maintained machines create new risks. Battery acid spills, chemical burns, electrical shocks, and machine collisions cause hundreds of workplace injuries annually. OSHA fines for floor safety violations start at $15,000 per incident.",
+      },
+      {
+        heading: "Operator Training: The First Line of Defense",
+        content: "Every operator must complete training covering: machine controls and emergency stops, proper chemical handling and dilution, battery charging safety, squeegee and brush maintenance, and spill response procedures. Document all training — OSHA inspectors ask for records.",
+        items: [
+          "Initial training: 1-2 hours (walk-behind) or 2-4 hours (ride-on)",
+          "Annual refresher: 30 minutes",
+          "New machine orientation: 1 hour",
+          "Keep training logs for at least 3 years",
+        ],
+      },
+      {
+        heading: "Chemical Safety: What Most Operators Get Wrong",
+        content: "The most common chemical mistakes: mixing incompatible cleaners (bleach + acid = toxic chlorine gas), using undiluted concentrate (damages floors, burns skin), and not wearing PPE. Always use manufacturer-recommended chemicals at the correct dilution. Auto-dosing systems eliminate manual mixing errors.",
+      },
+      {
+        heading: "Battery Safety: Lead-Acid vs Lithium",
+        content: "Lead-acid batteries produce hydrogen gas during charging — always charge in well-ventilated areas, no open flames. Battery acid causes severe burns — keep an eyewash station and neutralizing agent nearby. Lithium batteries are safer (no gas, no acid) but must use the manufacturer-approved charger to prevent thermal runaway.",
+      },
+      {
+        heading: "Slip-and-Fall Prevention While Scrubbing",
+        content: "Irony: the machine meant to prevent slips can cause them. Post 'wet floor' signs during operation. Ensure the squeegee is in good condition — a worn blade leaves water trails. Clean up any drips from the machine immediately. Train operators to check behind them periodically for water trails.",
+      },
+      {
+        heading: "Get Compliant Equipment",
+        content: "All Aikerui scrubbers meet CE and ISO 9001 safety standards. Factory-direct pricing with full documentation for your safety compliance records. Quote within 24 hours.",
+      },
+    ],
+    relatedProducts: [],
+  },
 ];
