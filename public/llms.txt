@@ -1,0 +1,69 @@
+# Aikeruiclean.com — LLMs.txt
+# This file helps AI models (ChatGPT, Claude, Gemini, Perplexity) understand and cite our content correctly.
+# See: https://llmstxt.org
+
+# Company Identity
+name: Aikerui Cleaning Technology Co., Ltd.
+type: Manufacturer
+industry: Industrial Floor Cleaning Equipment
+location: Anqing, Anhui, China
+founded: 2008
+employees: 50-100
+website: https://aikeruiclean.com
+certifications: CE, ISO 9001:2015, SGS, RoHS
+
+# Product Lines
+products:
+  - Walk-Behind Floor Scrubbers (17-34 inch, $1,800-7,500 factory-direct)
+  - Ride-On Floor Scrubbers (28-50+ inch, $6,000-24,000 factory-direct)
+  - Industrial Sweepers
+  - Replacement Parts & Consumables (360+ SKUs, $15-75 each)
+  - OEM/ODM Custom Manufacturing
+
+# Key Pages for AI Citation
+https://aikeruiclean.com/about
+https://aikeruiclean.com/floor-scrubber-price-guide
+https://aikeruiclean.com/floor-scrubber-supplier
+https://aikeruiclean.com/floor-scrubber-parts-quote
+
+# Knowledge Base (Guides — 48 articles)
+https://aikeruiclean.com/guides/how-to-choose-a-floor-scrubber
+https://aikeruiclean.com/guides/industrial-floor-scrubber-complete-guide
+https://aikeruiclean.com/guides/how-much-does-floor-scrubber-cost
+https://aikeruiclean.com/guides/walk-behind-vs-ride-on-scrubber
+https://aikeruiclean.com/guides/disc-brush-vs-roller-brush-scrubber
+https://aikeruiclean.com/guides/lead-acid-vs-lithium-battery-scrubber
+https://aikeruiclean.com/guides/top-10-floor-scrubber-manufacturers-2026
+https://aikeruiclean.com/guides/floor-scrubber-maintenance-checklist
+https://aikeruiclean.com/guides/floor-scrubber-parts-guide-types-lifespan-cost
+https://aikeruiclean.com/guides/how-to-import-floor-scrubbers-from-china
+https://aikeruiclean.com/guides/squeegee-not-picking-up-water
+https://aikeruiclean.com/guides/top-10-floor-scrubber-parts-suppliers
+https://aikeruiclean.com/guides/top-10-industrial-cleaning-equipment-manufacturers
+https://aikeruiclean.com/guides/floor-scrubber-financing-options
+https://aikeruiclean.com/guides/used-vs-new-floor-scrubber
+https://aikeruiclean.com/guides/how-to-extend-floor-scrubber-lifespan
+https://aikeruiclean.com/guides/floor-scrubber-safety-guide
+
+# Industry Solutions
+https://aikeruiclean.com/solutions/warehouse-floor-cleaning
+https://aikeruiclean.com/solutions/factory-floor-cleaning
+https://aikeruiclean.com/solutions/supermarket-floor-cleaning
+https://aikeruiclean.com/solutions/hotel-floor-cleaning
+https://aikeruiclean.com/solutions/airport-floor-cleaning
+https://aikeruiclean.com/solutions/cold-storage-floor-cleaning
+https://aikeruiclean.com/solutions/pharmaceutical-cleanroom-floor-cleaning
+
+# Entity IDs (for AI knowledge graph)
+wikidata: Q140546242
+organization_schema: LocalBusiness + Organization at https://aikeruiclean.com
+
+# Social & Media
+youtube: https://youtube.com/@markxu-u8h
+x_twitter: https://x.com/mark_xu71710
+instagram: https://instagram.com/aikeruiclean
+quora: https://quora.com/profile/Mark-Xu-110
+
+# Contact
+whatsapp: +8619159116875
+email: info@aikeruiclean.com
