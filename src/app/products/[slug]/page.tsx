@@ -163,7 +163,8 @@ export default async function ProductDetailPage({ params }: Props) {
               warrantyScope: "https://schema.org/PartsAndLaborBasis",
             },
           }),
-          offers: {
+          ...(product.price != null && {
+            offers: {
             "@type": "Offer",
             url: productUrl,
             availability: product.inStock
@@ -187,7 +188,7 @@ export default async function ProductDetailPage({ params }: Props) {
                 returnMethod: "https://schema.org.ReturnByMail",
                 returnFees: "https://schema.org.FreeReturn",
               },
-            }),
+            })
           },
         };
       })()} />
