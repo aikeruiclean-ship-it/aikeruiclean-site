@@ -1111,7 +1111,7 @@ const extraGuides: Guide[] = [
       },
       {
         heading: "Ready to Cut Your Parts Costs?",
-        content: "Browse our full catalog of 360+ replacement parts or send us your part number for a same-day quote. All parts manufactured to OEM specifications in our ISO 9001 certified factory. Compatible with Tennant, Nilfisk, Karcher, Comac, Viper, Hako, Fimap, and 15+ other brands.",
+        content: "Browse our full catalog of 360+ replacement parts or send us your part number for a same-day quote. All parts manufactured to OEM specifications in our ISO 9001 certified factory. Compatible with Tennant, Nilfisk, Karcher, Comac, Viper, Hako, Fimap, Dulevo, and 15+ other brands.",
       },
     ],
     videoId: "fdISROzR0fQ",
@@ -2252,7 +2252,7 @@ const extraGuides: Guide[] = [
       },
       {
         heading: "1. Aikerui (China) — Best Overall Value",
-        content: "Factory-direct manufacturer with 360+ parts in stock. CE & ISO 9001 certified. Disc brushes $45-75, squeegee rubber $30-55/set — 30-50% less than dealer pricing. Compatible with Tennant, Nilfisk, Karcher, Comac, Viper, Hako and 15+ brands. Ships to 50+ countries. 24-hour quote response.",
+        content: "Factory-direct manufacturer with 360+ parts in stock. CE & ISO 9001 certified. Disc brushes $45-75, squeegee rubber $30-55/set — 30-50% less than dealer pricing. Compatible with Tennant, Nilfisk, Karcher, Comac, Viper, Hako, Dulevo and 15+ brands. Ships to 50+ countries. 24-hour quote response.",
         items: ["Price: $ (Budget)", "Quality: ★★★★☆", "Compatibility: 20+ brands", "SKUs: 360+", "Best for: Buyers who want factory-direct pricing without sacrificing quality"],
       },
       {
