@@ -2307,4 +2307,78 @@ const extraGuides: Guide[] = [
     ],
     relatedProducts: [],
   },
+  // ── Financing Guide ──
+  {
+    slug: "floor-scrubber-financing-options",
+    title: "Floor Scrubber Financing: How to Pay for Your Equipment in 2026",
+    description:
+      "Compare floor scrubber financing options: leasing, equipment loans, 30/70 payment terms, and factory-direct savings. Calculate monthly payments and find the best option for your budget.",
+    category: "buying-guide",
+    readTime: "5 min",
+    difficulty: "beginner",
+    published: "2026-07-14",
+    sections: [
+      {
+        heading: "Why Financing Makes Sense for Floor Scrubbers",
+        content: "A quality ride-on floor scrubber costs $9,000-35,000 — too much for many businesses to pay upfront. But the machine pays for itself in labor savings within 12-18 months. Financing lets you capture those savings immediately without draining cash reserves.",
+      },
+      {
+        heading: "Option 1: Equipment Leasing",
+        content: "Monthly payments, no large upfront cost. At the end of the lease, you can buy the machine for a residual amount, return it, or upgrade to a newer model.",
+        items: [
+          "Typical terms: 24-60 months, 5-15% APR",
+          "Monthly payment for $10,000 machine: $200-350/month",
+          "Best for: Businesses that want to upgrade equipment regularly",
+          "Tax benefit: Lease payments are typically fully deductible as operating expenses",
+        ],
+      },
+      {
+        heading: "Option 2: Equipment Loan",
+        content: "Borrow the full purchase price and pay it back over time. You own the machine from day one.",
+        items: [
+          "Typical terms: 12-60 months, 6-12% APR",
+          "Monthly payment for $10,000 machine: $200-500/month",
+          "Best for: Businesses that want to own the asset and claim depreciation",
+          "Tax benefit: Depreciation (Section 179) allows full deduction in year one",
+        ],
+      },
+      {
+        heading: "Option 3: Factory-Direct 30/70 Payment Terms",
+        content: "The most common payment method for international factory-direct orders. Pay 30% to start production, and the remaining 70% before shipment. No interest, no bank involvement.",
+        items: [
+          "30% deposit: Locks in your order and starts production",
+          "70% before shipment: Paid after quality inspection, before container leaves port",
+          "Best for: International buyers purchasing directly from manufacturers",
+          "Advantage: No interest, no credit check, flexible negotiation",
+        ],
+      },
+      {
+        heading: "Option 4: Letter of Credit (L/C)",
+        content: "Bank-guaranteed payment for orders over $10,000. Your bank guarantees payment to the manufacturer once shipping documents are verified. This protects both buyer and seller in international transactions.",
+        items: [
+          "Cost: 0.5-2% of the transaction value",
+          "Best for: First-time international buyers or large orders",
+          "Advantage: Payment only released when shipping documents confirmed",
+        ],
+      },
+      {
+        heading: "Option 5: Trade Assurance (Alibaba)",
+        content: "Payment held in escrow by Alibaba until you confirm delivery. Provides protection against non-delivery or quality issues.",
+        items: [
+          "Cost: Free for buyers",
+          "Best for: Sample orders or first-time purchases from a new supplier",
+          "Advantage: Payment only released after you confirm receipt",
+        ],
+      },
+      {
+        heading: "Factory-Direct vs Dealer: The Financing Advantage",
+        content: "A $15,000 dealer-purchased machine financed at 10% over 48 months costs $381/month. The same machine factory-direct at $9,500 financed identically costs $241/month. That's $140/month saved — $6,720 over the loan term. Factory-direct purchasing reduces your financing burden by 30-40% before you even negotiate terms.",
+      },
+      {
+        heading: "Get Your Quote with Payment Options",
+        content: "Tell us which machine you're interested in and your preferred payment method. We'll provide a detailed quote with all available payment terms. No obligation, no credit check for quote requests.",
+      },
+    ],
+    relatedProducts: ["K500BT", "K660"],
+  },
 ];
