@@ -26,6 +26,10 @@ export default function robots(): MetadataRoute.Robots {
           "/*?*ref=",
           "/*?*source=",
           "/*?*fbclid=",
+          "/*?*gclid=",
+          "/*?*msclkid=",
+          // Admin
+          "/admin/",
         ],
       },
       {
