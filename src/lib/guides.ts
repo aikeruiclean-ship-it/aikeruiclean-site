@@ -2381,4 +2381,148 @@ const extraGuides: Guide[] = [
     ],
     relatedProducts: ["K500BT", "K660"],
   },
+  // ── Used vs New ──
+  {
+    slug: "used-vs-new-floor-scrubber",
+    title: "Used vs New Floor Scrubber: When Buying Used Actually Saves Money (2026)",
+    description:
+      "Used or new floor scrubber? Compare real costs, hidden risks, and when a used machine makes sense. Hour meter guide, inspection checklist, and price comparison.",
+    category: "comparison",
+    readTime: "6 min",
+    difficulty: "beginner",
+    published: "2026-07-14",
+    sections: [
+      {
+        heading: "The Allure of a Used Floor Scrubber",
+        content: "A 2-year-old ride-on scrubber sells for 50-60% of its original price. On paper, that's a $7,000-15,000 saving. But the wrong used machine can cost more in repairs than a new one within 6 months. This guide helps you decide when the savings are real and when they're an illusion.",
+      },
+      {
+        heading: "New Floor Scrubber: What You're Really Paying For",
+        content: "A new machine gives you: full warranty (1-3 years), zero-hour components, latest battery technology, factory support, and predictable maintenance costs for 3-5 years. Factory-direct pricing makes new machines more accessible than most buyers realize.",
+        items: [
+          "Walk-behind new: $1,800-7,500 factory-direct (dealer: $3,000-12,000)",
+          "Ride-on new: $6,000-24,000 factory-direct (dealer: $9,000-35,000)",
+          "Full warranty + no hidden damage + latest technology",
+        ],
+      },
+      {
+        heading: "Used Floor Scrubber: The True Cost Equation",
+        content: "The sticker price is just the beginning. A $5,000 used machine that needs $3,000 in batteries, $500 in squeegees, and $1,000 in repairs within 6 months actually costs $9,500 — nearly what a factory-direct new machine costs.",
+        items: [
+          "Used walk-behind: $1,500-4,000 (50-60% of new dealer price)",
+          "Used ride-on: $5,000-12,000",
+          "Budget additional $1,000-3,000 for immediate repairs and wear parts",
+        ],
+      },
+      {
+        heading: "The 5-Point Used Machine Inspection Checklist",
+        content: "Before buying any used scrubber, check these 5 things. Any one of them can turn a bargain into a money pit.",
+        items: [
+          "1. Hour meter: 3,000+ hours on ride-on or 1,500+ on walk-behind = end of life. Expect major repairs.",
+          "2. Battery age: Lead-acid over 2 years old or lithium over 4 years = budget $500-2,400 for replacement.",
+          "3. Squeegee deck: Bent or repaired = machine was driven into obstacles. Check frame alignment.",
+          "4. Recovery tank: Rust inside = stored wet = vacuum motor likely compromised.",
+          "5. Service records: No records = assume no maintenance was done.",
+        ],
+      },
+      {
+        heading: "When Used Makes Sense",
+        content: "Used machines are a good choice for: backup/second units, facilities with in-house maintenance capability, short-term projects, and buyers who can personally inspect and test the machine before purchase. For primary production machines with zero-downtime requirements, new factory-direct is almost always the better long-term value.",
+      },
+    ],
+    relatedProducts: [],
+  },
+  // ── Gym & Fitness ──
+  {
+    slug: "floor-scrubber-gym-fitness-center",
+    title: "Floor Scrubber for Gyms & Fitness Centers: Keep Your Facility Spotless",
+    description:
+      "Best floor scrubbers for gyms, fitness centers, and health clubs. Clean rubber flooring, locker rooms, and studio spaces. Compact walk-behind models for tight areas. Factory-direct pricing.",
+    category: "buying-guide",
+    readTime: "5 min",
+    difficulty: "beginner",
+    published: "2026-07-14",
+    sections: [
+      {
+        heading: "Why Gym Floors Need Special Equipment",
+        content: "Gym floors are a unique challenge: sweat on rubber flooring, chalk dust on studio floors, tracked-in dirt on lobby tile, and locker room humidity. A standard mop pushes sweat around; a floor scrubber extracts it. Clean floors are the #1 factor in member retention after equipment quality.",
+      },
+      {
+        heading: "Zone-by-Zone Gym Cleaning",
+        content: "Different gym zones need different approaches:",
+        items: [
+          "Weight Room (rubber flooring): Compact walk-behind, 17-20 inch. Daily cleaning essential. Soft brush to avoid damaging rubber mats.",
+          "Cardio Area (rubber/tile): Same machine, different pad. Fast-drying critical — members walk here constantly.",
+          "Studio/Yoga Room (hardwood/sprung floor): Ultra-soft pad only. Minimum moisture. Clean between every class.",
+          "Locker Room (tile): Chemical-resistant machine. Bleach-compatible. Squeegee must handle standing water.",
+          "Lobby & Entrance (tile/stone): High-traffic area. Clean twice daily. First impression matters for membership sales.",
+        ],
+      },
+      {
+        heading: "Recommended Machine",
+        content: "For most gyms (5,000-20,000 sq ft), a compact 17-20 inch walk-behind scrubber is ideal. Quiet enough for daytime operation. Small enough to store in a maintenance closet. Lithium battery for opportunity charging between shifts. Factory-direct price: $1,800-3,000.",
+      },
+      {
+        heading: "Get Your Gym Scrubber Quote",
+        content: "Tell us your facility size and floor types. We'll recommend the right machine at factory-direct pricing. Most gym orders ship within 48 hours.",
+      },
+    ],
+    relatedProducts: ["K500BT", "A380"],
+  },
+  // ── International Shipping ──
+  {
+    slug: "how-to-ship-floor-scrubber-internationally",
+    title: "How to Ship a Floor Scrubber Internationally: Complete Guide for 2026",
+    description:
+      "Complete guide to international floor scrubber shipping. Sea freight vs air freight, customs documentation, import duties by country, packaging requirements, and cost estimates.",
+    category: "buying-guide",
+    readTime: "6 min",
+    difficulty: "intermediate",
+    published: "2026-07-14",
+    sections: [
+      {
+        heading: "The Logistics of Moving Heavy Equipment",
+        content: "A ride-on floor scrubber weighs 400-800 kg and is the size of a small car. Shipping it from China to the US, Europe, or Middle East requires proper planning. This guide covers everything from packaging to customs clearance.",
+      },
+      {
+        heading: "Step 1: Choose Your Shipping Method",
+        content: "Three shipping methods, each for different scenarios:",
+        items: [
+          "Sea Freight FCL (Full Container): 2-8 machines per 20ft container. $2,000-4,000 to US/Europe. 25-40 days transit. Best value for 3+ machines.",
+          "Sea Freight LCL (Shared Container): 1-2 machines. $500-1,000 per machine. 30-45 days transit. Best for single units.",
+          "Air Freight: $3,000-8,000 per ride-on machine. 3-7 days transit. Only worth it for urgent replacements or sample units.",
+          "Express (DHL/FedEx): For parts only. $50-200 per shipment. 3-5 days.",
+        ],
+      },
+      {
+        heading: "Step 2: Packaging Requirements",
+        content: "All Aikerui machines are export-packed in plywood crates with foam protection. Crates are fumigated (ISPM 15 compliant) for international shipping. Each crate includes a desiccant pack to prevent moisture damage during sea transit.",
+      },
+      {
+        heading: "Step 3: Customs Documentation",
+        content: "You need: commercial invoice, packing list, bill of lading (sea) or air waybill (air), certificate of origin (reduces duties in some countries), and CE/ISO certificates. We provide all documentation with every shipment.",
+      },
+      {
+        heading: "Step 4: Import Duties by Country",
+        content: "Floor scrubbers fall under HS code 8479.89. Duties vary:",
+        items: [
+          "USA: 0-2.5%. No special tariffs on cleaning equipment as of 2026.",
+          "EU: 1.7%. CE documentation required.",
+          "UK: 0-2%. UKCA marking may be needed.",
+          "Australia: 0-5%. RCM compliance for electrical safety.",
+          "Middle East (GCC): 5%. SASO/SABER for Saudi Arabia.",
+          "Always confirm with your local customs broker — rates change.",
+        ],
+      },
+      {
+        heading: "Step 5: Receiving Your Machine",
+        content: "When the container arrives at your port, you need a customs broker to clear it. Budget $200-500 for broker fees. After customs clearance, arrange local trucking to your facility. Total door-to-door time from factory to your facility: typically 35-55 days for sea freight.",
+      },
+      {
+        heading: "Get Your Shipping Quote",
+        content: "Tell us which machine, your port, and quantity. We'll provide a detailed CIF (cost, insurance, freight) quote including all shipping and documentation costs. Sample units available for evaluation before container orders.",
+      },
+    ],
+    relatedProducts: ["K500BT", "K660"],
+  },
 ];
