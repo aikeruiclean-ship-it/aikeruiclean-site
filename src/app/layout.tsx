@@ -103,6 +103,7 @@ export default function RootLayout({
               "https://instagram.com/aikeruiclean",
               "https://instagram.com/aikerui",
               "https://quora.com/profile/Mark-Xu-110",
+              "https://www.wikidata.org/wiki/Q140546242",
               "https://aikeruiclean.com",
             ]
           })
