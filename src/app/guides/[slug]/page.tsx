@@ -274,9 +274,7 @@ export default async function GuideDetailPage({ params }: Props) {
       <div className="border-t border-gray-200 pt-6 mt-12">
         <p className="text-sm font-semibold text-gray-900">About the Author</p>
         <p className="text-sm text-gray-600 mt-1 leading-relaxed">
-          Zhang Hengming is a cleaning equipment engineer at Aikerui with 8+ years
-          of experience in industrial floor cleaning solutions. He has helped 200+
-          facilities across 50+ countries select the right cleaning equipment.
+          <Link href="/about/mark-xu" className="text-primary hover:underline font-medium">Mark Xu</Link> is Sales Director at Aikerui with 15+ years of experience in industrial floor cleaning equipment. He has helped 2,000+ facilities across 50+ countries source factory-direct cleaning equipment.
         </p>
       </div></article>
 
