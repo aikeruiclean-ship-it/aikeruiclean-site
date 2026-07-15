@@ -190,6 +190,7 @@ export default async function ProductDetailPage({ params }: Props) {
               },
             }
           },
+        };
       })()} />
       <JsonLd data={{
         "@context": "https://schema.org",
