@@ -321,7 +321,7 @@ export default async function ProductDetailPage({ params }: Props) {
         )}
 
         {/* Auto-generated supplementary content for all products */}
-        {true && (
+        {(true) && (
           <section className="mb-12">
             {product.category === "Parts" ? (
               <>
@@ -329,13 +329,6 @@ export default async function ProductDetailPage({ params }: Props) {
                 <p className="text-gray-600 leading-relaxed mb-4">
                   This {product.partSubcategory || "replacement part"} is manufactured to OEM specifications and compatible with major floor scrubber brands including Tennant, Nilfisk, Karcher, Comac, Viper, Hako, and 15+ others. For specific model compatibility, send us your OEM part number and machine model — we'll confirm fitment within 24 hours.
                 </p>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">How to Order the Right Part</h3>
-                <ol className="list-decimal list-inside text-gray-600 leading-relaxed space-y-2">
-                  <li>Find your OEM part number (stamped on the existing part or in your machine manual)</li>
-                  <li>Measure your existing part: diameter, center hole size, and bristle length (for brushes) or blade dimensions (for squeegees)</li>
-                  <li>Send us the details via the inquiry form below — we'll confirm compatibility and pricing within 24 hours</li>
-                  <li>For urgent orders, WhatsApp us directly for same-day dispatch confirmation</li>
-                </ol>
                 <h3 className="text-lg font-semibold text-gray-900 mt-4 mb-2">Replacement Tips</h3>
                 <ul className="list-disc list-inside text-gray-600 leading-relaxed space-y-1">
                   <li>Inspect your part regularly — worn components reduce cleaning performance and can damage your machine</li>
