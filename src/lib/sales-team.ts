@@ -14,6 +14,11 @@ const SALES_TEAM: SalesPerson[] = [
 
 let _roundRobinIndex = 0;
 
+function pickRandom(): SalesPerson {
+  const i = Math.floor(Math.random() * SALES_TEAM.length);
+  return SALES_TEAM[i];
+}
+
 /** Pick a random salesperson — stores in sessionStorage so all widgets show the same person */
 export function getOrPickPerson(): SalesPerson {
   if (typeof window !== "undefined") {
