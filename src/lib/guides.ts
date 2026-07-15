@@ -3009,4 +3009,52 @@ const extraGuides: Guide[] = [
     ],
     relatedProducts: [],
   },
+  // ── School Guide ──
+  {
+    slug: "floor-scrubber-school-university-cleaning",
+    title: "Floor Scrubber for Schools & Universities: Campus-Wide Cleaning Solutions",
+    description:
+      "Best floor scrubbers for schools and university campuses. Classroom-safe quiet models, durable for hallways, compact for restrooms. Factory-direct pricing for educational budgets.",
+    category: "buying-guide",
+    readTime: "4 min",
+    difficulty: "beginner",
+    published: "2026-07-15",
+    sections: [
+      {
+        heading: "Why Schools Need Specialized Equipment",
+        content: "A K-12 school combines every floor type — tile classrooms, polished hallways, concrete gyms, vinyl cafeterias, carpeted libraries — with thousands of students tracking dirt daily. One compact walk-behind scrubber ($2,500-4,000 factory-direct) can replace 3 janitors with mops, saving $60,000+ annually in labor.",
+      },
+      {
+        heading: "Recommended Machine",
+        content: "Compact 17-20 inch walk-behind. Ultra-quiet for classroom cleaning during off-hours. Lithium battery for opportunity charging between shifts. Small enough to store in a janitor's closet. Factory-direct price: $1,800-3,200.",
+      },
+    ],
+    relatedProducts: ["K500BT", "A380"],
+  },
+  // ── Logistics Center ──
+  {
+    slug: "floor-scrubber-logistics-distribution-center",
+    title: "Floor Scrubber for Logistics & Distribution Centers: Fleet Cleaning Guide",
+    description:
+      "Fleet cleaning guide for logistics centers and 3PL warehouses. Ride-on scrubbers, fleet planning, battery strategy. Clean 500,000+ sq ft facilities efficiently.",
+    category: "buying-guide",
+    readTime: "5 min",
+    difficulty: "intermediate",
+    published: "2026-07-15",
+    sections: [
+      {
+        heading: "Logistics Never Stops — Your Scrubbing Shouldn't Either",
+        content: "A 500,000 sq ft distribution center operating 24/7 needs more than one scrubber — it needs a fleet with the right mix of ride-on machines, sweepers, and a battery strategy that supports continuous operation across all shifts.",
+      },
+      {
+        heading: "Fleet Recommendations by Facility Size",
+        content: "Under 100K sq ft: 1 ride-on scrubber + 1 compact walk-behind. 100K-500K sq ft: 2 ride-on scrubbers + 1 sweeper. 500K+ sq ft: 3+ ride-on, dedicated charging station, spare parts inventory.",
+      },
+      {
+        heading: "Battery Strategy for Multi-Shift",
+        content: "Lithium batteries with opportunity charging eliminate the need for spare batteries and dedicated charging rooms. Charge during operator breaks and shift changes. For lead-acid fleets, budget 1 spare battery per machine plus a ventilated charging room.",
+      },
+    ],
+    relatedProducts: ["K660", "A660T"],
+  },
 ];
