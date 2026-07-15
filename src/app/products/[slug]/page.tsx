@@ -320,8 +320,8 @@ export default async function ProductDetailPage({ params }: Props) {
           </section>
         )}
 
-        {/* Auto-generated supplementary content for products with thin descriptions */}
-        {product.description.replace(/<[^>]*>/g, "").length < 500 && (
+        {/* Auto-generated supplementary content for all products */}
+        {true && (
           <section className="mb-12">
             {product.category === "Parts" ? (
               <>
