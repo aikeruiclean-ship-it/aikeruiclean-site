@@ -2802,4 +2802,122 @@ const extraGuides: Guide[] = [
     ],
     relatedProducts: [],
   },
+  // ── Construction Sites ──
+  {
+    slug: "floor-scrubber-construction-site-cleaning",
+    title: "Floor Scrubber for Construction Sites: Heavy-Duty Post-Build Cleanup Equipment",
+    description:
+      "Best floor scrubbers for construction site cleanup. Handle concrete dust, drywall mud, and heavy debris. Sweeper-scrubber combos for one-pass post-construction cleaning. Factory-direct pricing.",
+    category: "buying-guide",
+    readTime: "5 min",
+    difficulty: "intermediate",
+    published: "2026-07-15",
+    sections: [
+      {
+        heading: "Why Construction Cleanup Destroys Standard Scrubbers",
+        content: "Post-construction floors are covered in concrete dust, drywall compound, paint splatter, and debris ranging from sawdust to screws. Running a standard floor scrubber over construction debris grinds it into the floor, destroys brushes within days, and clogs filters instantly. You need a machine that sweeps debris first, then scrubs — and is built to handle abrasive construction dust.",
+      },
+      {
+        heading: "The Sweeper-Scrubber Combo: One Machine, One Pass",
+        content: "A sweeper-scrubber combination machine is the ideal tool for construction cleanup. The front sweeper picks up loose debris, dust, and small construction waste. The rear scrubber then cleans the now-clear floor. One machine, one operator, one pass — saves hours compared to sweeping then mopping.",
+        items: [
+          "Pre-sweeps: Concrete dust, sawdust, drywall powder, small debris",
+          "Then scrubs: Clean concrete, epoxy, or tile surface",
+          "One pass: No need for separate sweeper and scrubber crews",
+        ],
+      },
+      {
+        heading: "Key Features for Construction Environments",
+        content: "Heavy-duty brush with steel-wire or abrasive filaments for paint and adhesive removal. High brush pressure (80-100kg). Dust-resistant motor seals. Large debris hopper. Reinforced squeegee for uneven post-construction floors.",
+      },
+      {
+        heading: "Get Your Quote",
+        content: "Tell us your project type and floor area. We'll recommend a machine built for construction cleanup. Factory-direct pricing for contractors.",
+      },
+    ],
+    relatedProducts: [],
+  },
+  // ── Brush Bristle Guide ──
+  {
+    slug: "floor-scrubber-brush-bristle-material-guide",
+    title: "Floor Scrubber Brush Bristle Materials: Nylon vs PPL vs Steel Wire vs Abrasive",
+    description:
+      "Complete guide to floor scrubber brush bristle materials. Compare nylon, PPL, steel wire, and abrasive filaments. Which bristle for concrete, epoxy, tile, or marble floors.",
+    category: "maintenance",
+    readTime: "5 min",
+    difficulty: "beginner",
+    published: "2026-07-15",
+    sections: [
+      {
+        heading: "Why Bristle Material Matters More Than You Think",
+        content: "Using the wrong bristle material on your floor scrubber can scratch polished marble, fail to clean greasy concrete, or wear out in weeks instead of months. The bristle is the only part of the machine that touches your floor — choosing correctly is the single most important maintenance decision you'll make.",
+      },
+      {
+        heading: "Nylon (PA) — Best All-Rounder",
+        content: "Standard nylon bristles work on most sealed floors — tile, sealed concrete, vinyl, and epoxy. Gentle enough for polished surfaces, durable enough for daily commercial use. 1,200+ hour lifespan. Temperature resistant to 120°C. Factory-direct price: $45-60 per disc brush.",
+        items: ["Best for: Supermarkets, hospitals, schools, offices","Floor types: Tile, vinyl, sealed concrete, epoxy","Lifespan: 3-6 months daily use","Pros: Balanced performance, widely compatible","Cons: Not aggressive enough for heavy soil"],
+      },
+      {
+        heading: "PPL (Polypropylene) — Heavy Soil Champion",
+        content: "PPL bristles are stiffer than nylon, designed for unsealed concrete, factory floors, and heavy soil. They resist oil and chemical degradation better than nylon. Slightly more abrasive — don't use on polished surfaces.",
+        items: ["Best for: Warehouses, factories, loading docks","Floor types: Unsealed concrete, textured surfaces","Lifespan: 4-8 months daily use","Pros: Aggressive cleaning, oil-resistant","Cons: Too abrasive for polished marble or vinyl"],
+      },
+      {
+        heading: "Steel Wire — Extreme Duty",
+        content: "Steel wire bristles for the toughest cleaning jobs: caked-on grease, paint overspray, rust, and adhesive residue. Destroys polished floors — use ONLY on unsealed concrete or outdoor surfaces.",
+        items: ["Best for: Automotive shops, metal fabrication, outdoor areas","Floor types: Unsealed concrete ONLY","Lifespan: 2-4 months heavy use","Pros: Removes anything","Cons: Will scratch sealed/polished surfaces"],
+      },
+      {
+        heading: "Abrasive Filament — Mid-Grade Aggression",
+        content: "Nylon filaments embedded with abrasive particles. More aggressive than standard nylon, less damaging than steel wire. Good for stained concrete and tile with grout.",
+        items: ["Best for: Stained concrete, grouted tile, textured floors","Lifespan: 3-5 months","Pros: Aggressive but won't gouge concrete","Cons: Not for polished surfaces"],
+      },
+      {
+        heading: "Quick Selection Table",
+        content: "Floor Type → Bristle: Polished marble/stone → Nylon only | Sealed concrete → Nylon or PPL | Unsealed concrete → PPL or Steel Wire | Tile with grout → Abrasive or PPL | Epoxy → Nylon | Vinyl → Nylon only | Outdoor concrete → Steel Wire or PPL",
+      },
+    ],
+    relatedProducts: [],
+  },
+  // ── Warranty Guide ──
+  {
+    slug: "floor-scrubber-warranty-comparison",
+    title: "Floor Scrubber Warranty: What's Covered, What's Not, and What Actually Matters",
+    description:
+      "Compare floor scrubber warranties across major brands. What parts are covered, typical warranty lengths, and how factory-direct warranties differ from dealer warranties. Avoid expensive surprises.",
+    category: "buying-guide",
+    readTime: "5 min",
+    difficulty: "beginner",
+    published: "2026-07-15",
+    sections: [
+      {
+        heading: "The Fine Print That Costs Thousands",
+        content: "A '3-year warranty' sounds great — until you discover it only covers the frame, not the motor, batteries, brushes, or squeegees. Understanding what's actually covered — and what's excluded — can save thousands in unexpected repair costs.",
+      },
+      {
+        heading: "What's Typically Covered (and for How Long)",
+        content: "Most floor scrubber warranties are split into tiered coverage:",
+        items: [
+          "Frame & chassis: 3-5 years (longest coverage — these rarely fail)",
+          "Motor & drive system: 1-2 years (the expensive components)",
+          "Batteries: 1 year prorated or 6 months full (lead-acid); 2-3 years (lithium)",
+          "Wear parts (brushes, squeegees, hoses): Not covered — these are consumables",
+          "Labor: Dealer warranties include labor. Factory-direct warranties typically cover parts only, with remote support.",
+        ],
+      },
+      {
+        heading: "Dealer vs Factory-Direct Warranties",
+        content: "Dealer warranties (Tennant, Nilfisk, Karcher) include on-site labor through local service networks — but you pay for this in the 30-50% higher purchase price. Factory-direct warranties (Aikerui) cover parts and provide remote technical support. The cost difference typically covers 5-10 years of potential out-of-warranty repairs.",
+      },
+      {
+        heading: "Red Flags in Warranty Terms",
+        content: "Watch for: (1) Prorated battery coverage — you pay 50%+ of replacement after year 1, (2) 'Normal wear and tear' exclusion that's used to deny almost everything, (3) Requirements to use OEM-only parts or void the warranty, (4) Shipping costs not covered for warranty returns.",
+      },
+      {
+        heading: "Get Warranty Details Before You Buy",
+        content: "Always request the full warranty document before purchasing — not just the marketing summary. We provide our complete warranty terms with every quote.",
+      },
+    ],
+    relatedProducts: [],
+  },
 ];
