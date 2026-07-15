@@ -2920,4 +2920,93 @@ const extraGuides: Guide[] = [
     ],
     relatedProducts: [],
   },
+  // ── Hospital Guide ──
+  {
+    slug: "floor-scrubber-hospital-healthcare-facility",
+    title: "Floor Scrubber for Hospitals & Healthcare: Medical-Grade Cleaning Guide",
+    description:
+      "Medical-grade floor scrubbers for hospitals and healthcare. Ultra-quiet (<60dB), HEPA-filtered, disinfectant-compatible. JCAHO/CDC compliant cleaning solutions.",
+    category: "buying-guide",
+    readTime: "5 min",
+    difficulty: "intermediate",
+    published: "2026-07-15",
+    sections: [
+      {
+        heading: "Why Hospital Cleaning Is Unlike Any Other",
+        content: "Hospital floors harbor pathogens that standard commercial cleaning can't address. A proper healthcare scrubber must clean effectively while being quiet enough for patient areas, filtered to prevent aerosol contamination, and compatible with hospital-grade disinfectants.",
+      },
+      {
+        heading: "5 Requirements for Healthcare Scrubbers",
+        content: "Ultra-quiet (<60dB) for patient areas. H13/H14 HEPA filtration on vacuum exhaust. Chemical compatibility with hydrogen peroxide, quaternary ammonium, and bleach. Cordless for no tripping hazards. Sealed smooth surfaces for disinfectant wipe-down.",
+      },
+      {
+        heading: "Zone-Specific Cleaning",
+        content: "OR & ICU: Highest standard, between-case cleaning. Patient rooms: Daily, ultra-quiet. Corridors: Continuous, wider scrubber acceptable. Cafeteria: Food-safe, frequent cycles.",
+      },
+      {
+        heading: "Get Your Quote",
+        content: "Tell us your facility type and cleaning zones. We'll recommend a medical-grade machine. Factory-direct pricing for healthcare facilities.",
+      },
+    ],
+    relatedProducts: [],
+  },
+  // ── Spec Sheet Guide ──
+  {
+    slug: "how-to-read-floor-scrubber-specifications",
+    title: "How to Read a Floor Scrubber Spec Sheet: What 15 Key Specs Actually Mean",
+    description:
+      "Learn to decode floor scrubber specification sheets. Understand cleaning width, brush pressure, tank capacity, battery voltage, productivity ratings. Compare machines apples-to-apples.",
+    category: "buying-guide",
+    readTime: "6 min",
+    difficulty: "beginner",
+    published: "2026-07-15",
+    sections: [
+      {
+        heading: "Don't Buy Based on Marketing — Buy Based on Specs",
+        content: "Two machines can look identical and cost $5,000 different. The difference is in the specifications. Understanding these 15 numbers helps you compare machines objectively and avoid paying for features you don't need.",
+      },
+      {
+        heading: "The 15 Specs That Matter",
+        content: "Cleaning width (inches), Productivity (sq ft/hr), Brush RPM, Brush pressure (kg), Motor power (HP/W), Battery voltage (V) and type, Runtime (hours), Charge time, Solution tank (gallons), Recovery tank (gallons), Machine weight (lbs), Dimensions, Squeegee width, Noise level (dB), IP rating.",
+        items: [
+          "Cleaning width x 2.5 ≈ squeegee width. Under 20-inch = compact, 28+ = industrial.",
+          "Productivity is theoretical — real-world is 60-70% of rated number.",
+          "Brush pressure under 40kg = light duty. 60-100kg = industrial degreasing.",
+          "Battery: 24V standard for walk-behind, 36V for ride-on. Lithium vs lead-acid changes everything.",
+          "Tank capacity determines refill frequency. 10 gal = ~25 min runtime; 30 gal = ~75 min.",
+        ],
+      },
+      {
+        heading: "Red Flags in Spec Sheets",
+        content: "Watch for: missing brush pressure (it's weak), 110V corded-only (limited mobility), 'estimated' productivity (likely inflated), no noise rating (it's loud), and weight listed without batteries (common trick to appear lighter).",
+      },
+    ],
+    relatedProducts: [],
+  },
+  // ── Brush Pressure Guide ──
+  {
+    slug: "floor-scrubber-brush-pressure-guide",
+    title: "Floor Scrubber Brush Pressure: How Much Do You Really Need?",
+    description:
+      "Floor scrubber brush pressure guide. 30kg for retail, 60kg for warehouses, 100kg for factories. How brush pressure affects cleaning quality and floor safety.",
+    category: "maintenance",
+    readTime: "4 min",
+    difficulty: "beginner",
+    published: "2026-07-15",
+    sections: [
+      {
+        heading: "Why Brush Pressure Determines Everything",
+        content: "Brush pressure is the most overlooked spec in floor scrubber shopping. Too little and the machine can't clean. Too much and you'll damage polished floors and wear out brushes 3x faster. Here's your pressure guide by application.",
+      },
+      {
+        heading: "Pressure Guide by Facility Type",
+        content: "Retail/supermarket: 30-40kg — gentle on polished tile, enough for daily dirt. Warehouse: 50-70kg — handles tire marks and light debris. Factory/manufacturing: 80-100kg — cuts through oil, grease, and caked-on soil. Hospital/school: 30-50kg — balanced for tile and vinyl.",
+      },
+      {
+        heading: "Pressure vs Floor Damage",
+        content: "Above 60kg, never use on polished marble, granite, or sealed wood. The pressure will etch or scratch the surface. Always match brush pressure to your softest floor type — not your dirtiest.",
+      },
+    ],
+    relatedProducts: [],
+  },
 ];
