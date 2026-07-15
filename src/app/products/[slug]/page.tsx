@@ -326,9 +326,25 @@ export default async function ProductDetailPage({ params }: Props) {
             {product.category === "Parts" ? (
               <>
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">Compatibility & Fitment</h2>
-                <p className="text-gray-600 leading-relaxed mb-4">
-                  This {product.partSubcategory?.split(" / ")?.[0] || "replacement part"} is manufactured to OEM specifications and compatible with major floor scrubber brands including Tennant, Nilfisk, Karcher, Comac, Viper, Hako, and 15+ others. For specific model compatibility, send us your OEM part number and machine model — we'll confirm fitment within 24 hours.
-                </p>
+                <div className="overflow-hidden rounded-xl border border-gray-200 mb-4">
+                  <table className="w-full text-sm">
+                    <thead>
+                      <tr className="bg-gray-50">
+                        <th className="text-left px-4 py-2.5 font-semibold text-gray-700">Brand</th>
+                        <th className="text-left px-4 py-2.5 font-semibold text-gray-700">Compatibility</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {["Tennant","Nilfisk","Karcher","Comac","Viper","Hako","Fimap","IPC","NSS","Dulevo"].map((brand, i) => (
+                        <tr key={brand} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+                          <td className="px-4 py-2 text-gray-800 font-medium">{brand}</td>
+                          <td className="px-4 py-2 text-green-700 text-xs">✓ Compatible — confirm with OEM part number</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+                <p className="text-xs text-gray-400 mb-4">Not listed? Send us your OEM part number and machine model — we'll confirm fitment within 24 hours.</p>
                 <h3 className="text-lg font-semibold text-gray-900 mt-4 mb-2">Replacement Tips</h3>
                 <ul className="list-disc list-inside text-gray-600 leading-relaxed space-y-1">
                   <li>Inspect your part regularly — worn components reduce cleaning performance and can damage your machine</li>
