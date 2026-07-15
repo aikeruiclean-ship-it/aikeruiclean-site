@@ -2637,4 +2637,88 @@ const extraGuides: Guide[] = [
     ],
     relatedProducts: ["K500BT", "A660T", "K660"],
   },
+  // ── Niche: Dust/Sand/Soil environments ──
+  {
+    slug: "floor-scrubber-dust-sand-industrial-cleaning",
+    title: "Floor Scrubber for Sand, Dust & Heavy Soil: Industrial Cleaning Solutions",
+    description:
+      "Best floor scrubbers for dusty, sandy, and heavy-soil industrial environments. Disc brush vs roller brush for sand, dust-proof components, and high-pressure scrubbing for stubborn debris.",
+    category: "buying-guide",
+    readTime: "5 min",
+    difficulty: "intermediate",
+    published: "2026-07-14",
+    sections: [
+      {
+        heading: "The Sand & Dust Challenge",
+        content: "Industrial facilities handling sand, cement, mining materials, or agricultural products face a unique challenge: abrasive dust and fine particles that destroy standard cleaning equipment. Sand acts like sandpaper on brushes and squeegees, clogging standard filters and scoring floor surfaces if not properly managed. You need a machine built specifically for abrasive environments.",
+      },
+      {
+        heading: "Why Standard Scrubbers Fail in Sandy Environments",
+        content: "Sand and abrasive dust cause four specific problems: (1) premature brush wear — nylon bristles can wear out in weeks instead of months, (2) squeegee blade scoring — fine particles scratch rubber blades, causing streak marks, (3) filter clogging — dust overwhelms standard vacuum filters, and (4) motor damage — fine dust enters unsealed motors and bearings.",
+      },
+      {
+        heading: "Key Features for Sand & Dust Environments",
+        content: "Look for these features when selecting a scrubber for abrasive environments:",
+        items: [
+          "Roller/cylindrical brush: Sweeps debris before scrubbing — prevents sand from being ground into floors by a disc brush.",
+          "Sweeper-scrubber combo: Pre-sweeps sand and debris, then scrubs — one machine, one pass.",
+          "Dust-resistant seals: IP65+ rated motors and electronics to prevent dust ingress.",
+          "Heavy-duty squeegee: Oil-resistant polyurethane or Linatex blades with 2x normal lifespan in abrasive conditions.",
+          "Large debris hopper: Holds sand and gravel without frequent emptying.",
+          "High brush pressure (80-100kg): Cuts through caked-on mud and soil.",
+        ],
+      },
+      {
+        heading: "Recommended Machine",
+        content: "For most sand/dust environments (construction yards, cement plants, mining facilities, agricultural warehouses), a ride-on sweeper-scrubber combination machine is ideal. It sweeps abrasive debris first, then scrubs — preventing brush and squeegee damage. For smaller facilities, a walk-behind with pre-sweep capability works well. Factory-direct pricing: $8,000-18,000 for ride-on combos.",
+      },
+      {
+        heading: "Maintenance Tips for Sandy Environments",
+        content: "Double your machine's lifespan in abrasive conditions with these practices:",
+        items: [
+          "Pre-sweep or vacuum loose debris before scrubbing — never scrub over sand.",
+          "Inspect squeegee blades weekly — rotate or replace at first sign of scoring.",
+          "Clean vacuum filter daily — compressed air works best.",
+          "Grease bearings monthly — abrasive dust accelerates wear.",
+          "Check brush bristle length bi-weekly — sand environments cut lifespan by 50%.",
+        ],
+      },
+      {
+        heading: "Get Your Quote",
+        content: "Tell us about your facility — floor type, debris type, and square footage. We'll recommend a machine built for abrasive environments. Factory-direct pricing with parts support.",
+      },
+    ],
+    relatedProducts: [],
+  },
+  // ── Niche: Carpet Cleaning Equipment ──
+  {
+    slug: "commercial-carpet-cleaning-equipment-guide",
+    title: "Commercial Carpet Cleaning Equipment: Extractors, Scrubbers & More",
+    description:
+      "Complete guide to commercial carpet cleaning equipment. Carpet extractors, bonnet cleaners, and combo machines for hotels, offices, and event spaces. Factory-direct pricing.",
+    category: "buying-guide",
+    readTime: "5 min",
+    difficulty: "beginner",
+    published: "2026-07-14",
+    sections: [
+      {
+        heading: "Carpet vs Hard Floor: Different Machines Required",
+        content: "Carpet cleaning is fundamentally different from hard floor scrubbing. Carpet fibers trap dirt below the surface — a standard floor scrubber just pushes dirt around on carpet. You need extraction equipment that injects cleaning solution deep into fibers, agitates, and then vacuums the dirty solution back out. Aikerui offers carpet extractors alongside our hard floor scrubbers for facilities with mixed flooring.",
+      },
+      {
+        heading: "Types of Carpet Cleaning Machines",
+        content: "Three main types of commercial carpet cleaning equipment:",
+        items: [
+          "Carpet Extractor: Injects solution deep into fibers, agitates with brush, then extracts dirty water. Best for deep cleaning. Hotel corridors, office carpets.",
+          "Bonnet Cleaner: Uses a rotating absorbent pad to clean carpet surface. Faster than extraction but less deep cleaning. Best for maintenance between deep cleans.",
+          "Carpet Scrubber: Combines scrubbing with extraction. Best for heavily soiled commercial carpet. Airports, convention centers, high-traffic retail.",
+        ],
+      },
+      {
+        heading: "Get Your Quote",
+        content: "Tell us your carpet area and traffic level. We'll recommend the right machine. Factory-direct pricing for hospitality and commercial facilities.",
+      },
+    ],
+    relatedProducts: [],
+  },
 ];
