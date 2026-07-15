@@ -188,7 +188,7 @@ export default async function ProductDetailPage({ params }: Props) {
                 returnMethod: "https://schema.org.ReturnByMail",
                 returnFees: "https://schema.org.FreeReturn",
               },
-            }
+            })
           },
         };
       })()} />
