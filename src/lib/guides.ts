@@ -1319,6 +1319,7 @@ const extraGuides: Guide[] = [
         content: "Tell us your facility size, floor type, and daily cleaning hours. We'll recommend the right machine at factory-direct pricing — typically 30-40% less than your local dealer. Quote within 24 hours. No obligation.",
       },
     ],
+    videoId: "DlMt7Q-ncXs",
     relatedProducts: ["K500BT", "A650T", "A660T", "K660"],
   },
   // ── Small Business Guide ──
@@ -1736,6 +1737,7 @@ const extraGuides: Guide[] = [
         content: "Browse our catalog of 360+ replacement parts — all manufactured to OEM specifications at factory-direct prices. Send us your OEM part number for a same-day quote. Sample quantities available for quality verification.",
       },
     ],
+    videoId: "XZ6n0SreSd0",
     relatedProducts: [],
   },
   // ── School & University Guide ──
@@ -1925,6 +1927,7 @@ const extraGuides: Guide[] = [
         content: "Order a pre-assembled maintenance kit with the most commonly replaced parts — squeegee blades, brushes, filters, and terminal protectors. Have them on your shelf before you need them.",
       },
     ],
+    videoId: "5XoAc6H1Kb0",
     relatedProducts: [],
   },
   // ── Case Study 1: Distribution Center ──
@@ -2231,6 +2234,7 @@ const extraGuides: Guide[] = [
       },
     ],
     videoId: "-vnsEuzpTAg",
+    videoId: "3a9K54lhhVc",
     relatedProducts: [],
   },
   // ── Top 10 Parts Suppliers ──
