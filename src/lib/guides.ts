@@ -1209,6 +1209,7 @@ const extraGuides: Guide[] = [
         content: "Browse our factory-direct walk-behind and ride-on scrubbers. Send us your facility details for a personalized recommendation and quote within 24 hours.",
       },
     ],
+    videoId: "aUVk1TcVSwQ",
     relatedProducts: ["K500BT", "A650T", "A660T", "K660"],
   },
   // ── Floor Scrubber Cost Guide ──
