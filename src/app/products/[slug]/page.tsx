@@ -275,7 +275,7 @@ export default async function ProductDetailPage({ params }: Props) {
             <h1 className="text-3xl font-bold text-gray-900 mb-4">{product.name}</h1>
 
             <p className="text-gray-600 leading-relaxed mb-6">
-              {product.shortDescription || product.description.replace(/<[^>]*>/g, "").slice(0, 300)}
+              {(product.shortDescription || product.description.replace(/<[^>]*>/g, "")).slice(0, 300)}
             </p>
 
             <InquiryButton productName={product.name} />
