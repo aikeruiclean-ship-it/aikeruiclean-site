@@ -320,6 +320,61 @@ export default async function ProductDetailPage({ params }: Props) {
           </section>
         )}
 
+        {/* Auto-generated supplementary content for products with thin descriptions */}
+        {product.description.replace(/<[^>]*>/g, "").length < 500 && (
+          <section className="mb-12">
+            {product.category === "Parts" ? (
+              <>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">Compatibility & Fitment</h2>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  This {product.partSubcategory || "replacement part"} is manufactured to OEM specifications and compatible with major floor scrubber brands including Tennant, Nilfisk, Karcher, Comac, Viper, Hako, and 15+ others. For specific model compatibility, send us your OEM part number and machine model — we'll confirm fitment within 24 hours.
+                </p>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">How to Order the Right Part</h3>
+                <ol className="list-decimal list-inside text-gray-600 leading-relaxed space-y-2">
+                  <li>Find your OEM part number (stamped on the existing part or in your machine manual)</li>
+                  <li>Measure your existing part: diameter, center hole size, and bristle length (for brushes) or blade dimensions (for squeegees)</li>
+                  <li>Send us the details via the inquiry form below — we'll confirm compatibility and pricing within 24 hours</li>
+                  <li>For urgent orders, WhatsApp us directly for same-day dispatch confirmation</li>
+                </ol>
+                <h3 className="text-lg font-semibold text-gray-900 mt-4 mb-2">Replacement Tips</h3>
+                <ul className="list-disc list-inside text-gray-600 leading-relaxed space-y-1">
+                  <li>Inspect your part regularly — worn components reduce cleaning performance and can damage your machine</li>
+                  <li>Always keep 1-2 spares in stock to avoid downtime</li>
+                  <li>Factory-direct pricing saves 30-50% compared to dealer parts — same OEM quality</li>
+                </ul>
+              </>
+            ) : (
+              <>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">Application Scenarios</h2>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  This {product.category || "floor cleaning machine"} is built for demanding commercial and industrial environments:
+                </p>
+                <ul className="list-disc list-inside text-gray-600 leading-relaxed space-y-2">
+                  <li><strong>Warehouses & Distribution Centers:</strong> High-productivity cleaning for concrete and epoxy floors</li>
+                  <li><strong>Manufacturing Plants:</strong> Heavy-duty scrubbing for oil, grease, and production debris</li>
+                  <li><strong>Retail & Supermarkets:</strong> Quiet operation for daytime cleaning, fast-drying for customer safety</li>
+                  <li><strong>Airports & Transportation:</strong> Large-area coverage with lithium battery for continuous operation</li>
+                </ul>
+                {product.specs["Working width"] && (
+                  <>
+                    <h3 className="text-lg font-semibold text-gray-900 mt-4 mb-2">Coverage & Productivity</h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      With a {product.specs["Working width"]} cleaning width{product.specs["Productivity"] ? ` and productivity of ${product.specs["Productivity"]}` : ""}, this machine handles {product.specs["Working width"]?.toString().includes('34') || product.specs["Working width"]?.toString().includes('42') || product.specs["Working width"]?.toString().includes('50') ? "large" : "small to medium"} facilities efficiently. For facilities over 30,000 sq ft, a ride-on model like this pays for itself in labor savings within 12-18 months.
+                    </p>
+                  </>
+                )}
+                <h3 className="text-lg font-semibold text-gray-900 mt-4 mb-2">How to Get Your Quote</h3>
+                <ol className="list-decimal list-inside text-gray-600 leading-relaxed space-y-2">
+                  <li>Tell us your facility size and floor type using the inquiry form below</li>
+                  <li>We'll recommend the right configuration (battery, brush type, squeegee material)</li>
+                  <li>Receive a detailed quote with shipping options within 24 hours</li>
+                  <li>For sample evaluation, we ship single units for quality verification before volume orders</li>
+                </ol>
+              </>
+            )}
+          </section>
+        )}
+
         {/* Specifications Table */}
         {Object.keys(product.specs).length > 0 && (
           <section className="mb-12">
