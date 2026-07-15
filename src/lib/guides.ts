@@ -2190,6 +2190,7 @@ const extraGuides: Guide[] = [
         content: "Browse our 360+ replacement parts catalog. Factory-direct pricing saves 30-50% on every maintenance item — brushes, squeegees, filters, and more. Quote within 24 hours.",
       },
     ],
+    videoId: "-vnsEuzpTAg",
     relatedProducts: [],
   },
   {
@@ -2234,7 +2235,6 @@ const extraGuides: Guide[] = [
       },
     ],
     videoId: "3a9K54lhhVc",
-    videoId: "-vnsEuzpTAg",
     relatedProducts: [],
   },
   // ── Top 10 Parts Suppliers ──
