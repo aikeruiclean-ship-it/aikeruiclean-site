@@ -2233,8 +2233,8 @@ const extraGuides: Guide[] = [
         content: "All Aikerui scrubbers meet CE and ISO 9001 safety standards. Factory-direct pricing with full documentation for your safety compliance records. Quote within 24 hours.",
       },
     ],
-    videoId: "-vnsEuzpTAg",
     videoId: "3a9K54lhhVc",
+    videoId: "-vnsEuzpTAg",
     relatedProducts: [],
   },
   // ── Top 10 Parts Suppliers ──
