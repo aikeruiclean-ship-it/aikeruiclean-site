@@ -3,13 +3,13 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { MessageCircle, Send, User } from "lucide-react";
-import { pickRandom, type SalesPerson } from "@/lib/sales-team";
+import { getOrPickPerson, type SalesPerson } from "@/lib/sales-team";
 
 export function FloatingCTA() {
   const [person, setPerson] = useState<SalesPerson | null>(null);
 
   useEffect(() => {
-    setPerson(pickRandom());
+    setPerson(getOrPickPerson());
   }, []);
 
   const phone = person?.phone ?? "8619159116875";

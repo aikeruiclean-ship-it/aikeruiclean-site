@@ -2,13 +2,13 @@
 
 import { useState, useEffect } from "react";
 import { Phone } from "lucide-react";
-import { pickRandom, type SalesPerson } from "@/lib/sales-team";
+import { getOrPickPerson, type SalesPerson } from "@/lib/sales-team";
 
 export function WhatsAppHeroButton() {
   const [person, setPerson] = useState<SalesPerson | null>(null);
 
   useEffect(() => {
-    setPerson(pickRandom());
+    setPerson(getOrPickPerson());
   }, []);
 
   const phone = person?.phone ?? "8619159116875";

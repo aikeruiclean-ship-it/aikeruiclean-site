@@ -14,10 +14,19 @@ const SALES_TEAM: SalesPerson[] = [
 
 let _roundRobinIndex = 0;
 
-/** Pick a random salesperson (seeded by session hash for consistency within a visit) */
-export function pickRandom(): SalesPerson {
-  const i = Math.floor(Math.random() * SALES_TEAM.length);
-  return SALES_TEAM[i];
+/** Pick a random salesperson — stores in sessionStorage so all widgets show the same person */
+export function getOrPickPerson(): SalesPerson {
+  if (typeof window !== "undefined") {
+    const stored = sessionStorage.getItem("aikerui_sales");
+    if (stored) {
+      try { return JSON.parse(stored) as SalesPerson; } catch {}
+    }
+  }
+  const person = pickRandom();
+  if (typeof window !== "undefined") {
+    sessionStorage.setItem("aikerui_sales", JSON.stringify(person));
+  }
+  return person;
 }
 
 /** Round-robin: distribute evenly across form submissions */
