@@ -327,7 +327,7 @@ export default async function ProductDetailPage({ params }: Props) {
               <>
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">Compatibility & Fitment</h2>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  This {product.partSubcategory || "replacement part"} is manufactured to OEM specifications and compatible with major floor scrubber brands including Tennant, Nilfisk, Karcher, Comac, Viper, Hako, and 15+ others. For specific model compatibility, send us your OEM part number and machine model — we'll confirm fitment within 24 hours.
+                  This {product.partSubcategory?.split(" / ")?.[0] || "replacement part"} is manufactured to OEM specifications and compatible with major floor scrubber brands including Tennant, Nilfisk, Karcher, Comac, Viper, Hako, and 15+ others. For specific model compatibility, send us your OEM part number and machine model — we'll confirm fitment within 24 hours.
                 </p>
                 <h3 className="text-lg font-semibold text-gray-900 mt-4 mb-2">Replacement Tips</h3>
                 <ul className="list-disc list-inside text-gray-600 leading-relaxed space-y-1">
