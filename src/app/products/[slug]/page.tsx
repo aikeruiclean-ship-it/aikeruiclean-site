@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { ChevronRight } from "lucide-react";
 import { InquiryButton } from "@/components/inquiry-button";
+import { CollapsibleDescription } from "@/components/collapsible-description";
 import { JsonLd } from "@/components/json-ld";
 import { getProductBySlug, getProducts } from "@/lib/products";
 import { sanitizeHtml } from "@/lib/utils";
@@ -310,14 +311,7 @@ export default async function ProductDetailPage({ params }: Props) {
 
         {/* Full Description */}
         {product.description && (
-          <section className="mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Description</h2>
-            <div
-              className="text-gray-700 leading-relaxed max-w-none [&_h2]:text-xl [&_h2]:font-bold [&_h2]:text-gray-900 [&_h2]:mt-8 [&_h2]:mb-3 [&_h3]:text-lg [&_h3]:font-semibold [&_h3]:text-gray-800 [&_h3]:mt-6 [&_h3]:mb-2 [&_ul]:list-disc [&_ul]:pl-5 [&_ol]:list-decimal [&_ol]:pl-5 [&_li]:mb-1.5 [&_p]:mb-3 [&_strong]:text-gray-900"
-              suppressHydrationWarning
-              dangerouslySetInnerHTML={{ __html: sanitizeHtml(product.description) }}
-            />
-          </section>
+          <CollapsibleDescription html={sanitizeHtml(product.description)} />
         )}
 
         {/* Auto-generated supplementary content for all products */}
