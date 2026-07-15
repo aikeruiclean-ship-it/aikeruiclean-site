@@ -232,6 +232,7 @@ const extraGuides: Guide[] = [
       { heading: "Installing Brushes", content: "Install disc brushes or pad drivers depending on your floor type.", items: ["Turn off machine and raise brush deck", "Align brush with drive hub and twist until locked", "Lower deck and test at low speed"] },
       { heading: "Pre-Operation Checklist", content: "Before your first cleaning run, complete this checklist.", items: ["Fill solution tank with water", "Test all controls: drive, brush, squeegee", "Watch the installation video on YouTube for visual guidance"] },
     ],
+    videoId: "BZCQnHQD5tI",
     relatedProducts: ["K500BT", "A650T", "A380"],
   },
   {
