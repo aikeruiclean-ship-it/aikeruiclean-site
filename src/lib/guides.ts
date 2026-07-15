@@ -2727,4 +2727,79 @@ const extraGuides: Guide[] = [
     ],
     relatedProducts: [],
   },
+  // ── Niche: Oil & Grease ──
+  {
+    slug: "floor-scrubber-oil-grease-factory-cleaning",
+    title: "Floor Scrubber for Oil & Grease: Heavy-Duty Factory Cleaning Equipment",
+    description:
+      "Best floor scrubbers for oil, grease, and heavy industrial soil. Degreasing machines with high brush pressure (100kg), oil-resistant squeegees, and industrial-grade scrubbing power. Factory-direct pricing.",
+    category: "buying-guide",
+    readTime: "5 min",
+    difficulty: "intermediate",
+    published: "2026-07-15",
+    sections: [
+      {
+        heading: "Why Oil & Grease Destroy Standard Scrubbers",
+        content: "Standard floor scrubber squeegee rubber degrades within weeks when exposed to oil, grease, and petroleum-based soils. Nylon brushes lose stiffness. Hoses and seals swell and crack. You need a machine specifically engineered for industrial degreasing — oil-resistant materials, higher brush pressure, and chemical-compatible components throughout.",
+      },
+      {
+        heading: "Key Features for Oil & Grease Environments",
+        content: "Look for these four features when selecting a scrubber for oily floors:",
+        items: [
+          "Oil-resistant squeegee rubber: Linatex or oil-resistant polyurethane. Standard natural rubber deteriorates in weeks.",
+          "High brush pressure (80-100kg): Cuts through caked-on grease that standard 40kg pressure can't touch.",
+          "Degreasing injection system: Injects industrial degreaser directly at the brush deck — no pre-treatment required.",
+          "Stainless steel or coated frame: Carbon steel rusts within months from constant chemical exposure.",
+        ],
+      },
+      {
+        heading: "Industries That Need Oil-Rated Scrubbers",
+        content: "Automotive repair shops, metal fabrication plants, food processing facilities, aircraft hangars, and heavy equipment maintenance bays all need oil-rated scrubbers. For these environments, a standard commercial scrubber is a waste of money — it will fail within 6 months.",
+      },
+      {
+        heading: "Get Your Quote",
+        content: "Tell us your industry and floor type. We'll recommend an oil-rated machine with the right squeegee and brush configuration. Factory-direct pricing.",
+      },
+    ],
+    relatedProducts: [],
+  },
+  // ── Niche: Pad Holder Replacement ──
+  {
+    slug: "floor-scrubber-pad-holder-replacement-guide",
+    title: "Floor Scrubber Pad Holder Replacement: Types, Compatibility & Cost Guide",
+    description:
+      "Complete guide to floor scrubber pad holders and drivers. 13-20 inch sizes, center lock vs trimmed, compatibility with major brands. Factory-direct pricing $35-65. Same-day quote.",
+    category: "maintenance",
+    readTime: "5 min",
+    difficulty: "beginner",
+    published: "2026-07-15",
+    sections: [
+      {
+        heading: "What Is a Pad Holder (Pad Driver)?",
+        content: "The pad holder — also called a pad driver — is the rotating plate that attaches to your floor scrubber's brush deck and holds the cleaning pad or brush. It transfers the motor's rotational force to the pad, which scrubs the floor. A worn pad holder slips, wobbles, or fails to center the pad — resulting in uneven cleaning and streaks.",
+      },
+      {
+        heading: "Types of Pad Holders",
+        content: "Three main types, each for different machine configurations:",
+        items: [
+          "Standard Pad Driver: Flat disc with gripping surface. Fits most walk-behind scrubbers. 13-20 inch sizes.",
+          "Center Lock Pad Holder: Has a locking mechanism at the center. Quick-release for fast pad changes. Common on Tennant and Nilfisk machines.",
+          "Trimmed Center Lock: Lock mechanism is recessed (trimmed). Allows full pad contact with the floor — no center gap. Best for even cleaning pressure.",
+        ],
+      },
+      {
+        heading: "How to Identify Your Pad Holder",
+        content: "Before ordering, check: (1) diameter — measure the pad holder from edge to edge, (2) center hole size and mounting type, (3) whether it's center-lock or standard, and (4) your machine brand and model. Send us these details and we'll confirm compatibility within 24 hours.",
+      },
+      {
+        heading: "Cost: Dealer vs Factory-Direct",
+        content: "Dealer-purchased pad holders cost $90-150. Factory-direct: $35-65 — same materials, same quality, no dealer markup. The $55-85 difference is pure distribution cost.",
+      },
+      {
+        heading: "Get Your Quote",
+        content: "Send us your pad holder diameter, type, and machine model. We'll confirm compatibility and pricing within 24 hours. Factory-direct pricing, global shipping.",
+      },
+    ],
+    relatedProducts: [],
+  },
 ];
