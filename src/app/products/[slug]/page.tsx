@@ -378,8 +378,8 @@ export default async function ProductDetailPage({ params }: Props) {
           </section>
         )}
 
-        {/* Specifications Table */}
-        {Object.keys(product.specs).length > 0 && (
+        {/* Specifications Table — skip if description already contains specs */}
+        {Object.keys(product.specs).length > 0 && !product.description.toLowerCase().includes("technical specification") && (
           <section className="mb-12">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Technical Specifications</h2>
             <div className="overflow-hidden rounded-xl border border-gray-200">
