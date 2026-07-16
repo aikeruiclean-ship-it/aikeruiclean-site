@@ -3057,4 +3057,86 @@ const extraGuides: Guide[] = [
     ],
     relatedProducts: ["K660", "A660T"],
   },
+  // ── Auto Dealership Guide ──
+  {
+    slug: "floor-scrubber-auto-dealership-showroom",
+    title: "Floor Scrubber for Auto Dealerships & Showrooms: Keep Your Floors Showroom-Ready",
+    description:
+      "Best floor scrubbers for auto dealership showrooms and service bays. Handle tire marks, oil drips, and foot traffic. Compact ride-on for polished concrete and epoxy showroom floors.",
+    category: "buying-guide",
+    readTime: "4 min",
+    difficulty: "beginner",
+    published: "2026-07-16",
+    sections: [
+      {
+        heading: "Why Dealership Floors Are the First Thing Customers Notice",
+        content: "A customer judges your dealership in seconds — and the first thing they see is the floor. Tire marks on polished concrete, oil spots in the service bay, and foot traffic dirt in the showroom send the wrong message. A compact ride-on scrubber cleans showroom floors in minutes, leaving a mirror finish that sells cars.",
+      },
+      {
+        heading: "Showroom vs Service Bay: Different Machines",
+        content: "Showroom: Ultra-quiet compact scrubber with soft pads for polished concrete/epoxy. Clean daily before opening. Service Bay: Degreasing-capable machine with oil-resistant squeegee and higher brush pressure (60-80kg). Clean after closing.",
+      },
+      {
+        heading: "Recommended Setup",
+        content: "One compact ride-on (28-34 inch) for showroom and customer areas. One walk-behind with degreasing for service bays. Factory-direct pricing for both: $8,000-15,000 total — less than one month's advertising budget.",
+      },
+    ],
+    relatedProducts: ["K660"],
+  },
+  // ── OEM Factory Verification ──
+  {
+    slug: "how-to-verify-floor-scrubber-manufacturer",
+    title: "How to Verify a Floor Scrubber Manufacturer: 7 Red Flags to Avoid Fake Factories",
+    description:
+      "Learn how to verify a floor scrubber manufacturer before sending money. 7 verification steps: live video tour, business license check, third-party inspection, sample orders. Avoid trading company scams.",
+    category: "buying-guide",
+    readTime: "6 min",
+    difficulty: "intermediate",
+    published: "2026-07-16",
+    sections: [
+      {
+        heading: "The 'Fake Factory' Problem in B2B Equipment",
+        content: "Many 'manufacturers' on Alibaba and B2B platforms are actually trading companies with no factory. They add 15-30% markup, provide inaccurate specs, and disappear when quality issues arise. Before wiring $10,000 to any supplier, verify these 7 things.",
+      },
+      {
+        heading: "7 Verification Steps",
+        content: "1. Request a live video factory tour — real manufacturers say yes immediately. 2. Verify business license on Chinese government database. 3. Check for ISO/CE certifications — request certificate numbers to verify. 4. Ask for 3 customer references in your country. 5. Order a sample unit before committing to a container. 6. Use Trade Assurance or Letter of Credit — never pay 100% upfront. 7. Third-party inspection (SGS/Bureau Veritas) costs $300-500 and saves thousands.",
+      },
+      {
+        heading: "We Pass All 7 Checks",
+        content: "Aikerui welcomes live video tours, third-party inspections, and sample orders. Our ISO 9001 and CE certificates are verifiable. We provide customer references on request. Factory-direct means you deal directly with the manufacturer — no middlemen.",
+      },
+    ],
+    relatedProducts: [],
+  },
+  // ── Floor Stripping Guide ──
+  {
+    slug: "floor-stripping-equipment-finish-removal-guide",
+    title: "Commercial Floor Stripping Equipment: Machines & Pads for Finish Removal",
+    description:
+      "Complete guide to commercial floor stripping equipment. Floor stripper machines, stripping pads, and techniques for removing old wax, finish, and coatings. Factory-direct pricing.",
+    category: "maintenance",
+    readTime: "5 min",
+    difficulty: "beginner",
+    published: "2026-07-16",
+    sections: [
+      {
+        heading: "When Scrubbing Isn't Enough — You Need Stripping",
+        content: "Over time, floor finish builds up in layers — yellowing, trapping dirt, and making floors look dull even after scrubbing. Floor stripping removes all old finish down to bare flooring so a fresh coat can be applied. This requires different equipment than daily scrubbing — higher speed, more aggressive pads, and specialized chemicals.",
+      },
+      {
+        heading: "Stripping Equipment You Need",
+        content: "Floor stripper machine (175-350 RPM, higher speed than scrubbers), stripping pads (black or high-productivity brown), stripping chemical solution, wet/dry vacuum, and mop for solution application. A standard floor scrubber at low speed can also strip with the right pads and chemicals.",
+      },
+      {
+        heading: "Stripping Pads: Black vs Brown vs Specialty",
+        content: "Black pad: Most aggressive. Removes heavy buildup and old finish quickly. Brown pad: Medium aggression. Good for routine stripping without damaging the floor. White pad: Light scrubbing only — not for stripping.",
+      },
+      {
+        heading: "Order Your Stripping Supplies",
+        content: "We stock stripping pads, chemicals, and compatible machines. Factory-direct pricing with bulk discounts for facility management companies. Quote within 24 hours.",
+      },
+    ],
+    relatedProducts: [],
+  },
 ];
