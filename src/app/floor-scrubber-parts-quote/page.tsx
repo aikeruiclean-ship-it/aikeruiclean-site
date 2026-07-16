@@ -60,7 +60,7 @@ export default function PartsQuotePage() {
             Floor Scrubber Parts at 30-50% Less Than Dealer Price
           </h1>
           <p className="text-lg text-gray-200 max-w-2xl mx-auto mb-8">
-            Disc brushes, squeegee rubber, pad holders — same OEM quality from our ISO 9001 factory. Compatible with Dulevo, Nilfisk, Gaomei, Tennant, Karcher & 15+ brands.
+            Disc brushes, squeegee rubber, pad holders — same OEM quality from our ISO 9001 factory. Compatible with Dulevo, Nilfisk, Gaomei, Tennant, Karcher, flange mounts, clutch plates Karcher & 15+ brands 15+ brands.
           </p>
           <a href="#form" className="inline-flex items-center gap-2 px-8 py-4 bg-accent hover:bg-accent-hover text-white font-bold rounded-lg transition-colors text-lg shadow-lg">
             <Send size={18} /> Get Your Quote Now

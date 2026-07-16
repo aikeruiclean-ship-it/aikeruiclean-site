@@ -1112,7 +1112,7 @@ const extraGuides: Guide[] = [
       },
       {
         heading: "Ready to Cut Your Parts Costs?",
-        content: "Browse our full catalog of 360+ replacement parts or send us your part number for a same-day quote. All parts manufactured to OEM specifications in our ISO 9001 certified factory. Compatible with Tennant, Nilfisk, Karcher, Comac, Viper, Hako, Fimap, Dulevo, and 15+ other brands.",
+        content: "Browse our full catalog of 360+ replacement parts or send us your part number for a same-day quote. All parts manufactured to OEM specifications in our ISO 9001 certified factory. Compatible with Tennant, Nilfisk, Karcher, Comac, Viper, Hako, Fimap, Dulevo, flange mounts, clutch plates, and 15+ other brands.",
       },
     ],
     videoId: "fdISROzR0fQ",
