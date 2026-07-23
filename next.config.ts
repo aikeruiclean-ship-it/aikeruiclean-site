@@ -338,7 +338,25 @@ async redirects() {
     { source: "/products/104365207500", destination: "/products/karche-kit-squeege-suction-rubber-standard-bd50-40-rs-1010-mm", permanent: true },
     { source: "/products/101711325869", destination: "/products/comac-innova-75-spare-part-squeegee-for-floor-scrubber", permanent: true },
     { source: "/products/104360096788", destination: "/products/long-service-life-relay-switch-for-floor-scrubber-machine", permanent: true },
-    { source: "/products/101650838979", destination: "/products/hako-b45-floor-scrubber-spare-part-20-inch-scrubber-brush", permanent: true }
+    { source: "/products/101650838979", destination: "/products/hako-b45-floor-scrubber-spare-part-20-inch-scrubber-brush", permanent: true },
+    // Old WordPress URL patterns (migration cleanup)
+    { source: "/product/:slug*", destination: "/products", permanent: true },
+    { source: "/product-category/:slug*", destination: "/products", permanent: true },
+    { source: "/product-tag/:slug*", destination: "/products", permanent: true },
+    { source: "/squeegee-assembly", destination: "/floor-scrubber-parts-quote", permanent: true },
+    { source: "/aikerui-a500-floor-scrubber-dryer", destination: "/products", permanent: true },
+    { source: "/home-3", destination: "/", permanent: true },
+    { source: "/help-center", destination: "/faq", permanent: true },
+    { source: "/resources", destination: "/guides", permanent: true },
+    { source: "/customer-cabinet", destination: "/", permanent: true },
+    { source: "/customer-dashboard", destination: "/", permanent: true },
+    { source: "/industry", destination: "/solutions", permanent: true },
+    { source: "/service", destination: "/contact", permanent: true },
+    { source: "/how-bayside-eats-market-cut-cleaning-time-by-70-with-the-k500-floor-scrubber", destination: "/guides", permanent: true },
+    { source: "/playstore-img", destination: "/", permanent: true },
+    { source: "/placeholder-image-11", destination: "/", permanent: true },
+    { source: "/tshirt6", destination: "/", permanent: true },
+    { source: "/client-logo-3", destination: "/", permanent: true },
   ];
 },
 };
