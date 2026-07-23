@@ -945,6 +945,33 @@ const extraGuides: Guide[] = [
         ],
       },
       {
+        heading: "10-Point Buyer's Checklist Before Ordering",
+        content: "Use this checklist every time you evaluate a new manufacturer. Each unchecked box is a risk. Every point below is verifiable — demand proof, not promises.",
+        items: [
+          "☐ Request live video factory tour via WhatsApp — see production lines in real-time",
+          "☐ Verify business registration on government database — match company name, address, scope",
+          "☐ Check ISO 9001 / CE / SGS certification numbers — verify on certifying body's website",
+          "☐ Ask for 3 customer references in your country — call or email them directly",
+          "☐ Order a sample unit first — test quality fit compatibility before volume commitment",
+          "☐ Confirm payment terms — Letter of Credit or Trade Assurance, never 100% upfront to unknown suppliers",
+          "☐ Check shipping logistics — port-to-port transit time, customs clearance support, Incoterms",
+          "☐ Verify spare parts availability — do they stock 360+ parts or just the machine?",
+          "☐ Compare warranty terms — 1yr vs 2yr vs 3yr, what's actually covered in writing",
+          "☐ Calculate total landed cost — machine price + sea freight + customs duty + inland delivery = real cost",
+        ],
+      },
+      {
+        heading: "How Much Should You Actually Pay? TCO by Manufacturer Tier",
+        content: "Based on real market data, here's what each tier costs over a 5-year ownership period for a mid-size ride-on scrubber:",
+        items: [
+          "Premium Tier (Tennant T7): Purchase $22,000 + Annual parts $1,200 × 5 + Battery $1,500 + Service contract $3,000/yr × 5 = 5-Yr TCO $43,500. Best if you have a $18K+/yr cleaning budget.",
+          "Mid-Premium (Nilfisk SC550): Purchase $18,000 + Parts $1,000 × 5 + Battery $1,200 + Service $2,500/yr × 5 = 5-Yr TCO $36,700. Best European option with local support.",
+          "Mid-Range (NSS Champ): Purchase $13,000 + Parts $800 × 5 + Battery $1,000 + Service $1,500/yr × 5 = 5-Yr TCO $25,500. Best US value option.",
+          "Factory-Direct (Aikerui K660): Purchase $9,000 + Parts $500 × 5 + Lithium battery included + Service self-managed = 5-Yr TCO $11,500. Best pure value — saves $12,000-$32,000 over premium brands across 5 years.",
+          "Key insight: The premium brand you're paying for is their dealer network and service contracts — not meaningfully better machine quality. Same steel gauge, same motor types, same brush materials. The price gap is distribution cost, not manufacturing cost.",
+        ],
+      },
+      {
         heading: "Final Recommendation: Which Manufacturer Should You Choose?",
         content: "If you have a large budget, need on-site service contracts, and operate in North America or Western Europe, Tennant or Nilfisk are the safe choices. If you value factory-direct pricing, want OEM flexibility, and are willing to manage international logistics, Aikerui offers comparable quality at 30-50% less. For buyers in emerging markets, Aikerui and Gaomei provide the best value. Always verify certifications, request a factory tour, and start with a sample order — regardless of which manufacturer you choose.",
       },
