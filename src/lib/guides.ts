@@ -3206,4 +3206,67 @@ const extraGuides: Guide[] = [
     ],
     relatedProducts: [],
   },
+  // ── International Shipping Guide ──
+  {
+    slug: "how-to-ship-floor-scrubber-internationally",
+    title: "How to Ship a Floor Scrubber Internationally: Costs, Logistics & Complete Guide (2026)",
+    description:
+      "Step-by-step guide to importing a floor scrubber from China. Sea freight vs air freight costs, customs clearance, Incoterms, packaging requirements, and how to avoid the 6 most common shipping mistakes.",
+    category: "buying-guide",
+    readTime: "8 min",
+    difficulty: "beginner",
+    published: "2026-07-23",
+    sections: [
+      { heading: "Why Importing a Floor Scrubber Directly Saves You Thousands", content: "A dealer-priced ride-on scrubber at $18,000 can be sourced factory-direct for $9,000 — but only if you know how to handle international logistics. The shipping and customs process intimidates many first-time buyers, but it's far simpler than most people think. This guide walks you through the entire process, from factory pickup to your warehouse door." },
+      { heading: "Sea Freight vs Air Freight: Which Should You Choose?", content: "99% of floor scrubber imports use sea freight. Air freight costs 5-8x more and only makes sense for urgent spare parts or single demo units.", items: [
+        "Sea Freight: $800-2,500 per machine (20-40 days). FCL (Full Container) for 10+ machines is cheapest per unit. LCL (Less than Container Load) for 1-5 machines — shared container, slightly longer transit.",
+        "Air Freight: $5,000-15,000 per machine (3-7 days). Only for: rush orders, trade show demo units, or replacement machines when downtime costs exceed air freight premium.",
+        "Recommendation: 1-3 machines = LCL sea freight. 4-10 machines = consider FCL 20ft container. 10+ machines = FCL 40ft container, lowest cost per unit.",
+      ]},
+      { heading: "Understanding Incoterms: Who Pays for What?", content: "Incoterms define exactly where the seller's responsibility ends and yours begins. The two most common for factory-direct scrubber purchases:", items: [
+        "FOB (Free On Board): Factory handles domestic transport + export clearance + loading onto vessel. You pay ocean freight + insurance + import duties + inland delivery. Most common for first-time buyers — clear split of responsibility.",
+        "CIF (Cost, Insurance, Freight): Factory handles everything up to your destination port including ocean freight and insurance. You pay import duties + port handling + inland delivery. Easier for you, but factory typically adds 5-10% to cover freight cost.",
+        "EXW (Ex Works): You handle everything from factory gate. Cheapest factory price, highest logistics burden. Only recommended for experienced importers with their own freight forwarder.",
+      ]},
+      { heading: "Shipping Costs by Destination: Real 2026 Numbers", content: "Estimated door-to-door costs for a single ride-on scrubber (2-3 CBM, ~400-600 kg):", items: [
+        "To USA (West Coast): $800-1,400 sea freight + $300-600 port handling + $200-500 inland trucking + 0-5% duty = $1,300-2,500 total logistics. 18-25 days transit.",
+        "To USA (East Coast): $1,200-2,000 sea freight + $400-700 port handling + $300-800 inland + 0-5% duty = $1,900-3,500 total. 25-35 days transit.",
+        "To Western Europe (Rotterdam/Hamburg): $900-1,600 sea freight + €200-500 port + €300-700 inland + 0-3% EU duty = €1,400-2,800 total. 25-30 days transit.",
+        "To Middle East (Dubai/Jeddah): $400-900 sea freight + $200-500 port + $200-500 inland + 0-5% duty = $800-1,900 total. 15-20 days transit — fastest route from China.",
+        "To Australia/NZ: AUD 1,200-2,500 sea freight + AUD 400-800 port + AUD 300-700 inland + 0-5% duty = AUD 1,900-4,000 total. 20-28 days transit.",
+        "To Africa (Lagos/Mombasa/Durban): $600-2,000 sea freight + highly variable port fees + $300-1,000 inland + 5-25% duty = $1,200-5,000 total. 25-40 days transit. Duty rates vary dramatically by country.",
+      ]},
+      { heading: "Customs Clearance: The 3 Documents You Absolutely Need", content: "Missing paperwork is the #1 cause of shipping delays. Have these three documents ready before the shipment leaves the factory:", items: [
+        "Commercial Invoice: Lists machine model, quantity, unit price, total value, country of origin. Must match exactly what's in the container. Inflated or deflated values = customs problems.",
+        "Packing List: Itemized list of every crate/box with dimensions, weight, and contents. Critical for LCL shipments where your goods share a container with other cargo.",
+        "Bill of Lading (Sea) or Air Waybill (Air): The carrier's receipt and contract of carriage. Original documents needed for cargo release at destination — keep them safe.",
+        "Bonus document — Certificate of Origin: Simplifies customs in countries with China trade agreements. Factory can provide this for ~$30-50.",
+      ]},
+      { heading: "Packaging: How Floor Scrubbers Are Shipped Without Damage", content: "Proper packaging prevents the most expensive shipping mistake — receiving a damaged machine. Factory-direct manufacturers should:", items: [
+        "Crate the machine in a fumigated wooden case (ISPM 15 certified for international shipping)",
+        "Drain all fluids (water, cleaning solution) before packaging — leaking liquids cause container-wide damage claims",
+        "Disconnect and separately wrap batteries — lithium batteries require UN38.3 certification and MSDS documentation",
+        "Protect control panels and LCD screens with foam padding; wrap squeegee assembly separately",
+        "Include a vacuum-sealed bag of desiccant inside the crate to prevent moisture damage during ocean transit",
+        "Affix 'This Side Up' and 'Keep Dry' labels in English + destination language",
+      ]},
+      { heading: "6 Common Shipping Mistakes First-Time Importers Make", content: "Learn from others' expensive errors:", items: [
+        "Not budgeting for port fees: Port handling, terminal charges, documentation fees, and customs broker fees add $300-800 to your expected cost. Budget 15-20% above the freight quote.",
+        "Using the wrong HS code: Floor scrubbers fall under HS 8479.89 (machines with individual functions). Wrong code = customs delays + potential fines. Verify with your freight forwarder.",
+        "Forgetting insurance: Marine cargo insurance costs ~0.3-0.5% of cargo value. On a $10,000 shipment, that's $30-50 — the cheapest peace of mind you'll ever buy.",
+        "Not preparing for customs inspection: ~5-10% of shipments get randomly inspected. This adds 3-7 days and $200-500 in inspection fees. Factor it into your timeline.",
+        "Sending payment before production photos: Always request photos of the crated machine with shipping marks visible before sending the balance payment.",
+        "Neglecting after-sales support plan: Your machine arrives. Now what? Line up a local technician BEFORE ordering, or get remote support commitment from the factory.",
+      ]},
+      { heading: "Your Shipping Timeline: From Order to Your Door", content: "A realistic timeline for a factory-direct import:", items: [
+        "Week 1: Place order + pay deposit (30%). Factory begins production or picks from stock.",
+        "Week 2-3: Machine ready. Factory sends production photos. Pay balance (70%). Book shipping.",
+        "Week 3-4: Container loaded. Vessel departs. Estimated transit time: 15-40 days depending on destination.",
+        "Week 5-8: Container arrives at destination port. Customs clearance (1-3 days). Inland delivery (1-5 days).",
+        "Total: 4-8 weeks from order to your warehouse door. Air freight: 1-2 weeks, at 5-8x the cost.",
+      ]},
+      { heading: "Ready to Import?", content: "We ship floor scrubbers and parts to 50+ countries. All shipments include commercial invoice, packing list, ISPM 15 certified crating, and marine insurance. Tell us your destination port for a door-to-door shipping quote within 24 hours." },
+    ],
+    relatedProducts: ["K500BT", "K660"],
+  },
 ];
