@@ -275,6 +275,20 @@ export default function AboutPage() {
           <p className="text-gray-400 text-sm mt-6">Or call us directly: <a href="https://api.whatsapp.com/send?phone=8619965236428&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20pricing." className="text-white underline">+86 199 6523 6428</a></p>
         </div>
       </section>
+
+      {/* Related Resources */}
+      <section className="py-8 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-4 text-center">
+          <h2 className="text-xl font-bold text-gray-900 mb-4">📚 Explore More</h2>
+          <div className="flex flex-wrap justify-center gap-3">
+            <a href="/guides/top-10-floor-scrubber-manufacturers-2026" className="px-4 py-2 bg-white border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Top 10 Manufacturers</a>
+            <a href="/guides/how-to-verify-floor-scrubber-manufacturer" className="px-4 py-2 bg-white border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Factory Verification Guide</a>
+            <a href="/guides/how-much-does-floor-scrubber-cost" className="px-4 py-2 bg-white border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Cost Guide 2026</a>
+            <a href="/floor-scrubber-parts-quote" className="px-4 py-2 bg-white border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Get Parts Quote</a>
+            <a href="/products" className="px-4 py-2 bg-white border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">All Products</a>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
