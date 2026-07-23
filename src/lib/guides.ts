@@ -1358,6 +1358,30 @@ const extraGuides: Guide[] = [
         ],
       },
       {
+        heading: "Regional Price Differences: What a Scrubber Costs in Your Market",
+        content: "The same machine can cost dramatically different amounts depending on where you buy it. These are real price ranges for a mid-range 20-28 inch walk-behind scrubber in different markets:",
+        items: [
+          "North America: $6,000-12,000 (dealer pricing, includes local service and warranty support). Factory-direct import from China: $3,200-5,000 + $800-1,500 shipping + 0-5% duty = $4,000-6,500 landed.",
+          "Western Europe: €5,500-11,000 (dealer, includes 2-year warranty and CE compliance). Factory-direct: €3,000-4,800 + €700-1,400 shipping + 0-3% EU duty = €3,700-6,200 landed. EU CE certification already included by factory-direct manufacturers who export to Europe.",
+          "Middle East: $5,000-10,000 (dealer, Gulf markets). Factory-direct: $2,800-4,500 + $400-900 shipping (15-20 days to Dubai/Jeddah) + 0-5% duty = $3,200-5,400 landed. Strong Chinese presence means faster shipping and lower freight costs.",
+          "Southeast Asia: $4,000-8,000 (dealer). Factory-direct from China: $2,500-4,200 + $200-600 shipping (5-10 days to Singapore/Bangkok/Jakarta) + 0-10% duty = $2,700-4,800 landed. Shortest shipping times in the world for Chinese-made equipment.",
+          "Africa: $5,000-12,000 (dealer, limited availability in many countries). Factory-direct: $2,800-4,500 + $600-2,000 shipping (25-40 days to major African ports) + 5-25% duty = $3,600-7,500 landed. Duty rates vary significantly by country — Nigeria and Kenya have higher rates than South Africa.",
+          "South America: $6,000-14,000 (dealer, high import taxes in Brazil/Argentina). Factory-direct: $3,000-4,800 + $800-2,500 shipping (30-40 days) + 10-35% duty = $4,500-8,500 landed. Brazil's high import duties make dealer comparison essential.",
+          "Australia/NZ: AUD 9,000-18,000 (dealer). Factory-direct: AUD 4,500-7,500 + AUD 1,200-2,500 shipping + 0-5% duty = AUD 5,700-10,000 landed. Strong Australian dollar makes factory-direct imports increasingly attractive.",
+        ],
+      },
+      {
+        heading: "2026 Floor Scrubber Market Trends: What's Changing This Year",
+        content: "The floor scrubber market is shifting in three significant ways that affect pricing and availability. Smart buyers who understand these trends can save thousands:",
+        items: [
+          "Lithium Battery Adoption Accelerating: In 2024, ~25% of new scrubbers shipped with lithium. In 2026, that's approaching 50%. Lead-acid will still dominate the budget segment, but all mid-range and premium machines are shifting to lithium. If you're buying new in 2026, lithium adds $800-2,000 upfront but eliminates battery maintenance labor and replacement costs. For multi-shift operations, lithium is now the default recommendation.",
+          "Factory-Direct Model Growing: Post-pandemic supply chain lessons + tight budgets are driving more buyers to skip distributors and buy factory-direct. Chinese manufacturers like Aikerui that offer CE/ISO-certified machines at 30-50% less than dealer prices are capturing increasing market share, especially in emerging markets. Expect this trend to continue as shipping costs stabilize and quality perception improves.",
+          "Sustainability Requirements Rising: EU regulations (effective 2025-2026) require commercial cleaning equipment to meet stricter energy efficiency and recyclability standards. Many US states are following suit. Machines with lithium batteries, eco-mode settings, and recyclable components will have a competitive advantage. Buyers in regulated markets should verify compliance before ordering.",
+          "Smart Features Becoming Standard: LCD displays, hour meters, diagnostic codes, and chemical auto-dosing — once premium features — are now trickling down to mid-range machines. In 2026, a $7,000-9,000 walk-behind often has features that required a $12,000+ machine in 2023.",
+          "Parts and Consumables as a Profit Center: Dealers historically made thin margins on machine sales but high margins on parts. Factory-direct parts sourcing is disrupting this model — expect your parts budget to drop 30-50% if you switch from dealer to factory-direct for consumables like brushes, squeegees, and pad holders.",
+        ],
+      },
+      {
         heading: "Get Your Factory-Direct Quote",
         content: "Tell us your facility size, floor type, and daily cleaning hours. We'll recommend the right machine at factory-direct pricing — typically 30-40% less than your local dealer. Quote within 24 hours. No obligation.",
       },
