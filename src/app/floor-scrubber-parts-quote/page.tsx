@@ -118,6 +118,20 @@ export default function PartsQuotePage() {
         </div>
       </section>
 
+      {/* Related Guides */}
+      <section className="py-8 bg-white">
+        <div className="max-w-5xl mx-auto px-4 text-center">
+          <h2 className="text-xl font-bold text-gray-900 mb-4">📚 Related Guides</h2>
+          <div className="flex flex-wrap justify-center gap-3">
+            <a href="/guides/floor-scrubber-parts-guide-types-lifespan-cost" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Parts Guide: Types &amp; Cost</a>
+            <a href="/guides/oem-vs-aftermarket-floor-scrubber-parts" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">OEM vs Aftermarket</a>
+            <a href="/guides/squeegee-not-picking-up-water" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Squeegee Fix Guide</a>
+            <a href="/guides/disc-brush-vs-roller-brush-scrubber" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Disc vs Roller Brush</a>
+            <a href="/guides/how-much-does-floor-scrubber-cost" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Cost Guide 2026</a>
+          </div>
+        </div>
+      </section>
+
       {/* Form */}
       <section id="form" className="py-12 bg-gray-50">
         <div className="max-w-lg mx-auto px-4">
