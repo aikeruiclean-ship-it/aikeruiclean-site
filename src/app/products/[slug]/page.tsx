@@ -404,6 +404,11 @@ export default async function ProductDetailPage({ params }: Props) {
             Contact us for pricing, specifications, shipping quotes, and customization options.
           </p>
           <InquiryButton productName={product.name} />
+          {product.category !== "Parts" && (
+            <p className="text-gray-300 text-sm mt-4">
+              Need <Link href="/parts" className="text-accent font-semibold underline hover:text-white transition-colors">replacement scrubber parts</Link>? We stock 360+ disc brushes, squeegees, pad holders & more — factory direct.
+            </p>
+          )}
         </section>
 
         {/* Related Guides */}

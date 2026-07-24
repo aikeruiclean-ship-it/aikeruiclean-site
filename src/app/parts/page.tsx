@@ -4,8 +4,8 @@ import { JsonLd } from "@/components/json-ld";
 import { breadcrumbJsonLd, PARTS_BREADCRUMB } from "@/lib/breadcrumb";
 
 export const metadata = {
-  title: "Replacement Parts & Accessories | Factory Direct | Aikerui",
-  description: "Genuine replacement parts for floor scrubbers and sweepers. Disc brushes, squeegees, pad holders, rollers, hoses, and more. Manufactured to OEM specs, in stock at our factory.",
+  title: "Floor Scrubber Parts | OEM Replacement Parts Factory Direct | Aikerui",
+  description: "Factory-direct floor scrubber parts — disc brushes, squeegee blades, pad holders, roller brushes, clutch plates & more. Compatible with Tennant, Nilfisk, Karcher, Dulevo, Gaomei. Same OEM quality at 30-50% less. 360+ parts in stock.",
 };
 
 export default function PartsPage() {

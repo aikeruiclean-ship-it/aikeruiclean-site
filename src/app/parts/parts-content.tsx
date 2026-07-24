@@ -129,9 +129,13 @@ export function PartPageContent() {
       {/* Header */}
       <section className="bg-gradient-to-r from-primary to-primary-light text-white">
         <div className="max-w-7xl mx-auto px-4 py-12">
-          <div className="max-w-2xl">
-            <h1 className="text-3xl md:text-4xl font-bold mb-2">Replacement Parts & Accessories</h1>
-            <p className="text-gray-200 text-lg">Genuine replacement parts manufactured to OEM specs. In stock at our factory warehouse in Hefei, China — ready to ship.</p>
+          <div className="max-w-3xl">
+            <h1 className="text-3xl md:text-4xl font-bold mb-4">Floor Scrubber Parts — Factory Direct Pricing</h1>
+            <p className="text-gray-200 text-lg leading-relaxed">
+              Looking for <strong>floor scrubber parts</strong> that fit Tennant, Nilfisk, Karcher, Dulevo, Gaomei, and more? 
+              We manufacture 360+ replacement parts — disc brushes, squeegee blades, pad holders, roller brushes, clutch plates, 
+              side brushes, batteries, and chargers — in our ISO 9001 certified factory. <strong>Same OEM quality at 30-50% less.</strong> In stock and ready to ship.
+            </p>
           </div>
         </div>
       </section>
