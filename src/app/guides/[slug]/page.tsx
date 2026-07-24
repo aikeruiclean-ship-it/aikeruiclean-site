@@ -280,13 +280,19 @@ export default async function GuideDetailPage({ params }: Props) {
 
       {/* Back to guides */}
       <section className="py-12 bg-gray-50 border-t border-gray-200">
-        <div className="max-w-4xl mx-auto px-4">
+        <div className="max-w-4xl mx-auto px-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <Link
             href="/guides"
             className="inline-flex items-center gap-2 text-sm font-medium text-gray-700 hover:text-primary transition-colors"
           >
             <ArrowLeft size={16} />
             Back to all guides
+          </Link>
+          <Link
+            href="/parts"
+            className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors"
+          >
+            Browse 360+ floor scrubber parts →
           </Link>
         </div>
       </section>
