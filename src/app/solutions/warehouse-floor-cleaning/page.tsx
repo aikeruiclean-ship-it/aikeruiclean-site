@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, CheckCircle, Phone, Factory, Truck, Clock } from "lucide-react";
+import { ArrowRight, CheckCircle, Phone, Factory, Truck, Clock } from "@/lib/icons";
 import { JsonLd } from "@/components/json-ld";
 
 export const metadata: Metadata = {

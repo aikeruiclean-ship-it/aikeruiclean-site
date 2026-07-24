@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { MessageCircle, Send, User } from "lucide-react";
+import { MessageCircle, Send } from "@/lib/icons";
 import { getOrPickPerson, type SalesPerson } from "@/lib/sales-team";
 
 export function FloatingCTA() {

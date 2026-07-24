@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight } from "@/lib/icons";
 import { InquiryButton } from "@/components/inquiry-button";
 import { CollapsibleDescription } from "@/components/collapsible-description";
 import { JsonLd } from "@/components/json-ld";

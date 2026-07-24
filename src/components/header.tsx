@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import { Menu, X, Phone, Mail, ChevronDown, ShoppingCart } from "lucide-react";
+import { Menu, X, Phone, Mail, ChevronDown, ShoppingCart } from "@/lib/icons";
 import { useCart } from "@/lib/cart-context";
 import { categories, getCategoryCounts, getPartSubcategories } from "@/lib/products";
 import { cn } from "@/lib/utils";

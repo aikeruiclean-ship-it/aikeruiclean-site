@@ -15,7 +15,7 @@ import {
   CheckCircle,
   Star,
   ArrowRight,
-} from "lucide-react";
+} from "@/lib/icons";
 import { JsonLd } from "@/components/json-ld";
 import { getFeaturedProducts } from "@/lib/products";
 

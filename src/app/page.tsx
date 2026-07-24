@@ -1,8 +1,6 @@
-"use client";
-
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Shield, Truck, HeadphonesIcon, Brush, Factory, CheckCircle, Phone, Video, Award, Globe } from "lucide-react";
+import { ArrowRight, Shield, Truck, HeadphonesIcon, Brush, Factory, CheckCircle, Phone, Video, Award, Globe } from "@/lib/icons";
 import { ProductCard } from "@/components/product-card";
 import { WhatsAppHeroButton } from "@/components/whatsapp-hero-button";
 import { JsonLd } from "@/components/json-ld";

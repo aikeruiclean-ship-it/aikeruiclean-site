@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
-import { Search, X } from "lucide-react";
+import { Search, X } from "@/lib/icons";
 import { getProducts } from "@/lib/products";
 import type { Product } from "@/lib/products";
 

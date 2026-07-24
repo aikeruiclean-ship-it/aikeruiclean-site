@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Clock } from "@/lib/icons";
 import { categories, getCategoryCounts } from "@/lib/products";
 
 export function Footer() {

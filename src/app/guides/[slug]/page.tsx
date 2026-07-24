@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getGuideBySlug, getGuides, guideCategories } from "@/lib/guides";
-import { Clock, BookOpen, ArrowLeft, Tag } from "lucide-react";
+import { Clock, BookOpen, ArrowLeft, Tag } from "@/lib/icons";
 import type { Metadata } from "next";
 import { YouTubeLink } from "@/components/youtube-link";
 

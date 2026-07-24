@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Phone } from "lucide-react";
+import { Phone } from "@/lib/icons";
 import { getOrPickPerson, type SalesPerson } from "@/lib/sales-team";
 
 export function WhatsAppHeroButton() {

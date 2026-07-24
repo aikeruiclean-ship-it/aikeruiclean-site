@@ -13,7 +13,7 @@ import {
   Clock,
   User,
   X,
-} from "lucide-react";
+} from "@/lib/icons";
 
 interface Lead {
   id: number;

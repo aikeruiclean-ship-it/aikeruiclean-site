@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Shield, Award, Globe, CheckCircle, Factory, ArrowRight, Search, Phone, Video, Camera, Building2, Users, Truck } from "lucide-react";
+import { Shield, Award, Globe, CheckCircle, Factory, ArrowRight, Search, Phone, Video, Camera, Building2, Users, Truck } from "@/lib/icons";
 import { JsonLd } from "@/components/json-ld";
 import { breadcrumbJsonLd, ABOUT_BREADCRUMB } from "@/lib/breadcrumb";
 

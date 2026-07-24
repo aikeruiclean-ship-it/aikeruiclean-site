@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Phone, Mail, MapPin, Clock, Send, CheckCircle, Video, Factory, MessageCircle, ArrowRight } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Send, CheckCircle, Video, Factory, MessageCircle, ArrowRight } from "@/lib/icons";
 import Link from "next/link";
 import Image from "next/image";
 import { JsonLd } from "@/components/json-ld";

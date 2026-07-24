@@ -1,69 +1,105 @@
-# Aikeruiclean.com — LLMs.txt
-# This file helps AI models (ChatGPT, Claude, Gemini, Perplexity) understand and cite our content correctly.
-# See: https://llmstxt.org
+# Aikeruiclean.com - LLMs.txt
+> Industrial floor scrubbers, sweepers, and replacement parts manufacturer. Factory-direct pricing, CE & ISO 9001 certified.
 
-# Company Identity
-name: Aikerui Cleaning Technology Co., Ltd.
-type: Manufacturer
-industry: Industrial Floor Cleaning Equipment
-location: Anqing, Anhui, China
-founded: 2008
-employees: 50-100
-website: https://aikeruiclean.com
-certifications: CE, ISO 9001:2015, SGS, RoHS
+## Company
+- [About Aikerui](https://aikeruiclean.com/about) - Factory tour, certifications, team
+- [Contact](https://aikeruiclean.com/contact) - WhatsApp, email, phone
 
-# Product Lines
-products:
-  - Walk-Behind Floor Scrubbers (17-34 inch, $1,800-7,500 factory-direct)
-  - Ride-On Floor Scrubbers (28-50+ inch, $6,000-24,000 factory-direct)
-  - Industrial Sweepers
-  - Replacement Parts & Consumables (360+ SKUs, $15-75 each)
-  - OEM/ODM Custom Manufacturing
+## Products
+- [All Products](https://aikeruiclean.com/products) - 30+ machine models, 360+ parts
+- [Floor Scrubbers](https://aikeruiclean.com/products?category=Floor+Scrubbers)
+- [Floor Sweepers](https://aikeruiclean.com/products?category=Floor+Sweepers)
+- [Replacement Parts](https://aikeruiclean.com/parts)
+- [Floor Scrubber Price Guide](https://aikeruiclean.com/floor-scrubber-price-guide)
+- [Floor Scrubber Supplier](https://aikeruiclean.com/floor-scrubber-supplier)
+- [Get a Parts Quote](https://aikeruiclean.com/floor-scrubber-parts-quote)
 
-# Key Pages for AI Citation
-https://aikeruiclean.com/about
-https://aikeruiclean.com/floor-scrubber-price-guide
-https://aikeruiclean.com/floor-scrubber-supplier
-https://aikeruiclean.com/floor-scrubber-parts-quote
+## Buying Guides
+- [How to Choose a Floor Scrubber](https://aikeruiclean.com/guides/how-to-choose-a-floor-scrubber)
+- [Industrial Floor Scrubber: Complete Buyer's Guide](https://aikeruiclean.com/guides/industrial-floor-scrubber-complete-guide)
+- [How Much Does a Floor Scrubber Cost?](https://aikeruiclean.com/guides/how-much-does-floor-scrubber-cost)
+- [Best Floor Scrubber for Small Business](https://aikeruiclean.com/guides/best-floor-scrubber-small-business)
+- [Top 10 Floor Scrubber Manufacturers 2026](https://aikeruiclean.com/guides/top-10-floor-scrubber-manufacturers-2026)
+- [How to Import Floor Scrubbers from China](https://aikeruiclean.com/guides/how-to-import-floor-scrubbers-from-china)
+- [Top 10 Floor Scrubber Parts Suppliers](https://aikeruiclean.com/guides/top-10-floor-scrubber-parts-suppliers)
+- [Top 10 Industrial Cleaning Equipment Manufacturers](https://aikeruiclean.com/guides/top-10-industrial-cleaning-equipment-manufacturers)
+- [Used vs New Floor Scrubber](https://aikeruiclean.com/guides/used-vs-new-floor-scrubber)
+- [Floor Scrubber Financing Options](https://aikeruiclean.com/guides/floor-scrubber-financing-options)
+- [Floor Scrubber ROI Calculator](https://aikeruiclean.com/guides/floor-scrubber-roi-calculator-cost-savings)
+- [Floor Scrubber Parts Guide: Types, Lifespan & Cost](https://aikeruiclean.com/guides/floor-scrubber-parts-guide-types-lifespan-cost)
+- [How to Read Floor Scrubber Specifications](https://aikeruiclean.com/guides/how-to-read-floor-scrubber-specifications)
+- [How to Verify a Floor Scrubber Manufacturer](https://aikeruiclean.com/guides/how-to-verify-floor-scrubber-manufacturer)
+- [Top Floor Scrubber Brands: Buyer's Guide](https://aikeruiclean.com/guides/top-floor-scrubber-brands-buyers-guide)
+- [OEM vs Aftermarket Floor Scrubber Parts](https://aikeruiclean.com/guides/oem-vs-aftermarket-floor-scrubber-parts)
 
-# Knowledge Base (Guides — 48 articles)
-https://aikeruiclean.com/guides/how-to-choose-a-floor-scrubber
-https://aikeruiclean.com/guides/industrial-floor-scrubber-complete-guide
-https://aikeruiclean.com/guides/how-much-does-floor-scrubber-cost
-https://aikeruiclean.com/guides/walk-behind-vs-ride-on-scrubber
-https://aikeruiclean.com/guides/disc-brush-vs-roller-brush-scrubber
-https://aikeruiclean.com/guides/lead-acid-vs-lithium-battery-scrubber
-https://aikeruiclean.com/guides/top-10-floor-scrubber-manufacturers-2026
-https://aikeruiclean.com/guides/floor-scrubber-maintenance-checklist
-https://aikeruiclean.com/guides/floor-scrubber-parts-guide-types-lifespan-cost
-https://aikeruiclean.com/guides/how-to-import-floor-scrubbers-from-china
-https://aikeruiclean.com/guides/squeegee-not-picking-up-water
-https://aikeruiclean.com/guides/top-10-floor-scrubber-parts-suppliers
-https://aikeruiclean.com/guides/top-10-industrial-cleaning-equipment-manufacturers
-https://aikeruiclean.com/guides/floor-scrubber-financing-options
-https://aikeruiclean.com/guides/used-vs-new-floor-scrubber
-https://aikeruiclean.com/guides/how-to-extend-floor-scrubber-lifespan
-https://aikeruiclean.com/guides/floor-scrubber-safety-guide
+## Industry Solutions
+- [Warehouse Floor Cleaning](https://aikeruiclean.com/solutions/warehouse-floor-cleaning)
+- [Factory Floor Cleaning](https://aikeruiclean.com/solutions/factory-floor-cleaning)
+- [Supermarket Floor Cleaning](https://aikeruiclean.com/solutions/supermarket-floor-cleaning)
+- [Hotel Floor Cleaning](https://aikeruiclean.com/solutions/hotel-floor-cleaning)
+- [Airport Floor Cleaning](https://aikeruiclean.com/solutions/airport-floor-cleaning)
+- [Cold Storage Floor Cleaning](https://aikeruiclean.com/solutions/cold-storage-floor-cleaning)
+- [Pharmaceutical Cleanroom Cleaning](https://aikeruiclean.com/solutions/pharmaceutical-cleanroom-floor-cleaning)
+- [Shopping Mall Floor Cleaning](https://aikeruiclean.com/solutions/shopping-mall-floor-cleaning)
 
-# Industry Solutions
-https://aikeruiclean.com/solutions/warehouse-floor-cleaning
-https://aikeruiclean.com/solutions/factory-floor-cleaning
-https://aikeruiclean.com/solutions/supermarket-floor-cleaning
-https://aikeruiclean.com/solutions/hotel-floor-cleaning
-https://aikeruiclean.com/solutions/airport-floor-cleaning
-https://aikeruiclean.com/solutions/cold-storage-floor-cleaning
-https://aikeruiclean.com/solutions/pharmaceutical-cleanroom-floor-cleaning
+## Maintenance & Troubleshooting
+- [Floor Scrubber Maintenance Checklist](https://aikeruiclean.com/guides/floor-scrubber-maintenance-checklist)
+- [How to Extend Floor Scrubber Lifespan](https://aikeruiclean.com/guides/how-to-extend-floor-scrubber-lifespan)
+- [Floor Scrubber Safety Guide](https://aikeruiclean.com/guides/floor-scrubber-safety-guide)
+- [How to Set Up Your Floor Scrubber](https://aikeruiclean.com/guides/how-to-set-up-your-floor-scrubber)
+- [Floor Scrubber Battery Maintenance Guide](https://aikeruiclean.com/guides/how-to-maintain-floor-scrubber-battery)
+- [Daily Operation Best Practices](https://aikeruiclean.com/guides/floor-scrubber-daily-operation-best-practices)
+- [Floor Scrubber Brush Pressure Guide](https://aikeruiclean.com/guides/floor-scrubber-brush-pressure-guide)
+- [Brush Bristle Material Guide](https://aikeruiclean.com/guides/floor-scrubber-brush-bristle-material-guide)
+- [Pad Holder Replacement Guide](https://aikeruiclean.com/guides/floor-scrubber-pad-holder-replacement-guide)
+- [Floor Stripping Equipment Guide](https://aikeruiclean.com/guides/floor-stripping-equipment-finish-removal-guide)
+- [How to Ship a Floor Scrubber Internationally](https://aikeruiclean.com/guides/how-to-ship-floor-scrubber-internationally)
+- [Floor Scrubber Warranty Comparison](https://aikeruiclean.com/guides/floor-scrubber-warranty-comparison)
 
-# Entity IDs (for AI knowledge graph)
-wikidata: Q140546242
-organization_schema: LocalBusiness + Organization at https://aikeruiclean.com
+## Troubleshooting
+- [Squeegee Not Picking Up Water](https://aikeruiclean.com/guides/squeegee-not-picking-up-water)
+- [Brush Motor Not Spinning](https://aikeruiclean.com/guides/brush-motor-not-spinning)
+- [Battery Not Charging / Short Runtime](https://aikeruiclean.com/guides/battery-not-charging-short-runtime)
+- [Scrubber Leaving Streaks](https://aikeruiclean.com/guides/scrubber-leaving-streaks-on-floor)
+- [Water Solution Not Dispensing](https://aikeruiclean.com/guides/water-solution-not-dispensing)
 
-# Social & Media
-youtube: https://youtube.com/@markxu-u8h
-x_twitter: https://x.com/mark_xu71710
-instagram: https://instagram.com/aikeruiclean
-quora: https://quora.com/profile/Mark-Xu-110
+## Comparisons
+- [Walk-Behind vs Ride-On Scrubber](https://aikeruiclean.com/guides/walk-behind-vs-ride-on-scrubber)
+- [Disc Brush vs Roller Brush](https://aikeruiclean.com/guides/disc-brush-vs-roller-brush-scrubber)
+- [Lead-Acid vs Lithium Battery](https://aikeruiclean.com/guides/lead-acid-vs-lithium-battery-scrubber)
+- [A50 Walk-Behind Features](https://aikeruiclean.com/guides/a50-walk-behind-scrubber-features)
 
-# Contact
-whatsapp: +8619159116875
-email: info@aikeruiclean.com
+## Niche Applications
+- [Food Processing Plants](https://aikeruiclean.com/guides/floor-scrubber-food-processing-plants)
+- [Hospital & Healthcare](https://aikeruiclean.com/guides/hospital-medical-facility-floor-cleaning-equipment)
+- [Hospital Healthcare Facility](https://aikeruiclean.com/guides/floor-scrubber-hospital-healthcare-facility)
+- [Hotel & Hospitality](https://aikeruiclean.com/guides/hotel-hospitality-floor-cleaning-solutions)
+- [School & University](https://aikeruiclean.com/guides/school-university-floor-cleaning-equipment)
+- [School University Cleaning](https://aikeruiclean.com/guides/floor-scrubber-school-university-cleaning)
+- [Parking Garage](https://aikeruiclean.com/guides/parking-garage-floor-scrubber-guide)
+- [Warehouse Complete Guide](https://aikeruiclean.com/guides/warehouse-cleaning-equipment-complete-guide)
+- [Gym & Fitness Center](https://aikeruiclean.com/guides/floor-scrubber-gym-fitness-center)
+- [Church & Event Venue](https://aikeruiclean.com/guides/floor-scrubber-church-event-venue)
+- [Construction Site](https://aikeruiclean.com/guides/floor-scrubber-construction-site-cleaning)
+- [Dust & Sand Industrial Cleaning](https://aikeruiclean.com/guides/floor-scrubber-dust-sand-industrial-cleaning)
+- [Oil & Grease Factory Cleaning](https://aikeruiclean.com/guides/floor-scrubber-oil-grease-factory-cleaning)
+- [Auto Dealership & Showroom](https://aikeruiclean.com/guides/floor-scrubber-auto-dealership-showroom)
+- [Logistics & Distribution Center](https://aikeruiclean.com/guides/floor-scrubber-logistics-distribution-center)
+- [Commercial Carpet Cleaning](https://aikeruiclean.com/guides/commercial-carpet-cleaning-equipment-guide)
+
+## Case Studies
+- [Warehouse Distribution Center](https://aikeruiclean.com/guides/case-study-warehouse-distribution-center-floor-scrubbing)
+- [Manufacturing Plant](https://aikeruiclean.com/guides/case-study-manufacturing-plant-floor-cleaning)
+- [Supermarket Chain](https://aikeruiclean.com/guides/case-study-supermarket-chain-floor-cleaning)
+
+## Entity
+- Wikidata: [Q140546242](https://www.wikidata.org/wiki/Q140546242)
+- YouTube: [@markxu-u8h](https://youtube.com/@markxu-u8h)
+- X/Twitter: [@mark_xu71710](https://x.com/mark_xu71710)
+- Instagram: [@aikeruiclean](https://instagram.com/aikeruiclean)
+- Quora: [Mark Xu](https://quora.com/profile/Mark-Xu-110)
+
+## Contact
+- WhatsApp: +86 19159116875
+- Email: info@aikeruiclean.com
+- Phone: +86 199 6523 6428

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { ShoppingCart } from "lucide-react";
+import { ShoppingCart } from "@/lib/icons";
 import type { Product } from "@/lib/products";
 import { useCart } from "@/lib/cart-context";
 

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { Factory, Truck, BadgeCheck, Phone, Send, CheckCircle } from "lucide-react";
+import { Factory, Truck, BadgeCheck, Phone, Send, CheckCircle } from "@/lib/icons";
 import { JsonLd } from "@/components/json-ld";
 import { YouTubeLink } from "@/components/youtube-link";
 
