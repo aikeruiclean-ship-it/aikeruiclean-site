@@ -22,6 +22,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const product = getProductBySlug(slug);
   if (!product) return { title: "Product Not Found" };
 
+  // ── Truncate long product names for title tag (Google shows ~60 chars) ──
+  const maxNameLen = 55;
+  const shortName = product.name.length > maxNameLen
+    ? product.name.slice(0, maxNameLen - 3).trim().replace(/[,/&;:]+$/, "") + "..."
+    : product.name;
+
   // ── Strip HTML for plain-text description ──
   const cleanDesc = product.description
     .replace(/<[^>]*>/g, "")
@@ -47,7 +53,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (description.length > 160) description = description.slice(0, 157) + "...";
 
   // ── Build a keyword-rich title ──
-  let title = product.name;
+  let title = shortName;
   // Add key spec if title is short
   if (title.length < 60 && product.specs?.["Working width"]) {
     title += ` — ${product.specs["Working width"]} ${product.category || "Cleaning Equipment"}`;
@@ -59,14 +65,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     (product.shortDescription && product.shortDescription.length >= 80
       ? product.shortDescription
       : cleanDesc.slice(0, 200)) ||
-    `${product.name} — professional ${product.category?.toLowerCase() || "cleaning"} equipment by Aikerui. Factory-direct pricing. CE certified. Global shipping.`;
+    `${shortName} — professional ${product.category?.toLowerCase() || "cleaning"} equipment by Aikerui. Factory-direct pricing. CE certified. Global shipping.`;
 
   // ── OG images: use all available ──
   const ogImages = product.images.slice(0, 6).map((url) => ({
     url,
     width: 800,
     height: 800,
-    alt: product.name,
+    alt: shortName,
   }));
 
   return {
@@ -79,13 +85,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ...product.tags.slice(0, 5),
     ].filter(Boolean),
     openGraph: {
-      title: `${product.name} | Aikerui`,
+      title: `${shortName} | Aikerui`,
       description: ogDesc.slice(0, 200),
       images: ogImages.length > 0 ? ogImages : [],
     },
     twitter: {
       card: "summary_large_image",
-      title: product.name,
+      title: shortName,
       description: ogDesc.slice(0, 200),
       images: product.images[0] ? [product.images[0]] : [],
     },
