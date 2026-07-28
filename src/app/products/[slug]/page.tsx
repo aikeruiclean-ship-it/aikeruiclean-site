@@ -164,15 +164,24 @@ export default async function ProductDetailPage({ params }: Props) {
               warrantyScope: "https://schema.org/PartsAndLaborBasis",
             },
           }),
-          offers: {
-            "@type": "Offer",
-            url: productUrl,
-            availability: product.inStock
-              ? "https://schema.org/InStock"
-              : "https://schema.org/OutOfStock",
-            priceCurrency: "USD",
-            ...(product.price != null && { price: product.price }),
-            ...(isMachine && {
+          ...(product.price != null && {
+            offers: {
+              "@type": "Offer",
+              url: productUrl,
+              availability: "https://schema.org/InStock",
+              priceCurrency: "USD",
+              price: product.price,
+            },
+          }),
+          ...(isMachine && product.price != null && {
+            offers: {
+              "@type": "Offer",
+              url: productUrl,
+              availability: product.inStock
+                ? "https://schema.org/InStock"
+                : "https://schema.org/OutOfStock",
+              priceCurrency: "USD",
+              price: product.price,
               shippingDetails: {
                 "@type": "OfferShippingDetails",
                 shippingDestination: {
@@ -188,8 +197,8 @@ export default async function ProductDetailPage({ params }: Props) {
                 returnMethod: "https://schema.org.ReturnByMail",
                 returnFees: "https://schema.org.FreeReturn",
               },
-            }),
-          },
+            },
+          }),
         };
       })()} />
       <JsonLd data={{
