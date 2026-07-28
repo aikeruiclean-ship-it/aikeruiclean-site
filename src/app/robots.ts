@@ -9,7 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: [
           // API & internal
           "/api/",
-          "/_next/",
           // Cart/order (not implemented yet)
           "/cart/",
           "/order/",
