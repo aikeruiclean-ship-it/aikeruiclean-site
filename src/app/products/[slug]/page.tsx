@@ -163,23 +163,7 @@ export default async function ProductDetailPage({ params }: Props) {
           ...(isMachine && { countryOfOrigin: "CN" }),
           ...(weight && { weight }),
           ...(dims && { ...dims }),
-          ...(isMachine && {
-            warranty: {
-              "@type": "WarrantyPromise",
-              durationOfWarranty: "P1Y",
-              warrantyScope: "https://schema.org/PartsAndLaborBasis",
-            },
-          }),
           ...(product.price != null && {
-            offers: {
-              "@type": "Offer",
-              url: productUrl,
-              availability: "https://schema.org/InStock",
-              priceCurrency: "USD",
-              price: product.price,
-            },
-          }),
-          ...(isMachine && product.price != null && {
             offers: {
               "@type": "Offer",
               url: productUrl,
@@ -188,21 +172,6 @@ export default async function ProductDetailPage({ params }: Props) {
                 : "https://schema.org/OutOfStock",
               priceCurrency: "USD",
               price: product.price,
-              shippingDetails: {
-                "@type": "OfferShippingDetails",
-                shippingDestination: {
-                  "@type": "DefinedRegion",
-                  addressCountry: "US",
-                },
-              },
-              hasMerchantReturnPolicy: {
-                "@type": "MerchantReturnPolicy",
-                applicableCountry: "US",
-                returnPolicyCategory: "https://schema.org/MerchantReturnFiniteReturnWindow",
-                merchantReturnDays: 30,
-                returnMethod: "https://schema.org.ReturnByMail",
-                returnFees: "https://schema.org.FreeReturn",
-              },
             },
           }),
         };
