@@ -3269,4 +3269,79 @@ const extraGuides: Guide[] = [
     ],
     relatedProducts: ["K500BT", "K660"],
   },
+  {
+    slug: "floor-scrubber-clutch-plate-pad-driver-guide",
+    title: "Floor Scrubber Clutch Plate & Pad Driver: The Complete Guide to Buckle Types & Compatibility",
+    description: "Learn about the different types of floor scrubber clutch plates and pad drivers — NP-9200, 3-lug center lock, 4-lug magnetic buckle. How to identify your machine's connector type and avoid costly ordering mistakes.",
+    category: "maintenance",
+    readTime: "5 min",
+    difficulty: "beginner",
+    published: "2026-07-28",
+    videoId: "BZCQnHQD5tI",
+    sections: [
+      {
+        heading: "What Is a Clutch Plate / Pad Driver?",
+        content: "The clutch plate (also called pad driver or buckle connector) is the metal disc that connects your floor scrubber's motor shaft to the brush or pad. It looks simple — a disc with a few raised lugs — but getting the wrong type means the brush won't spin, costing you hours of downtime.",
+        items: [
+          "Position: Between motor shaft and brush — it transfers rotational force",
+          "Also called: pad driver, clutch plate, buckle adapter, brush driver, center lock plate",
+          "Material: Cast iron or hardened steel — designed to withstand thousands of hours of torque",
+          "Wear signs: Bent lugs, stripped center hole, rust — replace immediately if any are present",
+        ],
+      },
+      {
+        heading: "The 3 Most Common Clutch Plate Types",
+        content: "There are three main types of clutch plates on the market, and they are NOT interchangeable. Identifying yours takes 30 seconds.",
+        items: [
+          "NP-9200 Universal (2-Lug): The most common standard. Two raised nubs lock into matching slots on the brush. Fits Tennant T5/T7/T300, Viper, Nilfisk, Comac, and most Chinese OEM machines. The NP-9200 center hole is 5/8 inch (16mm).",
+          "3-Lug Center Lock: Common on Advance, Nilfisk, and older Viper models. Three lugs with a center screw that secures the brush. More secure against slippage under heavy scrubbing pressure. Requires matching 3-lug brush.",
+          "4-Lug Magnetic or Mechanical Buckle: Used on some European brands like Kärcher and Hako. Some use magnets to hold the brush; others use mechanical clips. Quick-change design but parts are harder to source outside Europe.",
+        ],
+      },
+      {
+        heading: "How to Identify Your Machine's Clutch Plate Type",
+        content: "Don't guess — a 2-minute check saves 2 days of waiting for the wrong part. Here's the process:",
+        items: [
+          "Step 1 — Remove the brush. Look at the metal plate exposed on the motor shaft.",
+          "Step 2 — Count the lugs (raised nubs). 2 lugs = NP-9200. 3 lugs = center lock. 4 lugs = European standard.",
+          "Step 3 — Measure the center hole diameter. NP-9200 is 5/8 inch (16mm). Others vary.",
+          "Step 4 — Check for additional features. Center screw? Magnets? Clips? These tell you the exact type.",
+          "Step 5 — Compare with the machine's model number in our compatibility chart below.",
+        ],
+      },
+      {
+        heading: "Why Ordering the Wrong Clutch Plate Is So Common",
+        content: "We see the same mistake repeatedly: a facility orders 'a clutch plate' without checking the type, gets the wrong one, then has to reorder with rush shipping. The problem is that many sellers list 'universal clutch plate' when they mean 'NP-9200 only.' Our recommendation: count your lugs before ordering — not after.",
+      },
+      {
+        heading: "Compatibility Guide: Which Clutch Plate Fits Which Machine",
+        content: "Quick reference based on our 360+ parts inventory:",
+        items: [
+          "NP-9200 (2-Lug): Fits Tennant T5, T5e, T7, T300, T300e, T500, T500e / Viper AS510B, AS5160, LS160 / Nilfisk SC500, SC600 / Comac Innova 55, Vispa 35B / Most Chinese OEM machines",
+          "3-Lug Center Lock: Fits Advance SC800, SC850 / Nilfisk BA530, BA730 / Older Viper AS4325, AS4335",
+          "4-Lug: Fits Kärcher BD50, BD53, B90 / Hako B45, B70, B75R / Some Gaomei and Dulevo models",
+          "If your machine isn't listed: contact us with a photo of your clutch plate and we'll identify it within 24 hours.",
+        ],
+      },
+      {
+        heading: "When Should You Replace Your Clutch Plate?",
+        content: "A clutch plate should last several years under normal use, but certain conditions accelerate wear:",
+        items: [
+          "Bent or damaged lugs: Usually from dropping the brush or hitting curbs at speed. Replace immediately — a broken lug can damage the brush motor shaft.",
+          "Stripped center hole: The threads strip when the mounting bolt is overtightened or cross-threaded. A stripped hole means the plate won't stay secured.",
+          "Rust or corrosion: Surface rust on the lugs prevents the brush from seating properly. Light rust can be wire-brushed; heavy rust means replacement.",
+          "Worn magnetic grip (4-lug type): Magnets lose strength over 2-3 years. If the brush falls off during operation, replace the plate.",
+        ],
+      },
+      {
+        heading: "Factory-Direct Clutch Plates: Save 30-50% vs Dealer Pricing",
+        content: "As a manufacturer of replacement parts for 40+ scrubber brands, we produce NP-9200, 3-lug, and 4-lug clutch plates in our ISO 9001 certified factory. Factory-direct pricing: NP-9200 universal clutch plates typically cost 30-50% less than dealer prices for equivalent quality. All plates are cast from hardened steel, precision-machined to OEM tolerances, and tested before shipment.",
+      },
+      {
+        heading: "See the Different Types in Action",
+        content: "Watch our short video showing the different clutch plate and pad driver types side by side — NP-9200, 3-lug center lock, and 4-lug European style — so you can identify yours at a glance.",
+      },
+    ],
+    relatedProducts: ["K500BT", "K660"],
+  },
 ];
