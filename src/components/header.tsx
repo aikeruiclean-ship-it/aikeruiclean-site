@@ -5,13 +5,13 @@ import Image from "next/image";
 import { useState } from "react";
 import { Menu, X, Phone, Mail, ChevronDown, ShoppingCart } from "@/lib/icons";
 import { useCart } from "@/lib/cart-context";
-import { categories, getCategoryCounts, getPartSubcategories } from "@/lib/products";
+import { categories, categoryCounts } from "@/lib/header-data";
 import { cn } from "@/lib/utils";
 import { SearchBar } from "@/components/search-bar";
 
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const counts = getCategoryCounts();
+  const counts = categoryCounts;
 
   const navLinks = [
     { href: "/", label: "Home" },

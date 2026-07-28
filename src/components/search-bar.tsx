@@ -3,7 +3,6 @@
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { Search, X } from "@/lib/icons";
-import { getProducts } from "@/lib/products";
 import type { Product } from "@/lib/products";
 
 export function SearchBar() {
@@ -16,20 +15,23 @@ export function SearchBar() {
   useEffect(() => {
     if (query.trim().length < 2) {
       setResults([]);
+      setOpen(false);
       return;
     }
     const q = query.toLowerCase();
-    const matches = getProducts()
-      .filter(
-        (p) =>
-          p.name.toLowerCase().includes(q) ||
-          p.sku.toLowerCase().includes(q) ||
-          p.category.toLowerCase().includes(q) ||
-          p.tags.some((t) => t.toLowerCase().includes(q))
-      )
-      .slice(0, 6);
-    setResults(matches);
-    setOpen(matches.length > 0);
+    import("@/lib/products").then(({ getProducts }) => {
+      const matches = getProducts()
+        .filter(
+          (p) =>
+            p.name.toLowerCase().includes(q) ||
+            p.sku.toLowerCase().includes(q) ||
+            p.category.toLowerCase().includes(q) ||
+            p.tags.some((t) => t.toLowerCase().includes(q))
+        )
+        .slice(0, 6);
+      setResults(matches);
+      setOpen(matches.length > 0);
+    });
   }, [query]);
 
   useEffect(() => {

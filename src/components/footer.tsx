@@ -6,7 +6,7 @@ export function Footer() {
   const counts = getCategoryCounts();
 
   return (
-    <footer className="bg-primary text-white min-h-[26rem] overflow-hidden">
+    <footer className="bg-primary text-white font-['system-ui,-apple-system,sans-serif']">
       {/* Main footer */}
       <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* Company info */}
