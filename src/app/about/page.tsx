@@ -1,8 +1,15 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import Image from "next/image";
 import { Shield, Award, Globe, CheckCircle, Factory, ArrowRight, Search, Phone, Video, Camera, Building2, Users, Truck } from "@/lib/icons";
 import { JsonLd } from "@/components/json-ld";
 import { breadcrumbJsonLd, ABOUT_BREADCRUMB } from "@/lib/breadcrumb";
+
+export const metadata: Metadata = {
+  title: "About Aikerui — Real Factory, Real Manufacturing | Hefei, China",
+  description:
+    "Visit Aikerui's 10,000+㎡ factory in Hefei, China. ISO 9001 & CE certified floor scrubber manufacturer. Live video tours, third-party inspections welcome. 50+ countries served since 2008.",
+};
 
 const factoryImages = [
   { src: "/images/factory/1.webp", alt: "Aikerui factory entrance - real manufacturer", label: "Factory Entrance" },
