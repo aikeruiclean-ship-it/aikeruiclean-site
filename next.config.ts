@@ -348,6 +348,7 @@ async redirects() {
     { source: "/:id([0-9]+)", destination: "/products", permanent: true },
     { source: "/squeegee-assembly", destination: "/floor-scrubber-parts-quote", permanent: true },
     { source: "/technical-support", destination: "/contact", permanent: true },
+    { source: "/cart", destination: "/floor-scrubber-parts-quote", permanent: true },
     { source: "/aikerui-a500-floor-scrubber-dryer", destination: "/products", permanent: true },
     { source: "/home-3", destination: "/", permanent: true },
     { source: "/help-center", destination: "/faq", permanent: true },
