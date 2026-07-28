@@ -31,9 +31,6 @@ export const metadata: Metadata = {
     "cleaning equipment manufacturer",
   ],
   metadataBase: new URL("https://aikeruiclean.com"),
-  alternates: {
-    canonical: "/",
-  },
   openGraph: {
     title: "Aikerui Floor Cleaning Machines",
     description: "Professional industrial floor scrubbers, sweepers, and cleaning solutions manufacturer.",
