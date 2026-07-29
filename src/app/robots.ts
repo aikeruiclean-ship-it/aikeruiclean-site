@@ -33,8 +33,7 @@ export default function robots(): MetadataRoute.Robots {
       },
       {
         userAgent: "Googlebot-Image",
-        allow: "/images/",
-        allow: "/_next/image",
+        allow: ["/images/", "/_next/image"],
       },
     ],
     sitemap: "https://aikeruiclean.com/sitemap.xml",
