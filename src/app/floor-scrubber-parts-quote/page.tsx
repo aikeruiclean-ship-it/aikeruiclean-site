@@ -97,6 +97,11 @@ export default function PartsQuotePage() {
               </div>
             ))}
           </div>
+          <div className="text-center mt-8">
+            <a href="/parts" className="inline-flex items-center gap-2 px-6 py-3 bg-primary hover:bg-primary-light text-white font-semibold rounded-lg transition-colors text-sm">
+              Browse All 360+ Parts →
+            </a>
+          </div>
         </div>
       </section>
 
@@ -113,8 +118,8 @@ export default function PartsQuotePage() {
       {/* Video */}
       <section className="py-8 bg-white">
         <div className="max-w-2xl mx-auto px-4">
-          <h2 className="text-xl font-bold text-gray-900 text-center mb-4">See Our Parts in Action</h2>
-          <YouTubeLink videoId="uboqkY17M48" title="Floor Scrubber Charger — Compatible Replacement" />
+          <h2 className="text-xl font-bold text-gray-900 text-center mb-4">See Our Clutch Plates & Pad Drivers in Action</h2>
+          <YouTubeLink videoId="BZCQnHQD5tI" title="Floor Scrubber Clutch Plate & Pad Driver Types — NP-9200, 3-Lug, 4-Lug" />
         </div>
       </section>
 
@@ -125,6 +130,7 @@ export default function PartsQuotePage() {
           <div className="flex flex-wrap justify-center gap-3">
             <a href="/guides/floor-scrubber-parts-guide-types-lifespan-cost" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Parts Guide: Types &amp; Cost</a>
             <a href="/guides/oem-vs-aftermarket-floor-scrubber-parts" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">OEM vs Aftermarket</a>
+            <a href="/guides/floor-scrubber-clutch-plate-pad-driver-guide" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Clutch Plate Guide</a>
             <a href="/guides/squeegee-not-picking-up-water" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Squeegee Fix Guide</a>
             <a href="/guides/disc-brush-vs-roller-brush-scrubber" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Disc vs Roller Brush</a>
             <a href="/guides/how-much-does-floor-scrubber-cost" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Cost Guide 2026</a>
