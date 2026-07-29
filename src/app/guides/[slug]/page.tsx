@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!guide) return { title: "Guide Not Found" };
 
   return {
-    title: `${guide.title} | Aikerui Guides`,
+    title: `${guide.title.length > 50 ? guide.title.slice(0, 47).trim().replace(/[,:;/-]+$/, "") + "..." : guide.title} | Aikerui Guides`,
     description: guide.description,
   };
 }
