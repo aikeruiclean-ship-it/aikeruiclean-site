@@ -24,7 +24,7 @@ function PartsLoading() {
     <div>
       <div className="bg-gradient-to-r from-primary to-primary-light text-white">
         <div className="max-w-7xl mx-auto px-4 py-12">
-          <div className="h-9 w-48 bg-white/20 rounded-lg animate-pulse mb-2" />
+          <h1 className="text-3xl md:text-4xl font-bold mb-4 text-white/70">Floor Scrubber Parts — Factory Direct Pricing</h1>
           <div className="h-6 w-72 bg-white/20 rounded-lg animate-pulse" />
         </div>
       </div>
