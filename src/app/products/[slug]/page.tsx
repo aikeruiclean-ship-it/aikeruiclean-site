@@ -163,17 +163,15 @@ export default async function ProductDetailPage({ params }: Props) {
           ...(isMachine && { countryOfOrigin: "CN" }),
           ...(weight && { weight }),
           ...(dims && { ...dims }),
-          ...(product.price != null && {
-            offers: {
-              "@type": "Offer",
-              url: productUrl,
-              availability: product.inStock
-                ? "https://schema.org/InStock"
-                : "https://schema.org/OutOfStock",
-              priceCurrency: "USD",
-              price: product.price,
-            },
-          }),
+          offers: {
+            "@type": "Offer",
+            url: product.price != null ? productUrl : "https://aikeruiclean.com/floor-scrubber-parts-quote",
+            availability: product.inStock
+              ? "https://schema.org/InStock"
+              : "https://schema.org/OutOfStock",
+            priceCurrency: "USD",
+            price: product.price ?? 0,
+          },
         };
       })()} />
       <JsonLd data={{
