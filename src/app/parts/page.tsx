@@ -8,10 +8,43 @@ export const metadata = {
   description: "Factory-direct floor scrubber parts — disc brushes, squeegee blades, pad holders, roller brushes, clutch plates & more. Compatible with Tennant, Nilfisk, Karcher, Dulevo, Gaomei. Same OEM quality at 30-50% less. 360+ parts in stock.",
 };
 
+const partsFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What floor scrubber parts do you manufacture?",
+      acceptedAnswer: { "@type": "Answer", text: "We manufacture 360+ replacement floor scrubber parts including disc brushes, squeegee blades, pad holders, roller brushes, clutch plates, side brushes, batteries, and chargers. All parts are produced in our ISO 9001 certified factory." }
+    },
+    {
+      "@type": "Question",
+      name: "Are your parts compatible with Tennant, Nilfisk, and other brands?",
+      acceptedAnswer: { "@type": "Answer", text: "Yes. Our replacement floor scrubber parts are compatible with Tennant, Nilfisk, Viper, Kärcher, Hako, Dulevo, Gaomei, Comac, and 15+ other major brands. Check your machine model for specific compatibility." }
+    },
+    {
+      "@type": "Question",
+      name: "How do your prices compare to dealer pricing?",
+      acceptedAnswer: { "@type": "Answer", text: "Our factory-direct pricing is typically 30-50% less than dealer prices for equivalent OEM quality parts. A disc brush that costs $150 at a dealer is $45-75 from our factory." }
+    },
+    {
+      "@type": "Question",
+      name: "What is the minimum order quantity for parts?",
+      acceptedAnswer: { "@type": "Answer", text: "We accept orders of all sizes — from single replacement brushes to bulk OEM orders. No minimum order quantity for stocked items." }
+    },
+    {
+      "@type": "Question",
+      name: "How quickly do you ship floor scrubber parts?",
+      acceptedAnswer: { "@type": "Answer", text: "In-stock parts ship within 24 hours via express courier. Global shipping to 50+ countries. Sea freight available for bulk orders." }
+    },
+  ],
+};
+
 export default function PartsPage() {
   return (
     <>
       <JsonLd data={breadcrumbJsonLd(PARTS_BREADCRUMB)} />
+      <JsonLd data={partsFaqSchema} />
       <Suspense fallback={<PartsLoading />}>
         <PartPageContent />
       </Suspense>

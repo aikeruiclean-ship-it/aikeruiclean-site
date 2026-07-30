@@ -136,6 +136,11 @@ export function PartPageContent() {
               We manufacture 360+ replacement parts — disc brushes, squeegee blades, pad holders, roller brushes, clutch plates, 
               side brushes, batteries, and chargers — in our ISO 9001 certified factory. <strong>Same OEM quality at 30-50% less.</strong> In stock and ready to ship.
             </p>
+            <p className="text-gray-300 text-base mt-4">
+              Whether you need <strong>OEM replacement floor scrubber parts</strong> for a Tennant T7, Viper AS510B, Nilfisk SC500, 
+              Kärcher BD50, or any other major brand, we stock the <strong>disc brushes, squeegee rubber, pad drivers, and clutch plates</strong> 
+              you need to keep your machine running. Factory-direct — no dealer markup.
+            </p>
           </div>
         </div>
       </section>
