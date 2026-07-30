@@ -37,7 +37,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   // ── Build a rich, product-specific description ──
   let description = product.shortDescription || "";
-  if (!description) {
+  // If shortDescription is just the product name repeated, regenerate from specs
+  if (!description || description.startsWith(product.name)) {
     const parts: string[] = [];
     if (product.category) parts.push(product.category);
     if (product.specs?.["Working width"])
@@ -50,6 +51,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       parts.push(`Capacity: ${product.specs["Productivity"]}`);
     description = parts.join(". ") + ".";
   }
+  // ── Append SKU for uniqueness when description is generic ──
+  if (description.length < 60 && product.sku) description += ` — SKU: ${product.sku}`;
   if (description.length > 160) description = description.slice(0, 157) + "...";
 
   // ── Build a keyword-rich title ──
