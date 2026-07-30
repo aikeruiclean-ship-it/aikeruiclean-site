@@ -21,6 +21,85 @@ interface GuideSection {
 
 const guides: Guide[] = [
   {
+    slug: "floor-scrubber-brush-complete-guide",
+    title: "Floor Scrubber Brush: Types, Materials & How to Choose the Right One",
+    description: "Complete guide to floor scrubber brushes — disc brush vs roller brush, nylon vs PPL vs abrasive materials, compatibility with Tennant/Nilfisk/Karcher, and when to replace. Factory-direct pricing on 100+ brush models.",
+    category: "buying-guide",
+    readTime: "7 min",
+    difficulty: "beginner",
+    published: "2026-07-30",
+    videoId: "fdISROzR0fQ",
+    sections: [
+      {
+        heading: "Why the Right Brush Matters",
+        content: "The brush is the part of your floor scrubber that actually does the cleaning. Choose the wrong type and you'll either damage your floor, leave dirt behind, or wear out the brush in weeks instead of months. A well-chosen brush can extend the life of both your floor and your machine.",
+      },
+      {
+        heading: "The 3 Main Types of Floor Scrubber Brushes",
+        content: "Floor scrubber brushes fall into three categories based on their shape and motion pattern. Each type is designed for specific floor conditions.",
+        items: [
+          "Disc Brushes (Rotary): The most common type. A circular brush spins in one direction to scrub the floor. Best for smooth, flat surfaces like concrete, tile, and epoxy. Available in 13–50 inch diameters. Disc brushes are the most affordable and widely available — we stock 60+ disc brush models compatible with Tennant, Nilfisk, Karcher, Viper, and more.",
+          "Cylindrical Brushes (Roller): Two counter-rotating tube-shaped brushes that lift debris as they scrub. Better for uneven or textured floors. Common on sweeper-scrubber combo machines. Cylindrical brushes can pick up larger debris, reducing the need to sweep before scrubbing.",
+          "Square Oscillating Pads: A flat pad vibrates at high speed instead of spinning. Best for cleaning tight against walls and corners. Less common but growing in popularity for smaller facilities.",
+        ],
+      },
+      {
+        heading: "Brush Material Guide — Which One Do You Need?",
+        content: "The bristle material determines how aggressive the brush is on your floor. Using the wrong material can damage your floor surface.",
+        items: [
+          "Nylon: The most common material. Flexible, durable, and safe for most floor types including tile, concrete, and epoxy. Nylon brushes provide a good balance of cleaning power and floor protection. Best for daily general cleaning.",
+          "Polypropylene (PPL): Stiffer than nylon. Provides more scrubbing power for removing stubborn dirt, grease, and grime. Best for industrial floors with heavy soil buildup. Can scratch softer floors.",
+          "Abrasive (Silicon Carbide / Tynex): Extremely aggressive. Used for stripping old floor finish, deep cleaning heavily soiled concrete, and preparing floors for recoating. Not for daily use.",
+          "Steel Wire: Stainless steel or carbon steel wire bristles. Used on sweeper-scrubber combos for heavy debris. Steel wire brushes can damage most floor surfaces — only use on industrial concrete.",
+          "Natural Fiber (Tampico, Horsehair): Softest option. Used for polishing and light cleaning on sensitive floors like wood, marble, and linoleum.",
+        ],
+      },
+      {
+        heading: "How to Choose the Right Brush for Your Floor",
+        content: "Match the brush type and material to your floor surface with this quick reference table:",
+        items: [
+          "Smooth Concrete: Nylon disc brush (medium stiffness). For heavy grease, switch to PPL or abrasive.",
+          "Epoxy / Sealed Concrete: Nylon disc brush (soft to medium). Never use abrasive on epoxy.",
+          "Tile / Ceramic: Nylon disc brush (soft). Avoid PPL and abrasive which can scratch grout.",
+          "Wood / Marble: Natural fiber brush or soft nylon pad. Never use abrasive or steel wire.",
+          "Textured / Rough Concrete: Cylindrical nylon or PPL brush. Disc brushes skip over textured surfaces.",
+          "Rubber / Sport Floors: Soft nylon disc brush. Use gentle down pressure.",
+        ],
+      },
+      {
+        heading: "Compatibility: Which Brands Fit Which Brushes",
+        content: "The key to compatibility is the clutch plate or pad driver connection. Different brands use different lug patterns:",
+        items: [
+          "NP-9200 (2-Lug Universal): Fits Tennant (T5, T7, T300, T500), Viper (AS510B, AS5160, LS160), Nilfisk (SC500, SC600), Comac, IPC, and most Chinese OEM machines.",
+          "3-Lug Center Lock: Fits Advance, older Nilfisk models, older Viper models.",
+          "4-Lug / Magnetic: Fits Karcher (BD50, BD53, B90), Hako (B45, B70, B75R), some Gaomei models.",
+          "If you are unsure, count the lugs on your current brush holder and measure the center hole diameter. A photo of your current brush sent to our sales team gets a compatibility answer within 24 hours.",
+        ],
+      },
+      {
+        heading: "When Should You Replace Your Scrubber Brush?",
+        content: "A worn brush doesn't clean well and can damage your floor. Replace your brush when:",
+        items: [
+          "Bristles are worn to 50% of original length — cleaning effectiveness drops significantly past this point.",
+          "Bristles are bent or frayed unevenly — indicates a pressure or alignment issue.",
+          "The brush leaves streaks or misses spots — the bristles can no longer make proper contact.",
+          "Disc brush bristles are less than 1/2 inch long — replace immediately.",
+          "Cylindrical brush bristles are less than 1/4 inch long — replace immediately.",
+          "General rule: Disc brushes last 6–12 months with daily use. Cylindrical brushes last 8–14 months. Heavier use = shorter life.",
+        ],
+      },
+      {
+        heading: "Factory-Direct Floor Scrubber Brushes",
+        content: "We manufacture 100+ disc brush, cylindrical brush, and pad driver models in our ISO 9001 certified factory in Hefei, China. All brushes are made from virgin nylon, PPL, or abrasive materials — no recycled fillers. Factory-direct pricing means 30–50% less than dealer prices for equivalent OEM quality. Custom sizes and materials available for OEM/ODM orders.",
+      },
+      {
+        heading: "See Our Brushes in Action",
+        content: "Watch our factory demonstration video showing disc brush manufacturing, quality control testing, and compatibility with major floor scrubber brands.",
+      },
+    ],
+    relatedProducts: ["K500BT", "K660"],
+  },
+  {
     slug: "how-to-choose-a-floor-scrubber",
     title: "How to Choose a Floor Scrubber: Complete Buying Guide",
     description:
@@ -3344,83 +3423,5 @@ const extraGuides: Guide[] = [
     ],
     relatedProducts: ["K500BT", "K660"],
   },
-  {
-    slug: "floor-scrubber-brush-complete-guide",
-    title: "Floor Scrubber Brush: Types, Materials & How to Choose the Right One",
-    description: "Complete guide to floor scrubber brushes — disc brush vs roller brush, nylon vs PPL vs abrasive materials, compatibility with Tennant/Nilfisk/Karcher, and when to replace. Factory-direct pricing on 100+ brush models.",
-    category: "buying-guide",
-    readTime: "7 min",
-    difficulty: "beginner",
-    published: "2026-07-30",
-    videoId: "fdISROzR0fQ",
-    sections: [
-      {
-        heading: "Why the Right Brush Matters",
-        content: "The brush is the part of your floor scrubber that actually does the cleaning. Choose the wrong type and you'll either damage your floor, leave dirt behind, or wear out the brush in weeks instead of months. A well-chosen brush can extend the life of both your floor and your machine.",
-      },
-      {
-        heading: "The 3 Main Types of Floor Scrubber Brushes",
-        content: "Floor scrubber brushes fall into three categories based on their shape and motion pattern. Each type is designed for specific floor conditions.",
-        items: [
-          "Disc Brushes (Rotary): The most common type. A circular brush spins in one direction to scrub the floor. Best for smooth, flat surfaces like concrete, tile, and epoxy. Available in 13–50 inch diameters. Disc brushes are the most affordable and widely available — we stock 60+ disc brush models compatible with Tennant, Nilfisk, Karcher, Viper, and more.",
-          "Cylindrical Brushes (Roller): Two counter-rotating tube-shaped brushes that lift debris as they scrub. Better for uneven or textured floors. Common on sweeper-scrubber combo machines. Cylindrical brushes can pick up larger debris, reducing the need to sweep before scrubbing.",
-          "Square Oscillating Pads: A flat pad vibrates at high speed instead of spinning. Best for cleaning tight against walls and corners. Less common but growing in popularity for smaller facilities.",
-        ],
-      },
-      {
-        heading: "Brush Material Guide — Which One Do You Need?",
-        content: "The bristle material determines how aggressive the brush is on your floor. Using the wrong material can damage your floor surface.",
-        items: [
-          "Nylon: The most common material. Flexible, durable, and safe for most floor types including tile, concrete, and epoxy. Nylon brushes provide a good balance of cleaning power and floor protection. Best for daily general cleaning.",
-          "Polypropylene (PPL): Stiffer than nylon. Provides more scrubbing power for removing stubborn dirt, grease, and grime. Best for industrial floors with heavy soil buildup. Can scratch softer floors.",
-          "Abrasive (Silicon Carbide / Tynex): Extremely aggressive. Used for stripping old floor finish, deep cleaning heavily soiled concrete, and preparing floors for recoating. Not for daily use.",
-          "Steel Wire: Stainless steel or carbon steel wire bristles. Used on sweeper-scrubber combos for heavy debris. Steel wire brushes can damage most floor surfaces — only use on industrial concrete.",
-          "Natural Fiber (Tampico, Horsehair): Softest option. Used for polishing and light cleaning on sensitive floors like wood, marble, and linoleum.",
-        ],
-      },
-      {
-        heading: "How to Choose the Right Brush for Your Floor",
-        content: "Match the brush type and material to your floor surface with this quick reference table:",
-        items: [
-          "Smooth Concrete: Nylon disc brush (medium stiffness). For heavy grease, switch to PPL or abrasive.",
-          "Epoxy / Sealed Concrete: Nylon disc brush (soft to medium). Never use abrasive on epoxy.",
-          "Tile / Ceramic: Nylon disc brush (soft). Avoid PPL and abrasive which can scratch grout.",
-          "Wood / Marble: Natural fiber brush or soft nylon pad. Never use abrasive or steel wire.",
-          "Textured / Rough Concrete: Cylindrical nylon or PPL brush. Disc brushes skip over textured surfaces.",
-          "Rubber / Sport Floors: Soft nylon disc brush. Use gentle down pressure.",
-        ],
-      },
-      {
-        heading: "Compatibility: Which Brands Fit Which Brushes",
-        content: "The key to compatibility is the clutch plate or pad driver connection. Different brands use different lug patterns:",
-        items: [
-          "NP-9200 (2-Lug Universal): Fits Tennant (T5, T7, T300, T500), Viper (AS510B, AS5160, LS160), Nilfisk (SC500, SC600), Comac, IPC, and most Chinese OEM machines.",
-          "3-Lug Center Lock: Fits Advance, older Nilfisk models, older Viper models.",
-          "4-Lug / Magnetic: Fits Karcher (BD50, BD53, B90), Hako (B45, B70, B75R), some Gaomei models.",
-          "If you are unsure, count the lugs on your current brush holder and measure the center hole diameter. A photo of your current brush sent to our sales team gets a compatibility answer within 24 hours.",
-        ],
-      },
-      {
-        heading: "When Should You Replace Your Scrubber Brush?",
-        content: "A worn brush doesn't clean well and can damage your floor. Replace your brush when:",
-        items: [
-          "Bristles are worn to 50% of original length — cleaning effectiveness drops significantly past this point.",
-          "Bristles are bent or frayed unevenly — indicates a pressure or alignment issue.",
-          "The brush leaves streaks or misses spots — the bristles can no longer make proper contact.",
-          "Disc brush bristles are less than 1/2 inch long — replace immediately.",
-          "Cylindrical brush bristles are less than 1/4 inch long — replace immediately.",
-          "General rule: Disc brushes last 6–12 months with daily use. Cylindrical brushes last 8–14 months. Heavier use = shorter life.",
-        ],
-      },
-      {
-        heading: "Factory-Direct Floor Scrubber Brushes",
-        content: "We manufacture 100+ disc brush, cylindrical brush, and pad driver models in our ISO 9001 certified factory in Hefei, China. All brushes are made from virgin nylon, PPL, or abrasive materials — no recycled fillers. Factory-direct pricing means 30–50% less than dealer prices for equivalent OEM quality. Custom sizes and materials available for OEM/ODM orders.",
-      },
-      {
-        heading: "See Our Brushes in Action",
-        content: "Watch our factory demonstration video showing disc brush manufacturing, quality control testing, and compatibility with major floor scrubber brands.",
-      },
-    ],
-    relatedProducts: ["K500BT", "K660"],
-  },
+
 ];
