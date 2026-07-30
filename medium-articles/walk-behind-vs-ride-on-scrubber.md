@@ -36,6 +36,8 @@ The biggest difference between walk-behind and ride-on scrubbers is **cleaning s
 
 **Real-world example:** A 50,000 sq ft warehouse cleaned daily with a ride-on scrubber saves approximately **$18,000–$24,000 per year** in labor compared to a walk-behind, and **$40,000+** compared to mopping.
 
+https://youtube.com/shorts/aUVk1TcVSwQ
+
 ---
 
 ## Cost Comparison
