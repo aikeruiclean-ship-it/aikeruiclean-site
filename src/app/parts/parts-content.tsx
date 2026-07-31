@@ -177,6 +177,30 @@ export function PartPageContent() {
           </div>
         </div>
 
+        {/* Brush category description — SEO focused */}
+        {activeSub && ["Disc Brush","Brush","Roller Brush","Side Brush","Carbon Brush"].some(b => activeSub.includes(b)) && (
+          <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 mb-6">
+            <h2 className="text-lg font-bold text-gray-900 mb-2">
+              {activeSub.includes("Disc") ? "Floor Scrubber Disc Brushes" :
+               activeSub.includes("Roller") ? "Floor Scrubber Roller Brushes" :
+               activeSub.includes("Side") ? "Floor Scrubber Side Brushes" :
+               "Floor Scrubber Brushes"} — Factory Direct
+            </h2>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              High-quality {activeSub.toLowerCase().includes("disc") ? "disc brushes (rotary brushes)" :
+                activeSub.toLowerCase().includes("roller") ? "roller brushes (cylindrical brushes)" :
+                activeSub.toLowerCase().includes("side") ? "side brushes (gutter brooms)" :
+                "replacement scrubber brushes"} for floor scrubbers.
+              Compatible with Tennant, Nilfisk, Karcher, Viper, Hako, Dulevo, Gaomei, and more.
+              Manufactured in nylon, PPL, abrasive, and steel wire materials.
+              Factory-direct pricing — 30-50% less than dealer prices. {" "}
+              <Link href="/guides/floor-scrubber-brush-complete-guide" className="text-primary hover:underline font-medium">
+                Full Brush Guide →
+              </Link>
+            </p>
+          </div>
+        )}
+
         {/* Results count */}
         <p className="text-sm text-gray-500 mb-6">
           Showing {pageProducts.length} product{pageProducts.length !== 1 ? "s" : ""}
