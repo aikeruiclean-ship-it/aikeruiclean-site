@@ -28,7 +28,7 @@ const guides: Guide[] = [
     readTime: "7 min",
     difficulty: "beginner",
     published: "2026-07-30",
-    videoId: "fdISROzR0fQ",
+    videoId: "YH1V0guDSTw",
     sections: [
       {
         heading: "Why the Right Brush Matters",
