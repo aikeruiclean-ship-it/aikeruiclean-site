@@ -28,7 +28,7 @@ const guides: Guide[] = [
     readTime: "7 min",
     difficulty: "beginner",
     published: "2026-07-30",
-    videoId: "YH1V0guDSTw",
+    videoId: "fdISROzR0fQ",
     sections: [
       {
         heading: "Why the Right Brush Matters",
@@ -272,6 +272,80 @@ const guides: Guide[] = [
       },
     ],
     relatedProducts: ["K500BT", "K300BT", "AK-560B", "AK-700LPG"],
+  },
+  {
+    slug: "floor-scrubber-disc-brush-buying-guide",
+    title: "Floor Scrubber Disc Brush: Complete Buying Guide — Nylon, PPL & Abrasive",
+    description: "How to choose the right floor scrubber disc brush. Nylon vs PPL vs abrasive materials, disc brush sizes, compatibility with Tennant/Nilfisk/Karcher, and factory-direct pricing.",
+    category: "buying-guide",
+    readTime: "6 min",
+    difficulty: "beginner",
+    published: "2026-07-31",
+    videoId: "YH1V0guDSTw",
+    sections: [
+      {
+        heading: "What Is a Floor Scrubber Disc Brush?",
+        content: "A floor scrubber disc brush (also called a rotary brush) is the round brush that spins on your scrubber's brush deck to agitate dirt and cleaning solution against the floor. It is the most common brush type, used on walk-behind and ride-on scrubbers across all major brands.",
+        items: [
+          "Sizes: 13–50 inch diameters to match your machine's brush deck",
+          "Connection: Mounts to the clutch plate / pad driver (NP-9200, 3-lug, or 4-lug)",
+          "Materials: Nylon, polypropylene (PPL), abrasive, and steel wire",
+          "Best for: Smooth floors — concrete, tile, epoxy, sealed surfaces",
+        ],
+      },
+      {
+        heading: "Disc Brush Materials — Which One Do You Need?",
+        content: "The bristle material determines how aggressively the brush cleans and how safe it is for your floor.",
+        items: [
+          "Nylon: The standard choice. Flexible and durable. Safe for tile, concrete, and epoxy. Good for daily general cleaning. Best value for most facilities.",
+          "Polypropylene (PPL): Stiffer than nylon. More scrubbing power for heavy grease, oil, and industrial grime. Can scratch softer floors — use on concrete only.",
+          "Abrasive (Silicon Carbide / Tynex): Most aggressive. Used for stripping old floor finish, deep cleaning heavily soiled concrete, and preparing floors for recoating. Not for daily use.",
+          "Steel Wire: For heavy debris on industrial concrete. Will damage most finished floors.",
+          "Natural Fiber: Softest. For polishing sensitive floors like wood, marble, linoleum.",
+        ],
+      },
+      {
+        heading: "How to Choose the Right Disc Brush Size",
+        content: "The brush diameter must match your scrubber's brush deck size. Common sizes:",
+        items: [
+          "13–15 inch: Small walk-behind scrubbers, single-disc machines",
+          "16–20 inch: Standard walk-behind scrubbers (most common)",
+          "21–28 inch: Mid-size walk-behind and small ride-on scrubbers",
+          "30–36 inch: Ride-on scrubbers",
+          "40–50 inch: Large industrial ride-on scrubbers",
+          "Check your machine's manual or measure the brush deck opening to confirm the diameter.",
+        ],
+      },
+      {
+        heading: "Compatibility: Which Brands Use Which Disc Brushes",
+        content: "Disc brushes connect to the machine via a clutch plate or pad driver. Different brands use different lug patterns:",
+        items: [
+          "NP-9200 (2-Lug): Tennant T5/T7/T300/T500, Viper AS510B/AS5160/LS160, Nilfisk SC500/SC600, Comac, IPC, most Chinese OEM machines.",
+          "3-Lug Center Lock: Advance, older Nilfisk, older Viper models.",
+          "4-Lug / Magnetic: Karcher BD50/BD53/B90, Hako B45/B70/B75R, some Gaomei models.",
+          "Not sure? Count the lugs and measure the center hole — or send us a photo, we'll confirm within 24 hours.",
+        ],
+      },
+      {
+        heading: "When to Replace Your Disc Brush",
+        content: "A worn disc brush loses cleaning power and can damage your floor. Replace when:",
+        items: [
+          "Bristles worn to less than 1/2 inch (12mm) — cleaning effectiveness drops sharply",
+          "Bristles bent, frayed, or uneven — indicates pressure or alignment issues",
+          "The machine leaves streaks or misses spots despite normal operation",
+          "Typical lifespan: 6–12 months with daily use, longer with lighter use",
+        ],
+      },
+      {
+        heading: "Factory-Direct Disc Brushes — Save 30-50%",
+        content: "We manufacture 98 disc brush models in our ISO 9001 certified factory in Hefei, China. All brushes use virgin nylon, PPL, or abrasive materials — no recycled fillers. Factory-direct pricing: 5–5 per brush vs 00–50 at dealers. Custom diameters and materials available for OEM/ODM orders.",
+      },
+      {
+        heading: "See Our Disc Brushes in Action",
+        content: "Watch our disc brush video showing the manufacturing process, quality testing, and compatibility with major floor scrubber brands.",
+      },
+    ],
+    relatedProducts: ["K500BT", "K660"],
   },
 ];
 
