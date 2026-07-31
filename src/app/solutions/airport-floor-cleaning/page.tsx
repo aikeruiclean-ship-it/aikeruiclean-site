@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function AirportSolutionPage() {
   return (
     <div>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Airport Floor Cleaning Solutions","description":"High-productivity industrial floor cleaning machines for airports and terminals.","author":{"@type":"Organization","name":"Aikerui Cleaning Technology Co., Ltd."}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Airport Floor Cleaning Solutions","description":"High-productivity industrial floor cleaning machines for airports and terminals.","author":{"@type":"Organization","name":"Anhui Aikerui Environmental Protection Technology CO.,LTD"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
         {"@type":"Question","name":"What type of floor scrubber is best for airports?","acceptedAnswer":{"@type":"Answer","text":"Full-size ride-on scrubbers (42-50 inch) with lithium batteries for continuous operation. Airports need maximum productivity — 80,000+ sq ft/hr cleaning rates."}},
         {"@type":"Question","name":"Can floor scrubbers clean airport terminal floors during passenger hours?","acceptedAnswer":{"@type":"Answer","text":"Yes. Modern ride-on scrubbers with ultra-quiet operation (<65dB) can clean during low-traffic hours. Lithium batteries enable opportunity charging during breaks."}},

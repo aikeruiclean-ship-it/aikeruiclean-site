@@ -26,7 +26,7 @@ export default function SupplierPage() {
         data={{
           "@context": "https://schema.org",
           "@type": "Organization",
-          name: "Aikerui Cleaning Technology Co., Ltd.",
+          name: "Anhui Aikerui Environmental Protection Technology CO.,LTD",
           description:
             "Professional floor scrubber manufacturer and supplier. 10,000+㎡ factory, CE & ISO certified, OEM/ODM available.",
           url: "https://aikeruiclean.com",

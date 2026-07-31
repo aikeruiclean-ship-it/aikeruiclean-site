@@ -100,7 +100,7 @@ export default function RootLayout({
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            name: "Aikerui Cleaning Technology Co., Ltd.",
+            name: "Anhui Aikerui Environmental Protection Technology CO.,LTD",
             image: "https://aikeruiclean.com/opengraph-image",
             telephone: "+86-199-6523-6428",
             email: "info@aikeruiclean.com",

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function ColdStorageSolutionPage() {
   return (
     <div>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Cold Storage Floor Cleaning Solutions","description":"Specialized floor scrubbers for cold storage, freezer warehouses, and refrigerated facilities.","author":{"@type":"Organization","name":"Aikerui Cleaning Technology Co., Ltd."}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Cold Storage Floor Cleaning Solutions","description":"Specialized floor scrubbers for cold storage, freezer warehouses, and refrigerated facilities.","author":{"@type":"Organization","name":"Anhui Aikerui Environmental Protection Technology CO.,LTD"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
         {"@type":"Question","name":"Can regular floor scrubbers work in cold storage?","acceptedAnswer":{"@type":"Answer","text":"No. Standard lead-acid batteries fail below 5°C. Standard rubber squeegees harden and crack. Electronics develop condensation. You need a cold-storage-specific machine with lithium batteries, specialized rubber, and sealed electronics."}},
         {"@type":"Question","name":"What temperature range can cold storage scrubbers handle?","acceptedAnswer":{"@type":"Answer","text":"Cold-storage-rated scrubbers operate from -25°C to +5°C. Lithium batteries maintain performance down to -20°C. Below -25°C, additional heating elements may be required for critical components."}},

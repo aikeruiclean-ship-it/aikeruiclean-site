@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function MallSolutionPage() {
   return (
     <div>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Shopping Mall Floor Cleaning Solutions","description":"Floor scrubbers and cleaning solutions for shopping malls and retail centers.","author":{"@type":"Organization","name":"Aikerui Cleaning Technology Co., Ltd."}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Shopping Mall Floor Cleaning Solutions","description":"Floor scrubbers and cleaning solutions for shopping malls and retail centers.","author":{"@type":"Organization","name":"Anhui Aikerui Environmental Protection Technology CO.,LTD"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
         {"@type":"Question","name":"What floor scrubber works best for shopping malls?","acceptedAnswer":{"@type":"Answer","text":"A mid-size ride-on scrubber (28-34 inch) for main concourses plus compact walk-behind units for food courts and restrooms. Multi-machine fleet approach covers all zones efficiently."}},
         {"@type":"Question","name":"Can floor scrubbers clean polished marble and tile mall floors?","acceptedAnswer":{"@type":"Answer","text":"Yes. Use soft nylon brushes or white polishing pads designed for polished stone. Adjustable brush pressure prevents etching or scratching delicate surfaces."}},

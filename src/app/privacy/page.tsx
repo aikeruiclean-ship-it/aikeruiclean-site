@@ -8,7 +8,7 @@ const PRIVACY_BREADCRUMB = [
 ];
 
 export const metadata = {
-  title: "Privacy Policy | Aikerui Cleaning Technology Co., Ltd.",
+  title: "Privacy Policy | Anhui Aikerui Environmental Protection Technology CO.,LTD",
   description: "Aikerui Privacy Policy. Learn how we collect, store, and protect your personal information when you contact us or use our website.",
 };
 
@@ -21,7 +21,7 @@ export default function PrivacyPage() {
       <p className="text-sm text-gray-500 mb-8">Last updated: June 17, 2026</p>
 
       <div className="prose prose-gray max-w-none space-y-6">
-        <p>Aikerui Cleaning Technology Co., Ltd. ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your personal information when you visit our website or contact us.</p>
+        <p>Anhui Aikerui Environmental Protection Technology CO.,LTD ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your personal information when you visit our website or contact us.</p>
 
         <h2 className="text-xl font-bold text-gray-900 mt-8">1. Information We Collect</h2>
         <p>When you submit an inquiry via our contact form, we collect:</p>
@@ -79,7 +79,7 @@ export default function PrivacyPage() {
         <p>
           Email: <a href="mailto:info@aikeruiclean.com" className="text-primary hover:underline">info@aikeruiclean.com</a><br />
           Phone: <span className="text-gray-900">+86 199 6523 6428</span><br />
-          Company: Aikerui Cleaning Technology Co., Ltd.<br />
+          Company: Anhui Aikerui Environmental Protection Technology CO.,LTD<br />
           Address: No. 058, Yuantan Road, Yuantan Town, Qianshan City, Anqing City, Anhui Province, China
         </p>
       </div>

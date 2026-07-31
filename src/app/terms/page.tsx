@@ -8,7 +8,7 @@ const TERMS_BREADCRUMB = [
 ];
 
 export const metadata = {
-  title: "Terms & Conditions | Aikerui Cleaning Technology Co., Ltd.",
+  title: "Terms & Conditions | Anhui Aikerui Environmental Protection Technology CO.,LTD",
   description: "Terms and conditions for purchasing from Aikerui. Includes ordering, payment, shipping, warranty, and return policies.",
 };
 
@@ -23,7 +23,7 @@ export default function TermsPage() {
       <div className="prose prose-gray max-w-none space-y-6">
         <h2 className="text-xl font-bold text-gray-900 mt-8">1. Company Information</h2>
         <p>
-          Aikerui Cleaning Technology Co., Ltd.<br />
+          Anhui Aikerui Environmental Protection Technology CO.,LTD<br />
           No. 058, Yuantan Road, Yuantan Town, Qianshan City, Anqing City, Anhui Province, China<br />
           Email: info@aikeruiclean.com<br />
           Phone: +86 199 6523 6428

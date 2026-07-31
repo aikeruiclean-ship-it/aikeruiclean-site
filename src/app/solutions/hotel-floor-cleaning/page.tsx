@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function HotelSolutionPage() {
   return (
     <div>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Hotel Floor Cleaning Solutions","description":"Ultra-quiet floor cleaning machines designed for hotels, resorts, and hospitality environments.","author":{"@type":"Organization","name":"Aikerui Cleaning Technology Co., Ltd."}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Hotel Floor Cleaning Solutions","description":"Ultra-quiet floor cleaning machines designed for hotels, resorts, and hospitality environments.","author":{"@type":"Organization","name":"Anhui Aikerui Environmental Protection Technology CO.,LTD"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
         {"@type":"Question","name":"What is the quietest floor scrubber for hotels?","acceptedAnswer":{"@type":"Answer","text":"Hotel-grade scrubbers operate at 58-62dB — quieter than normal conversation. Sound-dampening materials, enclosed motors, and soft-start drives enable cleaning in occupied guest corridors without complaints."}},
         {"@type":"Question","name":"How do hotels clean floors during guest hours?","acceptedAnswer":{"@type":"Answer","text":"Hotels schedule cleaning during mid-morning (10 AM-2 PM) when guests are out. Ultra-quiet scrubbers with fast-drying squeegees clean corridors and lobbies without disrupting guests. Ballrooms are cleaned between events."}},

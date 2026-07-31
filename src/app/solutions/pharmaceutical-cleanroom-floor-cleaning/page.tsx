@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function PharmaSolutionPage() {
   return (
     <div>
-      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Pharmaceutical Cleanroom Floor Cleaning","description":"GMP-compliant floor cleaning equipment for pharmaceutical cleanrooms and laboratories.","author":{"@type":"Organization","name":"Aikerui Cleaning Technology Co., Ltd."}}} />
+      <JsonLd data={{"@context":"https://schema.org","@type":"Article","headline":"Pharmaceutical Cleanroom Floor Cleaning","description":"GMP-compliant floor cleaning equipment for pharmaceutical cleanrooms and laboratories.","author":{"@type":"Organization","name":"Anhui Aikerui Environmental Protection Technology CO.,LTD"}}} />
       <JsonLd data={{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
         {"@type":"Question","name":"What floor scrubber is suitable for pharmaceutical cleanrooms?","acceptedAnswer":{"@type":"Answer","text":"A compact walk-behind scrubber with HEPA H13/H14 filtration, stainless steel components, and chemical-resistant seals. Must be compatible with GMP cleaning validation protocols."}},
         {"@type":"Question","name":"Do cleanroom scrubbers require HEPA filtration?","acceptedAnswer":{"@type":"Answer","text":"Yes. HEPA filtration on the vacuum exhaust captures 99.97% of particles ≥0.3μm, preventing aerosolized contamination — a critical requirement for ISO 14644 Class 5-8 cleanrooms."}},
