@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Factory, Truck, BadgeCheck, Phone, Send, CheckCircle } from "@/lib/icons";
 import { JsonLd } from "@/components/json-ld";
 import { YouTubeLink } from "@/components/youtube-link";
+import { ReviewForm } from "@/components/review-form";
 
 const PRODUCTS = [
   { name: "Disc Brush", img: "/images/categories/Disc-Brush.webp" },
@@ -178,6 +179,11 @@ export default function PartsQuotePage() {
               className="inline-flex items-center gap-2 text-sm text-green-600 font-semibold hover:underline">
               <Phone size={14} /> Or WhatsApp us directly
             </a>
+          </div>
+
+          {/* Customer review form */}
+          <div className="mt-10">
+            <ReviewForm />
           </div>
         </div>
       </section>
