@@ -106,6 +106,8 @@ Natural fiber brushes are the softest option, designed for sensitive surfaces.
 | Steel wire | Extreme | ⚠️ Rarely | Very low | $70-110 |
 | Natural fiber | Low | ✅ Yes | Very high | $50-90 |
 
+https://youtube.com/shorts/fuP35AeMNGk
+
 ---
 
 ## How to Check If Your Brush Is Worn Out
