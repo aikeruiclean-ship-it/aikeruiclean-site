@@ -497,6 +497,218 @@ const guides: Guide[] = [
     ],
     relatedProducts: ["K500BT", "K660"],
   },
+  {
+    slug: "nilfisk-scrubber-parts-guide",
+    title: "Nilfisk Floor Scrubber Parts: Compatible Brushes, Squeegees & More",
+    description: "Factory-direct Nilfisk floor scrubber parts. Compatible disc brushes, squeegee blades, and pad drivers for SC500, SC600, BA530, BA730. Save 30-50% vs dealer pricing.",
+    category: "buying-guide",
+    readTime: "6 min",
+    difficulty: "beginner",
+    published: "2026-08-04",
+    videoId: "fdISROzR0fQ",
+    sections: [
+      {
+        heading: "Nilfisk Floor Scrubber Parts, Without the Dealer Markup",
+        content: "Nilfisk machines are reliable, but replacement parts from dealers are expensive. We manufacture compatible Nilfisk floor scrubber parts in our ISO 9001 certified factory: disc brushes, squeegee blades, and pad drivers. Same materials and specifications at 30-50% less than dealer prices.",
+      },
+      {
+        heading: "Nilfisk Scrubber Brushes",
+        content: "We make disc brushes for the most common Nilfisk models in nylon, PPL, and abrasive materials.",
+        items: [
+          "Nilfisk SC500 / SC600: 20 inch nylon disc brush with NP-9200 2-lug connection.",
+          "Nilfisk BA530 / BA730: 3-lug center lock disc brush.",
+          "Nylon for daily general cleaning, PPL for heavy grease, abrasive for stripping.",
+          "Virgin nylon or PPL with rounded bristle tips to protect your floor.",
+        ],
+      },
+      {
+        heading: "Nilfisk Squeegee Blades",
+        content: "A worn squeegee blade causes streaks and wet floors. We manufacture compatible squeegee blades for Nilfisk machines in natural rubber and polyurethane.",
+        items: [
+          "Natural rubber (NR): best water pickup on smooth floors.",
+          "Polyurethane (PU): longer wear on rough floors.",
+          "Straight and curved profiles to match your Nilfisk squeegee assembly.",
+          "Typical price: 10 to 25 USD factory-direct, versus 25 to 60 USD at dealers.",
+        ],
+      },
+      {
+        heading: "Nilfisk Pad Drivers",
+        content: "The pad driver connects the motor shaft to the brush. Nilfisk uses the NP-9200 2-lug standard on SC models and 3-lug center lock on BA models.",
+        items: [
+          "NP-9200 pad driver: 2-lug, fits SC500 and SC600.",
+          "3-lug center lock: fits BA530 and BA730.",
+          "Hardened steel construction, precision-machined to OEM tolerances.",
+        ],
+      },
+      {
+        heading: "How to Check Compatibility",
+        content: "Before ordering, confirm the part fits your machine:",
+        items: [
+          "Count the lugs on your current brush or pad driver. Two lugs means NP-9200, three means center lock.",
+          "Measure the brush diameter to match your model.",
+          "For squeegee blades, measure the length and check the mounting holes.",
+          "Not sure? Send us a photo and we will confirm within 24 hours.",
+        ],
+      },
+      {
+        heading: "Factory-Direct Pricing Comparison",
+        content: "Here is what you save buying Nilfisk-compatible parts direct:",
+        items: [
+          "Disc brush: dealer 100 to 250 USD, factory-direct 45 to 75 USD.",
+          "Squeegee blade: dealer 25 to 60 USD, factory-direct 10 to 25 USD.",
+          "Pad driver: dealer 40 to 90 USD, factory-direct 15 to 40 USD.",
+          "Savings of 30 to 50 percent on every replacement.",
+        ],
+      },
+      {
+        heading: "Where to Buy",
+        content: "Browse our full parts catalog for Nilfisk and other brands at aikeruiclean.com/parts. Get a quote at aikeruiclean.com/floor-scrubber-parts-quote. We ship worldwide within 24 hours for in-stock items.",
+      },
+    ],
+    relatedProducts: ["K500BT", "K660"],
+  },
+  {
+    slug: "karcher-scrubber-parts-guide",
+    title: "Karcher Floor Scrubber Parts: Brushes, Squeegees & More — Factory Direct",
+    description: "Factory-direct Karcher floor scrubber parts. Compatible disc brushes, squeegee blades, and pad drivers for BR 35/40, BR 40/10, BR 50/50, BR 60/40. Save 30-50% vs dealer pricing.",
+    category: "buying-guide",
+    readTime: "6 min",
+    difficulty: "beginner",
+    published: "2026-08-04",
+    videoId: "fdISROzR0fQ",
+    sections: [
+      {
+        heading: "Karcher Floor Scrubber Parts, Without the Dealer Markup",
+        content: "Karcher is the most common scrubber brand in Europe, and their parts carry a high dealer markup. We manufacture compatible Karcher floor scrubber parts in our ISO 9001 certified factory: disc brushes, squeegee blades, and pad drivers. Same materials, same specifications, at 30-50% less than dealer prices.",
+      },
+      {
+        heading: "Karcher Scrubber Brushes",
+        content: "We make disc brushes for the most common Karcher models in nylon, PPL, and abrasive materials.",
+        items: [
+          "Karcher BR 35/40: 14 inch nylon disc brush with NP-9200 2-lug connection.",
+          "Karcher BR 40/10: 15 inch disc brush with 2-lug connection.",
+          "Karcher BR 50/50: 20 inch disc brush, nylon or PPL for heavy soil.",
+          "Karcher BR 60/40: 24 inch disc brush for mid-size facilities.",
+          "All brushes use virgin nylon or PPL with rounded bristle tips to protect your floor.",
+        ],
+      },
+      {
+        heading: "Karcher Squeegee Blades",
+        content: "A worn squeegee blade leaves streaks and wet floors. We manufacture compatible squeegee blades for Karcher machines in natural rubber and polyurethane.",
+        items: [
+          "Natural rubber (NR): for smooth floors, best water pickup.",
+          "Polyurethane (PU): for rough floors, longer wear.",
+          "Straight and curved profiles to match your Karcher squeegee assembly.",
+          "Typical price: 10 to 25 USD factory-direct, versus 25 to 60 USD at dealers.",
+        ],
+      },
+      {
+        heading: "Karcher Pad Drivers",
+        content: "The pad driver connects the motor shaft to the brush. Karcher machines use the NP-9200 2-lug standard, which we manufacture directly.",
+        items: [
+          "NP-9200 pad driver: 2-lug, 5/8 inch center hole, fits BR 35/40, BR 40/10, BR 50/50, BR 60/40.",
+          "Center lock options for single-disc machines.",
+          "Hardened steel construction, precision-machined to OEM tolerances.",
+        ],
+      },
+      {
+        heading: "How to Check Compatibility",
+        content: "Before ordering, confirm the part fits your machine:",
+        items: [
+          "Count the lugs on your current brush or pad driver. Two lugs means NP-9200.",
+          "Measure the brush diameter to match your model (14, 15, 20, or 24 inch).",
+          "For squeegee blades, measure the length and check the mounting holes.",
+          "Not sure? Send us a photo and we will confirm within 24 hours.",
+        ],
+      },
+      {
+        heading: "Factory-Direct Pricing Comparison",
+        content: "Here is what you save buying Karcher-compatible parts direct:",
+        items: [
+          "Disc brush: dealer 80 to 200 USD, factory-direct 40 to 70 USD.",
+          "Squeegee blade: dealer 20 to 50 USD, factory-direct 10 to 22 USD.",
+          "Pad driver: dealer 35 to 80 USD, factory-direct 15 to 38 USD.",
+          "Savings of 30 to 50 percent on every replacement.",
+        ],
+      },
+      {
+        heading: "Where to Buy",
+        content: "Browse our full parts catalog for Karcher and other brands at aikeruiclean.com/parts. Get a quote at aikeruiclean.com/floor-scrubber-parts-quote. We ship worldwide within 24 hours for in-stock items.",
+      },
+    ],
+    relatedProducts: ["K500BT", "K660"],
+  },
+  {
+    slug: "viper-scrubber-parts-guide",
+    title: "Viper Floor Scrubber Parts: Compatible Brushes, Squeegees & More",
+    description: "Factory-direct Viper floor scrubber parts. Compatible disc brushes, squeegee blades, and pad drivers for Predator, Crowd, Runner, and Dart models. Save 30-50% vs dealer pricing.",
+    category: "buying-guide",
+    readTime: "6 min",
+    difficulty: "beginner",
+    published: "2026-08-04",
+    videoId: "fdISROzR0fQ",
+    sections: [
+      {
+        heading: "Viper Floor Scrubber Parts, Without the Dealer Markup",
+        content: "Viper machines are built for tough daily use, but dealer replacement parts are expensive. We manufacture compatible Viper floor scrubber parts in our ISO 9001 certified factory: disc brushes, squeegee blades, and pad drivers. Same materials, same specifications, at 30-50% less than dealer prices.",
+      },
+      {
+        heading: "Viper Scrubber Brushes",
+        content: "We make disc brushes for the most common Viper models in nylon, PPL, and abrasive materials.",
+        items: [
+          "Viper Predator: 28 inch or 32 inch nylon disc brush with NP-9200 2-lug connection.",
+          "Viper Crowd: 20 inch disc brush, 2-lug connection.",
+          "Viper Runner: 20 inch disc brush for compact areas.",
+          "Viper Dart: 17 inch disc brush for small spaces.",
+          "All brushes use virgin nylon or PPL with rounded bristle tips to protect your floor.",
+        ],
+      },
+      {
+        heading: "Viper Squeegee Blades",
+        content: "A worn squeegee blade leaves streaks and wet floors. We manufacture compatible squeegee blades for Viper machines in natural rubber and polyurethane.",
+        items: [
+          "Natural rubber (NR): for smooth floors, best water pickup.",
+          "Polyurethane (PU): for rough floors, longer wear.",
+          "Straight and curved profiles to match your Viper squeegee assembly.",
+          "Typical price: 10 to 25 USD factory-direct, versus 25 to 60 USD at dealers.",
+        ],
+      },
+      {
+        heading: "Viper Pad Drivers",
+        content: "The pad driver connects the motor shaft to the brush. Viper machines use the NP-9200 2-lug standard, which we manufacture directly.",
+        items: [
+          "NP-9200 pad driver: 2-lug, 5/8 inch center hole, fits Predator, Crowd, Runner, and Dart.",
+          "Center lock options for single-disc machines.",
+          "Hardened steel construction, precision-machined to OEM tolerances.",
+        ],
+      },
+      {
+        heading: "How to Check Compatibility",
+        content: "Before ordering, confirm the part fits your machine:",
+        items: [
+          "Count the lugs on your current brush or pad driver. Two lugs means NP-9200.",
+          "Measure the brush diameter to match your model (17, 20, 28, or 32 inch).",
+          "For squeegee blades, measure the length and check the mounting holes.",
+          "Not sure? Send us a photo and we will confirm within 24 hours.",
+        ],
+      },
+      {
+        heading: "Factory-Direct Pricing Comparison",
+        content: "Here is what you save buying Viper-compatible parts direct:",
+        items: [
+          "Disc brush: dealer 90 to 230 USD, factory-direct 40 to 70 USD.",
+          "Squeegee blade: dealer 22 to 55 USD, factory-direct 10 to 24 USD.",
+          "Pad driver: dealer 35 to 85 USD, factory-direct 15 to 38 USD.",
+          "Savings of 30 to 50 percent on every replacement.",
+        ],
+      },
+      {
+        heading: "Where to Buy",
+        content: "Browse our full parts catalog for Viper and other brands at aikeruiclean.com/parts. Get a quote at aikeruiclean.com/floor-scrubber-parts-quote. We ship worldwide within 24 hours for in-stock items.",
+      },
+    ],
+    relatedProducts: ["K500BT", "K660"],
+  },
 ];
 
 export function getGuides(): Guide[] {
