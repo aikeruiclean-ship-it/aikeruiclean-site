@@ -426,6 +426,77 @@ const guides: Guide[] = [
     ],
     relatedProducts: ["K500BT", "K660"],
   },
+  {
+    slug: "tennant-scrubber-parts-guide",
+    title: "Tennant Floor Scrubber Parts: Brushes, Squeegees & More — Factory Direct",
+    description: "Find factory-direct Tennant floor scrubber parts. Compatible disc brushes, squeegee blades, pad drivers, and clutch plates for T5, T7, T300, T500. Save 30-50% vs dealer pricing.",
+    category: "buying-guide",
+    readTime: "6 min",
+    difficulty: "beginner",
+    published: "2026-08-04",
+    videoId: "fdISROzR0fQ",
+    sections: [
+      {
+        heading: "Tennant Floor Scrubber Parts, Without the Dealer Markup",
+        content: "Tennant makes excellent floor scrubbers, but their replacement parts carry a big dealer markup. We manufacture compatible Tennant scrubber parts in our ISO 9001 certified factory: disc brushes, squeegee blades, pad drivers, and clutch plates. Same materials, same specifications, at 30-50% less than dealer prices.",
+      },
+      {
+        heading: "Tennant Scrubber Brushes",
+        content: "We make disc brushes for the most common Tennant models, in nylon, PPL, and abrasive materials.",
+        items: [
+          "Tennant T5 / T5e: 24 inch nylon disc brush, medium stiffness, for daily cleaning.",
+          "Tennant T7: 24 inch nylon disc brush with NP-9200 2-lug connection.",
+          "Tennant T300 / T300e: 28 inch disc brush, nylon or PPL for heavy soil.",
+          "Tennant T500 / T500e: 32 inch disc brush for mid-size facilities.",
+          "All brushes use virgin nylon or PPL with rounded bristle tips to protect your floor.",
+        ],
+      },
+      {
+        heading: "Tennant Squeegee Blades",
+        content: "A worn squeegee blade leaves streaks and wet floors. We manufacture compatible squeegee blades for Tennant machines in natural rubber and polyurethane.",
+        items: [
+          "Natural rubber (NR): for smooth floors, best water pickup.",
+          "Polyurethane (PU): for rough floors, longer wear.",
+          "Straight and curved profiles to match your Tennant squeegee assembly.",
+          "Typical price: 10 to 25 USD factory-direct, versus 25 to 60 USD at dealers.",
+        ],
+      },
+      {
+        heading: "Tennant Pad Drivers and Clutch Plates",
+        content: "The pad driver connects the motor shaft to the brush. Tennant machines use the NP-9200 2-lug standard, which we manufacture directly.",
+        items: [
+          "NP-9200 pad driver: 2-lug, 5/8 inch center hole, fits T5, T7, T300, T500.",
+          "Center lock options for single-disc machines.",
+          "Hardened steel construction, precision-machined to OEM tolerances.",
+        ],
+      },
+      {
+        heading: "How to Check Compatibility",
+        content: "Before ordering, confirm the part fits your machine:",
+        items: [
+          "Count the lugs on your current brush or pad driver. Two lugs means NP-9200.",
+          "Measure the brush diameter to match your model (24, 28, or 32 inch).",
+          "For squeegee blades, measure the length and check the mounting holes.",
+          "Not sure? Send us a photo and we will confirm within 24 hours.",
+        ],
+      },
+      {
+        heading: "Factory-Direct Pricing Comparison",
+        content: "Here is what you save buying Tennant-compatible parts direct:",
+        items: [
+          "Disc brush: dealer 100 to 250 USD, factory-direct 45 to 75 USD.",
+          "Squeegee blade: dealer 25 to 60 USD, factory-direct 10 to 25 USD.",
+          "Pad driver: dealer 40 to 90 USD, factory-direct 15 to 40 USD.",
+          "Savings of 30 to 50 percent on every replacement.",
+        ],
+      },
+      {
+        heading: "Where to Buy",
+        content: "Browse our full parts catalog for Tennant and other brands at aikeruiclean.com/parts. Get a quote at aikeruiclean.com/floor-scrubber-parts-quote. We ship worldwide within 24 hours for in-stock items.",
+      },
+    ],
+    relatedProducts: ["K500BT", "K660"],
+  },
 ];
 
 export function getGuides(): Guide[] {
