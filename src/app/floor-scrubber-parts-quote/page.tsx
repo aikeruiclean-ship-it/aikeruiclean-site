@@ -37,7 +37,7 @@ export default function PartsQuotePage() {
         (window as any).gtag("event", "conversion", { send_to: "AW-XXXXXXX/YYYYYYYY" });
       }
     } catch {
-      alert("Please WhatsApp us: +86 191 5911 6875");
+      alert("Please WhatsApp us: +86 199 6523 6428");
     } finally {
       setSending(false);
     }
