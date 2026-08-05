@@ -103,7 +103,7 @@ export function Footer() {
             </h4>
             <ul className="space-y-2">
               <li>
-                <a href="https://www.linkedin.com/in/小剑-王-213b12427" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-300 hover:text-accent transition-colors">
+                <a href="https://www.linkedin.com/in/mark-wang-213b12427" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-300 hover:text-accent transition-colors">
                   LinkedIn
                 </a>
               </li>
