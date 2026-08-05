@@ -3216,61 +3216,6 @@ const extraGuides: Guide[] = [
     relatedProducts: ["K500BT", "A380"],
   },
   // ── International Shipping ──
-  {
-    slug: "how-to-ship-floor-scrubber-internationally",
-    title: "How to Ship a Floor Scrubber Internationally: Complete Guide for 2026",
-    description:
-      "Complete guide to international floor scrubber shipping. Sea freight vs air freight, customs documentation, import duties by country, packaging requirements, and cost estimates.",
-    category: "buying-guide",
-    readTime: "6 min",
-    difficulty: "intermediate",
-    published: "2026-07-14",
-    sections: [
-      {
-        heading: "The Logistics of Moving Heavy Equipment",
-        content: "A ride-on floor scrubber weighs 400-800 kg and is the size of a small car. Shipping it from China to the US, Europe, or Middle East requires proper planning. This guide covers everything from packaging to customs clearance.",
-      },
-      {
-        heading: "Step 1: Choose Your Shipping Method",
-        content: "Three shipping methods, each for different scenarios:",
-        items: [
-          "Sea Freight FCL (Full Container): 2-8 machines per 20ft container. $2,000-4,000 to US/Europe. 25-40 days transit. Best value for 3+ machines.",
-          "Sea Freight LCL (Shared Container): 1-2 machines. $500-1,000 per machine. 30-45 days transit. Best for single units.",
-          "Air Freight: $3,000-8,000 per ride-on machine. 3-7 days transit. Only worth it for urgent replacements or sample units.",
-          "Express (DHL/FedEx): For parts only. $50-200 per shipment. 3-5 days.",
-        ],
-      },
-      {
-        heading: "Step 2: Packaging Requirements",
-        content: "All Aikerui machines are export-packed in plywood crates with foam protection. Crates are fumigated (ISPM 15 compliant) for international shipping. Each crate includes a desiccant pack to prevent moisture damage during sea transit.",
-      },
-      {
-        heading: "Step 3: Customs Documentation",
-        content: "You need: commercial invoice, packing list, bill of lading (sea) or air waybill (air), certificate of origin (reduces duties in some countries), and CE/ISO certificates. We provide all documentation with every shipment.",
-      },
-      {
-        heading: "Step 4: Import Duties by Country",
-        content: "Floor scrubbers fall under HS code 8479.89. Duties vary:",
-        items: [
-          "USA: 0-2.5%. No special tariffs on cleaning equipment as of 2026.",
-          "EU: 1.7%. CE documentation required.",
-          "UK: 0-2%. UKCA marking may be needed.",
-          "Australia: 0-5%. RCM compliance for electrical safety.",
-          "Middle East (GCC): 5%. SASO/SABER for Saudi Arabia.",
-          "Always confirm with your local customs broker — rates change.",
-        ],
-      },
-      {
-        heading: "Step 5: Receiving Your Machine",
-        content: "When the container arrives at your port, you need a customs broker to clear it. Budget $200-500 for broker fees. After customs clearance, arrange local trucking to your facility. Total door-to-door time from factory to your facility: typically 35-55 days for sea freight.",
-      },
-      {
-        heading: "Get Your Shipping Quote",
-        content: "Tell us which machine, your port, and quantity. We'll provide a detailed CIF (cost, insurance, freight) quote including all shipping and documentation costs. Sample units available for evaluation before container orders.",
-      },
-    ],
-    relatedProducts: ["K500BT", "K660"],
-  },
   // ── Church & Venue ──
   {
     slug: "floor-scrubber-church-event-venue",

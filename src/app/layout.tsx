@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     url: "https://aikeruiclean.com",
     images: [
       {
-        url: "/opengraph-image",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Aikerui Industrial Floor Cleaning Machines",
@@ -101,7 +101,7 @@ export default function RootLayout({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             name: "Anhui Aikerui Environmental Protection Technology CO.,LTD",
-            image: "https://aikeruiclean.com/opengraph-image",
+            image: "https://aikeruiclean.com/og-image.png",
             telephone: "+86-199-6523-6428",
             email: "info@aikeruiclean.com",
             address: {

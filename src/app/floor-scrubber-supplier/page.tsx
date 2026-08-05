@@ -30,7 +30,7 @@ export default function SupplierPage() {
           description:
             "Professional floor scrubber manufacturer and supplier. 10,000+㎡ factory, CE & ISO certified, OEM/ODM available.",
           url: "https://aikeruiclean.com",
-          logo: "https://aikeruiclean.com/opengraph-image",
+          logo: "https://aikeruiclean.com/og-image.png",
           address: {
             "@type": "PostalAddress",
             streetAddress: "No. 058, Yuantan Road, Yuantan Town, Qianshan City",
