@@ -90,7 +90,7 @@ const guides: Guide[] = [
       },
       {
         heading: "Factory-Direct Floor Scrubber Brushes",
-        content: "We manufacture 100+ disc brush, cylindrical brush, and pad driver models in our ISO 9001 certified factory in Hefei, China. All brushes are made from virgin nylon, PPL, or abrasive materials — no recycled fillers. Factory-direct pricing means 30–50% less than dealer prices for equivalent OEM quality. Custom sizes and materials available for OEM/ODM orders.",
+        content: "We manufacture 100+ disc brush, cylindrical brush, and pad driver models in our ISO 9001 certified factory in Anqing, China. All brushes are made from virgin nylon, PPL, or abrasive materials — no recycled fillers. Factory-direct pricing means 30–50% less than dealer prices for equivalent OEM quality. Custom sizes and materials available for OEM/ODM orders.",
       },
       {
         heading: "See Our Brushes in Action",
@@ -338,7 +338,7 @@ const guides: Guide[] = [
       },
       {
         heading: "Factory-Direct Disc Brushes — Save 30-50%",
-        content: "We manufacture 98 disc brush models in our ISO 9001 certified factory in Hefei, China. All brushes use virgin nylon, PPL, or abrasive materials, no recycled fillers. Factory-direct pricing: 45 to 75 USD per brush versus 100 to 250 USD at dealers. Custom diameters and materials available for OEM/ODM orders.",
+        content: "We manufacture 98 disc brush models in our ISO 9001 certified factory in Anqing, China. All brushes use virgin nylon, PPL, or abrasive materials, no recycled fillers. Factory-direct pricing: 45 to 75 USD per brush versus 100 to 250 USD at dealers. Custom diameters and materials available for OEM/ODM orders.",
       },
       {
         heading: "See Our Disc Brushes in Action",
@@ -421,7 +421,7 @@ const guides: Guide[] = [
       },
       {
         heading: "Where to Get These Brushes",
-        content: "We manufacture 98 disc brush models in our ISO 9001 certified factory in Hefei, China. All 10 types above are available factory-direct. Custom sizes and materials welcome for OEM and ODM orders.",
+        content: "We manufacture 98 disc brush models in our ISO 9001 certified factory in Anqing, China. All 10 types above are available factory-direct. Custom sizes and materials welcome for OEM and ODM orders.",
       },
     ],
     relatedProducts: ["K500BT", "K660"],
@@ -992,7 +992,7 @@ const extraGuides: Guide[] = [
       },
       {
         heading: "9. Aikerui (China)",
-        content: "Aikerui is a fast-growing Chinese manufacturer operating from a 10,000+ square meter factory in Hefei, Anhui. Unlike many Chinese suppliers, Aikerui owns and operates their own factory — they are not a trading company. They offer 30+ machine models and 360+ spare parts. Key advantages: factory-direct pricing (20-40% less than major brands), CE and ISO certifications, in-house R&D team, and direct WhatsApp/email support. They welcome factory visits and third-party inspections. Aikerui has exported to 50+ countries and serves distributors, rental companies, and facility managers worldwide. Best for: budget-conscious buyers who want quality machines at factory-direct prices."
+        content: "Aikerui is a fast-growing Chinese manufacturer operating from a 10,000+ square meter factory in Anqing, Anhui. Unlike many Chinese suppliers, Aikerui owns and operates their own factory — they are not a trading company. They offer 30+ machine models and 360+ spare parts. Key advantages: factory-direct pricing (20-40% less than major brands), CE and ISO certifications, in-house R&D team, and direct WhatsApp/email support. They welcome factory visits and third-party inspections. Aikerui has exported to 50+ countries and serves distributors, rental companies, and facility managers worldwide. Best for: budget-conscious buyers who want quality machines at factory-direct prices."
       },
       {
         heading: "10. Minuteman / Ice (USA)",

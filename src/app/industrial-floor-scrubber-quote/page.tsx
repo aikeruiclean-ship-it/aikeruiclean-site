@@ -196,7 +196,7 @@ export default function IndustrialFloorScrubberQuotePage() {
               {
                 icon: Truck,
                 title: "Global Shipping, Ready Stock",
-                desc: "30+ models in stock at our Hefei warehouse. Professional export packing. We handle customs documentation and shipping worldwide.",
+                desc: "30+ models in stock at our Anqing warehouse. Professional export packing. We handle customs documentation and shipping worldwide.",
                 highlight: "Fast Dispatch",
               },
               {

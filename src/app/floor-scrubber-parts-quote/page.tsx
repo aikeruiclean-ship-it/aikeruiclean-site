@@ -175,7 +175,7 @@ export default function PartsQuotePage() {
           </div>
 
           <div className="text-center mt-4">
-            <a href="https://api.whatsapp.com/send?phone=8619159116875&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20parts." target="_blank" rel="noopener"
+            <a href="https://api.whatsapp.com/send?phone=8619965236428&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20parts." target="_blank" rel="noopener"
               className="inline-flex items-center gap-2 text-sm text-green-600 font-semibold hover:underline">
               <Phone size={14} /> Or WhatsApp us directly
             </a>

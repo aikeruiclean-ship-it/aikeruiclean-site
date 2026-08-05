@@ -129,7 +129,7 @@ export default function AuthorPage() {
             <p>
               📱 WhatsApp:{" "}
               <a
-                href="https://api.whatsapp.com/send?phone=8619159116875"
+                href="https://api.whatsapp.com/send?phone=8619965236428"
                 className="text-primary hover:underline"
               >
                 +86 191 5911 6875

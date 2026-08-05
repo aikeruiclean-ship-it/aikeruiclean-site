@@ -122,7 +122,7 @@ export default function SupplierPage() {
               {
                 icon: Truck,
                 title: "Parts Stocked for Fast Shipping",
-                desc: "360+ replacement parts in stock at our Hefei warehouse. Express shipping available for urgent orders. No 2-week wait for consumables.",
+                desc: "360+ replacement parts in stock at our Anqing warehouse. Express shipping available for urgent orders. No 2-week wait for consumables.",
                 highlight: "360+ Parts in Stock",
               },
             ].map((item) => (

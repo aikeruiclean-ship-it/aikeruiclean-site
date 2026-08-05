@@ -6,9 +6,9 @@ import { JsonLd } from "@/components/json-ld";
 import { breadcrumbJsonLd, ABOUT_BREADCRUMB } from "@/lib/breadcrumb";
 
 export const metadata: Metadata = {
-  title: "About Aikerui — Real Factory, Real Manufacturing | Hefei, China",
+  title: "About Aikerui — Real Factory, Real Manufacturing | Anqing, China",
   description:
-    "Visit Aikerui's 10,000+㎡ factory in Hefei, China. ISO 9001 & CE certified floor scrubber manufacturer. Live video tours, third-party inspections welcome. 50+ countries served since 2008.",
+    "Visit Aikerui's 10,000+㎡ factory in Anqing, China. ISO 9001 & CE certified floor scrubber manufacturer. Live video tours, third-party inspections welcome. 50+ countries served since 2008.",
 };
 
 const factoryImages = [
@@ -32,13 +32,13 @@ export default function AboutPage() {
         <div className="absolute inset-0 flex items-center">
           <div className="max-w-7xl mx-auto px-4 w-full">
             <div className="max-w-2xl">
-              <span className="inline-block px-4 py-1.5 bg-accent/90 text-white text-sm font-semibold rounded-full mb-4">✅ Verified Manufacturer — Since 2015</span>
+              <span className="inline-block px-4 py-1.5 bg-accent/90 text-white text-sm font-semibold rounded-full mb-4">✅ Verified Manufacturer — Since 2008</span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
                 Worried About <span className="text-accent">Fake Factories</span>?<br />
                 We <span className="text-accent">Own</span> Ours.
               </h1>
               <p className="text-lg md:text-xl text-gray-200 max-w-xl leading-relaxed">
-                Not a trading company. Not a middleman. Aikerui is a real manufacturer with our own 10,000+㎡ factory in Hefei, China. You can verify, visit, or video call us anytime.
+                Not a trading company. Not a middleman. Aikerui is a real manufacturer with our own 10,000+㎡ factory in Anqing, China. You can verify, visit, or video call us anytime.
               </p>
               <div className="flex flex-wrap gap-3 mt-8">
                 <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 bg-accent hover:bg-accent-hover text-white font-semibold rounded-lg transition-colors">
@@ -136,7 +136,7 @@ export default function AboutPage() {
               </thead>
               <tbody>
                 {[
-                  ["Owns production facility", "✅ 10,000+㎡ factory in Hefei", "❌ No factory — sources from others"],
+                  ["Owns production facility", "✅ 10,000+㎡ factory in Anqing", "❌ No factory — sources from others"],
                   ["Manufactures products", "✅ Full in-house production line", "❌ Only buys and resells"],
                   ["Shows factory floor", "✅ Real-time video walkthrough available", "❌ Stock photos or borrowed factory images"],
                   ["R&D capability", "✅ 15+ in-house engineers", "❌ No engineering team"],
@@ -229,8 +229,8 @@ export default function AboutPage() {
           <h2 className="text-2xl font-bold text-gray-900 text-center mb-10">Still Have Doubts? Here Are Honest Answers.</h2>
           <div className="space-y-4">
             {[
-              { q: "How do I know you won't take my money and disappear?", a: "We've been in business since 2015. Our company is registered under Anhui Aikerui Environmental Protection Technology CO.,LTD in Hefei, Anhui. You can verify our business license, visit our factory, or check our export records with customs. We accept T/T, PayPal, and L/C — we're not going anywhere." },
-              { q: "Can I visit your factory before ordering?", a: "Absolutely. We welcome factory visits. We're located in Hefei City, Anhui Province — about 2 hours from Shanghai by high-speed rail. We can arrange airport pickup and a factory tour. No appointment needed, but advance notice helps us prepare." },
+              { q: "How do I know you won't take my money and disappear?", a: "We've been in business since 2008. Our company is registered under Anhui Aikerui Environmental Protection Technology CO.,LTD in Anqing, Anhui. You can verify our business license, visit our factory, or check our export records with customs. We accept T/T, PayPal, and L/C — we're not going anywhere." },
+              { q: "Can I visit your factory before ordering?", a: "Absolutely. We welcome factory visits. We're located in Anqing City, Anhui Province — about 3 hours from Shanghai by high-speed rail. We can arrange airport pickup and a factory tour. No appointment needed, but advance notice helps us prepare." },
               { q: "What if the machine arrives damaged or defective?", a: "Every machine is fully tested before shipment and professionally packed for export. In the unlikely event of damage during transit, we'll work with you to resolve it — replacement parts shipped immediately or a discount on your next order." },
               { q: "Do you have other buyers I can contact for reference?", a: "Yes. We can provide references from our existing clients in your region upon request. We serve distributors, rental companies, and facility managers in 50+ countries." },
               { q: "What's your minimum order quantity?", a: "For standard models, MOQ is 1 unit for sampling. For wholesale, 2–5 units per model is recommended to optimize shipping costs. OEM orders require 10+ units per model." },

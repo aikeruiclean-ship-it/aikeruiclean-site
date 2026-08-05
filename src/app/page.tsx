@@ -26,7 +26,7 @@ export default function HomePage() {
     },
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Hefei",
+      addressLocality: "Anqing",
       addressRegion: "Anhui",
       addressCountry: "CN",
     },
@@ -56,14 +56,14 @@ export default function HomePage() {
           <div className="max-w-7xl mx-auto px-4 w-full">
             <div className="max-w-2xl">
               <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-accent/90 text-white text-sm font-semibold rounded-full mb-4">
-                <Factory size={14} /> Verified Manufacturer — Since 2015
+                <Factory size={14} /> Verified Manufacturer — Since 2008
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
                 Buying Cleaning Machines?<br />
                 <span className="text-accent">Buy Direct</span> from the Factory.
               </h1>
               <p className="text-lg md:text-xl text-gray-200 max-w-xl leading-relaxed mb-8">
-                Aikerui is a real manufacturer with our own 10,000+㎡ factory in Hefei, China. 
+                Aikerui is a real manufacturer with our own 10,000+㎡ factory in Anqing, China. 
                 30+ machine models, 360+ parts. Factory-direct pricing, no middlemen.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
@@ -87,7 +87,7 @@ export default function HomePage() {
           <div className="text-center mb-10">
             <span className="text-accent font-semibold text-sm uppercase tracking-wider">Our Products</span>
             <h2 className="text-3xl font-bold text-gray-900 mt-2 mb-3">Built in Our Factory, Shipped to You</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">Every machine is designed, manufactured, and tested in our Hefei facility before export.</p>
+            <p className="text-gray-600 max-w-2xl mx-auto">Every machine is designed, manufactured, and tested in our Anqing facility before export.</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {orderedCategories.map((cat) => (
@@ -259,7 +259,7 @@ export default function HomePage() {
             </Link>
             <Link href="/products" className="inline-flex items-center gap-2 px-8 py-3.5 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg border border-white/20 transition-colors">Browse Products</Link>
           </div>
-          <p className="text-gray-400 text-sm mt-6">Or call us directly: <a href="https://api.whatsapp.com/send?phone=8619159116875&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20pricing." className="text-white underline font-semibold">WhatsApp Sales Team</a></p>
+          <p className="text-gray-400 text-sm mt-6">Or call us directly: <a href="https://api.whatsapp.com/send?phone=8619965236428&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20pricing." className="text-white underline font-semibold">WhatsApp Sales Team</a></p>
         </div>
       </section>
     </div>

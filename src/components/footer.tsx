@@ -21,7 +21,7 @@ export function Footer() {
             </div>
           </div>
           <p className="text-sm text-gray-300 leading-relaxed mb-4">
-            Professional manufacturer of industrial floor cleaning machines, sweepers, and accessories. Serving global clients with reliable cleaning solutions since 2015.
+            Professional manufacturer of industrial floor cleaning machines, sweepers, and accessories. Serving global clients with reliable cleaning solutions since 2008.
           </p>
         </div>
 
@@ -76,7 +76,7 @@ export function Footer() {
           <ul className="space-y-3">
             <li className="flex items-start gap-2 text-sm text-gray-300">
               <MapPin size={16} className="mt-0.5 shrink-0 text-accent" />
-              <span>Industrial Zone, Hefei City, Anhui, China</span>
+              <span>Industrial Zone, Anqing City, Anhui, China</span>
             </li>
             <li>
               <a href="tel:+8619965236428" className="flex items-center gap-2 text-sm text-gray-300 hover:text-accent transition-colors">

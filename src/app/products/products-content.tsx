@@ -41,7 +41,7 @@ export function ProductsContent() {
         <div className="max-w-7xl mx-auto px-4 py-12">
           <div className="max-w-2xl">
             <h1 className="text-3xl md:text-4xl font-bold mb-2">{activeCategory ? activeCategory : "Our Products"}</h1>
-            <p className="text-gray-200 text-lg">Factory-direct industrial cleaning machines — manufactured in our 10,000+㎡ facility in Hefei, China.</p>
+            <p className="text-gray-200 text-lg">Factory-direct industrial cleaning machines — manufactured in our 10,000+㎡ facility in Anqing, China.</p>
           </div>
         </div>
       </section>

@@ -68,7 +68,7 @@ export default function TermsPage() {
         <p>Aikerui's total liability shall not exceed the purchase price of the product. We are not liable for consequential damages, lost profits, or business interruption.</p>
 
         <h2 className="text-xl font-bold text-gray-900 mt-8">8. Governing Law</h2>
-        <p>These terms shall be governed by the laws of the People's Republic of China. Any disputes shall first be resolved through negotiation; if unsuccessful, they shall be submitted to the competent court in Hefei, Anhui, China.</p>
+        <p>These terms shall be governed by the laws of the People's Republic of China. Any disputes shall first be resolved through negotiation; if unsuccessful, they shall be submitted to the competent court in Anqing, Anhui, China.</p>
 
         <h2 className="text-xl font-bold text-gray-900 mt-8">9. Contact</h2>
         <p>
