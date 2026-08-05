@@ -81,6 +81,44 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: "AI2Bot",
         allow: "/",
       },
+      // Bing / Copilot AI search
+      {
+        userAgent: "CopilotBot",
+        allow: "/",
+      },
+      {
+        userAgent: "Bingbot",
+        allow: "/",
+      },
+      // Other AI search engines
+      {
+        userAgent: "Amazonbot",
+        allow: "/",
+      },
+      {
+        userAgent: "Meta-ExternalAgent",
+        allow: "/",
+      },
+      {
+        userAgent: "SamsungBot",
+        allow: "/",
+      },
+      {
+        userAgent: "YandexBot",
+        allow: "/",
+      },
+      {
+        userAgent: "Exabot",
+        allow: "/",
+      },
+      {
+        userAgent: "PetalBot",
+        allow: "/",
+      },
+      {
+        userAgent: "Perplexity-User",
+        allow: "/",
+      },
     ],
     sitemap: "https://aikeruiclean.com/sitemap.xml",
   };
