@@ -29,6 +29,7 @@ export default function AuthorPage() {
             "https://youtube.com/@markxu-u8h",
             "https://x.com/mark_xu71710",
             "https://quora.com/profile/Mark-Xu-110",
+            "https://www.linkedin.com/in/小剑-王-213b12427",
           ],
         }}
       />
