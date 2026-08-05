@@ -33,7 +33,13 @@ export default function PartsQuotePage() {
       });
       if (!res.ok) throw new Error("Failed");
       setSubmitted(true);
+      // GA4 conversion event (quote submitted)
       if (typeof window !== "undefined" && (window as any).gtag) {
+        (window as any).gtag("event", "quote_submit", {
+          product: "Floor Scrubber Parts (Ad Landing)",
+          send_to: process.env.NEXT_PUBLIC_GA_ID || "",
+        });
+        // Google Ads conversion (placeholder — replace with real AW-xxx/xxx ID)
         (window as any).gtag("event", "conversion", { send_to: "AW-XXXXXXX/YYYYYYYY" });
       }
     } catch {
