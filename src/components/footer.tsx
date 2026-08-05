@@ -95,6 +95,40 @@ export function Footer() {
               <span>Mon–Fri: 8:30 AM – 6:00 PM (CST)</span>
             </li>
           </ul>
+
+          {/* Social links */}
+          <div className="mt-5 pt-5 border-t border-white/10">
+            <h4 className="text-xs font-semibold uppercase tracking-wider mb-3 text-accent">
+              Follow Us
+            </h4>
+            <ul className="space-y-2">
+              <li>
+                <a href="https://www.linkedin.com/company/aikerui" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-300 hover:text-accent transition-colors">
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@markxu-u8h" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-300 hover:text-accent transition-colors">
+                  YouTube
+                </a>
+              </li>
+              <li>
+                <a href="https://x.com/mark_xu71710" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-300 hover:text-accent transition-colors">
+                  X / Twitter
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/aikeruiclean" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-300 hover:text-accent transition-colors">
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a href="https://www.quora.com/profile/Mark-Xu-110" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-300 hover:text-accent transition-colors">
+                  Quora
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 

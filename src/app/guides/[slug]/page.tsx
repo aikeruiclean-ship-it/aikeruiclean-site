@@ -122,6 +122,30 @@ export default async function GuideDetailPage({ params }: Props) {
         />
       )}
 
+      {/* VideoObject schema when guide has a video */}
+      {guide.videoId && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "VideoObject",
+              name: guide.title,
+              description: guide.description,
+              thumbnailUrl: `https://img.youtube.com/vi/${guide.videoId}/mqdefault.jpg`,
+              contentUrl: `https://www.youtube.com/shorts/${guide.videoId}`,
+              embedUrl: `https://www.youtube.com/embed/${guide.videoId}`,
+              uploadDate: guide.published || "2026-01-01",
+              publisher: {
+                "@type": "Organization",
+                name: "Aikerui",
+                logo: { "@type": "ImageObject", url: "https://aikeruiclean.com/og-image.png" },
+              },
+            }),
+          }}
+        />
+      )}
+
       {/* Top navigation */}
       <div className="bg-gray-50 border-b border-gray-200">
         <div className="max-w-4xl mx-auto px-4 py-3">
