@@ -39,8 +39,8 @@ export default function PartsQuotePage() {
           product: "Floor Scrubber Parts (Ad Landing)",
           send_to: process.env.NEXT_PUBLIC_GA_ID || "",
         });
-        // Google Ads conversion (placeholder — replace with real AW-xxx/xxx ID)
-        (window as any).gtag("event", "conversion", { send_to: "AW-XXXXXXX/YYYYYYYY" });
+        // Google Ads conversion
+        (window as any).gtag("event", "conversion", { send_to: "AW-18359776225" });
       }
     } catch {
       alert("Please WhatsApp us: +86 199 6523 6428");
