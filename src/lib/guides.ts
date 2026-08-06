@@ -3962,5 +3962,62 @@ const extraGuides: Guide[] = [
     ],
     relatedProducts: ["K500BT", "K660"],
   },
-
+  {
+    slug: "inside-aikerui-factory-tour",
+    title: "Inside Aikerui's Factory: How Floor Scrubbers & Brushes Are Really Made",
+    description: "Take a video tour of Aikerui's 10,000+ sqm factory in Anqing, China. See how floor scrubbers and replacement brushes are manufactured, tested, and export-packed. Real factory, not a trading company.",
+    category: "buying-guide",
+    readTime: "5 min",
+    difficulty: "beginner",
+    published: "2026-08-05",
+    videoId: "-h8_7cq-yWs",
+    sections: [
+      {
+        heading: "Why a Factory Tour Video Matters",
+        content: "Most Chinese cleaning equipment suppliers are trading companies. They take your order, buy from a factory, and mark up the price. Aikerui is different: we own and operate our own 10,000+ sqm factory in Anqing, Anhui, China. This video tour shows you exactly where your floor scrubber and replacement brushes are made.",
+      },
+      {
+        heading: "What You See in the Factory Video",
+        content: "The short video walks you through the real production floor:",
+        items: [
+          "Brush production line: nylon and PPL brushes being tufted, trimmed, and inspected.",
+          "Machine assembly area: walk-behind and ride-on scrubbers being built and tested.",
+          "Welding and fabrication: steel frames and tanks made in-house.",
+          "Quality control station: every brush checked for bristle density and lug alignment.",
+          "Warehouse: 360+ replacement parts stocked and ready to ship.",
+        ],
+      },
+      {
+        heading: "How to Verify a Real Factory Yourself",
+        content: "You should not take our word for it. Here is how any buyer can verify a Chinese manufacturer is real:",
+        items: [
+          "1. Ask for a live video call from the factory floor, not a pre-recorded clip.",
+          "2. Check the business license matches the factory address.",
+          "3. Request third-party inspection (SGS or BV) before payment.",
+          "4. Ask for export records and customs documentation.",
+          "5. Start with a sample order before a container order.",
+        ],
+      },
+      {
+        heading: "Factory-Direct Benefits",
+        content: "Buying from the real manufacturer, not a trading company, means:",
+        items: [
+          "30-50% lower prices than dealer or brand markups.",
+          "Direct communication with the engineers who make the product.",
+          "Custom OEM/ODM manufacturing to your specifications.",
+          "Full export documentation included with every shipment.",
+          "Factory visits and live video tours welcome anytime.",
+        ],
+      },
+      {
+        heading: "Plan Your Factory Visit",
+        content: "We welcome visits. Aikerui is in Anqing City, Anhui Province, about 3 hours from Shanghai by high-speed rail. We can arrange airport pickup and a factory tour, or schedule a live video call if you cannot travel. No appointment needed, but advance notice helps us prepare.",
+      },
+      {
+        heading: "Talk to the Factory Direct",
+        content: "Browse our machines at aikeruiclean.com/products and replacement parts at aikeruiclean.com/parts. Get factory-direct pricing at aikeruiclean.com/floor-scrubber-parts-quote. We reply within 24 hours.",
+      },
+    ],
+    relatedProducts: ["K500BT", "K660"],
+  },
 ];
