@@ -102,6 +102,7 @@ export default function RootLayout({
             "@type": "LocalBusiness",
             name: "Anhui Aikerui Environmental Protection Technology CO.,LTD",
             image: "https://aikeruiclean.com/og-image.png",
+            logo: "https://aikeruiclean.com/aikerui-logo.png",
             telephone: "+86-199-6523-6428",
             email: "info@aikeruiclean.com",
             address: {

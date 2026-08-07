@@ -279,6 +279,38 @@ export default async function GuideDetailPage({ params }: Props) {
                     ))}
                   </ul>
                 )}
+                {section.table && (
+                  <div className="overflow-x-auto my-5">
+                    <table className="w-full text-sm border-collapse">
+                      <thead>
+                        <tr>
+                          {section.table.headers.map((h, j) => (
+                            <th
+                              key={j}
+                              className="border border-gray-300 bg-gray-100 px-3 py-2 text-left font-semibold text-gray-800"
+                            >
+                              {h}
+                            </th>
+                          ))}
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {section.table.rows.map((row, j) => (
+                          <tr key={j} className={j % 2 ? "bg-gray-50" : ""}>
+                            {row.map((cell, k) => (
+                              <td
+                                key={k}
+                                className="border border-gray-300 px-3 py-2 text-gray-700"
+                              >
+                                {cell}
+                              </td>
+                            ))}
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                )}
               </section>
             ))}
           </div>

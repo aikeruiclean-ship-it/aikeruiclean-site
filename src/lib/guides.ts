@@ -17,6 +17,8 @@ interface GuideSection {
   heading: string;
   content: string;
   items?: string[];
+  /** Optional data table — rendered as real <table> for AI-citable structured data */
+  table?: { headers: string[]; rows: string[][] };
 }
 
 const guides: Guide[] = [
@@ -46,6 +48,16 @@ const guides: Guide[] = [
       {
         heading: "Brush Material Guide — Which One Do You Need?",
         content: "The bristle material determines how aggressive the brush is on your floor. Using the wrong material can damage your floor surface.",
+        table: {
+          headers: ["Material", "Stiffness", "Best For", "Price (factory-direct)"],
+          rows: [
+            ["Nylon", "Soft to medium", "Daily cleaning on tile, concrete, epoxy", "$45–75 per brush"],
+            ["Polypropylene (PPL)", "Stiff", "Heavy grease, industrial grime", "$45–75 per brush"],
+            ["Abrasive (SiC / Tynex)", "Very aggressive", "Stripping finish, deep clean", "$55–85 per brush"],
+            ["Steel Wire", "Most aggressive", "Heavy debris on industrial concrete", "$60–90 per brush"],
+            ["Natural Fiber", "Softest", "Polishing wood, marble, linoleum", "$40–70 per brush"],
+          ],
+        },
         items: [
           "Nylon: The most common material. Flexible, durable, and safe for most floor types including tile, concrete, and epoxy. Nylon brushes provide a good balance of cleaning power and floor protection. Best for daily general cleaning.",
           "Polypropylene (PPL): Stiffer than nylon. Provides more scrubbing power for removing stubborn dirt, grease, and grime. Best for industrial floors with heavy soil buildup. Can scratch softer floors.",
@@ -57,6 +69,17 @@ const guides: Guide[] = [
       {
         heading: "How to Choose the Right Brush for Your Floor",
         content: "Match the brush type and material to your floor surface with this quick reference table:",
+        table: {
+          headers: ["Floor Type", "Recommended Brush", "Avoid"],
+          rows: [
+            ["Smooth concrete", "Nylon disc (medium)", "Abrasive for daily use"],
+            ["Epoxy / sealed", "Nylon disc (soft-medium)", "Abrasive, steel wire"],
+            ["Tile / ceramic", "Nylon disc (soft)", "PPL, abrasive (scratch grout)"],
+            ["Wood / marble", "Natural fiber / soft pad", "Abrasive, steel wire"],
+            ["Textured / rough concrete", "Cylindrical nylon or PPL", "Disc brushes skip surface"],
+            ["Heavy grease / oil", "PPL stiff or abrasive", "Soft nylon"],
+          ],
+        },
         items: [
           "Smooth Concrete: Nylon disc brush (medium stiffness). For heavy grease, switch to PPL or abrasive.",
           "Epoxy / Sealed Concrete: Nylon disc brush (soft to medium). Never use abrasive on epoxy.",

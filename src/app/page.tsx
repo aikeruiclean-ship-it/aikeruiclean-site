@@ -16,7 +16,7 @@ export default function HomePage() {
     "@type": "Organization",
     name: "Anhui Aikerui Environmental Protection Technology CO.,LTD",
     url: "https://aikeruiclean.com",
-    logo: "https://aikeruiclean.com/images/WALK-BEHIND-K500BT.webp",
+    logo: "https://aikeruiclean.com/aikerui-logo.png",
     contactPoint: {
       "@type": "ContactPoint",
       telephone: "+86-199-6523-6428",
