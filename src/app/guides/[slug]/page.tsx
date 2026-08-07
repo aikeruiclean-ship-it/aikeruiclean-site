@@ -21,6 +21,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${guide.title.length > 50 ? guide.title.slice(0, 47).trim().replace(/[,:;/-]+$/, "") + "..." : guide.title} | Aikerui Guides`,
     description: guide.description,
+    authors: [{ name: "Mark Wang", url: "https://aikeruiclean.com/about/mark-xu" }],
+    openGraph: {
+      title: guide.title,
+      description: guide.description,
+      type: "article",
+      publishedTime: guide.published ? new Date(guide.published).toISOString() : undefined,
+      authors: ["https://aikeruiclean.com/about/mark-xu"],
+      siteName: "Aikerui",
+      url: `https://aikeruiclean.com/guides/${guide.slug}`,
+      images: ["https://aikeruiclean.com/og-image.png"],
+    },
   };
 }
 
@@ -145,6 +156,38 @@ export default async function GuideDetailPage({ params }: Props) {
           }}
         />
       )}
+
+      {/* Article schema — author & date for AI citation */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: guide.title,
+            description: guide.description,
+            datePublished: guide.published ? new Date(guide.published).toISOString() : undefined,
+            dateModified: guide.published ? new Date(guide.published).toISOString() : undefined,
+            author: {
+              "@type": "Person",
+              name: "Mark Wang",
+              url: "https://aikeruiclean.com/about/mark-xu",
+              jobTitle: "Sales Director",
+              worksFor: {
+                "@type": "Organization",
+                name: "Anhui Aikerui Environmental Protection Technology CO.,LTD",
+              },
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "Aikerui",
+              logo: { "@type": "ImageObject", url: "https://aikeruiclean.com/og-image.png" },
+            },
+            mainEntityOfPage: `https://aikeruiclean.com/guides/${guide.slug}`,
+            image: "https://aikeruiclean.com/og-image.png",
+          }),
+        }}
+      />
 
       {/* Top navigation */}
       <div className="bg-gray-50 border-b border-gray-200">

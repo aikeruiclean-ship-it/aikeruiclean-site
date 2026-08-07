@@ -39,6 +39,13 @@ const TIER_CONFIG: Record<PricingTier, Omit<PricingInfo, "tier" | "typicalRange"
   },
 };
 
+/** Numeric price ranges by tier (for schema.org priceSpecification) */
+export const TIER_PRICE_RANGE: Record<PricingTier, { minPrice: number; maxPrice: number }> = {
+  L1: { minPrice: 15, maxPrice: 75 },
+  L2: { minPrice: 50, maxPrice: 300 },
+  L3: { minPrice: 200, maxPrice: 2000 },
+};
+
 /** Typical price ranges by tier (informational only) */
 const TIER_RANGES: Record<PricingTier, string> = {
   L1: "$15–75 per piece",

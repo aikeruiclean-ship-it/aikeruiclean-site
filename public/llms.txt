@@ -30,8 +30,8 @@
 
 ## Products
 - [All Products](https://aikeruiclean.com/products) — Full catalog with specs and pricing
-- [Floor Scrubbers](https://aikeruiclean.com/products?category=Floor+Scrubbers) — Walk-behind and ride-on models (17-50 inch cleaning width)
-- [Floor Sweepers](https://aikeruiclean.com/products?category=Floor+Sweepers) — Industrial sweepers for warehouses and factories
+- [Floor Scrubbers](https://aikeruiclean.com/products) — Walk-behind and ride-on models (17-50 inch cleaning width)
+- [Floor Sweepers](https://aikeruiclean.com/products) — Industrial sweepers for warehouses and factories
 - [Replacement Parts](https://aikeruiclean.com/parts) — Disc brushes, squeegees, pad holders, roller brushes, clutch plates, batteries, chargers
 - [Floor Scrubber Price Guide](https://aikeruiclean.com/floor-scrubber-price-guide)
 - [Floor Scrubber Supplier](https://aikeruiclean.com/floor-scrubber-supplier)
