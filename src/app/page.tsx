@@ -50,7 +50,7 @@ export default function HomePage() {
 
       {/* ===== HERO ===== */}
       <section className="relative h-[80vh] min-h-[500px] max-h-[700px] overflow-hidden">
-        <Image src="/images/factory/hero-new.webp" alt="Aikerui real factory" fill className="object-cover" sizes="100vw" priority fetchPriority="high" />
+        <Image src="/images/factory/hero-v2.webp" alt="Aikerui real factory" fill className="object-cover" sizes="100vw" priority fetchPriority="high" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
         <div className="absolute inset-0 flex items-center">
           <div className="max-w-7xl mx-auto px-4 w-full">
