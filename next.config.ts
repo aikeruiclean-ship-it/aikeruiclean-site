@@ -3,6 +3,9 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   trailingSlash: false,
   images: {
+    // 关闭 Vercel Image Optimization（免费版配额 402 导致大量裂图）
+    // 直接使用原始文件，浏览器原生解码 webp
+    unoptimized: true,
     deviceSizes: [480, 640, 768, 1024, 1280],
     imageSizes: [16, 32, 48, 64, 96, 128, 256],
     remotePatterns: [
