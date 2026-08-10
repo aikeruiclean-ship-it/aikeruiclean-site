@@ -4043,4 +4043,67 @@ const extraGuides: Guide[] = [
     ],
     relatedProducts: ["K500BT", "K660"],
   },
+  {
+    slug: "steel-wire-floor-scrubber-brush-guide",
+    title: "Steel Wire Floor Scrubber Brush: Heavy-Duty Cleaning for Tough Grime",
+    description: "Steel wire floor scrubber brush for heavy-duty cleaning. Removes tough grime, strips old finish, and deep-cleans rough concrete. Factory-direct pricing, compatible with most scrubbers.",
+    category: "buying-guide",
+    readTime: "4 min",
+    difficulty: "beginner",
+    published: "2026-08-10",
+    videoId: "XrHK1POi7yY",
+    sections: [
+      {
+        heading: "What Is a Steel Wire Floor Scrubber Brush?",
+        content: "A steel wire brush uses stiff steel bristles instead of nylon or PPL. It is the most aggressive brush type for floor scrubbers, built for heavy-duty cleaning on rough surfaces. This video shows the brush in action:",
+      },
+      {
+        heading: "When to Use a Steel Wire Brush",
+        content: "Steel wire brushes are not for daily cleaning. Use them for specific heavy jobs:",
+        items: [
+          "Removing heavy grime and stuck-on dirt on industrial concrete.",
+          "Stripping old floor finish before recoating.",
+          "Deep-cleaning rough concrete that nylon brushes cannot handle.",
+          "Cleaning grout and textured surfaces.",
+          "Heavy debris in warehouses, factories, and production areas.",
+        ],
+      },
+      {
+        heading: "When NOT to Use a Steel Wire Brush",
+        content: "Steel wire can damage floors if used wrong:",
+        items: [
+          "Never use on epoxy or sealed floors — it will scratch the coating.",
+          "Never use on tile, wood, marble, or linoleum.",
+          "Do not use daily — it removes floor material over time.",
+          "Do not use on polished or finished concrete.",
+        ],
+      },
+      {
+        heading: "Steel Wire vs Nylon vs PPL Brush",
+        content: "Choose the right bristle for the job:",
+        table: {
+          headers: ["Material", "Aggressiveness", "Best For", "Avoid On"],
+          rows: [
+            ["Nylon", "Soft to medium", "Daily cleaning, most floors", "Nothing major"],
+            ["PPL", "Stiff", "Heavy grease", "Epoxy, sealed floors"],
+            ["Abrasive", "Very aggressive", "Stripping finish", "Daily use"],
+            ["Steel wire", "Most aggressive", "Heavy grime, rough concrete", "Finished floors"],
+          ],
+        },
+      },
+      {
+        heading: "Compatibility",
+        content: "Steel wire brushes fit most floor scrubbers using the NP-9200 2-lug standard. This covers Tennant, Nilfisk, Viper, and most Chinese OEM machines. Check your lug pattern before ordering, or send us a photo and we will confirm within 24 hours.",
+      },
+      {
+        heading: "Factory-Direct Pricing",
+        content: "A steel wire disc brush costs 60 to 90 USD factory-direct, versus 120 to 250 USD at dealers. Same steel, same bristle density, no middleman markup.",
+      },
+      {
+        heading: "Order Yours Today",
+        content: "Browse our full brush range at aikeruiclean.com/parts. Get factory-direct pricing at aikeruiclean.com/floor-scrubber-parts-quote. We ship worldwide within 24 hours for in-stock items.",
+      },
+    ],
+    relatedProducts: ["K500BT", "K660"],
+  },
 ];
