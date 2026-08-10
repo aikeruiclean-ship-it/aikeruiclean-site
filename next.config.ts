@@ -356,7 +356,7 @@ async redirects() {
     { source: "/blogs", destination: "/guides", permanent: true },
     { source: "/blogs/:path*", destination: "/guides", permanent: true },
     { source: "/bumper-head", destination: "/parts", permanent: true },
-    { source: "/a660：how-anqings-165000㎡-government-complex-turned-morning-cleaning-chaos-into-a-breeze", destination: "/products", permanent: true },
+    { source: "/a660*", destination: "/products", permanent: true },
     { source: "/aikerui-a500-floor-scrubber-dryer", destination: "/products", permanent: true },
     { source: "/home-3", destination: "/", permanent: true },
     { source: "/help-center", destination: "/faq", permanent: true },
