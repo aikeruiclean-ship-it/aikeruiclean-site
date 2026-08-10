@@ -1,5 +1,17 @@
 import Link from "next/link";
 
+/**
+ * YouTubeLink component:
+ * - Uses a local <video> file when available in /videos/{videoId}.mp4 (no platform restrictions)
+ * - Falls back to YouTube iframe embed when no local file exists
+ * - Always shows a "Watch on YouTube" link as backup
+ */
+const LOCAL_VIDEOS: Record<string, string> = {
+  // videoId → local mp4 path (upload to public/videos/)
+  XrHK1POi7yY: "/videos/steel-wire-brush.mp4",
+  fuP35AeMNGk: "/videos/disc-brush.mp4",
+};
+
 export function YouTubeLink({
   videoId,
   title,
@@ -7,20 +19,35 @@ export function YouTubeLink({
   videoId: string;
   title: string;
 }) {
+  const localVideo = LOCAL_VIDEOS[videoId];
+
   return (
     <div className="my-8">
-      {/* Embedded iframe — video plays inline, AI crawlers can read content */}
-      <div className="relative aspect-video rounded-xl overflow-hidden bg-gray-100">
-        <iframe
-          src={`https://www.youtube.com/embed/${videoId}`}
-          title={title}
-          loading="lazy"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-          className="absolute inset-0 w-full h-full border-0"
-        />
-      </div>
+      {localVideo ? (
+        /* Local video — plays directly from our server, no embed restrictions */
+        <video
+          className="w-full aspect-video rounded-xl bg-gray-100 border-0"
+          controls
+          preload="none"
+          poster={`https://img.youtube.com/vi/${videoId}/mqdefault.jpg`}
+        >
+          <source src={localVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      ) : (
+        /* Fallback: YouTube iframe embed */
+        <div className="relative aspect-video rounded-xl overflow-hidden bg-gray-100">
+          <iframe
+            src={`https://www.youtube.com/embed/${videoId}`}
+            title={title}
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+            className="absolute inset-0 w-full h-full border-0"
+          />
+        </div>
+      )}
       {/* Fallback link for contexts where iframe is blocked */}
       <div className="mt-2 text-center">
         <Link
