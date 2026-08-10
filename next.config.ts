@@ -355,6 +355,8 @@ async redirects() {
     { source: "/cart", destination: "/floor-scrubber-parts-quote", permanent: true },
     { source: "/blogs", destination: "/guides", permanent: true },
     { source: "/blogs/:path*", destination: "/guides", permanent: true },
+    { source: "/faqs", destination: "/faq", permanent: true },
+    { source: "/case-studies", destination: "/guides", permanent: true },
     { source: "/bumper-head", destination: "/parts", permanent: true },
     { source: "/aikerui-a500-floor-scrubber-dryer", destination: "/products", permanent: true },
     { source: "/home-3", destination: "/", permanent: true },
