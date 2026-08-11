@@ -108,7 +108,7 @@ export default function ContactPage() {
 
             <div className="p-4 bg-amber-50 rounded-xl border border-amber-200">
               <p className="text-xs font-semibold text-amber-800 uppercase">Want to Verify Us?</p>
-              <p className="text-sm text-amber-700 mt-1">We welcome third-party inspections and live video tours. <Link href="/about#verify" className="underline font-medium">Learn how →</Link></p>
+              <p className="text-sm text-amber-700 mt-1">We welcome independent inspections and live video tours. <Link href="/about#verify" className="underline font-medium">Learn how →</Link></p>
             </div>
 
             {/* Payment Methods */}

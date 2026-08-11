@@ -8,7 +8,7 @@ import { breadcrumbJsonLd, ABOUT_BREADCRUMB } from "@/lib/breadcrumb";
 export const metadata: Metadata = {
   title: "About Aikerui — Real Factory, Real Manufacturing | Anqing, China",
   description:
-    "Visit Aikerui's 10,000+㎡ factory in Anqing, China. ISO 9001 & CE certified floor scrubber manufacturer. Live video tours, third-party inspections welcome. 50+ countries served since 2008.",
+    "Visit Aikerui's 10,000+㎡ factory in Anqing, China. ISO 9001 & CE certified floor scrubber manufacturer. Live video tours, independent inspections welcome. 50+ countries served since 2008.",
 };
 
 const factoryImages = [

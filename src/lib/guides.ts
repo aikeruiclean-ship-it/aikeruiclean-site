@@ -1015,7 +1015,7 @@ const extraGuides: Guide[] = [
       },
       {
         heading: "9. Aikerui (China)",
-        content: "Aikerui is a fast-growing Chinese manufacturer operating from a 10,000+ square meter factory in Anqing, Anhui. Unlike many Chinese suppliers, Aikerui owns and operates their own factory — they are not a trading company. They offer 30+ machine models and 360+ spare parts. Key advantages: factory-direct pricing (20-40% less than major brands), CE and ISO certifications, in-house R&D team, and direct WhatsApp/email support. They welcome factory visits and third-party inspections. Aikerui has exported to 50+ countries and serves distributors, rental companies, and facility managers worldwide. Best for: budget-conscious buyers who want quality machines at factory-direct prices."
+        content: "Aikerui is a fast-growing Chinese manufacturer operating from a 10,000+ square meter factory in Anqing, Anhui. Unlike many Chinese suppliers, Aikerui owns and operates their own factory — they are not a trading company. They offer 30+ machine models and 360+ spare parts. Key advantages: factory-direct pricing (20-40% less than major brands), CE and ISO certifications, in-house R&D team, and direct WhatsApp/email support. They welcome factory visits and independent inspections. Aikerui has exported to 50+ countries and serves distributors, rental companies, and facility managers worldwide. Best for: budget-conscious buyers who want quality machines at factory-direct prices."
       },
       {
         heading: "10. Minuteman / Ice (USA)",
@@ -3796,7 +3796,7 @@ const extraGuides: Guide[] = [
     slug: "how-to-verify-floor-scrubber-manufacturer",
     title: "How to Verify a Floor Scrubber Manufacturer: 7 Red Flags to Avoid Fake Factories",
     description:
-      "Learn how to verify a floor scrubber manufacturer before sending money. 7 verification steps: live video tour, business license check, third-party inspection, sample orders. Avoid trading company scams.",
+      "Learn how to verify a floor scrubber manufacturer before sending money. 7 verification steps: live video tour, business license check, independent inspection, sample orders. Avoid trading company scams.",
     category: "buying-guide",
     readTime: "6 min",
     difficulty: "intermediate",
@@ -3812,7 +3812,7 @@ const extraGuides: Guide[] = [
       },
       {
         heading: "We Pass All 7 Checks",
-        content: "Aikerui welcomes live video tours, third-party inspections, and sample orders. Our ISO 9001 and CE certificates are verifiable. We provide customer references on request. Factory-direct means you deal directly with the manufacturer — no middlemen.",
+        content: "Aikerui welcomes live video tours, independent inspections, and sample orders. Our ISO 9001 and CE certificates are verifiable. We provide customer references on request. Factory-direct means you deal directly with the manufacturer — no middlemen.",
       },
     ],
     relatedProducts: [],
@@ -4016,7 +4016,7 @@ const extraGuides: Guide[] = [
         items: [
           "1. Ask for a live video call from the factory floor, not a pre-recorded clip.",
           "2. Check the business license matches the factory address.",
-          "3. Request third-party inspection (SGS or BV) before payment.",
+          "3. Request independent inspection (SGS or BV) before payment.",
           "4. Ask for export records and customs documentation.",
           "5. Start with a sample order before a container order.",
         ],

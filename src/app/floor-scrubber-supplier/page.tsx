@@ -92,7 +92,7 @@ export default function SupplierPage() {
               {
                 icon: Factory,
                 title: "Real Manufacturer, Not a Trading Company",
-                desc: "We own our production facility. You can visit, video tour, or send a third-party inspector. Most 'suppliers' on Alibaba are traders who add 20-30% markup.",
+                desc: "We own our production facility. You can visit, video tour, or send a independent inspector. Most 'suppliers' on Alibaba are traders who add 20-30% markup.",
                 highlight: "Verified: 10,000+㎡ Owned Factory",
               },
               {
@@ -110,7 +110,7 @@ export default function SupplierPage() {
               {
                 icon: Shield,
                 title: "Quality You Can Verify Before Paying",
-                desc: "Request a video inspection of your specific order before shipment. Accept third-party quality inspection (SGS/Bureau Veritas). Sample orders welcome.",
+                desc: "Request a video inspection of your specific order before shipment. Accept independent quality inspection (SGS/Bureau Veritas). Sample orders welcome.",
                 highlight: "Pre-Shipment Inspection Available",
               },
               {
