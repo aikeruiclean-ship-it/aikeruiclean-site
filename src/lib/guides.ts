@@ -4106,4 +4106,74 @@ const extraGuides: Guide[] = [
     ],
     relatedProducts: ["K500BT", "K660"],
   },
+  {
+    slug: "floor-scrubber-disc-brush-replacement-tips",
+    title: "Floor Scrubber Disc Brush: 5 Tips to Get More Life from Your Brush",
+    description: "Get more life from your floor scrubber disc brush with these 5 factory tips. Proper care, rotation, and storage can double brush life and save money.",
+    category: "maintenance",
+    readTime: "4 min",
+    difficulty: "beginner",
+    published: "2026-08-11",
+    videoId: "IfTGVM4OC_k",
+    sections: [
+      {
+        heading: "Your Disc Brush Is a Wear Part",
+        content: "A floor scrubber disc brush wears down with every pass. But how fast it wears is largely in your control. Watch the video to see a factory disc brush in action, then use these 5 tips to make every brush last longer.",
+      },
+      {
+        heading: "Tip 1: Match the Brush to the Floor",
+        content: "Using the right bristle for your floor is the biggest factor in brush life.",
+        items: [
+          "Nylon medium: daily cleaning on most floors — longest life for daily use.",
+          "PPL stiff: heavy grease only — do not use on sealed floors.",
+          "Abrasive: stripping only — never daily, it grinds away fast.",
+          "Steel wire: heavy grime only — the most aggressive, shortest life.",
+        ],
+      },
+      {
+        heading: "Tip 2: Set Correct Brush Pressure",
+        content: "Too much pressure wears bristles fast and strains the motor. Set brush pressure so the brush just touches the floor. Most machines have a pressure dial — start at the lowest setting that still cleans well, and increase only as needed.",
+      },
+      {
+        heading: "Tip 3: Rotate Two Brushes",
+        content: "If you use your scrubber daily, buy two brushes and rotate them weekly. Each brush wears evenly while the other rests, and the bristles recover their shape. Two brushes rotated last longer than one used continuously.",
+      },
+      {
+        heading: "Tip 4: Rinse and Dry After Use",
+        content: "Chemicals and grime left on the brush eat the bristles and backing. After each shift:",
+        items: [
+          "Rinse the brush with clean water.",
+          "Let it dry completely before storing.",
+          "Store upright so bristles are not compressed.",
+          "Keep out of direct sunlight — UV damages nylon.",
+        ],
+      },
+      {
+        heading: "Tip 5: Know When to Replace",
+        content: "Replacing at the right time saves money. Running a worn brush wastes chemical, strains the motor, and can scratch your floor. Replace when:",
+        items: [
+          "Bristle height is below 12 mm (half of original).",
+          "Bristles are flattened or broken.",
+          "Streaks appear even with a fresh squeegee blade.",
+        ],
+      },
+      {
+        heading: "Brush Life Cheat Sheet",
+        content: "Quick reference for how long a disc brush should last:",
+        table: {
+          headers: ["Usage", "Nylon", "PPL", "Abrasive"],
+          rows: [
+            ["Daily on smooth floors", "3-6 months", "2-4 months", "1-2 months"],
+            ["Daily on rough concrete", "1-3 months", "1-2 months", "2-4 weeks"],
+            ["Light use (weekly)", "6-12 months", "4-8 months", "2-4 months"],
+          ],
+        },
+      },
+      {
+        heading: "Buy Factory-Direct and Save",
+        content: "A disc brush costs 45 to 75 USD factory-direct, versus 100 to 250 USD at dealers. Same nylon, same bristle density, no middleman markup. Browse all brushes at aikeruiclean.com/parts and get pricing at aikeruiclean.com/floor-scrubber-parts-quote.",
+      },
+    ],
+    relatedProducts: ["K500BT", "K660"],
+  },
 ];

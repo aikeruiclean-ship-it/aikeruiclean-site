@@ -10,6 +10,7 @@ const LOCAL_VIDEOS: Record<string, string> = {
   // videoId → local mp4 path (upload to public/videos/)
   XrHK1POi7yY: "/videos/steel-wire-brush.mp4",
   fuP35AeMNGk: "/videos/disc-brush.mp4",
+  IfTGVM4OC_k: "/videos/disc-brush-buying.mp4",
 };
 
 export function YouTubeLink({
