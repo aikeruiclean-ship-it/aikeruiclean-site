@@ -56,20 +56,22 @@ export function YouTubeLink({
           />
         </div>
       )}
-      {/* Fallback link for contexts where iframe is blocked */}
-      <div className="mt-2 text-center">
-        <Link
-          href={`https://www.youtube.com/watch?v=${videoId}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-1 text-sm text-primary hover:text-primary-light transition-colors"
-        >
-          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M8 5v14l11-7z" />
-          </svg>
-          Watch on YouTube
-        </Link>
-      </div>
+      {/* Fallback link for contexts where iframe is blocked — only when no local video */}
+      {!localVideo && (
+        <div className="mt-2 text-center">
+          <Link
+            href={`https://www.youtube.com/watch?v=${videoId}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 text-sm text-primary hover:text-primary-light transition-colors"
+          >
+            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z" />
+            </svg>
+            Watch on YouTube
+          </Link>
+        </div>
+      )}
     </div>
   );
 }
