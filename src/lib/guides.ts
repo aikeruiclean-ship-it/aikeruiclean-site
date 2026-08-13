@@ -365,10 +365,73 @@ const guides: Guide[] = [
       },
       {
         heading: "See Our Disc Brushes in Action",
-        content: "Watch our disc brush video showing the manufacturing process, quality testing, and compatibility with major floor scrubber brands.",
+        content: "Watch our disc brush video showing the manufacturing process, quality testing, and compatibility with major floor scrubber brands. New: see our nylon disc brush for daily cleaning with soft brush plate and even liquid output, service life up to 1000 hours - https://youtube.com/shorts/BefigJiHseI",
       },
     ],
     relatedProducts: ["K500BT", "K660"],
+  },
+  {
+    slug: "shampoo-disc-brush-guide",
+    title: "Shampoo Disc Brush for Floor Scrubbers: Custom Nylon & Abrasive Brushes",
+    description: "Shampoo disc brush for floor scrubbers — custom nylon and abrasive brushes for deep cleaning and shampoo application. NP-9200 compatible with Tennant, Nilfisk, Viper and OEM machines, 1000-2800 RPM, 1000 hours service life.",
+    category: "product-showcase",
+    readTime: "4 min",
+    difficulty: "beginner",
+    published: "2026-08-13",
+    videoId: "shampoo-disc-brush",
+    sections: [
+      {
+        heading: "What Is a Shampoo Disc Brush?",
+        content: "A shampoo disc brush is a floor scrubber brush built for deep cleaning and shampoo application. It mounts on the brush deck, spins at 1000-2800 RPM, and applies cleaning solution evenly while scrubbing dirt from the floor. It is the standard choice for wash and wax programs on tiled, concrete, and sealed floors.",
+        items: [
+          "Deep cleaning for daily and periodic maintenance",
+          "Even shampoo and wax solution application",
+          "Fits most walk-behind and ride-on floor scrubbers",
+          "Custom sizes, materials, and colors available",
+        ],
+      },
+      {
+        heading: "Nylon vs Abrasive Shampoo Brushes",
+        content: "Choose the bristle material by how aggressive your cleaning job is.",
+        table: {
+          headers: ["Material", "Best For", "Notes"],
+          rows: [
+            ["Nylon", "Daily deep cleaning, even liquid application", "Soft and thorough, holds solution evenly"],
+            ["Abrasive", "Stubborn dirt, grease, industrial floors", "Strong scrubbing and cutting power"],
+          ],
+        },
+      },
+      {
+        heading: "Key Specifications",
+        content: "Performance parameters for both material options.",
+        table: {
+          headers: ["Parameter", "Nylon", "Abrasive"],
+          rows: [
+            ["Working temperature", "-10 to 110 C", "-10 to 90 C"],
+            ["Abrasion resistance", "8.2 or higher", "8.8 or higher"],
+            ["Service life", "1000 hours or more", "700 hours or more"],
+            ["Speed range", "1000-2800 RPM", "1000-2800 RPM"],
+          ],
+        },
+      },
+      {
+        heading: "Compatibility",
+        content: "This shampoo disc brush uses the standard NP-9200 2-lug mounting, compatible with most floor scrubber brands.",
+        items: [
+          "NP-9200 2-lug: Tennant, Nilfisk, Viper, and most Chinese OEM machines",
+          "Motor speed: 1000-2800 RPM",
+          "Machine type: walk-behind and ride-on floor scrubbers",
+        ],
+      },
+      {
+        heading: "Custom Options",
+        content: "Every facility has a different floor. We offer custom sizes, bristle materials, and colors for OEM and ODM orders. Tell us your machine model and floor type and we will confirm the right brush within 24 hours.",
+      },
+      {
+        heading: "See the Shampoo Disc Brush in Action",
+        content: "Watch the shampoo disc brush video showing the nylon brush plate, even liquid output, and grinding power for deep cleaning.",
+      },
+    ],
   },
   {
     slug: "top-10-floor-scrubber-disc-brushes",

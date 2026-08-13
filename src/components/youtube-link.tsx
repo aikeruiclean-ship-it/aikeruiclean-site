@@ -6,11 +6,15 @@ import Link from "next/link";
  * - Falls back to YouTube iframe embed when no local file exists
  * - Always shows a "Watch on YouTube" link as backup
  */
-const LOCAL_VIDEOS: Record<string, string> = {
-  // videoId → local mp4 path (upload to public/videos/)
-  XrHK1POi7yY: "/videos/steel-wire-brush.mp4",
-  fuP35AeMNGk: "/videos/disc-brush.mp4",
-  IfTGVM4OC_k: "/videos/disc-brush-buying.mp4",
+const LOCAL_VIDEOS: Record<string, { src: string; poster?: string }> = {
+  // videoId → local mp4 path (upload to public/videos/) + optional local poster
+  XrHK1POi7yY: { src: "/videos/steel-wire-brush.mp4" },
+  fuP35AeMNGk: { src: "/videos/disc-brush.mp4" },
+  IfTGVM4OC_k: { src: "/videos/disc-brush-buying.mp4" },
+  "shampoo-disc-brush": {
+    src: "/videos/shampoo-disc-brush.mp4",
+    poster: "/images/shampoo-disc-brush-poster.jpg",
+  },
 };
 
 export function YouTubeLink({
@@ -30,9 +34,12 @@ export function YouTubeLink({
           className="w-full aspect-video rounded-xl bg-gray-100 border-0"
           controls
           preload="none"
-          poster={`https://img.youtube.com/vi/${videoId}/mqdefault.jpg`}
+          poster={
+            localVideo.poster ??
+            `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`
+          }
         >
-          <source src={localVideo} type="video/mp4" />
+          <source src={localVideo.src} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       ) : (
