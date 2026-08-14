@@ -1851,9 +1851,7 @@
     "salePrice": null,
     "stock": null,
     "weight": null,
-    "images": [
-      "/images/parts/102013107468.webp"
-    ],
+    "images": "/images/parts/102013107468.webp",
     "brand": "Aikerui",
     "tags": [
       "parts",
@@ -2110,8 +2108,8 @@
     "featured": false,
     "visible": true,
     "category": "Parts",
-    "categoryFull": "Parts > Brush / 刷类",
-    "partSubcategory": "Brush / 刷类",
+    "categoryFull": "Parts > Other / 其他",
+    "partSubcategory": "Other / 其他",
     "shortDescription": "China Cleaning Parts Factory Lug Fixing for Scrub Brush - Industrial floor cleaning machine replacement part.",
     "description": "<h3>Overview</h3>\n<div>Universal center lock and flange components that secure the brush or pad to the scrubber drive. Snap-fit, dual thread and left-rotate options to match your machine.</div>\n<h3>Key Features</h3>\n<ul><li>Snap-fit and threaded versions available</li><li>Fits standard center hole sizes</li><li>Precision machined for wobble-free operation</li><li>Brand-specific patterns for major machines</li><li>Factory-direct pricing and OEM customization available</li></ul>",
     "price": null,
@@ -4722,8 +4720,8 @@
     "featured": false,
     "visible": true,
     "category": "Parts",
-    "categoryFull": "Parts > Other / 其他",
-    "partSubcategory": "Other / 其他",
+    "categoryFull": "Parts > Disc Brush / 盘刷",
+    "partSubcategory": "Disc Brush / 盘刷",
     "shortDescription": "China Factory Directly Sale Long Lasting TASKI Swingo XP-R BMS - Industrial floor cleaning machine replacement part.",
     "description": "<h3>Overview</h3>\n<div>Taski compatible universal spare parts and accessories for floor scrubbers and sweepers. Quality components for maintenance and repair.</div>\n<h3>Key Features</h3>\n<ul><li>Universal compatibility</li><li>Quality materials</li><li>Factory-direct pricing</li><li>Custom orders welcome</li><li>Factory-direct pricing and OEM customization available</li></ul>",
     "price": null,
@@ -4819,9 +4817,7 @@
     "salePrice": null,
     "stock": null,
     "weight": null,
-    "images": [
-      "/images/parts/12062630493.webp"
-    ],
+    "images": "/images/parts/12062630493.webp",
     "brand": "Aikerui",
     "tags": [
       "parts",
@@ -5057,9 +5053,7 @@
     "salePrice": null,
     "stock": null,
     "weight": null,
-    "images": [
-      "/images/parts/12146263221.webp"
-    ],
+    "images": "/images/parts/12146263221.webp",
     "brand": "Aikerui",
     "tags": [
       "parts",
@@ -5353,9 +5347,7 @@
     "salePrice": null,
     "stock": null,
     "weight": null,
-    "images": [
-      "/images/parts/101562835129.webp"
-    ],
+    "images": "/images/parts/101562835129.webp",
     "brand": "Aikerui",
     "tags": [
       "parts",
@@ -6183,9 +6175,7 @@
     "salePrice": null,
     "stock": null,
     "weight": null,
-    "images": [
-      "/images/parts/103851372125.webp"
-    ],
+    "images": "/images/parts/103851372125.webp",
     "brand": "Aikerui",
     "tags": [
       "parts",
@@ -6472,8 +6462,8 @@
     "featured": false,
     "visible": true,
     "category": "Parts",
-    "categoryFull": "Parts > Other / 其他",
-    "partSubcategory": "Other / 其他",
+    "categoryFull": "Parts > Brush / 刷类",
+    "partSubcategory": "Brush / 刷类",
     "shortDescription": "Tenant S20 S30 Asphalt Road Cement Floor Push Dust Cleaner Industrial Floor Sweeper - Industrial floor cleaning machine replacement part.",
     "description": "<h3>Overview</h3>\n<div>Tennant compatible universal spare parts and accessories for floor scrubbers and sweepers. Quality components for maintenance and repair.</div>\n<h3>Key Features</h3>\n<ul><li>Universal compatibility</li><li>Quality materials</li><li>Factory-direct pricing</li><li>Custom orders welcome</li><li>Factory-direct pricing and OEM customization available</li></ul>",
     "price": null,
@@ -6903,36 +6893,6 @@
       "parts",
       "side",
       "brush"
-    ],
-    "specs": {},
-    "inStock": true
-  },
-  {
-    "id": 8184,
-    "name": "24V, 3 Stage Vacuum Motor Suitable for Tennant T7",
-    "slug": "24v-3-stage-vacuum-motor-suitable-for-tenant-t7",
-    "sku": "104405094338",
-    "type": "simple",
-    "published": true,
-    "featured": false,
-    "visible": true,
-    "category": "Parts",
-    "categoryFull": "Parts > Vacuum Motor / 真空电机",
-    "partSubcategory": "Vacuum Motor / 真空电机",
-    "shortDescription": "24V, 3 Stage Vacuum Motor Suitable for Tenant T7 - Industrial floor cleaning machine replacement part.",
-    "description": "<h3>Overview</h3>\n<div>Tennant compatible vacuum motor that powers the recovery system of your floor scrubber. High suction, 2-stage and 3-stage options for standard machines.</div>\n<h3>Key Features</h3>\n<ul><li>2-stage and 3-stage versions</li><li>24V and 36V models</li><li>High suction performance</li><li>Direct replacement for major brands</li><li>Factory-direct pricing and OEM customization available</li></ul>",
-    "price": null,
-    "salePrice": null,
-    "stock": null,
-    "weight": null,
-    "images": [
-      "/images/parts/104405094338.webp"
-    ],
-    "brand": "Aikerui",
-    "tags": [
-      "parts",
-      "vacuum",
-      "motor"
     ],
     "specs": {},
     "inStock": true
@@ -7899,8 +7859,8 @@
     "featured": false,
     "visible": true,
     "category": "Parts",
-    "categoryFull": "Parts > Other / 其他",
-    "partSubcategory": "Other / 其他",
+    "categoryFull": "Parts > Vacuum Motor / 真空电机",
+    "partSubcategory": "Vacuum Motor / 真空电机",
     "shortDescription": "Factory Sales Floor Scrubber Spare Parts for Tennant T3/T3e/T300/T300e - Industrial floor cleaning machine replacement part.",
     "description": "<h3>Overview</h3>\n<div>Tennant compatible universal spare parts and accessories for floor scrubbers and sweepers. Quality components for maintenance and repair.</div>\n<h3>Key Features</h3>\n<ul><li>Universal compatibility</li><li>Quality materials</li><li>Factory-direct pricing</li><li>Custom orders welcome</li><li>Factory-direct pricing and OEM customization available</li></ul>",
     "price": null,
@@ -8232,9 +8192,7 @@
     "salePrice": null,
     "stock": null,
     "weight": null,
-    "images": [
-      "/images/parts/104414711336.webp"
-    ],
+    "images": "/images/parts/104414711336.webp",
     "brand": "Aikerui",
     "tags": [
       "parts",
@@ -8440,9 +8398,7 @@
     "salePrice": null,
     "stock": null,
     "weight": null,
-    "images": [
-      "/images/parts/101558344300.webp"
-    ],
+    "images": "/images/parts/101558344300.webp",
     "brand": "Aikerui",
     "tags": [
       "parts",
@@ -9703,8 +9659,8 @@
     "featured": false,
     "visible": true,
     "category": "Parts",
-    "categoryFull": "Parts > Battery / 电池",
-    "partSubcategory": "Battery / 电池",
+    "categoryFull": "Parts > Disc Brush / 盘刷",
+    "partSubcategory": "Disc Brush / 盘刷",
     "shortDescription": "Tennant T12 Compact Battery Ride-On Floor Scrubber 1220241 Polypropylene Disk Scrub Brush Assembly - Industrial floor cleaning machine replacement part.",
     "description": "<h3>Overview</h3>\n<div>Tennant compatible floor scrubber disc brush for daily deep cleaning with even liquid application and strong scrubbing power. Suitable for tile, concrete, epoxy and sealed floors.</div>\n<h3>Key Features</h3>\n<ul><li>Abrasion resistance 8.2 or higher</li><li>Service life up to 1000 hours</li><li>Fits standard 2-lug, 3-lug or 4-lug mounting</li><li>Custom sizes, materials and colors available</li><li>Factory-direct pricing and OEM customization available</li></ul>",
     "price": null,
