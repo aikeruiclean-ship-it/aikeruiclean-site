@@ -37,7 +37,7 @@ parts.forEach(p => {
   const newCat = srcCat.replace(/^Parts > /, '');
   const oldCat = (p.partSubcategory || '').replace(/^Parts > /, '');
   if (oldCat !== newCat) catFixes.push({ id: p.id, name: p.name.slice(0, 40), from: oldCat, to: newCat });
-  if (RESTORE[p.id]) p.images = '/images/parts/' + RESTORE[p.id];
+  if (RESTORE[p.id]) p.images = ['/images/parts/' + RESTORE[p.id]];
   p.categoryFull = 'Parts > ' + newCat;
   p.partSubcategory = newCat;
   keep.push(p);

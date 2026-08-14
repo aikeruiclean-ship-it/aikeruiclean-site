@@ -1851,7 +1851,9 @@
     "salePrice": null,
     "stock": null,
     "weight": null,
-    "images": "/images/parts/102013107468.webp",
+    "images": [
+      "/images/parts/102013107468.webp"
+    ],
     "brand": "Aikerui",
     "tags": [
       "parts",
@@ -4817,7 +4819,9 @@
     "salePrice": null,
     "stock": null,
     "weight": null,
-    "images": "/images/parts/12062630493.webp",
+    "images": [
+      "/images/parts/12062630493.webp"
+    ],
     "brand": "Aikerui",
     "tags": [
       "parts",
@@ -5053,7 +5057,9 @@
     "salePrice": null,
     "stock": null,
     "weight": null,
-    "images": "/images/parts/12146263221.webp",
+    "images": [
+      "/images/parts/12146263221.webp"
+    ],
     "brand": "Aikerui",
     "tags": [
       "parts",
@@ -5347,7 +5353,9 @@
     "salePrice": null,
     "stock": null,
     "weight": null,
-    "images": "/images/parts/101562835129.webp",
+    "images": [
+      "/images/parts/101562835129.webp"
+    ],
     "brand": "Aikerui",
     "tags": [
       "parts",
@@ -6175,7 +6183,9 @@
     "salePrice": null,
     "stock": null,
     "weight": null,
-    "images": "/images/parts/103851372125.webp",
+    "images": [
+      "/images/parts/103851372125.webp"
+    ],
     "brand": "Aikerui",
     "tags": [
       "parts",
@@ -8192,7 +8202,9 @@
     "salePrice": null,
     "stock": null,
     "weight": null,
-    "images": "/images/parts/104414711336.webp",
+    "images": [
+      "/images/parts/104414711336.webp"
+    ],
     "brand": "Aikerui",
     "tags": [
       "parts",
@@ -8398,7 +8410,9 @@
     "salePrice": null,
     "stock": null,
     "weight": null,
-    "images": "/images/parts/101558344300.webp",
+    "images": [
+      "/images/parts/101558344300.webp"
+    ],
     "brand": "Aikerui",
     "tags": [
       "parts",
