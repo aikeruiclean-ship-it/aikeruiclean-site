@@ -103,7 +103,7 @@ export default function ContactPage() {
 
             {/* Factory Image */}
             <div className="relative aspect-[16/9] rounded-xl overflow-hidden">
-              <Image src="/images/factory/_MG_3304.webp" alt="Aikerui factory" fill className="object-cover" sizes="400px" />
+              <Image src="/images/factory-opt/_MG_3304.webp" alt="Aikerui factory" fill className="object-cover" sizes="400px" />
             </div>
 
             <div className="p-4 bg-amber-50 rounded-xl border border-amber-200">

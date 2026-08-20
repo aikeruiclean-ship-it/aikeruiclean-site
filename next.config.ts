@@ -33,7 +33,7 @@ const nextConfig: NextConfig = {
               "style-src 'self' 'unsafe-inline'",
               "img-src 'self' data: blob: https://www.aikeruiclean.com https://aikeruiclean.com https://www.googletagmanager.com https://img.youtube.com https://www.google.com https://www.google-analytics.com https://*.doubleclick.net https://googleads.g.doubleclick.net https://www.googleadservices.com",
               "font-src 'self'",
-              "connect-src 'self' https://api.brevo.com https://*.stripe.com https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com https://analytics.google.com https://www.google-analytics.com https://googleads.g.doubleclick.net https://www.googleadservices.com https://*.g.doubleclick.net https://region1.google-analytics.com https://*.google.com",
+              "connect-src 'self' https://api.brevo.com https://*.stripe.com https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com https://analytics.google.com https://www.google-analytics.com https://ad.doubleclick.net https://googleads.g.doubleclick.net https://www.googleadservices.com https://*.g.doubleclick.net https://region1.google-analytics.com https://*.google.com",
               "frame-src 'self' https://*.stripe.com https://www.googletagmanager.com https://td.doubleclick.net https://*.doubleclick.net",
               "object-src 'none'",
               "base-uri 'self'",

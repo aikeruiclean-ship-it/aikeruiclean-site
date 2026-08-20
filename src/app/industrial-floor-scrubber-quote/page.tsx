@@ -89,7 +89,7 @@ export default function IndustrialFloorScrubberQuotePage() {
       <section className="relative bg-gradient-to-br from-primary to-primary-light text-white overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <Image
-            src="/images/factory/_MG_3302.webp"
+            src="/images/factory-opt/_MG_3302.webp"
             alt=""
             fill
             className="object-cover"
@@ -150,7 +150,7 @@ export default function IndustrialFloorScrubberQuotePage() {
             <div className="hidden lg:block relative">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden border-2 border-white/20 shadow-2xl">
                 <Image
-                  src="/images/factory/_MG_3285.webp"
+                  src="/images/factory-opt/_MG_3285.webp"
                   alt="Aikerui factory workshop"
                   fill
                   className="object-cover"
