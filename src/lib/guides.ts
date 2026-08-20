@@ -120,7 +120,7 @@ const guides: Guide[] = [
         content: "Watch our factory demonstration video showing disc brush manufacturing, quality control testing, and compatibility with major floor scrubber brands.",
       },
     ],
-    relatedProducts: ["K500BT", "K660"],
+    relatedProducts: [],
   },
   {
     slug: "how-to-choose-a-floor-scrubber",
@@ -187,11 +187,7 @@ const guides: Guide[] = [
           "Aikerui offers a full range of walk-behind and ride-on scrubbers designed for global industrial applications. Our machines feature durable steel frames, reliable motor systems, and easy-to-service components. With CE certification, competitive pricing, and a 1-year warranty, Aikerui provides excellent value for distributors, rental companies, and facility managers worldwide. All machines come with detailed manuals and video support.",
       },
     ],
-    relatedProducts: [
-      "AK-560B",
-      "AK-700LPG",
-      "K500BT",
-    ],
+    relatedProducts: [],
   },
   {
     slug: "walk-behind-vs-ride-on-scrubber-overview",
@@ -240,7 +236,7 @@ const guides: Guide[] = [
           "Use this simple matrix to decide: if your facility is under 20,000 sq ft, has narrow aisles (under 5 ft wide), or requires cleaning across multiple floors, choose a walk-behind. If your facility is over 40,000 sq ft with wide aisles, operates on a single level, and you clean for 4+ hours per day, choose a ride-on. Between 20,000–40,000 sq ft, consider factors like budget, operator availability, and growth plans.",
       },
     ],
-    relatedProducts: ["AK-560B", "AK-700LPG", "K500BT", "K300BT"],
+    relatedProducts: [],
   },
   {
     slug: "how-to-maintain-floor-scrubber-battery",
@@ -294,7 +290,7 @@ const guides: Guide[] = [
           "If your scrubber runs for less time than usual, check the battery voltage, water levels (lead-acid), and charging cycle. For lead-acid, sulfation from undercharging is the most common failure. For lithium, cell imbalance or BMS failure are more common but rare. A multimeter reading of less than 20V for a 24V system (below 10V per battery) indicates failed cells that need replacement.",
       },
     ],
-    relatedProducts: ["K500BT", "K300BT", "AK-560B", "AK-700LPG"],
+    relatedProducts: [],
   },
   {
     slug: "floor-scrubber-disc-brush-buying-guide",
@@ -368,7 +364,7 @@ const guides: Guide[] = [
         content: "Watch our disc brush video showing the manufacturing process, quality testing, and compatibility with major floor scrubber brands. New: see our nylon disc brush for daily cleaning with soft brush plate and even liquid output, service life up to 1000 hours - https://youtube.com/shorts/BefigJiHseI",
       },
     ],
-    relatedProducts: ["K500BT", "K660"],
+    relatedProducts: [],
   },
   {
     slug: "shampoo-disc-brush-guide",
@@ -510,7 +506,7 @@ const guides: Guide[] = [
         content: "We manufacture 98 disc brush models in our ISO 9001 certified factory in Anqing, China. All 10 types above are available factory-direct. Custom sizes and materials welcome for OEM and ODM orders.",
       },
     ],
-    relatedProducts: ["K500BT", "K660"],
+    relatedProducts: [],
   },
   {
     slug: "tennant-scrubber-parts-guide",
@@ -581,7 +577,7 @@ const guides: Guide[] = [
         content: "Browse our full parts catalog for Tennant and other brands at aikeruiclean.com/parts. Get a quote at aikeruiclean.com/floor-scrubber-parts-quote. We ship worldwide within 24 hours for in-stock items.",
       },
     ],
-    relatedProducts: ["K500BT", "K660"],
+    relatedProducts: [],
   },
   {
     slug: "nilfisk-scrubber-parts-guide",
@@ -651,7 +647,7 @@ const guides: Guide[] = [
         content: "Browse our full parts catalog for Nilfisk and other brands at aikeruiclean.com/parts. Get a quote at aikeruiclean.com/floor-scrubber-parts-quote. We ship worldwide within 24 hours for in-stock items.",
       },
     ],
-    relatedProducts: ["K500BT", "K660"],
+    relatedProducts: [],
   },
   {
     slug: "karcher-scrubber-parts-guide",
@@ -722,7 +718,7 @@ const guides: Guide[] = [
         content: "Browse our full parts catalog for Karcher and other brands at aikeruiclean.com/parts. Get a quote at aikeruiclean.com/floor-scrubber-parts-quote. We ship worldwide within 24 hours for in-stock items.",
       },
     ],
-    relatedProducts: ["K500BT", "K660"],
+    relatedProducts: [],
   },
   {
     slug: "viper-scrubber-parts-guide",
@@ -793,7 +789,7 @@ const guides: Guide[] = [
         content: "Browse our full parts catalog for Viper and other brands at aikeruiclean.com/parts. Get a quote at aikeruiclean.com/floor-scrubber-parts-quote. We ship worldwide within 24 hours for in-stock items.",
       },
     ],
-    relatedProducts: ["K500BT", "K660"],
+    relatedProducts: [],
   },
   {
     slug: "top-10-floor-scrubber-roller-brushes",
@@ -872,7 +868,7 @@ const guides: Guide[] = [
         content: "Browse our full roller brush and parts catalog at aikeruiclean.com/parts. Get a quote at aikeruiclean.com/floor-scrubber-parts-quote. We ship worldwide within 24 hours for in-stock items.",
       },
     ],
-    relatedProducts: ["K500BT", "K660"],
+    relatedProducts: [],
   },
   {
     slug: "floor-scrubber-brush-replacement-guide",
@@ -951,7 +947,7 @@ const guides: Guide[] = [
         content: "Browse our full brush catalog at aikeruiclean.com/parts. Find your machine brand and size, or send us a photo and we will confirm compatibility within 24 hours. Get a quote at aikeruiclean.com/floor-scrubber-parts-quote. We ship worldwide within 24 hours for in-stock items.",
       },
     ],
-    relatedProducts: ["K500BT", "K660"],
+    relatedProducts: [],
   },
 ];
 
@@ -992,7 +988,7 @@ const extraGuides: Guide[] = [
       { heading: "Pre-Operation Checklist", content: "Before your first cleaning run, complete this checklist.", items: ["Fill solution tank with water", "Test all controls: drive, brush, squeegee", "Watch the installation video on YouTube for visual guidance"] },
     ],
     videoId: "BZCQnHQD5tI",
-    relatedProducts: ["K500BT", "A650T", "A380"],
+    relatedProducts: [],
   },
   {
     slug: "floor-scrubber-daily-operation-best-practices",
@@ -1008,7 +1004,7 @@ const extraGuides: Guide[] = [
       { heading: "Proper Scrubbing Technique", content: "Overlap each pass by 4-6 inches to avoid streaks.", items: ["Overlap passes by 4-6 inches", "Slow down on heavily soiled areas", "Raise squeegee when turning", "Work from cleanest to dirtiest areas"] },
       { heading: "Post-Operation Maintenance", content: "After each shift, empty and rinse both tanks.", items: ["Empty and rinse both tanks", "Remove and rinse squeegee blades", "Wipe down machine body", "Charge lead-acid batteries immediately"] },
     ],
-    relatedProducts: ["K500BT", "A500BT", "A1000"],
+    relatedProducts: [],
   },
   {
     slug: "a50-walk-behind-scrubber-features",
@@ -1024,7 +1020,7 @@ const extraGuides: Guide[] = [
       { heading: "Cleaning Performance", content: "The 550W brush motor delivers effective scrubbing on various floor types.", items: ["Brush motor: 550W", "Productivity: ~2,200 m²/hour", "Noise level: 65dB"] },
       { heading: "Battery and Runtime", content: "Powered by a 24V system with maintenance-free battery.", items: ["Voltage: 24V", "Runtime: 3-4 hours", "Charging time: 5-6 hours"] },
     ],
-    relatedProducts: ["A50", "A380", "A330"],
+    relatedProducts: [],
   }
 ,
   {
@@ -1097,7 +1093,7 @@ const extraGuides: Guide[] = [
         content: "The floor scrubber market offers options for every budget and requirement. Established global brands provide peace of mind but at a premium price. Factory-direct manufacturers offer significant savings but require more due diligence. For buyers who value transparency and cost savings, Aikerui offers a compelling combination of quality, factory-direct pricing, and responsive support. Whichever manufacturer you choose, always verify their credentials, request references, and inspect the product before purchasing."
       }
     ],
-    relatedProducts: ["K500BT", "A650T", "K660", "A380"],
+    relatedProducts: [],
   },
   // ── Troubleshooting Guides ──
   {
@@ -1154,6 +1150,76 @@ const extraGuides: Guide[] = [
     ],
     videoId: "JwAKLzf4JAY",
     relatedProducts: [],
+  },
+  {
+    slug: "top-10-floor-scrubber-squeegee-blades",
+    title: "Top 10 Floor Scrubber Squeegee Blades 2026: NR vs PU Materials Ranked",
+    description: "The 10 best floor scrubber squeegee blades ranked by material, hardness, and machine compatibility. Natural rubber vs polyurethane (PU), front and rear blades, and factory-direct pricing.",
+    category: "buying-guide",
+    readTime: "7 min",
+    difficulty: "beginner",
+    published: "2026-08-14",
+    videoId: "JwAKLzf4JAY",
+    sections: [
+      {
+        heading: "Why a Squeegee Blade Ranking Matters",
+        content: "The squeegee is the part of your floor scrubber that actually picks up the water — a worn or wrong squeegee leaves streaks, wet floors, and re-soiling. Squeegee blades come in natural rubber (NR) and polyurethane (PU), each with a different hardness and service life. This ranking covers the 10 squeegee blade categories that fit most facilities, ranked by value and reliability.",
+      },
+      {
+        heading: "The Top 10 Squeegee Blades Ranked",
+        content: "Here are the 10 squeegee blade categories that cover most facilities, ranked by overall value.",
+        items: [
+          "1. Natural Rubber (NR) Standard Blade — The best all-rounder. Flexible and self-healing, ideal for tile, concrete, and sealed floors. Budget-friendly and easy to replace.",
+          "2. Polyurethane (PU) Blade — For high-abrasion floors. Lasts 2-3x longer than NR and resists chemicals, oils, and wear. Higher upfront cost, lower cost per hour.",
+          "3. NR Soft Front Blade — For polished or coated floors. Softer edge reduces squeal and protects floor finish during recovery.",
+          "4. PU Rear Blade Kit — The workhorse rear blade on ride-on machines. Strong water pickup at speed, common on Tennant and Nilfisk cylindrical scrubbers.",
+          "5. Cold Storage NR Blade — For freezer and cold-room facilities. Stays flexible below freezing where standard rubber hardens and skips.",
+          "6. Heavy-Duty Industrial PU Blade — For warehouses and factories with chemical residue. Maximum chemical resistance and abrasion tolerance.",
+          "7. Streak-Free Dual Hardness Blade — A composite blade with a firm body and soft wiping edge. Minimizes streaks on smooth floors.",
+          "8. Tennant-Compatible Squeegee — Exact-fit blades and assemblies for Tennant walk-behind and ride-on machines, 24-36 inch widths.",
+          "9. Nilfisk / Karcher-Compatible Squeegee — Replacement blades and complete assemblies for Nilfisk and Karcher scrubbers, including clip-on and bolt-on styles.",
+          "10. Custom Length Squeegee Blade — When your machine needs a non-standard width, angle, or material. We manufacture to your original dimensions.",
+        ],
+      },
+      {
+        heading: "NR vs PU: Which Squeegee Material Wins?",
+        content: "Choose squeegee material by your floor type, chemical usage, and how often you replace blades.",
+        table: {
+          headers: ["Material", "Best For", "Notes"],
+          rows: [
+            ["Natural Rubber (NR)", "Tile, concrete, sealed floors", "Flexible, self-healing, low cost, shorter life"],
+            ["Polyurethane (PU)", "Abrasive, chemical-heavy floors", "2-3x longer life, chemical resistant, higher price"],
+          ],
+        },
+      },
+      {
+        heading: "Front vs Rear Squeegee Blades",
+        content: "Most scrubber squeegees use two blades: a front blade that wipes the water forward and a rear blade that lifts it into the vacuum shoe. Replace both at the same time for even pickup.",
+        items: [
+          "Front blade: softer, wipes solution and debris toward the center",
+          "Rear blade: firmer, forms the seal that lifts water into the recovery shoe",
+          "Flip or replace: some blades are double-edged and can be flipped for a second life",
+        ],
+      },
+      {
+        heading: "How to Match a Squeegee to Your Machine",
+        content: "A squeegee is defined by three numbers: width, mounting type, and blade material. Send us your machine model or original part number and we will confirm the exact fit within 24 hours.",
+        items: [
+          "Width in inches (18-48 inch squeegees cover most walk-behind and ride-on machines)",
+          "Mounting: bolt-on, clip-on, or pivot style",
+          "Material: NR or PU based on your floor and chemicals",
+        ],
+      },
+      {
+        heading: "Squeegee Blade Care and Replacement Timing",
+        content: "Replace squeegee blades when you see streaks, squealing, or slower water pickup. On daily operation, NR blades typically last 1-2 months and PU blades 3-6 months. Rotate blades if you run multiple shifts.",
+        items: [
+          "Inspect weekly for nicks, cracks, and worn edges",
+          "Clean the squeegee and vacuum shoe after each shift",
+          "Store spare blades flat, away from sunlight and heat",
+        ],
+      },
+    ],
   },
   {
     slug: "brush-motor-not-spinning",
@@ -1431,7 +1497,7 @@ const extraGuides: Guide[] = [
           "Some manufacturers offer a 'stand-on' scrubber that splits the difference — the operator stands on a rear platform rather than sitting. These combine the maneuverability of a walk-behind with the speed of a ride-on, and are increasingly popular for medium-sized facilities. However, they are less common and may have fewer options for attachments and accessories.",
       },
     ],
-    relatedProducts: ["K500BT", "A660T", "RS32", "K660"],
+    relatedProducts: [],
   },
   {
     slug: "disc-brush-vs-roller-brush-scrubber",
@@ -1474,7 +1540,7 @@ const extraGuides: Guide[] = [
           "Disc brushes and pads are generally cheaper to replace than roller brushes — typically $30-80 per disc brush versus $150-400 per roller brush. However, roller brushes often last longer on rough floors because the wear is distributed across a larger surface. For most smooth-floor facilities, disc brushes offer the lowest ongoing consumable cost. For textured floors where disc brushes wear quickly, roller brushes are more economical in the long run.",
       },
     ],
-    relatedProducts: ["K500BT", "A660T"],
+    relatedProducts: [],
   },
   {
     slug: "lead-acid-vs-lithium-battery-scrubber",
@@ -1521,7 +1587,7 @@ const extraGuides: Guide[] = [
           "Lead-acid batteries remain a good choice for facilities with low daily usage, tight initial budgets, or operations in very cold environments where lithium performance degrades. They're also appropriate for backup or occasional-use machines where the battery sits idle for extended periods — lead-acid tolerates deep discharge better if recharged immediately afterward.",
       },
     ],
-    relatedProducts: ["K500BT", "K660", "A380"],
+    relatedProducts: [],
   },
   // ── Top 10 Article ──
   {
@@ -1735,7 +1801,7 @@ const extraGuides: Guide[] = [
         content: "If you have a large budget, need on-site service contracts, and operate in North America or Western Europe, Tennant or Nilfisk are the safe choices. If you value factory-direct pricing, want OEM flexibility, and are willing to manage international logistics, Aikerui offers comparable quality at 30-50% less. For buyers in emerging markets, Aikerui and Gaomei provide the best value. Always verify certifications, request a factory tour, and start with a sample order — regardless of which manufacturer you choose.",
       },
     ],
-    relatedProducts: ["K500BT", "A660T", "K660", "A650T"],
+    relatedProducts: [],
   },
   // ── Parts Guide ──
   {
@@ -2012,7 +2078,7 @@ const extraGuides: Guide[] = [
       },
     ],
     videoId: "aUVk1TcVSwQ",
-    relatedProducts: ["K500BT", "A650T", "A660T", "K660"],
+    relatedProducts: [],
   },
   // ── Floor Scrubber Cost Guide ──
   {
@@ -2146,7 +2212,7 @@ const extraGuides: Guide[] = [
       },
     ],
     videoId: "DlMt7Q-ncXs",
-    relatedProducts: ["K500BT", "A650T", "A660T", "K660"],
+    relatedProducts: [],
   },
   // ── Small Business Guide ──
   {
@@ -2252,7 +2318,7 @@ const extraGuides: Guide[] = [
         content: "Tell us about your business — floor type, square footage, and cleaning frequency. We'll recommend the right machine at factory-direct pricing. Most small business orders ship within 48 hours.",
       },
     ],
-    relatedProducts: ["K500BT", "A380"],
+    relatedProducts: [],
   },
   // ── Food Processing Guide ──
   {
@@ -2310,7 +2376,7 @@ const extraGuides: Guide[] = [
         content: "Tell us your food sector, floor area, and sanitation schedule. We'll recommend a food-grade machine with proper certifications. Factory-direct pricing — no dealer markup.",
       },
     ],
-    relatedProducts: ["K500BT"],
+    relatedProducts: [],
   },
   // ── Hospital Guide ──
   {
@@ -2369,7 +2435,7 @@ const extraGuides: Guide[] = [
         content: "Tell us your facility type, floor area, and cleaning zones. We'll recommend the right medical-grade machine. Factory-direct pricing saves your facility 30-40% vs. medical equipment suppliers.",
       },
     ],
-    relatedProducts: ["K500BT", "A380"],
+    relatedProducts: [],
   },
   // ── Hotel & Hospitality Guide ──
   {
@@ -2411,7 +2477,7 @@ const extraGuides: Guide[] = [
         content: "Tell us about your property — number of rooms, floor types, and current cleaning schedule. We'll recommend the right equipment mix. Factory-direct pricing for hospitality groups.",
       },
     ],
-    relatedProducts: ["K500BT", "A380", "K660"],
+    relatedProducts: [],
   },
   // ── Import from China Guide ──
   {
@@ -2495,7 +2561,7 @@ const extraGuides: Guide[] = [
         content: "Ready to import? Tell us which models you're interested in, your country, and order quantity. We'll provide a detailed quote including shipping and estimated duties. Sample units available for evaluation before committing to volume orders.",
       },
     ],
-    relatedProducts: ["K500BT", "A650T", "A660T", "K660"],
+    relatedProducts: [],
   },
   // ── OEM vs Aftermarket Parts ──
   {
@@ -2602,7 +2668,7 @@ const extraGuides: Guide[] = [
         content: "Tell us about your campus — building count, floor types, and current cleaning staff. We'll recommend the right equipment mix for your budget. Education discounts available on bulk orders.",
       },
     ],
-    relatedProducts: ["K500BT", "A380", "K660"],
+    relatedProducts: [],
   },
   // ── Parking Garage Guide ──
   {
@@ -2637,7 +2703,7 @@ const extraGuides: Guide[] = [
         content: "Tell us about your facility — number of levels, total square footage, and whether it's open-air or covered. We'll recommend the right machine. Factory-direct pricing for parking operators.",
       },
     ],
-    relatedProducts: ["K660", "A660T"],
+    relatedProducts: [],
   },
   // ── Warehouse Equipment Guide ──
   {
@@ -2677,7 +2743,7 @@ const extraGuides: Guide[] = [
         content: "Tell us your square footage, number of shifts, and aisle configuration. We'll design a cleaning fleet with the right equipment mix. Fleet discounts available on 3+ machines. Factory-direct pricing.",
       },
     ],
-    relatedProducts: ["K660", "A660T", "RS32"],
+    relatedProducts: [],
   },
   // ── Maintenance Schedule ──
   {
@@ -2795,7 +2861,7 @@ const extraGuides: Guide[] = [
         content: "For facilities over 50,000 sq ft, in-house cleaning with factory-direct equipment almost always beats outsourced services on both cost and quality. The breakeven point is typically 3-6 months.",
       },
     ],
-    relatedProducts: ["K660", "A660T"],
+    relatedProducts: [],
   },
   // ── Case Study 2: Manufacturing Plant ──
   {
@@ -2837,7 +2903,7 @@ const extraGuides: Guide[] = [
         content: "For manufacturing plants, a proper ride-on scrubber with degreasing capability isn't just about cleanliness — it's about safety, compliance, and passing supplier audits. The machine paid for itself in reduced labor and eliminated slip incidents within 6 months.",
       },
     ],
-    relatedProducts: ["K660", "A660T"],
+    relatedProducts: [],
   },
   // ── Case Study 3: Supermarket Chain ──
   {
@@ -2878,7 +2944,7 @@ const extraGuides: Guide[] = [
         content: "For multi-site operations, the savings from factory-direct sourcing multiply dramatically. A $6,500 saving per machine × 12 stores = $78,000 that goes straight to the bottom line. Standardization across locations reduces training time and parts inventory complexity.",
       },
     ],
-    relatedProducts: ["K500BT", "A380"],
+    relatedProducts: [],
   },
   // ── ROI Calculator ──
   {
@@ -2969,7 +3035,7 @@ const extraGuides: Guide[] = [
         content: "Tell us your facility size, current cleaning method, and labor costs. We'll calculate your personalized ROI with a factory-direct machine — typically 100-400% annual returns with payback under 12 months. No obligation, just math.",
       },
     ],
-    relatedProducts: ["K500BT", "A660T", "K660"],
+    relatedProducts: [],
   },
   // ── Week 5 Articles ──
   {
@@ -3211,7 +3277,7 @@ const extraGuides: Guide[] = [
         content: "Tell us which machine you're interested in and your preferred payment method. We'll provide a detailed quote with all available payment terms. No obligation, no credit check for quote requests.",
       },
     ],
-    relatedProducts: ["K500BT", "K660"],
+    relatedProducts: [],
   },
   // ── Used vs New ──
   {
@@ -3299,7 +3365,7 @@ const extraGuides: Guide[] = [
         content: "Tell us your facility size and floor types. We'll recommend the right machine at factory-direct pricing. Most gym orders ship within 48 hours.",
       },
     ],
-    relatedProducts: ["K500BT", "A380"],
+    relatedProducts: [],
   },
   // ── International Shipping ──
   // ── Church & Venue ──
@@ -3336,7 +3402,7 @@ const extraGuides: Guide[] = [
         content: "Tell us about your facility — floor types, square footage, and cleaning frequency. We'll recommend the right machine. Factory-direct pricing for churches and non-profit organizations.",
       },
     ],
-    relatedProducts: ["K500BT", "A380"],
+    relatedProducts: [],
   },
   // ── Top 10 Industrial Cleaning Equipment Manufacturers ──
   {
@@ -3412,7 +3478,7 @@ const extraGuides: Guide[] = [
         content: "We recommend getting quotes from at least 3 manufacturers before buying. Include one factory-direct option in your comparison. You'll be surprised at the price difference for the same specifications.",
       },
     ],
-    relatedProducts: ["K500BT", "A660T", "K660"],
+    relatedProducts: [],
   },
   // ── Niche: Dust/Sand/Soil environments ──
   {
@@ -3800,7 +3866,7 @@ const extraGuides: Guide[] = [
         content: "Compact 17-20 inch walk-behind. Ultra-quiet for classroom cleaning during off-hours. Lithium battery for opportunity charging between shifts. Small enough to store in a janitor's closet. Factory-direct price: $1,800-3,200.",
       },
     ],
-    relatedProducts: ["K500BT", "A380"],
+    relatedProducts: [],
   },
   // ── Logistics Center ──
   {
@@ -3826,7 +3892,7 @@ const extraGuides: Guide[] = [
         content: "Lithium batteries with opportunity charging eliminate the need for spare batteries and dedicated charging rooms. Charge during operator breaks and shift changes. For lead-acid fleets, budget 1 spare battery per machine plus a ventilated charging room.",
       },
     ],
-    relatedProducts: ["K660", "A660T"],
+    relatedProducts: [],
   },
   // ── Auto Dealership Guide ──
   {
@@ -3852,7 +3918,7 @@ const extraGuides: Guide[] = [
         content: "One compact ride-on (28-34 inch) for showroom and customer areas. One walk-behind with degreasing for service bays. Factory-direct pricing for both: $8,000-15,000 total — less than one month's advertising budget.",
       },
     ],
-    relatedProducts: ["K660"],
+    relatedProducts: [],
   },
   // ── OEM Factory Verification ──
   {
@@ -3971,7 +4037,7 @@ const extraGuides: Guide[] = [
       ]},
       { heading: "Ready to Import?", content: "We ship floor scrubbers and parts to 50+ countries. All shipments include commercial invoice, packing list, ISPM 15 certified crating, and marine insurance. Tell us your destination port for a door-to-door shipping quote within 24 hours." },
     ],
-    relatedProducts: ["K500BT", "K660"],
+    relatedProducts: [],
   },
   {
     slug: "floor-scrubber-clutch-plate-pad-driver-guide",
@@ -4046,7 +4112,7 @@ const extraGuides: Guide[] = [
         content: "Watch our short video showing the different clutch plate and pad driver types side by side — NP-9200, 3-lug center lock, and 4-lug European style — so you can identify yours at a glance.",
       },
     ],
-    relatedProducts: ["K500BT", "K660"],
+    relatedProducts: [],
   },
   {
     slug: "inside-aikerui-factory-tour",
@@ -4104,7 +4170,7 @@ const extraGuides: Guide[] = [
         content: "Browse our machines at aikeruiclean.com/products and replacement parts at aikeruiclean.com/parts. Get factory-direct pricing at aikeruiclean.com/floor-scrubber-parts-quote. We reply within 24 hours.",
       },
     ],
-    relatedProducts: ["K500BT", "K660"],
+    relatedProducts: [],
   },
   {
     slug: "steel-wire-floor-scrubber-brush-guide",
@@ -4167,7 +4233,7 @@ const extraGuides: Guide[] = [
         content: "Browse our full brush range at aikeruiclean.com/parts. Get factory-direct pricing at aikeruiclean.com/floor-scrubber-parts-quote. We ship worldwide within 24 hours for in-stock items.",
       },
     ],
-    relatedProducts: ["K500BT", "K660"],
+    relatedProducts: [],
   },
   {
     slug: "floor-scrubber-disc-brush-replacement-tips",
@@ -4237,6 +4303,6 @@ const extraGuides: Guide[] = [
         content: "A disc brush costs 45 to 75 USD factory-direct, versus 100 to 250 USD at dealers. Same nylon, same bristle density, no middleman markup. Browse all brushes at aikeruiclean.com/parts and get pricing at aikeruiclean.com/floor-scrubber-parts-quote.",
       },
     ],
-    relatedProducts: ["K500BT", "K660"],
+    relatedProducts: [],
   },
 ];
