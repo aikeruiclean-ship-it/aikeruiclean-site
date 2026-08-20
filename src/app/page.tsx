@@ -38,7 +38,7 @@ export default function HomePage() {
     "Floor Sweepers": "/images/categories/floor-sweepers.webp",
     "Dust-pushing carts": "/images/categories/dust-carts.webp",
     "Carpet Extractor Washers": "/images/categories/carpet-extractors.webp",
-    Parts: "/images/categories/parts.png",
+    Parts: "/images/categories/parts.webp",
   };
 
   // Reorder: Parts first, then the rest
