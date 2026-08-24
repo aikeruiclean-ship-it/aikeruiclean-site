@@ -15,6 +15,7 @@ const LOCAL_VIDEOS: Record<string, { src: string; poster?: string }> = {
     src: "/videos/shampoo-disc-brush.mp4",
     poster: "/images/shampoo-disc-brush-poster.jpg",
   },
+  antibrush24: { src: "/videos/anti-tangle-brush.mp4" },
 };
 
 export function YouTubeLink({
