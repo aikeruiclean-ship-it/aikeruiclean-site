@@ -1501,7 +1501,7 @@ const extraGuides: Guide[] = [
   },
   {
     slug: "disc-brush-vs-roller-brush-scrubber",
-    title: "Disc Brush vs Roller Brush Scrubber: Complete Performance Comparison",
+    title: "Floor Scrubber Disc Brush vs Roller Brush: Complete Performance Comparison",
     description:
       "Disc brush or roller brush for your floor scrubber? Compare cleaning performance, floor type compatibility, maintenance cost, and best applications with detailed comparison table.",
     category: "comparison",
@@ -4307,7 +4307,7 @@ const extraGuides: Guide[] = [
   },
   {
     slug: "anti-tangle-floor-washer-main-brush",
-    title: "Anti-Tangle Floor Washer Main Brush: Deep Cleaning Without Hair Tangles",
+    title: "Anti-Tangle Floor Scrubber Brush: Deep Cleaning Without Hair Tangles",
     description: "Troubled by hair tangles and poor cleaning from your floor washer main brush? High-density wear-resistant bristles with moderate hardness for deep stain removal, anti-tangle, custom for multiple models.",
     category: "buying-guide",
     readTime: "4 min",
