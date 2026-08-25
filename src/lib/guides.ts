@@ -4376,4 +4376,66 @@ const extraGuides: Guide[] = [
     ],
     relatedProducts: [],
   },
+  {
+    slug: "custom-scrubber-brush-solutions",
+    title: "Custom Scrubber Brushes: Tailored to Your Machine and Floor",
+    description: "Custom-made scrubber brushes for floor scrubbers. Nylon, polypropylene, abrasive filament and more. Tailored sizes, hardness, density for commercial and industrial cleaning.",
+    category: "buying-guide",
+    readTime: "4 min",
+    difficulty: "beginner",
+    published: "2026-08-25",
+    videoId: "custombrush25",
+    sections: [
+      {
+        heading: "One Brush Does Not Fit Every Floor",
+        content: "Every floor is different — different dirt, different surfaces, different machines. A stock brush that works in one facility can fail in another. That is why we offer professional custom-made scrubber brushes for floor scrubbers. Watch the video to see custom brushes in production:",
+      },
+      {
+        heading: "Multiple Material Options",
+        content: "We support a range of bristle materials so you get the right scrubbing action for your floor:",
+        table: {
+          headers: ["Material", "Best For"],
+          rows: [
+            ["Nylon", "Daily cleaning, most floor types, gentle on surfaces"],
+            ["Polypropylene (PPL)", "Heavy grease and industrial grime"],
+            ["Abrasive filament", "Stripping and deep cleaning"],
+            ["Mixed / custom blend", "Your specific cleaning requirement"],
+          ],
+        },
+      },
+      {
+        heading: "Tailored to Your Equipment",
+        content: "Different brush types and sizes can be tailored to match your equipment models. Whether you run a walk-behind or ride-on scrubber, we produce brushes that fit your machine exactly — diameter, lug pattern, and bristle layout all matched to your model.",
+      },
+      {
+        heading: "Built to Last",
+        content: "Our brushes feature great wear resistance and stable performance. High-density tufting and quality materials mean the brush keeps its shape and cleaning power through heavy use, so you replace it less often.",
+      },
+      {
+        heading: "Adjusted to Your Cleaning Needs",
+        content: "Whether for commercial or industrial cleaning scenarios, we can adjust hardness, density, and structure according to your actual needs:",
+        items: [
+          "Hardness — soft for polished floors, stiff for heavy grime.",
+          "Density — more bristles per inch for tougher jobs.",
+          "Structure — custom center cores, diameters, and bristle patterns.",
+          "Size — matched to your specific machine model.",
+        ],
+      },
+      {
+        heading: "How to Order a Custom Brush",
+        content: "Getting the right custom brush is simple:",
+        items: [
+          "1. Tell us your machine model and floor type.",
+          "2. Share a photo of your current brush (diameter, lug pattern).",
+          "3. We recommend the best material, hardness, and density.",
+          "4. We produce and ship — typical lead time 5-15 working days.",
+        ],
+      },
+      {
+        heading: "Contact Us Today",
+        content: "Contact us today for your personalized scrubber brush solutions. Browse our standard range at aikeruiclean.com/parts, or get a custom quote at aikeruiclean.com/floor-scrubber-parts-quote. We reply within 24 hours.",
+      },
+    ],
+    relatedProducts: [],
+  },
 ];
