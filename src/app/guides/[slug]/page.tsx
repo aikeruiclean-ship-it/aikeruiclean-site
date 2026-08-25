@@ -5,6 +5,16 @@ import { Clock, BookOpen, ArrowLeft, Tag } from "@/lib/icons";
 import type { Metadata } from "next";
 import { YouTubeLink } from "@/components/youtube-link";
 
+/** Local video paths (must match youtube-link.tsx LOCAL_VIDEOS) */
+const LOCAL_VIDEO_PATHS: Record<string, string> = {
+  antibrush24: "/videos/anti-tangle-brush.mp4",
+  custombrush25: "/videos/custom-brush.mp4",
+  IfTGVM4OC_k: "/videos/disc-brush-buying.mp4",
+  "shampoo-disc-brush": "/videos/shampoo-disc-brush.mp4",
+  XrHK1POi7yY: "/videos/steel-wire-brush.mp4",
+  fuP35AeMNGk: "/videos/disc-brush.mp4",
+};
+
 interface Props {
   params: Promise<{ slug: string }>;
 }
@@ -138,21 +148,44 @@ export default async function GuideDetailPage({ params }: Props) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "VideoObject",
-              name: guide.title,
-              description: guide.description,
-              thumbnailUrl: `https://img.youtube.com/vi/${guide.videoId}/mqdefault.jpg`,
-              contentUrl: `https://www.youtube.com/shorts/${guide.videoId}`,
-              embedUrl: `https://www.youtube.com/embed/${guide.videoId}`,
-              uploadDate: guide.published || "2026-01-01",
-              publisher: {
-                "@type": "Organization",
-                name: "Aikerui",
-                logo: { "@type": "ImageObject", url: "https://aikeruiclean.com/og-image.png" },
-              },
-            }),
+            __html: JSON.stringify(
+              (() => {
+                // Local videos (in /videos/): point contentUrl to the real mp4
+                const isLocal = [
+                  "antibrush24",
+                  "custombrush25",
+                  "IfTGVM4OC_k",
+                  "shampoo-disc-brush",
+                  "XrHK1POi7yY",
+                  "fuP35AeMNGk",
+                ].includes(guide.videoId as string);
+                const base = {
+                  "@context": "https://schema.org",
+                  "@type": "VideoObject",
+                  name: guide.title,
+                  description: guide.description,
+                  uploadDate: guide.published || "2026-01-01",
+                  publisher: {
+                    "@type": "Organization",
+                    name: "Aikerui",
+                    logo: { "@type": "ImageObject", url: "https://aikeruiclean.com/og-image.png" },
+                  },
+                };
+                if (isLocal) {
+                  return {
+                    ...base,
+                    contentUrl: `https://aikeruiclean.com${LOCAL_VIDEO_PATHS[guide.videoId as string] || ""}`,
+                    thumbnailUrl: `https://aikeruiclean.com/og-image.png`,
+                  };
+                }
+                return {
+                  ...base,
+                  thumbnailUrl: `https://img.youtube.com/vi/${guide.videoId}/mqdefault.jpg`,
+                  contentUrl: `https://www.youtube.com/shorts/${guide.videoId}`,
+                  embedUrl: `https://www.youtube.com/embed/${guide.videoId}`,
+                };
+              })()
+            ),
           }}
         />
       )}

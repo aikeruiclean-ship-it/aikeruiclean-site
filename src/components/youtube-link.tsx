@@ -36,10 +36,7 @@ export function YouTubeLink({
           className="w-full aspect-video rounded-xl bg-gray-100 border-0"
           controls
           preload="none"
-          poster={
-            localVideo.poster ??
-            `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`
-          }
+          poster={localVideo.poster}
         >
           <source src={localVideo.src} type="video/mp4" />
           Your browser does not support the video tag.
