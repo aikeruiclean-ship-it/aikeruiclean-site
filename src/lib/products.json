@@ -1236,56 +1236,6 @@
     "inStock": true
   },
   {
-    "id": 7743,
-    "name": "Walk Behind A50 Floor Scrubbers",
-    "slug": "walk-behind-a50-floor-scrubbers",
-    "sku": "WALK BEHIND A50",
-    "type": "simple",
-    "published": true,
-    "featured": true,
-    "visible": true,
-    "category": "Floor Scrubbers",
-    "categoryFull": "Machines > Floor Scrubbers",
-    "shortDescription": "The Walk behind A50 Floor Scrubber delivers efficient commercial cleaning powered by a maintenance-free lithium battery for 3-4 hours of runtime. It features a powerful 550W brush motor, intelligent one-button control, and floor-friendly polyurethane wheels. Perfect for maintaining large areas in warehouses and industrial facilities.",
-    "description": "<p class=\"ds-markdown-paragraph\"><strong>Overview</strong>\nThe WALK BEHIND A50 Walk-Behind Floor Scrubber is built for tough commercial and industrial cleaning. It combines an efficient cleaning system with long battery life and easy operation. This results in reliable performance for large hard-surface areas.</p>\n<p class=\"ds-markdown-paragraph\"><strong>Product Highlights</strong></p>\n<p class=\"ds-markdown-paragraph\"><strong>Long-Runtime & Powerful Cleaning</strong>\nIt uses a maintenance-free lithium battery that lasts 3–4 hours. The battery can also be swapped freely for continuous cleaning. The dual motors include a 550W brush motor for tough dirt and a 500W suction motor for fast water recovery. Together they deliver high cleaning throughput.</p>\n<p class=\"ds-markdown-paragraph\"><strong>Intelligent & User-Centric Design</strong>\nOperation is simple with one-button control, requiring no training. The polyurethane wheels carry heavy loads and protect floors from scratches. Also, the leak-proof squeegee has an arc design for a tight seal and efficient suction.</p>\n<p class=\"ds-markdown-paragraph\"><strong>Convenient Maintenance Features</strong>\nA tank float shows water level, and a filter basket makes debris easy to remove. The scrubber runs quietly, suitable for indoor use without disturbance.</p>\n<p class=\"ds-markdown-paragraph\"><strong>Ideal Application Scenarios</strong>\nIt works well in warehouses, factories, retail stores, transportation hubs, and parking lots. It cleans concrete, epoxy, and tiled surfaces effectively.</p>\n<p class=\"ds-markdown-paragraph\"><strong>Value Proposition</strong>\nThe WALK BEHIND A50 offers strong cleaning power, long battery life, and easy operation. This improves cleaning productivity and lowers overall costs, providing a reliable floor maintenance solution.</p>",
-    "price": null,
-    "salePrice": null,
-    "stock": null,
-    "weight": null,
-    "images": [
-      "/images/A50-洗地机-01.webp",
-      "/images/A50-Scrubber-05.webp",
-      "/images/A50-Scrubber-02.webp",
-      "/images/A50-Scrubber-03.webp",
-      "/images/A50-Scrubber-06.webp"
-    ],
-    "brand": "Aikerui",
-    "tags": [
-      "Floor Scrubbers",
-      "Aikerui",
-      "floor scrubber",
-      "industrial scrubber"
-    ],
-    "specs": {
-      "Machine dimensions": "1300*550*1100mm",
-      "Squeegee width": "800mm",
-      "Cleaning width": "500mm",
-      "Cleaning efficiency": "2200m³/h",
-      "Operating Voltage": "24V",
-      "Charging time": "5-6h",
-      "Charger": "24V15ah",
-      "Battery": "24V",
-      "Sewage tank capacity": "55L",
-      "Fresh water tank capacity": "50L",
-      "Brush motor power": "550W",
-      "Working time": "3-4h",
-      "Brush size": "18inch",
-      "Noise level": "65db",
-      "Suction motor power": "500W"
-    },
-    "inStock": true
-  },
-  {
     "id": 7753,
     "name": "Ride On B260R60 Floor Scrubber Sweeper All-in-One Machine",
     "slug": "ride-on-b260r60-floor-scrubber-sweeper-all-in-one-machine",
