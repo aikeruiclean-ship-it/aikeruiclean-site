@@ -4378,8 +4378,8 @@ const extraGuides: Guide[] = [
   },
   {
     slug: "custom-scrubber-brush-solutions",
-    title: "Custom Scrubber Brushes: Tailored to Your Machine and Floor",
-    description: "Custom-made scrubber brushes for floor scrubbers. Nylon, polypropylene, abrasive filament and more. Tailored sizes, hardness, density for commercial and industrial cleaning.",
+    title: "Custom Floor Scrubber Brushes: Tailored Brushes for Your Floor Scrubber",
+    description: "Custom floor scrubber brushes made to fit your machine. Nylon, polypropylene, abrasive filament floor scrubber brush options. Tailored hardness, density, size for commercial and industrial cleaning.",
     category: "buying-guide",
     readTime: "4 min",
     difficulty: "beginner",
@@ -4387,12 +4387,12 @@ const extraGuides: Guide[] = [
     videoId: "custombrush25",
     sections: [
       {
-        heading: "One Brush Does Not Fit Every Floor",
-        content: "Every floor is different — different dirt, different surfaces, different machines. A stock brush that works in one facility can fail in another. That is why we offer professional custom-made scrubber brushes for floor scrubbers. Watch the video to see custom brushes in production:",
+        heading: "One Floor Scrubber Brush Does Not Fit Every Floor",
+        content: "Every floor is different — different dirt, different surfaces, different machines. A stock floor scrubber brush that works in one facility can fail in another. That is why we offer professional custom-made floor scrubber brushes. Watch the video to see custom brushes in production:",
       },
       {
-        heading: "Multiple Material Options",
-        content: "We support a range of bristle materials so you get the right scrubbing action for your floor:",
+        heading: "Floor Scrubber Brush Material Options",
+        content: "We support a range of floor scrubber brush materials so you get the right scrubbing action for your floor:",
         table: {
           headers: ["Material", "Best For"],
           rows: [
