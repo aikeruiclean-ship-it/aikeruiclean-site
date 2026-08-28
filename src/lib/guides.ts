@@ -19,6 +19,9 @@ interface GuideSection {
   items?: string[];
   /** Optional data table — rendered as real <table> for AI-citable structured data */
   table?: { headers: string[]; rows: string[][] };
+  /** Optional image — rendered below content (e.g. product photo) */
+  image?: string;
+  imageAlt?: string;
 }
 
 const guides: Guide[] = [
@@ -4517,6 +4520,8 @@ const extraGuides: Guide[] = [
       {
         heading: "10. Floor Scrubber Parts — the Full Set",
         content: "Beyond brushes, a complete parts set includes hoses, filters, batteries, chargers, and side brushes. Buying all consumables factory-direct from one source simplifies ordering and cuts costs 30-50 percent. A one-stop replacement floor scrubber parts supplier saves time and money.",
+        image: "/images/parts/Sweeper Side Brush Parts.webp",
+        imageAlt: "Floor scrubber replacement parts set",
         items: [
           "Disc brushes, roller brushes, squeegee blades.",
           "Pad drivers, clutch plates, side brushes.",
@@ -4558,6 +4563,8 @@ const extraGuides: Guide[] = [
       {
         heading: "How Compatibility Works",
         content: "A floor scrubber brush fits a machine by three things: diameter, mounting system, and bristle material. If these match the machine spec, the brush works — regardless of the brand on the label.",
+        image: "/images/parts/Disc Brush Parts.webp",
+        imageAlt: "Compatible floor scrubber disc brush",
         items: [
           "Diameter: 17, 20, 24, 28, 32 inch — must match machine width.",
           "Mounting: NP-9200 2-lug covers most brands; 3-lug and 4-lug for others.",
@@ -4568,6 +4575,8 @@ const extraGuides: Guide[] = [
       {
         heading: "1. Compatible Brushes for Tennant Scrubbers",
         content: "Tennant T5, T7, T300, T500 machines use the NP-9200 2-lug standard. Our compatible disc brushes and squeegee blades match the exact specifications, at 30-50 percent less than dealer pricing. Roller brushes for cylindrical Tennant models also available.",
+        image: "/images/parts/Roller Brush Parts.webp",
+        imageAlt: "Compatible roller brush for Tennant scrubbers",
         items: [
           "T5 / T7: 24 inch disc brush.",
           "T300 / T500: 28-32 inch disc brush.",

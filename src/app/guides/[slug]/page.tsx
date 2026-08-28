@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { getGuideBySlug, getGuides, guideCategories } from "@/lib/guides";
 import { Clock, BookOpen, ArrowLeft, Tag } from "@/lib/icons";
 import type { Metadata } from "next";
@@ -300,6 +301,17 @@ export default async function GuideDetailPage({ params }: Props) {
                 <p className="text-gray-600 leading-relaxed mb-4">
                   {section.content}
                 </p>
+                {section.image && (
+                  <div className="my-5">
+                    <Image
+                      src={section.image}
+                      alt={section.imageAlt || section.heading}
+                      width={800}
+                      height={800}
+                      className="rounded-xl border border-gray-200 w-full max-w-md mx-auto"
+                    />
+                  </div>
+                )}
                 {section.items && section.items.length > 0 && (
                   <ul className="space-y-2 pl-5">
                     {section.items.map((item, j) => (
