@@ -17,6 +17,7 @@ const LOCAL_VIDEOS: Record<string, { src: string; poster?: string }> = {
   },
   antibrush24: { src: "/videos/anti-tangle-brush.mp4" },
   custombrush25: { src: "/videos/custom-brush.mp4" },
+  factorytour: { src: "/videos/factory-tour.mp4" },
 };
 
 export function YouTubeLink({

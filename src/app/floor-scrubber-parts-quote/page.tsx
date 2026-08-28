@@ -123,7 +123,7 @@ export default function PartsQuotePage() {
       <section className="py-8 bg-white">
         <div className="max-w-2xl mx-auto px-4">
           <h2 className="text-xl font-bold text-gray-900 text-center mb-4">See Our Clutch Plates & Pad Drivers in Action</h2>
-          <YouTubeLink videoId="BZCQnHQD5tI" title="Floor Scrubber Clutch Plate & Pad Driver Types — NP-9200, 3-Lug, 4-Lug" />
+          <YouTubeLink videoId="factorytour" title="Aikerui Factory Tour — Floor Scrubber Manufacturing" />
         </div>
       </section>
 
