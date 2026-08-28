@@ -4520,8 +4520,6 @@ const extraGuides: Guide[] = [
       {
         heading: "10. Floor Scrubber Parts — the Full Set",
         content: "Beyond brushes, a complete parts set includes hoses, filters, batteries, chargers, and side brushes. Buying all consumables factory-direct from one source simplifies ordering and cuts costs 30-50 percent. A one-stop replacement floor scrubber parts supplier saves time and money.",
-        image: "/images/parts/Sweeper Side Brush Parts.webp",
-        imageAlt: "Floor scrubber replacement parts set",
         items: [
           "Disc brushes, roller brushes, squeegee blades.",
           "Pad drivers, clutch plates, side brushes.",
@@ -4621,6 +4619,8 @@ const extraGuides: Guide[] = [
       {
         heading: "7-10. Other Top Brands Covered",
         content: "Our compatible range also covers ICE, NSS Enterprises, Gaomei, and other popular scrubber brands. If you run a machine from the top 10 market leaders, we likely have a compatible brush for it.",
+        image: "/images/parts/Sweeper Side Brush Parts.webp",
+        imageAlt: "Compatible side brush for floor scrubbers",
         items: [
           "ICE: ride-on and walk-behind models.",
           "NSS Enterprises: American machines.",
