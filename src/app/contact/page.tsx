@@ -44,7 +44,7 @@ export default function ContactPage() {
       <section className="bg-primary text-white py-12">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-3xl md:text-4xl font-bold mb-2">Contact the Factory Directly</h1>
-          <p className="text-gray-200 text-lg">No middlemen. No sales agents. Talk directly to the manufacturer.</p>
+          <p className="text-gray-200 text-lg">No middlemen. Talk directly to the manufacturer.</p>
         </div>
       </section>
 
@@ -74,7 +74,7 @@ export default function ContactPage() {
           <div className="lg:col-span-1 space-y-8">
             <div>
               <h2 className="text-xl font-bold text-gray-900 mb-2">Contact Our Factory Team</h2>
-              <p className="text-sm text-gray-600 leading-relaxed">We respond to all inquiries within 24 hours. For urgent needs, call us directly — you will speak to our team on the factory floor.</p>
+              <p className="text-sm text-gray-600 leading-relaxed">We respond to all inquiries within 24 hours. For urgent needs, call us directly. You will speak to our team on the factory floor.</p>
             </div>
 
             <div className="space-y-5">
@@ -83,7 +83,7 @@ export default function ContactPage() {
                 { icon: Phone, label: "Phone (Factory Direct)", value: "+86 199 6523 6428", href: "https://api.whatsapp.com/send?phone=8619965236428&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20pricing.", highlight: true },
                 { icon: MessageCircle, label: "WhatsApp / WeChat", value: "+86 199 6523 6428", href: "https://api.whatsapp.com/send?phone=8619965236428&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20pricing." },
                 { icon: Mail, label: "Email", value: "info@aikeruiclean.com" },
-                { icon: Clock, label: "Working Hours", value: "Mon–Fri: 8:30 AM – 6:00 PM (CST)" },
+                { icon: Clock, label: "Working Hours", value: "Mon-Fri: 8:30 AM - 6:00 PM (CST)" },
               ].map((item) => (
                 <div key={item.label} className="flex items-start gap-3">
                   <div className={`w-10 h-10 rounded-lg flex items-center justify-center shrink-0 ${item.highlight ? "bg-green-100" : "bg-primary/10"}`}>
@@ -185,8 +185,8 @@ export default function ContactPage() {
                       className="w-full px-3 py-2.5 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none">
                       <option value="">Select</option>
                       <option value="1">1 (Sample/Test)</option>
-                      <option value="2-5">2–5 (Small batch)</option>
-                      <option value="6-20">6–20 (Medium)</option>
+                      <option value="2-5">2-5 (Small batch)</option>
+                      <option value="6-20">6-20 (Medium)</option>
                       <option value="21+">21+ (Wholesale)</option>
                       <option value="not-sure">Not sure yet</option>
                     </select>
