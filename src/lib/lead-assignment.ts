@@ -20,7 +20,12 @@ interface AssignmentMap {
 
 function ensureDir() {
   const dir = path.dirname(ASSIGN_PATH);
-  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+  try {
+    if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+  } catch (err) {
+    // read-only fs on Vercel serverless — non-fatal
+    console.error("ensureDir skipped (read-only fs):", err);
+  }
 }
 
 function readAssignments(): AssignmentMap {

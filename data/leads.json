@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "name": "Test",
+    "email": "t@t.com",
+    "phone": "",
+    "company": "",
+    "country": "",
+    "product": "General Inquiry",
+    "quantity": "",
+    "message": "test",
+    "assignedTo": "Keke",
+    "assignedEmail": "keke@czhclean.com",
+    "timestamp": "2026-08-31T07:36:37.003Z",
+    "id": 1,
+    "status": "new",
+    "notes": ""
+  },
+  {
+    "name": "Test",
+    "email": "t@t.com",
+    "phone": "",
+    "company": "",
+    "country": "",
+    "product": "General Inquiry",
+    "quantity": "",
+    "message": "test",
+    "assignedTo": "Keke",
+    "assignedEmail": "keke@czhclean.com",
+    "timestamp": "2026-08-31T07:37:19.626Z",
+    "id": 2,
+    "status": "new",
+    "notes": ""
+  }
+]
