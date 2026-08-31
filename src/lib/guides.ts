@@ -4457,6 +4457,8 @@ const extraGuides: Guide[] = [
       {
         heading: "1. Floor Scrubber Disc Brush",
         content: "The most common brush type, used on the majority of walk-behind and ride-on scrubbers. A flat round brush that spins against the floor. Best on smooth floors like sealed concrete, tile, and epoxy. Available in nylon, PPL, and abrasive materials. Factory-direct: 45 to 75 USD per brush, versus 100 to 250 USD at dealers.",
+        image: "/images/parts/Disc Brush Parts.webp",
+        imageAlt: "Floor scrubber disc brush",
         items: [
           "Nylon: daily cleaning, gentle on floors.",
           "PPL: heavy grease and industrial grime.",
@@ -4467,6 +4469,8 @@ const extraGuides: Guide[] = [
       {
         heading: "2. Floor Scrubber Roller Brush",
         content: "A horizontal cylindrical brush that spins and sweeps debris while scrubbing. Found on machines like the Tennant T7 and Hako B90. Better on rough concrete, and can clean and sweep in one pass. Factory-direct: 55 to 95 USD, versus 120 to 300 USD at dealers.",
+        image: "/images/parts/Roller Brush Parts.webp",
+        imageAlt: "Floor scrubber roller brush",
         items: [
           "Nylon or PPL, with or without center stripe.",
           "Best for rough, uneven concrete floors.",
@@ -4484,6 +4488,8 @@ const extraGuides: Guide[] = [
       {
         heading: "5. Squeegee Blade & Assembly",
         content: "The squeegee blade picks up the water the brush loosens. A worn blade leaves streaks and wet floors. Choose natural rubber for smooth floors, polyurethane for rough floors. Factory-direct: 10 to 25 USD per blade, versus 25 to 60 USD at dealers.",
+        image: "/images/parts/Squeegee Rubber Parts.webp",
+        imageAlt: "Floor scrubber squeegee blade",
         items: [
           "NR (natural rubber): best water pickup on smooth floors.",
           "PU (polyurethane): longer wear on rough floors.",
@@ -4493,6 +4499,8 @@ const extraGuides: Guide[] = [
       {
         heading: "6. Pad Driver",
         content: "The pad driver connects the motor shaft to the brush or pad. Also called pad holder or floor scrubber pad driver. NP-9200 2-lug is the standard for most brands. Factory-direct: 15 to 40 USD, versus 40 to 90 USD at dealers.",
+        image: "/images/parts/Pad Driver Parts.webp",
+        imageAlt: "Floor scrubber pad driver",
         items: [
           "NP-9200: 2-lug, fits most machines.",
           "Center lock: 3-lug, older Advance and Nilfisk.",
