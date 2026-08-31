@@ -33,15 +33,33 @@ export default function PartsQuotePage() {
       });
       if (!res.ok) throw new Error("Failed");
       setSubmitted(true);
-      // Push conversion events to dataLayer — GTM (GTM-54SKR85R) + direct gtag
+      // Push conversion events — GTM object format + direct gtag array format (works even if gtag not yet loaded)
       if (typeof window !== "undefined") {
         const w = window as any;
-        if (w.dataLayer) w.dataLayer.push({ event: "quote_submit", product: "Floor Scrubber Parts (Ad Landing)" });
-        // Full Google Ads conversion ID (with conversion label)
-        if (typeof w.gtag === "function") {
-          w.gtag("event", "conversion", { send_to: "AW-18359776225/AKHbCP6CodwcEOHnz7JE" });
-        } else if (w.dataLayer) {
-          w.dataLayer.push({ event: "conversion", send_to: "AW-18359776225/AKHbCP6CodwcEOHnz7JE" });
+        w.dataLayer = w.dataLayer || [];
+        // GTM 触发器格式
+        w.dataLayer.push({ event: "quote_submit", product: "Floor Scrubber Parts (Ad Landing)" });
+        // gtag.js 原生格式（数组）— gtag.js 加载后会自动处理队列中未消费的数组事件
+        w.dataLayer.push(["event", "conversion", { send_to: "AW-18359776225/AKHbCP6CodwcEOHnz7JE" }]);
+        // 若 gtag 已就绪，直接调用（双保险）
+        const fireConversion = () => {
+          if (typeof w.gtag === "function") {
+            w.gtag("event", "conversion", { send_to: "AW-18359776225/AKHbCP6CodwcEOHnz7JE" });
+          }
+        };
+        fireConversion();
+        // 兜底：gtag 可能还没加载完（afterInteractive），轮询重试最多 3 秒
+        if (typeof w.gtag !== "function") {
+          let tries = 0;
+          const retry = setInterval(() => {
+            tries++;
+            if (typeof w.gtag === "function") {
+              clearInterval(retry);
+              w.gtag("event", "conversion", { send_to: "AW-18359776225/AKHbCP6CodwcEOHnz7JE" });
+            } else if (tries >= 15) {
+              clearInterval(retry);
+            }
+          }, 200);
         }
       }
     } catch {
