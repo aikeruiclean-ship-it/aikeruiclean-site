@@ -33,10 +33,16 @@ export default function PartsQuotePage() {
       });
       if (!res.ok) throw new Error("Failed");
       setSubmitted(true);
-      // Push conversion events to dataLayer — GTM (GTM-54SKR85R) forwards to GA4 & Google Ads
-      if (typeof window !== "undefined" && (window as any).dataLayer) {
-        (window as any).dataLayer.push({ event: "quote_submit", product: "Floor Scrubber Parts (Ad Landing)" });
-        (window as any).dataLayer.push({ event: "conversion", send_to: "AW-18359776225" });
+      // Push conversion events to dataLayer — GTM (GTM-54SKR85R) + direct gtag
+      if (typeof window !== "undefined") {
+        const w = window as any;
+        if (w.dataLayer) w.dataLayer.push({ event: "quote_submit", product: "Floor Scrubber Parts (Ad Landing)" });
+        // Full Google Ads conversion ID (with conversion label)
+        if (typeof w.gtag === "function") {
+          w.gtag("event", "conversion", { send_to: "AW-18359776225/AKHbCP6CodwcEOHnz7JE" });
+        } else if (w.dataLayer) {
+          w.dataLayer.push({ event: "conversion", send_to: "AW-18359776225/AKHbCP6CodwcEOHnz7JE" });
+        }
       }
     } catch {
       alert("Please WhatsApp us: +86 199 6523 6428");
