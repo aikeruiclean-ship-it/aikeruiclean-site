@@ -74,7 +74,7 @@ export default function PartsQuotePage() {
       <JsonLd data={{
         "@context": "https://schema.org",
         "@type": "WebPage",
-        name: "Floor Scrubber Replacement Parts — Factory Direct",
+        name: "Floor Scrubber Replacement Parts Factory Direct",
         description: "Factory-direct floor scrubber parts. Disc brushes, squeegee rubber, pad holders. 30-50% less than dealer. OEM quality, global shipping.",
       }} />
 
@@ -82,13 +82,13 @@ export default function PartsQuotePage() {
       <section className="bg-gradient-to-r from-primary to-primary-light text-white py-12 lg:py-16">
         <div className="max-w-5xl mx-auto px-4 text-center">
           <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-accent/90 text-white text-sm font-semibold rounded-full mb-4">
-            <Factory size={14} /> Factory-Direct — No Middlemen
+            <Factory size={14} /> Factory-Direct No Middlemen
           </span>
           <h1 className="text-3xl md:text-4xl font-bold mb-4">
             Floor Scrubber Parts at 30-50% Less Than Dealer Price
           </h1>
           <p className="text-lg text-gray-200 max-w-2xl mx-auto mb-8">
-            Disc brushes, squeegee rubber, pad holders — same OEM quality from our ISO 9001 factory. Compatible with Dulevo, Nilfisk, Gaomei, Tennant, Karcher, flange mounts, clutch plates Karcher & 15+ brands 15+ brands.
+            Disc brushes, squeegee rubber, pad holders with the same OEM quality from our ISO 9001 factory. Compatible with Dulevo, Nilfisk, Gaomei, Tennant, Karcher, flange mounts, clutch plates Karcher and 15+ brands.
           </p>
           <a href="#form" className="inline-flex items-center gap-2 px-8 py-4 bg-accent hover:bg-accent-hover text-white font-bold rounded-lg transition-colors text-lg shadow-lg">
             <Send size={18} /> Get Your Quote Now
@@ -102,7 +102,7 @@ export default function PartsQuotePage() {
           {[
             { icon: BadgeCheck, text: "CE & ISO 9001 Certified" },
             { icon: Factory, text: "10,000+㎡ Factory" },
-            { icon: Truck, text: "Global Shipping — 360+ Parts in Stock" },
+            { icon: Truck, text: "Global Shipping, 360+ Parts in Stock" },
           ].map(i => (
             <span key={i.text} className="flex items-center gap-1.5"><i.icon size={14} className="text-green-600"/>{i.text}</span>
           ))}
@@ -113,7 +113,7 @@ export default function PartsQuotePage() {
       <section className="py-12 bg-white">
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-2xl font-bold text-gray-900 text-center mb-8">
-            Consumable Parts — Always in Stock
+            Consumable Parts Always in Stock
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {PRODUCTS.map(p => (
@@ -147,7 +147,7 @@ export default function PartsQuotePage() {
       <section className="py-8 bg-white">
         <div className="max-w-2xl mx-auto px-4">
           <h2 className="text-xl font-bold text-gray-900 text-center mb-4">See Our Clutch Plates & Pad Drivers in Action</h2>
-          <YouTubeLink videoId="factorytour" title="Aikerui Factory Tour — Floor Scrubber Manufacturing" />
+          <YouTubeLink videoId="factorytour" title="Aikerui Factory Tour, Floor Scrubber Manufacturing" />
         </div>
       </section>
 
