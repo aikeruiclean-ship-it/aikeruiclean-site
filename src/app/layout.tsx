@@ -67,31 +67,19 @@ export default function RootLayout({
         <link rel="preconnect" href="https://www.google-analytics.com" />
         {/* Google Search Console verification */}
         <meta name="google-site-verification" content="9n-ScR2ZUM3VI7e8ACJvhSk7hRefGI-XdnihD4DkYx8" />
-        {/* Google Tag Manager - lazy loaded after page becomes interactive */}
-        {process.env.NEXT_PUBLIC_GTM_ID && (
-          <>
-            <Script
-              id="gtm"
-              strategy="lazyOnload"
-              dangerouslySetInnerHTML={{
-                __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${process.env.NEXT_PUBLIC_GTM_ID}');`
-              }}
-            />
-            {/* Direct gtag.js — GA4 config + Google Ads conversion config (full conversion ID) */}
-            <Script
-              id="gtag"
-              strategy="afterInteractive"
-              src="https://www.googletagmanager.com/gtag/js?id=G-X8E9TNJ4D2"
-            />
-            <Script
-              id="gtag-config"
-              strategy="afterInteractive"
-              dangerouslySetInnerHTML={{
-                __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-X8E9TNJ4D2');gtag('config','AW-18359776225');`
-              }}
-            />
-          </>
-        )}
+        {/* Google Tag (gtag.js) — GA4 + Google Ads 转化（直连，避免 GTM 容器覆盖 window.gtag） */}
+        <Script
+          id="gtag"
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-X8E9TNJ4D2"
+        />
+        <Script
+          id="gtag-config"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-X8E9TNJ4D2');gtag('config','AW-18359776225');`
+          }}
+        />
 
         {/* LocalBusiness Schema */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{
