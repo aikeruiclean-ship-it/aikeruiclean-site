@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { pickRoundRobin } from "@/lib/sales-team";
+import { assignSalesperson } from "@/lib/lead-assignment";
 import { saveLead } from "@/lib/lead-store";
 
 const SCRIPT_URL =
@@ -153,8 +153,8 @@ export async function POST(request: NextRequest) {
 
     const data = validation.data;
 
-    // Assign to salesperson (round-robin) — used for both Sheets and email
-    const assigned = pickRoundRobin();
+    // Assign to salesperson (same email → same person; new → round-robin)
+    const assigned = assignSalesperson(data.email);
 
     // 1) Forward to Google Apps Script (Google Sheets)
     await fetch(SCRIPT_URL, {

@@ -12,6 +12,8 @@ const SALES_TEAM: SalesPerson[] = [
   { id: 4, name: "Jennifer", phone: "8618133073186", email: "jennifer@czhclean.com" },
 ];
 
+export { SALES_TEAM };
+
 let _roundRobinIndex = 0;
 
 function pickRandom(): SalesPerson {
