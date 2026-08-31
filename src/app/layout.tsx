@@ -117,17 +117,7 @@ export default function RootLayout({
         }} />
       </head>
       <body className="min-h-full flex flex-col">
-        {/* GTM noscript fallback */}
-        {process.env.NEXT_PUBLIC_GTM_ID && (
-          <noscript>
-            <iframe
-              src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GTM_ID}`}
-              height="0"
-              width="0"
-              style={{ display: "none", visibility: "hidden" }}
-            />
-          </noscript>
-        )}
+        {/* GTM removed — direct gtag.js only (see head) */}
         <CartProvider>
           <Header />
           <main className="flex-1">{children}</main>
