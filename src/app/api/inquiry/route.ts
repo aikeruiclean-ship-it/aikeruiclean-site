@@ -156,18 +156,26 @@ export async function POST(request: NextRequest) {
     // Assign to salesperson (same email → same person; new → round-robin)
     const assigned = assignSalesperson(data.email);
 
-    // 1) Forward to Google Apps Script (Google Sheets)
-    await fetch(SCRIPT_URL, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      redirect: "follow",
-      body: JSON.stringify({
-        ...data,
-        assignedTo: assigned.name,
-        assignedEmail: assigned.email,
-        timestamp: new Date().toISOString(),
-      }),
-    }).catch((err) => console.error("Google Script error:", err));
+    // 1) Forward to Google Apps Script (Google Sheets) — with timeout so it never blocks the response
+    try {
+      const gasController = new AbortController();
+      const gasTimeout = setTimeout(() => gasController.abort(), 3000);
+      await fetch(SCRIPT_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        redirect: "follow",
+        signal: gasController.signal,
+        body: JSON.stringify({
+          ...data,
+          assignedTo: assigned.name,
+          assignedEmail: assigned.email,
+          timestamp: new Date().toISOString(),
+        }),
+      }).catch((err) => console.error("Google Script error:", err));
+      clearTimeout(gasTimeout);
+    } catch (gasErr) {
+      console.error("Google Script timeout/error:", gasErr);
+    }
 
     // 2) Also send email via Brevo if configured
     if (process.env.BREVO_API_KEY) {
@@ -188,26 +196,34 @@ export async function POST(request: NextRequest) {
         </body></html>
       `;
 
-      const res = await fetch(BREVO_API_URL, {
-        method: "POST",
-        headers: {
-          "api-key": process.env.BREVO_API_KEY,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          sender: { name: "Aikerui Website", email: "noreply@aikeruiclean.com" },
-          to: [{ email: "info@aikeruiclean.com" }],
-          cc: [{ email: assigned.email, name: assigned.name }],
-          replyTo: { email: data.email },
-          subject: `[${assigned.name}] New Inquiry: ${data.product}`,
-          htmlContent: emailHtml,
-        }),
-      });
+      const brevoController = new AbortController();
+      const brevoTimeout = setTimeout(() => brevoController.abort(), 3000);
+      try {
+        const res = await fetch(BREVO_API_URL, {
+          method: "POST",
+          headers: {
+            "api-key": process.env.BREVO_API_KEY,
+            "Content-Type": "application/json",
+          },
+          signal: brevoController.signal,
+          body: JSON.stringify({
+            sender: { name: "Aikerui Website", email: "noreply@aikeruiclean.com" },
+            to: [{ email: "info@aikeruiclean.com" }],
+            cc: [{ email: assigned.email, name: assigned.name }],
+            replyTo: { email: data.email },
+            subject: `[${assigned.name}] New Inquiry: ${data.product}`,
+            htmlContent: emailHtml,
+          }),
+        });
 
-      if (!res.ok) {
-        const err = await res.text();
-        console.error("Brevo API error:", res.status, err);
+        if (!res.ok) {
+          const err = await res.text();
+          console.error("Brevo API error:", res.status, err);
+        }
+      } catch (brevoErr) {
+        console.error("Brevo timeout/error:", brevoErr);
       }
+      clearTimeout(brevoTimeout);
     }
 
     // Save locally for admin panel
