@@ -135,6 +135,7 @@ const guides: Guide[] = [
     category: "buying-guide",
     readTime: "8 min",
     difficulty: "beginner",
+    thumbnail: "/images/B460-Scrubber-01.webp",
     published: "2026-06-01",
     sections: [
       {
@@ -202,6 +203,7 @@ const guides: Guide[] = [
     category: "comparison",
     readTime: "6 min",
     difficulty: "beginner",
+    thumbnail: "/images/A50-Scrubber-02.webp",
     published: "2026-06-01",
     sections: [
       {
@@ -251,6 +253,7 @@ const guides: Guide[] = [
     category: "maintenance",
     readTime: "5 min",
     difficulty: "beginner",
+    thumbnail: "/images/B460-Scrubber-02.webp",
     published: "2026-06-01",
     sections: [
       {
@@ -1006,6 +1009,7 @@ const extraGuides: Guide[] = [
     category: "maintenance",
     readTime: "6 min",
     difficulty: "beginner",
+    thumbnail: "/images/B460-Scrubber-03.webp",
     published: "2026-06-08",
     videoUrl: "https://x.com/mark_xu71710/status/2062744516939919806",
     sections: [
@@ -1022,6 +1026,7 @@ const extraGuides: Guide[] = [
     category: "product-showcase",
     readTime: "4 min",
     difficulty: "beginner",
+    thumbnail: "/images/A50-Scrubber-03.webp",
     published: "2026-06-08",
     videoUrl: "https://x.com/mark_xu71710/status/2064637551541878998",
     sections: [
@@ -1039,6 +1044,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "10 min",
     difficulty: "beginner",
+    thumbnail: "/images/B460-Scrubber-04.webp",
     published: "2026-06-17",
     sections: [
       {
@@ -1238,6 +1244,7 @@ const extraGuides: Guide[] = [
     category: "troubleshooting",
     readTime: "6 min",
     difficulty: "intermediate",
+    thumbnail: "/images/parts/101440719895.webp",
     published: "2026-06-26",
     sections: [
       {
@@ -1296,6 +1303,7 @@ const extraGuides: Guide[] = [
     category: "troubleshooting",
     readTime: "7 min",
     difficulty: "intermediate",
+    thumbnail: "/images/B460-Scrubber-05.webp",
     published: "2026-06-26",
     sections: [
       {
@@ -1356,6 +1364,7 @@ const extraGuides: Guide[] = [
     category: "troubleshooting",
     readTime: "5 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101521510723.webp",
     published: "2026-06-26",
     sections: [
       {
@@ -1409,6 +1418,7 @@ const extraGuides: Guide[] = [
     category: "troubleshooting",
     readTime: "6 min",
     difficulty: "intermediate",
+    thumbnail: "/images/B460-Scrubber-06.webp",
     published: "2026-06-26",
     sections: [
       {
@@ -1469,6 +1479,7 @@ const extraGuides: Guide[] = [
     category: "comparison",
     readTime: "6 min",
     difficulty: "beginner",
+    thumbnail: "/images/A50-Scrubber-05.webp",
     published: "2026-06-26",
     sections: [
       {
@@ -1516,6 +1527,7 @@ const extraGuides: Guide[] = [
     category: "comparison",
     readTime: "5 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101521634780.webp",
     published: "2026-06-26",
     sections: [
       {
@@ -1559,6 +1571,7 @@ const extraGuides: Guide[] = [
     category: "comparison",
     readTime: "5 min",
     difficulty: "beginner",
+    thumbnail: "/images/A50-Scrubber-06.webp",
     published: "2026-06-26",
     sections: [
       {
@@ -1607,6 +1620,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "10 min",
     difficulty: "beginner",
+    thumbnail: "/images/A1280-Sweeper-01.webp",
     published: "2026-07-04",
     sections: [
       {
@@ -2232,6 +2246,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "7 min",
     difficulty: "beginner",
+    thumbnail: "/images/A1280-Sweeper-02.webp",
     published: "2026-07-04",
     sections: [
       {
@@ -2338,6 +2353,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "7 min",
     difficulty: "intermediate",
+    thumbnail: "/images/A1280-Sweeper-03.webp",
     published: "2026-07-04",
     sections: [
       {
@@ -2396,6 +2412,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "7 min",
     difficulty: "intermediate",
+    thumbnail: "/images/A1280-Sweeper-04.webp",
     published: "2026-07-04",
     sections: [
       {
@@ -2455,6 +2472,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "6 min",
     difficulty: "beginner",
+    thumbnail: "/images/B260R60-Sweeper-00.webp",
     published: "2026-07-04",
     sections: [
       {
@@ -2497,6 +2515,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "10 min",
     difficulty: "intermediate",
+    thumbnail: "/images/B260R60-Sweeper-02.webp",
     published: "2026-07-04",
     sections: [
       {
@@ -2650,6 +2669,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "6 min",
     difficulty: "beginner",
+    thumbnail: "/images/B260R60-Sweeper-03.webp",
     published: "2026-07-04",
     sections: [
       {
@@ -2688,6 +2708,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "5 min",
     difficulty: "intermediate",
+    thumbnail: "/images/B260R60-Sweeper-05.webp",
     published: "2026-07-04",
     sections: [
       {
@@ -2723,6 +2744,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "8 min",
     difficulty: "intermediate",
+    thumbnail: "/images/B260R60-Sweeper-06.webp",
     published: "2026-07-04",
     sections: [
       {
@@ -2840,6 +2862,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "5 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101530132440.webp",
     published: "2026-07-04",
     sections: [
       {
@@ -2881,6 +2904,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "5 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101534842595.webp",
     published: "2026-07-04",
     sections: [
       {
@@ -2923,6 +2947,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "5 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101535080815.webp",
     published: "2026-07-04",
     sections: [
       {
@@ -2964,6 +2989,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "7 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101535303149.webp",
     published: "2026-07-10",
     sections: [
       {
@@ -3147,6 +3173,7 @@ const extraGuides: Guide[] = [
     category: "comparison",
     readTime: "8 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101535642567.webp",
     published: "2026-07-13",
     sections: [
       {
@@ -3223,6 +3250,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "5 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101536037905.webp",
     published: "2026-07-14",
     sections: [
       {
@@ -3297,6 +3325,7 @@ const extraGuides: Guide[] = [
     category: "comparison",
     readTime: "6 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101536061230.webp",
     published: "2026-07-14",
     sections: [
       {
@@ -3348,6 +3377,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "5 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101539483146.webp",
     published: "2026-07-14",
     sections: [
       {
@@ -3386,6 +3416,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "5 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101539693092.webp",
     published: "2026-07-14",
     sections: [
       {
@@ -3422,6 +3453,7 @@ const extraGuides: Guide[] = [
     category: "comparison",
     readTime: "8 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101539965819.webp",
     published: "2026-07-14",
     sections: [
       {
@@ -3498,6 +3530,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "5 min",
     difficulty: "intermediate",
+    thumbnail: "/images/parts/101540180217.webp",
     published: "2026-07-14",
     sections: [
       {
@@ -3551,6 +3584,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "5 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101540420408.webp",
     published: "2026-07-14",
     sections: [
       {
@@ -3582,6 +3616,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "5 min",
     difficulty: "intermediate",
+    thumbnail: "/images/parts/101548652397.webp",
     published: "2026-07-15",
     sections: [
       {
@@ -3618,6 +3653,7 @@ const extraGuides: Guide[] = [
     category: "maintenance",
     readTime: "5 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101558246394.webp",
     published: "2026-07-15",
     sections: [
       {
@@ -3657,6 +3693,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "5 min",
     difficulty: "intermediate",
+    thumbnail: "/images/parts/101558344300.webp",
     published: "2026-07-15",
     sections: [
       {
@@ -3692,6 +3729,7 @@ const extraGuides: Guide[] = [
     category: "maintenance",
     readTime: "5 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101559266208.webp",
     published: "2026-07-15",
     sections: [
       {
@@ -3734,6 +3772,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "5 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101559442162.webp",
     published: "2026-07-15",
     sections: [
       {
@@ -3775,6 +3814,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "5 min",
     difficulty: "intermediate",
+    thumbnail: "/images/parts/101559536107.webp",
     published: "2026-07-15",
     sections: [
       {
@@ -3805,6 +3845,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "6 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101559806690.webp",
     published: "2026-07-15",
     sections: [
       {
@@ -3838,6 +3879,7 @@ const extraGuides: Guide[] = [
     category: "maintenance",
     readTime: "4 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101560194300.webp",
     published: "2026-07-15",
     sections: [
       {
@@ -3864,6 +3906,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "4 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101562835129.webp",
     published: "2026-07-15",
     sections: [
       {
@@ -3886,6 +3929,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "5 min",
     difficulty: "intermediate",
+    thumbnail: "/images/parts/101570361535.webp",
     published: "2026-07-15",
     sections: [
       {
@@ -3912,6 +3956,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "4 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101650654640.webp",
     published: "2026-07-16",
     sections: [
       {
@@ -3938,6 +3983,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "6 min",
     difficulty: "intermediate",
+    thumbnail: "/images/parts/101650838979.webp",
     published: "2026-07-16",
     sections: [
       {
@@ -3964,6 +4010,7 @@ const extraGuides: Guide[] = [
     category: "maintenance",
     readTime: "5 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101693621322.webp",
     published: "2026-07-16",
     sections: [
       {
@@ -3994,6 +4041,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "8 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/1000141211365.webp",
     published: "2026-07-23",
     sections: [
       { heading: "Why Importing a Floor Scrubber Directly Saves You Thousands", content: "A dealer-priced ride-on scrubber at $18,000 can be sourced factory-direct for $9,000 — but only if you know how to handle international logistics. The shipping and customs process intimidates many first-time buyers, but it's far simpler than most people think. This guide walks you through the entire process, from factory pickup to your warehouse door." },
@@ -4454,6 +4502,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "8 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/100053360385.webp",
     published: "2026-08-27",
     sections: [
       {
@@ -4566,6 +4615,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "8 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101704011949.webp",
     published: "2026-08-27",
     sections: [
       {
@@ -4678,6 +4728,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "9 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101705320686.webp",
     published: "2026-09-01",
     sections: [
       {

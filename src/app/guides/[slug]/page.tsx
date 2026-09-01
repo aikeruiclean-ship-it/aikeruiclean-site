@@ -291,6 +291,20 @@ export default async function GuideDetailPage({ params }: Props) {
             </div>
           )}
 
+          {/* Cover image (when no video) */}
+          {!guide.videoId && guide.thumbnail && (
+            <div className="mt-6">
+              <Image
+                src={guide.thumbnail}
+                alt={guide.title}
+                width={1200}
+                height={675}
+                className="w-full rounded-xl border border-gray-200 object-cover"
+                priority
+              />
+            </div>
+          )}
+
           {/* Content sections */}
           <div className="space-y-10">
             {guide.sections.map((section, i) => (
