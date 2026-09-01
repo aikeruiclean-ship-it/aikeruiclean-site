@@ -152,6 +152,8 @@ const guides: Guide[] = [
         heading: "Key Specifications to Compare",
         content:
           "When comparing floor scrubbers, focus on the specifications that directly impact cleaning performance and efficiency. The cleaning width determines how much area you can cover per pass, while the tank sizes affect how long you can clean before needing to refill and empty.",
+        image: "/images/B460-Scrubber-01.webp",
+        imageAlt: "how to choose a floor scrubber",
         items: [
           "Cleaning Width: 17–36 inches (walk-behind), 28–48 inches (ride-on)",
           "Solution Tank: 10–30 gallons determines runtime between refills",
@@ -223,6 +225,8 @@ const guides: Guide[] = [
         heading: "Ride-On Floor Scrubbers",
         content:
           "Ride-on scrubbers allow the operator to sit or stand while cleaning, significantly reducing fatigue and increasing productivity. These machines are built for large facilities where cleaning efficiency and operator comfort are priorities. Most ride-on models offer larger tanks and wider cleaning paths.",
+        image: "/images/A50-Scrubber-02.webp",
+        imageAlt: "walk behind vs ride on scrubber overview",
         items: [
           "Price Range: $12,000–$40,000+",
           "Cleaning Width: 28–50 inches",
@@ -272,6 +276,8 @@ const guides: Guide[] = [
         heading: "Lithium Battery Maintenance",
         content:
           "Lithium batteries require significantly less maintenance than lead-acid. They do not need watering, have no memory effect, and can be opportunity charged. However, they are more sensitive to extreme temperatures and require compatible chargers. Store lithium batteries at 50% charge if not used for extended periods, and avoid complete discharge.",
+        image: "/images/B460-Scrubber-03.webp",
+        imageAlt: "how to maintain floor scrubber battery",
         items: [
           "No watering required — zero maintenance",
           "Use only the charger provided with the battery",
@@ -1015,6 +1021,8 @@ const extraGuides: Guide[] = [
     sections: [
       { heading: "Pre-Operation Daily Checks", content: "A thorough pre-operation check takes just 5 minutes but prevents costly downtime.", items: ["Battery charge: minimum 80%", "Brushes: check for wear", "Squeegee blades: inspect for nicks", "Solution tank: fill with water"] },
       { heading: "Proper Scrubbing Technique", content: "Overlap each pass by 4-6 inches to avoid streaks.", items: ["Overlap passes by 4-6 inches", "Slow down on heavily soiled areas", "Raise squeegee when turning", "Work from cleanest to dirtiest areas"] },
+        image: "/images/B460-Scrubber-02.webp",
+        imageAlt: "floor scrubber daily operation best practices",
       { heading: "Post-Operation Maintenance", content: "After each shift, empty and rinse both tanks.", items: ["Empty and rinse both tanks", "Remove and rinse squeegee blades", "Wipe down machine body", "Charge lead-acid batteries immediately"] },
     ],
     relatedProducts: [],
@@ -1032,6 +1040,8 @@ const extraGuides: Guide[] = [
     sections: [
       { heading: "Compact Design", content: "The A50 is designed with a compact footprint of 1300x550x1100mm.", items: ["Dimensions: 1300x550x1100mm", "Cleaning width: 500mm", "Ideal for facilities under 10,000 sq ft"] },
       { heading: "Cleaning Performance", content: "The 550W brush motor delivers effective scrubbing on various floor types.", items: ["Brush motor: 550W", "Productivity: ~2,200 m²/hour", "Noise level: 65dB"] },
+        image: "/images/A50-Scrubber-02.webp",
+        imageAlt: "a50 walk behind scrubber features",
       { heading: "Battery and Runtime", content: "Powered by a 24V system with maintenance-free battery.", items: ["Voltage: 24V", "Runtime: 3-4 hours", "Charging time: 5-6 hours"] },
     ],
     relatedProducts: [],
@@ -1054,6 +1064,8 @@ const extraGuides: Guide[] = [
       {
         heading: "How We Selected These Manufacturers",
         content: "We evaluated manufacturers based on five criteria: production capability (factory size and output), product range (walk-behind, ride-on, sweepers, parts), quality certifications (CE, ISO, SGS), global distribution network, and customer reviews across multiple markets. This list includes both well-known global brands and emerging factory-direct manufacturers."
+        image: "/images/A1280-Sweeper-01.webp",
+        imageAlt: "top floor scrubber brands buyers guide",
       },
       {
         heading: "1. Tennant (USA)",
@@ -1256,6 +1268,8 @@ const extraGuides: Guide[] = [
         heading: "Step 1: Check the Brush Engage Lever / Button",
         content:
           "On walk-behind machines, the brush motor typically activates via a lever on the control handle. On ride-on models, it's a pedal or dashboard switch. Verify the mechanical linkage is intact — a disconnected cable or broken switch will prevent motor activation even if the electronics are fine.",
+        image: "/images/parts/Disc Brush Parts 2.webp",
+        imageAlt: "brush motor not spinning",
         items: [
           "Walk-behind: check the squeeze lever is fully engaged and returns smoothly",
           "Ride-on: check the foot pedal switch is not stuck or obstructed",
@@ -1315,6 +1329,8 @@ const extraGuides: Guide[] = [
         heading: "Step 1: Test the Charger Output",
         content:
           "Before assuming the batteries are bad, verify the charger is working. Plug in the charger (not connected to the machine) and use a multimeter to check output voltage at the connector. For a 24V system, the charger should output 28-30V. For 36V, expect 42-44V. If output is zero or significantly low, the charger is faulty.",
+        image: "/images/B460-Scrubber-05.webp",
+        imageAlt: "battery not charging short runtime",
         items: [
           "Check the charger fuse — many chargers have an internal fuse that blows",
           "Check the AC power cord for damage, especially near the plug",
@@ -1375,6 +1391,8 @@ const extraGuides: Guide[] = [
       {
         heading: "Cause 1: Dirty or Over-Saturated Pad/Brush",
         content:
+        image: "/images/parts/Squeegee Rubber Parts.webp",
+        imageAlt: "scrubber leaving streaks on floor",
           "A pad or brush that's loaded with dirt and soap residue will smear rather than scrub. If you're seeing dirty streaks, remove the pad and check it. A pad that's black, heavily matted, or dripping with dirty water needs to be cleaned or replaced. Never scrub with yesterday's dirty pad.",
       },
       {
@@ -1429,6 +1447,8 @@ const extraGuides: Guide[] = [
       {
         heading: "Step 1: Check the Solution Tank — Is It Empty?",
         content:
+        image: "/images/B460-Scrubber-06.webp",
+        imageAlt: "water solution not dispensing",
           "It sounds obvious, but the solution level indicator is often unreliable. Open the fill cap and visually check that the tank has solution. If the tank has a float level sensor, verify it moves freely and isn't stuck in the 'full' position (falsely indicating liquid).",
       },
       {
@@ -1490,6 +1510,8 @@ const extraGuides: Guide[] = [
       {
         heading: "Comparison Table",
         content: "Here is a head-to-head comparison of the key factors:",
+        image: "/images/A50-Scrubber-05.webp",
+        imageAlt: "walk behind vs ride on scrubber",
         items: [
           "Cost: Walk-behind $3,000-$6,000 | Ride-on $8,000-$25,000+",
           "Productivity: Walk-behind 15,000-35,000 sq ft/hr | Ride-on 30,000-80,000+ sq ft/hr",
@@ -1539,6 +1561,8 @@ const extraGuides: Guide[] = [
         heading: "Disc Brush — Best for Smooth, Even Floors",
         content:
           "Disc brushes excel on smooth surfaces like sealed concrete, polished tile, epoxy, and vinyl. The flat rotating motion provides even pressure distribution for consistent scrubbing. Disc brushes are also easier to change and offer more material options (nylon, PPL, steel-wire mix), making them versatile for different soil types. However, they struggle on uneven surfaces because contact is limited to the flat plane of the brush.",
+        image: "/images/parts/Roller Brush Parts.webp",
+        imageAlt: "disc brush vs roller brush scrubber",
         items: [
           "Best for: supermarkets, hospitals, schools, offices, retail",
           "Advantages: even pressure, easy pad changes, many material options",
@@ -1582,6 +1606,8 @@ const extraGuides: Guide[] = [
       {
         heading: "Detailed Comparison",
         content: "A side-by-side evaluation of lead-acid versus lithium battery systems:",
+        image: "/images/A50-Scrubber-06.webp",
+        imageAlt: "lead acid vs lithium battery scrubber",
         items: [
           "Upfront Cost (24V system): Lead-Acid $400-800 | Lithium $1,200-2,400",
           "Lifespan: Lead-Acid 1-3 years (300-500 cycles) | Lithium 3-5 years (1,500-2,000 cycles)",
@@ -1637,6 +1663,8 @@ const extraGuides: Guide[] = [
       {
         heading: "1. Tennant Company (USA)",
         content: "Founded in 1870, Tennant is the world's largest dedicated floor cleaning equipment manufacturer. Based in Minneapolis, they operate in 15+ countries with an extensive dealer network. Known for innovation including ec-H2O electrolyzed water technology. Tennant machines are premium-priced ($15,000-$45,000+) and built for heavy industrial use.",
+        image: "/images/A1280-Sweeper-02.webp",
+        imageAlt: "top 10 floor scrubber manufacturers 2026",
         items: [
           "Founded: 1870 | HQ: Minneapolis, USA",
           "Key Products: T7, T12, T17 ride-on scrubbers; 5680 walk-behind",
@@ -2256,6 +2284,8 @@ const extraGuides: Guide[] = [
       {
         heading: "What Makes a Floor Scrubber Right for a Small Business?",
         content: "Small businesses need machines that are compact (fit through standard doorways), simple to operate (minimal training), affordable (under $5,000), and reliable (low maintenance). You don't need a ride-on machine — a quality walk-behind with a 17-20 inch cleaning path is ideal for spaces up to 15,000 sq ft.",
+        image: "/images/A1280-Sweeper-03.webp",
+        imageAlt: "best floor scrubber small business",
         items: [
           "Compact size: Must fit through 32-inch doorways and navigate tight spaces between displays, tables, or equipment",
           "Simple controls: One-button operation preferred — your staff aren't professional cleaners",
@@ -2363,6 +2393,8 @@ const extraGuides: Guide[] = [
       {
         heading: "5 Non-Negotiable Features for Food Plant Scrubbers",
         content: "If your scrubber lacks any of these, it's not food-grade:",
+        image: "/images/A1280-Sweeper-04.webp",
+        imageAlt: "floor scrubber food processing plants",
         items: [
           "Stainless steel components: Brushes, tanks, and frame must resist corrosion from acid-based cleaners and sanitizers. Standard steel rusts within months.",
           "IP65+ water protection: Electrical components sealed against high-pressure wash-down. IP65 minimum; IP67 preferred for areas with standing water.",
@@ -2422,6 +2454,8 @@ const extraGuides: Guide[] = [
       {
         heading: "5 Requirements for Healthcare-Grade Floor Scrubbers",
         content: "These features separate medical-grade machines from standard commercial scrubbers:",
+        image: "/images/B260R60-Sweeper-00.webp",
+        imageAlt: "hospital medical facility floor cleaning equipment",
         items: [
           "Ultra-quiet operation: <60dB — quieter than a conversation. Must be usable in patient rooms, hallways, and ICUs without disturbing patients or staff.",
           "HEPA filtration: H13 or H14 HEPA filter on vacuum exhaust to capture 99.97% of particles ≥0.3μm. Prevents aerosolized pathogens from being spread by the vacuum system.",
@@ -2482,6 +2516,8 @@ const extraGuides: Guide[] = [
       {
         heading: "Zone-by-Zone Equipment Guide",
         content: "One machine can't handle every hotel zone. Here's what works where:",
+        image: "/images/B260R60-Sweeper-02.webp",
+        imageAlt: "hotel hospitality floor cleaning solutions",
         items: [
           "Lobby & Atrium: Ultra-quiet scrubber (<60dB), fast-drying squeegee. Clean during low-traffic hours (2-5 AM). Marble-safe pads to avoid etching polished stone.",
           "Guest Corridors: Compact walk-behind (17-20 inch), low profile to fit under wall art and handrails. Clean mid-morning when guests are out.",
@@ -2525,6 +2561,8 @@ const extraGuides: Guide[] = [
       {
         heading: "Step 1: Find and Verify the Right Manufacturer",
         content: "Not all Chinese manufacturers are equal. Distinguish between real factories and trading companies:",
+        image: "/images/B260R60-Sweeper-03.webp",
+        imageAlt: "how to import floor scrubbers from china",
         items: [
           "Real factory indicators: They invite you to video-tour the production line. They have an export license you can verify. Their business license says 'manufacturing' — not 'trading'.",
           "Trading company red flags: They claim to 'represent multiple factories.' They can't show you a production line on video. Their prices are 15-25% higher because they add a middleman markup.",
@@ -2679,6 +2717,8 @@ const extraGuides: Guide[] = [
       {
         heading: "Zone-by-Zone Equipment Recommendations",
         content: "Different school zones need different approaches:",
+        image: "/images/B260R60-Sweeper-05.webp",
+        imageAlt: "school university floor cleaning equipment",
         items: [
           "Classrooms: Compact 17-inch scrubber. Ultra-quiet. Clean after hours. Tile and vinyl flooring. Quick-drying to avoid slip hazard for morning classes.",
           "Hallways & Corridors: 20-28 inch walk-behind or compact ride-on. Thousands of students × 180 school days = heavy traffic. Daily cleaning during off-hours essential.",
@@ -2718,6 +2758,8 @@ const extraGuides: Guide[] = [
       {
         heading: "Sweeper-Scrubber Combos: The Best Solution for Garages",
         content: "A sweeper-scrubber combination machine sweeps debris first, then scrubs — all in one pass. This is the ideal tool for parking garages because pre-sweeping prevents gravel and debris from being ground into the concrete by the scrubbing brush. One machine, one pass, one operator.",
+        image: "/images/B260R60-Sweeper-06.webp",
+        imageAlt: "parking garage floor scrubber guide",
         items: [
           "Best for: Multi-level parking structures, open-air lots, airport parking, stadium parking",
           "Price range: $12,000-25,000 dealer; $8,000-16,000 factory-direct",
@@ -2754,6 +2796,8 @@ const extraGuides: Guide[] = [
       {
         heading: "Building Your Warehouse Cleaning Fleet",
         content: "Based on facility size, here's what a properly equipped warehouse needs:",
+        image: "/images/parts/floor-pad-floor-scrubber-cleaning-pad-for-commercial-use.webp",
+        imageAlt: "warehouse cleaning equipment complete guide",
         items: [
           "Under 50,000 sq ft: 1 ride-on scrubber (28-34 inch) + 1 walk-behind sweeper. Total: $12,000-20,000 factory-direct.",
           "50,000-150,000 sq ft: 1 full-size ride-on scrubber (34-42 inch) + 1 compact ride-on sweeper. Total: $20,000-35,000 factory-direct.",
@@ -2872,6 +2916,8 @@ const extraGuides: Guide[] = [
       {
         heading: "The Problem",
         content: "The facility was paying an external cleaning company $72,000/year for nightly floor cleaning. Despite the cost, results were inconsistent — contractors changed frequently, equipment was poorly maintained, and the facility manager received complaints about tire marks and dust accumulation in pick zones. With the contract up for renewal with a 15% increase proposed, they explored bringing cleaning in-house.",
+        image: "/images/parts/Disc Brush Parts 2.webp",
+        imageAlt: "case study warehouse distribution center floor scrubbing",
       },
       {
         heading: "The Solution",
@@ -2914,6 +2960,8 @@ const extraGuides: Guide[] = [
       {
         heading: "The Problem",
         content: "The plant relied on 2-3 workers with mops and degreaser to clean production areas between shifts. Each cleaning session took 3 hours and still left visible oil residue. During a supplier audit, the automaker flagged floor cleanliness as a concern. Additionally, the plant recorded 5 slip incidents in 6 months related to oily floors — a serious safety issue.",
+        image: "/images/parts/Roller Brush Parts.webp",
+        imageAlt: "case study manufacturing plant floor cleaning",
       },
       {
         heading: "The Solution",
@@ -2957,6 +3005,8 @@ const extraGuides: Guide[] = [
       {
         heading: "The Problem",
         content: "The chain had been purchasing scrubbers through a local dealer at $8,500-11,000 per machine. With 12 stores each needing one machine, plus replacements every 4-5 years, fleet costs were substantial. Parts prices were equally inflated — $140 for a squeegee set that should cost $45. The chain's operations director researched alternatives and discovered factory-direct sourcing.",
+        image: "/images/parts/Squeegee Rubber Parts.webp",
+        imageAlt: "case study supermarket chain floor cleaning",
       },
       {
         heading: "The Solution",
@@ -2999,6 +3049,8 @@ const extraGuides: Guide[] = [
       {
         heading: "The ROI Formula",
         content: "Return on Investment for a floor scrubber is calculated as: ROI = (Annual Savings − Annual Machine Cost) ÷ Purchase Price × 100%. The key is identifying all savings — not just labor, but also chemical reduction, water savings, slip-and-fall risk reduction, and improved cleanliness scores.",
+        image: "/images/parts/Pad Driver Parts.webp",
+        imageAlt: "floor scrubber roi calculator cost savings",
         items: [
           "Annual Savings = Labor saved + Chemical saved + Outsourcing eliminated + Risk reduction",
           "Annual Machine Cost = Financing payment + Parts + Maintenance + Battery amortization",
@@ -3183,6 +3235,8 @@ const extraGuides: Guide[] = [
       {
         heading: "How We Evaluated Suppliers",
         content: "We scored each supplier on five criteria: pricing (factory-direct vs multi-tier), quality (materials and certifications), brand compatibility (how many OEM brands they cover), inventory depth (in-stock SKUs), and shipping/logistics (global reach and speed).",
+        image: "/images/parts/Disc Brush Parts 3.webp",
+        imageAlt: "top 10 floor scrubber parts suppliers",
       },
       {
         heading: "1. Aikerui (China) — Best Overall Value",
@@ -3260,6 +3314,8 @@ const extraGuides: Guide[] = [
       {
         heading: "Option 1: Equipment Leasing",
         content: "Monthly payments, no large upfront cost. At the end of the lease, you can buy the machine for a residual amount, return it, or upgrade to a newer model.",
+        image: "/images/B460-Scrubber-04.webp",
+        imageAlt: "floor scrubber financing options",
         items: [
           "Typical terms: 24-60 months, 5-15% APR",
           "Monthly payment for $10,000 machine: $200-350/month",
@@ -3335,6 +3391,8 @@ const extraGuides: Guide[] = [
       {
         heading: "New Floor Scrubber: What You're Really Paying For",
         content: "A new machine gives you: full warranty (1-3 years), zero-hour components, latest battery technology, factory support, and predictable maintenance costs for 3-5 years. Factory-direct pricing makes new machines more accessible than most buyers realize.",
+        image: "/images/A50-Scrubber-03.webp",
+        imageAlt: "used vs new floor scrubber",
         items: [
           "Walk-behind new: $1,800-7,500 factory-direct (dealer: $3,000-12,000)",
           "Ride-on new: $6,000-24,000 factory-direct (dealer: $9,000-35,000)",
@@ -3387,6 +3445,8 @@ const extraGuides: Guide[] = [
       {
         heading: "Zone-by-Zone Gym Cleaning",
         content: "Different gym zones need different approaches:",
+        image: "/images/B460-Scrubber-01.webp",
+        imageAlt: "floor scrubber gym fitness center",
         items: [
           "Weight Room (rubber flooring): Compact walk-behind, 17-20 inch. Daily cleaning essential. Soft brush to avoid damaging rubber mats.",
           "Cardio Area (rubber/tile): Same machine, different pad. Fast-drying critical — members walk here constantly.",
@@ -3426,6 +3486,8 @@ const extraGuides: Guide[] = [
       {
         heading: "Recommended Machine",
         content: "A compact 17-20 inch walk-behind scrubber. Ultra-quiet (<60dB). Lightweight for multi-floor buildings without elevators. Quick-drying squeegee for fast turnaround. Factory-direct price: $1,800-3,200.",
+        image: "/images/A1280-Sweeper-01.webp",
+        imageAlt: "floor scrubber church event venue",
         items: [
           "Sanctuary & Chapel: Polished wood/stone — soft pads only, ultra-quiet mode.",
           "Fellowship Hall & Banquet: Tile/vinyl — fast cleaning between events, quick-drying.",
@@ -3463,6 +3525,8 @@ const extraGuides: Guide[] = [
       {
         heading: "1. Tennant (USA) — Industry Leader",
         content: "World's largest dedicated manufacturer. T7/T12/T17 ride-on scrubbers are the gold standard. Premium pricing ($15,000-45,000). Best dealer network globally. ec-H2O water electrolysis technology eliminates chemical use.",
+        image: "/images/A1280-Sweeper-03.webp",
+        imageAlt: "top 10 industrial cleaning equipment manufacturers",
         items: ["Founded: 1870 | HQ: Minneapolis, USA","Price: $$$$", "Quality: ★★★★★", "Best for: Large corporations with service contracts"],
       },
       {
@@ -3540,6 +3604,8 @@ const extraGuides: Guide[] = [
       {
         heading: "Why Standard Scrubbers Fail in Sandy Environments",
         content: "Sand and abrasive dust cause four specific problems: (1) premature brush wear — nylon bristles can wear out in weeks instead of months, (2) squeegee blade scoring — fine particles scratch rubber blades, causing streak marks, (3) filter clogging — dust overwhelms standard vacuum filters, and (4) motor damage — fine dust enters unsealed motors and bearings.",
+        image: "/images/parts/Sweeper Side Brush Parts.webp",
+        imageAlt: "floor scrubber dust sand industrial cleaning",
       },
       {
         heading: "Key Features for Sand & Dust Environments",
@@ -3594,6 +3660,8 @@ const extraGuides: Guide[] = [
       {
         heading: "Types of Carpet Cleaning Machines",
         content: "Three main types of commercial carpet cleaning equipment:",
+        image: "/images/parts/Wafer Brush Parts.webp",
+        imageAlt: "commercial carpet cleaning equipment guide",
         items: [
           "Carpet Extractor: Injects solution deep into fibers, agitates with brush, then extracts dirty water. Best for deep cleaning. Hotel corridors, office carpets.",
           "Bonnet Cleaner: Uses a rotating absorbent pad to clean carpet surface. Faster than extraction but less deep cleaning. Best for maintenance between deep cleans.",
@@ -3626,6 +3694,8 @@ const extraGuides: Guide[] = [
       {
         heading: "Key Features for Oil & Grease Environments",
         content: "Look for these four features when selecting a scrubber for oily floors:",
+        image: "/images/parts/disc-brush-custom-nylon-steel-wire-brushes-for-floor-scrubbers.webp",
+        imageAlt: "floor scrubber oil grease factory cleaning",
         items: [
           "Oil-resistant squeegee rubber: Linatex or oil-resistant polyurethane. Standard natural rubber deteriorates in weeks.",
           "High brush pressure (80-100kg): Cuts through caked-on grease that standard 40kg pressure can't touch.",
@@ -3663,6 +3733,8 @@ const extraGuides: Guide[] = [
       {
         heading: "Types of Pad Holders",
         content: "Three main types, each for different machine configurations:",
+        image: "/images/parts/Pad Driver Parts.webp",
+        imageAlt: "floor scrubber pad holder replacement guide",
         items: [
           "Standard Pad Driver: Flat disc with gripping surface. Fits most walk-behind scrubbers. 13-20 inch sizes.",
           "Center Lock Pad Holder: Has a locking mechanism at the center. Quick-release for fast pad changes. Common on Tennant and Nilfisk machines.",
@@ -3703,6 +3775,8 @@ const extraGuides: Guide[] = [
       {
         heading: "The Sweeper-Scrubber Combo: One Machine, One Pass",
         content: "A sweeper-scrubber combination machine is the ideal tool for construction cleanup. The front sweeper picks up loose debris, dust, and small construction waste. The rear scrubber then cleans the now-clear floor. One machine, one operator, one pass — saves hours compared to sweeping then mopping.",
+        image: "/images/parts/Sweeper Side Brush Parts.webp",
+        imageAlt: "floor scrubber construction site cleaning",
         items: [
           "Pre-sweeps: Concrete dust, sawdust, drywall powder, small debris",
           "Then scrubs: Clean concrete, epoxy, or tile surface",
@@ -3739,6 +3813,8 @@ const extraGuides: Guide[] = [
       {
         heading: "Nylon (PA) — Best All-Rounder",
         content: "Standard nylon bristles work on most sealed floors — tile, sealed concrete, vinyl, and epoxy. Gentle enough for polished surfaces, durable enough for daily commercial use. 1,200+ hour lifespan. Temperature resistant to 120°C. Factory-direct price: $45-60 per disc brush.",
+        image: "/images/parts/Disc Brush Parts 3.webp",
+        imageAlt: "floor scrubber brush bristle material guide",
         items: ["Best for: Supermarkets, hospitals, schools, offices","Floor types: Tile, vinyl, sealed concrete, epoxy","Lifespan: 3-6 months daily use","Pros: Balanced performance, widely compatible","Cons: Not aggressive enough for heavy soil"],
       },
       {
@@ -3782,6 +3858,8 @@ const extraGuides: Guide[] = [
       {
         heading: "What's Typically Covered (and for How Long)",
         content: "Most floor scrubber warranties are split into tiered coverage:",
+        image: "/images/B460-Scrubber-02.webp",
+        imageAlt: "floor scrubber warranty comparison",
         items: [
           "Frame & chassis: 3-5 years (longest coverage — these rarely fail)",
           "Motor & drive system: 1-2 years (the expensive components)",
@@ -3824,6 +3902,8 @@ const extraGuides: Guide[] = [
       {
         heading: "5 Requirements for Healthcare Scrubbers",
         content: "Ultra-quiet (<60dB) for patient areas. H13/H14 HEPA filtration on vacuum exhaust. Chemical compatibility with hydrogen peroxide, quaternary ammonium, and bleach. Cordless for no tripping hazards. Sealed smooth surfaces for disinfectant wipe-down.",
+        image: "/images/B260R60-Sweeper-00.webp",
+        imageAlt: "floor scrubber hospital healthcare facility",
       },
       {
         heading: "Zone-Specific Cleaning",
@@ -3855,6 +3935,8 @@ const extraGuides: Guide[] = [
       {
         heading: "The 15 Specs That Matter",
         content: "Cleaning width (inches), Productivity (sq ft/hr), Brush RPM, Brush pressure (kg), Motor power (HP/W), Battery voltage (V) and type, Runtime (hours), Charge time, Solution tank (gallons), Recovery tank (gallons), Machine weight (lbs), Dimensions, Squeegee width, Noise level (dB), IP rating.",
+        image: "/images/B460-Scrubber-03.webp",
+        imageAlt: "how to read floor scrubber specifications",
         items: [
           "Cleaning width x 2.5 ≈ squeegee width. Under 20-inch = compact, 28+ = industrial.",
           "Productivity is theoretical — real-world is 60-70% of rated number.",
@@ -3889,6 +3971,8 @@ const extraGuides: Guide[] = [
       {
         heading: "Pressure Guide by Facility Type",
         content: "Retail/supermarket: 30-40kg — gentle on polished tile, enough for daily dirt. Warehouse: 50-70kg — handles tire marks and light debris. Factory/manufacturing: 80-100kg — cuts through oil, grease, and caked-on soil. Hospital/school: 30-50kg — balanced for tile and vinyl.",
+        image: "/images/parts/Pad Center Lock Parts.webp",
+        imageAlt: "floor scrubber brush pressure guide",
       },
       {
         heading: "Pressure vs Floor Damage",
@@ -3916,6 +4000,8 @@ const extraGuides: Guide[] = [
       {
         heading: "Recommended Machine",
         content: "Compact 17-20 inch walk-behind. Ultra-quiet for classroom cleaning during off-hours. Lithium battery for opportunity charging between shifts. Small enough to store in a janitor's closet. Factory-direct price: $1,800-3,200.",
+        image: "/images/B260R60-Sweeper-03.webp",
+        imageAlt: "floor scrubber school university cleaning",
       },
     ],
     relatedProducts: [],
@@ -3939,6 +4025,8 @@ const extraGuides: Guide[] = [
       {
         heading: "Fleet Recommendations by Facility Size",
         content: "Under 100K sq ft: 1 ride-on scrubber + 1 compact walk-behind. 100K-500K sq ft: 2 ride-on scrubbers + 1 sweeper. 500K+ sq ft: 3+ ride-on, dedicated charging station, spare parts inventory.",
+        image: "/images/parts/Disc Brush Parts.webp",
+        imageAlt: "floor scrubber logistics distribution center",
       },
       {
         heading: "Battery Strategy for Multi-Shift",
@@ -3966,6 +4054,8 @@ const extraGuides: Guide[] = [
       {
         heading: "Showroom vs Service Bay: Different Machines",
         content: "Showroom: Ultra-quiet compact scrubber with soft pads for polished concrete/epoxy. Clean daily before opening. Service Bay: Degreasing-capable machine with oil-resistant squeegee and higher brush pressure (60-80kg). Clean after closing.",
+        image: "/images/B460-Scrubber-05.webp",
+        imageAlt: "floor scrubber auto dealership showroom",
       },
       {
         heading: "Recommended Setup",
@@ -3993,6 +4083,8 @@ const extraGuides: Guide[] = [
       {
         heading: "7 Verification Steps",
         content: "1. Request a live video factory tour — real manufacturers say yes immediately. 2. Verify business license on Chinese government database. 3. Check for ISO/CE certifications — request certificate numbers to verify. 4. Ask for 3 customer references in your country. 5. Order a sample unit before committing to a container. 6. Use Trade Assurance or Letter of Credit — never pay 100% upfront. 7. Third-party inspection (SGS/Bureau Veritas) costs $300-500 and saves thousands.",
+        image: "/images/parts/Shampoo Disc Brush Parts.webp",
+        imageAlt: "how to verify floor scrubber manufacturer",
       },
       {
         heading: "We Pass All 7 Checks",
@@ -4020,6 +4112,8 @@ const extraGuides: Guide[] = [
       {
         heading: "Stripping Equipment You Need",
         content: "Floor stripper machine (175-350 RPM, higher speed than scrubbers), stripping pads (black or high-productivity brown), stripping chemical solution, wet/dry vacuum, and mop for solution application. A standard floor scrubber at low speed can also strip with the right pads and chemicals.",
+        image: "/images/parts/floor-pad-floor-scrubber-cleaning-pad-for-commercial-use.webp",
+        imageAlt: "floor stripping equipment finish removal guide",
       },
       {
         heading: "Stripping Pads: Black vs Brown vs Specialty",
@@ -4046,6 +4140,8 @@ const extraGuides: Guide[] = [
     sections: [
       { heading: "Why Importing a Floor Scrubber Directly Saves You Thousands", content: "A dealer-priced ride-on scrubber at $18,000 can be sourced factory-direct for $9,000 — but only if you know how to handle international logistics. The shipping and customs process intimidates many first-time buyers, but it's far simpler than most people think. This guide walks you through the entire process, from factory pickup to your warehouse door." },
       { heading: "Sea Freight vs Air Freight: Which Should You Choose?", content: "99% of floor scrubber imports use sea freight. Air freight costs 5-8x more and only makes sense for urgent spare parts or single demo units.", items: [
+        image: "/images/A1280-Sweeper-04.webp",
+        imageAlt: "how to ship floor scrubber internationally",
         "Sea Freight: $800-2,500 per machine (20-40 days). FCL (Full Container) for 10+ machines is cheapest per unit. LCL (Less than Container Load) for 1-5 machines — shared container, slightly longer transit.",
         "Air Freight: $5,000-15,000 per machine (3-7 days). Only for: rush orders, trade show demo units, or replacement machines when downtime costs exceed air freight premium.",
         "Recommendation: 1-3 machines = LCL sea freight. 4-10 machines = consider FCL 20ft container. 10+ machines = FCL 40ft container, lowest cost per unit.",
@@ -4512,6 +4608,8 @@ const extraGuides: Guide[] = [
       {
         heading: "1. Floor Scrubber Disc Brush",
         content: "The most common brush type, used on the majority of walk-behind and ride-on scrubbers. A flat round brush that spins against the floor. Best on smooth floors like sealed concrete, tile, and epoxy. Available in nylon, PPL, and abrasive materials. Factory-direct: 45 to 75 USD per brush, versus 100 to 250 USD at dealers.",
+        image: "/images/parts/Roller Brush Parts.webp",
+        imageAlt: "top 10 floor scrubber brushes and parts",
         image: "/images/parts/Disc Brush Parts.webp",
         imageAlt: "Floor scrubber disc brush",
         items: [
@@ -4626,6 +4724,8 @@ const extraGuides: Guide[] = [
         heading: "How Compatibility Works",
         content: "A floor scrubber brush fits a machine by three things: diameter, mounting system, and bristle material. If these match the machine spec, the brush works — regardless of the brand on the label.",
         image: "/images/parts/Disc Brush Parts.webp",
+        imageAlt: "aftermarket scrubber brush compatible brands",
+        image: "/images/parts/Disc Brush Parts.webp",
         imageAlt: "Compatible floor scrubber disc brush",
         items: [
           "Diameter: 17, 20, 24, 28, 32 inch — must match machine width.",
@@ -4728,7 +4828,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "9 min",
     difficulty: "beginner",
-    thumbnail: "/images/parts/101705320686.webp",
+    thumbnail: "/images/parts/Disc Brush Parts 2.webp",
     published: "2026-09-01",
     sections: [
       {
@@ -4738,6 +4838,8 @@ const extraGuides: Guide[] = [
       {
         heading: "Step 1: Find a Real Manufacturer",
         content: "Not every supplier on Alibaba or Made-in-China is a factory. Use these verification checks:",
+        image: "/images/parts/Pad Driver Parts.webp",
+        imageAlt: "how to buy floor scrubber parts from china",
         items: [
           "Ask for a live video tour of the production floor via WhatsApp or video call.",
           "Request a business license and match the address to a real industrial area.",
