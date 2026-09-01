@@ -65,6 +65,31 @@ export default function GuidesPage() {
       </section>
 
       <div className="max-w-7xl mx-auto px-4 py-12">
+        {/* Category quick-nav anchors */}
+        <nav className="flex flex-wrap gap-2 mb-10 pb-6 border-b border-gray-200" aria-label="Guide categories">
+          <span className="text-sm font-semibold text-gray-500 self-center mr-1">
+            Jump to:
+          </span>
+          {["buying-guide", "maintenance", "troubleshooting", "comparison", "product-showcase"].map(
+            (cat) => {
+              const n = guides.filter((g) => g.category === cat).length;
+              if (n === 0) return null;
+              const info = CATEGORY_LABELS[cat] || { label: cat, icon: "📄" };
+              return (
+                <a
+                  key={cat}
+                  href={`#${cat}`}
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium text-gray-700 bg-gray-100 hover:bg-primary hover:text-white rounded-full transition-colors"
+                >
+                  <span>{info.icon}</span>
+                  {info.label}
+                  <span className="text-xs opacity-60">({n})</span>
+                </a>
+              );
+            }
+          )}
+        </nav>
+
         {["buying-guide", "maintenance", "troubleshooting", "comparison", "product-showcase"].map(
           (cat) => {
             const catGuides = guides.filter((g) => g.category === cat);
@@ -74,10 +99,13 @@ export default function GuidesPage() {
               icon: "📄",
             };
             return (
-              <section key={cat} className="mb-12">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">
+              <section key={cat} id={cat} className="mb-12 scroll-mt-24">
+                <h2 className="text-2xl font-bold text-gray-900 mb-2">
                   {info.icon} {info.label}
                 </h2>
+                <p className="text-sm text-gray-500 mb-6">
+                  {catGuides.length} article{catGuides.length > 1 ? "s" : ""} in this category
+                </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {catGuides.map((guide) => (
                     <Link
