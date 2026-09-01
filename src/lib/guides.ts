@@ -1020,9 +1020,7 @@ const extraGuides: Guide[] = [
     videoUrl: "https://x.com/mark_xu71710/status/2062744516939919806",
     sections: [
       { heading: "Pre-Operation Daily Checks", content: "A thorough pre-operation check takes just 5 minutes but prevents costly downtime.", items: ["Battery charge: minimum 80%", "Brushes: check for wear", "Squeegee blades: inspect for nicks", "Solution tank: fill with water"] },
-      { heading: "Proper Scrubbing Technique", content: "Overlap each pass by 4-6 inches to avoid streaks.", items: ["Overlap passes by 4-6 inches", "Slow down on heavily soiled areas", "Raise squeegee when turning", "Work from cleanest to dirtiest areas"] },
-        image: "/images/B460-Scrubber-02.webp",
-        imageAlt: "floor scrubber daily operation best practices",
+      { heading: "Proper Scrubbing Technique", content: "Overlap each pass by 4-6 inches to avoid streaks.", items: ["Overlap passes by 4-6 inches", "Slow down on heavily soiled areas", "Raise squeegee when turning", "Work from cleanest to dirtiest areas"], image: "/images/B460-Scrubber-02.webp", imageAlt: "floor scrubber daily operation best practices" },
       { heading: "Post-Operation Maintenance", content: "After each shift, empty and rinse both tanks.", items: ["Empty and rinse both tanks", "Remove and rinse squeegee blades", "Wipe down machine body", "Charge lead-acid batteries immediately"] },
     ],
     relatedProducts: [],
@@ -1039,9 +1037,7 @@ const extraGuides: Guide[] = [
     videoUrl: "https://x.com/mark_xu71710/status/2064637551541878998",
     sections: [
       { heading: "Compact Design", content: "The A50 is designed with a compact footprint of 1300x550x1100mm.", items: ["Dimensions: 1300x550x1100mm", "Cleaning width: 500mm", "Ideal for facilities under 10,000 sq ft"] },
-      { heading: "Cleaning Performance", content: "The 550W brush motor delivers effective scrubbing on various floor types.", items: ["Brush motor: 550W", "Productivity: ~2,200 m²/hour", "Noise level: 65dB"] },
-        image: "/images/A50-Scrubber-02.webp",
-        imageAlt: "a50 walk behind scrubber features",
+      { heading: "Cleaning Performance", content: "The 550W brush motor delivers effective scrubbing on various floor types.", items: ["Brush motor: 550W", "Productivity: ~2,200 m²/hour", "Noise level: 65dB"], image: "/images/A50-Scrubber-02.webp", imageAlt: "a50 walk behind scrubber features" },
       { heading: "Battery and Runtime", content: "Powered by a 24V system with maintenance-free battery.", items: ["Voltage: 24V", "Runtime: 3-4 hours", "Charging time: 5-6 hours"] },
     ],
     relatedProducts: [],
@@ -1063,7 +1059,7 @@ const extraGuides: Guide[] = [
       },
       {
         heading: "How We Selected These Manufacturers",
-        content: "We evaluated manufacturers based on five criteria: production capability (factory size and output), product range (walk-behind, ride-on, sweepers, parts), quality certifications (CE, ISO, SGS), global distribution network, and customer reviews across multiple markets. This list includes both well-known global brands and emerging factory-direct manufacturers."
+        content: "We evaluated manufacturers based on five criteria: production capability (factory size and output), product range (walk-behind, ride-on, sweepers, parts), quality certifications (CE, ISO, SGS), global distribution network, and customer reviews across multiple markets. This list includes both well-known global brands and emerging factory-direct manufacturers.",
         image: "/images/A1280-Sweeper-01.webp",
         imageAlt: "top floor scrubber brands buyers guide",
       },
@@ -1390,10 +1386,9 @@ const extraGuides: Guide[] = [
       },
       {
         heading: "Cause 1: Dirty or Over-Saturated Pad/Brush",
-        content:
+        content: "A pad or brush that's loaded with dirt and soap residue will smear rather than scrub. If you're seeing dirty streaks, remove the pad and check it. A pad that's black, heavily matted, or dripping with dirty water needs to be cleaned or replaced. Never scrub with yesterday's dirty pad.",
         image: "/images/parts/Squeegee Rubber Parts.webp",
         imageAlt: "scrubber leaving streaks on floor",
-          "A pad or brush that's loaded with dirt and soap residue will smear rather than scrub. If you're seeing dirty streaks, remove the pad and check it. A pad that's black, heavily matted, or dripping with dirty water needs to be cleaned or replaced. Never scrub with yesterday's dirty pad.",
       },
       {
         heading: "Cause 2: Incorrect Solution Flow Rate",
@@ -1446,10 +1441,9 @@ const extraGuides: Guide[] = [
       },
       {
         heading: "Step 1: Check the Solution Tank — Is It Empty?",
-        content:
+        content: "It sounds obvious, but the solution level indicator is often unreliable. Open the fill cap and visually check that the tank has solution. If the tank has a float level sensor, verify it moves freely and isn't stuck in the 'full' position (falsely indicating liquid).",
         image: "/images/B460-Scrubber-06.webp",
         imageAlt: "water solution not dispensing",
-          "It sounds obvious, but the solution level indicator is often unreliable. Open the fill cap and visually check that the tank has solution. If the tank has a float level sensor, verify it moves freely and isn't stuck in the 'full' position (falsely indicating liquid).",
       },
       {
         heading: "Step 2: Clean the Solution Filter",
@@ -4139,9 +4133,7 @@ const extraGuides: Guide[] = [
     published: "2026-07-23",
     sections: [
       { heading: "Why Importing a Floor Scrubber Directly Saves You Thousands", content: "A dealer-priced ride-on scrubber at $18,000 can be sourced factory-direct for $9,000 — but only if you know how to handle international logistics. The shipping and customs process intimidates many first-time buyers, but it's far simpler than most people think. This guide walks you through the entire process, from factory pickup to your warehouse door." },
-      { heading: "Sea Freight vs Air Freight: Which Should You Choose?", content: "99% of floor scrubber imports use sea freight. Air freight costs 5-8x more and only makes sense for urgent spare parts or single demo units.", items: [
-        image: "/images/A1280-Sweeper-04.webp",
-        imageAlt: "how to ship floor scrubber internationally",
+      { heading: "Sea Freight vs Air Freight: Which Should You Choose?", content: "99% of floor scrubber imports use sea freight. Air freight costs 5-8x more and only makes sense for urgent spare parts or single demo units.", image: "/images/A1280-Sweeper-04.webp", imageAlt: "how to ship floor scrubber internationally", items: [
         "Sea Freight: $800-2,500 per machine (20-40 days). FCL (Full Container) for 10+ machines is cheapest per unit. LCL (Less than Container Load) for 1-5 machines — shared container, slightly longer transit.",
         "Air Freight: $5,000-15,000 per machine (3-7 days). Only for: rush orders, trade show demo units, or replacement machines when downtime costs exceed air freight premium.",
         "Recommendation: 1-3 machines = LCL sea freight. 4-10 machines = consider FCL 20ft container. 10+ machines = FCL 40ft container, lowest cost per unit.",
@@ -4608,8 +4600,6 @@ const extraGuides: Guide[] = [
       {
         heading: "1. Floor Scrubber Disc Brush",
         content: "The most common brush type, used on the majority of walk-behind and ride-on scrubbers. A flat round brush that spins against the floor. Best on smooth floors like sealed concrete, tile, and epoxy. Available in nylon, PPL, and abrasive materials. Factory-direct: 45 to 75 USD per brush, versus 100 to 250 USD at dealers.",
-        image: "/images/parts/Roller Brush Parts.webp",
-        imageAlt: "top 10 floor scrubber brushes and parts",
         image: "/images/parts/Disc Brush Parts.webp",
         imageAlt: "Floor scrubber disc brush",
         items: [
@@ -4723,8 +4713,6 @@ const extraGuides: Guide[] = [
       {
         heading: "How Compatibility Works",
         content: "A floor scrubber brush fits a machine by three things: diameter, mounting system, and bristle material. If these match the machine spec, the brush works — regardless of the brand on the label.",
-        image: "/images/parts/Disc Brush Parts.webp",
-        imageAlt: "aftermarket scrubber brush compatible brands",
         image: "/images/parts/Disc Brush Parts.webp",
         imageAlt: "Compatible floor scrubber disc brush",
         items: [
