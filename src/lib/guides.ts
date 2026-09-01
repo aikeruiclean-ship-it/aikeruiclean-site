@@ -4671,4 +4671,76 @@ const extraGuides: Guide[] = [
       "floor-scrubber-brush-complete-guide",
     ],
   },
+  {
+    slug: "how-to-buy-floor-scrubber-parts-from-china",
+    title: "How to Buy Floor Scrubber Parts from China: Complete Sourcing Guide",
+    description: "Step-by-step guide to sourcing floor scrubber brushes, squeegee blades, and parts from China. Verify factories, order samples, compare quotes, handle payment and shipping safely.",
+    category: "buying-guide",
+    readTime: "9 min",
+    difficulty: "beginner",
+    published: "2026-09-01",
+    sections: [
+      {
+        heading: "Why Buy Floor Scrubber Parts from China",
+        content: "China manufactures the majority of the world's floor scrubber brushes, squeegee blades, and pad drivers — including the private-label parts sold by Western brands. Buying directly from the factory saves 30-50% versus dealer prices. The challenge is finding a real manufacturer instead of a trading company, and handling the sourcing process safely. This guide walks through each step.",
+      },
+      {
+        heading: "Step 1: Find a Real Manufacturer",
+        content: "Not every supplier on Alibaba or Made-in-China is a factory. Use these verification checks:",
+        items: [
+          "Ask for a live video tour of the production floor via WhatsApp or video call.",
+          "Request a business license and match the address to a real industrial area.",
+          "Check if they show molds, raw material stock, and production equipment in photos.",
+          "Ask for the factory's export record or existing customer references.",
+          "Cross-check the company on Google Maps — a real factory has a visible site.",
+        ],
+      },
+      {
+        heading: "Step 2: Confirm Compatibility Before Ordering",
+        content: "A floor scrubber part must match your machine's diameter, mounting system, and specification. The NP-9200 2-lug standard fits most Tennant, Nilfisk, Viper, and Chinese OEM machines. 3-lug center lock fits Advance and older Nilfisk. 4-lug magnetic fits Karcher BD50/53 and Hako B45/70. Always send the factory your machine model or OEM part number, plus a photo of the existing part, before ordering.",
+      },
+      {
+        heading: "Step 3: Order Samples First",
+        content: "Never place a bulk order without testing samples. A reputable factory ships samples within 24-48 hours via DHL or FedEx. Compare the sample against your current part: check bristle density, bristle height, backing plate quality, and fit on your machine. Sample cost is usually deducted from your first bulk order.",
+      },
+      {
+        heading: "Step 4: Compare Factory-Direct Quotes",
+        content: "Get quotes from 2-3 verified factories. Compare price, MOQ, lead time, and payment terms — not just price. A factory-direct disc brush costs 45-75 USD versus 100-250 USD at dealers. Roller brushes cost 55-95 USD factory-direct versus 120-300 USD at dealers. Watch for quotes that are suspiciously low — they often use recycled filler instead of virgin nylon or PPL.",
+      },
+      {
+        heading: "Step 5: Payment and Contract Terms",
+        content: "Standard terms for factory-direct parts:",
+        table: {
+          headers: ["Term", "Typical Arrangement", "Notes"],
+          rows: [
+            ["Deposit", "30% T/T advance", "Required for custom/OEM orders"],
+            ["Balance", "70% before shipment", "After production photos approved"],
+            ["Sample orders", "100% in advance", "Under 500 USD, use PayPal or Trade Assurance"],
+            ["Trade Assurance", "Available on Alibaba", "Free buyer protection up to agreed amount"],
+            ["Inspection", "SGS or BV before shipment", "Optional, at buyer's cost"],
+          ],
+        },
+      },
+      {
+        heading: "Step 6: Shipping and Customs",
+        content: "Parts ship by express courier (DHL/FedEx/UPS, 3-7 days) for small orders, or by sea freight (LCL/FCL, 25-40 days) for bulk. For the US, a commercial invoice with HS Code 8479.90 is typical for scrubber parts. Duties vary by country — check your local import tariff for brush and parts classifications.",
+      },
+      {
+        heading: "Step 7: Build a Long-Term Relationship",
+        content: "The best pricing and priority production come from repeat orders. Keep your drawings, part numbers, and order history with the same factory. Ask about annual volume discounts and consignment stock options for fast-moving parts.",
+      },
+      {
+        heading: "Get a Factory-Direct Quote",
+        content: "We are a verified brush and parts manufacturer in Anqing, China since 2008 (CE, ISO 9001). Send us your machine model or OEM part number at aikeruiclean.com/floor-scrubber-parts-quote, or browse our 360+ parts catalog at aikeruiclean.com/parts. Samples ship within 24-48 hours.",
+      },
+    ],
+    relatedProducts: [],
+    relatedGuides: [
+      "how-to-import-floor-scrubbers-from-china",
+      "oem-vs-aftermarket-floor-scrubber-parts",
+      "floor-scrubber-parts-guide-types-lifespan-cost",
+      "floor-scrubber-brush-complete-guide",
+      "top-10-floor-scrubber-parts-suppliers",
+    ],
+  },
 ];
