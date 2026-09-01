@@ -11,6 +11,7 @@ const LOCAL_VIDEOS: Record<string, { src: string; poster?: string }> = {
   XrHK1POi7yY: { src: "/videos/steel-wire-brush.mp4" },
   fuP35AeMNGk: { src: "/videos/disc-brush.mp4" },
   IfTGVM4OC_k: { src: "/videos/disc-brush-buying.mp4" },
+  factorytour01: { src: "/videos/factorytour01.mp4" },
   "shampoo-disc-brush": {
     src: "/videos/shampoo-disc-brush.mp4",
     poster: "/images/shampoo-disc-brush-poster.jpg",

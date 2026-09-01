@@ -4690,6 +4690,10 @@ const extraGuides: Guide[] = [
         ],
       },
       {
+        heading: "See the Factory in Action",
+        content: "Watch our short factory video to see the production lines, raw materials, and finished brushes. A real factory has visible production — that is the first thing to verify when sourcing.",
+      },
+      {
         heading: "Get Factory-Direct Quotes",
         content: "Browse the full floor scrubber brush and parts range at aikeruiclean.com/parts. Get factory-direct pricing at aikeruiclean.com/floor-scrubber-parts-quote. We confirm compatibility within 24 hours and ship worldwide for in-stock items.",
       },
@@ -4817,6 +4821,7 @@ const extraGuides: Guide[] = [
     readTime: "9 min",
     difficulty: "beginner",
     thumbnail: "/images/parts/Disc Brush Parts 2.webp",
+    videoId: "factorytour01",
     published: "2026-09-01",
     sections: [
       {
