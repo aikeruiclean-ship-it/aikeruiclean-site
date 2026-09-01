@@ -77,6 +77,38 @@ const FAQ_DATA = [
     q: "How do I get a quote?",
     a: "Fill out the form on our <a href='/floor-scrubber-parts-quote'>Get a Quote</a> page, email us at <a href='mailto:info@aikeruiclean.com'>info@aikeruiclean.com</a>, or WhatsApp us at <a href='https://api.whatsapp.com/send?phone=8619965236428&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20pricing.'>+86 199 6523 6428</a>. We respond within 24 hours with detailed pricing, specifications, and shipping options.",
   },
+  {
+    q: "How long does a floor scrubber brush last?",
+    a: "With daily use on smooth floors, a floor scrubber brush typically lasts 3-6 months. On rough concrete, expect 1-3 months. Light use can stretch it to 6-12 months. Replace the brush when bristles are flattened or below 12 mm height — a worn brush leaves streaks and reduces cleaning quality. See our <a href='/guides/floor-scrubber-brush-complete-guide'>brush guide</a> for full details.",
+  },
+  {
+    q: "Which floor scrubber brush fits my machine?",
+    a: "Match two things: the brush diameter and the mounting system. Most machines use the NP-9200 2-lug standard, which fits Tennant, Nilfisk, Viper, Comac, and most Chinese OEM scrubbers. 3-lug center lock fits Advance and older Nilfisk models. 4-lug magnetic fits Karcher BD50/53 and Hako B45/70. Send us your machine model or OEM part number and we will confirm compatibility within 24 hours.",
+  },
+  {
+    q: "What is the difference between nylon and PPL scrubber brushes?",
+    a: "Nylon brushes are the default choice — safe on concrete, tile, and epoxy, and ideal for daily cleaning. PPL (polypropylene) brushes are stiffer and better for heavy grease and oil on unsealed concrete. Do not use PPL on epoxy or sealed floors as it can scratch the coating. Abrasive brushes (silicon carbide) are for stripping old finish, not daily use.",
+  },
+  {
+    q: "What is the minimum order quantity for parts?",
+    a: "For standard parts like floor scrubber brushes, squeegee blades, and pad drivers, the MOQ is 1 piece — sample orders are welcome. For OEM and private label parts with custom branding, the MOQ is typically 50-200 pieces depending on the specification.",
+  },
+  {
+    q: "How long is delivery for floor scrubber parts?",
+    a: "In-stock parts ship within 24-48 hours. Custom or OEM parts take 10-20 working days after specification confirmation. Express shipping (DHL/FedEx/UPS) delivers to the US and Europe in 3-7 days; sea freight takes 25-40 days.",
+  },
+  {
+    q: "Do you offer OEM or private label brushes?",
+    a: "Yes. We manufacture OEM and private label floor scrubber brushes with custom branding, packaging, bristle materials, and dimensions. Send us a sample or drawing and we will match it. MOQ for OEM brushes is typically 50-200 pieces. Factory-direct pricing is 30-50% below dealer prices.",
+  },
+  {
+    q: "Can I order a brush sample first?",
+    a: "Yes. Sample orders are welcome for all standard brushes — MOQ is 1 piece. Samples ship within 24-48 hours via DHL/FedEx. If you need a custom sample, we can produce it in 5-7 working days. Sample pricing is deducted from your first bulk order.",
+  },
+  {
+    q: "What payment methods do you accept for parts?",
+    a: "We accept T/T (bank transfer), PayPal, L/C, Trade Assurance (Alibaba), and Western Union for parts orders. Payment terms are confirmed on your proforma invoice. For first-time orders under 500 USD, PayPal or Trade Assurance is recommended.",
+  },
 ];
 
 export default function FAQPage() {
