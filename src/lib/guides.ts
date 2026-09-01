@@ -8,6 +8,7 @@ export interface Guide {
   published: string;
   sections: GuideSection[];
   relatedProducts?: string[];
+  relatedGuides?: string[];
   videoUrl?: string;
   videoId?: string;
   thumbnail?: string;
@@ -124,6 +125,7 @@ const guides: Guide[] = [
       },
     ],
     relatedProducts: [],
+    relatedGuides: ["aftermarket-scrubber-brush-compatible-brands"],
   },
   {
     slug: "how-to-choose-a-floor-scrubber",
@@ -581,6 +583,7 @@ const guides: Guide[] = [
       },
     ],
     relatedProducts: [],
+    relatedGuides: ["aftermarket-scrubber-brush-compatible-brands"],
   },
   {
     slug: "nilfisk-scrubber-parts-guide",
@@ -651,6 +654,7 @@ const guides: Guide[] = [
       },
     ],
     relatedProducts: [],
+    relatedGuides: ["aftermarket-scrubber-brush-compatible-brands"],
   },
   {
     slug: "karcher-scrubber-parts-guide",
@@ -722,6 +726,7 @@ const guides: Guide[] = [
       },
     ],
     relatedProducts: [],
+    relatedGuides: ["aftermarket-scrubber-brush-compatible-brands"],
   },
   {
     slug: "viper-scrubber-parts-guide",
@@ -793,6 +798,7 @@ const guides: Guide[] = [
       },
     ],
     relatedProducts: [],
+    relatedGuides: ["aftermarket-scrubber-brush-compatible-brands"],
   },
   {
     slug: "top-10-floor-scrubber-roller-brushes",
@@ -4657,5 +4663,12 @@ const extraGuides: Guide[] = [
       },
     ],
     relatedProducts: [],
+    relatedGuides: [
+      "tennant-scrubber-parts-guide",
+      "nilfisk-scrubber-parts-guide",
+      "karcher-scrubber-parts-guide",
+      "viper-scrubber-parts-guide",
+      "floor-scrubber-brush-complete-guide",
+    ],
   },
 ];

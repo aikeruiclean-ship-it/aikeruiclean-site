@@ -387,6 +387,29 @@ export default async function GuideDetailPage({ params }: Props) {
             </div>
           )}
 
+          {/* Related guides */}
+          {guide.relatedGuides && guide.relatedGuides.length > 0 && (
+            <div className="mt-6 p-6 bg-emerald-50 rounded-xl border border-emerald-100">
+              <h3 className="font-bold text-gray-900 mb-3">
+                Related Guides
+              </h3>
+              <div className="space-y-2">
+                {guide.relatedGuides.map((slug) => {
+                  const related = getGuides().find((g) => g.slug === slug);
+                  return (
+                    <Link
+                      key={slug}
+                      href={`/guides/${slug}`}
+                      className="block px-4 py-2.5 bg-white text-sm text-gray-800 rounded-lg border border-emerald-100 hover:border-emerald-400 hover:text-primary transition-colors"
+                    >
+                      {related?.title || slug}
+                    </Link>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
           {/* CTA Section */}
           <div className="mt-12 p-8 bg-primary text-white rounded-2xl text-center">
             <h2 className="text-2xl font-bold mb-3">
