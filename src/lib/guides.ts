@@ -33,8 +33,8 @@ const guides: Guide[] = [
     category: "buying-guide",
     readTime: "7 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/Disc Brush Parts 2.webp",
     published: "2026-07-30",
-    videoId: "fdISROzR0fQ",
     sections: [
       {
         heading: "Why the Right Brush Matters",
@@ -314,7 +314,6 @@ const guides: Guide[] = [
     readTime: "6 min",
     difficulty: "beginner",
     published: "2026-07-31",
-    videoId: "YH1V0guDSTw",
     sections: [
       {
         heading: "What Is a Floor Scrubber Disc Brush?",
@@ -451,7 +450,6 @@ const guides: Guide[] = [
     readTime: "6 min",
     difficulty: "beginner",
     published: "2026-08-04",
-    videoId: "YH1V0guDSTw",
     sections: [
       {
         heading: "Why a Disc Brush Ranking Matters",
@@ -530,7 +528,6 @@ const guides: Guide[] = [
     readTime: "6 min",
     difficulty: "beginner",
     published: "2026-08-04",
-    videoId: "fdISROzR0fQ",
     sections: [
       {
         heading: "Tennant Floor Scrubber Parts, Without the Dealer Markup",
@@ -602,7 +599,6 @@ const guides: Guide[] = [
     readTime: "6 min",
     difficulty: "beginner",
     published: "2026-08-04",
-    videoId: "fdISROzR0fQ",
     sections: [
       {
         heading: "Nilfisk Floor Scrubber Parts, Without the Dealer Markup",
@@ -673,7 +669,6 @@ const guides: Guide[] = [
     readTime: "6 min",
     difficulty: "beginner",
     published: "2026-08-04",
-    videoId: "fdISROzR0fQ",
     sections: [
       {
         heading: "Karcher Floor Scrubber Parts, Without the Dealer Markup",
@@ -745,7 +740,6 @@ const guides: Guide[] = [
     readTime: "6 min",
     difficulty: "beginner",
     published: "2026-08-04",
-    videoId: "fdISROzR0fQ",
     sections: [
       {
         heading: "Viper Floor Scrubber Parts, Without the Dealer Markup",
@@ -817,7 +811,6 @@ const guides: Guide[] = [
     readTime: "7 min",
     difficulty: "beginner",
     published: "2026-08-04",
-    videoId: "fdISROzR0fQ",
     sections: [
       {
         heading: "Why a Roller Brush Ranking Matters",
@@ -896,7 +889,6 @@ const guides: Guide[] = [
     readTime: "6 min",
     difficulty: "beginner",
     published: "2026-08-04",
-    videoId: "fdISROzR0fQ",
     sections: [
       {
         heading: "When to Replace Your Floor Scrubber Brush",
@@ -997,6 +989,7 @@ const extraGuides: Guide[] = [
     category: "maintenance",
     readTime: "5 min",
     difficulty: "beginner",
+    thumbnail: "/images/B460-Scrubber-01.webp",
     published: "2026-06-08",
     videoUrl: "https://youtube.com/shorts/pEDsME4b-98",
     sections: [
@@ -1005,7 +998,6 @@ const extraGuides: Guide[] = [
       { heading: "Installing Brushes", content: "Install disc brushes or pad drivers depending on your floor type.", items: ["Turn off machine and raise brush deck", "Align brush with drive hub and twist until locked", "Lower deck and test at low speed"] },
       { heading: "Pre-Operation Checklist", content: "Before your first cleaning run, complete this checklist.", items: ["Fill solution tank with water", "Test all controls: drive, brush, squeegee", "Watch the installation video on YouTube for visual guidance"] },
     ],
-    videoId: "BZCQnHQD5tI",
     relatedProducts: [],
   },
   {
@@ -1127,6 +1119,7 @@ const extraGuides: Guide[] = [
     category: "troubleshooting",
     readTime: "5 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/Squeegee Rubber Parts.webp",
     published: "2026-06-26",
     sections: [
       {
@@ -1171,7 +1164,6 @@ const extraGuides: Guide[] = [
           "If the recovery tank drain valve or hose is partially clogged, water backs up in the tank and overflows onto the floor. Clean the drain thoroughly and check the tank for sludge buildup. A full tank should be emptied when 80% capacity is reached — do not wait until it overflows.",
       },
     ],
-    videoId: "JwAKLzf4JAY",
     relatedProducts: [],
   },
   {
@@ -1182,7 +1174,6 @@ const extraGuides: Guide[] = [
     readTime: "7 min",
     difficulty: "beginner",
     published: "2026-08-14",
-    videoId: "JwAKLzf4JAY",
     sections: [
       {
         heading: "Why a Squeegee Blade Ranking Matters",
@@ -2012,7 +2003,6 @@ const extraGuides: Guide[] = [
         content: "Browse our full catalog of 360+ replacement parts or send us your part number for a same-day quote. All parts manufactured to OEM specifications in our ISO 9001 certified factory. Compatible with Tennant, Nilfisk, Karcher, Comac, Viper, Hako, Fimap, Dulevo, flange mounts, clutch plates, and 15+ other brands.",
       },
     ],
-    videoId: "fdISROzR0fQ",
     relatedProducts: [],
   },
   // ── Industrial Floor Scrubber Complete Guide ──
@@ -2024,6 +2014,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "12 min",
     difficulty: "beginner",
+    thumbnail: "/images/A50-Scrubber-02.webp",
     published: "2026-07-04",
     sections: [
       {
@@ -2122,7 +2113,6 @@ const extraGuides: Guide[] = [
         content: "Browse our factory-direct walk-behind and ride-on scrubbers. Send us your facility details for a personalized recommendation and quote within 24 hours.",
       },
     ],
-    videoId: "aUVk1TcVSwQ",
     relatedProducts: [],
   },
   // ── Floor Scrubber Cost Guide ──
@@ -2134,6 +2124,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "8 min",
     difficulty: "beginner",
+    thumbnail: "/images/B460-Scrubber-02.webp",
     published: "2026-07-04",
     sections: [
       {
@@ -2256,7 +2247,6 @@ const extraGuides: Guide[] = [
         content: "Tell us your facility size, floor type, and daily cleaning hours. We'll recommend the right machine at factory-direct pricing — typically 30-40% less than your local dealer. Quote within 24 hours. No obligation.",
       },
     ],
-    videoId: "DlMt7Q-ncXs",
     relatedProducts: [],
   },
   // ── Small Business Guide ──
@@ -2632,6 +2622,7 @@ const extraGuides: Guide[] = [
     category: "comparison",
     readTime: "6 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/Disc Brush Parts 3.webp",
     published: "2026-07-04",
     sections: [
       {
@@ -2689,7 +2680,6 @@ const extraGuides: Guide[] = [
         content: "Browse our catalog of 360+ replacement parts — all manufactured to OEM specifications at factory-direct prices. Send us your OEM part number for a same-day quote. Sample quantities available for quality verification.",
       },
     ],
-    videoId: "XZ6n0SreSd0",
     relatedProducts: [],
   },
   // ── School & University Guide ──
@@ -2823,6 +2813,7 @@ const extraGuides: Guide[] = [
     category: "maintenance",
     readTime: "7 min",
     difficulty: "beginner",
+    thumbnail: "/images/B460-Scrubber-03.webp",
     published: "2026-07-04",
     sections: [
       {
@@ -2888,7 +2879,6 @@ const extraGuides: Guide[] = [
         content: "Order a pre-assembled maintenance kit with the most commonly replaced parts — squeegee blades, brushes, filters, and terminal protectors. Have them on your shelf before you need them.",
       },
     ],
-    videoId: "5XoAc6H1Kb0",
     relatedProducts: [],
   },
   // ── Case Study 1: Distribution Center ──
@@ -3127,6 +3117,7 @@ const extraGuides: Guide[] = [
     category: "maintenance",
     readTime: "6 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/Roller Brush Parts.webp",
     published: "2026-07-11",
     sections: [
       {
@@ -3163,7 +3154,6 @@ const extraGuides: Guide[] = [
         content: "Browse our 360+ replacement parts catalog. Factory-direct pricing saves 30-50% on every maintenance item — brushes, squeegees, filters, and more. Quote within 24 hours.",
       },
     ],
-    videoId: "-vnsEuzpTAg",
     relatedProducts: [],
   },
   {
@@ -3174,6 +3164,7 @@ const extraGuides: Guide[] = [
     category: "maintenance",
     readTime: "6 min",
     difficulty: "beginner",
+    thumbnail: "/images/A1280-Sweeper-01.webp",
     published: "2026-07-11",
     sections: [
       {
@@ -3207,7 +3198,6 @@ const extraGuides: Guide[] = [
         content: "All Aikerui scrubbers meet CE and ISO 9001 safety standards. Factory-direct pricing with full documentation for your safety compliance records. Quote within 24 hours.",
       },
     ],
-    videoId: "3a9K54lhhVc",
     relatedProducts: [],
   },
   // ── Top 10 Parts Suppliers ──
@@ -4191,8 +4181,8 @@ const extraGuides: Guide[] = [
     category: "maintenance",
     readTime: "5 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/Pad Driver Parts.webp",
     published: "2026-07-28",
-    videoId: "BZCQnHQD5tI",
     sections: [
       {
         heading: "What Is a Clutch Plate / Pad Driver?",
