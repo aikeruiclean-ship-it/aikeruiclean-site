@@ -4264,10 +4264,10 @@ const extraGuides: Guide[] = [
     title: "Inside Aikerui's Factory: How Floor Scrubbers & Brushes Are Really Made",
     description: "Take a video tour of Aikerui's 10,000+ sqm factory in Anqing, China. See how floor scrubbers and replacement brushes are manufactured, tested, and export-packed. Real factory, not a trading company.",
     category: "buying-guide",
+    videoId: "factorytour",
     readTime: "5 min",
     difficulty: "beginner",
     published: "2026-08-05",
-    videoId: "-h8_7cq-yWs",
     sections: [
       {
         heading: "Why a Factory Tour Video Matters",
