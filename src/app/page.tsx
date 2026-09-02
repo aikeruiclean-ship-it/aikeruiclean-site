@@ -263,6 +263,10 @@ export default function HomePage() {
               { href: "/guides/top-10-floor-scrubber-squeegee-blades", title: "Squeegee Blades 2026", desc: "NR vs PU ranked" },
               { href: "/guides/floor-scrubber-pad-holder-replacement-guide", title: "Pad Holder Guide", desc: "Types & compatibility" },
               { href: "/guides/floor-scrubber-parts-guide-types-lifespan-cost", title: "Parts & Cost Guide", desc: "Lifespan & pricing" },
+              { href: "/guides/floor-scrubber-brush-pads-guide", title: "Brush Pads Guide", desc: "Types & color codes" },
+              { href: "/guides/replacement-floor-scrubber-parts-guide", title: "Replacement Parts", desc: "Wear items & buying" },
+              { href: "/guides/auto-scrubber-brush-guide", title: "Auto Scrubber Brush", desc: "Compatible options" },
+              { href: "/guides/cylindrical-brush-floor-scrubber-guide", title: "Cylindrical Brush", desc: "Roller machines explained" },
               { href: "/guides/how-to-buy-floor-scrubber-parts-from-china", title: "Buy Parts From China", desc: "Sourcing step-by-step" },
             ].map((g) => (
               <Link key={g.href} href={g.href} className="group p-5 bg-white rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition-all">
