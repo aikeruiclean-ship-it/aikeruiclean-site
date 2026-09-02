@@ -313,6 +313,7 @@ const guides: Guide[] = [
     category: "buying-guide",
     readTime: "6 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/Disc Brush Parts 3.webp",
     published: "2026-07-31",
     sections: [
       {
@@ -386,6 +387,7 @@ const guides: Guide[] = [
     category: "product-showcase",
     readTime: "4 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/Shampoo Disc Brush Parts.webp",
     published: "2026-08-13",
     videoId: "shampoo-disc-brush",
     sections: [
@@ -449,6 +451,7 @@ const guides: Guide[] = [
     category: "buying-guide",
     readTime: "6 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101705320686.webp",
     published: "2026-08-04",
     sections: [
       {
@@ -527,6 +530,7 @@ const guides: Guide[] = [
     category: "buying-guide",
     readTime: "6 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/Pad Driver Parts.webp",
     published: "2026-08-04",
     sections: [
       {
@@ -598,6 +602,7 @@ const guides: Guide[] = [
     category: "buying-guide",
     readTime: "6 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/Squeegee Rubber Parts.webp",
     published: "2026-08-04",
     sections: [
       {
@@ -668,6 +673,7 @@ const guides: Guide[] = [
     category: "buying-guide",
     readTime: "6 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/Roller Brush Parts.webp",
     published: "2026-08-04",
     sections: [
       {
@@ -739,6 +745,7 @@ const guides: Guide[] = [
     category: "buying-guide",
     readTime: "6 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/Sweeper Side Brush Parts.webp",
     published: "2026-08-04",
     sections: [
       {
@@ -810,6 +817,7 @@ const guides: Guide[] = [
     category: "buying-guide",
     readTime: "7 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101939920202.webp",
     published: "2026-08-04",
     sections: [
       {
@@ -888,6 +896,7 @@ const guides: Guide[] = [
     category: "maintenance",
     readTime: "6 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/Disc Brush Parts.webp",
     published: "2026-08-04",
     sections: [
       {
@@ -989,7 +998,7 @@ const extraGuides: Guide[] = [
     category: "maintenance",
     readTime: "5 min",
     difficulty: "beginner",
-    thumbnail: "/images/B460-Scrubber-01.webp",
+    thumbnail: "/images/parts/101711695823.webp",
     published: "2026-06-08",
     videoUrl: "https://youtube.com/shorts/pEDsME4b-98",
     sections: [
@@ -1119,7 +1128,7 @@ const extraGuides: Guide[] = [
     category: "troubleshooting",
     readTime: "5 min",
     difficulty: "beginner",
-    thumbnail: "/images/parts/Squeegee Rubber Parts.webp",
+    thumbnail: "/images/parts/101905818.webp",
     published: "2026-06-26",
     sections: [
       {
@@ -1173,6 +1182,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "7 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101939797515.webp",
     published: "2026-08-14",
     sections: [
       {
@@ -1848,6 +1858,7 @@ const extraGuides: Guide[] = [
     category: "maintenance",
     readTime: "9 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/Pad Center Lock Parts.webp",
     published: "2026-07-04",
     sections: [
       {
@@ -2014,7 +2025,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "12 min",
     difficulty: "beginner",
-    thumbnail: "/images/A50-Scrubber-02.webp",
+    thumbnail: "/images/parts/101720530.webp",
     published: "2026-07-04",
     sections: [
       {
@@ -2124,7 +2135,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "8 min",
     difficulty: "beginner",
-    thumbnail: "/images/B460-Scrubber-02.webp",
+    thumbnail: "/images/parts/101748253843.webp",
     published: "2026-07-04",
     sections: [
       {
@@ -2622,7 +2633,7 @@ const extraGuides: Guide[] = [
     category: "comparison",
     readTime: "6 min",
     difficulty: "beginner",
-    thumbnail: "/images/parts/Disc Brush Parts 3.webp",
+    thumbnail: "/images/parts/101793279887.webp",
     published: "2026-07-04",
     sections: [
       {
@@ -2813,7 +2824,7 @@ const extraGuides: Guide[] = [
     category: "maintenance",
     readTime: "7 min",
     difficulty: "beginner",
-    thumbnail: "/images/B460-Scrubber-03.webp",
+    thumbnail: "/images/parts/101942138567.webp",
     published: "2026-07-04",
     sections: [
       {
@@ -3117,7 +3128,7 @@ const extraGuides: Guide[] = [
     category: "maintenance",
     readTime: "6 min",
     difficulty: "beginner",
-    thumbnail: "/images/parts/Roller Brush Parts.webp",
+    thumbnail: "/images/parts/101940364715.webp",
     published: "2026-07-11",
     sections: [
       {
@@ -3164,7 +3175,7 @@ const extraGuides: Guide[] = [
     category: "maintenance",
     readTime: "6 min",
     difficulty: "beginner",
-    thumbnail: "/images/A1280-Sweeper-01.webp",
+    thumbnail: "/images/parts/102004841157.webp",
     published: "2026-07-11",
     sections: [
       {
@@ -4181,7 +4192,7 @@ const extraGuides: Guide[] = [
     category: "maintenance",
     readTime: "5 min",
     difficulty: "beginner",
-    thumbnail: "/images/parts/Pad Driver Parts.webp",
+    thumbnail: "/images/parts/101794807564.webp",
     published: "2026-07-28",
     sections: [
       {
@@ -4257,6 +4268,7 @@ const extraGuides: Guide[] = [
     videoId: "factorytour",
     readTime: "5 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/102004908611.webp",
     published: "2026-08-05",
     sections: [
       {
@@ -4314,6 +4326,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "4 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/disc-brush-custom-nylon-steel-wire-brushes-for-floor-scrubbers.webp",
     published: "2026-08-10",
     videoId: "XrHK1POi7yY",
     sections: [
@@ -4377,6 +4390,7 @@ const extraGuides: Guide[] = [
     category: "maintenance",
     readTime: "4 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101705628647.webp",
     published: "2026-08-11",
     videoId: "IfTGVM4OC_k",
     sections: [
@@ -4447,6 +4461,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "4 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/floor-pad-floor-scrubber-cleaning-pad-for-commercial-use.webp",
     published: "2026-08-24",
     videoId: "antibrush24",
     sections: [
@@ -4518,6 +4533,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "4 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/102005135851.webp",
     published: "2026-08-25",
     videoId: "custombrush25",
     sections: [
@@ -4810,7 +4826,7 @@ const extraGuides: Guide[] = [
     category: "buying-guide",
     readTime: "9 min",
     difficulty: "beginner",
-    thumbnail: "/images/parts/Disc Brush Parts 2.webp",
+    thumbnail: "/images/parts/101711325869.webp",
     videoId: "factorytour01",
     published: "2026-09-01",
     sections: [
