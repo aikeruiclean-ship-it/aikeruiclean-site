@@ -247,6 +247,33 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ===== Expert Guides ===== */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-bold text-gray-900 mb-3">Floor Scrubber Buying Guides</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">Expert guides on brushes, parts, and maintenance — written by the manufacturer.</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { href: "/guides/floor-scrubber-brush-complete-guide", title: "Floor Scrubber Brush Guide", desc: "Types, materials, sizing" },
+              { href: "/guides/floor-scrubber-brush-replacement-guide", title: "Brush Replacement Guide", desc: "When & how to replace" },
+              { href: "/guides/floor-scrubber-disc-brush-buying-guide", title: "Disc Brush Buying Guide", desc: "Nylon, PPL, abrasive" },
+              { href: "/guides/top-10-floor-scrubber-roller-brushes", title: "Roller Brushes 2026", desc: "Top picks for cylinder machines" },
+              { href: "/guides/top-10-floor-scrubber-squeegee-blades", title: "Squeegee Blades 2026", desc: "NR vs PU ranked" },
+              { href: "/guides/floor-scrubber-pad-holder-replacement-guide", title: "Pad Holder Guide", desc: "Types & compatibility" },
+              { href: "/guides/floor-scrubber-parts-guide-types-lifespan-cost", title: "Parts & Cost Guide", desc: "Lifespan & pricing" },
+              { href: "/guides/how-to-buy-floor-scrubber-parts-from-china", title: "Buy Parts From China", desc: "Sourcing step-by-step" },
+            ].map((g) => (
+              <Link key={g.href} href={g.href} className="group p-5 bg-white rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition-all">
+                <h3 className="font-bold text-gray-900 group-hover:text-primary transition-colors mb-1">{g.title}</h3>
+                <p className="text-sm text-gray-500">{g.desc}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ===== CTA ===== */}
       <section className="py-16 bg-primary text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10"><Image src="/images/factory-opt/_MG_3307.webp" alt="" fill className="object-cover" /></div>

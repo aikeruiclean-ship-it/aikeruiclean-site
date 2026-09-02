@@ -44,7 +44,7 @@ export function YouTubeLink({
           Your browser does not support the video tag.
         </video>
       ) : (
-        /* Fallback: YouTube iframe embed */
+        /* YouTube iframe embed with graceful fallback cover */
         <div className="relative aspect-video rounded-xl overflow-hidden bg-gray-100">
           <iframe
             src={`https://www.youtube.com/embed/${videoId}`}
@@ -57,20 +57,32 @@ export function YouTubeLink({
           />
         </div>
       )}
-      {/* Fallback link for contexts where iframe is blocked — only when no local video */}
+      {/* Clickable cover + link for contexts where iframe is blocked or restricted */}
       {!localVideo && (
-        <div className="mt-2 text-center">
-          <Link
+        <div className="mt-2 flex flex-col items-center gap-1.5">
+          <a
             href={`https://www.youtube.com/watch?v=${videoId}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 text-sm text-primary hover:text-primary-light transition-colors"
+            className="group relative block w-full max-w-[420px] aspect-video rounded-xl overflow-hidden bg-gray-200 border border-gray-200"
           >
-            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M8 5v14l11-7z" />
-            </svg>
-            Watch on YouTube
-          </Link>
+            <img
+              src={`https://img.youtube.com/vi/${videoId}/mqdefault.jpg`}
+              alt={title}
+              loading="lazy"
+              className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+            <span className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/40 transition-colors">
+              <span className="flex items-center justify-center w-14 h-14 rounded-full bg-red-600 text-white">
+                <svg className="w-6 h-6 ml-0.5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </span>
+            </span>
+            <span className="absolute bottom-1.5 right-2 text-xs text-white bg-black/60 px-2 py-0.5 rounded">
+              Watch on YouTube
+            </span>
+          </a>
         </div>
       )}
     </div>
