@@ -4895,4 +4895,220 @@ const extraGuides: Guide[] = [
       "top-10-floor-scrubber-parts-suppliers",
     ],
   },
+  {
+    slug: "floor-scrubber-brush-pads-guide",
+    title: "Floor Scrubber Brush Pads: Types, Sizes & How to Choose",
+    description: "Complete guide to floor scrubber brush pads. Learn pad types (non-woven, abrasive, stripping), sizes, color codes, and how to pick the right pad for your floor. Factory-direct pricing.",
+    category: "buying-guide",
+    readTime: "6 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/102005253936.webp",
+    published: "2026-09-02",
+    sections: [
+      {
+        heading: "What Are Floor Scrubber Brush Pads?",
+        content: "Floor scrubber brush pads are circular pads that attach under the pad driver of a floor scrubber. They do the final cleaning pass: the brush or pad scrubs the floor, and the pad's fibers trap dirt while the squeegee picks up the water. Pads are cheaper and quicker to change than brushes, which is why many facilities use pads for daily cleaning and reserve brushes for heavy scrubbing.",
+      },
+      {
+        heading: "Pad Types: What Each One Does",
+        content: "Pads are categorized by color, which indicates their aggressiveness. Choose based on your floor type and cleaning job:",
+        table: {
+          headers: ["Color", "Type", "Best For", "Avoid On"],
+          rows: [
+            ["White", "Polishing", "Final buffing, light dust", "None"],
+            ["Red", "Light scrubbing", "Daily cleaning, sealed floors", "Delicate finishes"],
+            ["Blue", "Medium scrubbing", "General purpose, tile, concrete", "Soft finishes"],
+            ["Green", "Heavy scrubbing", "Stubborn dirt, grout lines", "Polished floors"],
+            ["Brown", "Stripping", "Removing old finish", "Sealed floors"],
+            ["Black", "Stripping/burnishing", "Heavy stripping", "Any coated floor"],
+          ],
+        },
+      },
+      {
+        heading: "Pad Sizes: Matching Your Machine",
+        content: "The pad size must match your machine's pad driver diameter. Common sizes:",
+        items: [
+          "13 inch: small walk-behind machines and rotary units.",
+          "17 inch: standard walk-behind scrubbers.",
+          "20 inch: mid-size walk-behind machines.",
+          "24 inch: large walk-behind and small ride-on scrubbers.",
+          "28-32 inch: ride-on machines.",
+        ],
+      },
+      {
+        heading: "How Long Do Pads Last?",
+        content: "A pad's lifespan depends on floor condition and usage. On smooth sealed floors, a red or blue pad lasts 2-4 weeks of daily use. On rough concrete, expect 1-2 weeks. Replace the pad when it stops lifting dirt or looks glazed and flattened. Rotating between two pads can extend their combined life.",
+      },
+      {
+        heading: "Pads vs Brushes: Which to Use?",
+        content: "Brushes scrub aggressively and last longer; pads clean finer and are cheaper to swap. Many facilities use both: brushes for the main scrub pass, pads for finish cleaning or on delicate floors. Your machine's pad driver can accept either, depending on what you attach.",
+      },
+      {
+        heading: "Buy Factory-Direct",
+        content: "A floor scrubber pad costs 5-15 USD factory-direct versus 15-35 USD at dealers. Browse our pad and brush range at aikeruiclean.com/parts, or send your machine model to aikeruiclean.com/floor-scrubber-parts-quote for a quote within 24 hours.",
+      },
+    ],
+    relatedProducts: [],
+    relatedGuides: [
+      "floor-scrubber-brush-complete-guide",
+      "floor-scrubber-pad-holder-replacement-guide",
+      "floor-scrubber-parts-guide-types-lifespan-cost",
+    ],
+  },
+  {
+    slug: "replacement-floor-scrubber-parts-guide",
+    title: "Replacement Floor Scrubber Parts: Complete Buying Guide",
+    description: "Find the right replacement parts for your floor scrubber: brushes, squeegees, pad drivers, hoses, and filters. Learn how to identify parts by machine model and buy factory-direct.",
+    category: "buying-guide",
+    readTime: "7 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/102005762209.webp",
+    published: "2026-09-02",
+    sections: [
+      {
+        heading: "Which Floor Scrubber Parts Wear Out First?",
+        content: "Floor scrubbers have a handful of parts that need regular replacement. Knowing which ones wear fastest helps you budget and avoid downtime:",
+        table: {
+          headers: ["Part", "Typical Lifespan", "Replacement Cost (Factory-Direct)"],
+          rows: [
+            ["Squeegee blades", "2-4 months", "10-25 USD"],
+            ["Disc brushes", "3-6 months", "45-75 USD"],
+            ["Roller brushes", "3-6 months", "55-95 USD"],
+            ["Scrubber pads", "2-4 weeks", "5-15 USD"],
+            ["Hoses", "6-12 months", "8-20 USD"],
+            ["Vacuum filters", "3-6 months", "5-15 USD"],
+            ["Pad drivers", "12+ months", "15-40 USD"],
+          ],
+        },
+      },
+      {
+        heading: "How to Identify the Right Part for Your Machine",
+        content: "To order the correct replacement part, collect these details from your machine:",
+        items: [
+          "Machine brand and model number (check the data plate).",
+          "OEM part number printed on the old part.",
+          "Diameter or length of the brush or blade.",
+          "Mounting type: 2-lug, 3-lug, or 4-lug (for brushes and drivers).",
+          "A photo of the old part if you cannot read the numbers.",
+        ],
+      },
+      {
+        heading: "OEM vs Aftermarket Replacement Parts",
+        content: "OEM parts come from the machine brand and carry a heavy markup. Aftermarket parts from a factory with the same specifications fit the same machines, clean the same floors, and cost 30-50 percent less. The key is matching the specification exactly, not the brand on the label. See our aftermarket guide for brand-specific compatibility.",
+      },
+      {
+        heading: "Buying Factory-Direct",
+        content: "Ordering direct from a parts manufacturer gives you the same quality at a fraction of the dealer price. In-stock parts ship within 24-48 hours worldwide. Send us your machine model or OEM part number at aikeruiclean.com/floor-scrubber-parts-quote, or browse 360+ parts at aikeruiclean.com/parts.",
+      },
+    ],
+    relatedProducts: [],
+    relatedGuides: [
+      "oem-vs-aftermarket-floor-scrubber-parts",
+      "floor-scrubber-parts-guide-types-lifespan-cost",
+      "aftermarket-scrubber-brush-compatible-brands",
+      "floor-scrubber-brush-replacement-guide",
+    ],
+  },
+  {
+    slug: "auto-scrubber-brush-guide",
+    title: "Auto Scrubber Brush: Compatible Options & Replacement Guide",
+    description: "Auto scrubber brushes explained: types, brands, and compatibility. Find replacement brushes for your automatic floor scrubber and save 30-50% factory-direct.",
+    category: "buying-guide",
+    readTime: "6 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/102005918795.webp",
+    published: "2026-09-02",
+    sections: [
+      {
+        heading: "What Is an Auto Scrubber Brush?",
+        content: "An auto scrubber (automatic floor scrubber) uses brushes or pads to scrub the floor while a squeegee recovers the water. The brush is the main wear item — it scrubs the dirt loose and must be replaced regularly to keep cleaning performance high. Auto scrubber brushes come in disc, roller, and cylindrical styles depending on the machine.",
+      },
+      {
+        heading: "Disc Brush vs Roller Brush for Auto Scrubbers",
+        content: "Auto scrubbers use one of two brush systems:",
+        table: {
+          headers: ["Type", "Machine Example", "Best For", "Replacement Cost (Factory-Direct)"],
+          rows: [
+            ["Disc brush", "Most walk-behind auto scrubbers", "Smooth floors, sealed concrete, tile", "45-75 USD"],
+            ["Roller brush", "Tennant T7, Hako B90 style machines", "Rough concrete, debris, one-pass cleaning", "55-95 USD"],
+          ],
+        },
+      },
+      {
+        heading: "Brand Compatibility",
+        content: "Most auto scrubber brushes use the NP-9200 2-lug standard, which fits Tennant, Nilfisk, Viper, Comac, Karcher (with adapter), and most Chinese OEM machines. Some machines need 3-lug or 4-lug mounts. Before ordering, send us your machine brand, model, and a photo of the current brush — we confirm compatibility within 24 hours.",
+      },
+      {
+        heading: "Signs Your Brush Needs Replacing",
+        content: "Replace the brush when you notice:",
+        items: [
+          "Streaks or a film left after cleaning.",
+          "Bristles flattened or shorter than 12 mm.",
+          "The machine vibrates more than usual.",
+          "Cleaning time has increased for the same result.",
+          "You can see the backing plate through the bristles.",
+        ],
+      },
+      {
+        heading: "Buy Auto Scrubber Brushes Factory-Direct",
+        content: "A replacement auto scrubber brush costs 45-95 USD factory-direct versus 100-250 USD at dealers. Browse compatible brushes at aikeruiclean.com/parts, or get a quote at aikeruiclean.com/floor-scrubber-parts-quote. In-stock brushes ship within 24-48 hours.",
+      },
+    ],
+    relatedProducts: [],
+    relatedGuides: [
+      "floor-scrubber-brush-complete-guide",
+      "floor-scrubber-disc-brush-buying-guide",
+      "disc-brush-vs-roller-brush-scrubber",
+      "floor-scrubber-brush-replacement-guide",
+    ],
+  },
+  {
+    slug: "cylindrical-brush-floor-scrubber-guide",
+    title: "Cylindrical Brush Floor Scrubber: How It Works & Which Brush to Buy",
+    description: "Cylindrical brush floor scrubbers explained: how roller brushes work, which machines use them, and how to buy replacement cylindrical brushes factory-direct.",
+    category: "buying-guide",
+    readTime: "6 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/102012701424.webp",
+    published: "2026-09-02",
+    sections: [
+      {
+        heading: "What Is a Cylindrical Brush Floor Scrubber?",
+        content: "A cylindrical brush floor scrubber uses horizontal roller brushes instead of flat disc brushes. The cylinder spins against the floor, scrubbing dirt loose while the squeegee collects the water. Because the bristles contact more surface area and wear evenly, cylindrical machines handle rough concrete and uneven floors better than disc machines.",
+      },
+      {
+        heading: "Cylindrical vs Disc Brush Machines",
+        content: "Choose based on your floor and cleaning needs:",
+        table: {
+          headers: ["Factor", "Cylindrical (Roller)", "Disc"],
+          rows: [
+            ["Floor type", "Rough, uneven, grout lines", "Smooth, sealed, tile"],
+            ["Debris handling", "Sweeps and scrubs in one pass", "Requires pre-sweeping"],
+            ["Bristle wear", "Even wear, longer life", "Edge wear on rough floors"],
+            ["Machine cost", "Higher", "Lower"],
+            ["Brush cost (factory-direct)", "55-95 USD", "45-75 USD"],
+          ],
+        },
+      },
+      {
+        heading: "Which Machines Use Cylindrical Brushes?",
+        content: "Common cylindrical brush machines include the Tennant T7, Hako B90, and several compact ride-on models. Brush fit is determined by the roller's diameter and length, plus the drive configuration. Always check the machine model and measure the old roller before ordering.",
+      },
+      {
+        heading: "How Long Does a Cylindrical Brush Last?",
+        content: "A cylindrical brush typically lasts 3-6 months with daily use, longer than a disc brush on the same floor because bristles wear evenly. On very abrasive floors, expect 1-3 months. Replace it when cleaning quality drops or bristles are visibly flattened.",
+      },
+      {
+        heading: "Buy Cylindrical Brushes Factory-Direct",
+        content: "A cylindrical floor scrubber brush costs 55-95 USD factory-direct versus 120-300 USD at dealers. Send us your machine model and roller dimensions at aikeruiclean.com/floor-scrubber-parts-quote, or browse our roller brush range at aikeruiclean.com/parts.",
+      },
+    ],
+    relatedProducts: [],
+    relatedGuides: [
+      "disc-brush-vs-roller-brush-scrubber",
+      "top-10-floor-scrubber-roller-brushes",
+      "floor-scrubber-brush-complete-guide",
+      "floor-scrubber-brush-replacement-guide",
+    ],
+  },
 ];
