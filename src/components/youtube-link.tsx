@@ -8,17 +8,17 @@ import Link from "next/link";
  */
 const LOCAL_VIDEOS: Record<string, { src: string; poster?: string }> = {
   // videoId → local mp4 path (upload to public/videos/) + optional local poster
-  XrHK1POi7yY: { src: "/videos/steel-wire-brush.mp4" },
-  fuP35AeMNGk: { src: "/videos/disc-brush.mp4" },
-  IfTGVM4OC_k: { src: "/videos/disc-brush-buying.mp4" },
-  factorytour01: { src: "/videos/factorytour01.mp4" },
+  XrHK1POi7yY: { src: "/videos/steel-wire-brush.mp4", poster: "/images/steel-wire-brush-poster.jpg" },
+  fuP35AeMNGk: { src: "/videos/disc-brush.mp4", poster: "/images/disc-brush-poster.jpg" },
+  IfTGVM4OC_k: { src: "/videos/disc-brush-buying.mp4", poster: "/images/disc-brush-buying-poster.jpg" },
+  factorytour01: { src: "/videos/factorytour01.mp4", poster: "/images/factorytour01-poster.jpg" },
   "shampoo-disc-brush": {
     src: "/videos/shampoo-disc-brush.mp4",
     poster: "/images/shampoo-disc-brush-poster.jpg",
   },
-  antibrush24: { src: "/videos/anti-tangle-brush.mp4" },
-  custombrush25: { src: "/videos/custom-brush.mp4" },
-  factorytour: { src: "/videos/factory-tour.mp4" },
+  antibrush24: { src: "/videos/anti-tangle-brush.mp4", poster: "/images/anti-tangle-brush-poster.jpg" },
+  custombrush25: { src: "/videos/custom-brush.mp4", poster: "/images/custom-brush-poster.jpg" },
+  factorytour: { src: "/videos/factory-tour.mp4", poster: "/images/factory-tour-poster.jpg" },
 };
 
 export function YouTubeLink({
