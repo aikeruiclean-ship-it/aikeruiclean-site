@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { Factory, Truck, BadgeCheck, Phone, Send, CheckCircle } from "@/lib/icons";
+import { Factory, Truck, BadgeCheck, Phone, Send, CheckCircle, MapPin } from "@/lib/icons";
 import { JsonLd } from "@/components/json-ld";
 import { YouTubeLink } from "@/components/youtube-link";
 import { ReviewForm } from "@/components/review-form";
@@ -154,7 +154,7 @@ export default function PartsQuotePage() {
       {/* Related Guides */}
       <section className="py-8 bg-white">
         <div className="max-w-5xl mx-auto px-4 text-center">
-          <h2 className="text-xl font-bold text-gray-900 mb-4">📚 Related Guides</h2>
+          <h2 className="text-xl font-bold text-gray-900 mb-4">Related Guides</h2>
           <div className="flex flex-wrap justify-center gap-3">
             <a href="/guides/floor-scrubber-parts-guide-types-lifespan-cost" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Parts Guide: Types &amp; Cost</a>
             <a href="/guides/oem-vs-aftermarket-floor-scrubber-parts" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">OEM vs Aftermarket</a>
@@ -168,44 +168,81 @@ export default function PartsQuotePage() {
 
       {/* Form */}
       <section id="form" className="py-12 bg-gray-50">
-        <div className="max-w-lg mx-auto px-4">
-          <div className="bg-white rounded-2xl shadow-lg border border-gray-200 p-6 md:p-8">
-            <h2 className="text-xl font-bold text-gray-900 text-center mb-2">Get Your Parts Quote</h2>
-            <p className="text-sm text-gray-500 text-center mb-6">Reply within 24 hours</p>
-
-            {submitted ? (
-              <div className="text-center py-8">
-                <CheckCircle size={48} className="mx-auto text-green-500 mb-3" />
-                <p className="font-bold text-gray-900 text-lg mb-1">Quote Request Received!</p>
-                <p className="text-sm text-gray-600">We'll reply within 24 hours.</p>
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-2xl font-bold text-gray-900 text-center mb-8">Get Your Parts Quote</h2>
+          <p className="text-sm text-gray-500 text-center mb-8">Reply within 24 hours — from a real factory, not a middleman</p>
+          <div className="grid md:grid-cols-2 gap-8 items-start">
+            {/* Company trust info */}
+            <div className="space-y-5">
+              <div className="bg-white rounded-2xl border border-gray-200 p-6">
+                <h3 className="font-bold text-gray-900 mb-3">Who You're Dealing With</h3>
+                <p className="text-sm text-gray-600 leading-relaxed mb-4">
+                  Anhui Aikerui Environmental Protection Technology Co., Ltd — a floor scrubber
+                  brush and parts factory in Anqing, China since 2008. We own the production line,
+                  so you buy direct with no dealer markup.
+                </p>
+                <ul className="space-y-2 text-sm text-gray-700">
+                  <li className="flex items-start gap-2"><Factory size={16} className="text-primary shrink-0 mt-0.5" /> 10,000+ sqm factory, 50-100 employees</li>
+                  <li className="flex items-start gap-2"><CheckCircle size={16} className="text-primary shrink-0 mt-0.5" /> ISO 9001 &amp; CE certified</li>
+                  <li className="flex items-start gap-2"><CheckCircle size={16} className="text-primary shrink-0 mt-0.5" /> 360+ parts in stock, ships in 24-48h</li>
+                  <li className="flex items-start gap-2"><CheckCircle size={16} className="text-primary shrink-0 mt-0.5" /> Exported to 50+ countries</li>
+                  <li className="flex items-start gap-2"><MapPin size={16} className="text-primary shrink-0 mt-0.5" /> Yuantan, Anqing, Anhui, China</li>
+                </ul>
               </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <input type="text" name="name" required placeholder="Your Name *" value={form.name}
-                  onChange={e => setForm({...form, name: e.target.value})}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" />
-                <input type="email" name="email" required placeholder="Email Address *" value={form.email}
-                  onChange={e => setForm({...form, email: e.target.value})}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" />
-                <input type="text" name="phone" placeholder="Phone / WhatsApp" value={form.phone}
-                  onChange={e => setForm({...form, phone: e.target.value})}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" />
-                <textarea name="message" required rows={4} placeholder="Tell us which part you need (OEM number, machine model, or description) *" value={form.message}
-                  onChange={e => setForm({...form, message: e.target.value})}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary resize-none" />
-                <button type="submit" disabled={sending}
-                  className="w-full py-3.5 bg-accent hover:bg-accent-hover disabled:bg-gray-300 text-white font-bold rounded-lg transition-colors">
-                  {sending ? "Sending..." : "Send Quote Request"}
-                </button>
-              </form>
-            )}
-          </div>
 
-          <div className="text-center mt-4">
-            <a href="https://api.whatsapp.com/send?phone=8619965236428&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20parts." target="_blank" rel="noopener"
-              className="inline-flex items-center gap-2 text-sm text-green-600 font-semibold hover:underline">
-              <Phone size={14} /> Or WhatsApp us directly
-            </a>
+              <div className="bg-white rounded-2xl border border-gray-200 p-6">
+                <h3 className="font-bold text-gray-900 mb-3">How It Works</h3>
+                <ol className="space-y-3 text-sm text-gray-700">
+                  <li className="flex gap-3"><span className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-xs font-bold shrink-0">1</span> Tell us your machine model or OEM part number</li>
+                  <li className="flex gap-3"><span className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-xs font-bold shrink-0">2</span> We confirm compatibility and send factory-direct pricing</li>
+                  <li className="flex gap-3"><span className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-xs font-bold shrink-0">3</span> Order samples or bulk — shipped worldwide in 24-48h</li>
+                </ol>
+              </div>
+
+              <div className="bg-amber-50 rounded-2xl border border-amber-200 p-5 text-center">
+                <p className="text-sm font-semibold text-gray-800">Save 30-50% vs dealer prices</p>
+                <p className="text-xs text-gray-600 mt-1">Factory-direct. No middlemen. Same OEM quality.</p>
+              </div>
+            </div>
+
+            {/* Form card */}
+            <div className="bg-white rounded-2xl shadow-lg border border-gray-200 p-6 md:p-8">
+              <p className="text-sm text-gray-500 mb-6">Fill the form and get a reply within 24 hours</p>
+
+              {submitted ? (
+                <div className="text-center py-8">
+                  <CheckCircle size={48} className="mx-auto text-green-500 mb-3" />
+                  <p className="font-bold text-gray-900 text-lg mb-1">Quote Request Received!</p>
+                  <p className="text-sm text-gray-600">We'll reply within 24 hours.</p>
+                </div>
+              ) : (
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <input type="text" name="name" required placeholder="Your Name *" value={form.name}
+                    onChange={e => setForm({...form, name: e.target.value})}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" />
+                  <input type="email" name="email" required placeholder="Email Address *" value={form.email}
+                    onChange={e => setForm({...form, email: e.target.value})}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" />
+                  <input type="text" name="phone" placeholder="Phone / WhatsApp" value={form.phone}
+                    onChange={e => setForm({...form, phone: e.target.value})}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" />
+                  <textarea name="message" required rows={4} placeholder="Tell us which part you need (OEM number, machine model, or description) *" value={form.message}
+                    onChange={e => setForm({...form, message: e.target.value})}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary resize-none" />
+                  <button type="submit" disabled={sending}
+                    className="w-full py-3.5 bg-accent hover:bg-accent-hover disabled:bg-gray-300 text-white font-bold rounded-lg transition-colors">
+                    {sending ? "Sending..." : "Send Quote Request"}
+                  </button>
+                </form>
+              )}
+
+              <div className="text-center mt-4">
+                <a href="https://api.whatsapp.com/send?phone=8619965236428&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20parts." target="_blank" rel="noopener"
+                  className="inline-flex items-center gap-2 text-sm text-green-600 font-semibold hover:underline">
+                  <Phone size={14} /> Or WhatsApp us directly
+                </a>
+              </div>
+            </div>
           </div>
 
           {/* Customer review form */}
