@@ -34,6 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${guide.title.length > 50 ? guide.title.slice(0, 47).trim().replace(/[,:;/-]+$/, "") + "..." : guide.title} | Aikerui Guides`,
     description: guide.description,
+    alternates: { canonical: `https://aikeruiclean.com/guides/${slug}` },
     authors: [{ name: "Mark Wang", url: "https://aikeruiclean.com/about/mark-xu" }],
     openGraph: {
       title: guide.title,

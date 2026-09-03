@@ -12,8 +12,8 @@ interface Props {
 export async function generateMetadata({ searchParams }: Props): Promise<Metadata> {
   const { category, q } = await searchParams;
   if (q) return { title: `Search Results for "${q}" | Aikerui Products`, description: `Browse search results for "${q}" in our cleaning equipment catalog.` };
-  if (category && categoryMeta[category]) return { title: categoryMeta[category].title, description: categoryMeta[category].description };
-  return { title: "Industrial Floor Cleaning Machines | Factory Direct | Aikerui", description: "Professional floor scrubbers, sweepers, and cleaning accessories. Manufactured in our own 10,000+㎡ factory. B2B wholesale, OEM available." };
+  if (category && categoryMeta[category]) return { title: categoryMeta[category].title, description: categoryMeta[category].description, alternates: { canonical: `https://aikeruiclean.com/products?category=${category}` } };
+  return { title: "Industrial Floor Cleaning Machines | Factory Direct | Aikerui", description: "Professional floor scrubbers, sweepers, and cleaning accessories. Manufactured in our own 10,000+㎡ factory. B2B wholesale, OEM available.", alternates: { canonical: "https://aikeruiclean.com/products" } };
 }
 
 export default function ProductsPage() {

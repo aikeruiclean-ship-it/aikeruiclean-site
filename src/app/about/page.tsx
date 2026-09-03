@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "About Aikerui — Real Factory, Real Manufacturing | Anqing, China",
   description:
     "Visit Aikerui's 10,000+㎡ factory in Anqing, China. ISO 9001 & CE certified floor scrubber manufacturer. Live video tours, independent inspections welcome. 50+ countries served since 2008.",
+  alternates: { canonical: "https://aikeruiclean.com/about" },
 };
 
 const factoryImages = [

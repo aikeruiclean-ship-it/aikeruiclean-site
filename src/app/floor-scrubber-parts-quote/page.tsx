@@ -76,6 +76,7 @@ export default function PartsQuotePage() {
         "@type": "WebPage",
         name: "Floor Scrubber Replacement Parts Factory Direct",
         description: "Factory-direct floor scrubber parts. Disc brushes, squeegee rubber, pad holders. 30-50% less than dealer. OEM quality, global shipping.",
+  alternates: { canonical: "https://aikeruiclean.com/floor-scrubber-parts-quote" },
       }} />
 
       {/* Hero */}
