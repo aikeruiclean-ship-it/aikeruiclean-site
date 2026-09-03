@@ -5111,4 +5111,69 @@ const extraGuides: Guide[] = [
       "floor-scrubber-brush-replacement-guide",
     ],
   },
+  {
+    slug: "how-much-do-floor-scrubber-brushes-cost",
+    title: "How Much Do Floor Scrubber Brushes Cost? (2026 Price Guide)",
+    description: "Real 2026 prices for floor scrubber brushes: disc, roller, side, and pad brushes. Factory-direct vs dealer pricing, what drives cost, and how to budget.",
+    category: "buying-guide",
+    readTime: "7 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/102012819567.webp",
+    published: "2026-09-02",
+    sections: [
+      {
+        heading: "What Does a Floor Scrubber Brush Cost in 2026?",
+        content: "A floor scrubber brush costs 45 to 95 USD factory-direct, or 100 to 250 USD from a dealer. The exact price depends on brush type, size, and bristle material. This guide breaks down real prices so you know what to budget and what is a fair price.",
+        table: {
+          headers: ["Brush Type", "Factory-Direct Price", "Dealer Price", "Typical Lifespan"],
+          rows: [
+            ["Disc brush (17-24 inch)", "45-75 USD", "100-200 USD", "3-6 months"],
+            ["Roller brush", "55-95 USD", "120-300 USD", "3-6 months"],
+            ["Side brush", "15-30 USD", "40-80 USD", "6-12 months"],
+            ["Pad driver brush", "15-40 USD", "40-90 USD", "12+ months"],
+            ["Abrasive/strip brush", "50-85 USD", "110-220 USD", "1-3 months"],
+          ],
+        },
+      },
+      {
+        heading: "Why Dealer Prices Are 2-3x Higher",
+        content: "The machine brands do not make their own brushes. They source them from factories, add branding, and mark them up. A disc brush that costs 50 USD from the factory sells for 120-200 USD at a dealer because you are paying for the brand, distribution network, and dealer margin — not for a better brush.",
+      },
+      {
+        heading: "What Drives the Price?",
+        content: "Three factors determine what a brush costs:",
+        items: [
+          "Bristle material: nylon is the standard, PPL costs slightly more, abrasive (silicon carbide) is the most expensive.",
+          "Size: larger brushes (24+ inch) cost more than small ones (13-17 inch) due to more material.",
+          "Bristle density and quality: virgin nylon with dense tufting costs more than recycled filler — and lasts longer.",
+        ],
+      },
+      {
+        heading: "How to Avoid Overpaying",
+        content: "Buy by specification, not by brand. A brush fits a machine by diameter, mounting system (NP-9200 2-lug covers most), and bristle material. If these match, the brush works — the logo on the box does not affect cleaning. Ordering factory-direct or from a parts specialist saves 30-50 percent on every replacement.",
+      },
+      {
+        heading: "Budgeting for Brush Replacement",
+        content: "A single machine uses roughly 300 to 800 USD of brushes per year depending on usage and floor type. Budget accordingly:",
+        items: [
+          "Light use (2-3x/week, smooth floors): 200-400 USD/year per machine.",
+          "Daily use (smooth floors): 400-600 USD/year.",
+          "Heavy use (rough concrete): 600-1,000 USD/year.",
+          "Buying 2-3 brushes at once usually earns a bulk discount.",
+        ],
+      },
+      {
+        heading: "Get Factory-Direct Pricing",
+        content: "Browse our full brush range at aikeruiclean.com/parts. Send your machine model or OEM part number to aikeruiclean.com/floor-scrubber-parts-quote and get factory-direct pricing within 24 hours. In-stock brushes ship in 24-48 hours worldwide.",
+      },
+    ],
+    relatedProducts: [],
+    relatedGuides: [
+      "floor-scrubber-brush-complete-guide",
+      "floor-scrubber-brush-replacement-guide",
+      "floor-scrubber-parts-guide-types-lifespan-cost",
+      "how-much-does-floor-scrubber-cost",
+      "top-10-floor-scrubber-brushes-and-parts",
+    ],
+  },
 ];
