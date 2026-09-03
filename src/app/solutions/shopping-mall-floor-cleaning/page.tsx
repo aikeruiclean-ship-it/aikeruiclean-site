@@ -48,6 +48,19 @@ export default function MallSolutionPage() {
         </section>
 
         <section className="mb-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Other Industry Solutions</h2>
+          <div className="flex flex-wrap gap-3">
+            <Link href="/solutions/airport-floor-cleaning" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Airport</Link>
+            <Link href="/solutions/cold-storage-floor-cleaning" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Cold Storage</Link>
+            <Link href="/solutions/factory-floor-cleaning" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Factory</Link>
+            <Link href="/solutions/hotel-floor-cleaning" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Hotel</Link>
+            <Link href="/solutions/pharmaceutical-cleanroom-floor-cleaning" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Cleanroom / Pharma</Link>
+            <Link href="/solutions/supermarket-floor-cleaning" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Supermarket</Link>
+            <Link href="/solutions/warehouse-floor-cleaning" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Warehouse</Link>
+          </div>
+        </section>
+
+        <section className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Related Guides</h2>
           <div className="flex flex-wrap gap-3">
             <Link href="/guides/best-floor-scrubber-small-business" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Best for Small Business</Link>
