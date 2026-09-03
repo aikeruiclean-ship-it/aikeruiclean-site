@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { Menu, X, Phone, Mail, ChevronDown, ShoppingCart } from "@/lib/icons";
-import { useCart } from "@/lib/cart-context";
 import { categories, categoryCounts } from "@/lib/header-data";
 import { cn } from "@/lib/utils";
 import { SearchBar } from "@/components/search-bar";
@@ -101,12 +100,11 @@ export function Header() {
             )}
             <SearchBar />
             <Link
-              href="/cart"
+              href="/floor-scrubber-parts-quote"
               className="relative p-2 text-gray-700 hover:text-primary rounded-md hover:bg-gray-50 transition-colors"
-              aria-label="Shopping cart"
+              aria-label="Get a parts quote"
             >
               <ShoppingCart size={20} />
-              <CartCount />
             </Link>
             <Link
               href="/contact"
@@ -184,15 +182,5 @@ export function Header() {
         </nav>
       </div>
     </header>
-  );
-}
-
-function CartCount() {
-  const { totalItems } = useCart();
-  if (totalItems === 0) return null;
-  return (
-    <span className="absolute -top-0.5 -right-0.5 bg-accent text-white text-[10px] font-bold rounded-full min-w-[18px] h-[18px] flex items-center justify-center px-1">
-      {totalItems > 99 ? "99+" : totalItems}
-    </span>
   );
 }
