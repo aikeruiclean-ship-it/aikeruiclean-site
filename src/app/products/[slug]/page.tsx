@@ -63,6 +63,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title += ` — ${product.specs["Working width"]} ${product.category || "Cleaning Equipment"}`;
   }
   if (!title.includes("Aikerui")) title += " | Aikerui";
+  // Hard cap at 65 chars so Google shows the full title without truncation
+  if (title.length > 65) {
+    title = title.slice(0, 61).trim().replace(/[,/&;:\-—]+$/, "") + "... | Aikerui";
+  }
 
   // ── OG description: use short description or clean intro ──
   const ogDesc =
