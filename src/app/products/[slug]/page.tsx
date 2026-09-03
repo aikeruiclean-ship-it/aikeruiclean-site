@@ -65,7 +65,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!title.includes("Aikerui")) title += " | Aikerui";
   // Hard cap at 65 chars so Google shows the full title without truncation
   if (title.length > 65) {
-    title = title.slice(0, 61).trim().replace(/[,/&;:\-—]+$/, "") + "... | Aikerui";
+    const hasBrand = title.endsWith(" | Aikerui");
+    const suffix = hasBrand ? " | Aikerui" : "";
+    const budget = 65 - (hasBrand ? 10 : 0) - 3; // 3 for "..."
+    const base = hasBrand ? title.slice(0, -10) : title;
+    title = base.slice(0, Math.max(budget, 20)).trim().replace(/[,/&;:\-—]+$/, "") + "..." + suffix;
   }
 
   // ── OG description: use short description or clean intro ──
