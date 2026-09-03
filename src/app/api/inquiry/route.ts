@@ -25,7 +25,7 @@ function validate(body: Record<string, unknown>): {
   error?: string;
   data?: Record<string, string>;
 } {
-  const fields = ["name", "email", "message"];
+  const fields = ["name", "email"];
   for (const f of fields) {
     const v = body[f];
     if (typeof v !== "string" || v.trim().length === 0) {
