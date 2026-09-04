@@ -293,6 +293,30 @@ export default function HomePage() {
           <p className="text-gray-400 text-sm mt-6">Or call us directly: <a href="https://api.whatsapp.com/send?phone=8619965236428&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20pricing." className="text-white underline font-semibold">WhatsApp Sales Team</a></p>
         </div>
       </section>
+
+      {/* ===== SEO Company Description ===== */}
+      <section className="py-10 bg-white border-t border-gray-100">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="text-sm text-gray-600 leading-relaxed space-y-4">
+            <p>
+              Aikerui is a professional floor scrubber manufacturer and industrial cleaning equipment supplier based in Anhui, China.
+              Since 2008, our factory has designed and produced walk-behind floor scrubbers, ride-on scrubber dryers, industrial sweepers,
+              and a complete range of floor scrubber replacement parts — including floor scrubber brushes, disc brushes, cylindrical brushes,
+              roller brushes, squeegee blades, pad drivers, and other cleaning machine accessories.
+            </p>
+            <p>
+              Our floor scrubber brushes and spare parts are engineered as direct replacement options compatible with leading brands such as
+              Tennant, Nilfisk, Karcher, Hako, Comac, and IPC. We serve distributors, wholesalers, facility management companies, and
+              cleaning contractors across North America, Europe, Australia, and the Middle East.
+            </p>
+            <p>
+              Every order is backed by factory-direct pricing, OEM and ODM customization, private label service, and quality inspection before
+              shipment. Whether you need a single replacement brush or a full container of cleaning machine parts, contact us for a quotation —
+              our sales team responds within 24 hours.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
