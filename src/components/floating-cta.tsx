@@ -1,19 +1,12 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import Link from "next/link";
 import { MessageCircle, Send } from "@/lib/icons";
-import { getOrPickPerson, type SalesPerson } from "@/lib/sales-team";
+
+const MAIN_WHATSAPP = "8619965236428";
 
 export function FloatingCTA() {
-  const [person, setPerson] = useState<SalesPerson | null>(null);
-
-  useEffect(() => {
-    setPerson(getOrPickPerson());
-  }, []);
-
-  const phone = person?.phone ?? "8619965236428";
-  const name = person?.name ?? "Keke";
+  const phone = MAIN_WHATSAPP;
 
   const handleWhatsAppClick = () => {
     // Track the click before opening WhatsApp
@@ -22,7 +15,7 @@ export function FloatingCTA() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          salesName: name,
+          salesName: "Main",
           salesPhone: phone,
           page: window.location.pathname,
           referrer: document.referrer || "",
@@ -43,9 +36,7 @@ export function FloatingCTA() {
         aria-label="Chat on WhatsApp"
       >
         <MessageCircle size={20} />
-        <span className="hidden sm:inline text-sm">
-          Chat{name ? ` — ${name}` : " Now"}
-        </span>
+        <span className="hidden sm:inline text-sm">Chat Now</span>
       </a>
 
       {/* Quote */}
