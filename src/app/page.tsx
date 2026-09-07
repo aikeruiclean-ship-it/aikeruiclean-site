@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import { ArrowRight, Shield, Truck, HeadphonesIcon, Brush, Factory, CheckCircle, Phone, Video, Award, Globe } from "@/lib/icons";
-import { ProductCard } from "@/components/product-card";
+import { ProductCardServer } from "@/components/product-card-server";
 import { WhatsAppHeroButton } from "@/components/whatsapp-hero-button";
 import { JsonLd } from "@/components/json-ld";
 import { getFeaturedProducts, getPartsProducts, categories, getCategoryCounts } from "@/lib/products";
@@ -218,7 +218,7 @@ export default function HomePage() {
             <Link href="/products" className="hidden sm:flex items-center gap-1 text-primary hover:text-primary-light font-medium text-sm transition-colors">View All <ArrowRight size={16} /></Link>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {featured.map((product) => <ProductCard key={product.id} product={product} />)}
+            {featured.map((product) => <ProductCardServer key={product.id} product={product} />)}
           </div>
           <div className="mt-8 text-center sm:hidden">
             <Link href="/products" className="inline-flex items-center gap-1 text-primary font-medium text-sm">View All Products <ArrowRight size={16} /></Link>
@@ -237,7 +237,7 @@ export default function HomePage() {
             <Link href="/parts" className="hidden sm:flex items-center gap-1 text-primary hover:text-primary-light font-medium text-sm transition-colors">View All Parts <ArrowRight size={16} /></Link>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {parts.map((product) => <ProductCard key={product.id} product={product} />)}
+            {parts.map((product) => <ProductCardServer key={product.id} product={product} />)}
           </div>
           <div className="mt-8 text-center sm:hidden">
             <Link href="/parts" className="inline-flex items-center gap-1 text-primary font-medium text-sm">View All Parts <ArrowRight size={16} /></Link>
