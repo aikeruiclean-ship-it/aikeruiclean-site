@@ -1057,8 +1057,8 @@ const extraGuides: Guide[] = [
 ,
   {
     slug: "top-floor-scrubber-brands-buyers-guide",
-    title: "Top 10 Floor Scrubber Manufacturers in 2026 — Complete Comparison",
-    description: "Compare the top 10 floor scrubber manufacturers in 2026. From global brands like Tennant and Karcher to factory-direct options like Aikerui. Find the best manufacturer for your needs.",
+    title: "Floor Scrubber Brands: Global vs Factory-Direct — How to Choose",
+    description: "How to choose between global floor scrubber brands (Tennant, Karcher, Nilfisk) and factory-direct Chinese manufacturers. Compare dealer markups, spare parts access, OEM options and total cost of ownership before you buy.",
     category: "buying-guide",
     readTime: "10 min",
     difficulty: "beginner",
