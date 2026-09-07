@@ -7,7 +7,6 @@ import { InquiryButton } from "@/components/inquiry-button";
 import { CollapsibleDescription } from "@/components/collapsible-description";
 import { JsonLd } from "@/components/json-ld";
 import { getProductBySlug, getProducts } from "@/lib/products";
-import { TIER_PRICE_RANGE } from "@/lib/parts-pricing";
 import { sanitizeHtml } from "@/lib/utils";
 
 interface Props {
@@ -179,7 +178,7 @@ export default async function ProductDetailPage({ params }: Props) {
           ...(weight && { weight }),
           ...(dims && { ...dims }),
           offers: (() => {
-            // 有真实价格 → 完整 Offer；无价格 → priceRange（与页面显示一致，绝不出 0）
+            // 有真实价格 → 完整 Offer（Google 富结果可显示价格）
             if (product.price != null && product.price > 0) {
               return {
                 "@type": "Offer",
@@ -189,42 +188,11 @@ export default async function ProductDetailPage({ params }: Props) {
                   : "https://schema.org/OutOfStock",
                 priceCurrency: "USD",
                 price: product.price,
-                ...(product.salePrice != null && product.salePrice > 0
-                  ? { priceValidUntil: undefined }
-                  : {}),
               };
             }
-            return {
-              "@type": "Offer",
-              url: "https://aikeruiclean.com/floor-scrubber-parts-quote",
-              availability: product.inStock
-                ? "https://schema.org/InStock"
-                : "https://schema.org/OutOfStock",
-              priceSpecification: (() => {
-                // Parts: tier-based range; Machines: broad range (quote-based)
-                if (product.category === "Parts") {
-                  const sub = (product as any).partSubcategory || "";
-                  const tier = /Disc Brush|Squeegee|Brush|Hose|Side Brush/.test(sub)
-                    ? "L1"
-                    : /Pad Holder|Clutch Plate|Roller Brush|Lock & Flange/.test(sub)
-                      ? "L2"
-                      : "L2";
-                  const r = TIER_PRICE_RANGE[tier];
-                  return {
-                    "@type": "PriceSpecification",
-                    priceCurrency: "USD",
-                    minPrice: r.minPrice,
-                    maxPrice: r.maxPrice,
-                  };
-                }
-                return {
-                  "@type": "PriceSpecification",
-                  priceCurrency: "USD",
-                  minPrice: 1800,
-                  maxPrice: 30000,
-                };
-              })(),
-            };
+            // 无真实价格（询盘制/定制）→ 不输出 offers，避免空 Offer 报错
+            // （价格随原材料/定制需求波动，不标价；页面也不显示价格）
+            return undefined;
           })(),
         };
       })()} />
