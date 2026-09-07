@@ -26,6 +26,9 @@ export async function generateStaticParams() {
   return getGuides().map((guide) => ({ slug: guide.slug }));
 }
 
+// 未预生成的 slug 直接返回真 404（消除 soft-404）
+export const dynamicParams = false;
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const guide = getGuideBySlug(slug);

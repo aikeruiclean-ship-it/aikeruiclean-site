@@ -18,6 +18,9 @@ export function generateStaticParams() {
   return getProducts().map((p) => ({ slug: p.slug }));
 }
 
+// 未预生成的 slug 直接返回真 404（消除 soft-404，避免 GSC 判低质页）
+export const dynamicParams = false;
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const product = getProductBySlug(slug);
