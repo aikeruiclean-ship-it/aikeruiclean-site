@@ -70,12 +70,12 @@ export default function RootLayout({
         {/* Google Tag (gtag.js) — GA4 + Google Ads 转化（直连，避免 GTM 容器覆盖 window.gtag） */}
         <Script
           id="gtag"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           src="https://www.googletagmanager.com/gtag/js?id=G-X8E9TNJ4D2"
         />
         <Script
           id="gtag-config"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-X8E9TNJ4D2');gtag('config','AW-18359776225');`
           }}
