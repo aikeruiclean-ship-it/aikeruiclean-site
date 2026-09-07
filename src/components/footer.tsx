@@ -6,7 +6,7 @@ export function Footer() {
   const counts = getCategoryCounts();
 
   return (
-    <footer className="bg-primary text-white font-['system-ui,-apple-system,sans-serif']">
+    <footer className="bg-primary text-white">  {/* 字体跟随全局(Geist)，消除 font swap 布局偏移(CLS) */}
       {/* Main footer */}
       <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* Company info */}
