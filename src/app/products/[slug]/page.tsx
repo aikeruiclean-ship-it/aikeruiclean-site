@@ -173,10 +173,22 @@ export default async function ProductDetailPage({ params }: Props) {
           },
           brand: { "@type": "Brand", name: "Aikerui" },
           category: product.category,
-          image: product.images,
+          image: (product.images || []).map((img) =>
+            img.startsWith("http") ? img : `https://aikeruiclean.com${img.startsWith("/") ? "" : "/"}${img}`
+          ),
           ...(isMachine && { countryOfOrigin: "CN" }),
           ...(weight && { weight }),
-          ...(dims && { ...dims }),
+          ...(dims && {
+            additionalProperty: Object.entries(dims).map(([k, v]) => {
+              const qv = v as { value?: number; unitCode?: string };
+              return {
+                "@type": "PropertyValue",
+                name: k,
+                value: qv.value,
+                unitCode: qv.unitCode,
+              };
+            }),
+          }),
           offers: (() => {
             // 有真实价格 → 完整 Offer（Google 富结果可显示价格）
             if (product.price != null && product.price > 0) {
