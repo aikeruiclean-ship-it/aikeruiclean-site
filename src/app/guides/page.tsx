@@ -7,7 +7,7 @@ export const dynamic = "force-dynamic";
 export const revalidate = 0;
 
 export const metadata: Metadata = {
-  title: "Floor Scrubber Guides & Resources | Buying Tips, Maintenance & Comparison | Aikerui",
+  title: "Floor Scrubber Guides & Buying Tips | Aikerui",
   description:
     "Expert floor scrubber guides covering buying advice, maintenance tips, troubleshooting, product comparisons, and industry-specific recommendations. Free resources for facility managers and business owners.",
   keywords: [

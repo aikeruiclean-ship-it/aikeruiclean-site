@@ -137,6 +137,7 @@ const guides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/B460-Scrubber-01.webp",
     published: "2026-06-01",
+    relatedGuides: ["walk-behind-vs-ride-on-scrubber-overview", "industrial-floor-scrubber-complete-guide", "walk-behind-vs-ride-on-scrubber"],
     sections: [
       {
         heading: "What Type of Floor Scrubber Do You Need?",
@@ -207,6 +208,7 @@ const guides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/A50-Scrubber-02.webp",
     published: "2026-06-01",
+    relatedGuides: ["walk-behind-vs-ride-on-scrubber", "how-to-choose-a-floor-scrubber", "disc-brush-vs-roller-brush-scrubber"],
     sections: [
       {
         heading: "Walk-Behind Floor Scrubbers",
@@ -259,6 +261,7 @@ const guides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/B460-Scrubber-02.webp",
     published: "2026-06-01",
+    relatedGuides: ["battery-not-charging-short-runtime", "lead-acid-vs-lithium-battery-scrubber", "how-to-extend-floor-scrubber-lifespan"],
     sections: [
       {
         heading: "Lead-Acid Battery Maintenance",
@@ -315,6 +318,7 @@ const guides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/Disc Brush Parts 3.webp",
     published: "2026-07-31",
+    relatedGuides: ["floor-scrubber-brush-complete-guide", "top-10-floor-scrubber-disc-brushes", "top-10-floor-scrubber-roller-brushes"],
     sections: [
       {
         heading: "What Is a Floor Scrubber Disc Brush?",
@@ -389,6 +393,7 @@ const guides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/Shampoo Disc Brush Parts.webp",
     published: "2026-08-13",
+    relatedGuides: ["floor-scrubber-disc-brush-buying-guide", "floor-scrubber-brush-complete-guide", "custom-scrubber-brush-solutions"],
     videoId: "shampoo-disc-brush",
     sections: [
       {
@@ -453,6 +458,7 @@ const guides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101705320686.webp",
     published: "2026-08-04",
+    relatedGuides: ["top-10-floor-scrubber-roller-brushes", "floor-scrubber-disc-brush-buying-guide", "floor-scrubber-brush-complete-guide"],
     sections: [
       {
         heading: "Why a Disc Brush Ranking Matters",
@@ -819,6 +825,7 @@ const guides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101939920202.webp",
     published: "2026-08-04",
+    relatedGuides: ["top-10-floor-scrubber-disc-brushes", "floor-scrubber-brush-complete-guide", "floor-scrubber-disc-brush-buying-guide"],
     sections: [
       {
         heading: "Why a Roller Brush Ranking Matters",
@@ -898,6 +905,7 @@ const guides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/Disc Brush Parts.webp",
     published: "2026-08-04",
+    relatedGuides: ["floor-scrubber-parts-guide-types-lifespan-cost", "floor-scrubber-brush-complete-guide", "top-10-floor-scrubber-roller-brushes"],
     sections: [
       {
         heading: "When to Replace Your Floor Scrubber Brush",
@@ -1000,6 +1008,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101711695823.webp",
     published: "2026-06-08",
+    relatedGuides: ["floor-scrubber-clutch-plate-pad-driver-guide", "how-to-choose-a-floor-scrubber", "how-to-maintain-floor-scrubber-battery"],
     videoUrl: "https://youtube.com/shorts/pEDsME4b-98",
     sections: [
       { heading: "Unpacking and Initial Inspection", content: "When your Aikerui floor scrubber arrives, carefully inspect the packaging.", items: ["Inspect packaging for shipping damage before opening", "Verify all components against the packing list", "Check the machine model and serial number match your order"] },
@@ -1018,6 +1027,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/B460-Scrubber-03.webp",
     published: "2026-06-08",
+    relatedGuides: ["how-to-set-up-your-floor-scrubber", "how-to-choose-a-floor-scrubber", "how-to-maintain-floor-scrubber-battery"],
     videoUrl: "https://x.com/mark_xu71710/status/2062744516939919806",
     sections: [
       { heading: "Pre-Operation Daily Checks", content: "A thorough pre-operation check takes just 5 minutes but prevents costly downtime.", items: ["Battery charge: minimum 80%", "Brushes: check for wear", "Squeegee blades: inspect for nicks", "Solution tank: fill with water"] },
@@ -1035,6 +1045,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/A50-Scrubber-03.webp",
     published: "2026-06-08",
+    relatedGuides: ["walk-behind-vs-ride-on-scrubber-overview", "walk-behind-vs-ride-on-scrubber", "how-to-choose-a-floor-scrubber"],
     videoUrl: "https://x.com/mark_xu71710/status/2064637551541878998",
     sections: [
       { heading: "Compact Design", content: "The A50 is designed with a compact footprint of 1300x550x1100mm.", items: ["Dimensions: 1300x550x1100mm", "Cleaning width: 500mm", "Ideal for facilities under 10,000 sq ft"] },
@@ -1053,6 +1064,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/B460-Scrubber-04.webp",
     published: "2026-06-17",
+    relatedGuides: ["top-10-floor-scrubber-manufacturers-2026", "floor-scrubber-financing-options", "top-10-industrial-cleaning-equipment-manufacturers"],
     sections: [
       {
         heading: "Introduction",
@@ -1130,6 +1142,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101905818.webp",
     published: "2026-06-26",
+    relatedGuides: ["water-solution-not-dispensing", "top-10-floor-scrubber-squeegee-blades", "brush-motor-not-spinning"],
     sections: [
       {
         heading: "Symptom: Clean Water Left on Floor After Scrubbing",
@@ -1184,6 +1197,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101939797515.webp",
     published: "2026-08-14",
+    relatedGuides: ["top-10-floor-scrubber-disc-brushes", "top-10-floor-scrubber-roller-brushes", "top-10-floor-scrubber-brushes-and-parts"],
     sections: [
       {
         heading: "Why a Squeegee Blade Ranking Matters",
@@ -1255,6 +1269,7 @@ const extraGuides: Guide[] = [
     difficulty: "intermediate",
     thumbnail: "/images/parts/101440719895.webp",
     published: "2026-06-26",
+    relatedGuides: ["battery-not-charging-short-runtime", "industrial-floor-scrubber-complete-guide", "how-to-choose-a-floor-scrubber"],
     sections: [
       {
         heading: "Symptom: Brush Deck Motor Not Engaging",
@@ -1316,6 +1331,7 @@ const extraGuides: Guide[] = [
     difficulty: "intermediate",
     thumbnail: "/images/B460-Scrubber-05.webp",
     published: "2026-06-26",
+    relatedGuides: ["how-to-maintain-floor-scrubber-battery", "brush-motor-not-spinning", "lead-acid-vs-lithium-battery-scrubber"],
     sections: [
       {
         heading: "Symptom: Battery Won't Hold a Charge",
@@ -1379,6 +1395,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101521510723.webp",
     published: "2026-06-26",
+    relatedGuides: ["water-solution-not-dispensing", "squeegee-not-picking-up-water", "brush-motor-not-spinning"],
     sections: [
       {
         heading: "Symptom: Streaks or Swirl Marks After Cleaning",
@@ -1434,6 +1451,7 @@ const extraGuides: Guide[] = [
     difficulty: "intermediate",
     thumbnail: "/images/B460-Scrubber-06.webp",
     published: "2026-06-26",
+    relatedGuides: ["squeegee-not-picking-up-water", "scrubber-leaving-streaks-on-floor", "brush-motor-not-spinning"],
     sections: [
       {
         heading: "Symptom: No Water / Solution Coming Out of the Brush Deck",
@@ -1496,6 +1514,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/A50-Scrubber-05.webp",
     published: "2026-06-26",
+    relatedGuides: ["walk-behind-vs-ride-on-scrubber-overview", "disc-brush-vs-roller-brush-scrubber", "best-floor-scrubber-small-business"],
     sections: [
       {
         heading: "The Core Difference",
@@ -1546,6 +1565,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101521634780.webp",
     published: "2026-06-26",
+    relatedGuides: ["walk-behind-vs-ride-on-scrubber", "walk-behind-vs-ride-on-scrubber-overview", "floor-scrubber-disc-brush-buying-guide"],
     sections: [
       {
         heading: "Two Different Cleaning Mechanisms",
@@ -1592,6 +1612,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/A50-Scrubber-06.webp",
     published: "2026-06-26",
+    relatedGuides: ["how-to-maintain-floor-scrubber-battery", "oem-vs-aftermarket-floor-scrubber-parts", "battery-not-charging-short-runtime"],
     sections: [
       {
         heading: "Why Battery Choice Matters",
@@ -1643,6 +1664,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/A1280-Sweeper-01.webp",
     published: "2026-07-04",
+    relatedGuides: ["top-10-industrial-cleaning-equipment-manufacturers", "top-floor-scrubber-brands-buyers-guide", "aftermarket-scrubber-brush-compatible-brands"],
     sections: [
       {
         heading: "How We Evaluated These Manufacturers",
@@ -1860,6 +1882,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/Pad Center Lock Parts.webp",
     published: "2026-07-04",
+    relatedGuides: ["tennant-scrubber-parts-guide", "floor-scrubber-pad-holder-replacement-guide", "top-10-floor-scrubber-brushes-and-parts"],
     sections: [
       {
         heading: "Why Understanding Your Scrubber Parts Matters",
@@ -2027,6 +2050,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101720530.webp",
     published: "2026-07-04",
+    relatedGuides: ["how-to-choose-a-floor-scrubber", "brush-motor-not-spinning", "best-floor-scrubber-small-business"],
     sections: [
       {
         heading: "What Makes a Floor Scrubber 'Industrial'?",
@@ -2137,6 +2161,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101748253843.webp",
     published: "2026-07-04",
+    relatedGuides: ["how-much-do-floor-scrubber-brushes-cost", "floor-scrubber-roi-calculator-cost-savings", "tennant-scrubber-parts-guide"],
     sections: [
       {
         heading: "The Real Cost of a Floor Scrubber — Beyond the Sticker Price",
@@ -2271,6 +2296,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/A1280-Sweeper-02.webp",
     published: "2026-07-04",
+    relatedGuides: ["walk-behind-vs-ride-on-scrubber", "floor-scrubber-gym-fitness-center", "how-to-choose-a-floor-scrubber"],
     sections: [
       {
         heading: "Why a Floor Scrubber Is the Best Investment for Your Small Business",
@@ -2380,6 +2406,7 @@ const extraGuides: Guide[] = [
     difficulty: "intermediate",
     thumbnail: "/images/A1280-Sweeper-03.webp",
     published: "2026-07-04",
+    relatedGuides: ["steel-wire-floor-scrubber-brush-guide", "hospital-medical-facility-floor-cleaning-equipment", "hotel-hospitality-floor-cleaning-solutions"],
     sections: [
       {
         heading: "Why Food Processing Floors Demand Specialized Equipment",
@@ -2441,6 +2468,7 @@ const extraGuides: Guide[] = [
     difficulty: "intermediate",
     thumbnail: "/images/A1280-Sweeper-04.webp",
     published: "2026-07-04",
+    relatedGuides: ["floor-scrubber-hospital-healthcare-facility", "hotel-hospitality-floor-cleaning-solutions", "floor-scrubber-food-processing-plants"],
     sections: [
       {
         heading: "Why Hospital Floors Are the Highest-Stakes Cleaning Job",
@@ -2503,6 +2531,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/B260R60-Sweeper-00.webp",
     published: "2026-07-04",
+    relatedGuides: ["school-university-floor-cleaning-equipment", "floor-scrubber-church-event-venue", "hospital-medical-facility-floor-cleaning-equipment"],
     sections: [
       {
         heading: "The Unique Floor Cleaning Challenges of Hotels",
@@ -2548,6 +2577,7 @@ const extraGuides: Guide[] = [
     difficulty: "intermediate",
     thumbnail: "/images/B260R60-Sweeper-02.webp",
     published: "2026-07-04",
+    relatedGuides: ["how-to-buy-floor-scrubber-parts-from-china", "how-to-ship-floor-scrubber-internationally", "hotel-hospitality-floor-cleaning-solutions"],
     sections: [
       {
         heading: "Why Import Floor Scrubbers from China? The Numbers",
@@ -2635,6 +2665,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101793279887.webp",
     published: "2026-07-04",
+    relatedGuides: ["top-10-floor-scrubber-parts-suppliers", "floor-scrubber-parts-guide-types-lifespan-cost", "lead-acid-vs-lithium-battery-scrubber"],
     sections: [
       {
         heading: "The OEM Parts Myth",
@@ -2704,6 +2735,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/B260R60-Sweeper-03.webp",
     published: "2026-07-04",
+    relatedGuides: ["floor-scrubber-school-university-cleaning", "hotel-hospitality-floor-cleaning-solutions", "hospital-medical-facility-floor-cleaning-equipment"],
     sections: [
       {
         heading: "The School Cleaning Challenge",
@@ -2745,6 +2777,7 @@ const extraGuides: Guide[] = [
     difficulty: "intermediate",
     thumbnail: "/images/B260R60-Sweeper-05.webp",
     published: "2026-07-04",
+    relatedGuides: ["floor-scrubber-logistics-distribution-center", "top-10-industrial-cleaning-equipment-manufacturers", "hotel-hospitality-floor-cleaning-solutions"],
     sections: [
       {
         heading: "Why Parking Garages Need Specialized Equipment",
@@ -2783,6 +2816,7 @@ const extraGuides: Guide[] = [
     difficulty: "intermediate",
     thumbnail: "/images/B260R60-Sweeper-06.webp",
     published: "2026-07-04",
+    relatedGuides: ["floor-scrubber-logistics-distribution-center", "top-10-industrial-cleaning-equipment-manufacturers", "hotel-hospitality-floor-cleaning-solutions"],
     sections: [
       {
         heading: "Why Warehouses Need More Than Just a Scrubber",
@@ -2826,6 +2860,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101942138567.webp",
     published: "2026-07-04",
+    relatedGuides: ["how-to-extend-floor-scrubber-lifespan", "how-to-maintain-floor-scrubber-battery", "floor-scrubber-daily-operation-best-practices"],
     sections: [
       {
         heading: "Why Maintenance Matters More Than You Think",
@@ -2903,6 +2938,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101530132440.webp",
     published: "2026-07-04",
+    relatedGuides: ["case-study-supermarket-chain-floor-cleaning", "case-study-manufacturing-plant-floor-cleaning", "warehouse-cleaning-equipment-complete-guide"],
     sections: [
       {
         heading: "The Customer",
@@ -2947,6 +2983,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101534842595.webp",
     published: "2026-07-04",
+    relatedGuides: ["case-study-supermarket-chain-floor-cleaning", "case-study-warehouse-distribution-center-floor-scrubbing", "tennant-scrubber-parts-guide"],
     sections: [
       {
         heading: "The Customer",
@@ -2992,6 +3029,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101535080815.webp",
     published: "2026-07-04",
+    relatedGuides: ["case-study-warehouse-distribution-center-floor-scrubbing", "case-study-manufacturing-plant-floor-cleaning", "tennant-scrubber-parts-guide"],
     sections: [
       {
         heading: "The Customer",
@@ -3036,6 +3074,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101535303149.webp",
     published: "2026-07-10",
+    relatedGuides: ["how-much-does-floor-scrubber-cost", "floor-scrubber-financing-options"],
     sections: [
       {
         heading: "Why ROI Matters for Floor Scrubber Purchases",
@@ -3130,6 +3169,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101940364715.webp",
     published: "2026-07-11",
+    relatedGuides: ["floor-scrubber-maintenance-checklist", "floor-scrubber-disc-brush-replacement-tips", "floor-scrubber-parts-guide-types-lifespan-cost"],
     sections: [
       {
         heading: "Why Most Floor Scrubbers Die Early",
@@ -3177,6 +3217,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/102004841157.webp",
     published: "2026-07-11",
+    relatedGuides: ["oem-vs-aftermarket-floor-scrubber-parts", "tennant-scrubber-parts-guide", "disc-brush-vs-roller-brush-scrubber"],
     sections: [
       {
         heading: "The Hidden Danger of Floor Cleaning",
@@ -3222,6 +3263,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101535642567.webp",
     published: "2026-07-13",
+    relatedGuides: ["oem-vs-aftermarket-floor-scrubber-parts", "tennant-scrubber-parts-guide", "disc-brush-vs-roller-brush-scrubber"],
     sections: [
       {
         heading: "Why Your Parts Supplier Matters",
@@ -3301,6 +3343,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101536037905.webp",
     published: "2026-07-14",
+    relatedGuides: ["top-floor-scrubber-brands-buyers-guide", "floor-scrubber-roi-calculator-cost-savings", "floor-scrubber-gym-fitness-center"],
     sections: [
       {
         heading: "Why Financing Makes Sense for Floor Scrubbers",
@@ -3378,6 +3421,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101536061230.webp",
     published: "2026-07-14",
+    relatedGuides: ["walk-behind-vs-ride-on-scrubber-overview", "walk-behind-vs-ride-on-scrubber", "disc-brush-vs-roller-brush-scrubber"],
     sections: [
       {
         heading: "The Allure of a Used Floor Scrubber",
@@ -3432,6 +3476,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101539483146.webp",
     published: "2026-07-14",
+    relatedGuides: ["hotel-hospitality-floor-cleaning-solutions", "floor-scrubber-school-university-cleaning", "floor-scrubber-gym-fitness-center"],
     sections: [
       {
         heading: "Why Gym Floors Need Special Equipment",
@@ -3473,6 +3518,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101539693092.webp",
     published: "2026-07-14",
+    relatedGuides: ["top-10-floor-scrubber-manufacturers-2026", "top-floor-scrubber-brands-buyers-guide", "warehouse-cleaning-equipment-complete-guide"],
     sections: [
       {
         heading: "The Unique Cleaning Challenge of Churches & Event Venues",
@@ -3512,6 +3558,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101539965819.webp",
     published: "2026-07-14",
+    relatedGuides: ["top-10-floor-scrubber-manufacturers-2026", "top-floor-scrubber-brands-buyers-guide", "warehouse-cleaning-equipment-complete-guide"],
     sections: [
       {
         heading: "The Industrial Cleaning Equipment Landscape in 2026",
@@ -3591,6 +3638,7 @@ const extraGuides: Guide[] = [
     difficulty: "intermediate",
     thumbnail: "/images/parts/101540180217.webp",
     published: "2026-07-14",
+    relatedGuides: ["floor-scrubber-oil-grease-factory-cleaning", "parking-garage-floor-scrubber-guide", "floor-scrubber-construction-site-cleaning"],
     sections: [
       {
         heading: "The Sand & Dust Challenge",
@@ -3647,6 +3695,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101540420408.webp",
     published: "2026-07-14",
+    relatedGuides: ["parking-garage-floor-scrubber-guide", "floor-scrubber-dust-sand-industrial-cleaning", "floor-scrubber-construction-site-cleaning"],
     sections: [
       {
         heading: "Carpet vs Hard Floor: Different Machines Required",
@@ -3681,6 +3730,7 @@ const extraGuides: Guide[] = [
     difficulty: "intermediate",
     thumbnail: "/images/parts/101548652397.webp",
     published: "2026-07-15",
+    relatedGuides: ["floor-scrubber-parts-guide-types-lifespan-cost", "floor-scrubber-clutch-plate-pad-driver-guide", "floor-scrubber-disc-brush-buying-guide"],
     sections: [
       {
         heading: "Why Oil & Grease Destroy Standard Scrubbers",
@@ -3720,6 +3770,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101558246394.webp",
     published: "2026-07-15",
+    relatedGuides: ["parking-garage-floor-scrubber-guide", "floor-scrubber-oil-grease-factory-cleaning", "steel-wire-floor-scrubber-brush-guide"],
     sections: [
       {
         heading: "What Is a Pad Holder (Pad Driver)?",
@@ -3762,6 +3813,7 @@ const extraGuides: Guide[] = [
     difficulty: "intermediate",
     thumbnail: "/images/parts/101558344300.webp",
     published: "2026-07-15",
+    relatedGuides: ["floor-scrubber-disc-brush-buying-guide", "floor-scrubber-brush-complete-guide", "top-10-floor-scrubber-disc-brushes"],
     sections: [
       {
         heading: "Why Construction Cleanup Destroys Standard Scrubbers",
@@ -3800,6 +3852,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101559266208.webp",
     published: "2026-07-15",
+    relatedGuides: ["top-floor-scrubber-brands-buyers-guide", "floor-scrubber-roi-calculator-cost-savings", "tennant-scrubber-parts-guide"],
     sections: [
       {
         heading: "Why Bristle Material Matters More Than You Think",
@@ -3845,6 +3898,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101559442162.webp",
     published: "2026-07-15",
+    relatedGuides: ["hospital-medical-facility-floor-cleaning-equipment", "floor-scrubber-food-processing-plants", "hotel-hospitality-floor-cleaning-solutions"],
     sections: [
       {
         heading: "The Fine Print That Costs Thousands",
@@ -3889,6 +3943,7 @@ const extraGuides: Guide[] = [
     difficulty: "intermediate",
     thumbnail: "/images/parts/101559536107.webp",
     published: "2026-07-15",
+    relatedGuides: ["how-to-choose-a-floor-scrubber", "floor-scrubber-warranty-comparison", "walk-behind-vs-ride-on-scrubber-overview"],
     sections: [
       {
         heading: "Why Hospital Cleaning Is Unlike Any Other",
@@ -3922,6 +3977,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101559806690.webp",
     published: "2026-07-15",
+    relatedGuides: ["floor-scrubber-roi-calculator-cost-savings", "floor-scrubber-brush-replacement-guide", "floor-scrubber-daily-operation-best-practices"],
     sections: [
       {
         heading: "Don't Buy Based on Marketing — Buy Based on Specs",
@@ -3958,6 +4014,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101560194300.webp",
     published: "2026-07-15",
+    relatedGuides: ["warehouse-cleaning-equipment-complete-guide", "how-to-choose-a-floor-scrubber", "floor-scrubber-food-processing-plants"],
     sections: [
       {
         heading: "Why Brush Pressure Determines Everything",
@@ -3987,6 +4044,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101562835129.webp",
     published: "2026-07-15",
+    relatedGuides: ["parking-garage-floor-scrubber-guide", "floor-scrubber-gym-fitness-center", "best-floor-scrubber-small-business"],
     sections: [
       {
         heading: "Why Schools Need Specialized Equipment",
@@ -4012,6 +4070,7 @@ const extraGuides: Guide[] = [
     difficulty: "intermediate",
     thumbnail: "/images/parts/101570361535.webp",
     published: "2026-07-15",
+    relatedGuides: ["inside-aikerui-factory-tour", "how-to-choose-a-floor-scrubber", "top-floor-scrubber-brands-buyers-guide"],
     sections: [
       {
         heading: "Logistics Never Stops — Your Scrubbing Shouldn't Either",
@@ -4041,6 +4100,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101650654640.webp",
     published: "2026-07-16",
+    relatedGuides: ["commercial-carpet-cleaning-equipment-guide", "floor-scrubber-brush-pads-guide", "top-10-floor-scrubber-roller-brushes"],
     sections: [
       {
         heading: "Why Dealership Floors Are the First Thing Customers Notice",
@@ -4070,6 +4130,7 @@ const extraGuides: Guide[] = [
     difficulty: "intermediate",
     thumbnail: "/images/parts/101650838979.webp",
     published: "2026-07-16",
+    relatedGuides: ["how-to-import-floor-scrubbers-from-china", "how-to-buy-floor-scrubber-parts-from-china", "floor-scrubber-clutch-plate-pad-driver-guide"],
     sections: [
       {
         heading: "The 'Fake Factory' Problem in B2B Equipment",
@@ -4099,6 +4160,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101693621322.webp",
     published: "2026-07-16",
+    relatedGuides: ["commercial-carpet-cleaning-equipment-guide", "top-10-floor-scrubber-roller-brushes"],
     sections: [
       {
         heading: "When Scrubbing Isn't Enough — You Need Stripping",
@@ -4132,6 +4194,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/1000141211365.webp",
     published: "2026-07-23",
+    relatedGuides: ["floor-scrubber-pad-holder-replacement-guide", "replacement-floor-scrubber-parts-guide", "floor-scrubber-parts-guide-types-lifespan-cost"],
     sections: [
       { heading: "Why Importing a Floor Scrubber Directly Saves You Thousands", content: "A dealer-priced ride-on scrubber at $18,000 can be sourced factory-direct for $9,000 — but only if you know how to handle international logistics. The shipping and customs process intimidates many first-time buyers, but it's far simpler than most people think. This guide walks you through the entire process, from factory pickup to your warehouse door." },
       { heading: "Sea Freight vs Air Freight: Which Should You Choose?", content: "99% of floor scrubber imports use sea freight. Air freight costs 5-8x more and only makes sense for urgent spare parts or single demo units.", image: "/images/A1280-Sweeper-04.webp", imageAlt: "how to ship floor scrubber internationally", items: [
@@ -4194,6 +4257,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101794807564.webp",
     published: "2026-07-28",
+    relatedGuides: ["floor-scrubber-pad-holder-replacement-guide", "floor-scrubber-parts-guide-types-lifespan-cost"],
     sections: [
       {
         heading: "What Is a Clutch Plate / Pad Driver?",
@@ -4270,6 +4334,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/102004908611.webp",
     published: "2026-08-05",
+    relatedGuides: ["floor-scrubber-construction-site-cleaning", "parking-garage-floor-scrubber-guide", "floor-scrubber-oil-grease-factory-cleaning"],
     sections: [
       {
         heading: "Why a Factory Tour Video Matters",
@@ -4328,6 +4393,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/disc-brush-custom-nylon-steel-wire-brushes-for-floor-scrubbers.webp",
     published: "2026-08-10",
+    relatedGuides: ["how-to-extend-floor-scrubber-lifespan", "how-to-maintain-floor-scrubber-battery", "floor-scrubber-disc-brush-buying-guide"],
     videoId: "XrHK1POi7yY",
     sections: [
       {
@@ -4392,6 +4458,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101705628647.webp",
     published: "2026-08-11",
+    relatedGuides: ["how-to-extend-floor-scrubber-lifespan", "how-to-maintain-floor-scrubber-battery", "floor-scrubber-disc-brush-buying-guide"],
     videoId: "IfTGVM4OC_k",
     sections: [
       {
@@ -4463,6 +4530,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/floor-pad-floor-scrubber-cleaning-pad-for-commercial-use.webp",
     published: "2026-08-24",
+    relatedGuides: ["steel-wire-floor-scrubber-brush-guide", "custom-scrubber-brush-solutions", "floor-scrubber-oil-grease-factory-cleaning"],
     videoId: "antibrush24",
     sections: [
       {
@@ -4535,6 +4603,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/102005135851.webp",
     published: "2026-08-25",
+    relatedGuides: ["tennant-scrubber-parts-guide", "nilfisk-scrubber-parts-guide", "karcher-scrubber-parts-guide"],
     videoId: "custombrush25",
     sections: [
       {
@@ -4598,6 +4667,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/100053360385.webp",
     published: "2026-08-27",
+    relatedGuides: ["tennant-scrubber-parts-guide", "nilfisk-scrubber-parts-guide", "karcher-scrubber-parts-guide"],
     sections: [
       {
         heading: "The Floor Scrubber Brush & Parts Landscape",

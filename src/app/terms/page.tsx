@@ -8,7 +8,7 @@ const TERMS_BREADCRUMB = [
 ];
 
 export const metadata = {
-  title: "Terms & Conditions | Anhui Aikerui Environmental Protection Technology CO.,LTD",
+  title: "Terms & Conditions | Aikerui",
   description: "Terms and conditions for purchasing from Aikerui. Includes ordering, payment, shipping, warranty, and return policies.",
 };
 
