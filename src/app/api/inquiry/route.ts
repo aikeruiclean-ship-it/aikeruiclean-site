@@ -178,11 +178,13 @@ export async function POST(request: NextRequest) {
       console.error("Google Script timeout/error:", gasErr);
     }
 
-    // 2) Also send email via Brevo if configured
+    // 2) Notify shared inbox only (info@). Salesperson routing happens in
+    //    HubSpot manually — no per-salesperson email dispatch (Route B).
     if (process.env.BREVO_API_KEY) {
       const emailHtml = `
         <html><body style="font-family:Arial,sans-serif;padding:20px">
           <h2>New Product Inquiry</h2>
+          <p style="color:#666">Logged in HubSpot CRM · Suggested owner: ${escHtml(assigned.name)}</p>
           <table style="border-collapse:collapse;width:100%">
             <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold;background:#f5f5f5">Name</td><td style="padding:8px;border:1px solid #ddd">${escHtml(data.name)}</td></tr>
             <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold;background:#f5f5f5">Email</td><td style="padding:8px;border:1px solid #ddd">${escHtml(data.email)}</td></tr>
@@ -193,7 +195,7 @@ export async function POST(request: NextRequest) {
             <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold;background:#f5f5f5">Quantity</td><td style="padding:8px;border:1px solid #ddd">${escHtml(data.quantity)}</td></tr>
             <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold;background:#f5f5f5">Message</td><td style="padding:8px;border:1px solid #ddd;white-space:pre-wrap">${escHtml(data.message)}</td></tr>
           </table>
-          <p style="color:#666;font-size:12px">Received: ${new Date().toISOString()}</p>
+          <p style="color:#666;font-size:12px">Received: ${new Date().toISOString()} · Suggest assign to ${escHtml(assigned.name)} (${escHtml(assigned.email)})</p>
         </body></html>
       `;
 
@@ -210,9 +212,8 @@ export async function POST(request: NextRequest) {
           body: JSON.stringify({
             sender: { name: "Aikerui Website", email: "noreply@aikeruiclean.com" },
             to: [{ email: "info@aikeruiclean.com" }],
-            cc: [{ email: assigned.email, name: assigned.name }],
             replyTo: { email: data.email },
-            subject: `[${assigned.name}] New Inquiry: ${data.product}`,
+            subject: `New Inquiry: ${data.product} (assign ${assigned.name})`,
             htmlContent: emailHtml,
           }),
         });
