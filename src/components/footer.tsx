@@ -8,7 +8,7 @@ export function Footer() {
   return (
     <footer className="bg-primary text-white">  {/* 字体跟随全局(Geist)，消除 font swap 布局偏移(CLS) */}
       {/* Main footer */}
-      <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
         {/* Company info */}
         <div>
           <div className="flex items-center gap-2 mb-4">
@@ -44,6 +44,34 @@ export function Footer() {
           </ul>
         </div>
 
+        {/* Solutions */}
+        <div>
+          <h3 className="text-sm font-semibold uppercase tracking-wider mb-4 text-accent">
+            Solutions
+          </h3>
+          <ul className="space-y-2">
+            {[
+              { href: "/solutions/warehouse-floor-cleaning", label: "Warehouse" },
+              { href: "/solutions/factory-floor-cleaning", label: "Factory" },
+              { href: "/solutions/supermarket-floor-cleaning", label: "Supermarket" },
+              { href: "/solutions/airport-floor-cleaning", label: "Airport" },
+              { href: "/solutions/shopping-mall-floor-cleaning", label: "Shopping Mall" },
+              { href: "/solutions/hotel-floor-cleaning", label: "Hotel" },
+              { href: "/solutions/cold-storage-floor-cleaning", label: "Cold Storage" },
+              { href: "/solutions/pharmaceutical-cleanroom-floor-cleaning", label: "Pharma Cleanroom" },
+            ].map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  className="text-sm text-gray-300 hover:text-accent transition-colors"
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
         {/* Quick links */}
         <div>
           <h3 className="text-sm font-semibold uppercase tracking-wider mb-4 text-accent">
@@ -53,6 +81,8 @@ export function Footer() {
             {[
               { href: "/", label: "Home" },
               { href: "/products", label: "All Products" },
+              { href: "/parts", label: "Replacement Parts" },
+              { href: "/guides", label: "Guides" },
               { href: "/about", label: "About Us" },
               { href: "/contact", label: "Contact" },
             ].map((link) => (
