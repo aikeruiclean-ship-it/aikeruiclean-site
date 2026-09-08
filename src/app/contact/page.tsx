@@ -1,25 +1,35 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Phone, Mail, MapPin, Clock, Send, CheckCircle, Video, Factory, MessageCircle, ArrowRight } from "@/lib/icons";
 import Link from "next/link";
 import Image from "next/image";
 import { JsonLd } from "@/components/json-ld";
 import { breadcrumbJsonLd, CONTACT_BREADCRUMB } from "@/lib/breadcrumb";
+import { persistAttribution, attachAttribution } from "@/lib/attribution";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({ name: "", email: "", phone: "", company: "", country: "", product: "", quantity: "", message: "", wantVideoTour: false });
   const [submitted, setSubmitted] = useState(false);
   const [sending, setSending] = useState(false);
 
+  // Capture GCLID / UTM from landing URL (persisted for later submissions)
+  useEffect(() => {
+    persistAttribution();
+  }, []);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSending(true);
     try {
+      const body = attachAttribution({
+        ...formData,
+        message: formData.wantVideoTour ? `[REQUEST VIDEO TOUR] ${formData.message}` : formData.message,
+      });
       const res = await fetch("/api/inquiry", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...formData, message: formData.wantVideoTour ? `[REQUEST VIDEO TOUR] ${formData.message}` : formData.message }),
+        body: JSON.stringify(body),
       });
       if (!res.ok) throw new Error("Failed to submit");
       setSubmitted(true);

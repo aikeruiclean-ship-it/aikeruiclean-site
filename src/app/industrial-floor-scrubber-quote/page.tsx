@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import {
@@ -18,6 +18,7 @@ import {
 } from "@/lib/icons";
 import { JsonLd } from "@/components/json-ld";
 import { getFeaturedProducts } from "@/lib/products";
+import { persistAttribution, attachAttribution } from "@/lib/attribution";
 
 export default function IndustrialFloorScrubberQuotePage() {
   const featured = getFeaturedProducts()
@@ -36,6 +37,11 @@ export default function IndustrialFloorScrubberQuotePage() {
   const [submitted, setSubmitted] = useState(false);
   const [sending, setSending] = useState(false);
 
+  // Capture GCLID / UTM from landing URL (persisted for later submissions)
+  useEffect(() => {
+    persistAttribution();
+  }, []);
+
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
@@ -51,10 +57,12 @@ export default function IndustrialFloorScrubberQuotePage() {
       const res = await fetch("/api/inquiry", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          ...formData,
-          product: "Industrial Floor Scrubber (Landing Page)",
-        }),
+        body: JSON.stringify(
+          attachAttribution({
+            ...formData,
+            product: "Industrial Floor Scrubber (Landing Page)",
+          })
+        ),
       });
       if (!res.ok) throw new Error("Submit failed");
       setSubmitted(true);

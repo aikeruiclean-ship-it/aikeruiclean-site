@@ -260,6 +260,14 @@ export async function POST(request: NextRequest) {
           assignedTo: assigned.name,
           source: "website-quote",
           timestamp: new Date().toISOString(),
+          // Google Ads attribution passthrough (from attribution.ts)
+          gclid: typeof body.gclid === "string" ? body.gclid.slice(0, 200) : undefined,
+          utm_source: typeof body.utm_source === "string" ? body.utm_source.slice(0, 100) : undefined,
+          utm_medium: typeof body.utm_medium === "string" ? body.utm_medium.slice(0, 100) : undefined,
+          utm_campaign: typeof body.utm_campaign === "string" ? body.utm_campaign.slice(0, 100) : undefined,
+          utm_term: typeof body.utm_term === "string" ? body.utm_term.slice(0, 100) : undefined,
+          utm_content: typeof body.utm_content === "string" ? body.utm_content.slice(0, 100) : undefined,
+          landing_page: typeof body.landing_page === "string" ? body.landing_page.slice(0, 200) : undefined,
         });
       } catch (syncErr) {
         // Never let HubSpot failure fail the inquiry response

@@ -1,12 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Factory, Truck, BadgeCheck, Phone, Send, CheckCircle, MapPin } from "@/lib/icons";
 import { JsonLd } from "@/components/json-ld";
 import { YouTubeLink } from "@/components/youtube-link";
 import { ReviewForm } from "@/components/review-form";
 import { ReviewsDisplay } from "@/components/reviews-display";
+import { persistAttribution, attachAttribution } from "@/lib/attribution";
 
 const BRUSHES = [
   { name: "Disc Brush", img: "/images/categories/Disc-Brush.webp", desc: "Flat rotary brushes for walk-behind & ride-on scrubbers" },
@@ -26,14 +27,21 @@ export default function PartsQuotePage() {
   const [sending, setSending] = useState(false);
   const [form, setForm] = useState({ name: "", email: "", phone: "", company: "", machineModel: "", brushType: "", quantity: "", message: "" });
 
+  // Capture GCLID / UTM from the landing URL once on mount (persisted for later submissions)
+  useEffect(() => {
+    persistAttribution();
+  }, []);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSending(true);
     try {
+      // Attach GCLID/UTM attribution (from URL or localStorage) to this submission
+      const body = attachAttribution({ ...form, product: "Floor Scrubber Parts (Ad Landing)" });
       const res = await fetch("/api/inquiry", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...form, product: "Floor Scrubber Parts (Ad Landing)" }),
+        body: JSON.stringify(body),
       });
       if (!res.ok) throw new Error("Failed");
       setSubmitted(true);

@@ -16,6 +16,14 @@ export interface HubSpotLeadInput {
   assignedTo: string; // e.g. "Keke" / "Rosy"
   source?: string; // e.g. "quote page" / "ad landing"
   timestamp: string;
+  // Google Ads attribution (step: GCLID/UTM closed loop)
+  gclid?: string;
+  utm_source?: string;
+  utm_medium?: string;
+  utm_campaign?: string;
+  utm_term?: string;
+  utm_content?: string;
+  landing_page?: string;
 }
 
 /**
@@ -51,14 +59,23 @@ export async function syncLeadToHubSpot(
   if (lead.company) properties.company = lead.company;
   if (lead.country) properties.country = lead.country;
 
+  // Google Ads click ID → HubSpot standard property (used by Ads offline conversion)
+  if (lead.gclid) properties.hs_google_click_id = lead.gclid;
+
   // Bundle product/quantity/source into the standard message field so nothing is lost
   const detailParts: string[] = [];
   if (lead.product) detailParts.push(`Product: ${lead.product}`);
   if (lead.quantity) detailParts.push(`Qty: ${lead.quantity}`);
   if (lead.source) detailParts.push(`Source: ${lead.source}`);
   if (lead.assignedTo) detailParts.push(`Assigned to: ${lead.assignedTo}`);
+  if (lead.landing_page) detailParts.push(`Landing: ${lead.landing_page}`);
+  if (lead.utm_source) detailParts.push(`utm_source: ${lead.utm_source}`);
+  if (lead.utm_medium) detailParts.push(`utm_medium: ${lead.utm_medium}`);
+  if (lead.utm_campaign) detailParts.push(`utm_campaign: ${lead.utm_campaign}`);
+  if (lead.utm_term) detailParts.push(`utm_term: ${lead.utm_term}`);
+  if (lead.utm_content) detailParts.push(`utm_content: ${lead.utm_content}`);
   if (lead.message) detailParts.push(`Details: ${lead.message}`);
-  const combined = detailParts.join(" | ").slice(0, 500);
+  const combined = detailParts.join(" | ").slice(0, 2000);
   if (combined) properties.message = combined;
 
   // Owner: all contacts belong to the shared inbox user (info@).
@@ -76,8 +93,16 @@ export async function syncLeadToHubSpot(
   const timeout = setTimeout(() => controller.abort(), 4000);
 
   try {
-    const res = await fetch(HUBSPOT_API_URL, {
-      method: "POST",
+    // ── Dedup: search for existing contact by email first ──
+    const existingId = await findContactByEmail(lead.email, apiToken);
+
+    const url = existingId
+      ? `${HUBSPOT_API_URL}/${existingId}` // PATCH update
+      : HUBSPOT_API_URL; // POST create
+    const method = existingId ? "PATCH" : "POST";
+
+    const res = await fetch(url, {
+      method,
       headers: {
         Authorization: `Bearer ${apiToken}`,
         "Content-Type": "application/json",
@@ -86,9 +111,24 @@ export async function syncLeadToHubSpot(
       body: JSON.stringify({ properties }),
     });
 
-    if (!res.ok && res.status !== 409) {
-      // 409 = already exists with same email; try update instead below
+    if (!res.ok) {
+      // Fallback: if PATCH failed because record vanished, try POST once
       const errText = await res.text();
+      if (existingId && res.status === 404) {
+        const retry = await fetch(HUBSPOT_API_URL, {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${apiToken}`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ properties }),
+        });
+        if (!retry.ok) {
+          console.error("[HubSpot] create-after-404 failed:", await retry.text());
+          return false;
+        }
+        return true;
+      }
       console.error("[HubSpot] API error:", res.status, errText.slice(0, 300));
       return false;
     }
@@ -98,6 +138,42 @@ export async function syncLeadToHubSpot(
     return false;
   } finally {
     clearTimeout(timeout);
+  }
+}
+
+/** Search a contact by email; returns contact id or null. */
+async function findContactByEmail(
+  email: string,
+  token: string
+): Promise<string | null> {
+  try {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 3000);
+    const res = await fetch(
+      "https://api.hubapi.com/crm/v3/objects/contacts/search",
+      {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "application/json",
+        },
+        signal: controller.signal,
+        body: JSON.stringify({
+          filterGroups: [
+            { filters: [{ propertyName: "email", operator: "EQ", value: email.toLowerCase().trim() }] },
+          ],
+          limit: 1,
+        }),
+      }
+    );
+    clearTimeout(timeout);
+    if (!res.ok) return null;
+    const data = await res.json();
+    const results = data.results || [];
+    return results.length ? results[0].id : null;
+  } catch (err) {
+    console.error("[HubSpot] search error:", err);
+    return null;
   }
 }
 
