@@ -62,6 +62,7 @@ export async function syncLeadToHubSpot(
   if (combined) properties.message = combined;
 
   // Owner: match by name, fallback to account admin (mark xu)
+  // hs_createdate is read-only on HubSpot — creation time is set automatically.
   if (lead.assignedTo) {
     const ownerId = await resolveOwnerId(lead.assignedTo, apiToken);
     if (ownerId) properties.hubspot_owner_id = ownerId;
@@ -69,9 +70,6 @@ export async function syncLeadToHubSpot(
     const adminId = await resolveOwnerId("mark", apiToken);
     if (adminId) properties.hubspot_owner_id = adminId;
   }
-  properties.hs_createdate = lead.timestamp
-    ? new Date(lead.timestamp).toISOString()
-    : new Date().toISOString();
 
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), 4000);
