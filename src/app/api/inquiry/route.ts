@@ -242,22 +242,28 @@ export async function POST(request: NextRequest) {
       timestamp: new Date().toISOString(),
     });
 
-    // 3) Sync to HubSpot CRM (free tier via Private App token) — never blocks response
-    // Fire-and-forget: await with timeout inside module; wrap to guarantee non-blocking
+    // 3) Sync to HubSpot CRM (free tier via Private App token)
+    // Await with internal 4s timeout — guarantees execution before the
+    // serverless function is frozen after the response (fire-and-forget gets killed).
     if (process.env.HUBSPOT_API_TOKEN) {
-      syncLeadToHubSpot({
-        name: data.name,
-        email: data.email,
-        phone: data.phone,
-        company: data.company,
-        country: data.country,
-        product: data.product,
-        quantity: data.quantity,
-        message: data.message,
-        assignedTo: assigned.name,
-        source: "website-quote",
-        timestamp: new Date().toISOString(),
-      }).catch((err) => console.error("[HubSpot] sync failed:", err));
+      try {
+        await syncLeadToHubSpot({
+          name: data.name,
+          email: data.email,
+          phone: data.phone,
+          company: data.company,
+          country: data.country,
+          product: data.product,
+          quantity: data.quantity,
+          message: data.message,
+          assignedTo: assigned.name,
+          source: "website-quote",
+          timestamp: new Date().toISOString(),
+        });
+      } catch (syncErr) {
+        // Never let HubSpot failure fail the inquiry response
+        console.error("[HubSpot] sync failed:", syncErr);
+      }
     }
 
     return NextResponse.json({
