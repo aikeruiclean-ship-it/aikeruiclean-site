@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { assignSalesperson } from "@/lib/lead-assignment";
 import { saveLead } from "@/lib/lead-store";
+import { syncLeadToHubSpot } from "@/lib/hubspot-sync";
 
 const SCRIPT_URL =
   "https://script.google.com/macros/s/AKfycbwx7qOuIXLQSGv7UbDxyDNXsFcxi9i3TMuICL0FKnRJpLUFoFbsw2mm1zaTbOftOqFC/exec";
@@ -240,6 +241,24 @@ export async function POST(request: NextRequest) {
       assignedEmail: assigned.email,
       timestamp: new Date().toISOString(),
     });
+
+    // 3) Sync to HubSpot CRM (free tier via Private App token) — never blocks response
+    // Fire-and-forget: await with timeout inside module; wrap to guarantee non-blocking
+    if (process.env.HUBSPOT_API_TOKEN) {
+      syncLeadToHubSpot({
+        name: data.name,
+        email: data.email,
+        phone: data.phone,
+        company: data.company,
+        country: data.country,
+        product: data.product,
+        quantity: data.quantity,
+        message: data.message,
+        assignedTo: assigned.name,
+        source: "website-quote",
+        timestamp: new Date().toISOString(),
+      }).catch((err) => console.error("[HubSpot] sync failed:", err));
+    }
 
     return NextResponse.json({
       success: true,
