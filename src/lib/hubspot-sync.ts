@@ -61,14 +61,15 @@ export async function syncLeadToHubSpot(
   const combined = detailParts.join(" | ").slice(0, 500);
   if (combined) properties.message = combined;
 
-  // Owner: match by name, fallback to account admin (mark xu)
-  // hs_createdate is read-only on HubSpot — creation time is set automatically.
+  // Owner: all contacts belong to the shared inbox user (info@).
+  // Salesperson routing is tracked in the message field ("Assigned to: Xxx")
+  // and handled manually by the operator — no per-salesperson HubSpot seats.
+  const SHARED_OWNER_ID = "168006740"; // info@aikeruiclean.com
   if (lead.assignedTo) {
     const ownerId = await resolveOwnerId(lead.assignedTo, apiToken);
-    if (ownerId) properties.hubspot_owner_id = ownerId;
+    properties.hubspot_owner_id = ownerId || SHARED_OWNER_ID;
   } else {
-    const adminId = await resolveOwnerId("mark", apiToken);
-    if (adminId) properties.hubspot_owner_id = adminId;
+    properties.hubspot_owner_id = SHARED_OWNER_ID;
   }
 
   const controller = new AbortController();
