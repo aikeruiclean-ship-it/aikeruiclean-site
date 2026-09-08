@@ -130,6 +130,7 @@ async function resolveOwnerId(
       email?: string;
       firstName?: string;
       lastName?: string;
+      type?: string;
     }> = data.results || [];
 
     // 1) Exact: salesperson name equals owner first/last name (case-insensitive)
