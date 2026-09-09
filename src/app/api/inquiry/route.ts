@@ -2,8 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { assignSalesperson } from "@/lib/lead-assignment";
 import { saveLead } from "@/lib/lead-store";
 import { syncLeadToHubSpot } from "@/lib/hubspot-sync";
-
-const BREVO_API_URL = "https://api.brevo.com/v3/smtp/email";
+import { sendInquiryEmail } from "@/lib/email-notify";
 
 // ── Validation ──────────────────────────────────────────────
 const MAX_LENGTHS: Record<string, number> = {
@@ -66,16 +65,6 @@ function validate(body: Record<string, unknown>): {
   };
 
   return { valid: true, data };
-}
-
-// ── HTML entity escaping ────────────────────────────────────
-function escHtml(s: string): string {
-  return s
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#39;");
 }
 
 // ── Rate limiting (in-memory) ───────────────────────────────
@@ -155,55 +144,23 @@ export async function POST(request: NextRequest) {
     // Assign to salesperson (same email → same person; new → round-robin)
     const assigned = assignSalesperson(data.email);
 
-    // 2) Notify shared inbox only (info@). Salesperson routing happens in
-    //    HubSpot manually — no per-salesperson email dispatch (Route B).
-    if (process.env.BREVO_API_KEY) {
-      const emailHtml = `
-        <html><body style="font-family:Arial,sans-serif;padding:20px">
-          <h2>New Product Inquiry</h2>
-          <p style="color:#666">Logged in HubSpot CRM · Suggested owner: ${escHtml(assigned.name)}</p>
-          <table style="border-collapse:collapse;width:100%">
-            <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold;background:#f5f5f5">Name</td><td style="padding:8px;border:1px solid #ddd">${escHtml(data.name)}</td></tr>
-            <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold;background:#f5f5f5">Email</td><td style="padding:8px;border:1px solid #ddd">${escHtml(data.email)}</td></tr>
-            <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold;background:#f5f5f5">Phone</td><td style="padding:8px;border:1px solid #ddd">${escHtml(data.phone)}</td></tr>
-            <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold;background:#f5f5f5">Company</td><td style="padding:8px;border:1px solid #ddd">${escHtml(data.company)}</td></tr>
-            <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold;background:#f5f5f5">Country</td><td style="padding:8px;border:1px solid #ddd">${escHtml(data.country)}</td></tr>
-            <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold;background:#f5f5f5">Product</td><td style="padding:8px;border:1px solid #ddd">${escHtml(data.product)}</td></tr>
-            <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold;background:#f5f5f5">Quantity</td><td style="padding:8px;border:1px solid #ddd">${escHtml(data.quantity)}</td></tr>
-            <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold;background:#f5f5f5">Message</td><td style="padding:8px;border:1px solid #ddd;white-space:pre-wrap">${escHtml(data.message)}</td></tr>
-          </table>
-          <p style="color:#666;font-size:12px">Received: ${new Date().toISOString()} · Suggest assign to ${escHtml(assigned.name)} (${escHtml(assigned.email)})</p>
-        </body></html>
-      `;
-
-      const brevoController = new AbortController();
-      const brevoTimeout = setTimeout(() => brevoController.abort(), 3000);
-      try {
-        const res = await fetch(BREVO_API_URL, {
-          method: "POST",
-          headers: {
-            "api-key": process.env.BREVO_API_KEY,
-            "Content-Type": "application/json",
-          },
-          signal: brevoController.signal,
-          body: JSON.stringify({
-            sender: { name: "Aikerui Website", email: "noreply@aikeruiclean.com" },
-            to: [{ email: "info@aikeruiclean.com" }],
-            replyTo: { email: data.email },
-            subject: `New Inquiry: ${data.product} (assign ${assigned.name})`,
-            htmlContent: emailHtml,
-          }),
-        });
-
-        if (!res.ok) {
-          const err = await res.text();
-          console.error("Brevo API error:", res.status, err);
-        }
-      } catch (brevoErr) {
-        console.error("Brevo timeout/error:", brevoErr);
-      }
-      clearTimeout(brevoTimeout);
-    }
+    // 2) Notify info@ via Namecheap SMTP (no IP whitelist issue like Brevo).
+    //    Route B: salesperson routing is manual in HubSpot — email is info@ only.
+    await sendInquiryEmail({
+      name: data.name,
+      email: data.email,
+      phone: data.phone,
+      company: data.company,
+      country: data.country,
+      product: data.product,
+      quantity: data.quantity,
+      message: data.message,
+      assignedTo: assigned.name,
+      gclid: typeof body.gclid === "string" ? body.gclid : undefined,
+      landing_page: typeof body.landing_page === "string" ? body.landing_page : undefined,
+      utm_source: typeof body.utm_source === "string" ? body.utm_source : undefined,
+      utm_campaign: typeof body.utm_campaign === "string" ? body.utm_campaign : undefined,
+    });
 
     // Save locally for admin panel
     saveLead({
