@@ -3,8 +3,6 @@ import { assignSalesperson } from "@/lib/lead-assignment";
 import { saveLead } from "@/lib/lead-store";
 import { syncLeadToHubSpot } from "@/lib/hubspot-sync";
 
-const SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbwx7qOuIXLQSGv7UbDxyDNXsFcxi9i3TMuICL0FKnRJpLUFoFbsw2mm1zaTbOftOqFC/exec";
 const BREVO_API_URL = "https://api.brevo.com/v3/smtp/email";
 
 // ── Validation ──────────────────────────────────────────────
@@ -156,27 +154,6 @@ export async function POST(request: NextRequest) {
 
     // Assign to salesperson (same email → same person; new → round-robin)
     const assigned = assignSalesperson(data.email);
-
-    // 1) Forward to Google Apps Script (Google Sheets) — with timeout so it never blocks the response
-    try {
-      const gasController = new AbortController();
-      const gasTimeout = setTimeout(() => gasController.abort(), 3000);
-      await fetch(SCRIPT_URL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        redirect: "follow",
-        signal: gasController.signal,
-        body: JSON.stringify({
-          ...data,
-          assignedTo: assigned.name,
-          assignedEmail: assigned.email,
-          timestamp: new Date().toISOString(),
-        }),
-      }).catch((err) => console.error("Google Script error:", err));
-      clearTimeout(gasTimeout);
-    } catch (gasErr) {
-      console.error("Google Script timeout/error:", gasErr);
-    }
 
     // 2) Notify shared inbox only (info@). Salesperson routing happens in
     //    HubSpot manually — no per-salesperson email dispatch (Route B).
