@@ -34,8 +34,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const guide = getGuideBySlug(slug);
   if (!guide) return { title: "Guide Not Found" };
 
+  // 标题策略：完整保留 guide.title（不硬截断，避免 "Manufactur..." 这种断词）
+  // 仅当「标题 + 品牌后缀」不超 60 字符时才加后缀，防止超出 Google 展示宽度
+  const suffix = " | Aikerui Guides";
+  const fullTitle = guide.title + suffix;
   return {
-    title: `${guide.title.length > 50 ? guide.title.slice(0, 47).trim().replace(/[,:;/-]+$/, "") + "..." : guide.title} | Aikerui Guides`,
+    title: fullTitle.length <= 60 ? fullTitle : guide.title,
     description: guide.description,
     alternates: { canonical: `https://aikeruiclean.com/guides/${slug}` },
     authors: [{ name: "Mark Wang", url: "https://aikeruiclean.com/about/mark-xu" }],

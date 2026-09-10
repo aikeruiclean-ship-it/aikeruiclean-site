@@ -3,9 +3,9 @@ import Link from "next/link";
 import { JsonLd } from "@/components/json-ld";
 
 export const metadata: Metadata = {
-  title: "Mark Xu — Sales Director & Floor Cleaning Equipment Expert | Aikerui",
+  title: "Mark Xu — Floor Cleaning Equipment Expert | Aikerui",
   description:
-    "Mark Xu, Sales Director at Anhui Aikerui Environmental Protection Technology. 15+ years experience in industrial floor cleaning equipment manufacturing, OEM parts, and global B2B equipment sales.",
+    "Mark Xu, Sales Director at Anhui Aikerui Environmental Protection Technology. 15+ years in industrial floor cleaning equipment manufacturing and OEM parts.",
   alternates: { canonical: "https://aikeruiclean.com/about/mark-xu" },
 };
 

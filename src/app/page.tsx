@@ -11,7 +11,7 @@ import { getFeaturedProducts, getPartsProducts, categories, getCategoryCounts } 
 
 // 首页独立 metadata：聚焦「整机制造商」定位（品牌/公司词），配件词由 /parts 与 /floor-scrubber-parts-quote 承接，避免站内关键词相食
 export const metadata: Metadata = {
-  title: "Industrial Floor Scrubbers & Sweepers Manufacturer | Aikerui",
+  title: "Industrial Floor Scrubber Manufacturer | Aikerui",
   description:
     "Aikerui is a China-based manufacturer of industrial floor scrubbers, ride-on sweepers and carpet extractors. Factory-direct pricing, OEM & ODM, CE & ISO 9001, exporting to 50+ countries. Get a quote.",
   keywords: [

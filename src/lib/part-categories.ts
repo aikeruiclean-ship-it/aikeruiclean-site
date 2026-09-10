@@ -58,7 +58,7 @@ export const PART_CATEGORIES: PartCategoryDef[] = [
     subcategory: "Brush / 刷类",
     h1: "Floor Scrubber Brushes",
     breadcrumb: "All Brushes",
-    title: "Floor Scrubber Brushes | Replacement Brush Supplier | Aikerui",
+    title: "Floor Scrubber Brushes | Replacement Brush | Aikerui",
     description:
       "Replacement floor scrubber brushes for all major brands — disc, roller, side and specialty brushes. Factory direct, custom OEM, 30-50% below dealer price.",
     intro: [
@@ -104,7 +104,7 @@ export const PART_CATEGORIES: PartCategoryDef[] = [
     subcategory: "Pad Holder / 针盘",
     h1: "Floor Scrubber Pad Holders",
     breadcrumb: "Pad Holders",
-    title: "Floor Scrubber Pad Drivers & Holders | Factory Direct | Aikerui",
+    title: "Floor Scrubber Pad Drivers & Holders | Aikerui",
     description:
       "Replacement pad holders and pad drivers for floor scrubbers — universal and machine-specific lug patterns, riser styles, factory direct pricing.",
     intro: [
@@ -196,7 +196,7 @@ export const PART_CATEGORIES: PartCategoryDef[] = [
     subcategory: "Side Brush / 边刷",
     h1: "Floor Sweeper Side Brushes",
     breadcrumb: "Side Brushes",
-    title: "Floor Sweeper Side Brushes | Replacement Disc Brushes | Aikerui",
+    title: "Floor Sweeper Side Brushes | Replacement Brushes | Aikerui",
     description:
       "Replacement side brushes for floor sweepers and ride-on sweepers — flat and cup styles, nylon and PP, OEM fit. Factory direct.",
     intro: [

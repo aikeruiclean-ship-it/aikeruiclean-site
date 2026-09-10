@@ -60,7 +60,7 @@ export const MACHINE_CATEGORIES: MachineCategoryDef[] = [
     breadcrumb: "Floor Sweepers",
     title: "Industrial Floor Sweepers | Ride-On & Walk-Behind | Aikerui",
     description:
-      "Ride-on and walk-behind industrial floor sweepers for warehouses, parking lots and factories. Factory-direct B2B pricing from a Chinese manufacturer, CE certified.",
+      "Ride-on and walk-behind industrial floor sweepers for warehouses, parking lots and factories. Factory-direct B2B pricing, CE certified.",
     intro: [
       "Our industrial floor sweepers handle dry debris — dust, packaging, grit and light rubbish — on warehouse floors, loading docks, parking areas and factory aisles. The range includes walk-behind models for aisles and ride-on sweepers for large open areas.",
       "Machines are built with main broom and side-brush systems, dust filtration and a hopper sized for high-volume picking. We manufacture the side brushes and main brooms in-house, so consumables are available as long-term replacements.",
@@ -85,7 +85,7 @@ export const MACHINE_CATEGORIES: MachineCategoryDef[] = [
     category: "Carpet Extractor Washers",
     h1: "Carpet Extractor Washers",
     breadcrumb: "Carpet Extractors",
-    title: "Carpet Extractor Washers | Commercial Carpet Cleaners | Aikerui",
+    title: "Carpet Extractor Washers | Commercial Cleaners | Aikerui",
     description:
       "Commercial carpet extractor washers for deep cleaning carpet, rugs and upholstery in hotels, offices and retail. Factory direct B2B pricing, OEM available.",
     intro: [

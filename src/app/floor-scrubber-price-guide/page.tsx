@@ -5,9 +5,9 @@ import { JsonLd } from "@/components/json-ld";
 
 export const metadata: Metadata = {
   title:
-    "Floor Scrubber Price Guide 2026 — Walk-Behind, Ride-On & Parts Cost | Aikerui",
+    "Floor Scrubber Price Guide 2026 | Walk-Behind & Ride-On",
   description:
-    "Complete 2026 floor scrubber price guide. Walk-behind $3,000-$6,000, ride-on $8,000-$25,000. Compare by type, brand, and features. Factory-direct pricing saves 30-50%.",
+    "2026 floor scrubber price guide — walk-behind $3,000-6,000, ride-on $8,000-25,000. Compare by type and brand. Factory-direct saves 30-50%.",
   keywords: [
     "floor scrubber price",
     "floor scrubber cost",

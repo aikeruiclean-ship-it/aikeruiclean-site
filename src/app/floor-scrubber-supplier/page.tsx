@@ -4,9 +4,9 @@ import { Factory, Globe, BadgeCheck, Shield, Truck, Phone, Send, Clock, CheckCir
 import { JsonLd } from "@/components/json-ld";
 
 export const metadata: Metadata = {
-  title: "Floor Scrubber Manufacturer & Supplier China | Factory Direct OEM | Aikerui",
+  title: "Floor Scrubber Manufacturer & Supplier China | Aikerui",
   description:
-    "Direct from our 10,000+㎡ factory. CE & ISO 9001 certified floor scrubber manufacturer. OEM/ODM available. Wholesale pricing, 24h quotes, global shipping to 50+ countries.",
+    "CE & ISO 9001 certified floor scrubber manufacturer in China. OEM/ODM, wholesale pricing, 24h quotes, shipping to 50+ countries from our own factory.",
   keywords: [
     "floor scrubber manufacturer China",
     "floor scrubber supplier",

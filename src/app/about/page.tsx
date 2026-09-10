@@ -6,9 +6,9 @@ import { JsonLd } from "@/components/json-ld";
 import { breadcrumbJsonLd, ABOUT_BREADCRUMB } from "@/lib/breadcrumb";
 
 export const metadata: Metadata = {
-  title: "About Aikerui — Real Factory, Real Manufacturing | Anqing, China",
+  title: "About Aikerui — Floor Scrubber Manufacturer | Anqing",
   description:
-    "Visit Aikerui's 10,000+㎡ factory in Anqing, China. ISO 9001 & CE certified floor scrubber manufacturer. Live video tours, independent inspections welcome. 50+ countries served since 2008.",
+    "Visit Aikerui's 10,000+㎡ factory in Anqing, China. ISO 9001 & CE certified floor scrubber manufacturer. Live video tours welcome. Serving 50+ countries since 2008.",
   alternates: { canonical: "https://aikeruiclean.com/about" },
 };
 
