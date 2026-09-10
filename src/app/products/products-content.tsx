@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { ProductCard } from "@/components/product-card";
 import { getProducts, categories, getCategoryCounts } from "@/lib/products";
+import { MACHINE_CATEGORIES } from "@/lib/machine-categories";
 import { cn } from "@/lib/utils";
 
 export function ProductsContent() {
@@ -68,21 +69,28 @@ export function ProductsContent() {
                     All Products ({getProducts().filter((p) => p.category !== "Parts").length})
                   </Link>
                 </li>
-                {categories.filter((cat) => cat !== "Parts").map((cat) => (
-                  <li key={cat}>
-                    <Link
-                      href={`/products?category=${encodeURIComponent(cat)}`}
-                      className={cn(
-                        "block px-3 py-2 text-sm rounded-lg transition-colors",
-                        activeCategory === cat
-                          ? "bg-primary text-white font-medium"
-                          : "text-gray-700 hover:bg-gray-100"
-                      )}
-                    >
-                      {cat} ({counts[cat] || 0})
-                    </Link>
-                  </li>
-                ))}
+                {categories.filter((cat) => cat !== "Parts").map((cat) => {
+                  // 有静态分类页的 → 链到语义化 URL（内链传递权重）
+                  const machineCat = MACHINE_CATEGORIES.find((c) => c.category === cat);
+                  const href = machineCat
+                    ? `/${machineCat.slug}`
+                    : `/products?category=${encodeURIComponent(cat)}`;
+                  return (
+                    <li key={cat}>
+                      <Link
+                        href={href}
+                        className={cn(
+                          "block px-3 py-2 text-sm rounded-lg transition-colors",
+                          activeCategory === cat
+                            ? "bg-primary text-white font-medium"
+                            : "text-gray-700 hover:bg-gray-100"
+                        )}
+                      >
+                        {cat} ({counts[cat] || 0})
+                      </Link>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           </aside>
