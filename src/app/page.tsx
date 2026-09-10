@@ -9,18 +9,18 @@ import { getHomeDict } from "@/i18n/home";
 import { JsonLd } from "@/components/json-ld";
 import { getFeaturedProducts, getPartsProducts, categories, getCategoryCounts } from "@/lib/products";
 
-// 首页独立 metadata：加 canonical + 聚焦"刷头+配件"（与产品定位一致，覆盖布局层通用 title）
+// 首页独立 metadata：聚焦「整机制造商」定位（品牌/公司词），配件词由 /parts 与 /floor-scrubber-parts-quote 承接，避免站内关键词相食
 export const metadata: Metadata = {
-  title: "Floor Scrubber Brushes & Replacement Parts | Aikerui Factory Direct",
+  title: "Industrial Floor Scrubbers & Sweepers Manufacturer | Aikerui",
   description:
-    "Factory-direct floor scrubber brushes and replacement parts — disc, cylindrical, roller and side brushes for Tennant, Karcher, Nilfisk and more. OEM & wholesale. Get a quote.",
+    "Aikerui is a China-based manufacturer of industrial floor scrubbers, ride-on sweepers and carpet extractors. Factory-direct pricing, OEM & ODM, CE & ISO 9001, exporting to 50+ countries. Get a quote.",
   keywords: [
-    "floor scrubber brush",
-    "floor scrubber brushes",
-    "disc brush",
-    "cylindrical brush",
-    "scrubber brush replacement",
-    "floor scrubber parts",
+    "industrial floor scrubber",
+    "commercial floor scrubber",
+    "ride-on floor scrubber",
+    "floor sweeper manufacturer",
+    "industrial floor cleaning machine",
+    "floor scrubber manufacturer",
     "Aikerui",
   ],
   alternates: {
@@ -90,13 +90,12 @@ export default function HomePage() {
                 <Factory size={14} /> Verified Manufacturer — Since 2008
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
-                Floor Scrubber Brushes &amp; Parts<br />
-                <span className="text-accent">Factory Direct</span> — OEM &amp; Wholesale
+                Industrial Floor Scrubbers &amp; Sweepers<br />
+                <span className="text-accent">Manufacturer</span> — Factory Direct
               </h1>
               <p className="text-lg md:text-xl text-gray-200 max-w-xl leading-relaxed mb-8">
-                Aikerui is a verified brush manufacturer with our own factory in Anhui, China.
-                Disc, cylindrical, roller &amp; side brushes — replacement parts for Tennant, Karcher, Nilfisk &amp; more.
-                Factory-direct pricing, custom OEM.
+                Aikerui is a verified industrial floor scrubber and sweeper manufacturer with our own factory in Anhui, China.
+                Factory-direct pricing, custom OEM, CE &amp; ISO 9001 — plus replacement brushes and parts for all major brands.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link href="/floor-scrubber-parts-quote" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-accent hover:bg-accent-hover text-white font-bold rounded-lg transition-colors text-base shadow-lg shadow-accent/30">
