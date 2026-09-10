@@ -102,7 +102,7 @@ export const categoryMeta: Record<string, { title: string; description: string }
     title: "Industrial Floor Sweepers | Walk-Behind & Ride-On | Aikerui",
     description: "Heavy-duty industrial floor sweepers for warehouses, parking lots, and large facilities. Efficient debris collection with reliable performance. Global shipping.",
   },
-  "Dust Collection Carts": {
+  "Dust-pushing carts": {
     title: "Dust Collection Carts & Trolleys for Industrial Cleaning | Aikerui",
     description: "Industrial dust collection carts and waste collection trolleys for efficient debris management in factories, warehouses, and cleaning operations.",
   },
