@@ -1001,7 +1001,7 @@ export const guideCategories = [
 const extraGuides: Guide[] = [
   {
     slug: "how-to-set-up-your-floor-scrubber",
-    title: "How to Set Up Your Floor Scrubber: Complete Installation Guide",
+    title: "How to Set Up Your Floor Scrubber: Installation Guide",
     description: "Step-by-step installation guide for Aikerui floor scrubbers. Learn how to unpack, assemble the squeegee, install brushes, connect the battery, and prepare your machine for first use.",
     category: "maintenance",
     readTime: "5 min",
@@ -1057,7 +1057,7 @@ const extraGuides: Guide[] = [
 ,
   {
     slug: "top-floor-scrubber-brands-buyers-guide",
-    title: "Floor Scrubber Brands: Global vs Factory-Direct — How to Choose",
+    title: "Floor Scrubber Brands: Global vs Factory-Direct",
     description: "How to choose between global floor scrubber brands (Tennant, Karcher, Nilfisk) and factory-direct Chinese manufacturers. Compare dealer markups, spare parts access, OEM options and total cost of ownership before you buy.",
     category: "buying-guide",
     readTime: "10 min",
@@ -1323,7 +1323,7 @@ const extraGuides: Guide[] = [
   },
   {
     slug: "battery-not-charging-short-runtime",
-    title: "Floor Scrubber Battery Not Charging or Short Runtime? Full Troubleshooting Guide",
+    title: "Floor Scrubber Battery Not Charging? Troubleshooting",
     description:
       "Scrubber battery dies quickly or won't charge? Diagnose charger issues, battery cell failure, and parasitic drain. Covers lead-acid and lithium battery troubleshooting.",
     category: "troubleshooting",
@@ -1443,7 +1443,7 @@ const extraGuides: Guide[] = [
   },
   {
     slug: "water-solution-not-dispensing",
-    title: "Floor Scrubber Not Dispensing Water? Diagnose and Fix in 15 Minutes",
+    title: "Floor Scrubber Not Dispensing Water? How to Fix It",
     description:
       "Solution not reaching the brush? Troubleshoot clogged filter, failed solenoid valve, kinked hose, and pump issues. Step-by-step diagnostic with multimeter testing instructions.",
     category: "troubleshooting",
@@ -1506,7 +1506,7 @@ const extraGuides: Guide[] = [
   // ── Comparison Guides ──
   {
     slug: "walk-behind-vs-ride-on-scrubber",
-    title: "Walk-Behind vs Ride-On Floor Scrubber: Which One Does Your Facility Need?",
+    title: "Walk-Behind vs Ride-On Floor Scrubber: Which Is Better?",
     description:
       "Compare walk-behind and ride-on floor scrubbers by cost, productivity, maneuverability, and best use cases. Detailed comparison table and decision guide for facility managers.",
     category: "comparison",
@@ -1604,7 +1604,7 @@ const extraGuides: Guide[] = [
   },
   {
     slug: "lead-acid-vs-lithium-battery-scrubber",
-    title: "Lead-Acid vs Lithium Battery Floor Scrubber: 5-Year Cost Comparison",
+    title: "Lead-Acid vs Lithium Scrubber Batteries: 5-Year Cost",
     description:
       "Should you choose lead-acid or lithium batteries for your floor scrubber? Compare upfront cost, lifespan, maintenance, charge time, and total cost of ownership over 5 years.",
     category: "comparison",
@@ -1656,7 +1656,7 @@ const extraGuides: Guide[] = [
   // ── Top 10 Article ──
   {
     slug: "top-10-floor-scrubber-manufacturers-2026",
-    title: "Top 10 Floor Scrubber Manufacturers in 2026 — Compared & Ranked",
+    title: "Top 10 Floor Scrubber Manufacturers 2026",
     description:
       "Comprehensive ranking of the top 10 floor scrubber manufacturers in 2026. Compare Tennant, Nilfisk, Karcher, Aikerui and more by pricing, quality, and global reach. Includes buyer's checklist.",
     category: "buying-guide",
@@ -1874,7 +1874,7 @@ const extraGuides: Guide[] = [
   // ── Parts Guide ──
   {
     slug: "floor-scrubber-parts-guide-types-lifespan-cost",
-    title: "Floor Scrubber Parts Guide: Types, Lifespan & Replacement Cost (2026)",
+    title: "Floor Scrubber Parts Guide: Types & Replacement Cost",
     description:
       "Complete guide to floor scrubber replacement parts. Disc brushes, squeegee rubber, pad holders, clutch plates — typical lifespan, when to replace, and OEM vs aftermarket cost comparison. 30-50% savings with factory-direct sourcing.",
     category: "maintenance",
@@ -2153,7 +2153,7 @@ const extraGuides: Guide[] = [
   // ── Floor Scrubber Cost Guide ──
   {
     slug: "how-much-does-floor-scrubber-cost",
-    title: "How Much Does a Floor Scrubber Cost? Complete 2026 Price Breakdown",
+    title: "How Much Does a Floor Scrubber Cost? 2026 Prices",
     description:
       "Real 2026 floor scrubber prices: walk-behind $3,000-12,000, ride-on $9,000-35,000. TCO analysis including parts, batteries, and maintenance. Factory-direct vs dealer pricing comparison.",
     category: "buying-guide",
@@ -2288,7 +2288,7 @@ const extraGuides: Guide[] = [
   // ── Small Business Guide ──
   {
     slug: "best-floor-scrubber-small-business",
-    title: "Best Floor Scrubber for Small Business: Top 5 Picks & Buying Guide (2026)",
+    title: "Best Floor Scrubber for Small Business (2026 Guide)",
     description:
       "The best floor scrubbers for small businesses in 2026. Compact walk-behind models under $5,000 reviewed. Compare features, prices, and best use cases for restaurants, retail shops, small warehouses, and auto shops.",
     category: "buying-guide",
@@ -2398,7 +2398,7 @@ const extraGuides: Guide[] = [
   // ── Food Processing Guide ──
   {
     slug: "floor-scrubber-food-processing-plants",
-    title: "Floor Scrubber for Food Processing Plants: Sanitary Cleaning Guide (2026)",
+    title: "Floor Scrubber for Food Processing Plants (2026)",
     description:
       "Food-grade floor scrubbers for meat, dairy, bakery, and beverage plants. Stainless steel components, wash-down capable, HACCP-compliant cleaning. Factory-direct pricing.",
     category: "buying-guide",
@@ -2460,7 +2460,7 @@ const extraGuides: Guide[] = [
   // ── Hospital Guide ──
   {
     slug: "hospital-medical-facility-floor-cleaning-equipment",
-    title: "Hospital Floor Cleaning Equipment: Medical-Grade Scrubbers for Healthcare (2026)",
+    title: "Hospital Floor Scrubbers: Medical-Grade Cleaning (2026)",
     description:
       "Healthcare floor cleaning equipment guide. Ultra-quiet scrubbers (<60dB) with HEPA filtration for hospitals, clinics, and care homes. Infection control compliant. Factory-direct pricing.",
     category: "buying-guide",
@@ -2569,7 +2569,7 @@ const extraGuides: Guide[] = [
   // ── Import from China Guide ──
   {
     slug: "how-to-import-floor-scrubbers-from-china",
-    title: "How to Import Floor Scrubbers from China: Complete Guide for 2026",
+    title: "How to Import Floor Scrubbers from China (2026)",
     description:
       "Step-by-step guide to importing floor scrubbers and parts from China. Factory verification, shipping methods, customs, duties, and payment terms. Save 30-50% buying factory-direct.",
     category: "buying-guide",
@@ -2657,7 +2657,7 @@ const extraGuides: Guide[] = [
   // ── OEM vs Aftermarket Parts ──
   {
     slug: "oem-vs-aftermarket-floor-scrubber-parts",
-    title: "OEM vs Aftermarket Floor Scrubber Parts: The Truth About Quality and Cost",
+    title: "OEM vs Aftermarket Floor Scrubber Parts: Quality & Cost",
     description:
       "Should you buy OEM or aftermarket floor scrubber parts? Compare cost, quality, warranty, and compatibility. Aftermarket parts save 30-60% — but here's when OEM is worth the premium.",
     category: "comparison",
@@ -2769,7 +2769,7 @@ const extraGuides: Guide[] = [
   // ── Parking Garage Guide ──
   {
     slug: "parking-garage-floor-scrubber-guide",
-    title: "Parking Garage Floor Scrubber Guide: Heavy-Duty Cleaning for Multi-Level Garages",
+    title: "Parking Garage Floor Scrubber Guide | Heavy-Duty",
     description:
       "Best floor scrubbers and sweepers for parking garages. Handle tire marks, oil, salt, and heavy debris. Outdoor-rated machines for covered and open-air structures. Factory-direct pricing.",
     category: "buying-guide",
@@ -2852,7 +2852,7 @@ const extraGuides: Guide[] = [
   // ── Maintenance Schedule ──
   {
     slug: "floor-scrubber-maintenance-checklist",
-    title: "Floor Scrubber Maintenance Checklist: Daily, Weekly & Monthly Schedule",
+    title: "Floor Scrubber Maintenance Checklist: Daily to Monthly",
     description:
       "Complete floor scrubber maintenance checklist. Daily (10 min), weekly (30 min), and monthly (1 hour) schedules. Prevent 80% of breakdowns with regular maintenance. Printable checklist included.",
     category: "maintenance",
@@ -2975,7 +2975,7 @@ const extraGuides: Guide[] = [
   // ── Case Study 2: Manufacturing Plant ──
   {
     slug: "case-study-manufacturing-plant-floor-cleaning",
-    title: "Case Study: Automotive Parts Manufacturer Achieves ISO Cleanliness with Factory-Direct Scrubber",
+    title: "Case Study: Auto Plant Hits ISO Cleanliness with Scrubber",
     description:
       "Real case study: Automotive parts plant switched from manual cleaning to ride-on scrubber with degreasing capability. Passed ISO audit, reduced slip incidents by 80%, operator cleans 3x faster.",
     category: "buying-guide",
@@ -3021,7 +3021,7 @@ const extraGuides: Guide[] = [
   // ── Case Study 3: Supermarket Chain ──
   {
     slug: "case-study-supermarket-chain-floor-cleaning",
-    title: "Case Study: Regional Supermarket Chain Switches to Factory-Direct Scrubbers — Saves $15,000 Per Store",
+    title: "Floor Scrubber Case Study: Supermarket Chain Saves $15K",
     description:
       "Real case study: 12-store supermarket chain replaced dealer-purchased scrubbers with factory-direct models. Saved $180,000 fleet-wide over 3 years. Quieter operation for daytime cleaning.",
     category: "buying-guide",
@@ -3066,7 +3066,7 @@ const extraGuides: Guide[] = [
   // ── ROI Calculator ──
   {
     slug: "floor-scrubber-roi-calculator-cost-savings",
-    title: "Floor Scrubber ROI Calculator: How Much Can You Save in 2026?",
+    title: "Floor Scrubber ROI Calculator: What Can You Save?",
     description:
       "Calculate your floor scrubber ROI. Compare in-house cleaning vs outsourcing, factory-direct vs dealer pricing. Real savings examples for warehouses, factories, and retail. Typical payback in 4-12 months.",
     category: "buying-guide",
@@ -3161,7 +3161,7 @@ const extraGuides: Guide[] = [
   // ── Week 5 Articles ──
   {
     slug: "how-to-extend-floor-scrubber-lifespan",
-    title: "How to Extend Your Floor Scrubber Lifespan: 10 Proven Maintenance Tips",
+    title: "How to Extend Your Floor Scrubber Lifespan: 10 Tips",
     description:
       "Extend your floor scrubber lifespan from 5 to 10+ years. Daily, weekly, and monthly maintenance tips that prevent 80% of breakdowns. Factory-direct parts save on upkeep.",
     category: "maintenance",
@@ -3209,7 +3209,7 @@ const extraGuides: Guide[] = [
   },
   {
     slug: "floor-scrubber-safety-guide",
-    title: "Floor Scrubber Safety: OSHA Compliance & Best Practices for 2026",
+    title: "Floor Scrubber Safety: OSHA Compliance Guide",
     description:
       "Complete floor scrubber safety guide. OSHA compliance, operator training checklist, slip-and-fall prevention, chemical handling, and battery safety. Reduce workplace incidents.",
     category: "maintenance",
@@ -3255,7 +3255,7 @@ const extraGuides: Guide[] = [
   // ── Top 10 Parts Suppliers ──
   {
     slug: "top-10-floor-scrubber-parts-suppliers",
-    title: "Top 10 Floor Scrubber Parts Suppliers in 2026 — Compare OEM & Aftermarket",
+    title: "Top 10 Floor Scrubber Parts Suppliers 2026",
     description:
       "Compare the top 10 floor scrubber parts suppliers. OEM vs aftermarket pricing, quality, compatibility, and shipping. Find the best supplier for disc brushes, squeegees, and consumables.",
     category: "comparison",
@@ -3335,7 +3335,7 @@ const extraGuides: Guide[] = [
   // ── Financing Guide ──
   {
     slug: "floor-scrubber-financing-options",
-    title: "Floor Scrubber Financing: How to Pay for Your Equipment in 2026",
+    title: "Floor Scrubber Financing: How to Pay in 2026",
     description:
       "Compare floor scrubber financing options: leasing, equipment loans, 30/70 payment terms, and factory-direct savings. Calculate monthly payments and find the best option for your budget.",
     category: "buying-guide",
@@ -3413,7 +3413,7 @@ const extraGuides: Guide[] = [
   // ── Used vs New ──
   {
     slug: "used-vs-new-floor-scrubber",
-    title: "Used vs New Floor Scrubber: When Buying Used Actually Saves Money (2026)",
+    title: "Used vs New Floor Scrubber: When Is Used Worth It?",
     description:
       "Used or new floor scrubber? Compare real costs, hidden risks, and when a used machine makes sense. Hour meter guide, inspection checklist, and price comparison.",
     category: "comparison",
@@ -3468,7 +3468,7 @@ const extraGuides: Guide[] = [
   // ── Gym & Fitness ──
   {
     slug: "floor-scrubber-gym-fitness-center",
-    title: "Floor Scrubber for Gyms & Fitness Centers: Keep Your Facility Spotless",
+    title: "Floor Scrubber for Gyms & Fitness Centers",
     description:
       "Best floor scrubbers for gyms, fitness centers, and health clubs. Clean rubber flooring, locker rooms, and studio spaces. Compact walk-behind models for tight areas. Factory-direct pricing.",
     category: "buying-guide",
@@ -3510,7 +3510,7 @@ const extraGuides: Guide[] = [
   // ── Church & Venue ──
   {
     slug: "floor-scrubber-church-event-venue",
-    title: "Floor Scrubber for Churches & Event Venues: Quiet, Compact Cleaning Solutions",
+    title: "Floor Scrubber for Churches & Event Venues",
     description:
       "Best floor scrubbers for churches, wedding venues, banquet halls, and event spaces. Ultra-quiet operation, compact for pew areas, fast-drying for quick turnaround between events.",
     category: "buying-guide",
@@ -3630,7 +3630,7 @@ const extraGuides: Guide[] = [
   // ── Niche: Dust/Sand/Soil environments ──
   {
     slug: "floor-scrubber-dust-sand-industrial-cleaning",
-    title: "Floor Scrubber for Sand, Dust & Heavy Soil: Industrial Cleaning Solutions",
+    title: "Floor Scrubber for Sand, Dust & Heavy Soil",
     description:
       "Best floor scrubbers for dusty, sandy, and heavy-soil industrial environments. Disc brush vs roller brush for sand, dust-proof components, and high-pressure scrubbing for stubborn debris.",
     category: "buying-guide",
@@ -3687,7 +3687,7 @@ const extraGuides: Guide[] = [
   // ── Niche: Carpet Cleaning Equipment ──
   {
     slug: "commercial-carpet-cleaning-equipment-guide",
-    title: "Commercial Carpet Cleaning Equipment: Extractors, Scrubbers & More",
+    title: "Commercial Carpet Cleaning Equipment Guide",
     description:
       "Complete guide to commercial carpet cleaning equipment. Carpet extractors, bonnet cleaners, and combo machines for hotels, offices, and event spaces. Factory-direct pricing.",
     category: "buying-guide",
@@ -3722,7 +3722,7 @@ const extraGuides: Guide[] = [
   // ── Niche: Oil & Grease ──
   {
     slug: "floor-scrubber-oil-grease-factory-cleaning",
-    title: "Floor Scrubber for Oil & Grease: Heavy-Duty Factory Cleaning Equipment",
+    title: "Floor Scrubber for Oil & Grease: Factory Cleaning",
     description:
       "Best floor scrubbers for oil, grease, and heavy industrial soil. Degreasing machines with high brush pressure (100kg), oil-resistant squeegees, and industrial-grade scrubbing power. Factory-direct pricing.",
     category: "buying-guide",
@@ -3805,7 +3805,7 @@ const extraGuides: Guide[] = [
   // ── Construction Sites ──
   {
     slug: "floor-scrubber-construction-site-cleaning",
-    title: "Floor Scrubber for Construction Sites: Heavy-Duty Post-Build Cleanup Equipment",
+    title: "Floor Scrubber for Construction Sites: Post-Build Cleanup",
     description:
       "Best floor scrubbers for construction site cleanup. Handle concrete dust, drywall mud, and heavy debris. Sweeper-scrubber combos for one-pass post-construction cleaning. Factory-direct pricing.",
     category: "buying-guide",
@@ -3890,7 +3890,7 @@ const extraGuides: Guide[] = [
   // ── Warranty Guide ──
   {
     slug: "floor-scrubber-warranty-comparison",
-    title: "Floor Scrubber Warranty: What's Covered, What's Not, and What Actually Matters",
+    title: "Floor Scrubber Warranty: What's Covered and What's Not",
     description:
       "Compare floor scrubber warranties across major brands. What parts are covered, typical warranty lengths, and how factory-direct warranties differ from dealer warranties. Avoid expensive surprises.",
     category: "buying-guide",
@@ -3935,7 +3935,7 @@ const extraGuides: Guide[] = [
   // ── Hospital Guide ──
   {
     slug: "floor-scrubber-hospital-healthcare-facility",
-    title: "Floor Scrubber for Hospitals & Healthcare: Medical-Grade Cleaning Guide",
+    title: "Floor Scrubber for Hospitals & Healthcare",
     description:
       "Medical-grade floor scrubbers for hospitals and healthcare. Ultra-quiet (<60dB), HEPA-filtered, disinfectant-compatible. JCAHO/CDC compliant cleaning solutions.",
     category: "buying-guide",
@@ -3969,7 +3969,7 @@ const extraGuides: Guide[] = [
   // ── Spec Sheet Guide ──
   {
     slug: "how-to-read-floor-scrubber-specifications",
-    title: "How to Read a Floor Scrubber Spec Sheet: What 15 Key Specs Actually Mean",
+    title: "How to Read a Floor Scrubber Spec Sheet",
     description:
       "Learn to decode floor scrubber specification sheets. Understand cleaning width, brush pressure, tank capacity, battery voltage, productivity ratings. Compare machines apples-to-apples.",
     category: "buying-guide",
@@ -4036,7 +4036,7 @@ const extraGuides: Guide[] = [
   // ── School Guide ──
   {
     slug: "floor-scrubber-school-university-cleaning",
-    title: "Floor Scrubber for Schools & Universities: Campus-Wide Cleaning Solutions",
+    title: "Floor Scrubber for Schools & Universities",
     description:
       "Best floor scrubbers for schools and university campuses. Classroom-safe quiet models, durable for hallways, compact for restrooms. Factory-direct pricing for educational budgets.",
     category: "buying-guide",
@@ -4062,7 +4062,7 @@ const extraGuides: Guide[] = [
   // ── Logistics Center ──
   {
     slug: "floor-scrubber-logistics-distribution-center",
-    title: "Floor Scrubber for Logistics & Distribution Centers: Fleet Cleaning Guide",
+    title: "Floor Scrubber for Logistics & Distribution Centers",
     description:
       "Fleet cleaning guide for logistics centers and 3PL warehouses. Ride-on scrubbers, fleet planning, battery strategy. Clean 500,000+ sq ft facilities efficiently.",
     category: "buying-guide",
@@ -4092,7 +4092,7 @@ const extraGuides: Guide[] = [
   // ── Auto Dealership Guide ──
   {
     slug: "floor-scrubber-auto-dealership-showroom",
-    title: "Floor Scrubber for Auto Dealerships & Showrooms: Keep Your Floors Showroom-Ready",
+    title: "Floor Scrubber for Auto Dealerships & Showrooms",
     description:
       "Best floor scrubbers for auto dealership showrooms and service bays. Handle tire marks, oil drips, and foot traffic. Compact ride-on for polished concrete and epoxy showroom floors.",
     category: "buying-guide",
@@ -4122,7 +4122,7 @@ const extraGuides: Guide[] = [
   // ── OEM Factory Verification ──
   {
     slug: "how-to-verify-floor-scrubber-manufacturer",
-    title: "How to Verify a Floor Scrubber Manufacturer: 7 Red Flags to Avoid Fake Factories",
+    title: "How to Verify a Floor Scrubber Manufacturer: 7 Red Flags",
     description:
       "Learn how to verify a floor scrubber manufacturer before sending money. 7 verification steps: live video tour, business license check, independent inspection, sample orders. Avoid trading company scams.",
     category: "buying-guide",
@@ -4186,7 +4186,7 @@ const extraGuides: Guide[] = [
   // ── International Shipping Guide ──
   {
     slug: "how-to-ship-floor-scrubber-internationally",
-    title: "How to Ship a Floor Scrubber Internationally: Costs, Logistics & Complete Guide (2026)",
+    title: "How to Ship a Floor Scrubber Internationally (2026 Guide)",
     description:
       "Step-by-step guide to importing a floor scrubber from China. Sea freight vs air freight costs, customs clearance, Incoterms, packaging requirements, and how to avoid the 6 most common shipping mistakes.",
     category: "buying-guide",
@@ -4891,7 +4891,7 @@ const extraGuides: Guide[] = [
   },
   {
     slug: "how-to-buy-floor-scrubber-parts-from-china",
-    title: "How to Buy Floor Scrubber Parts from China: Complete Sourcing Guide",
+    title: "How to Buy Floor Scrubber Parts from China",
     description: "Step-by-step guide to sourcing floor scrubber brushes, squeegee blades, and parts from China. Verify factories, order samples, compare quotes, handle payment and shipping safely.",
     category: "buying-guide",
     readTime: "9 min",
