@@ -58,11 +58,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const product = getProductBySlug(slug);
   if (!product) return { title: "Product Not Found" };
 
-  // ── Truncate long product names for title tag (Google shows ~60 chars) ──
-  const maxNameLen = 55;
-  const shortName = product.name.length > maxNameLen
-    ? product.name.slice(0, maxNameLen - 3).trim().replace(/[,/&;:]+$/, "") + "..."
-    : product.name;
+  // 产品名完整保留（og:title / twitter / alt 使用）——不在数据层截断，避免 "..." 断词
+  const shortName = product.name;
 
   // ── Strip HTML for plain-text description ──
   const cleanDesc = product.description
@@ -89,7 +86,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
   // ── Append SKU for uniqueness when description is generic ──
   if (description.length < 60 && product.sku) description += ` — SKU: ${product.sku}`;
-  if (description.length > 160) description = description.slice(0, 157) + "...";
+  if (description.length > 160) {
+    // 词边界截断到 ≤160（去掉尾部标点，不加 "..."）
+    const cut = description.slice(0, 160);
+    const lastStop = Math.max(cut.lastIndexOf(". "), cut.lastIndexOf("? "), cut.lastIndexOf("! "));
+    description = lastStop > 80
+      ? cut.slice(0, lastStop + 1)
+      : cut.slice(0, cut.lastIndexOf(" ")).replace(/[,;:\-—]+$/, "");
+  }
 
   // ── Build a keyword-rich title ──
   let title = shortName;
@@ -98,13 +102,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title += ` — ${product.specs["Working width"]} ${product.category || "Cleaning Equipment"}`;
   }
   if (!title.includes("Aikerui")) title += " | Aikerui";
-  // Hard cap at 65 chars so Google shows the full title without truncation
-  if (title.length > 65) {
+  // 目标 ≤ 60 字符（Google 展示宽度，超过会被截断）
+  // 策略：优先只去掉品牌后缀；仍超则在词边界截断——不手动加 "..."（会切断单词）
+  if (title.length > 60) {
     const hasBrand = title.endsWith(" | Aikerui");
-    const suffix = hasBrand ? " | Aikerui" : "";
-    const budget = 65 - (hasBrand ? 10 : 0) - 3; // 3 for "..."
     const base = hasBrand ? title.slice(0, -10) : title;
-    title = base.slice(0, Math.max(budget, 20)).trim().replace(/[,/&;:\-—]+$/, "") + "..." + suffix;
+    if (base.length <= 60) {
+      title = base;
+    } else {
+      const cut = base.slice(0, 60);
+      const lastSpace = cut.lastIndexOf(" ");
+      title = (lastSpace > 35 ? cut.slice(0, lastSpace) : cut).trim().replace(/[,/&;:\-—]+$/, "");
+    }
   }
 
   // ── OG description: use short description or clean intro ──
