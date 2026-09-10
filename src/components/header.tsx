@@ -7,6 +7,7 @@ import { Menu, X, Phone, Mail, ChevronDown, ShoppingCart } from "@/lib/icons";
 import { categories, categoryCounts } from "@/lib/header-data";
 import { cn } from "@/lib/utils";
 import { SearchBar } from "@/components/search-bar";
+import { LanguageSwitcher } from "@/components/language-switcher";
 
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -98,6 +99,7 @@ export function Header() {
                 </Link>
               )
             )}
+            <LanguageSwitcher />
             <SearchBar />
             <Link
               href="/floor-scrubber-parts-quote"

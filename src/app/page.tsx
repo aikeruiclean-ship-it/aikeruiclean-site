@@ -4,6 +4,8 @@ import type { Metadata } from "next";
 import { ArrowRight, Shield, Truck, HeadphonesIcon, Brush, Factory, CheckCircle, Phone, Video, Award, Globe } from "@/lib/icons";
 import { ProductCardServer } from "@/components/product-card-server";
 import { WhatsAppHeroButton } from "@/components/whatsapp-hero-button";
+import { DubaiWarehouse } from "@/components/dubai-warehouse";
+import { getHomeDict } from "@/i18n/home";
 import { JsonLd } from "@/components/json-ld";
 import { getFeaturedProducts, getPartsProducts, categories, getCategoryCounts } from "@/lib/products";
 
@@ -244,6 +246,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ===== DUBAI WAREHOUSE (Middle East) ===== */}
+      <DubaiWarehouse dict={getHomeDict("en").dubai} />
 
       {/* ===== WHY AIKERUI ===== */}
       <section className="py-16 bg-white">
