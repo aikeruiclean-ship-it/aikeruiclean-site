@@ -40,10 +40,10 @@ const PART_PRICE_RANGES: Record<string, { low: number; high: number; count: numb
 };
 
 const CATEGORY_PRICE_RANGES: Record<string, { low: number; high: number; count: number }> = {
-  "Floor Scrubbers": { low: 800, high: 8000, count: 15 },
-  "Floor Sweepers": { low: 1500, high: 12000, count: 7 },
-  "Carpet Extractor Washers": { low: 500, high: 5000, count: 3 },
-  "Dust-pushing carts": { low: 150, high: 1500, count: 4 },
+  "Floor Scrubbers": { low: 300, high: 2500, count: 15 },
+  "Floor Sweepers": { low: 600, high: 4000, count: 7 },
+  "Carpet Extractor Washers": { low: 300, high: 2000, count: 3 },
+  "Dust-pushing carts": { low: 100, high: 800, count: 4 },
 };
 
 export function generateStaticParams() {
