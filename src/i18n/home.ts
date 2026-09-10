@@ -297,12 +297,9 @@ export function getHomeDict(locale: Locale): HomeDict {
   return homeDictionaries[locale] || homeDictionaries.en;
 }
 
-// Dubai warehouse info (shared across languages)
+// Dubai warehouse info — company name + office address only (credibility).
+// Partner's direct contact is intentionally NOT shown (routes to our team).
 export const DUBAI = {
   company: "AL ADULIU GENERAL TRADING LLC",
   address: "Khansaheb Warehouse B2-7, Al Qusais Industrial 1, Doha Rd, Dubai, UAE",
-  contact: "Amrinder Singh",
-  phone: "+971 50 559 7103",
-  email: "amrinder.db16@gmail.com",
-  whatsapp: "971505597103",
 };
