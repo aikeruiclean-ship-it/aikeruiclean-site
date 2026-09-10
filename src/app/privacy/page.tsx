@@ -8,7 +8,7 @@ const PRIVACY_BREADCRUMB = [
 ];
 
 export const metadata = {
-  title: "Privacy Policy | Anhui Aikerui Environmental Protection Technology CO.,LTD",
+  title: "Privacy Policy | Aikerui",
   description: "Aikerui Privacy Policy. Learn how we collect, store, and protect your personal information when you contact us or use our website.",
 };
 
