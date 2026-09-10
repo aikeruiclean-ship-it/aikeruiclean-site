@@ -47,7 +47,7 @@ export default function SupermarketSolutionPage() {
               Quiet, compact scrubbers designed for retail environments. Clean during business hours without disturbing customers. Safe for tile, vinyl, and polished concrete floors.
             </p>
             <Link
-              href="/industrial-floor-scrubber-quote"
+              href="/floor-scrubber-parts-quote"
               className="inline-flex items-center gap-2 px-6 py-3 bg-accent hover:bg-accent-hover text-white font-semibold rounded-lg transition-colors"
             >
               Get a Supermarket Cleaning Quote <ArrowRight size={18} />
@@ -198,7 +198,7 @@ export default function SupermarketSolutionPage() {
             Tell us about your store size and floor type. We&apos;ll recommend the right machine for spotless floors that impress customers.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link href="/industrial-floor-scrubber-quote" className="inline-flex items-center gap-2 px-8 py-3.5 bg-accent hover:bg-accent-hover text-white font-bold rounded-lg transition-colors">
+            <Link href="/floor-scrubber-parts-quote" className="inline-flex items-center gap-2 px-8 py-3.5 bg-accent hover:bg-accent-hover text-white font-bold rounded-lg transition-colors">
               Get Your Quote
             </Link>
             <a href="https://api.whatsapp.com/send?phone=8619965236428&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20pricing." className="inline-flex items-center gap-2 px-8 py-3.5 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-colors">

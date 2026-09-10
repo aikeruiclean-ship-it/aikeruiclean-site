@@ -79,7 +79,7 @@ export function MachineCategoryPage({ def }: { def: MachineCategoryDef }) {
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
-              href="/industrial-floor-scrubber-quote"
+              href="/floor-scrubber-parts-quote"
               className="inline-flex items-center gap-2 px-6 py-3 bg-accent hover:bg-accent-hover text-white font-semibold rounded-lg transition-colors"
             >
               <Send size={18} /> Get Machine Quote
@@ -175,7 +175,7 @@ export function MachineCategoryPage({ def }: { def: MachineCategoryDef }) {
           model and quote factory-direct. OEM branding and spare parts available.
         </p>
         <Link
-          href="/industrial-floor-scrubber-quote"
+          href="/floor-scrubber-parts-quote"
           className="inline-flex items-center gap-2 px-8 py-3.5 bg-accent hover:bg-accent-hover text-white font-bold rounded-lg transition-colors"
         >
           <Send size={18} /> Request a Quote

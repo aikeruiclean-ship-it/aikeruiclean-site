@@ -50,7 +50,7 @@ export default function WarehouseSolutionPage() {
               Keep your warehouse floors clean, safe, and compliant. Industrial scrubbers and sweepers for concrete, epoxy, and polished floors — from 5,000 to 100,000+ sq ft.
             </p>
             <Link
-              href="/industrial-floor-scrubber-quote"
+              href="/floor-scrubber-parts-quote"
               className="inline-flex items-center gap-2 px-6 py-3 bg-accent hover:bg-accent-hover text-white font-semibold rounded-lg transition-colors"
             >
               Get a Warehouse Cleaning Quote <ArrowRight size={18} />
@@ -204,7 +204,7 @@ export default function WarehouseSolutionPage() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
-              href="/industrial-floor-scrubber-quote"
+              href="/floor-scrubber-parts-quote"
               className="inline-flex items-center gap-2 px-8 py-3.5 bg-accent hover:bg-accent-hover text-white font-bold rounded-lg transition-colors"
             >
               Get Your Quote

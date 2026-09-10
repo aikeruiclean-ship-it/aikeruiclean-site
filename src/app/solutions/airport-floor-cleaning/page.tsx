@@ -24,7 +24,7 @@ export default function AirportSolutionPage() {
           <div className="max-w-3xl">
             <h1 className="text-3xl md:text-5xl font-bold mb-4">Airport Floor Cleaning Machines</h1>
             <p className="text-lg text-gray-200 leading-relaxed mb-6">High-productivity ride-on scrubbers and sweepers for terminals, concourses, baggage claim, and hangars. Cover 80,000+ sq ft per hour. Lithium batteries for 24/7 operation.</p>
-            <Link href="/industrial-floor-scrubber-quote" className="inline-flex items-center gap-2 px-6 py-3 bg-accent hover:bg-accent-hover text-white font-semibold rounded-lg transition-colors"><Send size={18} /> Get Airport Cleaning Quote</Link>
+            <Link href="/floor-scrubber-parts-quote" className="inline-flex items-center gap-2 px-6 py-3 bg-accent hover:bg-accent-hover text-white font-semibold rounded-lg transition-colors"><Send size={18} /> Get Airport Cleaning Quote</Link>
           </div>
         </div>
       </section>
@@ -78,7 +78,7 @@ export default function AirportSolutionPage() {
           <h2 className="text-2xl font-bold mb-3">Upgrade Your Airport Cleaning Fleet</h2>
           <p className="text-gray-200 mb-6 max-w-lg mx-auto">Tell us your terminal size and floor types. We'll design a cleaning fleet with the right equipment mix. Factory-direct pricing for airport operators.</p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link href="/industrial-floor-scrubber-quote" className="inline-flex items-center gap-2 px-8 py-3.5 bg-accent hover:bg-accent-hover text-white font-bold rounded-lg transition-colors"><Send size={18} /> Get Quote</Link>
+            <Link href="/floor-scrubber-parts-quote" className="inline-flex items-center gap-2 px-8 py-3.5 bg-accent hover:bg-accent-hover text-white font-bold rounded-lg transition-colors"><Send size={18} /> Get Quote</Link>
             <a href="https://api.whatsapp.com/send?phone=8619965236428&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20pricing." className="inline-flex items-center gap-2 px-8 py-3.5 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-colors"><Phone size={16} /> WhatsApp</a>
           </div>
         </section>

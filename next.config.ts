@@ -48,6 +48,8 @@ const nextConfig: NextConfig = {
 
 async redirects() {
   return [
+    // 整机询价页合并：两个整机询价页相食 → industrial-quote 永久重定向到 parts-quote（后者内容已整机化）
+    { source: "/industrial-floor-scrubber-quote", destination: "/floor-scrubber-parts-quote", permanent: true },
     { source: "/products/62276226", destination: "/products/weizhuo-auto-scrubber-x3b-3d-floor-rotary-brush-and-pad-drive", permanent: true },
     { source: "/products/62675375", destination: "/products/ice-ride-scrubber-dryer-rs32-floor-rotary-brush", permanent: true },
     { source: "/products/63279046", destination: "/products/floor-scrubber-spare-parts-center-lock-pad-retainer", permanent: true },

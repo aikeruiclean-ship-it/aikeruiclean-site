@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Floor Scrubber Parts Quote — Factory Pricing | Aikerui",
+  title: "Floor Scrubber Quote — Factory Direct | Aikerui",
   description:
-    "Get factory-direct pricing on 360+ floor scrubber replacement parts. Disc brushes, squeegees, pad holders, batteries. OEM quality at 30-50% less. Submit your parts list for a quote within 24 hours.",
+    "Get factory-direct pricing on industrial floor scrubbers, sweepers and carpet extractors. Walk-behind and ride-on models, CE certified, OEM available. 24-hour quote response.",
   alternates: { canonical: "https://aikeruiclean.com/floor-scrubber-parts-quote" },
 };
 

@@ -9,20 +9,74 @@ import { ReviewForm } from "@/components/review-form";
 import { ReviewsDisplay } from "@/components/reviews-display";
 import { persistAttribution, attachAttribution } from "@/lib/attribution";
 
-const BRUSHES = [
-  { name: "Disc Brush", img: "/images/categories/Disc-Brush.webp", desc: "Flat rotary brushes for walk-behind & ride-on scrubbers" },
-  { name: "Roller Brush", img: "/images/categories/Roller-Brush.webp", desc: "Cylindrical brushes for horizontal-rotation machines" },
-  { name: "Side Brush", img: "/images/categories/Sweeper-Side-Brush.webp", desc: "Edge-cleaning brushes for walls and corners" },
-  { name: "Shampoo Disc Brush", img: "/images/categories/Shampoo-Disc-Brush.webp", desc: "Shampoo brushes for carpet & deep cleaning" },
+// ── 整机产品线（自然流主询价页：以整机为核心）──
+const MACHINES = [
+  {
+    name: "Walk-Behind Scrubbers",
+    img: "/images/WALK-BEHIND-K500.webp",
+    desc: 'Compact 17"-28" decks for aisles, retail and mid-size floors',
+    href: "/floor-scrubbers",
+  },
+  {
+    name: "Ride-On Scrubbers",
+    img: "/images/RIDE-ON-A860.webp",
+    desc: 'High-productivity 28"-40" decks for warehouses and large areas',
+    href: "/floor-scrubbers",
+  },
+  {
+    name: "Floor Sweepers",
+    img: "/images/RIDE-ON-S1250.webp",
+    desc: "Ride-on and walk-behind sweepers for dry debris and dust",
+    href: "/floor-sweepers",
+  },
+  {
+    name: "Carpet Extractors",
+    img: "/images/WALK-BEHIND-D15.webp",
+    desc: "Deep carpet and upholstery extraction for hotels and offices",
+    href: "/carpet-extractors",
+  },
 ];
 
-const PARTS = [
-  { name: "Squeegee Rubber", img: "/images/categories/Squeegee-Rubber.webp", desc: "Blades that recover water after scrubbing" },
-  { name: "Pad Driver", img: "/images/categories/Pad-Driver.webp", desc: "Connects motor shaft to brush or pad" },
-  { name: "Clutch Plate", img: "/images/categories/Clutch-Plate.webp", desc: "Transmission parts for brush drive systems" },
+// 应用场景（替代"兼容品牌"——整机买家的真实决策维度）
+const APPLICATIONS = [
+  { name: "Warehouse & Logistics", href: "/solutions/warehouse-floor-cleaning" },
+  { name: "Factory & Production", href: "/solutions/factory-floor-cleaning" },
+  { name: "Supermarket & Retail", href: "/solutions/supermarket-floor-cleaning" },
+  { name: "Shopping Mall", href: "/solutions/shopping-mall-floor-cleaning" },
+  { name: "Airport & Transit", href: "/solutions/airport-floor-cleaning" },
+  { name: "Hotel & Hospitality", href: "/solutions/hotel-floor-cleaning" },
+  { name: "Hospital & Healthcare", href: "/solutions/pharmaceutical-cleanroom-floor-cleaning" },
+  { name: "Cold Storage", href: "/solutions/cold-storage-floor-cleaning" },
 ];
 
-export default function PartsQuotePage() {
+const FAQ = [
+  [
+    "Walk-behind or ride-on — which machine do I need?",
+    "Walk-behind scrubbers suit floors under roughly 2,000 sqm and areas with obstacles, aisles or ramps. Ride-on machines cover 3,000-6,000 sqm per hour and are the usual choice for warehouses and large retail floors.",
+  ],
+  [
+    "What is the difference between a scrubber and a sweeper?",
+    "A scrubber applies solution, scrubs and vacuums up the dirty water, so it cleans and leaves the floor dry. A sweeper only collects dry debris. For mixed environments we also supply scrubber-sweeper combination machines.",
+  ],
+  [
+    "Can you supply spare parts and brushes after purchase?",
+    "Yes. We manufacture the brushes, squeegees and pad drivers in the same factory, so consumables are available directly at a lower cost than third-party parts.",
+  ],
+  [
+    "What is the MOQ and lead time?",
+    "For stock models, MOQ is typically 1 unit for sample evaluation and 5+ units for wholesale pricing. Lead time is 15-30 days depending on model and customization.",
+  ],
+  [
+    "Do you offer OEM branding on machines?",
+    "Yes. We apply your brand, colour scheme and specification sheet for volume orders, produced on the same line as our own models. CE certification is included.",
+  ],
+  [
+    "How do I know which model fits my floor area?",
+    "Send us your floor area, surface type and daily cleaning hours. We recommend the right working width and tank size, and quote factory-direct — usually within 24 hours.",
+  ],
+];
+
+export default function FloorScrubberQuotePage() {
   const [submitted, setSubmitted] = useState(false);
   const [sending, setSending] = useState(false);
   const [form, setForm] = useState({ name: "", email: "", phone: "", company: "", machineModel: "", brushType: "", quantity: "", message: "" });
@@ -36,8 +90,7 @@ export default function PartsQuotePage() {
     e.preventDefault();
     setSending(true);
     try {
-      // Attach GCLID/UTM attribution (from URL or localStorage) to this submission
-      const body = attachAttribution({ ...form, product: "Floor Scrubber Parts (Ad Landing)" });
+      const body = attachAttribution({ ...form, product: "Industrial Floor Scrubber (Organic Quote)" });
       const res = await fetch("/api/inquiry", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -45,22 +98,17 @@ export default function PartsQuotePage() {
       });
       if (!res.ok) throw new Error("Failed");
       setSubmitted(true);
-      // Push conversion events — GTM object format + direct gtag array format (works even if gtag not yet loaded)
       if (typeof window !== "undefined") {
         const w = window as any;
         w.dataLayer = w.dataLayer || [];
-        // GTM 触发器格式
-        w.dataLayer.push({ event: "quote_submit", product: "Floor Scrubber Parts (Ad Landing)" });
-        // gtag.js 原生格式（数组）— gtag.js 加载后会自动处理队列中未消费的数组事件
+        w.dataLayer.push({ event: "quote_submit", product: "Industrial Floor Scrubber (Organic Quote)" });
         w.dataLayer.push(["event", "conversion", { send_to: "AW-18359776225/AKHbCP6CodwcEOHnz7JE" }]);
-        // 若 gtag 已就绪，直接调用（双保险）
         const fireConversion = () => {
           if (typeof w.gtag === "function") {
             w.gtag("event", "conversion", { send_to: "AW-18359776225/AKHbCP6CodwcEOHnz7JE" });
           }
         };
         fireConversion();
-        // 兜底：gtag 可能还没加载完（afterInteractive），轮询重试最多 3 秒
         if (typeof w.gtag !== "function") {
           let tries = 0;
           const retry = setInterval(() => {
@@ -75,7 +123,7 @@ export default function PartsQuotePage() {
         }
       }
     } catch {
-      alert("Please WhatsApp us: +86 199 6523 6428");
+      alert("Something went wrong. Please WhatsApp us: +86 199 6523 6428");
     } finally {
       setSending(false);
     }
@@ -83,40 +131,32 @@ export default function PartsQuotePage() {
 
   return (
     <div>
-      <JsonLd data={{
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        name: "Floor Scrubber Brushes & Replacement Parts Factory Direct",
-        description: "Factory-direct floor scrubber brushes and parts. Disc brushes, roller brushes, squeegee rubber, pad holders. 30-50% less than dealer. OEM quality, global shipping.",
-      }} />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          name: "Floor Scrubber & Sweeper Quote",
+          description:
+            "Get factory-direct pricing on industrial floor scrubbers, sweepers and carpet extractors. Walk-behind and ride-on models, CE certified, OEM available. 24-hour quote response.",
+        }}
+      />
 
-      <JsonLd data={{
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        mainEntity: [
-          { "@type": "Question", name: "How long does a floor scrubber brush last?", acceptedAnswer: { "@type": "Answer", text: "With daily use on smooth floors, a brush lasts 3-6 months. On rough concrete, expect 1-3 months. Replace it when bristles are flattened or under 12 mm." } },
-          { "@type": "Question", name: "Which floor scrubber brush fits my machine?", acceptedAnswer: { "@type": "Answer", text: "Match the diameter and mounting system. The NP-9200 2-lug standard fits most Tennant, Nilfisk, Viper and Chinese OEM machines. Send us your machine model and we confirm compatibility within 24 hours." } },
-          { "@type": "Question", name: "What is the difference between nylon and PPL brushes?", acceptedAnswer: { "@type": "Answer", text: "Nylon is the daily default for most floors. PPL is stiffer for heavy grease on unsealed concrete. Use nylon on sealed or polished floors to avoid scratches." } },
-          { "@type": "Question", name: "Do you offer OEM or private label brushes?", acceptedAnswer: { "@type": "Answer", text: "Yes. We make custom brushes with your branding, bristle material and dimensions. MOQ for OEM brushes is typically 50-200 pieces." } },
-          { "@type": "Question", name: "Can I order a brush sample first?", acceptedAnswer: { "@type": "Answer", text: "Yes, sample orders are welcome. In-stock samples ship within 24-48 hours, and the sample cost is deducted from your first bulk order." } },
-          { "@type": "Question", name: "Do your brushes work with Tennant, Karcher or Nilfisk machines?", acceptedAnswer: { "@type": "Answer", text: "Yes. Our brushes are compatible with Tennant, Nilfisk, Karcher, Hako, Viper, Fimap, Comac, IPC and 15+ brands. Send us your OEM part number for confirmation." } },
-        ],
-      }} />
-
-      {/* Hero */}
+      {/* ── Hero ── */}
       <section className="bg-gradient-to-r from-primary to-primary-light text-white py-12 lg:py-16">
         <div className="max-w-5xl mx-auto px-4 text-center">
           <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-accent/90 text-white text-sm font-semibold rounded-full mb-4">
-            <Factory size={14} /> Factory-Direct No Middlemen
+            <Factory size={14} /> Factory-Direct — No Middlemen
           </span>
           <h1 className="text-3xl md:text-4xl font-bold mb-4">
-            Floor Scrubber Brushes &amp; Replacement Parts — Factory Direct
+            Industrial Floor Scrubbers &amp; Sweepers — Factory Direct Price
           </h1>
           <p className="text-lg text-gray-200 max-w-3xl mx-auto mb-8">
-            Manufacturer of replacement floor scrubber brushes, disc brushes, roller brushes, side brushes, pad drivers and squeegee blades for commercial and industrial floor scrubber machines. Same OEM quality at 30-50% less, from our ISO 9001 factory in Anqing, China.
+            Manufacturer of walk-behind and ride-on floor scrubbers, industrial sweepers and carpet
+            extractors — built in our own ISO 9001 factory in Anqing, China and exported to 50+ countries.
+            Buy direct at 30-50% below dealer pricing.
           </p>
           <a href="#form" className="inline-flex items-center gap-2 px-8 py-4 bg-accent hover:bg-accent-hover text-white font-bold rounded-lg transition-colors text-lg shadow-lg">
-            <Send size={18} /> Get Your Quote Now
+            <Send size={18} /> Get Your Machine Quote
           </a>
         </div>
       </section>
@@ -126,158 +166,160 @@ export default function PartsQuotePage() {
         <div className="max-w-5xl mx-auto px-4 flex flex-wrap justify-center gap-6 text-sm text-gray-600">
           {[
             { icon: BadgeCheck, text: "CE & ISO 9001 Certified" },
-            { icon: Factory, text: "10,000+㎡ Factory" },
-            { icon: Truck, text: "Global Shipping, 360+ Parts in Stock" },
+            { icon: Factory, text: "10,000+㎡ Own Factory" },
+            { icon: Truck, text: "Ships to 50+ Countries" },
           ].map(i => (
             <span key={i.text} className="flex items-center gap-1.5"><i.icon size={14} className="text-green-600"/>{i.text}</span>
           ))}
         </div>
       </section>
 
-      {/* Floor Scrubber Brushes */}
+      {/* ── Machine range ── */}
       <section className="py-12 bg-white">
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 text-center mb-3">
-            Floor Scrubber Brushes for Commercial &amp; Industrial Machines
+            Our Floor Cleaning Machine Range
           </h2>
           <p className="text-gray-600 text-center max-w-3xl mx-auto mb-10">
-            We manufacture replacement floor scrubber brushes in different diameters, bristle materials, hardness levels and mounting configurations, to match different machines and cleaning applications.
+            Every machine is designed, manufactured and tested in our Anqing facility before export.
+            Working widths from 17" walk-behind units to 40" ride-on platforms.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
-            {BRUSHES.map(p => (
-              <div key={p.name} className="text-center p-4 rounded-xl border border-gray-200 hover:border-primary transition-colors">
+            {MACHINES.map(p => (
+              <a key={p.name} href={p.href} className="text-center p-4 rounded-xl border border-gray-200 hover:border-primary transition-colors block">
                 <div className="aspect-square rounded-lg bg-gray-50 overflow-hidden mb-3 relative">
                   <Image src={p.img} alt={p.name} fill className="object-contain p-3" sizes="200px" />
                 </div>
                 <p className="font-semibold text-gray-900">{p.name}</p>
                 <p className="text-xs text-gray-500 mt-1">{p.desc}</p>
-              </div>
+              </a>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Brush Material */}
+      {/* ── Walk-behind vs Ride-on ── */}
       <section className="py-12 bg-gray-50">
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-2xl font-bold text-gray-900 text-center mb-3">
-            Choose the Right Floor Scrubber Brush Material
+            Walk-Behind or Ride-On? Choose by Floor Area
           </h2>
           <p className="text-gray-600 text-center max-w-2xl mx-auto mb-8">
-            We manufacture brushes in four bristle materials for different cleaning jobs and floor types.
+            The single biggest factor in choosing a scrubber is how much floor you clean per shift.
           </p>
           <div className="overflow-x-auto">
-            <table className="w-full text-sm border-collapse">
+            <table className="w-full text-sm border-collapse bg-white rounded-xl overflow-hidden">
               <thead>
                 <tr className="bg-primary text-white">
-                  <th className="p-3 text-left font-semibold">Material</th>
-                  <th className="p-3 text-left font-semibold">Best Application</th>
+                  <th className="p-3 text-left font-semibold">Machine Type</th>
+                  <th className="p-3 text-left font-semibold">Best For</th>
+                  <th className="p-3 text-left font-semibold">Coverage</th>
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b border-gray-200"><td className="p-3 font-medium">Nylon</td><td className="p-3 text-gray-600">Daily cleaning and general floor maintenance</td></tr>
-                <tr className="border-b border-gray-200 bg-gray-50"><td className="p-3 font-medium">PPL (Polypropylene)</td><td className="p-3 text-gray-600">Heavy-duty cleaning and grease removal</td></tr>
-                <tr className="border-b border-gray-200"><td className="p-3 font-medium">Abrasive (Silicon Carbide)</td><td className="p-3 text-gray-600">Stripping and aggressive cleaning</td></tr>
-                <tr className="border-b border-gray-200 bg-gray-50"><td className="p-3 font-medium">Steel Wire</td><td className="p-3 text-gray-600">Heavy industrial cleaning on rough concrete</td></tr>
+                <tr className="border-b border-gray-200"><td className="p-3 font-medium">Walk-Behind</td><td className="p-3 text-gray-600">Aisles, retail, restaurants, under 2,000 sqm</td><td className="p-3 text-gray-600">~1,500-2,500 sqm/h</td></tr>
+                <tr className="border-b border-gray-200 bg-gray-50"><td className="p-3 font-medium">Ride-On</td><td className="p-3 text-gray-600">Warehouses, malls, airports, over 3,000 sqm</td><td className="p-3 text-gray-600">~3,000-6,000 sqm/h</td></tr>
+                <tr><td className="p-3 font-medium">Sweeper</td><td className="p-3 text-gray-600">Dry debris, dust, packaging, outdoor areas</td><td className="p-3 text-gray-600">~8,000-20,000 sqm/h</td></tr>
               </tbody>
             </table>
           </div>
         </div>
       </section>
 
-      {/* Machine Compatibility */}
+      {/* ── Applications ── */}
       <section className="py-12 bg-white">
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-2xl font-bold text-gray-900 text-center mb-3">
-            Compatible with Major Floor Scrubber Machines
+            Built for Your Facility
           </h2>
           <p className="text-gray-600 text-center max-w-2xl mx-auto mb-8">
-            Our brushes fit most commercial floor scrubber machines on the market, including:
+            Tell us your environment and we will configure the right machine — deck width, tank size,
+            battery type and brush specification.
           </p>
           <div className="flex flex-wrap justify-center gap-2 mb-8">
-            {["Tennant", "Nilfisk", "Karcher", "Hako", "Viper", "Fimap", "Comac", "IPC", "Gaomei", "Dulevo"].map(b => (
-              <span key={b} className="px-4 py-2 bg-gray-100 border border-gray-200 rounded-lg text-sm font-medium text-gray-700">{b}</span>
+            {APPLICATIONS.map(a => (
+              <a key={a.name} href={a.href} className="px-4 py-2 bg-gray-100 border border-gray-200 rounded-lg text-sm font-medium text-gray-700 hover:border-primary hover:text-primary transition-colors">
+                {a.name}
+              </a>
             ))}
           </div>
           <div className="p-6 bg-blue-50 rounded-xl border border-blue-100 text-center">
             <p className="text-gray-700">
-              Need a replacement brush for a specific machine model? Send us your machine model, old brush photo or brush dimensions. Our team confirms compatibility before production.
+              Not sure which model fits? Send us your floor area, surface type and daily cleaning hours.
+              We recommend the right machine and quote factory-direct — usually within 24 hours.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Other Parts */}
+      {/* ── Spare parts cross-sell ── */}
       <section className="py-12 bg-gray-50">
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-2xl font-bold text-gray-900 text-center mb-8">
-            Other Floor Scrubber Replacement Parts
+            Replacement Parts &amp; Consumables
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {PARTS.map(p => (
-              <div key={p.name} className="text-center p-4 rounded-xl border border-gray-200 bg-white hover:border-primary transition-colors">
+            {[
+              { name: "Disc Brushes", img: "/images/categories/Disc-Brush.webp", href: "/parts/disc-brushes" },
+              { name: "Roller Brushes", img: "/images/categories/Roller-Brush.webp", href: "/parts/roller-brushes" },
+              { name: "Squeegee Blades", img: "/images/categories/Squeegee-Rubber.webp", href: "/parts/squeegee-blades" },
+            ].map(p => (
+              <a key={p.name} href={p.href} className="text-center p-4 rounded-xl border border-gray-200 bg-white hover:border-primary transition-colors block">
                 <div className="aspect-square rounded-lg bg-gray-50 overflow-hidden mb-3 relative">
                   <Image src={p.img} alt={p.name} fill className="object-contain p-3" sizes="200px" />
                 </div>
                 <p className="font-semibold text-gray-900">{p.name}</p>
-                <p className="text-xs text-gray-500 mt-1">{p.desc}</p>
-              </div>
+              </a>
             ))}
           </div>
           <div className="text-center mt-8">
             <a href="/parts" className="inline-flex items-center gap-2 px-6 py-3 bg-primary hover:bg-primary-light text-white font-semibold rounded-lg transition-colors text-sm">
-              Browse All 360+ Parts
+              Browse All Replacement Parts
             </a>
           </div>
         </div>
       </section>
 
-      {/* Price highlight */}
+      {/* ── Price highlight ── */}
       <section className="py-8 bg-amber-50 border-y border-amber-200">
         <div className="max-w-3xl mx-auto px-4 text-center">
-          <p className="text-lg font-bold text-gray-900 mb-1">Don't Overpay for OEM Parts</p>
+          <p className="text-lg font-bold text-gray-900 mb-1">Don't Pay Dealer Markup</p>
           <p className="text-gray-600">
-            Dealer price: $150/disc brush → <span className="text-green-700 font-bold">Our price: $45-75</span>. Same nylon/PPL materials. Same quality. Just no dealer markup.
+            Machines sold through importers carry two layers of margin. We build them — so you buy at
+            factory price, with CE certification, spare-part support and OEM options included.
           </p>
         </div>
       </section>
 
-      {/* Video */}
+      {/* ── Video ── */}
       <section className="py-8 bg-white">
         <div className="max-w-2xl mx-auto px-4">
-          <h2 className="text-xl font-bold text-gray-900 text-center mb-4">See Our Clutch Plates & Pad Drivers in Action</h2>
-          <YouTubeLink videoId="factorytour" title="Aikerui Factory Tour, Floor Scrubber Manufacturing" />
+          <h2 className="text-xl font-bold text-gray-900 text-center mb-4">Inside Our Factory</h2>
+          <YouTubeLink videoId="factorytour01" title="Aikerui Factory Tour, Floor Scrubber Manufacturing" />
         </div>
       </section>
 
-      {/* Related Guides */}
+      {/* ── Related Guides ── */}
       <section className="py-8 bg-white">
         <div className="max-w-5xl mx-auto px-4 text-center">
           <h2 className="text-xl font-bold text-gray-900 mb-4">Related Guides</h2>
           <div className="flex flex-wrap justify-center gap-3">
-            <a href="/guides/floor-scrubber-parts-guide-types-lifespan-cost" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Parts Guide: Types &amp; Cost</a>
-            <a href="/guides/oem-vs-aftermarket-floor-scrubber-parts" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">OEM vs Aftermarket</a>
-            <a href="/guides/floor-scrubber-clutch-plate-pad-driver-guide" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Clutch Plate Guide</a>
-            <a href="/guides/squeegee-not-picking-up-water" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Squeegee Fix Guide</a>
-            <a href="/guides/disc-brush-vs-roller-brush-scrubber" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Disc vs Roller Brush</a>
-            <a href="/guides/how-much-does-floor-scrubber-cost" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Cost Guide 2026</a>
+            <a href="/guides/how-much-does-floor-scrubber-cost" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Floor Scrubber Cost 2026</a>
+            <a href="/guides/industrial-floor-scrubber-buyers-guide" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Buyer's Guide</a>
+            <a href="/guides/walk-behind-vs-ride-on-scrubber" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Walk-Behind vs Ride-On</a>
+            <a href="/guides/floor-scrubber-brands-comparison" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Brands Compared</a>
+            <a href="/floor-scrubber-price-guide" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Price Guide</a>
+            <a href="/floor-scrubbers" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">All Scrubber Models</a>
           </div>
         </div>
       </section>
 
-      {/* FAQ */}
+      {/* ── FAQ ── */}
       <section className="py-12 bg-white">
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-2xl font-bold text-gray-900 text-center mb-8">Floor Scrubber Brush FAQs</h2>
+          <h2 className="text-2xl font-bold text-gray-900 text-center mb-8">Floor Scrubber Buyer FAQs</h2>
           <div className="space-y-3">
-            {[
-              ["How long does a floor scrubber brush last?", "With daily use on smooth floors, a brush lasts 3-6 months. On rough concrete, expect 1-3 months. Replace it when bristles are flattened or under 12 mm."],
-              ["Which floor scrubber brush fits my machine?", "Match the diameter and mounting system. The NP-9200 2-lug standard fits most Tennant, Nilfisk, Viper and Chinese OEM machines. Send us your machine model and we confirm compatibility within 24 hours."],
-              ["What is the difference between nylon and PPL brushes?", "Nylon is the daily default for most floors. PPL is stiffer for heavy grease on unsealed concrete. Use nylon on sealed or polished floors to avoid scratches."],
-              ["Do you offer OEM or private label brushes?", "Yes. We make custom brushes with your branding, bristle material and dimensions. MOQ for OEM brushes is typically 50-200 pieces."],
-              ["Can I order a brush sample first?", "Yes, sample orders are welcome. In-stock samples ship within 24-48 hours, and the sample cost is deducted from your first bulk order."],
-              ["Do your brushes work with Tennant, Karcher or Nilfisk machines?", "Yes. Our brushes are compatible with Tennant, Nilfisk, Karcher, Hako, Viper, Fimap, Comac, IPC and 15+ brands. Send us your OEM part number for confirmation."],
-            ].map(([q, a]) => (
+            {FAQ.map(([q, a]) => (
               <details key={q} className="group bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
                 <summary className="flex items-center justify-between px-5 py-4 cursor-pointer hover:bg-gray-100 transition-colors">
                   <h3 className="font-semibold text-gray-900 pr-4">{q}</h3>
@@ -290,10 +332,10 @@ export default function PartsQuotePage() {
         </div>
       </section>
 
-      {/* Form */}
+      {/* ── Form ── */}
       <section id="form" className="py-12 bg-gray-50">
         <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-2xl font-bold text-gray-900 text-center mb-8">Get Your Parts Quote</h2>
+          <h2 className="text-2xl font-bold text-gray-900 text-center mb-8">Get Your Machine Quote</h2>
           <p className="text-sm text-gray-500 text-center mb-8">Reply within 24 hours — from a real factory, not a middleman</p>
           <div className="grid md:grid-cols-2 gap-8 items-start">
             {/* Company trust info */}
@@ -301,14 +343,14 @@ export default function PartsQuotePage() {
               <div className="bg-white rounded-2xl border border-gray-200 p-6">
                 <h3 className="font-bold text-gray-900 mb-3">Who You're Dealing With</h3>
                 <p className="text-sm text-gray-600 leading-relaxed mb-4">
-                  Anhui Aikerui Environmental Protection Technology Co., Ltd — a floor scrubber
-                  brush and parts factory in Anqing, China since 2008. We own the production line,
-                  so you buy direct with no dealer markup.
+                  Anhui Aikerui Environmental Protection Technology Co., Ltd — a floor scrubber and
+                  sweeper manufacturer in Anqing, China since 2008. We own the production line, so you
+                  buy direct with no dealer markup.
                 </p>
                 <ul className="space-y-2 text-sm text-gray-700">
                   <li className="flex items-start gap-2"><Factory size={16} className="text-primary shrink-0 mt-0.5" /> 10,000+ sqm factory, 50-100 employees</li>
                   <li className="flex items-start gap-2"><CheckCircle size={16} className="text-primary shrink-0 mt-0.5" /> ISO 9001 &amp; CE certified</li>
-                  <li className="flex items-start gap-2"><CheckCircle size={16} className="text-primary shrink-0 mt-0.5" /> 360+ parts in stock, ships in 24-48h</li>
+                  <li className="flex items-start gap-2"><CheckCircle size={16} className="text-primary shrink-0 mt-0.5" /> Spare parts and brushes from the same factory</li>
                   <li className="flex items-start gap-2"><CheckCircle size={16} className="text-primary shrink-0 mt-0.5" /> Exported to 50+ countries</li>
                   <li className="flex items-start gap-2"><MapPin size={16} className="text-primary shrink-0 mt-0.5" /> Yuantan, Anqing, Anhui, China</li>
                 </ul>
@@ -317,15 +359,15 @@ export default function PartsQuotePage() {
               <div className="bg-white rounded-2xl border border-gray-200 p-6">
                 <h3 className="font-bold text-gray-900 mb-3">How It Works</h3>
                 <ol className="space-y-3 text-sm text-gray-700">
-                  <li className="flex gap-3"><span className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-xs font-bold shrink-0">1</span> Tell us your machine model or OEM part number</li>
-                  <li className="flex gap-3"><span className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-xs font-bold shrink-0">2</span> We confirm compatibility and send factory-direct pricing</li>
-                  <li className="flex gap-3"><span className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-xs font-bold shrink-0">3</span> Order samples or bulk — shipped worldwide in 24-48h</li>
+                  <li className="flex gap-3"><span className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-xs font-bold shrink-0">1</span> Tell us your floor area, surface type and daily cleaning hours</li>
+                  <li className="flex gap-3"><span className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-xs font-bold shrink-0">2</span> We recommend the right model and send factory-direct pricing</li>
+                  <li className="flex gap-3"><span className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-xs font-bold shrink-0">3</span> Order a sample unit or bulk — CE certified, shipped worldwide</li>
                 </ol>
               </div>
 
               <div className="bg-amber-50 rounded-2xl border border-amber-200 p-5 text-center">
                 <p className="text-sm font-semibold text-gray-800">Save 30-50% vs dealer prices</p>
-                <p className="text-xs text-gray-600 mt-1">Factory-direct. No middlemen. Same OEM quality.</p>
+                <p className="text-xs text-gray-600 mt-1">Factory-direct. No middlemen. Spare parts included.</p>
               </div>
             </div>
 
@@ -350,38 +392,38 @@ export default function PartsQuotePage() {
                   <input type="text" name="company" placeholder="Company Name" value={form.company}
                     onChange={e => setForm({...form, company: e.target.value})}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" />
-                  <input type="text" name="machineModel" placeholder="Machine Brand & Model (e.g. Tennant T7, Karcher BD50)" value={form.machineModel}
-                    onChange={e => setForm({...form, machineModel: e.target.value})}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" />
                   <select name="brushType" value={form.brushType}
                     onChange={e => setForm({...form, brushType: e.target.value})}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary bg-white">
-                    <option value="">Brush Type (optional)</option>
-                    <option>Disc Brush</option>
-                    <option>Roller Brush</option>
-                    <option>Side Brush</option>
-                    <option>Squeegee Blade</option>
-                    <option>Pad Driver</option>
-                    <option>Other / Not sure</option>
+                    <option value="">Which machine are you looking for? (optional)</option>
+                    <option>Walk-behind floor scrubber</option>
+                    <option>Ride-on floor scrubber</option>
+                    <option>Floor sweeper</option>
+                    <option>Carpet extractor</option>
+                    <option>Scrubber + sweeper combination</option>
+                    <option>Not sure — please advise</option>
                   </select>
-                  <input type="text" name="quantity" placeholder="Quantity Needed" value={form.quantity}
+                  <input type="text" name="machineModel" placeholder="Floor area (e.g. 5,000 sqm warehouse)" value={form.machineModel}
+                    onChange={e => setForm({...form, machineModel: e.target.value})}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" />
+                  <input type="text" name="quantity" placeholder="Quantity (e.g. 1 unit / 5 units)" value={form.quantity}
                     onChange={e => setForm({...form, quantity: e.target.value})}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" />
                   <input type="text" name="phone" placeholder="Phone / WhatsApp" value={form.phone}
                     onChange={e => setForm({...form, phone: e.target.value})}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" />
-                  <textarea name="message" rows={4} placeholder="Part details, old brush photo link, or anything else (optional)" value={form.message}
+                  <textarea name="message" rows={4} placeholder="Floor type, cleaning hours per day, or anything else (optional)" value={form.message}
                     onChange={e => setForm({...form, message: e.target.value})}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary resize-none" />
                   <button type="submit" disabled={sending}
                     className="w-full py-3.5 bg-accent hover:bg-accent-hover disabled:bg-gray-300 text-white font-bold rounded-lg transition-colors">
-                    {sending ? "Sending..." : "Check Compatibility & Get Factory Quote"}
+                    {sending ? "Sending..." : "Get Factory Price & Model Recommendation"}
                   </button>
                 </form>
               )}
 
               <div className="text-center mt-4">
-                <a href="https://api.whatsapp.com/send?phone=8619965236428&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20parts." target="_blank" rel="noopener"
+                <a href="https://api.whatsapp.com/send?phone=8619965236428&text=Hi%2C%20I%27m%20interested%20in%20an%20industrial%20floor%20scrubber." target="_blank" rel="noopener"
                   className="inline-flex items-center gap-2 text-sm text-green-600 font-semibold hover:underline">
                   <Phone size={14} /> Or WhatsApp us directly
                 </a>
