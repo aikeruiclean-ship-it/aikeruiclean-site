@@ -13,14 +13,37 @@ interface Props {
   params: Promise<{ slug: string }>;
 }
 
-// AggregateOffer 价格区间（无单价产品用）——按类别给合理范围
-// 工厂直销 B2B，价格随原材料/定制/数量波动，用区间避免单一标价
-const PRICE_RANGES: Record<string, { low: number; high: number; count: number }> = {
+// AggregateOffer 价格区间（无单价产品用）
+// 工厂直销 B2B，价格随原材料/定制/数量波动 → 用区间避免单一标价
+// 精度：优先按 Parts 子分类（价格差异大），整机按类别
+const PART_PRICE_RANGES: Record<string, { low: number; high: number; count: number }> = {
+  "Disc Brush / 盘刷": { low: 5, high: 60, count: 95 },
+  "Brush / 刷类": { low: 5, high: 60, count: 37 },
+  "Squeegee / 吸水胶条": { low: 3, high: 40, count: 31 },
+  "Pad Holder / 针盘": { low: 15, high: 80, count: 27 },
+  "Clutch Plate / 离合器盘": { low: 10, high: 60, count: 24 },
+  "Hose / 水管": { low: 5, high: 50, count: 20 },
+  "Roller Brush / 滚刷": { low: 15, high: 100, count: 15 },
+  "Side Brush / 边刷": { low: 5, high: 40, count: 14 },
+  "Vacuum Motor / 真空电机": { low: 50, high: 200, count: 5 },
+  "Solenoid Valve / 电磁阀": { low: 15, high: 80, count: 4 },
+  "Mat / 地垫": { low: 10, high: 80, count: 3 },
+  "Filter / 过滤器": { low: 5, high: 50, count: 3 },
+  "Pad / 百洁垫": { low: 3, high: 30, count: 3 },
+  "Wheel / 轮子": { low: 10, high: 60, count: 2 },
+  "Electrical / 电气件": { low: 20, high: 150, count: 2 },
+  "Motor / 电机": { low: 80, high: 400, count: 2 },
+  "Carbon Brush / 碳刷": { low: 3, high: 20, count: 1 },
+  "Lock & Flange / 锁扣·法兰": { low: 5, high: 50, count: 1 },
+  "Bumper / 保险杠": { low: 10, high: 60, count: 1 },
+  "Other / 其他": { low: 5, high: 100, count: 1 },
+};
+
+const CATEGORY_PRICE_RANGES: Record<string, { low: number; high: number; count: number }> = {
   "Floor Scrubbers": { low: 800, high: 8000, count: 15 },
-  "Floor Sweepers": { low: 1500, high: 12000, count: 8 },
-  "Carpet Extractor Washers": { low: 500, high: 5000, count: 6 },
-  "Dust-pushing carts": { low: 150, high: 1500, count: 5 },
-  Parts: { low: 5, high: 80, count: 50 },
+  "Floor Sweepers": { low: 1500, high: 12000, count: 7 },
+  "Carpet Extractor Washers": { low: 500, high: 5000, count: 3 },
+  "Dust-pushing carts": { low: 150, high: 1500, count: 4 },
 };
 
 export function generateStaticParams() {
@@ -215,7 +238,14 @@ export default async function ProductDetailPage({ params }: Props) {
             // 无单一标价（询盘制/定制，价格随原材料波动）→ AggregateOffer 价格区间
             // Google 要求 Product 必须含 offers/review/aggregateRating，
             // 区间价既满足要求又不暴露单一固定价。
-            const range = PRICE_RANGES[product.category] || { low: 5, high: 100 };
+            const range =
+              (product.partSubcategory &&
+                PART_PRICE_RANGES[product.partSubcategory]) ||
+              CATEGORY_PRICE_RANGES[product.category] || {
+                low: 5,
+                high: 100,
+                count: 20,
+              };
             return {
               "@type": "AggregateOffer",
               url: productUrl,
