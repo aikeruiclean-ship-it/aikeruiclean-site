@@ -25,6 +25,15 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "https://aikeruiclean.com",
+    // hreflang 双向对称：外语页指向英文，英文首页必须指回外语（否则 Google 忽略单向标注）
+    languages: {
+      en: "https://aikeruiclean.com",
+      es: "https://aikeruiclean.com/es",
+      ar: "https://aikeruiclean.com/ar",
+      ru: "https://aikeruiclean.com/ru",
+      fr: "https://aikeruiclean.com/fr",
+      "x-default": "https://aikeruiclean.com",
+    },
   },
 };
 
