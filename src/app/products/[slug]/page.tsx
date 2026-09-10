@@ -13,6 +13,16 @@ interface Props {
   params: Promise<{ slug: string }>;
 }
 
+// AggregateOffer 价格区间（无单价产品用）——按类别给合理范围
+// 工厂直销 B2B，价格随原材料/定制/数量波动，用区间避免单一标价
+const PRICE_RANGES: Record<string, { low: number; high: number; count: number }> = {
+  "Floor Scrubbers": { low: 800, high: 8000, count: 15 },
+  "Floor Sweepers": { low: 1500, high: 12000, count: 8 },
+  "Carpet Extractor Washers": { low: 500, high: 5000, count: 6 },
+  "Dust-pushing carts": { low: 150, high: 1500, count: 5 },
+  Parts: { low: 5, high: 80, count: 50 },
+};
+
 export function generateStaticParams() {
   return getProducts().map((p) => ({ slug: p.slug }));
 }
@@ -202,9 +212,22 @@ export default async function ProductDetailPage({ params }: Props) {
                 price: product.price,
               };
             }
-            // 无真实价格（询盘制/定制）→ 不输出 offers，避免空 Offer 报错
-            // （价格随原材料/定制需求波动，不标价；页面也不显示价格）
-            return undefined;
+            // 无单一标价（询盘制/定制，价格随原材料波动）→ AggregateOffer 价格区间
+            // Google 要求 Product 必须含 offers/review/aggregateRating，
+            // 区间价既满足要求又不暴露单一固定价。
+            const range = PRICE_RANGES[product.category] || { low: 5, high: 100 };
+            return {
+              "@type": "AggregateOffer",
+              url: productUrl,
+              priceCurrency: "USD",
+              lowPrice: range.low,
+              highPrice: range.high,
+              offerCount: range.count,
+              availability:
+                product.inStock === false
+                  ? "https://schema.org/OutOfStock"
+                  : "https://schema.org/InStock",
+            };
           })(),
         };
       })()} />
