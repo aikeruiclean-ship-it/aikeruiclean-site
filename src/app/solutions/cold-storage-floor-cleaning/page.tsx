@@ -4,7 +4,7 @@ import { Phone, Send, CheckCircle } from "@/lib/icons";
 import { JsonLd } from "@/components/json-ld";
 
 export const metadata: Metadata = {
-  title: "Cold Storage & Freezer Floor Scrubbers | Sub-Zero Cleaning Machines | Aikerui",
+  title: "Cold Storage & Freezer Floor Scrubbers | Aikerui",
   description: "Floor scrubbers engineered for cold storage and freezer warehouses (-25°C to +5°C). Lithium batteries, ice-resistant squeegees, anti-condensation electronics.",
   keywords: ["cold storage floor scrubber", "freezer floor cleaning machine", "cold room scrubber", "sub zero floor cleaner", "refrigerated warehouse scrubber"],
   alternates: { canonical: "https://aikeruiclean.com/solutions/cold-storage-floor-cleaning" },

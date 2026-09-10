@@ -4,7 +4,7 @@ import { ArrowRight, CheckCircle, Phone } from "@/lib/icons";
 import { JsonLd } from "@/components/json-ld";
 
 export const metadata: Metadata = {
-  title: "Supermarket Floor Cleaning Machines | Retail Store Scrubbers | Aikerui",
+  title: "Supermarket Floor Scrubbers | Retail Stores | Aikerui",
   description:
     "Quiet, compact floor cleaning machines for supermarkets and retail stores. Walk-behind scrubbers for daytime cleaning with low noise. Factory-direct pricing, global shipping.",
   keywords: [

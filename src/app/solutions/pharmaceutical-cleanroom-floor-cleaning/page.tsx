@@ -4,7 +4,7 @@ import { Phone, Send, CheckCircle } from "@/lib/icons";
 import { JsonLd } from "@/components/json-ld";
 
 export const metadata: Metadata = {
-  title: "Pharmaceutical Cleanroom Floor Cleaning | GMP-Compliant Scrubbers | Aikerui",
+  title: "Cleanroom Floor Scrubbers | GMP-Compliant | Aikerui",
   description: "GMP-compliant floor scrubbers for pharmaceutical cleanrooms and labs. HEPA filtration, stainless steel, chemical-resistant. ISO 14644 compatible.",
   keywords: ["pharmaceutical cleanroom floor scrubber", "GMP floor cleaning", "cleanroom scrubber", "lab floor cleaning machine"],
   alternates: { canonical: "https://aikeruiclean.com/solutions/pharmaceutical-cleanroom-floor-cleaning" },

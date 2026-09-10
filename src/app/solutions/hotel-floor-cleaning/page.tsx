@@ -4,7 +4,7 @@ import { Phone, Send, CheckCircle } from "@/lib/icons";
 import { JsonLd } from "@/components/json-ld";
 
 export const metadata: Metadata = {
-  title: "Hotel Floor Cleaning Machines | Hospitality Scrubbers for Guest Areas | Aikerui",
+  title: "Hotel Floor Scrubbers for Guest Areas | Aikerui",
   description: "Ultra-quiet floor scrubbers for hotels and resorts. Clean guest corridors, lobbies, and kitchens during business hours without disturbing guests. Factory-direct pricing.",
   keywords: ["hotel floor scrubber", "hospitality floor cleaning", "hotel cleaning machine", "resort floor scrubber", "quiet floor scrubber for hotels"],
   alternates: { canonical: "https://aikeruiclean.com/solutions/hotel-floor-cleaning" },

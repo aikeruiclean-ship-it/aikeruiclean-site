@@ -4,7 +4,7 @@ import { ArrowRight, CheckCircle, Phone } from "@/lib/icons";
 import { JsonLd } from "@/components/json-ld";
 
 export const metadata: Metadata = {
-  title: "Factory Floor Cleaning Machines | Heavy-Duty Industrial Scrubbers | Aikerui",
+  title: "Factory Floor Scrubbers | Heavy-Duty Industrial | Aikerui",
   description:
     "Heavy-duty factory floor cleaning solutions for manufacturing plants. Ride-on and walk-behind scrubbers for oil, grease, and heavy soil. CE certified, factory-direct pricing.",
   keywords: [

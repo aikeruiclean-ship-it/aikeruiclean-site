@@ -5,7 +5,7 @@ import { ArrowRight, CheckCircle, Phone, Factory, Truck, Clock } from "@/lib/ico
 import { JsonLd } from "@/components/json-ld";
 
 export const metadata: Metadata = {
-  title: "Warehouse Floor Cleaning Machines | Industrial Scrubbers & Sweepers | Aikerui",
+  title: "Warehouse Floor Scrubbers & Sweepers | Aikerui",
   description:
     "Professional warehouse floor cleaning solutions. Walk-behind and ride-on floor scrubbers for warehouses up to 100,000+ sq ft. Factory-direct pricing, CE certified, global shipping.",
   keywords: [
