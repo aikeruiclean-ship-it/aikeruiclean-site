@@ -13,21 +13,23 @@ export default function robots(): MetadataRoute.Robots {
           // Cart/order (not implemented yet)
           "/cart/",
           "/order/",
-          // Query parameter URLs — prevent crawl of search/filter/sort params
+          // ── 只封「无内容价值」的参数 ──
+          // 站内搜索/排序/筛选：产出的是同一批产品的不同排列，无独立内容
           "/*?*q=",
           "/*?*search=",
           "/*?*sort=",
           "/*?*filter=",
-          "/*?*category=",
-          "/*?*subcategory=",
-          "/*?*page=",
+          // 纯跟踪参数：不影响内容，无需抓取
           "/*?*utm_",
-          // Prevent duplicate content from generic query params
           "/*?*ref=",
           "/*?*source=",
           "/*?*fbclid=",
           "/*?*gclid=",
           "/*?*msclkid=",
+          // ── 不再封禁分类/分页参数 ──
+          // /*?*category=  /*?*subcategory=  /*?*page=
+          // 重复内容问题改由 canonical 处理（Google 官方建议：优先 canonical，而非 robots 封杀，
+          // 因为 robots 封禁会阻断链接权重传递，canonical 可以合并信号）
           // Admin
           "/admin/",
         ],
