@@ -1,5 +1,6 @@
 import { getProducts } from "@/lib/products";
 import { getGuides } from "@/lib/guides";
+import { PART_CATEGORIES } from "@/lib/part-categories";
 import { translatedLocales } from "@/i18n/config";
 import type { MetadataRoute } from "next";
 
@@ -32,6 +33,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/solutions/hotel-floor-cleaning`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
   ];
 
+  const partsCategoryPages: MetadataRoute.Sitemap = PART_CATEGORIES.map((c) => ({
+    url: `${baseUrl}/parts/${c.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.75,
+  }));
+
   const guidePages: MetadataRoute.Sitemap = getGuides().map((g) => ({
     url: `${baseUrl}/guides/${g.slug}`,
     lastModified: new Date(),
@@ -63,5 +71,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   }));
 
-  return [...staticPages, ...languageHomepages, ...productPages, ...guidePages];
+  return [
+    ...staticPages,
+    ...partsCategoryPages,
+    ...languageHomepages,
+    ...productPages,
+    ...guidePages,
+  ];
 }

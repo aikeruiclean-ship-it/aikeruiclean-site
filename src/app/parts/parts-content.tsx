@@ -7,6 +7,7 @@ import { ProductCard } from "@/components/product-card";
 import { VariantProductCard } from "@/components/variant-product-card";
 import { getProducts, getPartSubcategories } from "@/lib/products";
 import { buildVariantGroups } from "@/lib/variant-groups";
+import { PART_CATEGORIES } from "@/lib/part-categories";
 import { cn } from "@/lib/utils";
 
 const PER_PAGE = 28;
@@ -160,20 +161,28 @@ export function PartPageContent() {
             >
               All Parts ({allParts.length})
             </Link>
-            {subcategories.map((sub) => (
-              <Link
-                key={sub.name}
-                href={`/parts?subcategory=${encodeURIComponent(sub.name)}`}
-                className={cn(
-                  "px-4 py-2 text-sm font-medium rounded-lg border transition-colors",
-                  activeSub === sub.name
-                    ? "bg-primary text-white border-primary"
-                    : "bg-white text-gray-700 border-gray-300 hover:border-accent hover:text-accent"
-                )}
-              >
-                {subEn(sub.name)} ({sub.count})
-              </Link>
-            ))}
+            {subcategories.map((sub) => {
+              // 高价值分类 → 链到静态可索引页 /parts/{slug}（内链传递权重）
+              // 其余分类 → 保留客户端筛选
+              const staticCat = PART_CATEGORIES.find((c) => c.subcategory === sub.name);
+              const href = staticCat
+                ? `/parts/${staticCat.slug}`
+                : `/parts?subcategory=${encodeURIComponent(sub.name)}`;
+              return (
+                <Link
+                  key={sub.name}
+                  href={href}
+                  className={cn(
+                    "px-4 py-2 text-sm font-medium rounded-lg border transition-colors",
+                    activeSub === sub.name
+                      ? "bg-primary text-white border-primary"
+                      : "bg-white text-gray-700 border-gray-300 hover:border-accent hover:text-accent"
+                  )}
+                >
+                  {subEn(sub.name)} ({sub.count})
+                </Link>
+              );
+            })}
           </div>
         </div>
 
