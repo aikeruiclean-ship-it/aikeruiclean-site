@@ -1,5 +1,6 @@
 import { getProducts } from "@/lib/products";
 import { getGuides } from "@/lib/guides";
+import { translatedLocales } from "@/i18n/config";
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -45,5 +46,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticPages, ...productPages, ...guidePages];
+  // Translated homepages (es/ar/ru/fr) with hreflang alternates
+  const languageHomepages: MetadataRoute.Sitemap = translatedLocales.map((loc) => ({
+    url: `${baseUrl}/${loc}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.9,
+    alternates: {
+      languages: {
+        en: baseUrl,
+        es: `${baseUrl}/es`,
+        ar: `${baseUrl}/ar`,
+        ru: `${baseUrl}/ru`,
+        fr: `${baseUrl}/fr`,
+      },
+    },
+  }));
+
+  return [...staticPages, ...languageHomepages, ...productPages, ...guidePages];
 }
