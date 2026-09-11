@@ -61,8 +61,8 @@ export default async function PartSubcategoryPage({
 
   const breadcrumb = [
     ...PARTS_BREADCRUMB.slice(0, -1),
-    { name: "Parts", href: "/parts" },
-    { name: cat.breadcrumb, href: `/parts/${cat.slug}` },
+    { name: "Parts", item: "/parts" },
+    { name: cat.breadcrumb, item: `/parts/${cat.slug}` },
   ];
 
   const faqSchema = {
@@ -87,8 +87,11 @@ export default async function PartSubcategoryPage({
       itemListElement: products.slice(0, 50).map((p, i) => ({
         "@type": "ListItem",
         position: i + 1,
-        url: `${SITE_URL}/products/${p.slug}`,
-        name: p.name,
+        item: {
+          "@type": "Product",
+          name: p.name,
+          url: `${SITE_URL}/products/${p.slug}`,
+        },
       })),
     },
   };

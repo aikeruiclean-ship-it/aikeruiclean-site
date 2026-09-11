@@ -19,8 +19,8 @@ export function MachineCategoryPage({ def }: { def: MachineCategoryDef }) {
 
   const breadcrumb = [
     ...PRODUCTS_BREADCRUMB.slice(0, -1),
-    { name: "Products", href: "/products" },
-    { name: def.breadcrumb, href: `/${def.slug}` },
+    { name: "Products", item: "/products" },
+    { name: def.breadcrumb, item: `/${def.slug}` },
   ];
 
   const faqSchema = {
@@ -45,8 +45,11 @@ export function MachineCategoryPage({ def }: { def: MachineCategoryDef }) {
       itemListElement: products.slice(0, 50).map((p, i) => ({
         "@type": "ListItem",
         position: i + 1,
-        url: `${SITE_URL}/products/${p.slug}`,
-        name: p.name,
+        item: {
+          "@type": "Product",
+          name: p.name,
+          url: `${SITE_URL}/products/${p.slug}`,
+        },
       })),
     },
   };
