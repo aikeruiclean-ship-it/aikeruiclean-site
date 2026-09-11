@@ -29,7 +29,7 @@ export const PART_CATEGORIES: PartCategoryDef[] = [
     breadcrumb: "Disc Brushes",
     title: "Floor Scrubber Disc Brushes | Factory Direct | Aikerui",
     description:
-      "OEM-quality replacement disc brushes for floor scrubbers — nylon, PP and abrasive bristles, 10\"-20\" diameters, fits Tennant, Karcher, Nilfisk & Viper. Factory direct.",
+      "OEM-quality replacement disc brushes for floor scrubbers — nylon, PP and abrasive bristles, 10\"-20\" diameters, for Tennant, Karcher, Nilfisk.",
     intro: [
       "Disc brushes are the workhorse of any auto scrubber. Aikerui manufactures replacement disc brushes with nylon, polypropylene (PP) and abrasive-impregnated bristles, in diameters from 10\" to 20\" and block styles matched to the most common scrubber decks.",
       "Every brush is built to the original equipment dimensions — block diameter, bore/lug pattern, bristle length and tuft density — so it drops into your machine without adapters. Available with cylindrical or tapered bristles, and in standard or heavy-duty fill for aggressive floor prep.",

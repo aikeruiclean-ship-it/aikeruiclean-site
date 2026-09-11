@@ -6,7 +6,7 @@ import { JsonLd } from "@/components/json-ld";
 export const metadata: Metadata = {
   title: "Supermarket Floor Scrubbers | Retail Stores | Aikerui",
   description:
-    "Quiet, compact floor cleaning machines for supermarkets and retail stores. Walk-behind scrubbers for daytime cleaning with low noise. Factory-direct pricing, global shipping.",
+    "Quiet, compact floor cleaning machines for supermarkets and retail stores. Walk-behind scrubbers for daytime cleaning with low noise.",
   keywords: [
     "supermarket floor cleaning machine",
     "retail store floor scrubber",

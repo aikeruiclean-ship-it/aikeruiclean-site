@@ -137,7 +137,7 @@ export default function FloorScrubberQuotePage() {
           "@type": "WebPage",
           name: "Floor Scrubber & Sweeper Quote",
           description:
-            "Get factory-direct pricing on industrial floor scrubbers, sweepers and carpet extractors. Walk-behind and ride-on models, CE certified, OEM available. 24-hour quote response.",
+            "Get factory-direct pricing on industrial floor scrubbers, sweepers and carpet extractors. Walk-behind and ride-on models, CE certified, OEM available.",
         }}
       />
 

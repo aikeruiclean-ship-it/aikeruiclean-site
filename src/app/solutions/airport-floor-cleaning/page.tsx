@@ -5,7 +5,7 @@ import { JsonLd } from "@/components/json-ld";
 
 export const metadata: Metadata = {
   title: "Airport Floor Scrubbers | Large-Area Cleaning | Aikerui",
-  description: "High-productivity floor scrubbers for airports, terminals, and concourses. Ride-on machines covering 80,000+ sq ft/hr. Factory-direct pricing, CE certified, global shipping.",
+  description: "High-productivity floor scrubbers for airports, terminals and concourses. Ride-on machines covering 80,000+ sq ft/hr. Factory-direct, CE certified.",
   keywords: ["airport floor cleaning machine", "airport floor scrubber", "terminal floor cleaner", "large area floor scrubber", "concourse cleaning equipment"],
   alternates: { canonical: "https://aikeruiclean.com/solutions/airport-floor-cleaning" },
 };

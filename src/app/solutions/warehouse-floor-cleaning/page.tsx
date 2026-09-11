@@ -7,7 +7,7 @@ import { JsonLd } from "@/components/json-ld";
 export const metadata: Metadata = {
   title: "Warehouse Floor Scrubbers & Sweepers | Aikerui",
   description:
-    "Professional warehouse floor cleaning solutions. Walk-behind and ride-on floor scrubbers for warehouses up to 100,000+ sq ft. Factory-direct pricing, CE certified, global shipping.",
+    "Professional warehouse floor cleaning solutions. Walk-behind and ride-on floor scrubbers for warehouses up to 100,000+ sq ft. Factory-direct pricing.",
   keywords: [
     "warehouse floor cleaning machine",
     "warehouse floor scrubber",

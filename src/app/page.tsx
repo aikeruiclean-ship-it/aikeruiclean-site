@@ -13,7 +13,7 @@ import { getFeaturedProducts, getPartsProducts, categories, getCategoryCounts } 
 export const metadata: Metadata = {
   title: "Industrial Floor Scrubber Manufacturer | Aikerui",
   description:
-    "Aikerui is a China-based manufacturer of industrial floor scrubbers, ride-on sweepers and carpet extractors. Factory-direct pricing, OEM & ODM, CE & ISO 9001, exporting to 50+ countries. Get a quote.",
+    "Aikerui is a China-based manufacturer of industrial floor scrubbers, ride-on sweepers and carpet extractors. Factory-direct pricing, OEM & ODM, CE & ISO 9001.",
   keywords: [
     "industrial floor scrubber",
     "commercial floor scrubber",

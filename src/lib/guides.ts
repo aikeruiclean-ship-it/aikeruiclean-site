@@ -3937,7 +3937,7 @@ const extraGuides: Guide[] = [
     slug: "floor-scrubber-hospital-healthcare-facility",
     title: "Floor Scrubber for Hospitals & Healthcare",
     description:
-      "Medical-grade floor scrubbers for hospitals and healthcare. Ultra-quiet (<60dB), HEPA-filtered, disinfectant-compatible. JCAHO/CDC compliant cleaning solutions.",
+      "Medical-grade floor scrubbers for hospitals and healthcare. Ultra-quiet (<60dB), HEPA-filtered, disinfectant-compatible. JCAHO/CDC compliant.",
     category: "buying-guide",
     readTime: "5 min",
     difficulty: "intermediate",

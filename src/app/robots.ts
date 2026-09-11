@@ -20,11 +20,12 @@ export default function robots(): MetadataRoute.Robots {
           "/*?*sort=",
           "/*?*filter=",
           // 纯跟踪参数：不影响内容，无需抓取
+          // 注意：gclid 已从此列表移除 —— Google Ads 归因参数需可被抓取，
+          // 重复 URL 由页面 canonical 处理（询盘页 canonical 指向无参数版本）
           "/*?*utm_",
           "/*?*ref=",
           "/*?*source=",
           "/*?*fbclid=",
-          "/*?*gclid=",
           "/*?*msclkid=",
           // ── 不再封禁分类/分页参数 ──
           // /*?*category=  /*?*subcategory=  /*?*page=

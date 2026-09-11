@@ -5,6 +5,7 @@ import "./globals.css";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { FloatingCTA } from "@/components/floating-cta";
+import { AttributionTracker } from "@/components/attribution-tracker";
 import { CartProvider } from "@/lib/cart-context";
 
 const geistSans = Geist({
@@ -120,6 +121,8 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col">
         {/* GTM removed — direct gtag.js only (see head) */}
+        {/* 全局 gclid/UTM 捕获：任何落地页进入都持久化，避免跳转到询盘页时丢失归因 */}
+        <AttributionTracker />
         <CartProvider>
           <Header />
           <main className="flex-1">{children}</main>

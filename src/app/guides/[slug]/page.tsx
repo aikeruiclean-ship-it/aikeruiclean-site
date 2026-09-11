@@ -29,6 +29,17 @@ export async function generateStaticParams() {
 // 未预生成的 slug 直接返回真 404（消除 soft-404）
 export const dynamicParams = false;
 
+/** 把 meta description 压到 <= 160 字符（Google 展示宽度）——优先句末截断，其次词边界，不加 "..." */
+function clampDescription(s: string, max = 160): string {
+  const text = (s || "").trim();
+  if (text.length <= max) return text;
+  const cut = text.slice(0, max);
+  const lastStop = Math.max(cut.lastIndexOf(". "), cut.lastIndexOf("? "), cut.lastIndexOf("! "));
+  if (lastStop > max * 0.6) return cut.slice(0, lastStop + 1).trim();
+  const lastSpace = cut.lastIndexOf(" ");
+  return cut.slice(0, lastSpace > 0 ? lastSpace : max).trim().replace(/[,;:\-—]+$/, "");
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const guide = getGuideBySlug(slug);
@@ -38,14 +49,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // 仅当「标题 + 品牌后缀」不超 60 字符时才加后缀，防止超出 Google 展示宽度
   const suffix = " | Aikerui Guides";
   const fullTitle = guide.title + suffix;
+  const description = clampDescription(guide.description);
   return {
     title: fullTitle.length <= 60 ? fullTitle : guide.title,
-    description: guide.description,
+    description,
     alternates: { canonical: `https://aikeruiclean.com/guides/${slug}` },
     authors: [{ name: "Mark Wang", url: "https://aikeruiclean.com/about/mark-xu" }],
     openGraph: {
       title: guide.title,
-      description: guide.description,
+      description,
       type: "article",
       publishedTime: guide.published ? new Date(guide.published).toISOString() : undefined,
       authors: ["https://aikeruiclean.com/about/mark-xu"],

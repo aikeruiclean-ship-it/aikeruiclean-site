@@ -29,7 +29,7 @@ export const MACHINE_CATEGORIES: MachineCategoryDef[] = [
     breadcrumb: "Floor Scrubbers",
     title: "Industrial Floor Scrubbers | Walk-Behind & Ride-On | Aikerui",
     description:
-      "Commercial and industrial floor scrubbers built in our own factory — walk-behind and ride-on models, 17\"-40\" decks, CE certified. Factory-direct B2B pricing, OEM available.",
+      "Commercial and industrial floor scrubbers built in our own factory — walk-behind and ride-on, 17\"-40\" decks, CE certified. Factory-direct B2B pricing.",
     intro: [
       "Aikerui manufactures industrial floor scrubbers for warehouses, factories, supermarkets, airports and commercial facilities. Our range covers walk-behind scrubbers for tight areas through to ride-on machines for large open floors, with working widths from 17 to 40 inches.",
       "Every machine is built in our own factory in Anhui, China and ships CE certified. We supply distributors, importers and facility-service companies with factory-direct pricing, OEM branding and spare-part support from the same production line.",

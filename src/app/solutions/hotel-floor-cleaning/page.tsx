@@ -5,7 +5,7 @@ import { JsonLd } from "@/components/json-ld";
 
 export const metadata: Metadata = {
   title: "Hotel Floor Scrubbers for Guest Areas | Aikerui",
-  description: "Ultra-quiet floor scrubbers for hotels and resorts. Clean guest corridors, lobbies, and kitchens during business hours without disturbing guests. Factory-direct pricing.",
+  description: "Ultra-quiet floor scrubbers for hotels and resorts. Clean guest corridors, lobbies and kitchens during business hours without disturbing guests.",
   keywords: ["hotel floor scrubber", "hospitality floor cleaning", "hotel cleaning machine", "resort floor scrubber", "quiet floor scrubber for hotels"],
   alternates: { canonical: "https://aikeruiclean.com/solutions/hotel-floor-cleaning" },
 };

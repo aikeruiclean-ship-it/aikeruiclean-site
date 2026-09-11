@@ -5,7 +5,7 @@ import { JsonLd } from "@/components/json-ld";
 
 export const metadata: Metadata = {
   title: "Shopping Mall Floor Scrubbers | Retail Centers | Aikerui",
-  description: "Floor scrubbers for shopping malls and retail centers. Quiet daytime operation, fast-drying for food courts, compact for escalator areas. Factory-direct pricing.",
+  description: "Floor scrubbers for shopping malls and retail centers. Quiet daytime operation, fast-drying for food courts, compact for escalator areas.",
   keywords: ["shopping mall floor scrubber", "retail center floor cleaning", "mall floor cleaning machine", "commercial retail scrubber"],
   alternates: { canonical: "https://aikeruiclean.com/solutions/shopping-mall-floor-cleaning" },
 };
