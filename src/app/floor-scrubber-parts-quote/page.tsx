@@ -320,9 +320,9 @@ export default function FloorScrubberQuotePage() {
           <h2 className="text-xl font-bold text-gray-900 mb-4">Related Guides</h2>
           <div className="flex flex-wrap justify-center gap-3">
             <a href="/guides/how-much-does-floor-scrubber-cost" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Floor Scrubber Cost 2026</a>
-            <a href="/guides/industrial-floor-scrubber-buyers-guide" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Buyer's Guide</a>
+            <a href="/guides/industrial-floor-scrubber-complete-guide" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Buyer's Guide</a>
             <a href="/guides/walk-behind-vs-ride-on-scrubber" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Walk-Behind vs Ride-On</a>
-            <a href="/guides/floor-scrubber-brands-comparison" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Brands Compared</a>
+            <a href="/guides/top-floor-scrubber-brands-buyers-guide" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Brands Compared</a>
             <a href="/floor-scrubber-price-guide" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Price Guide</a>
             <a href="/floor-scrubbers" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">All Scrubber Models</a>
           </div>
