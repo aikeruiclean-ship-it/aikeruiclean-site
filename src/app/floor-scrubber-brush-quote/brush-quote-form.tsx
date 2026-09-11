@@ -44,14 +44,29 @@ export function BrushQuoteForm() {
       if (!res.ok) throw new Error("Failed");
       setSubmitted(true);
 
-      // ── Google Ads conversion (双通道 + 兜底) ──
+      // ── Google Ads conversion（增强型转化 + 双通道 + 兜底）──
       if (typeof window !== "undefined") {
         const w = window as any;
         w.dataLayer = w.dataLayer || [];
         w.dataLayer.push({ event: "quote_submit", product: PRODUCT_LABEL });
         w.dataLayer.push(["event", "conversion", { send_to: AW_CONVERSION }]);
+
+        // Ads 后台已启用「增强型转化」→ 必须发送用户数据，否则匹配率低、可能显示未检测到
+        // （gtag 会自动 SHA-256 哈希，无需自行处理）
+        const sendUserData = () => {
+          const email = String(form.email || "").trim().toLowerCase();
+          const phone = String(form.phone || "").replace(/[^\d+]/g, "");
+          if (email || phone) {
+            w.gtag("set", "user_data", {
+              ...(email ? { email } : {}),
+              ...(phone ? { phone_number: phone } : {}),
+            });
+          }
+        };
+
         const fire = () => {
           if (typeof w.gtag === "function") {
+            sendUserData();
             w.gtag("event", "conversion", { send_to: AW_CONVERSION });
           }
         };
@@ -62,6 +77,7 @@ export function BrushQuoteForm() {
             tries++;
             if (typeof w.gtag === "function") {
               clearInterval(retry);
+              sendUserData();
               w.gtag("event", "conversion", { send_to: AW_CONVERSION });
             } else if (tries >= 15) {
               clearInterval(retry);

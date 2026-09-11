@@ -103,8 +103,22 @@ export default function FloorScrubberQuotePage() {
         w.dataLayer = w.dataLayer || [];
         w.dataLayer.push({ event: "quote_submit", product: "Industrial Floor Scrubber (Organic Quote)" });
         w.dataLayer.push(["event", "conversion", { send_to: "AW-18359776225/AKHbCP6CodwcEOHnz7JE" }]);
+
+        // 增强型转化：Ads 后台已启用 → 发送用户数据提升匹配率（gtag 自动哈希）
+        const sendUserData = () => {
+          const email = String(form.email || "").trim().toLowerCase();
+          const phone = String(form.phone || "").replace(/[^\d+]/g, "");
+          if (email || phone) {
+            w.gtag("set", "user_data", {
+              ...(email ? { email } : {}),
+              ...(phone ? { phone_number: phone } : {}),
+            });
+          }
+        };
+
         const fireConversion = () => {
           if (typeof w.gtag === "function") {
+            sendUserData();
             w.gtag("event", "conversion", { send_to: "AW-18359776225/AKHbCP6CodwcEOHnz7JE" });
           }
         };
@@ -115,6 +129,7 @@ export default function FloorScrubberQuotePage() {
             tries++;
             if (typeof w.gtag === "function") {
               clearInterval(retry);
+              sendUserData();
               w.gtag("event", "conversion", { send_to: "AW-18359776225/AKHbCP6CodwcEOHnz7JE" });
             } else if (tries >= 15) {
               clearInterval(retry);
