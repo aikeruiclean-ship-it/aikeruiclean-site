@@ -3,14 +3,18 @@ import type { NextRequest } from "next/server";
 
 const LOCALES = ["es", "ar", "ru", "fr"];
 
-// www → 裸域 301（消除重复内容/权重分裂）
-// + 其他语言路径的兜底重写：/{locale}/xxx → /xxx（英语页）
-//   （阶段1：外语只翻译了首页；其余路径保留语言前缀的 URL，
-//     实际渲染英语内容，避免 404，且为阶段2接入做好准备）
-export function middleware(request: NextRequest) {
+/** 后台认证 token（与 /api/admin/login 签发的一致） */
+async function adminToken() {
+  const pwd = process.env.ADMIN_PASSWORD || "aikerui2026";
+  const data = new TextEncoder().encode("aikerui-admin:" + pwd);
+  const buf = await crypto.subtle.digest("SHA-256", data);
+  return [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, "0")).join("");
+}
+
+export async function middleware(request: NextRequest) {
   const host = request.headers.get("host") || "";
 
-  // 1) www → 裸域
+  // 1) www → 裸域 301（消除重复内容/权重分裂）
   if (host === "www.aikeruiclean.com") {
     const url = request.nextUrl.clone();
     url.host = "aikeruiclean.com";
@@ -18,9 +22,22 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(url, 301);
   }
 
-  // 2) Locale fallback: /{locale}/xxx（xxx 尚未翻译）→ 301 到英语 /xxx
-  //    避免"英语内容 + 外语 URL"的重复内容问题（阶段2翻译后再放开）
   const { pathname } = request.nextUrl;
+
+  // 2) 后台统一认证：/admin/* 需登录（登录页本身除外）
+  if (pathname.startsWith("/admin") && pathname !== "/admin/login") {
+    const token = request.cookies.get("aikerui_admin")?.value;
+    const expected = await adminToken();
+    if (token !== expected) {
+      const url = request.nextUrl.clone();
+      url.pathname = "/admin/login";
+      url.search = pathname === "/admin" ? "" : `?from=${encodeURIComponent(pathname)}`;
+      return NextResponse.redirect(url);
+    }
+  }
+
+  // 3) Locale fallback: /{locale}/xxx（xxx 尚未翻译）→ 301 到英语 /xxx
+  //    避免"英语内容 + 外语 URL"的重复内容问题（阶段2翻译后再放开）
   const seg = pathname.split("/")[1];
   if (LOCALES.includes(seg)) {
     const rest = pathname.slice(seg.length + 1);
