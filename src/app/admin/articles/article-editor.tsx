@@ -24,6 +24,16 @@ const CLUSTERS = [
   "Applications",
 ];
 
+export interface KeywordEntry {
+  keyword: string;
+  cluster: string;
+  intent: string;
+  businessValue: string;
+  targetUrl: string;
+  pageType: string;
+  title?: string;
+}
+
 const EMPTY_SECTION: Section = { heading: "", content: "", items: "", image: "", imageAlt: "" };
 
 const BFT = "w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-accent";
@@ -40,7 +50,7 @@ function Field({ label, hint, children }: { label: string; hint?: string; childr
   );
 }
 
-export function ArticleEditor() {
+export function ArticleEditor({ keywords }: { keywords: KeywordEntry[] }) {
   const [form, setForm] = useState({
     slug: "",
     title: "",
@@ -63,6 +73,52 @@ export function ArticleEditor() {
   const [publishing, setPublishing] = useState(false);
 
   const set = (k: string, v: unknown) => setForm((f) => ({ ...f, [k]: v }));
+
+  // ── Step 1：选词 + 抢词检查 ──
+  const [kwQuery, setKwQuery] = useState("");
+
+  const kwMatches = useMemo(() => {
+    const ql = kwQuery.trim().toLowerCase();
+    if (!ql) return [];
+    return keywords.filter((k) => k.keyword.toLowerCase().includes(ql)).slice(0, 8);
+  }, [keywords, kwQuery]);
+
+  // 抢词检查：当前 primaryKeyword 是否与库内已有页面冲突
+  const cannibal = useMemo(() => {
+    const input = (form.primaryKeyword || "").trim().toLowerCase();
+    if (!input) return null;
+    const words = input.split(/\s+/).filter((w) => w.length > 2);
+    const scored = keywords
+      .map((k) => {
+        const kl = k.keyword.toLowerCase();
+        let score = 0;
+        if (kl === input) score = 100;
+        else if (kl.includes(input) || input.includes(kl)) score = 70;
+        else {
+          const overlap = words.filter((w) => kl.includes(w)).length;
+          score = words.length ? Math.round((overlap / words.length) * 60) : 0;
+        }
+        return { k, score };
+      })
+      .filter((x) => x.score >= 40)
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 5);
+    return {
+      scored,
+      verdict: scored.some((x) => x.score >= 70) ? "high" : scored.length ? "medium" : "low",
+    } as const;
+  }, [keywords, form.primaryKeyword]);
+
+  const pickKeyword = (k: KeywordEntry) => {
+    setForm((f) => ({
+      ...f,
+      primaryKeyword: k.keyword,
+      cluster: CLUSTERS.includes(k.cluster) ? k.cluster : f.cluster,
+      searchIntent: k.intent,
+      slug: f.slug || k.keyword.replace(/\s+/g, "-"),
+    }));
+    setKwQuery("");
+  };
 
   // ── 实时检查（标准 checklist）──
   const report = useMemo(() => {
@@ -130,8 +186,75 @@ export function ArticleEditor() {
     <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-6">
       {/* ── 主表单 ── */}
       <div className="space-y-5">
+        {/* ── Step 1：选关键词 + 抢词检查 ── */}
+        <div className="bg-white rounded-xl border-2 border-primary/25 p-5">
+          <h2 className="font-bold text-gray-900 mb-1">Step 1 — 选择关键词</h2>
+          <p className="text-xs text-gray-500 mb-4">
+            从 {keywords.length} 条关键词库选（点行即填），或直接输入新主词 → 立即抢词检查
+          </p>
+
+          <input
+            className={BFT}
+            value={kwQuery}
+            onChange={(e) => setKwQuery(e.target.value)}
+            placeholder="搜索关键词库，或直接输入新主词…"
+          />
+
+          {kwMatches.length > 0 && (
+            <div className="mt-2 border border-gray-200 rounded-lg divide-y divide-gray-100 overflow-hidden">
+              {kwMatches.map((k) => (
+                <button
+                  key={k.targetUrl + k.keyword}
+                  type="button"
+                  onClick={() => pickKeyword(k)}
+                  className="w-full text-left px-3 py-2 hover:bg-gray-50 flex items-center gap-3 text-sm"
+                >
+                  <span className="flex-1 text-gray-800">{k.keyword}</span>
+                  <span className="text-xs text-gray-400">{k.cluster}</span>
+                  <span className="text-xs text-gray-500">{k.intent}</span>
+                  <span className="text-xs font-mono text-gray-400">{k.targetUrl}</span>
+                </button>
+              ))}
+            </div>
+          )}
+
+          {/* 抢词检查结果 */}
+          {cannibal && (
+            <div className="mt-4">
+              <div
+                className={`rounded-lg p-3 text-xs border ${
+                  cannibal.verdict === "high"
+                    ? "bg-red-50 border-red-200 text-red-700"
+                    : cannibal.verdict === "medium"
+                    ? "bg-amber-50 border-amber-200 text-amber-700"
+                    : "bg-green-50 border-green-200 text-green-700"
+                }`}
+              >
+                {cannibal.verdict === "high" &&
+                  "高风险：库内已有高度接近的关键词 → 优先复用现有 URL 扩写，不要新建同意图页面"}
+                {cannibal.verdict === "medium" &&
+                  "中等风险：存在部分重叠 → 确认新文章的搜索意图是否真的不同"}
+                {cannibal.verdict === "low" && "低风险：未发现明显冲突，可以新建"}
+              </div>
+              {cannibal.scored.length > 0 && (
+                <div className="mt-2 space-y-1">
+                  {cannibal.scored.map(({ k, score }) => (
+                    <div key={k.targetUrl + k.keyword} className="flex items-center gap-3 text-xs bg-gray-50 rounded px-3 py-1.5">
+                      <span className="font-mono text-gray-400 w-9">{score}%</span>
+                      <span className="flex-1 text-gray-700">{k.keyword}</span>
+                      <a href={k.targetUrl} target="_blank" rel="noopener" className="text-accent hover:underline font-mono">
+                        {k.targetUrl}
+                      </a>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
+        </div>
+
         <div className="bg-white rounded-xl border border-gray-200 p-5">
-          <h2 className="font-bold text-gray-900 mb-4">基础信息</h2>
+          <h2 className="font-bold text-gray-900 mb-4">Step 2 — 基础信息</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <Field label="Title" hint="≤60 字符">
               <input className={BFT} value={form.title} onChange={(e) => set("title", e.target.value)} placeholder="Top 10 ... 2026" />
