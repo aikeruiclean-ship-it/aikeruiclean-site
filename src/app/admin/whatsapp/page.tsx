@@ -14,18 +14,9 @@ type WaClick = {
 export default function WhatsAppAdminPage() {
   const [clicks, setClicks] = useState<WaClick[]>([]);
   const [loading, setLoading] = useState(true);
-  const [authed, setAuthed] = useState(false);
-  const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
 
   useEffect(() => {
-    const token = sessionStorage.getItem("aikerui_admin");
-    if (token === "aikerui2026") {
-      setAuthed(true);
-      loadClicks();
-    } else {
-      setLoading(false);
-    }
+    loadClicks();
   }, []);
 
   const loadClicks = async () => {
@@ -40,39 +31,6 @@ export default function WhatsAppAdminPage() {
     }
   };
 
-  const handleAuth = () => {
-    if (password === "aikerui2026") {
-      sessionStorage.setItem("aikerui_admin", "aikerui2026");
-      setAuthed(true);
-      setError("");
-      loadClicks();
-    } else {
-      setError("Wrong password");
-    }
-  };
-
-  if (!authed) {
-    return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="bg-white p-8 rounded-xl shadow-lg w-96">
-          <h1 className="text-xl font-bold text-gray-900 mb-4">WhatsApp Leads Admin</h1>
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            placeholder="Admin password"
-            onKeyDown={(e) => e.key === "Enter" && handleAuth()}
-            className="w-full px-4 py-2.5 border border-gray-300 rounded-lg mb-3"
-          />
-          {error && <p className="text-red-500 text-sm mb-3">{error}</p>}
-          <button onClick={handleAuth} className="w-full py-2.5 bg-primary text-white font-semibold rounded-lg">
-            Login
-          </button>
-        </div>
-      </div>
-    );
-  }
-
   // Stats
   const total = clicks.length;
   const bySales: Record<string, number> = {};
@@ -85,7 +43,13 @@ export default function WhatsAppAdminPage() {
       <div className="max-w-6xl mx-auto">
         <div className="flex justify-between items-center mb-6">
           <h1 className="text-2xl font-bold text-gray-900">WhatsApp Click Monitor</h1>
-          <button onClick={() => { sessionStorage.removeItem("aikerui_admin"); setAuthed(false); }} className="text-sm text-gray-500 hover:text-gray-700">
+          <button
+            onClick={async () => {
+              await fetch("/api/admin/login", { method: "DELETE" });
+              window.location.href = "/admin/login";
+            }}
+            className="text-sm text-gray-500 hover:text-gray-700"
+          >
             Logout
           </button>
         </div>

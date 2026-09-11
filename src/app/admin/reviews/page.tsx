@@ -17,36 +17,26 @@ interface Review {
 
 export default function AdminReviewsPage() {
   const [reviews, setReviews] = useState<Review[]>([]);
-  const [token, setToken] = useState("");
-  const [authed, setAuthed] = useState(false);
   const [error, setError] = useState("");
 
   const fetchReviews = useCallback(async () => {
-    const res = await fetch("/api/reviews", {
-      headers: { Authorization: `Bearer ${token}` },
-    });
+    const res = await fetch("/api/reviews");
     if (res.ok) {
-      const data = await res.json();
-      setReviews(data);
+      setReviews(await res.json());
       setError("");
     } else {
-      setError("Failed to load reviews — check password");
+      setError("Failed to load reviews");
     }
-  }, [token]);
+  }, []);
 
-  const handleLogin = async (e: React.FormEvent) => {
-    e.preventDefault();
-    await fetchReviews();
-    if (!error) setAuthed(true);
-  };
+  useEffect(() => {
+    fetchReviews();
+  }, [fetchReviews]);
 
   const handleAction = async (id: number, action: "approve" | "reject") => {
     const res = await fetch("/api/reviews", {
       method: "PATCH",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${token}`,
-      },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ id, action }),
     });
     if (res.ok) {
@@ -57,27 +47,6 @@ export default function AdminReviewsPage() {
       );
     }
   };
-
-  if (!authed) {
-    return (
-      <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-        <form onSubmit={handleLogin} className="bg-white p-8 rounded-2xl shadow-lg w-full max-w-sm">
-          <h1 className="text-xl font-bold text-gray-900 mb-4">Review Admin</h1>
-          <input
-            type="password"
-            placeholder="Admin password"
-            value={token}
-            onChange={(e) => setToken(e.target.value)}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary mb-4"
-          />
-          {error && <p className="text-sm text-red-600 mb-4">{error}</p>}
-          <button type="submit" className="w-full py-3 bg-primary text-white font-bold rounded-lg">
-            Login
-          </button>
-        </form>
-      </div>
-    );
-  }
 
   const pending = reviews.filter((r) => !r.approved);
   const approved = reviews.filter((r) => r.approved);

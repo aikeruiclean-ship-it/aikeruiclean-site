@@ -41,8 +41,6 @@ const STATUS_COLORS: Record<string, string> = {
 };
 
 export default function AdminLeadsPage() {
-  const [password, setPassword] = useState("");
-  const [token, setToken] = useState("");
   const [leads, setLeads] = useState<Lead[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -51,12 +49,9 @@ export default function AdminLeadsPage() {
   const [statusFilter, setStatusFilter] = useState("all");
 
   const fetchLeads = useCallback(async () => {
-    if (!token) return;
     setLoading(true);
     try {
-      const res = await fetch("/api/leads", {
-        headers: { Authorization: `Bearer ${token}` },
-      });
+      const res = await fetch("/api/leads");
       if (!res.ok) throw new Error("Auth failed");
       setLeads(await res.json());
       setError("");
@@ -65,20 +60,17 @@ export default function AdminLeadsPage() {
     } finally {
       setLoading(false);
     }
-  }, [token]);
+  }, []);
 
   useEffect(() => {
-    if (token) fetchLeads();
-  }, [token, fetchLeads]);
+    fetchLeads();
+  }, [fetchLeads]);
 
   const updateStatus = async (id: number, status: string) => {
     try {
       await fetch("/api/leads", {
         method: "PATCH",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ id, status }),
       });
       fetchLeads();
@@ -86,44 +78,6 @@ export default function AdminLeadsPage() {
       /* ignore */
     }
   };
-
-  const handleLogin = (e: React.FormEvent) => {
-    e.preventDefault();
-    setToken(password);
-  };
-
-  // Auth screen
-  if (!token) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-100">
-        <form
-          onSubmit={handleLogin}
-          className="bg-white p-8 rounded-2xl shadow-lg max-w-sm w-full"
-        >
-          <h1 className="text-xl font-bold text-gray-900 mb-4">
-            Aikerui Leads
-          </h1>
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            placeholder="Enter password"
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm mb-4 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none"
-            autoFocus
-          />
-          <button
-            type="submit"
-            className="w-full py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-light transition-colors"
-          >
-            Unlock
-          </button>
-          <p className="text-xs text-gray-400 mt-3 text-center">
-            Default: aikerui2026
-          </p>
-        </form>
-      </div>
-    );
-  }
 
   // Filter & search
   const filtered = leads.filter((l) => {

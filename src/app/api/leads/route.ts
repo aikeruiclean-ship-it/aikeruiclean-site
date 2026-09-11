@@ -1,18 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getLeads, updateLead } from "@/lib/lead-store";
-
-const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "aikerui2026";
-
-function checkAuth(request: NextRequest): boolean {
-  const auth = request.headers.get("authorization");
-  if (!auth) return false;
-  const token = auth.replace("Bearer ", "");
-  return token === ADMIN_PASSWORD;
-}
+import { isAdminRequest } from "@/lib/admin-auth";
 
 // GET: list all leads
 export async function GET(request: NextRequest) {
-  if (!checkAuth(request)) {
+  if (!(await isAdminRequest(request))) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
   return NextResponse.json(getLeads());
@@ -20,7 +12,7 @@ export async function GET(request: NextRequest) {
 
 // PATCH: update lead status/notes
 export async function PATCH(request: NextRequest) {
-  if (!checkAuth(request)) {
+  if (!(await isAdminRequest(request))) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
   try {

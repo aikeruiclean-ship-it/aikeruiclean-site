@@ -1,13 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { saveReview, getReviews, approveReview, rejectReview } from "@/lib/review-store";
-
-const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "aikerui2026";
-
-function checkAuth(request: NextRequest): boolean {
-  const auth = request.headers.get("authorization");
-  if (!auth) return false;
-  return auth.replace("Bearer ", "") === ADMIN_PASSWORD;
-}
+import { isAdminRequest } from "@/lib/admin-auth";
 
 // POST: submit a new review (public, no auth)
 export async function POST(request: NextRequest) {
@@ -44,7 +37,7 @@ export async function POST(request: NextRequest) {
 
 // GET: list reviews (admin, requires auth)
 export async function GET(request: NextRequest) {
-  if (!checkAuth(request)) {
+  if (!(await isAdminRequest(request))) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
   return NextResponse.json(getReviews());
@@ -52,7 +45,7 @@ export async function GET(request: NextRequest) {
 
 // PATCH: approve or reject a review (admin)
 export async function PATCH(request: NextRequest) {
-  if (!checkAuth(request)) {
+  if (!(await isAdminRequest(request))) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
   try {

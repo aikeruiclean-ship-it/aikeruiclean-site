@@ -48,6 +48,8 @@ const nextConfig: NextConfig = {
 
 async redirects() {
   return [
+    // 供应商页去除：与 /floor-scrubbers 及询价页关键词相食 → 301 到整机分类页
+    { source: "/floor-scrubber-supplier", destination: "/floor-scrubbers", permanent: true },
     // 整机询价页合并：两个整机询价页相食 → industrial-quote 永久重定向到 parts-quote（后者内容已整机化）
     { source: "/industrial-floor-scrubber-quote", destination: "/floor-scrubber-parts-quote", permanent: true },
     { source: "/products/62276226", destination: "/products/weizhuo-auto-scrubber-x3b-3d-floor-rotary-brush-and-pad-drive", permanent: true },

@@ -22,7 +22,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/terms`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.2 },
     { url: `${baseUrl}/floor-scrubber-parts-quote`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
     { url: `${baseUrl}/floor-scrubber-price-guide`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.85 },
-    { url: `${baseUrl}/floor-scrubber-supplier`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.85 },
     { url: `${baseUrl}/solutions/warehouse-floor-cleaning`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/solutions/factory-floor-cleaning`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/solutions/supermarket-floor-cleaning`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
