@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { ReferenceUpload } from "./reference-upload";
 
 interface Section {
   heading: string;
@@ -405,8 +406,10 @@ export function ArticleEditor({ keywords }: { keywords: KeywordEntry[] }) {
         </div>
       </div>
 
-      {/* ── 右侧检查器 ── */}
+      {/* ── 右侧：参考资料 + 检查器 ── */}
       <div className="lg:sticky lg:top-4 h-fit space-y-4">
+        <ReferenceUpload />
+
         <div className="bg-white rounded-xl border-2 border-accent/30 p-5">
           <div className="flex items-center justify-between mb-3">
             <h2 className="font-bold text-gray-900">发布前检查</h2>
