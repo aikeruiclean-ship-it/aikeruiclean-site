@@ -3828,6 +3828,19 @@ const extraGuides: Guide[] = [
         items: ["Founded: 2005 | HQ: Guangzhou, China","Price: $", "Quality: ★★★☆☆", "Best for: Asian, African, and Middle Eastern budget buyers"],
       },
       {
+        heading: "US & Regional Players Worth Knowing",
+        content:
+          "Beyond the global brands above, several regional manufacturers and dealers matter if you buy in North America, where domestic-manufacturing claims and local service networks carry real weight in tenders. These are the names that show up most often in US SERPs for industrial cleaning equipment.",
+        items: [
+          "Factory Cat (USA) — builds scrubbers and sweepers domestically; sells on American-made manufacturing and serviceability, which helps in public-sector and municipal tenders.",
+          "Goodway Technologies (USA) — industrial cleaning equipment with a strong service and rental footprint across North America.",
+          "Intelligent Design & Manufacturing (USA) — positions its X-Scrub series on delivering fresh water rather than recirculating dirty water, a differentiator worth understanding when comparing specifications.",
+          "Thesweeper.com (USA) — dealer channel for commercial scrubbers, including certified pre-owned machines for buyers with tight capital budgets.",
+          "DENIOS (Germany / USA) — industrial cleaning and work-safety equipment, strong in food processing and chemical plants with FDA-compliant, metal-detectable tooling.",
+          "Robotics entrants — autonomous scrubbers and sweepers are entering the category. Treat early autonomy claims carefully and verify navigation performance on your own floor plan before committing.",
+        ],
+      },
+      {
         heading: "The Price Reality",
         content: "A ride-on scrubber from Tennant costs $18,000-35,000 through a dealer. The same specifications from a factory-direct manufacturer cost $9,000-18,000. The difference isn't quality — it's the dealer markup. For buyers ordering 3+ machines, factory-direct sourcing saves $25,000-50,000+.",
       },
