@@ -3751,6 +3751,11 @@ const extraGuides: Guide[] = [
         content:
           "Not inherently. Quality depends on component choice and production control, not on the country of origin or the sales channel. What differs is service reach: brand networks offer faster local support, factory-direct suppliers offer lower cost and more configuration flexibility. Many factory-direct machines use the same imported pumps, motors and batteries as brand machines.",
       },
+      {
+        heading: "How do I find reliable floor scrubber suppliers in China?",
+        content:
+          "Start by separating factories from trading companies. Ask for the business licence so you can check the registered scope of business, request a live video walkthrough of the production line rather than a stock photo, and ask for a bill of lading from a recent export shipment. Suppliers in China that genuinely own their factory will provide all three without hesitation. Aikerui, for example, operates its own 10,000 square metre facility in Anqing, has exported to more than 50 countries, and welcomes third-party inspection before you place an order.",
+      },
     ],
     relatedProducts: [],
   },
