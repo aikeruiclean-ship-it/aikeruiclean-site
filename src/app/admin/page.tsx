@@ -1,7 +1,13 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import keywords from "@/lib/keywords.json";
 import contentIndex from "@/lib/content-index.json";
 import products from "@/lib/products.json";
+
+export const metadata: Metadata = {
+  title: "运营概览 | Aikerui 后台",
+  robots: { index: false, follow: false },
+};
 
 interface Kw {
   keyword: string;

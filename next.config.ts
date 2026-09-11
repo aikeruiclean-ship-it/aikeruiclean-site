@@ -48,6 +48,8 @@ const nextConfig: NextConfig = {
 
 async redirects() {
   return [
+    // 重复 guide 合并：walk-behind-vs-ride-on-scrubber-overview 已并入 ...-scrubber（内容互补合并）
+    { source: "/guides/walk-behind-vs-ride-on-scrubber-overview", destination: "/guides/walk-behind-vs-ride-on-scrubber", permanent: true },
     // 供应商页去除：与 /floor-scrubbers 及询价页关键词相食 → 301 到整机分类页
     { source: "/floor-scrubber-supplier", destination: "/floor-scrubbers", permanent: true },
     // 整机询价页合并：两个整机询价页相食 → industrial-quote 永久重定向到 parts-quote（后者内容已整机化）

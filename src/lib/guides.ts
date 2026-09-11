@@ -137,7 +137,7 @@ const guides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/B460-Scrubber-01.webp",
     published: "2026-06-01",
-    relatedGuides: ["walk-behind-vs-ride-on-scrubber-overview", "industrial-floor-scrubber-complete-guide", "walk-behind-vs-ride-on-scrubber"],
+    relatedGuides: ["industrial-floor-scrubber-complete-guide", "walk-behind-vs-ride-on-scrubber"],
     sections: [
       {
         heading: "What Type of Floor Scrubber Do You Need?",
@@ -194,59 +194,6 @@ const guides: Guide[] = [
         heading: "Why Choose Aikerui Floor Scrubbers?",
         content:
           "Aikerui offers a full range of walk-behind and ride-on scrubbers designed for global industrial applications. Our machines feature durable steel frames, reliable motor systems, and easy-to-service components. With CE certification, competitive pricing, and a 1-year warranty, Aikerui provides excellent value for distributors, rental companies, and facility managers worldwide. All machines come with detailed manuals and video support.",
-      },
-    ],
-    relatedProducts: [],
-  },
-  {
-    slug: "walk-behind-vs-ride-on-scrubber-overview",
-    title: "Walk-Behind vs Ride-On Floor Scrubber: Which Is Better?",
-    description:
-      "A detailed comparison of walk-behind and ride-on floor scrubbers. Compare productivity, cost, operator experience, and find the right match for your facility size and cleaning needs.",
-    category: "comparison",
-    readTime: "6 min",
-    difficulty: "beginner",
-    thumbnail: "/images/A50-Scrubber-02.webp",
-    published: "2026-06-01",
-    relatedGuides: ["walk-behind-vs-ride-on-scrubber", "how-to-choose-a-floor-scrubber", "disc-brush-vs-roller-brush-scrubber"],
-    sections: [
-      {
-        heading: "Walk-Behind Floor Scrubbers",
-        content:
-          "Walk-behind scrubbers are the most common type of floor scrubber for small to medium facilities. The operator walks behind the machine, guiding it across the floor. They are generally more affordable, easier to transport, and suitable for facilities with narrow aisles and multiple rooms.",
-        items: [
-          "Price Range: $3,000–$15,000",
-          "Cleaning Width: 17–34 inches",
-          "Productivity: 12,000–35,000 sq ft/hour",
-          "Best For: Retail stores, restaurants, small warehouses, clinics",
-          "Pros: Lower cost, maneuverable, easier to transport, simpler maintenance",
-          "Cons: Operator fatigue over long shifts, slower coverage of large areas",
-        ],
-      },
-      {
-        heading: "Ride-On Floor Scrubbers",
-        content:
-          "Ride-on scrubbers allow the operator to sit or stand while cleaning, significantly reducing fatigue and increasing productivity. These machines are built for large facilities where cleaning efficiency and operator comfort are priorities. Most ride-on models offer larger tanks and wider cleaning paths.",
-        image: "/images/A50-Scrubber-02.webp",
-        imageAlt: "walk behind vs ride on scrubber overview",
-        items: [
-          "Price Range: $12,000–$40,000+",
-          "Cleaning Width: 28–50 inches",
-          "Productivity: 25,000–80,000 sq ft/hour",
-          "Best For: Warehouses, factories, airports, shopping malls, parking garages",
-          "Pros: High productivity, operator comfort, larger tanks, better water recovery",
-          "Cons: Higher cost, requires more space to maneuver, heavier, difficult to transport",
-        ],
-      },
-      {
-        heading: "Cost Comparison: Total Cost of Ownership",
-        content:
-          "While ride-on scrubbers have a higher upfront cost, they often provide better ROI for large facilities. A ride-on scrubber cleaning 50,000 sq ft per hour vs a walk-behind at 20,000 sq ft per hour means the ride-on pays for itself in labor savings over time. For facilities under 20,000 sq ft, a walk-behind is typically more cost-effective.",
-      },
-      {
-        heading: "Decision Matrix",
-        content:
-          "Use this simple matrix to decide: if your facility is under 20,000 sq ft, has narrow aisles (under 5 ft wide), or requires cleaning across multiple floors, choose a walk-behind. If your facility is over 40,000 sq ft with wide aisles, operates on a single level, and you clean for 4+ hours per day, choose a ride-on. Between 20,000–40,000 sq ft, consider factors like budget, operator availability, and growth plans.",
       },
     ],
     relatedProducts: [],
@@ -1045,7 +992,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/A50-Scrubber-03.webp",
     published: "2026-06-08",
-    relatedGuides: ["walk-behind-vs-ride-on-scrubber-overview", "walk-behind-vs-ride-on-scrubber", "how-to-choose-a-floor-scrubber"],
+    relatedGuides: ["walk-behind-vs-ride-on-scrubber", "how-to-choose-a-floor-scrubber"],
     videoUrl: "https://x.com/mark_xu71710/status/2064637551541878998",
     sections: [
       { heading: "Compact Design", content: "The A50 is designed with a compact footprint of 1300x550x1100mm.", items: ["Dimensions: 1300x550x1100mm", "Cleaning width: 500mm", "Ideal for facilities under 10,000 sq ft"] },
@@ -1514,7 +1461,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/A50-Scrubber-05.webp",
     published: "2026-06-26",
-    relatedGuides: ["walk-behind-vs-ride-on-scrubber-overview", "disc-brush-vs-roller-brush-scrubber", "best-floor-scrubber-small-business"],
+    relatedGuides: ["disc-brush-vs-roller-brush-scrubber", "best-floor-scrubber-small-business"],
     sections: [
       {
         heading: "The Core Difference",
@@ -1538,6 +1485,11 @@ const extraGuides: Guide[] = [
         ],
       },
       {
+        heading: "Cost Comparison: Total Cost of Ownership",
+        content:
+          "While ride-on scrubbers have a higher upfront cost, they often provide better ROI for large facilities. A ride-on scrubber cleaning 50,000 sq ft per hour vs a walk-behind at 20,000 sq ft per hour means the ride-on pays for itself in labor savings over time. For facilities under 20,000 sq ft, a walk-behind is typically more cost-effective.",
+      },
+      {
         heading: "Choose Walk-Behind If…",
         content:
           "Your facility is under 20,000 sq ft, has narrow aisles (less than 36 inches), or you clean multiple small areas on different floors. Walk-behind scrubbers are also ideal for businesses with a lower initial budget or those that need to move the machine between buildings. Their compact size makes storage and transport easier.",
@@ -1552,6 +1504,11 @@ const extraGuides: Guide[] = [
         content:
           "Some manufacturers offer a 'stand-on' scrubber that splits the difference — the operator stands on a rear platform rather than sitting. These combine the maneuverability of a walk-behind with the speed of a ride-on, and are increasingly popular for medium-sized facilities. However, they are less common and may have fewer options for attachments and accessories.",
       },
+      {
+        heading: "Decision Matrix",
+        content:
+          "Use this simple matrix to decide: if your facility is under 20,000 sq ft, has narrow aisles (under 5 ft wide), or requires cleaning across multiple floors, choose a walk-behind. If your facility is over 40,000 sq ft with wide aisles, operates on a single level, and you clean for 4+ hours per day, choose a ride-on. Between 20,000–40,000 sq ft, consider factors like budget, operator availability, and growth plans.",
+      },
     ],
     relatedProducts: [],
   },
@@ -1565,7 +1522,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101521634780.webp",
     published: "2026-06-26",
-    relatedGuides: ["walk-behind-vs-ride-on-scrubber", "walk-behind-vs-ride-on-scrubber-overview", "floor-scrubber-disc-brush-buying-guide"],
+    relatedGuides: ["walk-behind-vs-ride-on-scrubber", "floor-scrubber-disc-brush-buying-guide"],
     sections: [
       {
         heading: "Two Different Cleaning Mechanisms",
@@ -3421,7 +3378,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101536061230.webp",
     published: "2026-07-14",
-    relatedGuides: ["walk-behind-vs-ride-on-scrubber-overview", "walk-behind-vs-ride-on-scrubber", "disc-brush-vs-roller-brush-scrubber"],
+    relatedGuides: ["walk-behind-vs-ride-on-scrubber", "disc-brush-vs-roller-brush-scrubber"],
     sections: [
       {
         heading: "The Allure of a Used Floor Scrubber",
@@ -4167,7 +4124,7 @@ const extraGuides: Guide[] = [
     difficulty: "intermediate",
     thumbnail: "/images/parts/101559536107.webp",
     published: "2026-07-15",
-    relatedGuides: ["how-to-choose-a-floor-scrubber", "floor-scrubber-warranty-comparison", "walk-behind-vs-ride-on-scrubber-overview"],
+    relatedGuides: ["how-to-choose-a-floor-scrubber", "floor-scrubber-warranty-comparison"],
     sections: [
       {
         heading: "Why Hospital Cleaning Is Unlike Any Other",
