@@ -48,6 +48,9 @@ const nextConfig: NextConfig = {
 
 async redirects() {
   return [
+    // 询价页旧的错误内链目标（外部可能仍在引用）→ 301 到正确页面
+    { source: "/guides/industrial-floor-scrubber-buyers-guide", destination: "/guides/industrial-floor-scrubber-complete-guide", permanent: true },
+    { source: "/guides/floor-scrubber-brands-comparison", destination: "/guides/top-floor-scrubber-brands-buyers-guide", permanent: true },
     // 重复 guide 合并：walk-behind-vs-ride-on-scrubber-overview 已并入 ...-scrubber（内容互补合并）
     { source: "/guides/walk-behind-vs-ride-on-scrubber-overview", destination: "/guides/walk-behind-vs-ride-on-scrubber", permanent: true },
     // 供应商页去除：与 /floor-scrubbers 及询价页关键词相食 → 301 到整机分类页
