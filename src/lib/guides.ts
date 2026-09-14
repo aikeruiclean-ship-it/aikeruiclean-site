@@ -107,7 +107,7 @@ const guides: Guide[] = [
       {
         heading: "Buying Direct from the Manufacturer",
         content:
-          "As an industrial floor scrubber manufacturer, Aikerui sells direct. The company works without distributors, so it also supplies replacement floor scrubber parts, consumables and after-sales for every machine it ships.",
+          "Aikerui is an industrial floor scrubber manufacturer and floor scrubber supplier. It sells direct, with no distributor layer in between. That also means replacement floor scrubber parts, consumables and after-sales come from the same source as the machine.",
       },
       {
         heading: "Where to Go Next",
