@@ -30,7 +30,7 @@ const guides: Guide[] = [
     slug: "industrial-floor-scrubber-buying-guide",
     title: "Industrial Floor Scrubber Buying Guide 2026 | Aikerui",
     description:
-      "How to choose an industrial floor scrubber: machine types, sizing by square footage, power options, factory-direct supplier pricing and 5-year cost of ownership.",
+      "Choose the right industrial floor scrubber: machine types, sizing, power options and factory-direct pricing. Includes a 5-year cost of ownership breakdown.",
     category: "buying-guide",
     readTime: "10 min",
     difficulty: "beginner",
@@ -40,9 +40,20 @@ const guides: Guide[] = [
       {
         heading: "What Counts as an Industrial Floor Scrubber",
         content:
-          "An industrial floor scrubber (and industrial floor sweepers for debris-heavy areas) is a ride-on or walk-behind machine built for repeated, high-volume cleaning in industrial, retail, healthcare and logistics environments. It differs from consumer machines in three measurable ways: cleaning path (20 inches and wider), solution and recovery tank capacity (20 litres and up), and duty cycle. Consumer scrubbers are designed for 20-40 minutes of occasional use; commercial units are rated for 4-8 hours of continuous operation per shift. Industrial floor scrubbers also carry higher-capacity batteries or propane tanks to sustain those shifts.",
+          "An industrial floor scrubber is a ride-on or walk-behind machine built for repeated, high-volume cleaning in factories, warehouses, retail sites and logistics hubs. Industrial floor scrubbers carry larger solution and recovery tanks plus higher-capacity batteries or propane, so they sustain a full shift without a refill.",
       },
       {
+        heading: "Industrial vs Consumer Machines: Three Differences",
+        content:
+          "Three measurable differences separate an industrial machine from a consumer one. A consumer scrubber typically handles 20-40 minutes of occasional use, while an industrial unit runs 4-8 hours per shift.",
+        items: [
+          "Cleaning path — 20 inches and wider on industrial machines.",
+          "Tank capacity — 20 litres and up for both solution and recovery.",
+          "Duty cycle — engineered for continuous shifts rather than occasional jobs.",
+        ],
+      },
+      {
+
         heading: "The Four Machine Types at a Glance",
         content:
           "Most commercial floors are cleaned by one of four machine categories. The right choice depends on floor area, aisle width and how many hours per day you clean.",
@@ -89,9 +100,14 @@ const guides: Guide[] = [
         ],
       },
       {
-        heading: "Where to Buy and What Factory-Direct Actually Means",
+        heading: "Where to Buy: Direct from the Manufacturer",
         content:
-          "Aikerui is a factory-direct manufacturer operating from a 10,000+ square meter facility in Anqing, Anhui, China. Founded in 2008, the company runs its own production line rather than trading, offers 30+ machine models, and has exported to 50+ countries. CE and ISO 9001 certified. As an industrial floor scrubber manufacturer, Aikerui sells direct. As a floor scrubber supplier working without distributors, the company also supports replacement parts, consumables and after-sales — replacement floor scrubber parts and consumables are available for every machine it ships. Because there is no dealer layer, factory-direct pricing typically lands 20-40 percent below equivalent Western branded machines. Browse the machine range at aikeruiclean.com/floor-scrubbers or request a floor scrubber quote at aikeruiclean.com/floor-scrubber-parts-quote.",
+          "Aikerui is a factory-direct manufacturer operating from a 10,000+ square meter facility in Anqing, Anhui, China. Founded in 2008, the company runs its own production line rather than trading, offers 30+ machine models and has exported to 50+ countries. CE and ISO 9001 certified.",
+      },
+      {
+        heading: "What Buying Factory-Direct Actually Gives You",
+        content:
+          "As an industrial floor scrubber manufacturer, Aikerui sells direct. As a floor scrubber supplier working without distributors, the company also supports replacement floor scrubber parts, consumables and after-sales for every machine it ships. With no dealer layer in between, factory-direct pricing typically lands 20-40 percent below equivalent Western branded machines. Browse the range at aikeruiclean.com/floor-scrubbers or request a floor scrubber quote at aikeruiclean.com/floor-scrubber-parts-quote.",
         image: "/images/A50-Scrubber-05.webp",
         imageAlt: "Commercial floor scrubber manufactured at the Aikerui factory in Anqing, China",
       },
@@ -114,7 +130,7 @@ const guides: Guide[] = [
         content:
           "Buyers sourcing commercial floor scrubbers usually ask the same four questions before requesting a quote.",
         items: [
-          "How much does a commercial floor scrubber cost? — Walk-behind machines typically run $2,000-$8,000 and ride-on machines $8,000-$25,000. The five-year cost of ownership is usually 2.5-3 times the purchase price once batteries, consumables, maintenance and labour are included.",
+          "How much does a commercial floor scrubber cost? — Walk-behind machines typically run $2,000-$8,000 and ride-on machines $8,000-$25,000. Batteries, consumables, maintenance and labour usually push five-year cost of ownership to 2.5-3 times the purchase price.",
           "How do I know what size scrubber I need? — Start with daily square footage and your narrowest aisle. Under 5,000 sq ft suits a 17-20 inch walk-behind; 20,000 sq ft and above generally needs a ride-on with a 28-50 inch path.",
           "Is a ride-on scrubber worth the extra cost? — It is worth it when the floor is over roughly 20,000 sq ft and aisles are wide. Below that, a walk-behind usually delivers a faster payback because ride-on machines cannot exploit their width in narrow spaces.",
           "Should I buy from a manufacturer or a local dealer? — Buying factory-direct typically reduces unit cost and shortens the spare-parts supply chain. Confirm the manufacturer holds stock of brushes and squeegees for your machine model before ordering.",
@@ -1101,8 +1117,7 @@ const extraGuides: Guide[] = [
       { heading: "Battery and Runtime", content: "Powered by a 24V system with maintenance-free battery.", items: ["Voltage: 24V", "Runtime: 3-4 hours", "Charging time: 5-6 hours"] },
     ],
     relatedProducts: [],
-  }
-,
+  },
   {
     slug: "top-floor-scrubber-brands-buyers-guide",
     title: "Floor Scrubber Brands: Global vs Factory-Direct",
