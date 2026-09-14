@@ -27,6 +27,98 @@ interface GuideSection {
 
 const guides: Guide[] = [
   {
+    slug: "commercial-floor-scrubber-buying-guide",
+    title: "Commercial Floor Scrubber Buying Guide 2026 | Aikerui",
+    description:
+      "How to choose a commercial floor scrubber: types, sizing by square footage, power options and total cost of ownership. Factory-direct pricing included.",
+    category: "buying-guide",
+    readTime: "10 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/RIDE-ON-A660.webp",
+    published: "2026-09-14",
+    sections: [
+      {
+        heading: "What Counts as a Commercial Floor Scrubber",
+        content:
+          "A commercial floor scrubber is a ride-on or walk-behind machine built for repeated, high-volume cleaning in industrial, retail, healthcare and logistics environments. It differs from consumer machines in three measurable ways: cleaning path (20 inches and wider), solution and recovery tank capacity (20 litres and up), and duty cycle. Consumer scrubbers are designed for 20-40 minutes of occasional use; commercial units are rated for 4-8 hours of continuous operation per shift.",
+      },
+      {
+        heading: "The Four Machine Types at a Glance",
+        content:
+          "Most commercial floors are cleaned by one of four machine categories. The right choice depends on floor area, aisle width and how many hours per day you clean.",
+        items: [
+          "Walk-behind, 17-28 inch cleaning path — best for 2,000-20,000 sq ft and narrow aisles; typical price $2,000-$8,000.",
+          "Ride-on, 28-50 inch cleaning path — best for 20,000 sq ft and above with wide aisles; typical price $8,000-$25,000.",
+          "Stand-on, 20-32 inch cleaning path — a middle option that improves sightlines versus ride-on; typical price $6,000-$15,000.",
+          "Cylindrical brush models — best for rough, grouted or textured floors and for picking up debris in one pass; pricing follows the equivalent disc model.",
+        ],
+      },
+      {
+        heading: "Sizing: Match the Machine to Your Floor Area",
+        content:
+          "Undersizing means multiple passes and higher labour cost; oversizing wastes capital and cannot fit narrow aisles. Use cleaning path width against your daily square footage as the first filter.",
+        items: [
+          "Under 5,000 sq ft — walk-behind 17-20 inch, battery powered.",
+          "5,000-20,000 sq ft — walk-behind 20-28 inch, battery powered.",
+          "20,000-50,000 sq ft — ride-on 28-36 inch, battery powered.",
+          "Over 50,000 sq ft — ride-on 36-50 inch, or two machines to cover multiple zones.",
+          "Always measure your narrowest aisle before choosing. A 34-inch machine will not turn in a 36-inch aisle.",
+        ],
+      },
+      {
+        heading: "Power Options: Battery, Corded or Propane",
+        content:
+          "Power source determines run time, noise level and where the machine can legally operate.",
+        items: [
+          "Battery (most common) — quiet, zero emissions, safe for food retail and healthcare; plan for a battery replacement cost every 3-5 years.",
+          "Corded — lowest purchase price, unlimited run time, but limited to small areas near a power point; not suitable for open warehouse floors.",
+          "Propane — continuous operation without recharging, used mainly outdoors or in high-draft spaces; restricted in enclosed food and healthcare environments.",
+        ],
+      },
+      {
+        heading: "What You Will Actually Pay",
+        content:
+          "Purchase price is typically 30-40 percent of the five-year cost. Budget for the machine, then add the running costs before comparing quotes.",
+        items: [
+          "Machine purchase — $2,000-$25,000 depending on type and cleaning width.",
+          "Battery replacement — $800-$3,000 every 3-5 years.",
+          "Brush and squeegee consumables — $150-$600 per year depending on hours.",
+          "Scheduled maintenance — $300-$900 per year.",
+          "Labour — usually the largest single line, and the item a wider machine reduces fastest.",
+        ],
+      },
+      {
+        heading: "Six Mistakes Buyers Make",
+        content:
+          "These are the recurring issues we see when buyers compare quotes or replace an existing machine.",
+        items: [
+          "Comparing purchase price only, without the five-year running cost.",
+          "Choosing cleaning width by budget instead of by floor area.",
+          "Ignoring aisle width, doorways and ramps until delivery day.",
+          "Not confirming spare part availability, especially brushes and squeegees.",
+          "Skipping a demonstration on the actual floor surface.",
+          "Mixing battery technologies across a fleet, which complicates charging and replacement.",
+        ],
+      },
+      {
+        heading: "Frequently Asked Questions",
+        content:
+          "Buyers sourcing commercial floor scrubbers usually ask the same four questions before requesting a quote.",
+        items: [
+          "How much does a commercial floor scrubber cost? — Walk-behind machines typically run $2,000-$8,000 and ride-on machines $8,000-$25,000. The five-year cost of ownership is usually 2.5-3 times the purchase price once batteries, consumables, maintenance and labour are included.",
+          "How do I know what size scrubber I need? — Start with daily square footage and your narrowest aisle. Under 5,000 sq ft suits a 17-20 inch walk-behind; 20,000 sq ft and above generally needs a ride-on with a 28-50 inch path.",
+          "Is a ride-on scrubber worth the extra cost? — It is worth it when the floor is over roughly 20,000 sq ft and aisles are wide. Below that, a walk-behind usually delivers a faster payback because ride-on machines cannot exploit their width in narrow spaces.",
+          "Should I buy from a manufacturer or a local dealer? — Buying factory-direct typically reduces unit cost and shortens the spare-parts supply chain. Confirm the manufacturer holds stock of brushes and squeegees for your machine model before ordering.",
+        ],
+      },
+    ],
+    relatedGuides: [
+      "how-to-choose-a-floor-scrubber",
+      "walk-behind-vs-ride-on-scrubber",
+      "how-much-does-floor-scrubber-cost",
+    ],
+  },
+  {
     slug: "floor-scrubber-brush-complete-guide",
     title: "Floor Scrubber Brush: Types & How to Choose",
     description: "Complete guide to floor scrubber brushes — disc brush vs roller brush, nylon vs PPL vs abrasive materials, compatibility with Tennant/Nilfisk/Karcher, and when to replace. Factory-direct pricing on 100+ brush models.",

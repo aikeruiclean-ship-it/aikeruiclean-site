@@ -1,7 +1,12 @@
 {
- "generatedAt": "2026-09-11",
+ "generatedAt": "2026-09-14",
  "totalGuides": 85,
  "orphans": [
+  {
+   "slug": "commercial-floor-scrubber-buying-guide",
+   "title": "Commercial Floor Scrubber Buying Guide 2026 | Aikerui",
+   "url": "/guides/commercial-floor-scrubber-buying-guide"
+  },
   {
    "slug": "shampoo-disc-brush-guide",
    "title": "Shampoo Disc Brush for Floor Scrubbers",
@@ -116,11 +121,29 @@
    "inLinks": 7
   },
   {
-   "slug": "disc-brush-vs-roller-brush-scrubber",
+   "slug": "aftermarket-scrubber-brush-compatible-brands",
    "inLinks": 7
   }
  ],
  "guides": [
+  {
+   "slug": "commercial-floor-scrubber-buying-guide",
+   "url": "/guides/commercial-floor-scrubber-buying-guide",
+   "title": "Commercial Floor Scrubber Buying Guide 2026 | Aikerui",
+   "category": "buying-guide",
+   "published": "2026-09-14",
+   "thumbnail": "/images/parts/RIDE-ON-A660.webp",
+   "wordCount": 739,
+   "relatedGuides": [
+    "how-to-choose-a-floor-scrubber",
+    "walk-behind-vs-ride-on-scrubber",
+    "how-much-does-floor-scrubber-cost"
+   ],
+   "bodyLinks": [],
+   "outLinks": 3,
+   "inLinks": 0,
+   "inLinkFrom": []
+  },
   {
    "slug": "floor-scrubber-brush-complete-guide",
    "url": "/guides/floor-scrubber-brush-complete-guide",
@@ -157,17 +180,16 @@
    "category": "buying-guide",
    "published": "2026-06-01",
    "thumbnail": "/images/B460-Scrubber-01.webp",
-   "wordCount": 619,
+   "wordCount": 612,
    "relatedGuides": [
-    "walk-behind-vs-ride-on-scrubber-overview",
     "industrial-floor-scrubber-complete-guide",
     "walk-behind-vs-ride-on-scrubber"
    ],
    "bodyLinks": [],
-   "outLinks": 3,
+   "outLinks": 2,
    "inLinks": 10,
    "inLinkFrom": [
-    "walk-behind-vs-ride-on-scrubber-overview",
+    "commercial-floor-scrubber-buying-guide",
     "how-to-set-up-your-floor-scrubber",
     "floor-scrubber-daily-operation-best-practices",
     "a50-walk-behind-scrubber-features",
@@ -177,31 +199,6 @@
     "floor-scrubber-hospital-healthcare-facility",
     "floor-scrubber-brush-pressure-guide",
     "floor-scrubber-logistics-distribution-center"
-   ]
-  },
-  {
-   "slug": "walk-behind-vs-ride-on-scrubber-overview",
-   "url": "/guides/walk-behind-vs-ride-on-scrubber-overview",
-   "title": "Walk-Behind vs Ride-On Floor Scrubber: Which Is Better?",
-   "category": "comparison",
-   "published": "2026-06-01",
-   "thumbnail": "/images/A50-Scrubber-02.webp",
-   "wordCount": 402,
-   "relatedGuides": [
-    "walk-behind-vs-ride-on-scrubber",
-    "how-to-choose-a-floor-scrubber",
-    "disc-brush-vs-roller-brush-scrubber"
-   ],
-   "bodyLinks": [],
-   "outLinks": 3,
-   "inLinks": 6,
-   "inLinkFrom": [
-    "how-to-choose-a-floor-scrubber",
-    "a50-walk-behind-scrubber-features",
-    "walk-behind-vs-ride-on-scrubber",
-    "disc-brush-vs-roller-brush-scrubber",
-    "used-vs-new-floor-scrubber",
-    "floor-scrubber-hospital-healthcare-facility"
    ]
   },
   {
@@ -482,14 +479,13 @@
    "category": "product-showcase",
    "published": "2026-06-08",
    "thumbnail": "/images/A50-Scrubber-03.webp",
-   "wordCount": 132,
+   "wordCount": 125,
    "relatedGuides": [
-    "walk-behind-vs-ride-on-scrubber-overview",
     "walk-behind-vs-ride-on-scrubber",
     "how-to-choose-a-floor-scrubber"
    ],
    "bodyLinks": [],
-   "outLinks": 3,
+   "outLinks": 2,
    "inLinks": 0,
    "inLinkFrom": []
   },
@@ -655,18 +651,17 @@
    "category": "comparison",
    "published": "2026-06-26",
    "thumbnail": "/images/A50-Scrubber-05.webp",
-   "wordCount": 412,
+   "wordCount": 537,
    "relatedGuides": [
-    "walk-behind-vs-ride-on-scrubber-overview",
     "disc-brush-vs-roller-brush-scrubber",
     "best-floor-scrubber-small-business"
    ],
    "bodyLinks": [],
-   "outLinks": 3,
+   "outLinks": 2,
    "inLinks": 6,
    "inLinkFrom": [
+    "commercial-floor-scrubber-buying-guide",
     "how-to-choose-a-floor-scrubber",
-    "walk-behind-vs-ride-on-scrubber-overview",
     "a50-walk-behind-scrubber-features",
     "disc-brush-vs-roller-brush-scrubber",
     "best-floor-scrubber-small-business",
@@ -680,17 +675,15 @@
    "category": "comparison",
    "published": "2026-06-26",
    "thumbnail": "/images/parts/101521634780.webp",
-   "wordCount": 413,
+   "wordCount": 406,
    "relatedGuides": [
     "walk-behind-vs-ride-on-scrubber",
-    "walk-behind-vs-ride-on-scrubber-overview",
     "floor-scrubber-disc-brush-buying-guide"
    ],
    "bodyLinks": [],
-   "outLinks": 3,
-   "inLinks": 7,
+   "outLinks": 2,
+   "inLinks": 6,
    "inLinkFrom": [
-    "walk-behind-vs-ride-on-scrubber-overview",
     "walk-behind-vs-ride-on-scrubber",
     "floor-scrubber-safety-guide",
     "top-10-floor-scrubber-parts-suppliers",
@@ -810,8 +803,9 @@
    ],
    "bodyLinks": [],
    "outLinks": 3,
-   "inLinks": 2,
+   "inLinks": 3,
    "inLinkFrom": [
+    "commercial-floor-scrubber-buying-guide",
     "floor-scrubber-roi-calculator-cost-savings",
     "how-much-do-floor-scrubber-brushes-cost"
    ]
@@ -1217,14 +1211,13 @@
    "category": "comparison",
    "published": "2026-07-14",
    "thumbnail": "/images/parts/101536061230.webp",
-   "wordCount": 406,
+   "wordCount": 399,
    "relatedGuides": [
-    "walk-behind-vs-ride-on-scrubber-overview",
     "walk-behind-vs-ride-on-scrubber",
     "disc-brush-vs-roller-brush-scrubber"
    ],
    "bodyLinks": [],
-   "outLinks": 3,
+   "outLinks": 2,
    "inLinks": 0,
    "inLinkFrom": []
   },
@@ -1471,14 +1464,13 @@
    "category": "buying-guide",
    "published": "2026-07-15",
    "thumbnail": "/images/parts/101559536107.webp",
-   "wordCount": 206,
+   "wordCount": 199,
    "relatedGuides": [
     "how-to-choose-a-floor-scrubber",
-    "floor-scrubber-warranty-comparison",
-    "walk-behind-vs-ride-on-scrubber-overview"
+    "floor-scrubber-warranty-comparison"
    ],
    "bodyLinks": [],
-   "outLinks": 3,
+   "outLinks": 2,
    "inLinks": 1,
    "inLinkFrom": [
     "hospital-medical-facility-floor-cleaning-equipment"
