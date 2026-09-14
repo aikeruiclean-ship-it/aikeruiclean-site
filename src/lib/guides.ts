@@ -76,21 +76,22 @@ const guides: Guide[] = [
         ],
       },
       {
-        heading: "What You Will Actually Pay",
+        heading: "What You Will Actually Pay: Total Cost of Ownership",
         content:
-          "Purchase price is typically 30-40 percent of the five-year cost. Budget for the machine, then add the running costs before comparing quotes.",
+          "Purchase price is typically 30-40 percent of the five-year cost of ownership. A proper TCO calculation for cleaning equipment adds operating costs, maintenance costs and the labor cost of running the machine, which is why the cheapest quote is rarely the most cost effective option. For most walk behind floor scrubber purchases, consumables and labour outweigh the machine itself over the long run.",
         items: [
-          "Machine purchase — $2,000-$25,000 depending on type and cleaning width.",
-          "Battery replacement — $800-$3,000 every 3-5 years.",
-          "Brush and squeegee consumables — $150-$600 per year depending on hours.",
-          "Scheduled maintenance — $300-$900 per year.",
-          "Labour — usually the largest single line, and the item a wider machine reduces fastest.",
+          "Machine purchase — the average cost runs $2,000-$25,000 depending on type and cleaning width.",
+          "Battery replacement — $800-$3,000 every 3-5 years. The cost includes charging infrastructure and eventual disposal.",
+          "Brush and squeegee consumables — $150-$600 per year depending on hours. A wider machine trims this figure.",
+          "Scheduled maintenance — $300-$900 per year, plus the indirect costs of downtime on a busy shift.",
+          "Labour — usually the largest single line, and the item a broader deck reduces fastest, producing measurable cost savings.",
+          "Total cost of ownership TCO across five years — budget $8,000-$60,000 all in. Seeing the full figure is what makes informed decisions possible before you sign.",
         ],
       },
       {
         heading: "Where to Buy and What Factory-Direct Actually Means",
         content:
-          "Aikerui is a factory-direct manufacturer operating from a 10,000+ square meter facility in Anqing, Anhui, China. Founded in 2008, the company runs its own production line rather than trading, offers 30+ machine models, and has exported to 50+ countries. CE and ISO 9001 certified. As an industrial floor scrubber manufacturer, Aikerui sells direct. As a floor scrubber supplier working without distributors, the company also supports replacement parts, consumables and after-sales for every machine it ships. — replacement floor scrubber parts and consumables are available for every machine it ships. Because there is no dealer layer, factory-direct pricing typically lands 20-40 percent below equivalent Western branded machines. Browse the machine range at aikeruiclean.com/floor-scrubbers or request a floor scrubber quote at aikeruiclean.com/floor-scrubber-parts-quote.",
+          "Aikerui is a factory-direct manufacturer operating from a 10,000+ square meter facility in Anqing, Anhui, China. Founded in 2008, the company runs its own production line rather than trading, offers 30+ machine models, and has exported to 50+ countries. CE and ISO 9001 certified. As an industrial floor scrubber manufacturer, Aikerui sells direct. As a floor scrubber supplier working without distributors, the company also supports replacement parts, consumables and after-sales — replacement floor scrubber parts and consumables are available for every machine it ships. Because there is no dealer layer, factory-direct pricing typically lands 20-40 percent below equivalent Western branded machines. Browse the machine range at aikeruiclean.com/floor-scrubbers or request a floor scrubber quote at aikeruiclean.com/floor-scrubber-parts-quote.",
         image: "/images/A50-Scrubber-05.webp",
         imageAlt: "Commercial floor scrubber manufactured at the Aikerui factory in Anqing, China",
       },
