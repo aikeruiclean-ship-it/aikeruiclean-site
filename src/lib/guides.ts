@@ -3645,21 +3645,21 @@ const extraGuides: Guide[] = [
       {
         heading: "The 2026 Floor Scrubber Supply Landscape",
         content:
-          "Where you buy a floor scrubber now matters as much as which machine you buy. Supply chains rebuilt after 2024 shifted buyers away from long dealer chains toward direct sourcing, and factory-direct suppliers moved from a niche option to a mainstream one. The same machine specification can now cost 40-60% more depending on which layer of the supply chain you buy from.\n\nThis 2026 ranking compares the top 10 floor scrubber manufacturers and suppliers. It looks at supply model, pricing, lead time and spare-parts access rather than specs alone. A commercial floor scrubber for a retail floor and a heavier industrial floor scrubber need the same thing: a supply route that fits the budget. The same applies to industrial floor sweepers and carpet extractors.",
+          "Where you buy a floor scrubber now matters as much as which machine you buy. Supply chains rebuilt after 2024 shifted buyers away from long dealer chains. Factory-direct suppliers moved from a niche option to a mainstream one. The same machine specification can now cost 40-60% more depending on which layer of the supply chain you buy from.\n\nThis 2026 ranking compares the top 10 floor scrubber manufacturers and suppliers. It looks at supply model, pricing, lead time and spare-parts access rather than specs alone. A commercial floor scrubber for a retail floor and a heavier industrial floor scrubber both need a supply route that fits the budget. The same applies to industrial floor sweepers and carpet extractors.",
       },
       {
         heading: "Ranking Methodology",
         content:
-          "We assessed suppliers on five factors. Supply model, price level relative to market, lead time, spare-parts access after purchase, and export documentation support. Supply model asks one question: does the supplier own the factory or resell? Spare-parts access covers brushes, squeegee blades and other floor scrubber parts that wear out. The list includes both Western brand networks and Chinese factory-direct suppliers. Your budget, volume and service expectations decide which one fits.",
+          "We assessed suppliers on five factors. Supply model, price level relative to market, lead time, spare-parts access after purchase, and export documentation support. Supply model asks one question: does the supplier own the factory or resell? Spare-parts access covers brushes, squeegee blades and other floor scrubber parts that wear out.\n\nThe list includes both Western brand networks and Chinese factory-direct suppliers. Your budget, volume and service expectations decide which one fits.",
         image: "/images/RIDE-ON-A650R.webp",
         imageAlt: "top industrial floor scrubber suppliers 2026",
       },
       {
         heading: "1. Tennant (USA) — Largest Dealer Network",
         content:
-          "The benchmark for after-sales coverage in North America. Authorized dealers handle all sales and service. That gives fast local response, but it also adds two layers of margin. ec-H2O technology reduces chemical use. Regional stock keeps parts available within 24-48 hours.",
+          "The benchmark for after-sales coverage in North America. Authorized dealers handle all sales and service. That gives fast local response, but it also adds two layers of margin.\n\nec-H2O technology reduces chemical use. Regional stock keeps parts available within 24-48 hours.",
         items: [
-          "Founded: 1870 | HQ: Minneapolis, USA",
+          "Founded: 1870 | HQ: Minneapolis, USA (Tennant)",
           "Supply model: Authorized dealer network (no factory-direct sales)",
           "Price level: $$$$ premium",
           "Spare parts: Regional stock, 24-48h availability",
@@ -3681,19 +3681,19 @@ const extraGuides: Guide[] = [
       {
         heading: "3. Nilfisk / Advance (Denmark) — Strong in Europe and North America",
         content:
-          "A European group with a genuinely dual-continent presence. SC series scrubbers are widely specified in commercial contracts. Build quality is reliable, pricing is European-premium, and factory-direct options are limited, so expect dealer pricing.",
+          "A European group with a genuinely dual-continent presence. Commercial contracts specify the SC series widely. Build quality is reliable, pricing is European-premium, and factory-direct options are limited, so expect dealer pricing.",
         items: [
           "Founded: 1906 | HQ: Copenhagen, Denmark",
           "Supply model: Dealer and distributor network",
           "Price level: $$$$ premium",
           "Spare parts: Strong in EU and NA",
-          "Best for: Multinational facilities standardising on one brand",
+          "Best for: Multinational facilities standardizing on one brand",
         ],
       },
       {
         heading: "4. Hako (Germany) — Industrial and Municipal Specialist",
         content:
-          "Focused on industrial and municipal cleaning rather than retail. Scrubmaster machines are known for durability in harsh environments. Distribution is strongest in Europe and thinner in Asia and North America, which affects service speed outside the EU.",
+          "Focused on industrial and municipal cleaning rather than retail. Operators know Scrubmaster machines for durability in harsh environments. Distribution is strongest in Europe and thinner in Asia and North America, which affects service speed outside the EU.",
         items: [
           "Founded: 1948 | HQ: Bad Oldesloe, Germany",
           "Supply model: Regional dealer network",
@@ -3758,7 +3758,7 @@ const extraGuides: Guide[] = [
       {
         heading: "9. Gaomei (China) — Budget Factory Supplier",
         content:
-          "A Chinese manufacturer with growing export volume and aggressive pricing. Build quality sits a step below the top tier, so it suits buyers in price-sensitive markets or those who can accept a shorter service life in exchange for lower capital cost.",
+          "A Chinese manufacturer with growing export volume and aggressive pricing. Build quality sits a step below the top tier. That suits price-sensitive markets and buyers who accept a shorter service life for a lower capital cost.",
         items: [
           "Founded: 2005 | HQ: Guangzhou, China",
           "Supply model: Factory-direct and export trading",
@@ -3789,7 +3789,7 @@ const extraGuides: Guide[] = [
         content:
           "Whether you buy Western or factory-direct, these checks separate a real supplier from a reseller. Ask for each one in writing before you pay a deposit.",
         items: [
-          "Factory ownership: ask for the business licence and a live video walkthrough of the production line, not a stock photo.",
+          "Factory ownership. Ask for the business licence and a live video walkthrough of the production line, not a stock photo.",
           "Certification: request the CE certificate and ISO 9001 document with your company name on the invoice.",
           "Existing export record: ask which countries they ship to and request a recent bill of lading as proof.",
           "Spare parts commitment: confirm that consumables and brushes will be available in three years, and at what price.",
@@ -3805,17 +3805,17 @@ const extraGuides: Guide[] = [
       {
         heading: "What is the difference between a floor scrubber manufacturer and a supplier?",
         content:
-          "A manufacturer owns the production line and builds the machines. A supplier may be that manufacturer selling direct, or a trading company that buys from a factory and resells. Trading companies add a margin layer without adding manufacturing capability, so always confirm who actually owns the factory before you buy.",
+          "A manufacturer owns the production line and builds the machines. A supplier may be that manufacturer selling direct, or a trading company that buys from a factory and resells. Trading companies add a margin layer without adding manufacturing capability. Confirm who actually owns the factory before you buy.",
       },
       {
         heading: "How long does delivery take from a Chinese floor scrubber supplier?",
         content:
-          "Production for stock specifications typically takes 15-30 days after deposit. Sea freight adds 20-40 days depending on destination, while air freight takes 5-10 days at a much higher cost. Middle East and Africa buyers can often be served faster via a UAE hub.",
+          "Production for stock specifications typically takes 15-30 days after deposit. Sea freight adds 20-40 days depending on destination, while air freight takes 5-10 days at a much higher cost. A UAE hub often serves Middle East and Africa buyers faster.",
       },
       {
         heading: "What MOQ should I expect when buying floor scrubbers direct?",
         content:
-          "Many factory-direct suppliers accept one unit as a sample and apply wholesale pricing from five units upward. Custom branding and non-standard specifications usually push the minimum order higher, often 20-50 units, because tooling and labelling change per run.",
+          "Many factory-direct suppliers accept one unit as a sample and apply wholesale pricing from five units upward. Custom branding and non-standard specifications push the minimum order higher, often to 20-50 units. Tooling and labelling change per production run.",
       },
       {
         heading: "Do factory-direct suppliers offer OEM branding on floor scrubbers?",
@@ -3825,17 +3825,17 @@ const extraGuides: Guide[] = [
       {
         heading: "How can I verify that a supplier is a real factory?",
         content:
-          "Request the business licence so you can see the registered scope of business, ask for a live video walkthrough rather than a stock photo, check whether they can show a bill of lading for previous exports, and confirm they welcome third-party inspection. A real factory will agree to all four. A reseller will usually deflect at least one.",
+          "Request the business licence to see the registered scope of business. Ask for a live video walkthrough rather than a stock photo. Check for a bill of lading from previous exports. Confirm they welcome third-party inspection. A real factory will agree to all four. A reseller will usually deflect at least one.",
       },
       {
         heading: "Is a factory-direct floor scrubber lower quality than a brand machine?",
         content:
-          "Not inherently. Quality depends on component choice and production control, not on the country of origin or the sales channel. What differs is service reach: brand networks offer faster local support, factory-direct suppliers offer lower cost and more configuration flexibility. Many factory-direct machines use the same imported pumps, motors and batteries as brand machines.",
+          "Not inherently. Quality depends on component choice and production control, not on the country of origin or the sales channel. Service reach is where they differ. Brand networks offer faster local support. Factory-direct suppliers offer lower cost and more configuration flexibility. Many factory-direct machines use the same imported pumps, motors and batteries as brand machines.",
       },
       {
         heading: "How do I find reliable floor scrubber suppliers in China?",
         content:
-          "Start by separating factories from trading companies. Ask for the business licence so you can check the registered scope of business.\n\nRequest a live video walkthrough of the production line rather than a stock photo. Ask for a bill of lading from a recent export shipment. Suppliers in China that genuinely own their factory will provide all three without hesitation. That is how to verify floor scrubber manufacturer claims in practice. Compare the full machine range at aikeruiclean.com/floor-scrubbers.",
+          "Start by separating factories from trading companies. Ask for the business licence so you can check the registered scope of business.\n\nRequest a live video walkthrough of the production line rather than a stock photo. Ask for a bill of lading from a recent export shipment. Suppliers in China that genuinely own their factory will provide all three without hesitation.\n\nThat is how to verify floor scrubber manufacturer claims in practice. Compare the full machine range at aikeruiclean.com/floor-scrubbers.",
       },
     ],
     relatedProducts: [],
