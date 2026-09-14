@@ -3687,7 +3687,7 @@ const extraGuides: Guide[] = [
           "Supply model: Dealer and distributor network",
           "Price level: $$$$ premium",
           "Spare parts: Strong in EU and NA",
-          "Best for: Multinational facilities standardizing on one brand",
+          "Best for: global facilities standardizing on one brand",
         ],
       },
       {
@@ -3866,7 +3866,7 @@ const extraGuides: Guide[] = [
       {
         heading: "2. Nilfisk (Denmark) — European Powerhouse",
         content: "Strongest in Europe with growing North American presence. SC series scrubbers are widely used. Excellent build quality. Premium European pricing.",
-        items: ["Founded: 1906 | HQ: Copenhagen","Price: $$$$", "Quality: ★★★★★", "Best for: European and multinational operations"],
+        items: ["Founded: 1906 | HQ: Copenhagen","Price: $$$$", "Quality: ★★★★★", "Best for: European and global operations"],
       },
       {
         heading: "3. Kärcher (Germany) — Largest by Revenue",
