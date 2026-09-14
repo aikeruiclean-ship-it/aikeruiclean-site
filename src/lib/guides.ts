@@ -88,6 +88,13 @@ const guides: Guide[] = [
         ],
       },
       {
+        heading: "Where to Buy and What Factory-Direct Actually Means",
+        content:
+          "Aikerui is a factory-direct manufacturer operating from a 10,000+ square meter facility in Anqing, Anhui, China. Founded in 2008, the company runs its own production line rather than trading, offers 30+ machine models, and has exported to 50+ countries. CE and ISO 9001 certified. Because there is no dealer layer, factory-direct pricing typically lands 20-40 percent below equivalent Western branded machines. Browse the machine range at aikeruiclean.com/floor-scrubbers or request pricing at aikeruiclean.com/floor-scrubber-parts-quote.",
+        image: "/images/A50-Scrubber-05.webp",
+        imageAlt: "Commercial floor scrubber manufactured at the Aikerui factory in Anqing, China",
+      },
+      {
         heading: "Six Mistakes Buyers Make",
         content:
           "These are the recurring issues we see when buyers compare quotes or replace an existing machine.",
@@ -229,7 +236,7 @@ const guides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/B460-Scrubber-01.webp",
     published: "2026-06-01",
-    relatedGuides: ["industrial-floor-scrubber-complete-guide", "walk-behind-vs-ride-on-scrubber"],
+    relatedGuides: ["industrial-floor-scrubber-complete-guide", "walk-behind-vs-ride-on-scrubber", "commercial-floor-scrubber-buying-guide"],
     sections: [
       {
         heading: "What Type of Floor Scrubber Do You Need?",
@@ -1553,7 +1560,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/A50-Scrubber-05.webp",
     published: "2026-06-26",
-    relatedGuides: ["disc-brush-vs-roller-brush-scrubber", "best-floor-scrubber-small-business"],
+    relatedGuides: ["disc-brush-vs-roller-brush-scrubber", "best-floor-scrubber-small-business", "commercial-floor-scrubber-buying-guide"],
     sections: [
       {
         heading: "The Core Difference",
@@ -1713,7 +1720,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/A1280-Sweeper-01.webp",
     published: "2026-07-04",
-    relatedGuides: ["top-10-industrial-floor-scrubber-suppliers", "top-10-industrial-cleaning-equipment-manufacturers", "top-floor-scrubber-brands-buyers-guide", "aftermarket-scrubber-brush-compatible-brands"],
+    relatedGuides: ["top-10-industrial-floor-scrubber-suppliers", "top-10-industrial-cleaning-equipment-manufacturers", "commercial-floor-scrubber-buying-guide"],
     sections: [
       {
         heading: "How We Evaluated These Manufacturers",
@@ -2210,7 +2217,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101748253843.webp",
     published: "2026-07-04",
-    relatedGuides: ["how-much-do-floor-scrubber-brushes-cost", "floor-scrubber-roi-calculator-cost-savings", "tennant-scrubber-parts-guide"],
+    relatedGuides: ["how-much-do-floor-scrubber-brushes-cost", "floor-scrubber-roi-calculator-cost-savings", "commercial-floor-scrubber-buying-guide"],
     sections: [
       {
         heading: "The Real Cost of a Floor Scrubber — Beyond the Sticker Price",
