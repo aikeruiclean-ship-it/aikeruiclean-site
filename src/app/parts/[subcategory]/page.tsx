@@ -87,11 +87,10 @@ export default async function PartSubcategoryPage({
       itemListElement: products.slice(0, 50).map((p, i) => ({
         "@type": "ListItem",
         position: i + 1,
-        item: {
-          "@type": "Product",
-          name: p.name,
-          url: `${SITE_URL}/products/${p.slug}`,
-        },
+        name: p.name,
+        // item 用 URL 字符串（schema.org 允许 Thing 或 URL）——
+        // 若内嵌 Product 对象则必须含 image/offers，否则被判无效 Product schema
+        item: `${SITE_URL}/products/${p.slug}`,
       })),
     },
   };

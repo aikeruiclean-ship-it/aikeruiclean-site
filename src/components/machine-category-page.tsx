@@ -45,11 +45,9 @@ export function MachineCategoryPage({ def }: { def: MachineCategoryDef }) {
       itemListElement: products.slice(0, 50).map((p, i) => ({
         "@type": "ListItem",
         position: i + 1,
-        item: {
-          "@type": "Product",
-          name: p.name,
-          url: `${SITE_URL}/products/${p.slug}`,
-        },
+        name: p.name,
+        // item 用 URL 字符串（内嵌 Product 对象会因缺 image/offers 被判无效）
+        item: `${SITE_URL}/products/${p.slug}`,
       })),
     },
   };
