@@ -102,7 +102,7 @@ const guides: Guide[] = [
       {
         heading: "Where to Buy: Direct from the Manufacturer",
         content:
-          "Aikerui is a factory-direct manufacturer operating from a 10,000+ square meter facility in Anqing, Anhui, China. The company was founded in 2008. It runs its own production line rather than trading. It offers 30+ machine models and has exported to 50+ countries, and holds CE and ISO 9001 certification.",
+          "Aikerui is a factory-direct manufacturer operating from a 10,000+ square meter facility in Anqing, Anhui, China. Aikerui has manufactured floor cleaning equipment since 2008. It runs its own production line rather than trading. It offers 30+ machine models and has exported to 50+ countries, and holds CE and ISO 9001 certification.",
       },
       {
         heading: "Buying Direct from the Manufacturer",
@@ -137,7 +137,7 @@ const guides: Guide[] = [
         items: [
           "How much does a commercial floor scrubber cost? — Walk-behind machines typically run $2,000-$8,000 and ride-on machines $8,000-$25,000. Batteries, consumables, maintenance and labour usually push five-year cost of ownership to 2.5-3 times the purchase price.",
           "How do I know what size scrubber I need? — Start with daily square footage and your narrowest aisle. Under 5,000 sq ft suits a 17-20 inch walk-behind; 20,000 sq ft and above generally needs a ride-on with a 28-50 inch path.",
-          "Is a ride-on scrubber worth the extra cost? — It is worth it when the floor is over roughly 20,000 sq ft and aisles are wide. Below that, a walk-behind usually delivers a faster payback because ride-on machines cannot exploit their width in narrow spaces.",
+          "Is a ride-on scrubber worth the extra cost? It is worth it when the floor is over roughly 20,000 sq ft and the aisles are wide. Below that, a walk-behind usually delivers a faster payback. Ride-on machines cannot exploit their width in narrow aisles.",
           "Should I buy from a manufacturer or a local dealer? — Buying factory-direct typically reduces unit cost and shortens the spare-parts supply chain. Confirm the manufacturer holds stock of brushes and squeegees for your machine model before ordering.",
         ],
       },
