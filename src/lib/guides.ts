@@ -3341,7 +3341,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101535642567.webp",
     published: "2026-07-13",
-    relatedGuides: ["oem-vs-aftermarket-floor-scrubber-parts", "tennant-scrubber-parts-guide", "disc-brush-vs-roller-brush-scrubber"],
+    relatedGuides: ["oem-vs-aftermarket-floor-scrubber-parts", "tennant-scrubber-parts-guide", "top-10-industrial-floor-scrubber-suppliers"],
     sections: [
       {
         heading: "Why Your Parts Supplier Matters",
@@ -3645,12 +3645,12 @@ const extraGuides: Guide[] = [
       {
         heading: "The 2026 Floor Scrubber Supply Landscape",
         content:
-          "Where you buy a floor scrubber now matters as much as which machine you buy. Supply chains rebuilt after 2024 shifted buyers away from long dealer chains toward direct sourcing, and factory-direct suppliers moved from a niche option to a mainstream one. The result: the same machine specification can cost 40-60% more depending on which layer of the supply chain you buy from. This ranking compares suppliers on supply model, pricing, lead time and spare-parts access rather than on machine specs alone.",
+          "Where you buy a floor scrubber now matters as much as which machine you buy. Supply chains rebuilt after 2024 shifted buyers away from long dealer chains toward direct sourcing. Factory-direct suppliers moved from a niche option to a mainstream one. The same machine specification can now cost 40-60% more depending on which layer of the supply chain you buy from. This 2026 ranking of the top 10 floor scrubber manufacturers and suppliers compares supply model, pricing, lead time and spare-parts access rather than specs alone. Whether you need a commercial floor scrubber for a retail floor or a heavier industrial floor scrubber, the supply route matters as much as the machine. The same applies to industrial floor sweepers and carpet extractors.",
       },
       {
         heading: "Ranking Methodology",
         content:
-          "We assessed suppliers on five factors: supply model (does the supplier own the factory or resell?), price level relative to market, lead time and stock availability, spare-parts and consumables access after purchase, and export experience with documentation support. Both Western brand networks and Chinese factory-direct suppliers are included, because the right answer depends on your budget, volume and service expectations.",
+          "We assessed suppliers on five factors: supply model, price level relative to market, lead time and stock availability, spare-parts access after purchase, and export experience with documentation support. Supply model asks one question: does the supplier own the factory or resell? Spare-parts access covers brushes, squeegee blades and other floor scrubber parts that wear out. Both Western brand networks and Chinese factory-direct suppliers are included, because the right answer depends on your budget, volume and service expectations.",
         image: "/images/RIDE-ON-A650R.webp",
         imageAlt: "top industrial floor scrubber suppliers 2026",
       },
@@ -3717,11 +3717,14 @@ const extraGuides: Guide[] = [
       {
         heading: "6. Aikerui (China) — Factory-Direct Supplier",
         content:
-          "Aikerui owns and operates its own 10,000+ square metre factory in Anqing, China, which makes it a manufacturer selling direct rather than a trading company reselling someone else's machines. That structure removes two layers of margin: walk-behind scrubbers land at roughly $1,800-7,500 and ride-on units at $6,000-24,000, typically 30-50% below Western brand pricing for comparable specifications. The range covers 30+ machine models plus 360+ spare parts made on the same line, so consumables and brushes do not depend on a third party. CE certified and ISO 9001, exporting to 50+ countries, with a UAE hub for Middle East and Africa delivery. Buyers can request a live factory video or an independent inspection before ordering.",
+          "Aikerui owns and operates its own 10,000+ square metre factory in Anqing, China. That makes it an industrial floor scrubber manufacturer selling direct, not a trading company reselling someone else's machines. Removing two layers of margin is what puts pricing 30-50% below Western brands. Buyers can request a live factory video or an independent inspection before ordering, or ask for a floor scrubber quote at aikeruiclean.com/floor-scrubber-parts-quote.",
         items: [
           "Founded: 2008 | HQ: Anqing, China",
           "Supply model: Factory-direct — owns the production line",
           "Price level: $ (30-50% below Western brands)",
+          "Typical pricing: walk-behind $1,800-7,500 | ride-on $6,000-24,000",
+          "Range: 30+ machine models, 360+ spare parts made on the same production line",
+          "Certification: CE, ISO 9001 | Exports to 50+ countries, UAE hub for Middle East and Africa",
           "MOQ: 1 unit for sample, 5+ units for wholesale pricing",
           "Lead time: 15-30 days production, plus shipping",
           "Spare parts: Manufactured in-house, available long term",
@@ -3779,7 +3782,7 @@ const extraGuides: Guide[] = [
       {
         heading: "The Real Cost of Buying Through a Middleman",
         content:
-          "A ride-on scrubber specified at 40 inch working width and 120 L tanks costs roughly $18,000-35,000 through a brand dealer. The same specification from a factory-direct supplier costs roughly $9,000-18,000. The gap is not quality, it is margin: importers and dealers each add a layer. For a fleet of three machines the difference typically runs $25,000-50,000. The trade-off is service reach, so the practical approach is to buy factory-direct where volume justifies it and keep a local dealer relationship for emergency parts.",
+          "A ride-on scrubber specified at 40 inch working width and 120 L tanks costs roughly $18,000-35,000 through a brand dealer. The same specification from a factory-direct supplier costs roughly $9,000-18,000. The gap is not quality, it is margin: importers and dealers each add a layer. For a fleet of three machines the difference typically runs $25,000-50,000. The trade-off is service reach, which matters most for commercial floor scrubbers running multi-shift schedules. The practical approach is to buy factory-direct where volume justifies it, and keep a local dealer relationship for emergency parts.",
       },
       {
         heading: "Vetting Checklist Before You Order",
@@ -3832,7 +3835,7 @@ const extraGuides: Guide[] = [
       {
         heading: "How do I find reliable floor scrubber suppliers in China?",
         content:
-          "Start by separating factories from trading companies. Ask for the business licence so you can check the registered scope of business, request a live video walkthrough of the production line rather than a stock photo, and ask for a bill of lading from a recent export shipment. Suppliers in China that genuinely own their factory will provide all three without hesitation. Aikerui, for example, operates its own 10,000 square metre facility in Anqing, has exported to more than 50 countries, and welcomes third-party inspection before you place an order.",
+          "Start by separating factories from trading companies. Ask for the business licence so you can check the registered scope of business. Request a live video walkthrough of the production line rather than a stock photo, and ask for a bill of lading from a recent export shipment. Suppliers in China that genuinely own their factory will provide all three without hesitation. That is how to verify floor scrubber manufacturer claims in practice. Compare the full machine range at aikeruiclean.com/floor-scrubbers.",
       },
     ],
     relatedProducts: [],
@@ -4432,7 +4435,7 @@ const extraGuides: Guide[] = [
     difficulty: "intermediate",
     thumbnail: "/images/parts/101650838979.webp",
     published: "2026-07-16",
-    relatedGuides: ["how-to-import-floor-scrubbers-from-china", "how-to-buy-floor-scrubber-parts-from-china", "floor-scrubber-clutch-plate-pad-driver-guide"],
+    relatedGuides: ["how-to-import-floor-scrubbers-from-china", "how-to-buy-floor-scrubber-parts-from-china", "top-10-industrial-floor-scrubber-suppliers"],
     sections: [
       {
         heading: "The 'Fake Factory' Problem in B2B Equipment",
