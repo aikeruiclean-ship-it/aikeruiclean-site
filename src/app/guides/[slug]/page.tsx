@@ -341,7 +341,7 @@ export default async function GuideDetailPage({ params }: Props) {
                 alt={guide.title}
                 width={1200}
                 height={675}
-                className="w-full rounded-xl border border-gray-200 object-cover"
+                className="w-full max-w-xl rounded-xl border border-gray-200 object-cover mx-auto"
                 priority
               />
             </div>
