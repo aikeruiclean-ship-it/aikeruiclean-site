@@ -117,7 +117,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-10">
             <span className="text-accent font-semibold text-sm uppercase tracking-wider">Our Products</span>
-            <h2 className="text-3xl font-bold text-gray-900 mt-2 mb-3">Built in Our Factory, Shipped to You</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mt-2 mb-3">Manufactured In-House, Shipped Worldwide</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">Every machine is designed, manufactured, and tested in our Anqing facility before export.</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
@@ -139,7 +139,7 @@ export default function HomePage() {
       <section className="bg-gray-50 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 py-6">
           <div className="flex items-center justify-between mb-4">
-            <p className="text-sm font-semibold text-gray-900">📸 Real photos from our factory floor</p>
+            <p className="text-sm font-semibold text-gray-900">Real photos from our factory floor</p>
             <Link href="/about" className="text-xs text-primary hover:text-primary-light font-medium transition-colors">View all →</Link>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
