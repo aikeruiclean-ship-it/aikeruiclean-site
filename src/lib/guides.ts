@@ -40,7 +40,7 @@ const guides: Guide[] = [
       {
         heading: "What Counts as an Industrial Floor Scrubber",
         content:
-          "An industrial floor scrubber is a ride-on or walk-behind machine built for repeated, high-volume cleaning in factories, warehouses, retail sites and logistics hubs. Industrial floor scrubbers carry larger solution and recovery tanks plus higher-capacity batteries or propane, so they sustain a full shift without a refill.",
+          "An industrial floor scrubber is a ride-on or walk-behind machine. It handles repeated, high-volume cleaning in factories, warehouses, retail sites and logistics hubs. Industrial floor scrubbers carry larger solution and recovery tanks. They also use higher-capacity batteries or propane, so a single charge covers a full shift.",
       },
       {
         heading: "Industrial vs Consumer Machines: Three Differences",
@@ -58,16 +58,16 @@ const guides: Guide[] = [
         content:
           "Most commercial floors are cleaned by one of four machine categories. The right choice depends on floor area, aisle width and how many hours per day you clean.",
         items: [
-          "Walk-behind, 17-28 inch cleaning path — best for 2,000-20,000 sq ft and narrow aisles; typical price $2,000-$8,000.",
-          "Ride-on, 28-50 inch cleaning path — best for 20,000 sq ft and above with wide aisles; typical price $8,000-$25,000.",
-          "Stand-on, 20-32 inch cleaning path — a middle option that improves sightlines versus ride-on; typical price $6,000-$15,000.",
-          "Cylindrical brush models — best for rough, grouted or textured floors and for picking up debris in one pass; pricing follows the equivalent disc model.",
+          "Walk-behind, 17-28 inch cleaning path. Best for 2,000-20,000 sq ft and narrow aisles. Typical price $2,000-$8,000.",
+          "Ride-on, 28-50 inch cleaning path. Best for 20,000 sq ft and above with wide aisles. Typical price $8,000-$25,000.",
+          "Stand-on, 20-32 inch cleaning path. A middle option that improves sightlines versus ride-on. Typical price $6,000-$15,000.",
+          "Cylindrical brush models. Best for rough, grouted or textured floors, and for picking up debris in one pass. Pricing follows the equivalent disc model.",
         ],
       },
       {
         heading: "Sizing: Match the Machine to Your Floor Area",
         content:
-          "Undersizing means multiple passes and higher labour cost; oversizing wastes capital and cannot fit narrow aisles. Use cleaning path width against your daily square footage as the first filter.",
+          "Undersizing means multiple passes and higher labour cost. Oversizing wastes capital and cannot fit narrow aisles. Use cleaning path width against your daily square footage as the first filter.",
         items: [
           "Under 5,000 sq ft — walk-behind 17-20 inch, battery powered.",
           "5,000-20,000 sq ft — walk-behind 20-28 inch, battery powered.",
@@ -81,15 +81,15 @@ const guides: Guide[] = [
         content:
           "Power source determines run time, noise level and where the machine can legally operate.",
         items: [
-          "Battery (most common) — quiet, zero emissions, safe for food retail and healthcare; plan for a battery replacement cost every 3-5 years.",
-          "Corded — lowest purchase price, unlimited run time, but limited to small areas near a power point; not suitable for open warehouse floors.",
-          "Propane — continuous operation without recharging, used mainly outdoors or in high-draft spaces; restricted in enclosed food and healthcare environments.",
+          "Battery (most common). Quiet, zero emissions, safe for food retail and healthcare. Plan for a battery replacement cost every 3-5 years.",
+          "Corded. Lowest purchase price and unlimited run time. Limited to small areas near a power point, so not suitable for open warehouse floors.",
+          "Propane. Continuous operation without recharging. Used mainly outdoors or in high-draft spaces. Restricted in enclosed food and healthcare environments.",
         ],
       },
       {
         heading: "What You Will Actually Pay: Total Cost of Ownership",
         content:
-          "Purchase price is typically 30-40 percent of the five-year cost of ownership. A proper TCO calculation for cleaning equipment adds operating costs, maintenance costs and the labor cost of running the machine, which is why the cheapest quote is rarely the most cost effective option. For most walk behind floor scrubber purchases, consumables and labour outweigh the machine itself over the long run.",
+          "Purchase price is typically 30-40 percent of the five-year cost of ownership. A proper TCO calculation for cleaning equipment adds operating costs, maintenance costs and labor cost. That is why the cheapest quote is rarely the most cost effective option. For most walk behind floor scrubber purchases, consumables and labour outweigh the machine itself over the long run.",
         items: [
           "Machine purchase — the average cost runs $2,000-$25,000 depending on type and cleaning width.",
           "Battery replacement — $800-$3,000 every 3-5 years. The cost includes charging infrastructure and eventual disposal.",
@@ -102,12 +102,17 @@ const guides: Guide[] = [
       {
         heading: "Where to Buy: Direct from the Manufacturer",
         content:
-          "Aikerui is a factory-direct manufacturer operating from a 10,000+ square meter facility in Anqing, Anhui, China. Founded in 2008, the company runs its own production line rather than trading, offers 30+ machine models and has exported to 50+ countries. CE and ISO 9001 certified.",
+          "Aikerui is a factory-direct manufacturer operating from a 10,000+ square meter facility in Anqing, Anhui, China. The company was founded in 2008. It runs its own production line rather than trading. It offers 30+ machine models and has exported to 50+ countries, and holds CE and ISO 9001 certification.",
       },
       {
-        heading: "What Buying Factory-Direct Actually Gives You",
+        heading: "Buying Direct from the Manufacturer",
         content:
-          "As an industrial floor scrubber manufacturer, Aikerui sells direct. As a floor scrubber supplier working without distributors, the company also supports replacement floor scrubber parts, consumables and after-sales for every machine it ships. With no dealer layer in between, factory-direct pricing typically lands 20-40 percent below equivalent Western branded machines. Browse the range at aikeruiclean.com/floor-scrubbers or request a floor scrubber quote at aikeruiclean.com/floor-scrubber-parts-quote.",
+          "As an industrial floor scrubber manufacturer, Aikerui sells direct. The company works without distributors, so it also supplies replacement floor scrubber parts, consumables and after-sales for every machine it ships.",
+      },
+      {
+        heading: "Where to Go Next",
+        content:
+          "With no dealer layer in between, factory-direct pricing typically lands 20-40 percent below equivalent Western branded machines. Browse the range at aikeruiclean.com/floor-scrubbers or request a floor scrubber quote at aikeruiclean.com/floor-scrubber-parts-quote.",
         image: "/images/A50-Scrubber-05.webp",
         imageAlt: "Commercial floor scrubber manufactured at the Aikerui factory in Anqing, China",
       },
@@ -120,7 +125,7 @@ const guides: Guide[] = [
           "Choosing cleaning width by budget instead of by floor area.",
           "Ignoring aisle width, doorways and ramps until delivery day.",
           "Not confirming spare part availability, especially brushes and squeegees.",
-          "Not verifying the manufacturer directly. Ask for the production address and request a live video walkthrough to see how to verify floor scrubber manufacturer before payment.",
+          "Not verifying the manufacturer directly. Ask for the production address. Request a live video walkthrough. Both show how to verify floor scrubber manufacturer before payment.",
           "Skipping a demonstration on the actual floor surface.",
           "Mixing battery technologies across a fleet, which complicates charging and replacement.",
         ],
