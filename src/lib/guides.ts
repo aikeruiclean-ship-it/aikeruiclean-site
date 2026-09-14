@@ -34,7 +34,7 @@ const guides: Guide[] = [
     category: "buying-guide",
     readTime: "10 min",
     difficulty: "beginner",
-    thumbnail: "/images/parts/RIDE-ON-A660.webp",
+    thumbnail: "/images/RIDE-ON-A660.webp",
     published: "2026-09-14",
     sections: [
       {
