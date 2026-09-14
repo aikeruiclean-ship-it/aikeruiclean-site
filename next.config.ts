@@ -48,6 +48,7 @@ const nextConfig: NextConfig = {
 
 async redirects() {
   return [
+    { source: "/guides/commercial-floor-scrubber-buying-guide", destination: "/guides/industrial-floor-scrubber-buying-guide", permanent: true },
     // 询价页旧的错误内链目标（外部可能仍在引用）→ 301 到正确页面
     { source: "/guides/industrial-floor-scrubber-buyers-guide", destination: "/guides/industrial-floor-scrubber-complete-guide", permanent: true },
     { source: "/guides/floor-scrubber-brands-comparison", destination: "/guides/top-floor-scrubber-brands-buyers-guide", permanent: true },

@@ -27,10 +27,10 @@ interface GuideSection {
 
 const guides: Guide[] = [
   {
-    slug: "commercial-floor-scrubber-buying-guide",
-    title: "Commercial Floor Scrubber Buying Guide 2026 | Aikerui",
+    slug: "industrial-floor-scrubber-buying-guide",
+    title: "Industrial Floor Scrubber Buying Guide 2026 | Aikerui",
     description:
-      "How to choose a commercial floor scrubber: types, sizing by square footage, power options and total cost of ownership. Factory-direct pricing included.",
+      "How to choose an industrial floor scrubber: machine types, sizing by square footage, power options, factory-direct supplier pricing and 5-year cost of ownership.",
     category: "buying-guide",
     readTime: "10 min",
     difficulty: "beginner",
@@ -38,9 +38,9 @@ const guides: Guide[] = [
     published: "2026-09-14",
     sections: [
       {
-        heading: "What Counts as a Commercial Floor Scrubber",
+        heading: "What Counts as an Industrial Floor Scrubber",
         content:
-          "A commercial floor scrubber is a ride-on or walk-behind machine built for repeated, high-volume cleaning in industrial, retail, healthcare and logistics environments. It differs from consumer machines in three measurable ways: cleaning path (20 inches and wider), solution and recovery tank capacity (20 litres and up), and duty cycle. Consumer scrubbers are designed for 20-40 minutes of occasional use; commercial units are rated for 4-8 hours of continuous operation per shift.",
+          "An industrial floor scrubber (and industrial floor sweepers for debris-heavy areas) is a ride-on or walk-behind machine built for repeated, high-volume cleaning in industrial, retail, healthcare and logistics environments. It differs from consumer machines in three measurable ways: cleaning path (20 inches and wider), solution and recovery tank capacity (20 litres and up), and duty cycle. Consumer scrubbers are designed for 20-40 minutes of occasional use; commercial units are rated for 4-8 hours of continuous operation per shift. Industrial floor scrubbers also carry higher-capacity batteries or propane tanks to sustain those shifts.",
       },
       {
         heading: "The Four Machine Types at a Glance",
@@ -90,7 +90,7 @@ const guides: Guide[] = [
       {
         heading: "Where to Buy and What Factory-Direct Actually Means",
         content:
-          "Aikerui is a factory-direct manufacturer operating from a 10,000+ square meter facility in Anqing, Anhui, China. Founded in 2008, the company runs its own production line rather than trading, offers 30+ machine models, and has exported to 50+ countries. CE and ISO 9001 certified. Because there is no dealer layer, factory-direct pricing typically lands 20-40 percent below equivalent Western branded machines. Browse the machine range at aikeruiclean.com/floor-scrubbers or request pricing at aikeruiclean.com/floor-scrubber-parts-quote.",
+          "Aikerui is a factory-direct manufacturer operating from a 10,000+ square meter facility in Anqing, Anhui, China. Founded in 2008, the company runs its own production line rather than trading, offers 30+ machine models, and has exported to 50+ countries. CE and ISO 9001 certified. As an industrial floor scrubber manufacturer, Aikerui sells direct. As a floor scrubber supplier working without distributors, the company also supports replacement parts, consumables and after-sales for every machine it ships. — replacement floor scrubber parts and consumables are available for every machine it ships. Because there is no dealer layer, factory-direct pricing typically lands 20-40 percent below equivalent Western branded machines. Browse the machine range at aikeruiclean.com/floor-scrubbers or request a floor scrubber quote at aikeruiclean.com/floor-scrubber-parts-quote.",
         image: "/images/A50-Scrubber-05.webp",
         imageAlt: "Commercial floor scrubber manufactured at the Aikerui factory in Anqing, China",
       },
@@ -103,6 +103,7 @@ const guides: Guide[] = [
           "Choosing cleaning width by budget instead of by floor area.",
           "Ignoring aisle width, doorways and ramps until delivery day.",
           "Not confirming spare part availability, especially brushes and squeegees.",
+          "Not verifying the manufacturer directly. Ask for the production address and request a live video walkthrough to see how to verify floor scrubber manufacturer before payment.",
           "Skipping a demonstration on the actual floor surface.",
           "Mixing battery technologies across a fleet, which complicates charging and replacement.",
         ],
@@ -236,7 +237,7 @@ const guides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/B460-Scrubber-01.webp",
     published: "2026-06-01",
-    relatedGuides: ["industrial-floor-scrubber-complete-guide", "walk-behind-vs-ride-on-scrubber", "commercial-floor-scrubber-buying-guide"],
+    relatedGuides: ["industrial-floor-scrubber-complete-guide", "walk-behind-vs-ride-on-scrubber", "industrial-floor-scrubber-buying-guide"],
     sections: [
       {
         heading: "What Type of Floor Scrubber Do You Need?",
@@ -1560,7 +1561,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/A50-Scrubber-05.webp",
     published: "2026-06-26",
-    relatedGuides: ["disc-brush-vs-roller-brush-scrubber", "best-floor-scrubber-small-business", "commercial-floor-scrubber-buying-guide"],
+    relatedGuides: ["disc-brush-vs-roller-brush-scrubber", "best-floor-scrubber-small-business", "industrial-floor-scrubber-buying-guide"],
     sections: [
       {
         heading: "The Core Difference",
@@ -1720,7 +1721,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/A1280-Sweeper-01.webp",
     published: "2026-07-04",
-    relatedGuides: ["top-10-industrial-floor-scrubber-suppliers", "top-10-industrial-cleaning-equipment-manufacturers", "commercial-floor-scrubber-buying-guide"],
+    relatedGuides: ["top-10-industrial-floor-scrubber-suppliers", "top-10-industrial-cleaning-equipment-manufacturers", "industrial-floor-scrubber-buying-guide"],
     sections: [
       {
         heading: "How We Evaluated These Manufacturers",
@@ -2217,7 +2218,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101748253843.webp",
     published: "2026-07-04",
-    relatedGuides: ["how-much-do-floor-scrubber-brushes-cost", "floor-scrubber-roi-calculator-cost-savings", "commercial-floor-scrubber-buying-guide"],
+    relatedGuides: ["how-much-do-floor-scrubber-brushes-cost", "floor-scrubber-roi-calculator-cost-savings", "industrial-floor-scrubber-buying-guide"],
     sections: [
       {
         heading: "The Real Cost of a Floor Scrubber — Beyond the Sticker Price",
