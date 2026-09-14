@@ -2360,7 +2360,7 @@ const extraGuides: Guide[] = [
       },
       {
         heading: "Get Your Factory-Direct Quote",
-        content: "Tell us your facility size, floor type, and daily cleaning hours. We'll recommend the right machine, product or service, and send a factory-direct quote so you can make informed decisions. Pricing is typically 30-40% less than your local dealer. Quote within 24 hours, with no obligation. Browse the machine range at aikeruiclean.com/floor-scrubbers, or see replacement parts and consumables at aikeruiclean.com/parts.",
+        content: "Tell us your facility size, floor type, and daily cleaning hours. We'll recommend the right machine, product or service, and send a factory-direct quote so you can make informed decisions. Aikerui manufactures in its own 10,000+ square meter facility in Anqing, China, founded in 2008, CE and ISO 9001 certified and exporting to 50+ countries, so pricing is typically 30-40% less than your local dealer. Quote within 24 hours, with no obligation. Browse the machine range at aikeruiclean.com/floor-scrubbers, or see replacement parts and consumables at aikeruiclean.com/parts.",
       },
     ],
     relatedProducts: [],
