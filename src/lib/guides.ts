@@ -2243,11 +2243,11 @@ const extraGuides: Guide[] = [
     sections: [
       {
         heading: "The Real Cost of a Floor Scrubber — Beyond the Sticker Price",
-        content: "When someone asks 'how much does a floor scrubber cost,' they usually mean the purchase price. But the real cost includes parts, batteries, maintenance, chemicals, and operator training over the machine's 5-10 year lifespan. A $6,000 scrubber that costs $2,000/year to maintain is more expensive than a $10,000 scrubber costing $500/year. This guide breaks down every cost component so you can budget accurately.",
+        content: "When someone asks 'how much does a floor scrubber cost,' they usually mean the purchase price. But purchase prices tell only part of the story, and the unit cost of a machine varies widely depending on the type you choose. The real cost includes parts, batteries, maintenance, chemicals, and operator training over the machine's 5-10 year lifespan. A $6,000 scrubber that costs $2,000 a year to maintain is more expensive than a $10,000 scrubber costing $500 a year. This guide breaks down every cost component so you can budget accurately.",
       },
       {
         heading: "Walk-Behind Floor Scrubber Prices by Tier",
-        content: "Walk-behind scrubbers range from $3,000 for basic models to $12,000 for heavy-duty industrial units. Here's what you get at each price point:",
+        content: "Walk behind floor scrubber prices range from $3,000 for basic models to $12,000 for heavy-duty industrial units. The average cost of a mid-size machine suited to 5,000-20,000 square feet of floor area, a square footage band covering most small factories, sits near $6,000. Here is what you get at each price point:",
         items: [
           "Budget ($3,000-5,000): 17-20 inch, pad-assisted or basic disc brush, lead-acid battery, 10-15 gallon tanks. Best for small shops, restaurants, gas stations.",
           "Mid-Range ($5,000-8,000): 20-28 inch, self-propelled drive, disc or roller brush, 15-25 gallon tanks, optional lithium. Best for medium warehouses, schools, supermarkets.",
@@ -2267,7 +2267,7 @@ const extraGuides: Guide[] = [
       },
       {
         heading: "What Drives the Price Difference Between Models?",
-        content: "Two machines that look similar can differ by $5,000+. These six factors explain why:",
+        content: "Two machines that look similar can differ by $5,000+. Cleaning path width, battery powered versus corded drive systems, and inch machine size all shift the price. These six factors explain why:",
         items: [
           "Cleaning width: Each 2-inch increase in width adds ~$500-1,000 (wider = fewer passes = faster)",
           "Battery type: Lithium adds $800-2,000 upfront vs lead-acid, but saves $1,000+ in maintenance over 5 years",
@@ -2279,7 +2279,7 @@ const extraGuides: Guide[] = [
       },
       {
         heading: "Annual Operating Costs — The Hidden Half of Your Budget",
-        content: "Purchase price is only 40-50% of the 5-year total cost. Here's what you'll spend annually:",
+        content: "Purchase price is only 40-50% of the 5-year total. The running cost of a mid-size machine, including maintenance costs alongside operating costs such as power and chemicals, typically lands between $1,200 and $3,500 a year. That year cost is what most buyers underestimate. Here is what you'll spend annually:",
         items: [
           "Disc brushes: 3-4 replacements/year × $45-75 each = $180-300/year (factory-direct) vs $360-720 (dealer)",
           "Squeegee blades: 4-6 replacements/year × $30-55/set = $180-330/year (factory-direct) vs $320-840 (dealer)",
@@ -2291,7 +2291,9 @@ const extraGuides: Guide[] = [
       },
       {
         heading: "5-Year Total Cost of Ownership Comparison",
-        content: "Let's compare three realistic scenarios for a warehouse running one machine 5 days/week:",
+        image: "/images/A50-Scrubber-05.webp",
+        imageAlt: "Floor scrubber cost breakdown showing machine, parts and operating expenses",
+        content: "Let's compare three realistic scenarios for a warehouse running one machine 5 days a week. Cost of ownership TCO over the long run is what separates them. The gap widens after year two, when cost savings from lower maintenance start to show. Compare the three and the most cost effective option becomes clear:",
         items: [
           "Scenario A — Dealer walk-behind: $6,000 purchase + $2,000/yr parts = $16,000 over 5 years",
           "Scenario B — Factory-direct walk-behind: $3,800 purchase + $1,000/yr parts = $8,800 over 5 years. Saves $7,200.",
@@ -2322,7 +2324,7 @@ const extraGuides: Guide[] = [
       },
       {
         heading: "Hidden Costs First-Time Buyers Miss",
-        content: "These six costs catch new buyers off guard. Budget for them from day one:",
+        content: "These six costs catch new buyers off guard. Indirect costs such as downtime, operator training and battery disposal rarely appear in a written quote. Budget for them from day one:",
         items: [
           "Shipping/freight: $500-2,000 domestic, $1,000-5,000 international (factory-direct from China)",
           "Import duties: 0-10% depending on country and trade agreements — check your local customs",
@@ -2358,7 +2360,7 @@ const extraGuides: Guide[] = [
       },
       {
         heading: "Get Your Factory-Direct Quote",
-        content: "Tell us your facility size, floor type, and daily cleaning hours. We'll recommend the right machine at factory-direct pricing — typically 30-40% less than your local dealer. Quote within 24 hours. No obligation.",
+        content: "Tell us your facility size, floor type, and daily cleaning hours. We'll recommend the right machine, product or service, and send a factory-direct quote so you can make informed decisions. Pricing is typically 30-40% less than your local dealer. Quote within 24 hours, with no obligation. Browse the machine range at aikeruiclean.com/floor-scrubbers, or see replacement parts and consumables at aikeruiclean.com/parts.",
       },
     ],
     relatedProducts: [],
