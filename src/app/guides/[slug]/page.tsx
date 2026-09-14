@@ -354,9 +354,14 @@ export default async function GuideDetailPage({ params }: Props) {
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">
                   {section.heading}
                 </h2>
-                <p className="text-gray-600 leading-relaxed mb-4">
-                  {section.content}
-                </p>
+                {section.content.split(/\n\n+/).map((para, pi) => (
+                  <p
+                    key={pi}
+                    className="text-gray-600 leading-relaxed mb-4"
+                  >
+                    {para}
+                  </p>
+                ))}
                 {section.image && (
                   <div className="my-5">
                     <Image
