@@ -5,6 +5,7 @@ import Image from "next/image";
 import { ShoppingCart } from "@/lib/icons";
 import type { Product } from "@/lib/products";
 import { useCart } from "@/lib/cart-context";
+import { formatPrice } from "@/lib/price-ranges";
 
 interface ProductCardProps {
   product: Product;
@@ -59,10 +60,10 @@ export function ProductCard({ product }: ProductCardProps) {
           </h3>
         </Link>
 
-        {/* Price */}
-        {canBuy && (
-          <p className="text-lg font-bold text-primary mt-1">${product.price!.toFixed(2)}</p>
-        )}
+        {/* Price：明确价 → 具体价；无 → 价格区间 */}
+        <p className={`text-lg font-bold mt-1 ${canBuy ? "text-primary" : "text-gray-700"}`}>
+          {formatPrice(product)}
+        </p>
 
         {/* Quick specs */}
         {specLines.length > 0 && (

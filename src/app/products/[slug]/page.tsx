@@ -8,14 +8,13 @@ import { CollapsibleDescription } from "@/components/collapsible-description";
 import { JsonLd } from "@/components/json-ld";
 import { getProductBySlug, getProducts } from "@/lib/products";
 import { sanitizeHtml } from "@/lib/utils";
+import { formatPrice, hasFixedPrice, getPriceRange } from "@/lib/price-ranges";
 
 interface Props {
   params: Promise<{ slug: string }>;
 }
 
-// AggregateOffer 价格区间（无单价产品用）
-// 工厂直销 B2B，价格随原材料/定制/数量波动 → 用区间避免单一标价
-// 精度：优先按 Parts 子分类（价格差异大），整机按类别
+// 价格区间已移到 @/lib/price-ranges（产品页 + 商品卡共用）
 const PART_PRICE_RANGES: Record<string, { low: number; high: number; count: number }> = {
   "Disc Brush / 盘刷": { low: 5, high: 60, count: 95 },
   "Brush / 刷类": { low: 5, high: 60, count: 37 },
@@ -37,13 +36,6 @@ const PART_PRICE_RANGES: Record<string, { low: number; high: number; count: numb
   "Lock & Flange / 锁扣·法兰": { low: 5, high: 50, count: 1 },
   "Bumper / 保险杠": { low: 10, high: 60, count: 1 },
   "Other / 其他": { low: 5, high: 100, count: 1 },
-};
-
-const CATEGORY_PRICE_RANGES: Record<string, { low: number; high: number; count: number }> = {
-  "Floor Scrubbers": { low: 300, high: 2500, count: 15 },
-  "Floor Sweepers": { low: 600, high: 4000, count: 7 },
-  "Carpet Extractor Washers": { low: 300, high: 2000, count: 3 },
-  "Dust-pushing carts": { low: 100, high: 800, count: 4 },
 };
 
 export function generateStaticParams() {
@@ -247,14 +239,7 @@ export default async function ProductDetailPage({ params }: Props) {
             // 无单一标价（询盘制/定制，价格随原材料波动）→ AggregateOffer 价格区间
             // Google 要求 Product 必须含 offers/review/aggregateRating，
             // 区间价既满足要求又不暴露单一固定价。
-            const range =
-              (product.partSubcategory &&
-                PART_PRICE_RANGES[product.partSubcategory]) ||
-              CATEGORY_PRICE_RANGES[product.category] || {
-                low: 5,
-                high: 100,
-                count: 20,
-              };
+            const range = getPriceRange(product);
             return {
               "@type": "AggregateOffer",
               url: productUrl,
@@ -350,7 +335,21 @@ export default async function ProductDetailPage({ params }: Props) {
             <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-medium rounded-full mb-3">
               {product.category}
             </span>
-            <h1 className="text-3xl font-bold text-gray-900 mb-4">{product.name}</h1>
+            <h1 className="text-3xl font-bold text-gray-900 mb-3">{product.name}</h1>
+
+            {/* Price：明确价 → 具体价；无 → 价格区间 */}
+            <div className="mb-6 pb-5 border-b border-gray-100">
+              <p
+                className={`text-3xl font-bold ${hasFixedPrice(product) ? "text-primary" : "text-gray-800"}`}
+              >
+                {formatPrice(product)}
+              </p>
+              <p className="text-xs text-gray-500 mt-1.5">
+                {hasFixedPrice(product)
+                  ? "Factory-direct price · Minimum order quantity applies"
+                  : "Indicative range — final price depends on size, material and order quantity"}
+              </p>
+            </div>
 
             <p className="text-gray-600 leading-relaxed mb-6">
               {(product.shortDescription || product.description.replace(/<[^>]*>/g, "")).slice(0, 300)}

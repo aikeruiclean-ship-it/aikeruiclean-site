@@ -1,5 +1,85 @@
 [
   {
+    "id": 90001,
+    "name": "9.2 inch Magnetic Disc Brush",
+    "slug": "9-2-inch-magnetic-disc-brush",
+    "sku": "AK-DB-001",
+    "type": "simple",
+    "published": true,
+    "featured": false,
+    "visible": true,
+    "category": "Parts",
+    "categoryFull": "Parts > Disc Brush / 盘刷",
+    "partSubcategory": "Disc Brush / 盘刷",
+    "shortDescription": "9.2 inch magnetic disc brush for ride-on floor scrubbers. Factory-direct replacement with magnetic mounting plate for fast tool-free changeover.",
+    "description": "<h3>Overview</h3>\n<div>9.2 inch magnetic disc brush designed for ride-on floor scrubbers. The magnetic mounting plate allows tool-free brush changes, cutting maintenance downtime on multi-shift operations. Factory-direct replacement part — not an OEM-branded item.</div>\n<h3>Key Features</h3>\n<ul><li>Magnetic mounting plate — tool-free brush replacement</li><li>Mixed 0.2 mm white PA and black PA filament for balanced scrubbing and sweeping</li><li>Hard composite block with black PP backing for stable bristle anchoring</li><li>Fits 9.2 inch disc scrubber heads; confirm centre hole and lug pattern before ordering</li></ul>\n<h3>Specifications</h3>\n<div>Diameter: 9.2 inch (approx. 234 mm). Filament: 0.2 mm white PA plus 0.2 mm black PA. Block: hard composite, black PP. Mounting: magnetic plate. Tuft holes: 290.</div>\n<h3>Compatibility Notes</h3>\n<div>Mounting style and centre hole may vary between machine generations. Send your machine model and OEM part number and we will confirm fitment within 24 hours.</div>",
+    "price": 16,
+    "salePrice": null,
+    "stock": null,
+    "weight": "0.9",
+    "images": [
+      "/images/parts/floor-scrubber-disc-brush-9-2-magnetic-disc-01.png",
+      "/images/parts/floor-scrubber-disc-brush-9-2-magnetic-disc-02.png"
+    ],
+    "brand": "Aikerui",
+    "tags": [
+      "parts",
+      "disc",
+      "brush",
+      "magnetic",
+      "9.2 inch",
+      "floor scrubber"
+    ],
+    "specs": {
+      "Diameter": "9.2 inch (234 mm)",
+      "Filament": "0.2 mm white PA + 0.2 mm black PA",
+      "Block": "Hard composite / Black PP",
+      "Mounting": "Magnetic plate",
+      "Tuft holes": "290"
+    },
+    "inStock": true
+  },
+  {
+    "id": 90002,
+    "name": "170*225 mm Hex Hole Iron Plate Disc Brush",
+    "slug": "170-225-mm-hex-hole-iron-plate-disc-brush",
+    "sku": "AK-DB-002",
+    "type": "simple",
+    "published": true,
+    "featured": false,
+    "visible": true,
+    "category": "Parts",
+    "categoryFull": "Parts > Disc Brush / 盘刷",
+    "partSubcategory": "Disc Brush / 盘刷",
+    "shortDescription": "170*225 mm hex hole iron plate disc brush with silicon carbide abrasive filament for heavy-duty floor stripping and grinding.",
+    "description": "<h3>Overview</h3>\n<div>170 by 225 mm disc brush with a hexagonal-hole iron backing plate and silicon carbide abrasive filament. Built for aggressive stripping and grinding where standard PP brushes are not aggressive enough. Factory-direct replacement part.</div>\n<h3>Key Features</h3>\n<ul><li>240 grit 0.6 mm silicon carbide abrasive filament for heavy soil and coating removal</li><li>Hex hole iron plate backing for secure drive engagement</li><li>Replaces aggressive black stripping pads in most applications</li><li>Hard composite construction with black PP reinforcement</li></ul>\n<h3>Specifications</h3>\n<div>Size: 170 by 225 mm. Filament: 0.6 mm silicon carbide, 240 grit, grey abrasive. Block: hard composite, black PP. Mounting: hex hole iron plate.</div>\n<h3>Compatibility Notes</h3>\n<div>Iron plate dimensions and hex hole size vary between machine models. Send your machine model and OEM part number and we will confirm fitment within 24 hours.</div>",
+    "price": null,
+    "salePrice": null,
+    "stock": null,
+    "weight": null,
+    "images": [
+      "/images/parts/floor-scrubber-disc-brush-170-225-hex-hole-iron-plate-disc-01.png",
+      "/images/parts/floor-scrubber-disc-brush-170-225-hex-hole-iron-plate-disc-02.png"
+    ],
+    "brand": "Aikerui",
+    "tags": [
+      "parts",
+      "disc",
+      "brush",
+      "hex hole",
+      "iron plate",
+      "abrasive",
+      "170x225"
+    ],
+    "specs": {
+      "Size": "170 * 225 mm",
+      "Filament": "0.6 mm silicon carbide, 240 grit",
+      "Block": "Hard composite / Black PP",
+      "Mounting": "Hex hole iron plate"
+    },
+    "inStock": true
+  },
+  {
     "id": 6617,
     "name": "Walk Behind K500BT Floor Scrubber",
     "slug": "walk-behind-k500bt-floor-scrubber",
