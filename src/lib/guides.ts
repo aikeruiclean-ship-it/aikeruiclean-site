@@ -382,11 +382,7 @@ const guides: Guide[] = [
         ],
       },
     ],
-    relatedGuides: [
-      "how-to-choose-a-floor-scrubber",
-      "walk-behind-vs-ride-on-scrubber",
-      "how-much-does-floor-scrubber-cost",
-    ],
+    relatedGuides: ["a50-walk-behind-scrubber-features", "floor-scrubber-auto-dealership-showroom", "how-to-read-floor-scrubber-specifications"],
   },
   {
     slug: "floor-scrubber-brush-complete-guide",
@@ -487,7 +483,7 @@ const guides: Guide[] = [
       },
     ],
     relatedProducts: [],
-    relatedGuides: ["aftermarket-scrubber-brush-compatible-brands"],
+    relatedGuides: ["auto-scrubber-brush-guide"],
   },
   {
     slug: "how-to-choose-a-floor-scrubber",
@@ -499,7 +495,7 @@ const guides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/B460-Scrubber-01.webp",
     published: "2026-06-01",
-    relatedGuides: ["industrial-floor-scrubber-complete-guide", "walk-behind-vs-ride-on-scrubber", "industrial-floor-sweeper-guide"],
+    relatedGuides: ["how-to-set-up-your-floor-scrubber", "floor-scrubber-safety-guide", "used-vs-new-floor-scrubber"],
     sections: [
       {
         heading: "What Type of Floor Scrubber Do You Need?",
@@ -627,7 +623,7 @@ const guides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/Disc Brush Parts 3.webp",
     published: "2026-07-31",
-    relatedGuides: ["floor-scrubber-brush-complete-guide", "top-10-floor-scrubber-disc-brushes", "top-10-floor-scrubber-roller-brushes"],
+    relatedGuides: ["shampoo-disc-brush-guide", "scrubber-leaving-streaks-on-floor", "floor-scrubber-brush-lifespan-and-maintenance"],
     sections: [
       {
         heading: "What Is a Floor Scrubber Disc Brush?",
@@ -1354,7 +1350,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/A50-Scrubber-03.webp",
     published: "2026-06-08",
-    relatedGuides: ["walk-behind-vs-ride-on-scrubber", "how-to-choose-a-floor-scrubber"],
+    relatedGuides: ["industrial-floor-scrubber-buying-guide", "how-to-choose-a-floor-scrubber", "walk-behind-vs-ride-on-scrubber"],
     videoUrl: "https://x.com/mark_xu71710/status/2064637551541878998",
     sections: [
       { heading: "Compact Design", content: "The A50 is designed with a compact footprint of 1300x550x1100mm.", items: ["Dimensions: 1300x550x1100mm", "Cleaning width: 500mm", "Ideal for facilities under 10,000 sq ft"] },
@@ -1823,7 +1819,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/A50-Scrubber-05.webp",
     published: "2026-06-26",
-    relatedGuides: ["disc-brush-vs-roller-brush-scrubber", "best-floor-scrubber-small-business", "industrial-floor-sweeper-guide"],
+    relatedGuides: ["floor-stripping-equipment-finish-removal-guide", "best-floor-scrubber-small-business", "industrial-floor-sweeper-guide"],
     sections: [
       {
         heading: "The Core Difference",
@@ -2201,7 +2197,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/Pad Center Lock Parts.webp",
     published: "2026-07-04",
-    relatedGuides: ["tennant-scrubber-parts-guide", "floor-scrubber-pad-holder-replacement-guide", "top-10-floor-scrubber-brushes-and-parts"],
+    relatedGuides: ["floor-scrubber-brush-pads-guide", "floor-scrubber-pad-holder-replacement-guide", "top-10-floor-scrubber-brushes-and-parts"],
     sections: [
       {
         heading: "Why Understanding Your Scrubber Parts Matters",
@@ -2480,7 +2476,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101748253843.webp",
     published: "2026-07-04",
-    relatedGuides: ["how-much-do-floor-scrubber-brushes-cost", "floor-scrubber-roi-calculator-cost-savings", "industrial-floor-scrubber-buying-guide"],
+    relatedGuides: ["how-much-do-floor-scrubber-brushes-cost", "floor-scrubber-roi-calculator-cost-savings", "floor-scrubber-brush-bristle-material-guide"],
     sections: [
       {
         heading: "The Real Cost of a Floor Scrubber — Beyond the Sticker Price",
@@ -3742,7 +3738,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101536061230.webp",
     published: "2026-07-14",
-    relatedGuides: ["walk-behind-vs-ride-on-scrubber", "disc-brush-vs-roller-brush-scrubber"],
+    relatedGuides: ["how-to-choose-a-floor-scrubber", "how-much-does-floor-scrubber-cost", "industrial-floor-scrubber-buying-guide"],
     sections: [
       {
         heading: "The Allure of a Used Floor Scrubber",
@@ -4396,7 +4392,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101559266208.webp",
     published: "2026-07-15",
-    relatedGuides: ["top-floor-scrubber-brands-buyers-guide", "floor-scrubber-roi-calculator-cost-savings", "tennant-scrubber-parts-guide"],
+    relatedGuides: ["floor-scrubber-brush-complete-guide", "floor-scrubber-disc-brush-buying-guide", "anti-tangle-floor-washer-main-brush"],
     sections: [
       {
         heading: "Why Bristle Material Matters More Than You Think",
@@ -4521,7 +4517,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101559806690.webp",
     published: "2026-07-15",
-    relatedGuides: ["floor-scrubber-roi-calculator-cost-savings", "floor-scrubber-brush-replacement-guide", "floor-scrubber-daily-operation-best-practices"],
+    relatedGuides: ["how-to-choose-a-floor-scrubber", "industrial-floor-scrubber-buying-guide", "floor-scrubber-brush-pressure-guide"],
     sections: [
       {
         heading: "Don't Buy Based on Marketing — Buy Based on Specs",
@@ -4558,7 +4554,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101560194300.webp",
     published: "2026-07-15",
-    relatedGuides: ["warehouse-cleaning-equipment-complete-guide", "how-to-choose-a-floor-scrubber", "floor-scrubber-food-processing-plants"],
+    relatedGuides: ["floor-scrubber-brush-complete-guide", "floor-scrubber-brush-lifespan-and-maintenance", "how-to-measure-floor-scrubber-brush-size"],
     sections: [
       {
         heading: "Why Brush Pressure Determines Everything",
@@ -4644,7 +4640,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101650654640.webp",
     published: "2026-07-16",
-    relatedGuides: ["commercial-carpet-cleaning-equipment-guide", "floor-scrubber-brush-pads-guide", "top-10-floor-scrubber-roller-brushes"],
+    relatedGuides: ["industrial-floor-scrubber-buying-guide", "how-to-choose-a-floor-scrubber", "industrial-floor-sweeper-guide"],
     sections: [
       {
         heading: "Why Dealership Floors Are the First Thing Customers Notice",
@@ -5669,12 +5665,7 @@ const extraGuides: Guide[] = [
       },
     ],
     relatedProducts: [],
-    relatedGuides: [
-      "floor-scrubber-brush-complete-guide",
-      "floor-scrubber-disc-brush-buying-guide",
-      "disc-brush-vs-roller-brush-scrubber",
-      "floor-scrubber-brush-replacement-guide",
-    ],
+    relatedGuides: ["floor-scrubber-brush-complete-guide", "cylindrical-brush-floor-scrubber-guide", "floor-scrubber-brush-lifespan-and-maintenance"],
   },
   {
     slug: "cylindrical-brush-floor-scrubber-guide",
