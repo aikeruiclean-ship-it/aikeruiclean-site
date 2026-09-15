@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { ChevronRight } from "@/lib/icons";
 import { InquiryButton } from "@/components/inquiry-button";
+import { AddToCartButton } from "@/components/add-to-cart-button";
 import { CollapsibleDescription } from "@/components/collapsible-description";
 import { JsonLd } from "@/components/json-ld";
 import { getProductBySlug, getProducts } from "@/lib/products";
@@ -337,25 +338,27 @@ export default async function ProductDetailPage({ params }: Props) {
             </span>
             <h1 className="text-3xl font-bold text-gray-900 mb-3">{product.name}</h1>
 
-            {/* Price：明确价 → 具体价；无 → 价格区间 */}
-            <div className="mb-6 pb-5 border-b border-gray-100">
-              <p
-                className={`text-3xl font-bold ${hasFixedPrice(product) ? "text-primary" : "text-gray-800"}`}
-              >
-                {formatPrice(product)}
-              </p>
-              <p className="text-xs text-gray-500 mt-1.5">
-                {hasFixedPrice(product)
-                  ? "Factory-direct price · Minimum order quantity applies"
-                  : "Indicative range — final price depends on size, material and order quantity"}
-              </p>
-            </div>
+            {/* 价格区：仅明确价显示（无价不显示，区间仅供 Schema 使用） */}
+            {hasFixedPrice(product) && (
+              <div className="mb-6 pb-5 border-b border-gray-100">
+                <p className="text-3xl font-bold text-primary">
+                  {formatPrice(product)}
+                </p>
+                <p className="text-xs text-gray-500 mt-1.5">
+                  Factory-direct price · Minimum order quantity applies
+                </p>
+              </div>
+            )}
 
             <p className="text-gray-600 leading-relaxed mb-6">
               {(product.shortDescription || product.description.replace(/<[^>]*>/g, "")).slice(0, 300)}
             </p>
 
-            <InquiryButton productName={product.name} />
+            {/* CTA：有明确价 → 加购 + 询价；无价 → 仅询价 */}
+            <div className="flex flex-wrap gap-3">
+              {hasFixedPrice(product) && <AddToCartButton product={product} />}
+              <InquiryButton productName={product.name} />
+            </div>
 
             {/* Quick highlights */}
             {Object.keys(product.specs).length > 0 && (

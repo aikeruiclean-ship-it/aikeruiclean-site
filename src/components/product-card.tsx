@@ -60,10 +60,10 @@ export function ProductCard({ product }: ProductCardProps) {
           </h3>
         </Link>
 
-        {/* Price：明确价 → 具体价；无 → 价格区间 */}
-        <p className={`text-lg font-bold mt-1 ${canBuy ? "text-primary" : "text-gray-700"}`}>
-          {formatPrice(product)}
-        </p>
+        {/* Price：仅明确价显示（无价不显示，区间仅供 Schema） */}
+        {canBuy && (
+          <p className="text-lg font-bold text-primary mt-1">{formatPrice(product)}</p>
+        )}
 
         {/* Quick specs */}
         {specLines.length > 0 && (
