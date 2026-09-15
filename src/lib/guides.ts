@@ -1371,6 +1371,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/parts/101939797515.webp",
     published: "2026-08-14",
+    videoId: "squeezeblade0915",
     relatedGuides: ["top-10-floor-scrubber-disc-brushes", "top-10-floor-scrubber-roller-brushes", "top-10-floor-scrubber-brushes-and-parts"],
     sections: [
       {
