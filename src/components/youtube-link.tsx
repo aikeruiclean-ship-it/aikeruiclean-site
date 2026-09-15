@@ -13,6 +13,7 @@ const LOCAL_VIDEOS: Record<string, { src: string; poster?: string }> = {
   IfTGVM4OC_k: { src: "/videos/disc-brush-buying.mp4", poster: "/images/disc-brush-buying-poster.jpg" },
   factorytour01: { src: "/videos/factorytour01.mp4", poster: "/images/factorytour01-poster.jpg" },
   squeezeblade0915: { src: "/videos/squeegee-blade.mp4", poster: "/images/squeegee-blade-poster.jpg" },
+  factoryassess0916: { src: "/videos/factory-assess.mp4", poster: "/images/factory-assess-poster.jpg" },
   "shampoo-disc-brush": {
     src: "/videos/shampoo-disc-brush.mp4",
     poster: "/images/shampoo-disc-brush-poster.jpg",

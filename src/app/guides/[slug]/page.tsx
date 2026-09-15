@@ -13,6 +13,7 @@ const LOCAL_VIDEO_PATHS: Record<string, string> = {
   IfTGVM4OC_k: "/videos/disc-brush-buying.mp4",
   factorytour01: "/videos/factorytour01.mp4",
   squeezeblade0915: "/videos/squeegee-blade.mp4",
+  factoryassess0916: "/videos/factory-assess.mp4",
   factorytour: "/videos/factory-tour.mp4",
   "shampoo-disc-brush": "/videos/shampoo-disc-brush.mp4",
   XrHK1POi7yY: "/videos/steel-wire-brush.mp4",

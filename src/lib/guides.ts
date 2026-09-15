@@ -27,6 +27,113 @@ interface GuideSection {
 
 const guides: Guide[] = [
   {
+    slug: "how-to-assess-floor-scrubber-manufacturer",
+    title: "How to Assess a Floor Scrubber Manufacturer 2026 | Aikerui",
+    description:
+      "A seven-dimension framework for assessing an industrial floor scrubber manufacturer: capacity, certification, OEM capability, lead time and after-sales.",
+    category: "buying-guide",
+    readTime: "9 min",
+    difficulty: "intermediate",
+    thumbnail: "/images/A50-Scrubber-02.webp",
+    published: "2026-09-16",
+    videoId: "factoryassess0916",
+    sections: [
+      {
+        heading: "Why Capability Beats Price Alone",
+        content:
+          "Every industrial floor scrubber quote looks similar on paper: a machine, a price, a lead time. What separates a supplier you can scale with from one that stalls your order is capability, meaning the ability to actually produce at the specification and volume you need.\n\nPrice tells you what a supplier wants today. Capability tells you what they can deliver in month six, year two and year five, including spare parts after the model changes.",
+        image: "/images/A50-Scrubber-03.webp",
+        imageAlt: "Industrial floor scrubber manufacturer production facility",
+      },
+      {
+        heading: "The Seven Assessment Dimensions",
+        content:
+          "Assess an industrial floor scrubber manufacturer on seven dimensions. Score each one out of five and the weakest dimension tells you where the risk sits.",
+        items: [
+          "Production capacity — monthly output, production lines and how much of that capacity they can commit to you.",
+          "Certification — CE, ISO 9001 and any market-specific approvals required at your destination.",
+          "OEM and customization — branding, packaging, voltage, plug type and specification changes.",
+          "Lead time and stock — standard production time, in-stock models and how they handle rush orders.",
+          "After-sales and spare parts — part availability, warranty terms and response time.",
+          "Payment terms — deposit percentage, accepted payment methods and whether credit terms are available.",
+          "Traceability — business licence, registered scope, export records and willingness to host an inspection.",
+        ],
+      },
+      {
+        heading: "Production Capacity: How to Read the Numbers",
+        content:
+          "Capacity claims are easy to make and easy to check. Ask for the production line count, shift pattern and monthly output for the model you are buying, not for the facility as a whole.",
+        items: [
+          "Facility area — a 10,000+ square meter plant usually indicates genuine manufacturing rather than assembly.",
+          "Production lines — ask how many lines build this specific machine type, and what the takt time is.",
+          "Monthly output — request the figure for your model, then compare against your order volume as a share of capacity.",
+          "Headcount — production staff numbers should be consistent with the claimed output.",
+          "In-house parts — machines whose brushes, tanks and frames are made on site carry lower supply risk than assembled imports.",
+        ],
+      },
+      {
+        heading: "Certification and Compliance",
+        content:
+          "Certificates matter differently depending on your market. Ask for the certificate numbers and issuing bodies, then verify them independently rather than accepting a scanned PDF.",
+        items: [
+          "CE marking — required for the European Union; check whether it is self-declared or issued by a notified body.",
+          "ISO 9001 — quality management certification; confirms documented production processes exist.",
+          "Electrical safety — voltage, plug type and any regional approvals your destination requires.",
+          "Battery and transport compliance — lithium battery shipping documentation if the machine ships with one.",
+          "Environmental documentation — noise and emissions data for indoor or municipal tenders.",
+        ],
+      },
+      {
+        heading: "OEM and Customization Capability",
+        content:
+          "If you sell under your own brand, customization capability decides how quickly you can launch and how much you pay for tooling.",
+        items: [
+          "Branding — decals, silk screening and nameplates applied at the factory rather than by a third party.",
+          "Packaging — retail-ready cartons, pallet configuration and labelling to your market's requirements.",
+          "Specification changes — voltage, plug, tank size, brush type and control panel language.",
+          "Minimum order for customization — typically higher than standard orders because tooling and labelling change per run.",
+          "Sample and pre-production units — confirm they will supply a branding sample before full production.",
+        ],
+      },
+      {
+        heading: "Lead Time, Stock and After-Sales",
+        content:
+          "Aikerui manufactures floor scrubbers and sweepers at its own 10,000+ square meter facility in Anqing, Anhui, China. The company was founded in 2008, holds CE and ISO 9001 certification and has exported to 50+ countries.\n\nStandard production runs 15-30 days depending on model and volume, and in-stock models ship faster. Brushes and most spare parts come off the same production line, which keeps consumables available after the machine is delivered. Compare models at aikeruiclean.com/floor-scrubbers or request pricing at aikeruiclean.com/floor-scrubber-parts-quote.",
+      },
+      {
+        heading: "Running a Supplier Audit",
+        content:
+          "A supplier audit does not need a full week on site. Ask for these six items and the answers reveal most of what you need to know.",
+        items: [
+          "Business licence with registered scope of business, so you can confirm the company is licensed to manufacture rather than trade.",
+          "A live video walkthrough of the production line showing your model being built, not a stock photo or generic clip.",
+          "A bill of lading from a recent export shipment to confirm they actually ship internationally.",
+          "Certificate numbers with issuing bodies so you can verify CE and ISO 9001 independently.",
+          "A written spare parts list with prices, so you know consumable costs before you commit.",
+          "Confirmation that third-party inspection before shipment is welcome, ideally in writing.",
+        ],
+      },
+      {
+        heading: "Frequently Asked Questions",
+        content:
+          "These are the questions buyers ask most often when assessing an industrial floor scrubber manufacturer.",
+        items: [
+          "How do I tell a manufacturer from a trading company? — Ask for the business licence and a live production line walkthrough. Trading companies cannot show either.",
+          "What monthly output should a manufacturer have? — It depends on order volume. What matters is whether your order fits comfortably inside their committed capacity.",
+          "Is CE certification enough? — For the EU, yes, provided it is genuine and issued by a recognised body. Other markets add their own requirements.",
+          "How long should production take? — Standard runs take 15-30 days from a Chinese factory. Faster lead times usually mean in-stock models.",
+          "Do manufacturers support OEM branding? — Most do, but the minimum order is higher than standard orders because tooling and labelling change per run.",
+          "What payment terms are normal? — A deposit with the balance before shipment is standard. Credit terms depend on order history and volume.",
+        ],
+      },
+    ],
+    relatedGuides: [
+      "how-to-verify-floor-scrubber-manufacturer",
+      "industrial-floor-scrubber-buying-guide",
+      "industrial-floor-sweeper-guide",
+    ],
+  },
+  {
     slug: "industrial-floor-sweeper-guide",
     title: "Industrial Floor Sweeper Buying Guide 2026 | Aikerui",
     description:
@@ -3745,7 +3852,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/RIDE-ON-A660.webp",
     published: "2026-09-11",
-    relatedGuides: ["top-10-floor-scrubber-manufacturers-2026", "top-10-industrial-cleaning-equipment-manufacturers", "industrial-floor-sweeper-guide"],
+    relatedGuides: ["top-10-floor-scrubber-manufacturers-2026", "top-10-industrial-cleaning-equipment-manufacturers", "how-to-assess-floor-scrubber-manufacturer"],
     sections: [
       {
         heading: "The 2026 Floor Scrubber Supply Landscape",
@@ -4540,7 +4647,7 @@ const extraGuides: Guide[] = [
     difficulty: "intermediate",
     thumbnail: "/images/parts/101650838979.webp",
     published: "2026-07-16",
-    relatedGuides: ["how-to-import-floor-scrubbers-from-china", "how-to-buy-floor-scrubber-parts-from-china", "top-10-industrial-floor-scrubber-suppliers"],
+    relatedGuides: ["how-to-import-floor-scrubbers-from-china", "how-to-buy-floor-scrubber-parts-from-china", "how-to-assess-floor-scrubber-manufacturer"],
     sections: [
       {
         heading: "The 'Fake Factory' Problem in B2B Equipment",
