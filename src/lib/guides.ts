@@ -98,7 +98,7 @@ const guides: Guide[] = [
       {
         heading: "Lead Time, Stock and After-Sales",
         content:
-          "Aikerui manufactures floor scrubbers and sweepers at its own 10,000+ square meter facility in Anqing, Anhui, China. The company was founded in 2008, holds CE and ISO 9001 certification and has exported to 50+ countries.\n\nStandard production runs 15-30 days depending on model and volume, and in-stock models ship faster. Brushes and most spare parts come off the same production line, which keeps consumables available after the machine is delivered. Compare models at aikeruiclean.com/floor-scrubbers or request pricing at aikeruiclean.com/floor-scrubber-parts-quote.",
+          "Aikerui manufactures floor scrubbers and sweepers at its own 10,000+ square meter facility in Anqing, Anhui, China. The company was founded in 2008, holds CE and ISO 9001 certification and has exported to 50+ countries.\n\nWalk-behind scrubbers land around $1,800-7,500 and ride-on units $6,000-24,000, typically 30-50% below equivalent Western branded machines because no distributor sits in between.\n\nStandard production runs 15-30 days depending on model and volume, and in-stock models ship faster. Brushes and most spare parts come off the same production line, which keeps consumables available after the machine is delivered. Compare models at aikeruiclean.com/floor-scrubbers or request pricing at aikeruiclean.com/floor-scrubber-parts-quote.",
       },
       {
         heading: "Running a Supplier Audit",
