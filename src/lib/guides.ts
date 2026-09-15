@@ -27,6 +27,112 @@ interface GuideSection {
 
 const guides: Guide[] = [
   {
+    slug: "industrial-floor-sweeper-guide",
+    title: "Industrial Floor Sweeper Buying Guide 2026 | Aikerui",
+    description:
+      "How to choose an industrial floor sweeper: sweeper vs scrubber, the four machine types, sizing by floor area and factory-direct cost breakdown.",
+    category: "buying-guide",
+    readTime: "10 min",
+    difficulty: "beginner",
+    thumbnail: "/images/A1280-Sweeper-01.webp",
+    published: "2026-09-15",
+    sections: [
+      {
+        heading: "What an Industrial Floor Sweeper Does",
+        content:
+          "An industrial floor sweeper collects dry debris rather than washing the floor. Dust, packaging scraps, grit, sand, metal shavings and light rubbish go into a hopper, while a vacuum-assisted filter keeps fine dust from escaping back into the air.\n\nThat makes an industrial floor sweeper the right machine for warehouses, loading docks, parking areas, factory aisles and outdoor yards. In those settings the daily problem is what sits on the floor rather than what is stuck to it.",
+        image: "/images/A1280-Sweeper-02.webp",
+        imageAlt: "Industrial floor sweeper collecting debris in a warehouse",
+      },
+      {
+        heading: "Industrial Floor Sweepers vs Floor Scrubbers",
+        content:
+          "Sweepers and scrubbers solve different problems, and many facilities end up running both. The quick test is what you are removing.",
+        items: [
+          "Dry debris only — dust, packaging, grit, shavings: an industrial floor sweeper covers far more ground per hour.",
+          "Liquid film or residue — oil, tyre marks, dried spills: a floor scrubber is required, because sweeping spreads the film.",
+          "Mixed conditions — most warehouses: a sweeper for daily debris plus a scrubber for scheduled deep cleaning.",
+          "Outdoor areas — parking, yards, loading bays: a ride-on sweeper with a heavy-duty main broom handles grit and aggregate.",
+          "Food and pharma floors — hygiene rules usually point to a scrubber, with sweepers limited to dry zones.",
+        ],
+      },
+      {
+        heading: "The Four Types of Industrial Floor Sweepers",
+        content:
+          "Most industrial floor sweepers fall into four categories. The right choice depends on floor area, aisle width and how much debris accumulates per shift.",
+        items: [
+          "Walk-behind sweeper — best for aisles, small warehouses and areas under 20,000 sq ft; sweeping widths typically 24 to 36 inches.",
+          "Ride-on sweeper — best for large open floors and outdoor areas above 20,000 sq ft; sweeping widths typically 40 to 60 inches.",
+          "Vacuum sweeper — adds fine-dust filtration for food, packaging and electronics environments where airborne dust is a problem.",
+          "Manual push sweeper — a low-cost option for small workshops and retail back rooms; no power source and no operating cost.",
+        ],
+      },
+      {
+        heading: "Sizing: Match Sweeping Width to Floor Area",
+        content:
+          "Undersizing means multiple passes and wasted labour; oversizing means a machine that cannot turn in your narrowest aisle. Use sweeping width against daily square footage as the first filter.",
+        items: [
+          "Under 10,000 sq ft — manual push or walk-behind, 24-30 inch sweeping width.",
+          "10,000-30,000 sq ft — walk-behind, 30-36 inch sweeping width, battery powered.",
+          "30,000-80,000 sq ft — ride-on, 40-50 inch sweeping width, battery or diesel.",
+          "Over 80,000 sq ft — ride-on 50-60 inch, or two machines covering separate zones.",
+          "Always measure your narrowest aisle before ordering. A 50-inch sweeper will not turn in a 54-inch aisle.",
+        ],
+      },
+      {
+        heading: "What an Industrial Floor Sweeper Costs",
+        content:
+          "Purchase price is typically 35-45 percent of the five-year cost of ownership. A proper total cost of ownership calculation adds filter and brush replacement, battery or fuel, labour and downtime.\n\nFor most industrial floor sweepers, consumables and labour outweigh the machine itself over the long run, which is why the cheapest quote is rarely the most cost effective option.",
+        items: [
+          "Machine purchase — the average cost runs $3,500-9,000 for walk-behind, $12,000-40,000 for ride-on, depending on the type.",
+          "Main brush and side brush replacement — $300-900 per year depending on sweeping hours.",
+          "Filter replacement — $150-600 per year, higher in fine-dust environments; cost includes the filter cartridge and seals.",
+          "Battery or fuel — $400-1,800 per year; diesel models cost more to run than battery powered ones but sweep continuously.",
+          "Labour — usually the largest single line, and the item a wider sweeping width reduces fastest, producing measurable cost savings.",
+          "Total cost of ownership TCO across five years — budget $12,000-90,000 all in. Seeing the full figure is what makes informed decisions possible.",
+        ],
+        image: "/images/A1280-Sweeper-03.webp",
+        imageAlt: "Ride-on industrial floor sweeper cost breakdown",
+      },
+      {
+        heading: "Where to Buy: Factory-Direct or Dealer",
+        content:
+          "Aikerui is an industrial floor sweeper manufacturer operating from its own 10,000+ square meter facility in Anqing, Anhui, China. The company was founded in 2008. It runs its own production line rather than trading. It offers ride-on and walk-behind sweepers alongside floor scrubbers, and has exported to 50+ countries with CE and ISO 9001 certification.\n\nBecause there is no distributor layer in between, factory-direct pricing typically lands 20-40 percent below equivalent Western branded machines. Compare sweepers at aikeruiclean.com/floor-sweepers, or request pricing at aikeruiclean.com/floor-scrubber-parts-quote.",
+      },
+      {
+        heading: "Six Mistakes Buyers Make",
+        content:
+          "These are the recurring issues we see when buyers compare sweeper quotes or replace an existing machine.",
+        items: [
+          "Choosing a scrubber when the actual problem is dry debris, then paying for water and chemicals every shift.",
+          "Sizing by price instead of by square footage, which means two passes where one would do.",
+          "Ignoring aisle width, doorway clearance and ramp angles until delivery day.",
+          "Skipping the dust-suppression check in food, packaging or electronics environments.",
+          "Not confirming brush and filter availability before ordering, then waiting weeks for consumables.",
+          "Not verifying the manufacturer directly. Ask for the production address and request a live video walkthrough before payment.",
+        ],
+      },
+      {
+        heading: "Frequently Asked Questions",
+        content:
+          "These are the questions buyers ask most often before placing an industrial floor sweeper order.",
+        items: [
+          "Do I need a sweeper or a scrubber? — Sweep if the debris is dry; scrub if there is liquid film or residue. Many warehouses run both.",
+          "What sweeping width do I need? — Match width to daily square footage. Under 10,000 sq ft suits 24-30 inch; above 80,000 sq ft needs 50-60 inch.",
+          "How long do sweeper brushes last? — Main brooms typically last 300-800 hours. Hard floors wear them faster than smooth concrete.",
+          "Battery or diesel? — Battery suits indoor work and food environments. Diesel suits outdoor yards where continuous sweeping matters more than emissions.",
+          "What is the lead time from a Chinese factory? — Production usually runs 15-30 days, plus shipping. In-stock models ship faster.",
+          "Can I get OEM branding? — Yes. Custom branding and labelling are available, with minimum order quantities depending on the specification.",
+        ],
+      },
+    ],
+    relatedGuides: [
+      "industrial-floor-scrubber-buying-guide",
+      "how-to-choose-a-floor-scrubber",
+      "top-10-industrial-floor-scrubber-suppliers",
+    ],
+  },
+  {
     slug: "industrial-floor-scrubber-buying-guide",
     title: "Industrial Floor Scrubber Buying Guide 2026 | Aikerui",
     description:
@@ -259,7 +365,7 @@ const guides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/B460-Scrubber-01.webp",
     published: "2026-06-01",
-    relatedGuides: ["industrial-floor-scrubber-complete-guide", "walk-behind-vs-ride-on-scrubber", "industrial-floor-scrubber-buying-guide"],
+    relatedGuides: ["industrial-floor-scrubber-complete-guide", "walk-behind-vs-ride-on-scrubber", "industrial-floor-sweeper-guide"],
     sections: [
       {
         heading: "What Type of Floor Scrubber Do You Need?",
@@ -1582,7 +1688,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/A50-Scrubber-05.webp",
     published: "2026-06-26",
-    relatedGuides: ["disc-brush-vs-roller-brush-scrubber", "best-floor-scrubber-small-business", "industrial-floor-scrubber-buying-guide"],
+    relatedGuides: ["disc-brush-vs-roller-brush-scrubber", "best-floor-scrubber-small-business", "industrial-floor-sweeper-guide"],
     sections: [
       {
         heading: "The Core Difference",
@@ -3638,11 +3744,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/RIDE-ON-A660.webp",
     published: "2026-09-11",
-    relatedGuides: [
-      "top-10-floor-scrubber-manufacturers-2026",
-      "top-10-industrial-cleaning-equipment-manufacturers",
-      "top-floor-scrubber-brands-buyers-guide",
-    ],
+    relatedGuides: ["top-10-floor-scrubber-manufacturers-2026", "top-10-industrial-cleaning-equipment-manufacturers", "industrial-floor-sweeper-guide"],
     sections: [
       {
         heading: "The 2026 Floor Scrubber Supply Landscape",
