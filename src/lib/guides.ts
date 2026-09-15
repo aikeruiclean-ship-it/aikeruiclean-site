@@ -30,7 +30,7 @@ const guides: Guide[] = [
     slug: "how-to-assess-floor-scrubber-manufacturer",
     title: "How to Assess a Floor Scrubber Manufacturer 2026 | Aikerui",
     description:
-      "A seven-dimension framework for assessing an industrial floor scrubber manufacturer, covering production capacity, certification, OEM capability, lead time, quality control, payment terms and after-sales support.",
+      "Assess an industrial floor scrubber manufacturer across seven dimensions: capacity, certification, OEM capability, lead time, quality control and after-sales.",
     category: "buying-guide",
     readTime: "11 min",
     difficulty: "intermediate",
