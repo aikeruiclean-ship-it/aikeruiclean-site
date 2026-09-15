@@ -30,9 +30,9 @@ const guides: Guide[] = [
     slug: "how-to-assess-floor-scrubber-manufacturer",
     title: "How to Assess a Floor Scrubber Manufacturer 2026 | Aikerui",
     description:
-      "A seven-dimension framework for assessing an industrial floor scrubber manufacturer: capacity, certification, OEM capability, lead time and after-sales.",
+      "A seven-dimension framework for assessing an industrial floor scrubber manufacturer, covering production capacity, certification, OEM capability, lead time, quality control, payment terms and after-sales support.",
     category: "buying-guide",
-    readTime: "9 min",
+    readTime: "11 min",
     difficulty: "intermediate",
     thumbnail: "/images/A50-Scrubber-02.webp",
     published: "2026-09-16",
@@ -41,93 +41,103 @@ const guides: Guide[] = [
       {
         heading: "Why Capability Beats Price Alone",
         content:
-          "Every industrial floor scrubber quote looks similar on paper: a machine, a price, a lead time. Capability is what separates a supplier you can scale with from one that stalls your order. It means the ability to produce at the specification and volume you need.\n\nPrice tells you what a supplier wants today. Capability tells you what they can deliver in month six, year two and year five, including spare parts after the model changes.",
+          "Every industrial floor scrubber quote looks similar on paper: a machine, a price and a lead time. Capability is what separates a supplier you can scale with from one that stalls your order. It means the ability to produce at the specification and volume you need." +
+          "\n\n" +
+          "A supplier's quoted price reflects its current commercial position, while its manufacturing capability shows what it can consistently deliver as your business grows. That includes production capacity, quality consistency and spare-parts support after the model changes.",
         image: "/images/A50-Scrubber-03.webp",
         imageAlt: "Industrial floor scrubber manufacturer production facility",
       },
       {
         heading: "The Seven Assessment Dimensions",
         content:
-          "Assess an industrial floor scrubber manufacturer on seven dimensions. Score each one out of five and the weakest dimension tells you where the risk sits.",
+          "Assess an industrial floor scrubber manufacturer across seven dimensions. Score each one out of five, and the weakest dimension will indicate where the greatest supplier risk sits.",
         items: [
-          "Production capacity — monthly output, production lines and how much of that capacity they can commit to you.",
-          "Certification — CE, ISO 9001 and any market-specific approvals required at your destination.",
-          "OEM and custom build — branding, packaging, voltage, plug type and specification changes.",
-          "Lead time and stock — standard production time, in-stock models and how they handle rush orders.",
-          "After-sales and spare parts — part availability, warranty terms and response time.",
-          "Payment terms — deposit percentage, accepted payment methods and whether credit terms are available.",
-          "batch tracking — business licence, registered scope, export records and willingness to host an inspection.",
+          "Production capacity. Monthly output, production lines and how much of that capacity they can commit to you.",
+          "Certification. CE, ISO 9001 and any market-specific approvals required at your destination.",
+          "OEM and custom build. Branding, packaging, voltage, plug type and specification changes.",
+          "Lead time and stock. Standard production time, in-stock models and how they handle rush orders.",
+          "After-sales and spare parts. Part availability, warranty terms and response time.",
+          "Payment terms. Deposit percentage, accepted payment methods and whether credit terms are available.",
+          "Batch tracking. Business licence, registered scope, export records and willingness to host an inspection.",
         ],
       },
       {
         heading: "Production Capacity: How to Read the Numbers",
         content:
-          "Capacity claims are easy to make and easy to check. Ask for the production line count, shift pattern and monthly output for the model you are buying, not for the facility as a whole.",
+          "Capacity claims are easy to make and easy to check. Ask for the production line count, shift pattern and monthly output for the model you are buying, rather than relying on the facility's total production capacity.",
         items: [
-          "Facility area — a 10,000+ square meter plant usually indicates genuine manufacturing rather than assembly.",
-          "Production lines — ask how many lines build this specific machine type, and what the takt time is.",
-          "Monthly output — request the figure for your model, then compare against your order volume as a share of capacity.",
-          "Headcount — production staff numbers should be consistent with the claimed output.",
-          "In-house parts. When the factory makes its own brushes, tanks and frames, machines carry lower supply risk than assembled imports.",
+          "Facility area. A 10,000+ square meter plant usually indicates genuine manufacturing rather than simple assembly.",
+          "Production lines. Ask how many lines build this specific machine type and what the takt time is.",
+          "Monthly output. Request the figure for your model, then compare it with your order volume as a share of total capacity.",
+          "Headcount. Production staff numbers should be consistent with the claimed output.",
+          "In-house parts. When the factory manufactures its own brushes, tanks and frames, the machines generally carry lower supply risk than products assembled from imported components.",
         ],
       },
       {
         heading: "Certification and Compliance",
         content:
-          "Certificates matter differently depending on your market. Ask for the certificate numbers and the issuing bodies. Check them on your own rather than accepting a scanned PDF.",
+          "Certificates matter differently depending on your market. Ask for the certificate numbers and the issuing bodies, then verify them independently rather than accepting a scanned PDF at face value.",
         items: [
-          "CE marking — required for the European Union; check whether it is self-declared or issued by a notified body.",
-          "ISO 9001 — quality management certification; confirms documented production processes exist.",
-          "Electrical safety — voltage, plug type and any regional approvals your destination requires.",
-          "Battery and transport compliance — lithium battery shipping documentation if the machine ships with one.",
-          "Environmental documentation — noise and emissions data for indoor or municipal tenders.",
+          "CE marking. Required for the European Union. Check whether it is self-declared or issued by a notified body.",
+          "ISO 9001. Quality management certification that indicates documented production and quality processes are in place.",
+          "Electrical safety. Verify voltage, plug type and any regional approvals required in your destination market.",
+          "Battery and transport compliance. Obtain lithium battery shipping documentation if the machine is supplied with one.",
+          "Environmental documentation. Review noise and emissions data where these requirements apply to indoor or municipal projects.",
         ],
       },
       {
-        heading: "OEM and custom build Capability",
+        heading: "OEM and Custom Build Capability",
         content:
-          "If you sell under your own brand, custom build capability decides how fast you can launch. It also sets how much you pay for tooling.",
+          "If you sell under your own brand, custom build capability can determine how quickly you can launch. It also affects the tooling, packaging and production costs involved in customization.",
         items: [
-          "Branding — decals, silk screening and nameplates applied at the factory rather than by a third party.",
-          "Packaging — retail-ready cartons, pallet configuration and labelling to your market's requirements.",
-          "Specification changes — voltage, plug, tank size, brush type and control panel language.",
-          "Minimum order for custom build — typically higher than standard orders because tooling and labelling change per run.",
-          "Sample and pre-production units — confirm they will supply a branding sample before full production.",
+          "Branding. Decals, silk screening and nameplates applied at the factory rather than by a third party.",
+          "Packaging. Retail-ready cartons, pallet configuration and labelling to meet your market's requirements.",
+          "Specification changes. Voltage, plug, tank size, brush type and control panel language.",
+          "Minimum order for custom build. Typically higher than standard orders because tooling and labelling requirements change for each production run.",
+          "Sample and pre-production units. Confirm that the manufacturer will provide a branding sample before full production begins.",
         ],
       },
       {
         heading: "Lead Time, Stock and After-Sales",
         content:
-          "Aikerui manufactures floor scrubbers and sweepers at its own 10,000+ square meter facility in Anqing, Anhui, China. Aikerui started manufacturing in 2008. It holds CE and ISO 9001 certification. It has exported to 50+ countries, and lead times vary depending on the model and order volume.\n\nWalk-behind scrubbers land around $1,800-7,500. Ride-on units run $6,000-24,000. Both sit 30-50% below equivalent Western branded machines, because no distributor sits in between.\n\nStandard production runs 15-30 days depending on model and volume, and in-stock models ship faster.\n\nThe same production line makes brushes and most spare parts. Because of that, you can still buy consumables after the machine is delivered. Compare factory-direct models at aikeruiclean.com/floor-scrubbers or request pricing at aikeruiclean.com/floor-scrubber-parts-quote.",
+          "Aikerui manufactures floor scrubbers and sweepers at its own 10,000+ square meter facility in Anqing, Anhui, China. Aikerui started manufacturing in 2008. It holds CE and ISO 9001 certification and has exported to 50+ countries. Actual lead times vary depending on the model and order volume." +
+          "\n\n" +
+          "Walk-behind scrubbers typically range from $1,800 to $7,500, while ride-on units generally range from $6,000 to $24,000. Both price ranges can be 30-50% below comparable Western branded machines because there is no distributor between the factory and the buyer." +
+          "\n\n" +
+          "Standard production lead times generally range from 15 to 30 days, depending on the model and order volume. In-stock models can usually be shipped more quickly." +
+          "\n\n" +
+          "The same production facility manufactures brushes and most spare parts. This gives buyers continued access to consumable components after the machines have been delivered. Compare factory-direct models at aikeruiclean.com/floor-scrubbers or request pricing at aikeruiclean.com/floor-scrubber-parts-quote.",
       },
       {
         heading: "Production and Quality: What to Check",
         content:
-          "Capacity alone does not protect your order. Look for a factory that controls its own manufacturing processes, from raw material through to finished goods.\n\nAsk how they handle quality issues, what corrective actions follow a defect, and how cycle time is measured. A supplier who answers in specifics keeps product quality stable over the long term. That stability shows up in customer satisfaction and repeat orders.",
+          "Capacity alone does not protect your order. Look for a factory that controls its own manufacturing processes, from raw materials through to finished goods." +
+          "\n\n" +
+          "Ask how the manufacturer manages quality issues, what corrective actions are taken after a defect is identified and how production cycle time is measured. A supplier that can explain these processes with specific procedures and records is more likely to maintain consistent product quality over the long term. That consistency can directly affect customer satisfaction, warranty costs and repeat orders.",
         items: [
-          "Raw material control. Ask who supplies the steel, plastics and bristles, and whether they inspect incoming material before it enters production.",
-          "Manufacturing processes. Ask which steps run in-house and which they subcontract. More in-house steps mean tighter control.",
-          "Type of production — dedicated lines for your model category versus mixed lines that switch between products.",
-          "Production schedules. Ask how far ahead they plan, and how they increase production for a rush order without disrupting existing runs.",
-          "Cycle time — time per unit on the line. A shorter cycle time increases production capacity without buying new equipment.",
-          "Quality control — in-process checks plus a final test on every finished goods unit before packing.",
-          "Quality assurance system — documented procedures, inspection records and how they trace a defect back to its batch.",
-          "Industry standards. Check whether the factory builds to CE, ISO 9001 or a customer-specific standard, and how it proves compliance.",
-          "Corrective actions. Ask what happens once a quality issue is found, who owns the fix and how they verify it.",
-          "Track record — how long the factory has run the same line. Stable processes save time and reduce rework over the long term.",
+          "Raw material control. Ask who supplies the steel, plastics and bristles, and whether incoming materials are inspected before entering production.",
+          "Manufacturing processes. Ask which production steps are handled in-house and which are subcontracted. Greater in-house control can reduce dependence on external suppliers.",
+          "Type of production. Determine whether the factory operates dedicated lines for your model category or mixed lines that frequently switch between products.",
+          "Production scheduling. Ask how far ahead the factory plans its production schedule and how it increases output for rush orders without disrupting existing production runs.",
+          "Cycle time. Review the time required to complete one unit on the production line. Shorter cycle times can increase output without requiring additional equipment.",
+          "Quality control. Confirm that the factory performs in-process inspections as well as final testing on finished units before packing.",
+          "Quality assurance system. Review documented procedures, inspection records and the methods used to trace defects back to specific production batches.",
+          "Industry standards. Check whether the factory builds products according to CE, ISO 9001 or customer-specific requirements, and ask how compliance is demonstrated.",
+          "Corrective actions. Ask what procedure is followed when a quality issue is identified, who is responsible for resolving it and how the corrective action is verified.",
+          "Track record. Ask how long the factory has operated the same production line. Stable production processes can reduce rework and improve consistency over time.",
         ],
       },
       {
         heading: "Running a Supplier Audit",
         content:
-          "A supplier audit does not need a full week on site. Ask for these six items and the answers reveal most of what you need to know.",
+          "A supplier audit does not need to take a full week on site. Ask for the following six items, and the responses will reveal much of what you need to know about the manufacturer's operations.",
         items: [
-          "Business licence showing the registered scope of business. It confirms the company holds a manufacturing licence rather than a trading one.",
-          "A live video walkthrough of the production line as workers build your model, not a stock photo or generic clip.",
-          "A bill of lading from a recent export shipment to confirm they actually ship internationally.",
-          "Certificate numbers with issuing bodies so you can verify CE and ISO 9001 on your own.",
-          "A written spare parts list with prices, so you know consumable costs before you commit.",
-          "Confirmation that third-party inspection before shipment is welcome, ideally in writing.",
+          "Business licence showing the registered scope of business. This helps confirm whether the company operates as a manufacturer rather than only as a trading company.",
+          "A live video walkthrough of the production line while workers are building your model, rather than relying on stock photos or generic factory videos.",
+          "A bill of lading from a recent export shipment to confirm that the company has experience shipping internationally.",
+          "Certificate numbers and issuing bodies so you can independently verify CE and ISO 9001 documentation.",
+          "A written spare parts list with prices, allowing you to estimate consumable and maintenance costs before placing an order.",
+          "Confirmation that third-party inspection before shipment is welcome, ideally provided in writing.",
         ],
       },
       {
@@ -135,12 +145,12 @@ const guides: Guide[] = [
         content:
           "These are the questions buyers ask most often when assessing an industrial floor scrubber manufacturer.",
         items: [
-          "How do I tell a manufacturer from a trading company? — Ask for the business licence and a live production line walkthrough. Trading companies cannot show either.",
-          "What monthly output should a manufacturer have? — It depends on order volume. What matters is whether your order fits comfortably inside their committed capacity.",
-          "Is CE certification enough? — For the EU, yes, provided it is genuine and issued by a recognised body. Other markets add their own requirements.",
-          "How long should production take? — Standard runs take 15-30 days from a Chinese factory. Faster lead times usually mean in-stock models.",
-          "Do manufacturers support OEM branding? — Most do, but the minimum order is higher than standard orders because tooling and labelling change per run.",
-          "What payment terms are normal? — A deposit with the balance before shipment is standard. Credit terms depend on order history and volume.",
+          "How do I tell a manufacturer from a trading company? Ask for the business licence and a live production line walkthrough. A genuine manufacturer should be able to provide evidence of its manufacturing operations.",
+          "What monthly output should a manufacturer have? It depends on your order volume. What matters is whether your order can be accommodated comfortably within the manufacturer's committed production capacity.",
+          "Is CE certification enough? For the EU, CE compliance is an important requirement, but you should verify that the manufacturer's declaration and supporting technical documentation are appropriate for the specific machine and application. Other markets may have additional requirements.",
+          "How long should production take? Standard production runs at a Chinese factory generally take 15-30 days, depending on the model and order volume. Faster lead times often indicate that the required models are already in stock.",
+          "Do manufacturers support OEM branding? Many manufacturers support OEM branding, although minimum order quantities are often higher than standard orders because tooling, packaging and labelling requirements can change for each production run.",
+          "What payment terms are normal? A deposit followed by payment of the balance before shipment is common for international orders. Credit terms generally depend on the buyer's order history, volume and relationship with the manufacturer.",
         ],
       },
     ],
