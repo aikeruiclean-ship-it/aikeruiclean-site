@@ -94,7 +94,7 @@ export default async function GuideDetailPage({ params }: Props) {
           .map((s) => ({
             "@type": "HowToStep",
             name: s.heading,
-            text: s.items?.join(". ") || s.content,
+            text: s.items?.join(". ") || s.content.replace(/\\n+/g, " "),
           })),
       }
     : null;
@@ -121,7 +121,7 @@ export default async function GuideDetailPage({ params }: Props) {
             name: s.heading.replace(/\d+分钟|Step \d+:?\s*/g, "").trim(),
             acceptedAnswer: {
               "@type": "Answer",
-              text: (s.content + (s.items ? " " + s.items.join(" ") : "")).slice(0, 500),
+              text: (s.content.replace(/\\n+/g, " ") + (s.items ? " " + s.items.join(" ") : "")).slice(0, 500),
             },
           })),
         }
