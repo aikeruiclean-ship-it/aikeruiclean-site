@@ -74,7 +74,7 @@ const guides: Guide[] = [
       {
         heading: "Certification and Compliance",
         content:
-          "Certificates matter differently depending on your market. Ask for the certificate numbers and issuing bodies, then verify them on your own rather than accepting a scanned PDF.",
+          "Certificates matter differently depending on your market. Ask for the certificate numbers and the issuing bodies. Check them on your own rather than accepting a scanned PDF.",
         items: [
           "CE marking — required for the European Union; check whether it is self-declared or issued by a notified body.",
           "ISO 9001 — quality management certification; confirms documented production processes exist.",
@@ -98,22 +98,22 @@ const guides: Guide[] = [
       {
         heading: "Lead Time, Stock and After-Sales",
         content:
-          "Aikerui manufactures floor scrubbers and sweepers at its own 10,000+ square meter facility in Anqing, Anhui, China. Aikerui started manufacturing in 2008. It holds CE and ISO 9001 certification and has exported to 50+ countries, with lead times that vary depending on the model and order volume.\n\nWalk-behind scrubbers land around $1,800-7,500. Ride-on units run $6,000-24,000. Both sit 30-50% below equivalent Western branded machines, because no distributor sits in between.\n\nStandard production runs 15-30 days depending on model and volume, and in-stock models ship faster. The same production line makes brushes and most spare parts. That keeps consumables available after the machine is delivered. Compare factory-direct models at aikeruiclean.com/floor-scrubbers or request pricing at aikeruiclean.com/floor-scrubber-parts-quote.",
+          "Aikerui manufactures floor scrubbers and sweepers at its own 10,000+ square meter facility in Anqing, Anhui, China. Aikerui started manufacturing in 2008. It holds CE and ISO 9001 certification. It has exported to 50+ countries, and lead times vary depending on the model and order volume.\n\nWalk-behind scrubbers land around $1,800-7,500. Ride-on units run $6,000-24,000. Both sit 30-50% below equivalent Western branded machines, because no distributor sits in between.\n\nStandard production runs 15-30 days depending on model and volume, and in-stock models ship faster.\n\nThe same production line makes brushes and most spare parts. Because of that, you can still buy consumables after the machine is delivered. Compare factory-direct models at aikeruiclean.com/floor-scrubbers or request pricing at aikeruiclean.com/floor-scrubber-parts-quote.",
       },
       {
         heading: "Production and Quality: What to Check",
         content:
-          "Capacity alone does not protect your order. What you want is a factory that controls its own manufacturing processes from raw material through to finished goods.\\n\\nAsk how they handle quality issues, what corrective actions follow a defect, and how cycle time is measured. A supplier who answers in specifics keeps product quality stable over the long term, and that shows up in customer satisfaction and repeat orders.",
+          "Capacity alone does not protect your order. Look for a factory that controls its own manufacturing processes, from raw material through to finished goods.\n\nAsk how they handle quality issues, what corrective actions follow a defect, and how cycle time is measured. A supplier who answers in specifics keeps product quality stable over the long term. That stability shows up in customer satisfaction and repeat orders.",
         items: [
-          "Raw material control — who supplies the steel, plastics and bristles, and whether incoming material is inspected before it enters production.",
-          "Manufacturing processes — which steps run in-house and which are subcontracted. More in-house steps mean tighter control.",
+          "Raw material control. Ask who supplies the steel, plastics and bristles, and whether they inspect incoming material before it enters production.",
+          "Manufacturing processes. Ask which steps run in-house and which they subcontract. More in-house steps mean tighter control.",
           "Type of production — dedicated lines for your model category versus mixed lines that switch between products.",
-          "Production schedules — how far ahead they plan, and how they increase production for a rush order without disrupting existing runs.",
+          "Production schedules. Ask how far ahead they plan, and how they increase production for a rush order without disrupting existing runs.",
           "Cycle time — time per unit on the line. A shorter cycle time increases production capacity without buying new equipment.",
           "Quality control — in-process checks plus a final test on every finished goods unit before packing.",
           "Quality assurance system — documented procedures, inspection records and how they trace a defect back to its batch.",
-          "Industry standards — whether the factory builds to CE, ISO 9001 or a customer-specific standard, and how it proves compliance.",
-          "Corrective actions — what happens once a quality issue is found, who owns the fix and how it is verified.",
+          "Industry standards. Check whether the factory builds to CE, ISO 9001 or a customer-specific standard, and how it proves compliance.",
+          "Corrective actions. Ask what happens once a quality issue is found, who owns the fix and how they verify it.",
           "Track record — how long the factory has run the same line. Stable processes save time and reduce rework over the long term.",
         ],
       },
