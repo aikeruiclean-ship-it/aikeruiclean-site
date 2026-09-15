@@ -1344,7 +1344,8 @@ const extraGuides: Guide[] = [
   {
     slug: "a50-walk-behind-scrubber-features",
     title: "A50 Walk-Behind Floor Scrubber: Features and Capabilities",
-    description: "Discover the key features of the Aikerui A50 walk-behind floor scrubber.",
+    description:
+      "A50 walk-behind floor scrubber: 20 inch cleaning path, 24V battery system, 3-4 hour runtime and key features for warehouses and retail floors.",
     category: "product-showcase",
     readTime: "4 min",
     difficulty: "beginner",
