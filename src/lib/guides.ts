@@ -391,7 +391,7 @@ const guides: Guide[] = [
   {
     slug: "floor-scrubber-brush-complete-guide",
     title: "Floor Scrubber Brush: Types & How to Choose",
-    description: "Complete guide to floor scrubber brushes — disc brush vs roller brush, nylon vs PPL vs abrasive materials, compatibility with Tennant/Nilfisk/Karcher, and when to replace. Factory-direct pricing on 100+ brush models.",
+    description: "Complete guide to floor scrubber brushes — disc brush vs roller brush, nylon vs PPL vs abrasive materials, compatibility with Tennant/Nilfisk/Karcher",
     category: "buying-guide",
     readTime: "7 min",
     difficulty: "beginner",
@@ -493,7 +493,7 @@ const guides: Guide[] = [
     slug: "how-to-choose-a-floor-scrubber",
     title: "How to Choose a Floor Scrubber: Complete Buying Guide",
     description:
-      "Learn how to select the right floor scrubber for your facility. Compare walk-behind vs ride-on, battery types, cleaning widths, and key specifications to make an informed decision.",
+      "Learn how to select the right floor scrubber for your facility. Compare walk-behind vs ride-on, battery types, cleaning widths",
     category: "buying-guide",
     readTime: "8 min",
     difficulty: "beginner",
@@ -564,7 +564,7 @@ const guides: Guide[] = [
     slug: "how-to-maintain-floor-scrubber-battery",
     title: "Floor Scrubber Battery Maintenance Guide",
     description:
-      "Extend the life of your floor scrubber battery with proper maintenance. Step-by-step guide for lead-acid and lithium batteries, including charging, storage, and troubleshooting tips.",
+      "Extend the life of your floor scrubber battery with proper maintenance. Step-by-step guide for lead-acid and lithium batteries, including charging, storage",
     category: "maintenance",
     readTime: "5 min",
     difficulty: "beginner",
@@ -621,7 +621,7 @@ const guides: Guide[] = [
   {
     slug: "floor-scrubber-disc-brush-buying-guide",
     title: "Floor Scrubber Disc Brush Buying Guide",
-    description: "How to choose the right floor scrubber disc brush. Nylon vs PPL vs abrasive materials, disc brush sizes, compatibility with Tennant/Nilfisk/Karcher, and factory-direct pricing.",
+    description: "How to choose the right floor scrubber disc brush. Nylon vs PPL vs abrasive materials, disc brush sizes, compatibility with Tennant/Nilfisk/Karcher",
     category: "buying-guide",
     readTime: "6 min",
     difficulty: "beginner",
@@ -696,7 +696,7 @@ const guides: Guide[] = [
   {
     slug: "shampoo-disc-brush-guide",
     title: "Shampoo Disc Brush for Floor Scrubbers",
-    description: "Shampoo disc brush for floor scrubbers — custom nylon and abrasive brushes for deep cleaning and shampoo application. NP-9200 compatible with Tennant, Nilfisk, Viper and OEM machines, 1000-2800 RPM, 1000 hours service life.",
+    description: "Shampoo disc brush for floor scrubbers — custom nylon and abrasive brushes for deep cleaning and shampoo application.",
     category: "product-showcase",
     readTime: "4 min",
     difficulty: "beginner",
@@ -761,7 +761,7 @@ const guides: Guide[] = [
   {
     slug: "top-10-floor-scrubber-disc-brushes",
     title: "Top 10 Floor Scrubber Disc Brushes 2026",
-    description: "The 10 best floor scrubber disc brushes ranked by material, floor compatibility, and value. Nylon vs PPL vs abrasive for concrete, tile, epoxy. Factory-direct pricing guide included.",
+    description: "The 10 best floor scrubber disc brushes ranked by material, floor compatibility, and value. Nylon vs PPL vs abrasive for concrete, tile, epoxy.",
     category: "buying-guide",
     readTime: "6 min",
     difficulty: "beginner",
@@ -841,7 +841,7 @@ const guides: Guide[] = [
   {
     slug: "tennant-scrubber-parts-guide",
     title: "Tennant Floor Scrubber Parts: Brushes & Squeegees",
-    description: "Find factory-direct Tennant floor scrubber parts. Compatible disc brushes, squeegee blades, pad drivers, and clutch plates for T5, T7, T300, T500. Save 30-50% vs dealer pricing.",
+    description: "Find factory-direct Tennant floor scrubber parts. Compatible disc brushes, squeegee blades, pad drivers, and clutch plates for T5, T7, T300, T500.",
     category: "buying-guide",
     readTime: "6 min",
     difficulty: "beginner",
@@ -913,7 +913,7 @@ const guides: Guide[] = [
   {
     slug: "nilfisk-scrubber-parts-guide",
     title: "Nilfisk Floor Scrubber Parts: Brushes & Squeegees",
-    description: "Factory-direct Nilfisk floor scrubber parts. Compatible disc brushes, squeegee blades, and pad drivers for SC500, SC600, BA530, BA730. Save 30-50% vs dealer pricing.",
+    description: "Factory-direct Nilfisk floor scrubber parts. Compatible disc brushes, squeegee blades, and pad drivers for SC500, SC600, BA530, BA730.",
     category: "buying-guide",
     readTime: "6 min",
     difficulty: "beginner",
@@ -984,7 +984,7 @@ const guides: Guide[] = [
   {
     slug: "karcher-scrubber-parts-guide",
     title: "Karcher Floor Scrubber Parts: Brushes & Squeegees",
-    description: "Factory-direct Karcher floor scrubber parts. Compatible disc brushes, squeegee blades, and pad drivers for BR 35/40, BR 40/10, BR 50/50, BR 60/40. Save 30-50% vs dealer pricing.",
+    description: "Factory-direct Karcher floor scrubber parts. Compatible disc brushes, squeegee blades, and pad drivers for BR 35/40, BR 40/10, BR 50/50, BR 60/40.",
     category: "buying-guide",
     readTime: "6 min",
     difficulty: "beginner",
@@ -1056,7 +1056,7 @@ const guides: Guide[] = [
   {
     slug: "viper-scrubber-parts-guide",
     title: "Viper Floor Scrubber Parts: Brushes & Squeegees",
-    description: "Factory-direct Viper floor scrubber parts. Compatible disc brushes, squeegee blades, and pad drivers for Predator, Crowd, Runner, and Dart models. Save 30-50% vs dealer pricing.",
+    description: "Factory-direct Viper floor scrubber parts. Compatible disc brushes, squeegee blades, and pad drivers for Predator, Crowd, Runner, and Dart models.",
     category: "buying-guide",
     readTime: "6 min",
     difficulty: "beginner",
@@ -1128,7 +1128,7 @@ const guides: Guide[] = [
   {
     slug: "top-10-floor-scrubber-roller-brushes",
     title: "Top 10 Floor Scrubber Roller Brushes 2026",
-    description: "The 10 best floor scrubber roller brushes ranked by material, floor compatibility, and value. Nylon vs PPL vs abrasive for cylindrical brush machines. Factory-direct pricing guide included.",
+    description: "The 10 best floor scrubber roller brushes ranked by material, floor compatibility, and value. Nylon vs PPL vs abrasive for cylindrical brush machines.",
     category: "buying-guide",
     readTime: "7 min",
     difficulty: "beginner",
@@ -1208,7 +1208,7 @@ const guides: Guide[] = [
   {
     slug: "floor-scrubber-brush-replacement-guide",
     title: "Floor Scrubber Brush Replacement: When & How",
-    description: "When to replace your floor scrubber brush, how to know it is worn, and how to replace it in 10 minutes. Includes replacement intervals, wear signs, and factory-direct pricing.",
+    description: "When to replace your floor scrubber brush, how to know it is worn, and how to replace it in 10 minutes.",
     category: "maintenance",
     readTime: "6 min",
     difficulty: "beginner",
@@ -1311,7 +1311,7 @@ const extraGuides: Guide[] = [
   {
     slug: "how-to-set-up-your-floor-scrubber",
     title: "How to Set Up Your Floor Scrubber: Installation Guide",
-    description: "Step-by-step installation guide for Aikerui floor scrubbers. Learn how to unpack, assemble the squeegee, install brushes, connect the battery, and prepare your machine for first use.",
+    description: "Step-by-step installation guide for Aikerui floor scrubbers. Learn how to unpack, assemble the squeegee, install brushes, connect the battery",
     category: "maintenance",
     readTime: "5 min",
     difficulty: "beginner",
@@ -1366,7 +1366,7 @@ const extraGuides: Guide[] = [
   {
     slug: "top-floor-scrubber-brands-buyers-guide",
     title: "Floor Scrubber Brands: Global vs Factory-Direct",
-    description: "How to choose between global floor scrubber brands (Tennant, Karcher, Nilfisk) and factory-direct Chinese manufacturers. Compare dealer markups, spare parts access, OEM options and total cost of ownership before you buy.",
+    description: "How to choose between global floor scrubber brands (Tennant, Karcher, Nilfisk) and factory-direct Chinese manufacturers.",
     category: "buying-guide",
     readTime: "10 min",
     difficulty: "beginner",
@@ -1444,7 +1444,7 @@ const extraGuides: Guide[] = [
     slug: "squeegee-not-picking-up-water",
     title: "Floor Scrubber Squeegee Not Picking Up Water? Fix It",
     description:
-      "Is your floor scrubber leaving puddles? Diagnose and fix squeegee problems — worn blades, incorrect angle, clogged vacuum hose. Step-by-step troubleshooting for all brands.",
+      "Is your floor scrubber leaving puddles? Diagnose and fix squeegee problems — worn blades, incorrect angle, clogged vacuum hose.",
     category: "troubleshooting",
     readTime: "5 min",
     difficulty: "beginner",
@@ -1499,7 +1499,7 @@ const extraGuides: Guide[] = [
   {
     slug: "top-10-floor-scrubber-squeegee-blades",
     title: "Top 10 Floor Scrubber Squeegee Blades 2026",
-    description: "The 10 best floor scrubber squeegee blades ranked by material, hardness, and machine compatibility. Natural rubber vs polyurethane (PU), front and rear blades, and factory-direct pricing.",
+    description: "The 10 best floor scrubber squeegee blades ranked by material, hardness, and machine compatibility.",
     category: "buying-guide",
     readTime: "7 min",
     difficulty: "beginner",
@@ -1572,7 +1572,7 @@ const extraGuides: Guide[] = [
     slug: "brush-motor-not-spinning",
     title: "Floor Scrubber Brush Not Spinning? Complete Diagnostic Guide",
     description:
-      "Brush motor won't start or makes grinding noise? Diagnose belt drive, electrical, and deck clearance issues. Troubleshooting guide for walk-behind and ride-on scrubbers.",
+      "Brush motor won't start or makes grinding noise? Diagnose belt drive, electrical, and deck clearance issues.",
     category: "troubleshooting",
     readTime: "6 min",
     difficulty: "intermediate",
@@ -1634,7 +1634,7 @@ const extraGuides: Guide[] = [
     slug: "battery-not-charging-short-runtime",
     title: "Floor Scrubber Battery Not Charging? Troubleshooting",
     description:
-      "Scrubber battery dies quickly or won't charge? Diagnose charger issues, battery cell failure, and parasitic drain. Covers lead-acid and lithium battery troubleshooting.",
+      "Scrubber battery dies quickly or won't charge? Diagnose charger issues, battery cell failure, and parasitic drain.",
     category: "troubleshooting",
     readTime: "7 min",
     difficulty: "intermediate",
@@ -1698,7 +1698,7 @@ const extraGuides: Guide[] = [
     slug: "scrubber-leaving-streaks-on-floor",
     title: "Floor Scrubber Leaving Streaks? 7 Causes and Quick Fixes",
     description:
-      "Why your floor scrubber leaves dirty streaks or swirl marks. Fix brush pressure, solution flow, dirty pads, and pad centering issues. Get streak-free floors in minutes.",
+      "Why your floor scrubber leaves dirty streaks or swirl marks. Fix brush pressure, solution flow, dirty pads, and pad centering issues.",
     category: "troubleshooting",
     readTime: "5 min",
     difficulty: "beginner",
@@ -1754,7 +1754,7 @@ const extraGuides: Guide[] = [
     slug: "water-solution-not-dispensing",
     title: "Floor Scrubber Not Dispensing Water? How to Fix It",
     description:
-      "Solution not reaching the brush? Troubleshoot clogged filter, failed solenoid valve, kinked hose, and pump issues. Step-by-step diagnostic with multimeter testing instructions.",
+      "Solution not reaching the brush? Troubleshoot clogged filter, failed solenoid valve, kinked hose, and pump issues.",
     category: "troubleshooting",
     readTime: "6 min",
     difficulty: "intermediate",
@@ -1817,7 +1817,7 @@ const extraGuides: Guide[] = [
     slug: "walk-behind-vs-ride-on-scrubber",
     title: "Walk-Behind vs Ride-On Floor Scrubber: Which Is Better?",
     description:
-      "Compare walk-behind and ride-on floor scrubbers by cost, productivity, maneuverability, and best use cases. Detailed comparison table and decision guide for facility managers.",
+      "Compare walk-behind and ride-on floor scrubbers by cost, productivity, maneuverability, and best use cases.",
     category: "comparison",
     readTime: "6 min",
     difficulty: "beginner",
@@ -1878,7 +1878,7 @@ const extraGuides: Guide[] = [
     slug: "disc-brush-vs-roller-brush-scrubber",
     title: "Floor Scrubber Disc Brush vs Roller Brush Compared",
     description:
-      "Disc brush or roller brush for your floor scrubber? Compare cleaning performance, floor type compatibility, maintenance cost, and best applications with detailed comparison table.",
+      "Disc brush or roller brush for your floor scrubber? Compare cleaning performance, floor type compatibility, maintenance cost",
     category: "comparison",
     readTime: "5 min",
     difficulty: "beginner",
@@ -1925,7 +1925,7 @@ const extraGuides: Guide[] = [
     slug: "lead-acid-vs-lithium-battery-scrubber",
     title: "Lead-Acid vs Lithium Scrubber Batteries: 5-Year Cost",
     description:
-      "Should you choose lead-acid or lithium batteries for your floor scrubber? Compare upfront cost, lifespan, maintenance, charge time, and total cost of ownership over 5 years.",
+      "Should you choose lead-acid or lithium batteries for your floor scrubber? Compare upfront cost, lifespan, maintenance, charge time",
     category: "comparison",
     readTime: "5 min",
     difficulty: "beginner",
@@ -1977,7 +1977,7 @@ const extraGuides: Guide[] = [
     slug: "top-10-floor-scrubber-manufacturers-2026",
     title: "Top 10 Floor Scrubber Manufacturers 2026",
     description:
-      "Comprehensive ranking of the top 10 floor scrubber manufacturers in 2026. Compare Tennant, Nilfisk, Karcher, Aikerui and more by pricing, quality, and global reach. Includes buyer's checklist.",
+      "Comprehensive ranking of the top 10 floor scrubber manufacturers in 2026. Compare Tennant, Nilfisk, Karcher, Aikerui and more by pricing, quality",
     category: "buying-guide",
     readTime: "10 min",
     difficulty: "beginner",
@@ -2195,7 +2195,7 @@ const extraGuides: Guide[] = [
     slug: "floor-scrubber-parts-guide-types-lifespan-cost",
     title: "Floor Scrubber Parts Guide: Types & Replacement Cost",
     description:
-      "Complete guide to floor scrubber replacement parts. Disc brushes, squeegee rubber, pad holders, clutch plates — typical lifespan, when to replace, and OEM vs aftermarket cost comparison. 30-50% savings with factory-direct sourcing.",
+      "Complete guide to floor scrubber replacement parts. Disc brushes, squeegee rubber, pad holders, clutch plates — typical lifespan, when to replace",
     category: "maintenance",
     readTime: "9 min",
     difficulty: "beginner",
@@ -2363,7 +2363,7 @@ const extraGuides: Guide[] = [
     slug: "industrial-floor-scrubber-complete-guide",
     title: "Industrial Floor Scrubber: The Complete 2026 Buyer's Guide",
     description:
-      "Everything you need to know about industrial floor scrubbers. Compare walk-behind vs ride-on, disc vs roller brush, lead-acid vs lithium. Includes selection checklist, ROI calculator, and industry-specific recommendations.",
+      "Everything you need to know about industrial floor scrubbers. Compare walk-behind vs ride-on, disc vs roller brush, lead-acid vs lithium.",
     category: "buying-guide",
     readTime: "12 min",
     difficulty: "beginner",
@@ -2474,7 +2474,7 @@ const extraGuides: Guide[] = [
     slug: "how-much-does-floor-scrubber-cost",
     title: "How Much Does a Floor Scrubber Cost? 2026 Prices",
     description:
-      "Real 2026 floor scrubber prices: walk-behind $3,000-12,000, ride-on $9,000-35,000. TCO analysis including parts, batteries, and maintenance. Factory-direct vs dealer pricing comparison.",
+      "Real 2026 floor scrubber prices: walk-behind $3,000-12,000, ride-on $9,000-35,000. TCO analysis including parts, batteries, and maintenance.",
     category: "buying-guide",
     readTime: "8 min",
     difficulty: "beginner",
@@ -2611,7 +2611,7 @@ const extraGuides: Guide[] = [
     slug: "best-floor-scrubber-small-business",
     title: "Best Floor Scrubber for Small Business (2026 Guide)",
     description:
-      "The best floor scrubbers for small businesses in 2026. Compact walk-behind models under $5,000 reviewed. Compare features, prices, and best use cases for restaurants, retail shops, small warehouses, and auto shops.",
+      "The best floor scrubbers for small businesses in 2026. Compact walk-behind models under $5,000 reviewed.",
     category: "buying-guide",
     readTime: "7 min",
     difficulty: "beginner",
@@ -2721,7 +2721,7 @@ const extraGuides: Guide[] = [
     slug: "floor-scrubber-food-processing-plants",
     title: "Floor Scrubber for Food Processing Plants (2026)",
     description:
-      "Food-grade floor scrubbers for meat, dairy, bakery, and beverage plants. Stainless steel components, wash-down capable, HACCP-compliant cleaning. Factory-direct pricing.",
+      "Food-grade floor scrubbers for meat, dairy, bakery, and beverage plants. Stainless steel components, wash-down capable, HACCP-compliant cleaning.",
     category: "buying-guide",
     readTime: "7 min",
     difficulty: "intermediate",
@@ -2783,7 +2783,7 @@ const extraGuides: Guide[] = [
     slug: "hospital-medical-facility-floor-cleaning-equipment",
     title: "Hospital Floor Scrubbers: Medical-Grade Cleaning (2026)",
     description:
-      "Healthcare floor cleaning equipment guide. Ultra-quiet scrubbers (<60dB) with HEPA filtration for hospitals, clinics, and care homes. Infection control compliant. Factory-direct pricing.",
+      "Healthcare floor cleaning equipment guide. Ultra-quiet scrubbers (<60dB) with HEPA filtration for hospitals, clinics, and care homes.",
     category: "buying-guide",
     readTime: "7 min",
     difficulty: "intermediate",
@@ -2846,7 +2846,7 @@ const extraGuides: Guide[] = [
     slug: "hotel-hospitality-floor-cleaning-solutions",
     title: "Hotel & Hospitality Floor Cleaning Equipment",
     description:
-      "Floor scrubbers and cleaning solutions for hotels, resorts, and hospitality. Ultra-quiet operation for guest areas, fast-drying for lobbies, compact for elevators. Factory-direct pricing.",
+      "Floor scrubbers and cleaning solutions for hotels, resorts, and hospitality. Ultra-quiet operation for guest areas, fast-drying for lobbies",
     category: "buying-guide",
     readTime: "6 min",
     difficulty: "beginner",
@@ -2892,7 +2892,7 @@ const extraGuides: Guide[] = [
     slug: "how-to-import-floor-scrubbers-from-china",
     title: "How to Import Floor Scrubbers from China (2026)",
     description:
-      "Step-by-step guide to importing floor scrubbers and parts from China. Factory verification, shipping methods, customs, duties, and payment terms. Save 30-50% buying factory-direct.",
+      "Step-by-step guide to importing floor scrubbers and parts from China. Factory verification, shipping methods, customs, duties, and payment terms.",
     category: "buying-guide",
     readTime: "10 min",
     difficulty: "intermediate",
@@ -2980,7 +2980,7 @@ const extraGuides: Guide[] = [
     slug: "oem-vs-aftermarket-floor-scrubber-parts",
     title: "OEM vs Aftermarket Floor Scrubber Parts: Quality & Cost",
     description:
-      "Should you buy OEM or aftermarket floor scrubber parts? Compare cost, quality, warranty, and compatibility. Aftermarket parts save 30-60% — but here's when OEM is worth the premium.",
+      "Should you buy OEM or aftermarket floor scrubber parts? Compare cost, quality, warranty, and compatibility.",
     category: "comparison",
     readTime: "6 min",
     difficulty: "beginner",
@@ -3050,7 +3050,7 @@ const extraGuides: Guide[] = [
     slug: "school-university-floor-cleaning-equipment",
     title: "School & University Floor Cleaning Equipment Guide",
     description:
-      "Floor scrubbers for schools, universities, and educational campuses. Quiet operation for classrooms, durable for hallways, compact for restrooms. Factory-direct pricing for education budgets.",
+      "Floor scrubbers for schools, universities, and educational campuses. Quiet operation for classrooms, durable for hallways, compact for restrooms.",
     category: "buying-guide",
     readTime: "6 min",
     difficulty: "beginner",
@@ -3092,7 +3092,7 @@ const extraGuides: Guide[] = [
     slug: "parking-garage-floor-scrubber-guide",
     title: "Parking Garage Floor Scrubber Guide | Heavy-Duty",
     description:
-      "Best floor scrubbers and sweepers for parking garages. Handle tire marks, oil, salt, and heavy debris. Outdoor-rated machines for covered and open-air structures. Factory-direct pricing.",
+      "Best floor scrubbers and sweepers for parking garages. Handle tire marks, oil, salt, and heavy debris.",
     category: "buying-guide",
     readTime: "5 min",
     difficulty: "intermediate",
@@ -3131,7 +3131,7 @@ const extraGuides: Guide[] = [
     slug: "warehouse-cleaning-equipment-complete-guide",
     title: "Warehouse Cleaning Equipment: Setup Guide",
     description:
-      "Complete warehouse cleaning equipment guide. Ride-on scrubbers, sweepers, and sweeper-scrubber combos for distribution centers up to 500,000+ sq ft. Budgeting and fleet planning included.",
+      "Complete warehouse cleaning equipment guide. Ride-on scrubbers, sweepers, and sweeper-scrubber combos for distribution centers up to 500,000+ sq ft.",
     category: "buying-guide",
     readTime: "8 min",
     difficulty: "intermediate",
@@ -3175,7 +3175,7 @@ const extraGuides: Guide[] = [
     slug: "floor-scrubber-maintenance-checklist",
     title: "Floor Scrubber Maintenance Checklist: Daily to Monthly",
     description:
-      "Complete floor scrubber maintenance checklist. Daily (10 min), weekly (30 min), and monthly (1 hour) schedules. Prevent 80% of breakdowns with regular maintenance. Printable checklist included.",
+      "Complete floor scrubber maintenance checklist. Daily (10 min), weekly (30 min), and monthly (1 hour) schedules.",
     category: "maintenance",
     readTime: "7 min",
     difficulty: "beginner",
@@ -3253,7 +3253,7 @@ const extraGuides: Guide[] = [
     slug: "case-study-warehouse-distribution-center-floor-scrubbing",
     title: "Case Study: Distribution Center Cuts Cleaning Cost 55%",
     description:
-      "Real customer case study: US distribution center replaced outsourced cleaning with in-house ride-on scrubbers. Saved $48,000/year, improved floor cleanliness, and achieved ROI in 4 months.",
+      "Real customer case study: US distribution center replaced outsourced cleaning with in-house ride-on scrubbers.",
     category: "buying-guide",
     readTime: "5 min",
     difficulty: "beginner",
@@ -3298,7 +3298,7 @@ const extraGuides: Guide[] = [
     slug: "case-study-manufacturing-plant-floor-cleaning",
     title: "Case Study: Auto Plant Hits ISO Cleanliness with Scrubber",
     description:
-      "Real case study: Automotive parts plant switched from manual cleaning to ride-on scrubber with degreasing capability. Passed ISO audit, reduced slip incidents by 80%, operator cleans 3x faster.",
+      "Real case study: Automotive parts plant switched from manual cleaning to ride-on scrubber with degreasing capability.",
     category: "buying-guide",
     readTime: "5 min",
     difficulty: "beginner",
@@ -3344,7 +3344,7 @@ const extraGuides: Guide[] = [
     slug: "case-study-supermarket-chain-floor-cleaning",
     title: "Floor Scrubber Case Study: Supermarket Chain Saves $15K",
     description:
-      "Real case study: 12-store supermarket chain replaced dealer-purchased scrubbers with factory-direct models. Saved $180,000 fleet-wide over 3 years. Quieter operation for daytime cleaning.",
+      "Real case study: 12-store supermarket chain replaced dealer-purchased scrubbers with factory-direct models. Saved $180,000 fleet-wide over 3 years.",
     category: "buying-guide",
     readTime: "5 min",
     difficulty: "beginner",
@@ -3389,7 +3389,7 @@ const extraGuides: Guide[] = [
     slug: "floor-scrubber-roi-calculator-cost-savings",
     title: "Floor Scrubber ROI Calculator: What Can You Save?",
     description:
-      "Calculate your floor scrubber ROI. Compare in-house cleaning vs outsourcing, factory-direct vs dealer pricing. Real savings examples for warehouses, factories, and retail. Typical payback in 4-12 months.",
+      "Calculate your floor scrubber ROI. Compare in-house cleaning vs outsourcing, factory-direct vs dealer pricing.",
     category: "buying-guide",
     readTime: "7 min",
     difficulty: "beginner",
@@ -3484,7 +3484,7 @@ const extraGuides: Guide[] = [
     slug: "how-to-extend-floor-scrubber-lifespan",
     title: "How to Extend Your Floor Scrubber Lifespan: 10 Tips",
     description:
-      "Extend your floor scrubber lifespan from 5 to 10+ years. Daily, weekly, and monthly maintenance tips that prevent 80% of breakdowns. Factory-direct parts save on upkeep.",
+      "Extend your floor scrubber lifespan from 5 to 10+ years. Daily, weekly, and monthly maintenance tips that prevent 80% of breakdowns.",
     category: "maintenance",
     readTime: "6 min",
     difficulty: "beginner",
@@ -3532,7 +3532,7 @@ const extraGuides: Guide[] = [
     slug: "floor-scrubber-safety-guide",
     title: "Floor Scrubber Safety: OSHA Compliance Guide",
     description:
-      "Complete floor scrubber safety guide. OSHA compliance, operator training checklist, slip-and-fall prevention, chemical handling, and battery safety. Reduce workplace incidents.",
+      "Complete floor scrubber safety guide. OSHA compliance, operator training checklist, slip-and-fall prevention, chemical handling, and battery safety.",
     category: "maintenance",
     readTime: "6 min",
     difficulty: "beginner",
@@ -3578,7 +3578,7 @@ const extraGuides: Guide[] = [
     slug: "top-10-floor-scrubber-parts-suppliers",
     title: "Top 10 Floor Scrubber Parts Suppliers 2026",
     description:
-      "Compare the top 10 floor scrubber parts suppliers. OEM vs aftermarket pricing, quality, compatibility, and shipping. Find the best supplier for disc brushes, squeegees, and consumables.",
+      "Compare the top 10 floor scrubber parts suppliers. OEM vs aftermarket pricing, quality, compatibility, and shipping.",
     category: "comparison",
     readTime: "8 min",
     difficulty: "beginner",
@@ -3658,7 +3658,7 @@ const extraGuides: Guide[] = [
     slug: "floor-scrubber-financing-options",
     title: "Floor Scrubber Financing: How to Pay in 2026",
     description:
-      "Compare floor scrubber financing options: leasing, equipment loans, 30/70 payment terms, and factory-direct savings. Calculate monthly payments and find the best option for your budget.",
+      "Compare floor scrubber financing options: leasing, equipment loans, 30/70 payment terms, and factory-direct savings.",
     category: "buying-guide",
     readTime: "5 min",
     difficulty: "beginner",
@@ -3791,7 +3791,7 @@ const extraGuides: Guide[] = [
     slug: "floor-scrubber-gym-fitness-center",
     title: "Floor Scrubber for Gyms & Fitness Centers",
     description:
-      "Best floor scrubbers for gyms, fitness centers, and health clubs. Clean rubber flooring, locker rooms, and studio spaces. Compact walk-behind models for tight areas. Factory-direct pricing.",
+      "Best floor scrubbers for gyms, fitness centers, and health clubs. Clean rubber flooring, locker rooms, and studio spaces.",
     category: "buying-guide",
     readTime: "5 min",
     difficulty: "beginner",
@@ -3833,7 +3833,7 @@ const extraGuides: Guide[] = [
     slug: "floor-scrubber-church-event-venue",
     title: "Floor Scrubber for Churches & Event Venues",
     description:
-      "Best floor scrubbers for churches, wedding venues, banquet halls, and event spaces. Ultra-quiet operation, compact for pew areas, fast-drying for quick turnaround between events.",
+      "Best floor scrubbers for churches, wedding venues, banquet halls, and event spaces. Ultra-quiet operation, compact for pew areas",
     category: "buying-guide",
     readTime: "5 min",
     difficulty: "beginner",
@@ -4083,7 +4083,7 @@ const extraGuides: Guide[] = [
     slug: "top-10-industrial-cleaning-equipment-manufacturers",
     title: "Top 10 Industrial Cleaning Equipment Manufacturers 2026",
     description:
-      "Top 10 industrial cleaning equipment manufacturers compared. Floor scrubbers, sweepers, and parts from Tennant, Nilfisk, Karcher, Aikerui and more. Pricing, quality, and global reach comparison.",
+      "Top 10 industrial cleaning equipment manufacturers compared. Floor scrubbers, sweepers, and parts from Tennant, Nilfisk, Karcher, Aikerui and more.",
     category: "comparison",
     readTime: "8 min",
     difficulty: "beginner",
@@ -4176,7 +4176,7 @@ const extraGuides: Guide[] = [
     slug: "floor-scrubber-dust-sand-industrial-cleaning",
     title: "Floor Scrubber for Sand, Dust & Heavy Soil",
     description:
-      "Best floor scrubbers for dusty, sandy, and heavy-soil industrial environments. Disc brush vs roller brush for sand, dust-proof components, and high-pressure scrubbing for stubborn debris.",
+      "Best floor scrubbers for dusty, sandy, and heavy-soil industrial environments. Disc brush vs roller brush for sand, dust-proof components",
     category: "buying-guide",
     readTime: "5 min",
     difficulty: "intermediate",
@@ -4233,7 +4233,7 @@ const extraGuides: Guide[] = [
     slug: "commercial-carpet-cleaning-equipment-guide",
     title: "Commercial Carpet Cleaning Equipment Guide",
     description:
-      "Complete guide to commercial carpet cleaning equipment. Carpet extractors, bonnet cleaners, and combo machines for hotels, offices, and event spaces. Factory-direct pricing.",
+      "Complete guide to commercial carpet cleaning equipment. Carpet extractors, bonnet cleaners, and combo machines for hotels, offices, and event spaces.",
     category: "buying-guide",
     readTime: "5 min",
     difficulty: "beginner",
@@ -4268,7 +4268,7 @@ const extraGuides: Guide[] = [
     slug: "floor-scrubber-oil-grease-factory-cleaning",
     title: "Floor Scrubber for Oil & Grease: Factory Cleaning",
     description:
-      "Best floor scrubbers for oil, grease, and heavy industrial soil. Degreasing machines with high brush pressure (100kg), oil-resistant squeegees, and industrial-grade scrubbing power. Factory-direct pricing.",
+      "Best floor scrubbers for oil, grease, and heavy industrial soil. Degreasing machines with high brush pressure (100kg), oil-resistant squeegees",
     category: "buying-guide",
     readTime: "5 min",
     difficulty: "intermediate",
@@ -4308,7 +4308,7 @@ const extraGuides: Guide[] = [
     slug: "floor-scrubber-pad-holder-replacement-guide",
     title: "Floor Scrubber Pad Holder Replacement Guide",
     description:
-      "Complete guide to floor scrubber pad holders and drivers. 13-20 inch sizes, center lock vs trimmed, compatibility with major brands. Factory-direct pricing $35-65. Same-day quote.",
+      "Complete guide to floor scrubber pad holders and drivers. 13-20 inch sizes, center lock vs trimmed, compatibility with major brands.",
     category: "maintenance",
     readTime: "5 min",
     difficulty: "beginner",
@@ -4351,7 +4351,7 @@ const extraGuides: Guide[] = [
     slug: "floor-scrubber-construction-site-cleaning",
     title: "Floor Scrubber for Construction Sites: Post-Build Cleanup",
     description:
-      "Best floor scrubbers for construction site cleanup. Handle concrete dust, drywall mud, and heavy debris. Sweeper-scrubber combos for one-pass post-construction cleaning. Factory-direct pricing.",
+      "Best floor scrubbers for construction site cleanup. Handle concrete dust, drywall mud, and heavy debris.",
     category: "buying-guide",
     readTime: "5 min",
     difficulty: "intermediate",
@@ -4390,7 +4390,7 @@ const extraGuides: Guide[] = [
     slug: "floor-scrubber-brush-bristle-material-guide",
     title: "Floor Scrubber Brush Bristle Materials Compared",
     description:
-      "Complete guide to floor scrubber brush bristle materials. Compare nylon, PPL, steel wire, and abrasive filaments. Which bristle for concrete, epoxy, tile, or marble floors.",
+      "Complete guide to floor scrubber brush bristle materials. Compare nylon, PPL, steel wire, and abrasive filaments.",
     category: "maintenance",
     readTime: "5 min",
     difficulty: "beginner",
@@ -4436,7 +4436,7 @@ const extraGuides: Guide[] = [
     slug: "floor-scrubber-warranty-comparison",
     title: "Floor Scrubber Warranty: What's Covered and What's Not",
     description:
-      "Compare floor scrubber warranties across major brands. What parts are covered, typical warranty lengths, and how factory-direct warranties differ from dealer warranties. Avoid expensive surprises.",
+      "Compare floor scrubber warranties across major brands. What parts are covered, typical warranty lengths",
     category: "buying-guide",
     readTime: "5 min",
     difficulty: "beginner",
@@ -4515,7 +4515,7 @@ const extraGuides: Guide[] = [
     slug: "how-to-read-floor-scrubber-specifications",
     title: "How to Read a Floor Scrubber Spec Sheet",
     description:
-      "Learn to decode floor scrubber specification sheets. Understand cleaning width, brush pressure, tank capacity, battery voltage, productivity ratings. Compare machines apples-to-apples.",
+      "Learn to decode floor scrubber specification sheets. Understand cleaning width, brush pressure, tank capacity, battery voltage, productivity ratings.",
     category: "buying-guide",
     readTime: "6 min",
     difficulty: "beginner",
@@ -4582,7 +4582,7 @@ const extraGuides: Guide[] = [
     slug: "floor-scrubber-school-university-cleaning",
     title: "Floor Scrubber for Schools & Universities",
     description:
-      "Best floor scrubbers for schools and university campuses. Classroom-safe quiet models, durable for hallways, compact for restrooms. Factory-direct pricing for educational budgets.",
+      "Best floor scrubbers for schools and university campuses. Classroom-safe quiet models, durable for hallways, compact for restrooms.",
     category: "buying-guide",
     readTime: "4 min",
     difficulty: "beginner",
@@ -4638,7 +4638,7 @@ const extraGuides: Guide[] = [
     slug: "floor-scrubber-auto-dealership-showroom",
     title: "Floor Scrubber for Auto Dealerships & Showrooms",
     description:
-      "Best floor scrubbers for auto dealership showrooms and service bays. Handle tire marks, oil drips, and foot traffic. Compact ride-on for polished concrete and epoxy showroom floors.",
+      "Best floor scrubbers for auto dealership showrooms and service bays. Handle tire marks, oil drips, and foot traffic.",
     category: "buying-guide",
     readTime: "4 min",
     difficulty: "beginner",
@@ -4668,7 +4668,7 @@ const extraGuides: Guide[] = [
     slug: "how-to-verify-floor-scrubber-manufacturer",
     title: "How to Verify a Floor Scrubber Manufacturer: 7 Red Flags",
     description:
-      "Learn how to verify a floor scrubber manufacturer before sending money. 7 verification steps: live video tour, business license check, independent inspection, sample orders. Avoid trading company scams.",
+      "Learn how to verify a floor scrubber manufacturer before sending money. 7 verification steps:",
     category: "buying-guide",
     readTime: "6 min",
     difficulty: "intermediate",
@@ -4698,7 +4698,7 @@ const extraGuides: Guide[] = [
     slug: "floor-stripping-equipment-finish-removal-guide",
     title: "Commercial Floor Stripping Equipment Guide",
     description:
-      "Complete guide to commercial floor stripping equipment. Floor stripper machines, stripping pads, and techniques for removing old wax, finish, and coatings. Factory-direct pricing.",
+      "Complete guide to commercial floor stripping equipment. Floor stripper machines, stripping pads, and techniques for removing old wax, finish, and coatings.",
     category: "maintenance",
     readTime: "5 min",
     difficulty: "beginner",
@@ -4732,7 +4732,7 @@ const extraGuides: Guide[] = [
     slug: "how-to-ship-floor-scrubber-internationally",
     title: "How to Ship a Floor Scrubber Internationally (2026 Guide)",
     description:
-      "Step-by-step guide to importing a floor scrubber from China. Sea freight vs air freight costs, customs clearance, Incoterms, packaging requirements, and how to avoid the 6 most common shipping mistakes.",
+      "Step-by-step guide to importing a floor scrubber from China. Sea freight vs air freight costs, customs clearance, Incoterms, packaging requirements",
     category: "buying-guide",
     readTime: "8 min",
     difficulty: "beginner",
@@ -4795,7 +4795,7 @@ const extraGuides: Guide[] = [
   {
     slug: "floor-scrubber-clutch-plate-pad-driver-guide",
     title: "Floor Scrubber Clutch Plate & Pad Driver Guide",
-    description: "Learn about the different types of floor scrubber clutch plates and pad drivers — NP-9200, 3-lug center lock, 4-lug magnetic buckle. How to identify your machine's connector type and avoid costly ordering mistakes.",
+    description: "Learn about the different types of floor scrubber clutch plates and pad drivers — NP-9200, 3-lug center lock, 4-lug magnetic buckle.",
     category: "maintenance",
     readTime: "5 min",
     difficulty: "beginner",
@@ -4871,7 +4871,7 @@ const extraGuides: Guide[] = [
   {
     slug: "inside-aikerui-factory-tour",
     title: "Inside Aikerui's Factory: How Scrubbers Are Made",
-    description: "Take a video tour of Aikerui's 10,000+ sqm factory in Anqing, China. See how floor scrubbers and replacement brushes are manufactured, tested, and export-packed. Real factory, not a trading company.",
+    description: "Take a video tour of Aikerui's 10,000+ sqm factory in Anqing, China. See how floor scrubbers and replacement brushes are manufactured, tested",
     category: "buying-guide",
     videoId: "factorytour",
     readTime: "5 min",
@@ -4931,7 +4931,7 @@ const extraGuides: Guide[] = [
   {
     slug: "steel-wire-floor-scrubber-brush-guide",
     title: "Steel Wire Floor Scrubber Brush for Tough Grime",
-    description: "Steel wire floor scrubber brush for heavy-duty cleaning. Removes tough grime, strips old finish, and deep-cleans rough concrete. Factory-direct pricing, compatible with most scrubbers.",
+    description: "Steel wire floor scrubber brush for heavy-duty cleaning. Removes tough grime, strips old finish, and deep-cleans rough concrete.",
     category: "buying-guide",
     readTime: "4 min",
     difficulty: "beginner",
@@ -5068,7 +5068,7 @@ const extraGuides: Guide[] = [
   {
     slug: "anti-tangle-floor-washer-main-brush",
     title: "Anti-Tangle Floor Scrubber Brush: No Hair Tangles",
-    description: "Troubled by hair tangles and poor cleaning from your floor washer main brush? High-density wear-resistant bristles with moderate hardness for deep stain removal, anti-tangle, custom for multiple models.",
+    description: "Troubled by hair tangles and poor cleaning from your floor washer main brush? High-density wear-resistant bristles with moderate hardness for deep stain",
     category: "buying-guide",
     readTime: "4 min",
     difficulty: "beginner",
@@ -5141,7 +5141,7 @@ const extraGuides: Guide[] = [
   {
     slug: "custom-scrubber-brush-solutions",
     title: "Custom Floor Scrubber Brushes | OEM & Private Label",
-    description: "Custom floor scrubber brushes made to fit your machine. Nylon, polypropylene, abrasive filament floor scrubber brush options. Tailored hardness, density, size for commercial and industrial cleaning.",
+    description: "Custom floor scrubber brushes made to fit your machine. Nylon, polypropylene, abrasive filament floor scrubber brush options.",
     category: "buying-guide",
     readTime: "4 min",
     difficulty: "beginner",
@@ -5205,7 +5205,7 @@ const extraGuides: Guide[] = [
   {
     slug: "top-10-floor-scrubber-brushes-and-parts",
     title: "Top 10 Floor Scrubber Brushes & Parts 2026",
-    description: "The 10 most important floor scrubber brushes and parts ranked: disc brush, roller brush, squeegee blade, pad driver, clutch plate. Brand compatibility and factory-direct pricing included.",
+    description: "The 10 most important floor scrubber brushes and parts ranked: disc brush, roller brush, squeegee blade, pad driver, clutch plate. Brand compatibility and",
     category: "buying-guide",
     readTime: "8 min",
     difficulty: "beginner",
@@ -5323,7 +5323,7 @@ const extraGuides: Guide[] = [
   {
     slug: "aftermarket-scrubber-brush-compatible-brands",
     title: "Compatible Floor Scrubber Brushes for Top Brands",
-    description: "High-quality aftermarket floor scrubber brushes compatible with Tennant, Nilfisk, Karcher, Hako, Comac, Advance, Viper. Same specifications, factory-direct pricing, custom and private label available.",
+    description: "High-quality aftermarket floor scrubber brushes compatible with Tennant, Nilfisk, Karcher, Hako, Comac, Advance, Viper.",
     category: "buying-guide",
     readTime: "8 min",
     difficulty: "beginner",
@@ -5436,7 +5436,7 @@ const extraGuides: Guide[] = [
   {
     slug: "how-to-buy-floor-scrubber-parts-from-china",
     title: "How to Buy Floor Scrubber Parts from China",
-    description: "Step-by-step guide to sourcing floor scrubber brushes, squeegee blades, and parts from China. Verify factories, order samples, compare quotes, handle payment and shipping safely.",
+    description: "Step-by-step guide to sourcing floor scrubber brushes, squeegee blades, and parts from China.",
     category: "buying-guide",
     readTime: "9 min",
     difficulty: "beginner",
@@ -5512,7 +5512,7 @@ const extraGuides: Guide[] = [
   {
     slug: "floor-scrubber-brush-pads-guide",
     title: "Floor Scrubber Brush Pads: Types, Sizes & How to Choose",
-    description: "Complete guide to floor scrubber brush pads. Learn pad types (non-woven, abrasive, stripping), sizes, color codes, and how to pick the right pad for your floor. Factory-direct pricing.",
+    description: "Complete guide to floor scrubber brush pads. Learn pad types (non-woven, abrasive, stripping), sizes, color codes",
     category: "buying-guide",
     readTime: "6 min",
     difficulty: "beginner",
@@ -5572,7 +5572,7 @@ const extraGuides: Guide[] = [
   {
     slug: "replacement-floor-scrubber-parts-guide",
     title: "Replacement Floor Scrubber Parts: Complete Buying Guide",
-    description: "Find the right replacement parts for your floor scrubber: brushes, squeegees, pad drivers, hoses, and filters. Learn how to identify parts by machine model and buy factory-direct.",
+    description: "Find the right replacement parts for your floor scrubber: brushes, squeegees, pad drivers, hoses, and filters.",
     category: "buying-guide",
     readTime: "7 min",
     difficulty: "beginner",
@@ -5794,7 +5794,7 @@ const extraGuides: Guide[] = [
 {
     slug: "floor-scrubber-brush-lifespan-and-maintenance",
     title: "Floor Scrubber Brush Lifespan: When to Replace",
-    description: "How long do floor scrubber brushes really last? Disc, roller, side and cylindrical brush lifespan by usage — plus 8 maintenance tips to extend brush life and cut replacement costs by up to 40%.",
+    description: "How long do floor scrubber brushes really last? Disc, roller, side and cylindrical brush lifespan by usage — plus 8 maintenance tips to extend brush life and",
     category: "buying-guide",
     readTime: "8 min",
     difficulty: "beginner",
@@ -5871,7 +5871,7 @@ const extraGuides: Guide[] = [
 {
     slug: "how-to-measure-floor-scrubber-brush-size",
     title: "How to Measure a Floor Scrubber Brush: Size Chart",
-    description: "Measure your floor scrubber brush in 3 steps — diameter, center hole, bristle length. Includes a brush size chart by machine brand (Tennant, Karcher, Nilfisk, Viper, Clarke) and a 60-second ordering checklist so you never buy the wrong brush again.",
+    description: "Measure your floor scrubber brush in 3 steps — diameter, center hole, bristle length. Includes a brush size chart by machine brand (Tennant, Karcher, Nilfisk",
     category: "buying-guide",
     readTime: "7 min",
     difficulty: "beginner",
