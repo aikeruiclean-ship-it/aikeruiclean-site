@@ -89,7 +89,7 @@ export default function RootLayout({
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            name: "Anhui Aikerui Environmental Protection Technology CO.,LTD",
+            name: "Anhui Aikerui Environmental Protection Technology Co., Ltd.",
             image: "https://aikeruiclean.com/og-image.png",
             logo: "https://aikeruiclean.com/aikerui-logo.png",
             telephone: "+86-199-6523-6428",

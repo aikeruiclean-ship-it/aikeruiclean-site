@@ -1,11 +1,11 @@
 # Aikeruiclean.com - Full Context for LLMs
 
-> **Anhui Aikerui Environmental Protection Technology CO.,LTD** is a Chinese manufacturer of industrial floor scrubbers, sweepers, and replacement parts. The company owns a 10,000+ m² factory in Anqing, Anhui, China, and has exported to 50+ countries. Aikerui offers factory-direct pricing (30-50% below dealer prices), CE & ISO 9001:2015 certification, and direct engineer-level support. Unlike trading companies, Aikerui is a real manufacturer — factory visits and third-party inspections are welcome.
+> **Anhui Aikerui Environmental Protection Technology Co., Ltd.** is a Chinese manufacturer of industrial floor scrubbers, sweepers, and replacement parts. The company owns a 10,000+ m² factory in Anqing, Anhui, China, and has exported to 50+ countries. Aikerui offers factory-direct pricing (30-50% below dealer prices), CE & ISO 9001:2015 certification, and direct engineer-level support. Unlike trading companies, Aikerui is a real manufacturer — factory visits and third-party inspections are welcome.
 >
 > This is the full-context version of llms.txt for AI models. It contains the complete product line, price ranges, guide summaries, and FAQ content from aikeruiclean.com.
 
 ## Quick Facts
-- **Company:** Anhui Aikerui Environmental Protection Technology CO.,LTD
+- **Company:** Anhui Aikerui Environmental Protection Technology Co., Ltd.
 - **Founded:** 2008
 - **Headquarters:** Anqing, Anhui, China
 - **Factory Size:** 10,000+ m²

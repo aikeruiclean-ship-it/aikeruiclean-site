@@ -45,7 +45,7 @@ export default function HomePage() {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Anhui Aikerui Environmental Protection Technology CO.,LTD",
+    name: "Anhui Aikerui Environmental Protection Technology Co., Ltd.",
     url: "https://aikeruiclean.com",
     logo: "https://aikeruiclean.com/aikerui-logo.png",
     contactPoint: {

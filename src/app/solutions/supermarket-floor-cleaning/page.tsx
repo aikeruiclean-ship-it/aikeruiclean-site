@@ -25,7 +25,7 @@ export default function SupermarketSolutionPage() {
         "@type": "Article",
         headline: "Supermarket Floor Cleaning Solutions",
         description: "Quiet, compact floor cleaning machines designed for supermarkets, grocery stores, and retail environments.",
-        author: { "@type": "Organization", name: "Anhui Aikerui Environmental Protection Technology CO.,LTD" },
+        author: { "@type": "Organization", name: "Anhui Aikerui Environmental Protection Technology Co., Ltd." },
       }} />
       <JsonLd data={{
         "@context": "https://schema.org",

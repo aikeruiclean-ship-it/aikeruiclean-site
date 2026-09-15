@@ -25,7 +25,7 @@ export default function FactorySolutionPage() {
         "@type": "Article",
         headline: "Factory Floor Cleaning Solutions",
         description: "Heavy-duty industrial floor cleaning machines for factories and manufacturing plants.",
-        author: { "@type": "Organization", name: "Anhui Aikerui Environmental Protection Technology CO.,LTD" },
+        author: { "@type": "Organization", name: "Anhui Aikerui Environmental Protection Technology Co., Ltd." },
       }} />
       <JsonLd data={{
         "@context": "https://schema.org",

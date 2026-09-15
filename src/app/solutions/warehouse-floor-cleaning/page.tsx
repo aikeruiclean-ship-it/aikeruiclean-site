@@ -27,7 +27,7 @@ export default function WarehouseSolutionPage() {
         headline: "Warehouse Floor Cleaning Solutions",
         description:
           "Complete guide to choosing industrial floor cleaning machines for warehouses. Walk-behind and ride-on scrubbers, sweepers, and combination machines.",
-        author: { "@type": "Organization", name: "Anhui Aikerui Environmental Protection Technology CO.,LTD" },
+        author: { "@type": "Organization", name: "Anhui Aikerui Environmental Protection Technology Co., Ltd." },
       }} />
       <JsonLd data={{
         "@context": "https://schema.org",

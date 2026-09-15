@@ -33,7 +33,7 @@ export default function PriceGuidePage() {
             "Complete price guide for commercial and industrial floor scrubbers. Compare costs by type, size, and features.",
           author: {
             "@type": "Organization",
-            name: "Anhui Aikerui Environmental Protection Technology CO.,LTD",
+            name: "Anhui Aikerui Environmental Protection Technology Co., Ltd.",
           },
         }}
       />

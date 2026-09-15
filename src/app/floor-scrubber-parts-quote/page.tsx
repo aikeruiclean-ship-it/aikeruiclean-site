@@ -358,7 +358,7 @@ export default function FloorScrubberQuotePage() {
               <div className="bg-white rounded-2xl border border-gray-200 p-6">
                 <h3 className="font-bold text-gray-900 mb-3">Who You're Dealing With</h3>
                 <p className="text-sm text-gray-600 leading-relaxed mb-4">
-                  Anhui Aikerui Environmental Protection Technology Co., Ltd — a floor scrubber and
+                  Anhui Aikerui Environmental Protection Technology Co., Ltd. — a floor scrubber and
                   sweeper manufacturer in Anqing, China since 2008. We own the production line, so you
                   buy direct with no dealer markup.
                 </p>

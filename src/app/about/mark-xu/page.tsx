@@ -5,7 +5,7 @@ import { JsonLd } from "@/components/json-ld";
 export const metadata: Metadata = {
   title: "Mark Xu — Floor Cleaning Equipment Expert | Aikerui",
   description:
-    "Mark Xu, Sales Director at Anhui Aikerui Environmental Protection Technology. 15+ years in industrial floor cleaning equipment manufacturing and OEM parts.",
+    "Mark Xu, Sales Director at Anhui Aikerui Environmental Protection Technology Co., Ltd. 15+ years in industrial floor cleaning equipment manufacturing and OEM parts.",
   alternates: { canonical: "https://aikeruiclean.com/about/mark-xu" },
 };
 
@@ -20,7 +20,7 @@ export default function AuthorPage() {
           jobTitle: "Sales Director",
           worksFor: {
             "@type": "Organization",
-            name: "Anhui Aikerui Environmental Protection Technology CO.,LTD",
+            name: "Anhui Aikerui Environmental Protection Technology Co., Ltd.",
           },
           description:
             "Sales Director with 15+ years experience in industrial floor cleaning equipment manufacturing, OEM parts, and global B2B equipment sales.",
@@ -44,7 +44,7 @@ export default function AuthorPage() {
               <h1 className="text-3xl md:text-4xl font-bold mb-2">Mark Xu</h1>
               <p className="text-xl text-gray-200 mb-1">Sales Director</p>
               <p className="text-gray-300">
-                Anhui Aikerui Environmental Protection Technology CO.,LTD
+                Anhui Aikerui Environmental Protection Technology Co., Ltd.
               </p>
             </div>
           </div>

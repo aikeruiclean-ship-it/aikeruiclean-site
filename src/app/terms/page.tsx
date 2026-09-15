@@ -23,7 +23,7 @@ export default function TermsPage() {
       <div className="prose prose-gray max-w-none space-y-6">
         <h2 className="text-xl font-bold text-gray-900 mt-8">1. Company Information</h2>
         <p>
-          Anhui Aikerui Environmental Protection Technology CO.,LTD<br />
+          Anhui Aikerui Environmental Protection Technology Co., Ltd.<br />
           No. 058, Yuantan Road, Yuantan Town, Qianshan City, Anqing City, Anhui Province, China<br />
           Email: info@aikeruiclean.com<br />
           Phone: +86 199 6523 6428

@@ -56,7 +56,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: fullTitle.length <= 60 ? fullTitle : guide.title,
     description,
     alternates: { canonical: `https://aikeruiclean.com/guides/${slug}` },
-    authors: [{ name: "Mark Wang", url: "https://aikeruiclean.com/about/mark-xu" }],
+    authors: [{ name: "Mark Xu", url: "https://aikeruiclean.com/about/mark-xu" }],
     openGraph: {
       title: guide.title,
       description,
@@ -248,12 +248,12 @@ export default async function GuideDetailPage({ params }: Props) {
             dateModified: guide.published ? new Date(guide.published).toISOString() : undefined,
             author: {
               "@type": "Person",
-              name: "Mark Wang",
+              name: "Mark Xu",
               url: "https://aikeruiclean.com/about/mark-xu",
               jobTitle: "Sales Director",
               worksFor: {
                 "@type": "Organization",
-                name: "Anhui Aikerui Environmental Protection Technology CO.,LTD",
+                name: "Anhui Aikerui Environmental Protection Technology Co., Ltd.",
               },
             },
             publisher: {

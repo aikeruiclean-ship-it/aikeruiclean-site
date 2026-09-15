@@ -210,7 +210,7 @@ export default async function ProductDetailPage({ params }: Props) {
           mpn: product.sku,
           manufacturer: {
             "@type": "Organization",
-            name: "Anhui Aikerui Environmental Protection Technology CO.,LTD",
+            name: "Anhui Aikerui Environmental Protection Technology Co., Ltd.",
             url: "https://aikeruiclean.com",
           },
           brand: { "@type": "Brand", name: "Aikerui" },
