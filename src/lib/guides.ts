@@ -41,7 +41,7 @@ const guides: Guide[] = [
       {
         heading: "Why Capability Beats Price Alone",
         content:
-          "Every industrial floor scrubber quote looks similar on paper: a machine, a price, a lead time. What separates a supplier you can scale with from one that stalls your order is capability, meaning the ability to actually produce at the specification and volume you need.\n\nPrice tells you what a supplier wants today. Capability tells you what they can deliver in month six, year two and year five, including spare parts after the model changes.",
+          "Every industrial floor scrubber quote looks similar on paper: a machine, a price, a lead time. Capability is what separates a supplier you can scale with from one that stalls your order. It means the ability to produce at the specification and volume you need.\n\nPrice tells you what a supplier wants today. Capability tells you what they can deliver in month six, year two and year five, including spare parts after the model changes.",
         image: "/images/A50-Scrubber-03.webp",
         imageAlt: "Industrial floor scrubber manufacturer production facility",
       },
@@ -52,11 +52,11 @@ const guides: Guide[] = [
         items: [
           "Production capacity — monthly output, production lines and how much of that capacity they can commit to you.",
           "Certification — CE, ISO 9001 and any market-specific approvals required at your destination.",
-          "OEM and customization — branding, packaging, voltage, plug type and specification changes.",
+          "OEM and custom build — branding, packaging, voltage, plug type and specification changes.",
           "Lead time and stock — standard production time, in-stock models and how they handle rush orders.",
           "After-sales and spare parts — part availability, warranty terms and response time.",
           "Payment terms — deposit percentage, accepted payment methods and whether credit terms are available.",
-          "Traceability — business licence, registered scope, export records and willingness to host an inspection.",
+          "batch tracking — business licence, registered scope, export records and willingness to host an inspection.",
         ],
       },
       {
@@ -68,13 +68,13 @@ const guides: Guide[] = [
           "Production lines — ask how many lines build this specific machine type, and what the takt time is.",
           "Monthly output — request the figure for your model, then compare against your order volume as a share of capacity.",
           "Headcount — production staff numbers should be consistent with the claimed output.",
-          "In-house parts — machines whose brushes, tanks and frames are made on site carry lower supply risk than assembled imports.",
+          "In-house parts. When the factory makes its own brushes, tanks and frames, machines carry lower supply risk than assembled imports.",
         ],
       },
       {
         heading: "Certification and Compliance",
         content:
-          "Certificates matter differently depending on your market. Ask for the certificate numbers and issuing bodies, then verify them independently rather than accepting a scanned PDF.",
+          "Certificates matter differently depending on your market. Ask for the certificate numbers and issuing bodies, then verify them on your own rather than accepting a scanned PDF.",
         items: [
           "CE marking — required for the European Union; check whether it is self-declared or issued by a notified body.",
           "ISO 9001 — quality management certification; confirms documented production processes exist.",
@@ -84,31 +84,48 @@ const guides: Guide[] = [
         ],
       },
       {
-        heading: "OEM and Customization Capability",
+        heading: "OEM and custom build Capability",
         content:
-          "If you sell under your own brand, customization capability decides how quickly you can launch and how much you pay for tooling.",
+          "If you sell under your own brand, custom build capability decides how fast you can launch. It also sets how much you pay for tooling.",
         items: [
           "Branding — decals, silk screening and nameplates applied at the factory rather than by a third party.",
           "Packaging — retail-ready cartons, pallet configuration and labelling to your market's requirements.",
           "Specification changes — voltage, plug, tank size, brush type and control panel language.",
-          "Minimum order for customization — typically higher than standard orders because tooling and labelling change per run.",
+          "Minimum order for custom build — typically higher than standard orders because tooling and labelling change per run.",
           "Sample and pre-production units — confirm they will supply a branding sample before full production.",
         ],
       },
       {
         heading: "Lead Time, Stock and After-Sales",
         content:
-          "Aikerui manufactures floor scrubbers and sweepers at its own 10,000+ square meter facility in Anqing, Anhui, China. The company was founded in 2008, holds CE and ISO 9001 certification and has exported to 50+ countries.\n\nWalk-behind scrubbers land around $1,800-7,500 and ride-on units $6,000-24,000, typically 30-50% below equivalent Western branded machines because no distributor sits in between.\n\nStandard production runs 15-30 days depending on model and volume, and in-stock models ship faster. Brushes and most spare parts come off the same production line, which keeps consumables available after the machine is delivered. Compare factory-direct models at aikeruiclean.com/floor-scrubbers or request pricing at aikeruiclean.com/floor-scrubber-parts-quote.",
+          "Aikerui manufactures floor scrubbers and sweepers at its own 10,000+ square meter facility in Anqing, Anhui, China. Aikerui started manufacturing in 2008. It holds CE and ISO 9001 certification and has exported to 50+ countries, with lead times that vary depending on the model and order volume.\n\nWalk-behind scrubbers land around $1,800-7,500. Ride-on units run $6,000-24,000. Both sit 30-50% below equivalent Western branded machines, because no distributor sits in between.\n\nStandard production runs 15-30 days depending on model and volume, and in-stock models ship faster. The same production line makes brushes and most spare parts. That keeps consumables available after the machine is delivered. Compare factory-direct models at aikeruiclean.com/floor-scrubbers or request pricing at aikeruiclean.com/floor-scrubber-parts-quote.",
+      },
+      {
+        heading: "Production and Quality: What to Check",
+        content:
+          "Capacity alone does not protect your order. What you want is a factory that controls its own manufacturing processes from raw material through to finished goods.\\n\\nAsk how they handle quality issues, what corrective actions follow a defect, and how cycle time is measured. A supplier who answers in specifics keeps product quality stable over the long term, and that shows up in customer satisfaction and repeat orders.",
+        items: [
+          "Raw material control — who supplies the steel, plastics and bristles, and whether incoming material is inspected before it enters production.",
+          "Manufacturing processes — which steps run in-house and which are subcontracted. More in-house steps mean tighter control.",
+          "Type of production — dedicated lines for your model category versus mixed lines that switch between products.",
+          "Production schedules — how far ahead they plan, and how they increase production for a rush order without disrupting existing runs.",
+          "Cycle time — time per unit on the line. A shorter cycle time increases production capacity without buying new equipment.",
+          "Quality control — in-process checks plus a final test on every finished goods unit before packing.",
+          "Quality assurance system — documented procedures, inspection records and how they trace a defect back to its batch.",
+          "Industry standards — whether the factory builds to CE, ISO 9001 or a customer-specific standard, and how it proves compliance.",
+          "Corrective actions — what happens once a quality issue is found, who owns the fix and how it is verified.",
+          "Track record — how long the factory has run the same line. Stable processes save time and reduce rework over the long term.",
+        ],
       },
       {
         heading: "Running a Supplier Audit",
         content:
           "A supplier audit does not need a full week on site. Ask for these six items and the answers reveal most of what you need to know.",
         items: [
-          "Business licence with registered scope of business, so you can confirm the company is licensed to manufacture rather than trade.",
-          "A live video walkthrough of the production line showing your model being built, not a stock photo or generic clip.",
+          "Business licence showing the registered scope of business. It confirms the company holds a manufacturing licence rather than a trading one.",
+          "A live video walkthrough of the production line as workers build your model, not a stock photo or generic clip.",
           "A bill of lading from a recent export shipment to confirm they actually ship internationally.",
-          "Certificate numbers with issuing bodies so you can verify CE and ISO 9001 independently.",
+          "Certificate numbers with issuing bodies so you can verify CE and ISO 9001 on your own.",
           "A written spare parts list with prices, so you know consumable costs before you commit.",
           "Confirmation that third-party inspection before shipment is welcome, ideally in writing.",
         ],
