@@ -49,6 +49,22 @@ const APPLICATIONS = [
   { name: "Cold Storage", href: "/solutions/cold-storage-floor-cleaning" },
 ];
 
+// 首屏价格带（与站内 guides 口径一致：整机见 how-much-does-floor-scrubber-cost，配件见 The Price Reality 段）
+const PRICE_BANDS = [
+  { item: 'Walk-behind scrubber, 17-28"', dealer: "$3,000-12,000", direct: "30-40% less", lead: "15-30 days" },
+  { item: 'Ride-on scrubber, 28-50"', dealer: "$9,000-35,000", direct: "$6,000-24,000", lead: "15-30 days" },
+  { item: "Auto scrubber brush (disc / roller)", dealer: "$100-250 / $120-300", direct: "$45-75 / $55-95", lead: "In stock, 24-48h" },
+  { item: "Squeegee blade / pad driver", dealer: "$25-90", direct: "$10-40", lead: "In stock, 24-48h" },
+];
+
+// 配件速查表（尺寸与兼容口径取自站内配件指南，避免与 /parts 页产生数字冲突）
+const PARTS_TABLE = [
+  { part: "Disc brush", sizes: '13-28"', direct: "$45-75", dealer: "$100-250", fits: "NP-9200 2-lug: Tennant, Nilfisk, Viper, Comac (Karcher with adapter)" },
+  { part: "Roller brush", sizes: "Matched to deck width", direct: "$55-95", dealer: "$120-300", fits: "Roller-deck walk-behind and ride-on scrubbers" },
+  { part: "Squeegee blade", sizes: '24-36"', direct: "$10-25", dealer: "$25-60", fits: "Straight and curved assemblies, most deck widths" },
+  { part: "Pad driver", sizes: "Matched to deck width", direct: "$15-40", dealer: "$40-90", fits: "2-lug and 3-lug mounts" },
+];
+
 const FAQ = [
   [
     "Walk-behind or ride-on — which machine do I need?",
@@ -59,12 +75,16 @@ const FAQ = [
     "A scrubber applies solution, scrubs and vacuums up the dirty water, so it cleans and leaves the floor dry. A sweeper only collects dry debris. For mixed environments we also supply scrubber-sweeper combination machines.",
   ],
   [
-    "Can you supply spare parts and brushes after purchase?",
-    "Yes. We manufacture the brushes, squeegees and pad drivers in the same factory, so consumables are available directly at a lower cost than third-party parts.",
+    "Can you supply auto scrubber parts and brushes after purchase?",
+    "Yes. We make auto scrubber parts in the same factory as our machines — disc and roller brushes, squeegee blades and pad drivers. Consumables therefore cost less than third-party parts.",
+  ],
+  [
+    "How much does a machine or a part cost?",
+    "A walk-behind scrubber runs $3,000-12,000 and a ride-on $9,000-35,000 at dealer prices; our factory-direct price is 30-40% lower. Disc brushes are $45-75 and squeegee blades $10-25. Send your requirement for a fixed quote.",
   ],
   [
     "What is the MOQ and lead time?",
-    "For stock models, MOQ is typically 1 unit for sample evaluation and 5+ units for wholesale pricing. Lead time is 15-30 days depending on model and customization.",
+    "For stock models, MOQ is typically 1 unit for sample evaluation and 5+ units for wholesale pricing. Lead time is 15-30 days depending on model and customization. In-stock brushes and blades ship in 24-48 hours.",
   ],
   [
     "Do you offer OEM branding on machines?",
@@ -150,9 +170,9 @@ export default function FloorScrubberQuotePage() {
         data={{
           "@context": "https://schema.org",
           "@type": "WebPage",
-          name: "Floor Scrubber & Sweeper Quote",
+          name: "Floor Scrubber & Auto Scrubber Parts Quote",
           description:
-            "Get factory-direct pricing on industrial floor scrubbers, sweepers and carpet extractors. Walk-behind and ride-on models, CE certified, OEM available.",
+            "Get factory-direct pricing on floor scrubbers and sweepers, plus auto scrubber parts and brushes from the same factory. CE certified, OEM available.",
         }}
       />
 
@@ -163,12 +183,12 @@ export default function FloorScrubberQuotePage() {
             <Factory size={14} /> Factory-Direct — No Middlemen
           </span>
           <h1 className="text-3xl md:text-4xl font-bold mb-4">
-            Industrial Floor Scrubbers &amp; Sweepers — Factory Direct Price
+            Industrial Floor Scrubbers, Sweepers &amp; Auto Scrubber Parts — Factory Direct Price
           </h1>
           <p className="text-lg text-gray-200 max-w-3xl mx-auto mb-8">
-            Manufacturer of walk-behind and ride-on floor scrubbers, industrial sweepers and carpet
-            extractors — built in our own ISO 9001 factory in Anqing, China and exported to 50+ countries.
-            Buy direct at 30-50% below dealer pricing.
+            We manufacture walk-behind and ride-on floor scrubbers, industrial sweepers and carpet
+            extractors. Every machine is built in our own ISO 9001 factory in Anqing, China, and we
+            ship to 50+ countries. Buy direct at 30-50% below dealer pricing.
           </p>
           <a href="#form" className="inline-flex items-center gap-2 px-8 py-4 bg-accent hover:bg-accent-hover text-white font-bold rounded-lg transition-colors text-lg shadow-lg">
             <Send size={18} /> Get Your Machine Quote
@@ -189,6 +209,80 @@ export default function FloorScrubberQuotePage() {
         </div>
       </section>
 
+      {/* ── 首屏即时信息：价格带 + 选型（降低跳出率与首屏即走的比例）── */}
+      <section className="py-10 bg-white border-b">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 text-center mb-3">
+            Floor Scrubber &amp; Auto Scrubber Parts Prices at a Glance
+          </h2>
+          <p className="text-gray-600 text-center max-w-3xl mx-auto mb-8">
+            These are direct-from-factory ranges, not dealer list prices. Tell us your floor area or
+            the part you need and we confirm the exact model, price and lead time within 24 hours.
+          </p>
+          <div className="overflow-x-auto mb-8">
+            <table className="w-full text-sm border-collapse bg-white rounded-xl overflow-hidden border border-gray-200">
+              <thead>
+                <tr className="bg-primary text-white">
+                  <th className="p-3 text-left font-semibold">What you need</th>
+                  <th className="p-3 text-left font-semibold">Typical dealer price</th>
+                  <th className="p-3 text-left font-semibold">Our factory-direct price</th>
+                  <th className="p-3 text-left font-semibold">Lead time</th>
+                </tr>
+              </thead>
+              <tbody>
+                {PRICE_BANDS.map((r, i) => (
+                  <tr key={r.item} className={i % 2 ? "bg-gray-50 border-b border-gray-200" : "border-b border-gray-200"}>
+                    <td className="p-3 font-medium text-gray-900">{r.item}</td>
+                    <td className="p-3 text-gray-500 line-through">{r.dealer}</td>
+                    <td className="p-3 font-semibold text-green-700">{r.direct}</td>
+                    <td className="p-3 text-gray-600">{r.lead}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <div className="grid sm:grid-cols-3 gap-4 mb-10 text-center">
+            {[
+              { t: "MOQ 1 unit", d: "Order a sample machine before committing to volume" },
+              { t: "Reply in 24 hours", d: "Model recommendation and fixed price, from the factory" },
+              { t: "30-50% below dealers", d: "No importer margin, spare parts from the same line" },
+            ].map(b => (
+              <div key={b.t} className="p-4 bg-gray-50 rounded-xl border border-gray-200">
+                <p className="font-semibold text-gray-900">{b.t}</p>
+                <p className="text-xs text-gray-600 mt-1">{b.d}</p>
+              </div>
+            ))}
+          </div>
+          <h3 className="text-xl font-bold text-gray-900 text-center mb-3">
+            Walk-Behind or Ride-On? Choose by Floor Area
+          </h3>
+          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-6">
+            The single biggest factor in choosing a scrubber is how much floor you clean per shift.
+          </p>
+          <div className="overflow-x-auto mb-8">
+            <table className="w-full text-sm border-collapse bg-white rounded-xl overflow-hidden border border-gray-200">
+              <thead>
+                <tr className="bg-primary text-white">
+                  <th className="p-3 text-left font-semibold">Machine Type</th>
+                  <th className="p-3 text-left font-semibold">Best For</th>
+                  <th className="p-3 text-left font-semibold">Coverage</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-gray-200"><td className="p-3 font-medium">Walk-Behind</td><td className="p-3 text-gray-600">Aisles, retail, restaurants, under 2,000 sqm</td><td className="p-3 text-gray-600">~1,500-2,500 sqm/h</td></tr>
+                <tr className="border-b border-gray-200 bg-gray-50"><td className="p-3 font-medium">Ride-On</td><td className="p-3 text-gray-600">Warehouses, malls, airports, over 3,000 sqm</td><td className="p-3 text-gray-600">~3,000-6,000 sqm/h</td></tr>
+                <tr><td className="p-3 font-medium">Sweeper</td><td className="p-3 text-gray-600">Dry debris, dust, packaging, outdoor areas</td><td className="p-3 text-gray-600">~8,000-20,000 sqm/h</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div className="text-center">
+            <a href="#form" className="inline-flex items-center gap-2 px-6 py-3 bg-accent hover:bg-accent-hover text-white font-semibold rounded-lg transition-colors text-sm">
+              <Send size={16} /> Ask for the exact price of your machine
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* ── Machine range ── */}
       <section className="py-12 bg-white">
         <div className="max-w-5xl mx-auto px-4">
@@ -196,8 +290,8 @@ export default function FloorScrubberQuotePage() {
             Our Floor Cleaning Machine Range
           </h2>
           <p className="text-gray-600 text-center max-w-3xl mx-auto mb-10">
-            Every machine is designed, manufactured and tested in our Anqing facility before export.
-            Working widths from 17" walk-behind units to 40" ride-on platforms.
+            We design, manufacture and test every machine in our Anqing facility before export.
+            Working widths run from 17" walk-behind units to 40" ride-on platforms.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
             {MACHINES.map(p => (
@@ -213,36 +307,8 @@ export default function FloorScrubberQuotePage() {
         </div>
       </section>
 
-      {/* ── Walk-behind vs Ride-on ── */}
-      <section className="py-12 bg-gray-50">
-        <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-2xl font-bold text-gray-900 text-center mb-3">
-            Walk-Behind or Ride-On? Choose by Floor Area
-          </h2>
-          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-8">
-            The single biggest factor in choosing a scrubber is how much floor you clean per shift.
-          </p>
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm border-collapse bg-white rounded-xl overflow-hidden">
-              <thead>
-                <tr className="bg-primary text-white">
-                  <th className="p-3 text-left font-semibold">Machine Type</th>
-                  <th className="p-3 text-left font-semibold">Best For</th>
-                  <th className="p-3 text-left font-semibold">Coverage</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="border-b border-gray-200"><td className="p-3 font-medium">Walk-Behind</td><td className="p-3 text-gray-600">Aisles, retail, restaurants, under 2,000 sqm</td><td className="p-3 text-gray-600">~1,500-2,500 sqm/h</td></tr>
-                <tr className="border-b border-gray-200 bg-gray-50"><td className="p-3 font-medium">Ride-On</td><td className="p-3 text-gray-600">Warehouses, malls, airports, over 3,000 sqm</td><td className="p-3 text-gray-600">~3,000-6,000 sqm/h</td></tr>
-                <tr><td className="p-3 font-medium">Sweeper</td><td className="p-3 text-gray-600">Dry debris, dust, packaging, outdoor areas</td><td className="p-3 text-gray-600">~8,000-20,000 sqm/h</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
       {/* ── Applications ── */}
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-gray-50">
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-2xl font-bold text-gray-900 text-center mb-3">
             Built for Your Facility
@@ -253,7 +319,7 @@ export default function FloorScrubberQuotePage() {
           </p>
           <div className="flex flex-wrap justify-center gap-2 mb-8">
             {APPLICATIONS.map(a => (
-              <a key={a.name} href={a.href} className="px-4 py-2 bg-gray-100 border border-gray-200 rounded-lg text-sm font-medium text-gray-700 hover:border-primary hover:text-primary transition-colors">
+              <a key={a.name} href={a.href} className="px-4 py-2 bg-white border border-gray-200 rounded-lg text-sm font-medium text-gray-700 hover:border-primary hover:text-primary transition-colors">
                 {a.name}
               </a>
             ))}
@@ -268,11 +334,45 @@ export default function FloorScrubberQuotePage() {
       </section>
 
       {/* ── Spare parts cross-sell ── */}
-      <section className="py-12 bg-gray-50">
+      <section className="py-12 bg-white">
         <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-2xl font-bold text-gray-900 text-center mb-8">
+          <h2 className="text-2xl font-bold text-gray-900 text-center mb-4">
             Replacement Parts &amp; Consumables
           </h2>
+          <p className="text-gray-600 text-center max-w-3xl mx-auto mb-8">
+            Auto scrubber parts wear out long before the machine does. Disc and roller brushes,
+            squeegee blades and pad drivers are the parts you replace most often, and they decide
+            how clean the floor looks after every pass. We make these auto scrubber parts on the
+            same line as our machines. A replacement{" "}
+            <a href="/guides/auto-scrubber-brush-guide" className="text-primary hover:underline">auto scrubber brush</a>{" "}
+            therefore costs well below dealer pricing, with the same lug pattern and bristle
+            specification. Send us your machine brand and model, or a photo of the part you need,
+            and we confirm fit within 24 hours.
+          </p>
+          <div className="overflow-x-auto mb-8">
+            <table className="w-full text-sm border-collapse bg-white rounded-xl overflow-hidden border border-gray-200">
+              <thead>
+                <tr className="bg-primary text-white">
+                  <th className="p-3 text-left font-semibold">Part</th>
+                  <th className="p-3 text-left font-semibold">Common sizes</th>
+                  <th className="p-3 text-left font-semibold">Factory-direct</th>
+                  <th className="p-3 text-left font-semibold">Dealer price</th>
+                  <th className="p-3 text-left font-semibold">Fits</th>
+                </tr>
+              </thead>
+              <tbody>
+                {PARTS_TABLE.map((r, i) => (
+                  <tr key={r.part} className={i % 2 ? "bg-gray-50 border-b border-gray-200" : "border-b border-gray-200"}>
+                    <td className="p-3 font-medium text-gray-900">{r.part}</td>
+                    <td className="p-3 text-gray-600">{r.sizes}</td>
+                    <td className="p-3 font-semibold text-green-700">{r.direct}</td>
+                    <td className="p-3 text-gray-500 line-through">{r.dealer}</td>
+                    <td className="p-3 text-gray-600">{r.fits}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {[
               { name: "Disc Brushes", img: "/images/categories/Disc-Brush.webp", href: "/parts/disc-brushes" },
@@ -300,8 +400,9 @@ export default function FloorScrubberQuotePage() {
         <div className="max-w-3xl mx-auto px-4 text-center">
           <p className="text-lg font-bold text-gray-900 mb-1">Don't Pay Dealer Markup</p>
           <p className="text-gray-600">
-            Machines sold through importers carry two layers of margin. We build them — so you buy at
-            factory price, with CE certification, spare-part support and OEM options included.
+            Importers add two layers of margin before a machine reaches you. We build our own
+            machines, so you pay factory price. Every order includes CE certification, spare-part
+            support and OEM options.
           </p>
         </div>
       </section>
@@ -323,6 +424,7 @@ export default function FloorScrubberQuotePage() {
             <a href="/guides/industrial-floor-scrubber-complete-guide" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Buyer's Guide</a>
             <a href="/guides/walk-behind-vs-ride-on-scrubber" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Walk-Behind vs Ride-On</a>
             <a href="/guides/top-floor-scrubber-brands-buyers-guide" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Brands Compared</a>
+            <a href="/guides/auto-scrubber-brush-guide" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Auto Scrubber Brush Guide</a>
             <a href="/floor-scrubber-price-guide" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">Price Guide</a>
             <a href="/floor-scrubbers" className="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-primary hover:border-primary transition-colors">All Scrubber Models</a>
           </div>
@@ -330,12 +432,12 @@ export default function FloorScrubberQuotePage() {
       </section>
 
       {/* ── FAQ ── */}
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-gray-50">
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="text-2xl font-bold text-gray-900 text-center mb-8">Floor Scrubber Buyer FAQs</h2>
           <div className="space-y-3">
             {FAQ.map(([q, a]) => (
-              <details key={q} className="group bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
+              <details key={q} className="group bg-white rounded-xl border border-gray-200 overflow-hidden">
                 <summary className="flex items-center justify-between px-5 py-4 cursor-pointer hover:bg-gray-100 transition-colors">
                   <h3 className="font-semibold text-gray-900 pr-4">{q}</h3>
                   <span className="text-primary shrink-0">+</span>
@@ -348,10 +450,10 @@ export default function FloorScrubberQuotePage() {
       </section>
 
       {/* ── Form ── */}
-      <section id="form" className="py-12 bg-gray-50">
+      <section id="form" className="py-12 bg-white">
         <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-2xl font-bold text-gray-900 text-center mb-8">Get Your Machine Quote</h2>
-          <p className="text-sm text-gray-500 text-center mb-8">Reply within 24 hours — from a real factory, not a middleman</p>
+          <h2 className="text-2xl font-bold text-gray-900 text-center mb-3">Get Your Machine Quote</h2>
+          <p className="text-sm text-gray-500 text-center mb-8">4 fields to fill — reply within 24 hours, from a real factory, not a middleman</p>
           <div className="grid md:grid-cols-2 gap-8 items-start">
             {/* Company trust info */}
             <div className="space-y-5">
@@ -388,7 +490,7 @@ export default function FloorScrubberQuotePage() {
 
             {/* Form card */}
             <div className="bg-white rounded-2xl shadow-lg border border-gray-200 p-6 md:p-8">
-              <p className="text-sm text-gray-500 mb-6">Fill the form and get a reply within 24 hours</p>
+              <p className="text-sm text-gray-500 mb-6">Fill 4 fields and get a reply within 24 hours</p>
 
               {submitted ? (
                 <div className="text-center py-8">
@@ -404,36 +506,45 @@ export default function FloorScrubberQuotePage() {
                   <input type="email" name="email" required placeholder="Email Address *" value={form.email}
                     onChange={e => setForm({...form, email: e.target.value})}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" />
-                  <input type="text" name="company" placeholder="Company Name" value={form.company}
-                    onChange={e => setForm({...form, company: e.target.value})}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" />
-                  <select name="brushType" value={form.brushType}
+                  <select name="brushType" required value={form.brushType}
                     onChange={e => setForm({...form, brushType: e.target.value})}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary bg-white">
-                    <option value="">Which machine are you looking for? (optional)</option>
+                    <option value="">What do you need? *</option>
                     <option>Walk-behind floor scrubber</option>
                     <option>Ride-on floor scrubber</option>
                     <option>Floor sweeper</option>
                     <option>Carpet extractor</option>
                     <option>Scrubber + sweeper combination</option>
+                    <option>Auto scrubber parts / brushes</option>
                     <option>Not sure — please advise</option>
                   </select>
-                  <input type="text" name="machineModel" placeholder="Floor area (e.g. 5,000 sqm warehouse)" value={form.machineModel}
+                  <input type="text" name="machineModel" required placeholder="Floor area or part needed * (e.g. 5,000 sqm warehouse / NP-9200 20-inch disc brush)" value={form.machineModel}
                     onChange={e => setForm({...form, machineModel: e.target.value})}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" />
-                  <input type="text" name="quantity" placeholder="Quantity (e.g. 1 unit / 5 units)" value={form.quantity}
-                    onChange={e => setForm({...form, quantity: e.target.value})}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" />
-                  <input type="text" name="phone" placeholder="Phone / WhatsApp" value={form.phone}
-                    onChange={e => setForm({...form, phone: e.target.value})}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" />
-                  <textarea name="message" rows={4} placeholder="Floor type, cleaning hours per day, or anything else (optional)" value={form.message}
-                    onChange={e => setForm({...form, message: e.target.value})}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary resize-none" />
+
+                  <details className="rounded-lg border border-gray-200 bg-gray-50">
+                    <summary className="px-4 py-3 text-sm font-medium text-gray-700 cursor-pointer hover:bg-gray-100 rounded-lg">Add optional details (company, quantity, phone)</summary>
+                    <div className="p-4 pt-0 space-y-4">
+                      <input type="text" name="company" placeholder="Company Name" value={form.company}
+                        onChange={e => setForm({...form, company: e.target.value})}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" />
+                      <input type="text" name="quantity" placeholder="Quantity (e.g. 1 unit / 5 units)" value={form.quantity}
+                        onChange={e => setForm({...form, quantity: e.target.value})}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" />
+                      <input type="text" name="phone" placeholder="Phone / WhatsApp" value={form.phone}
+                        onChange={e => setForm({...form, phone: e.target.value})}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary" />
+                      <textarea name="message" rows={3} placeholder="Floor type, cleaning hours per day, or anything else" value={form.message}
+                        onChange={e => setForm({...form, message: e.target.value})}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary resize-none" />
+                    </div>
+                  </details>
+
                   <button type="submit" disabled={sending}
                     className="w-full py-3.5 bg-accent hover:bg-accent-hover disabled:bg-gray-300 text-white font-bold rounded-lg transition-colors">
                     {sending ? "Sending..." : "Get Factory Price & Model Recommendation"}
                   </button>
+                  <p className="text-xs text-gray-500 text-center">No newsletter, no spam. We only reply to your inquiry.</p>
                 </form>
               )}
 
