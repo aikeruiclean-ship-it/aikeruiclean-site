@@ -22,7 +22,7 @@ export function FloatingCTA() {
         href={`https://api.whatsapp.com/send?phone=${phone}&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20pricing.`}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center gap-2 px-4 py-3 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all animate-pulse hover:animate-none"
+        className="flex items-center gap-2 px-4 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all animate-pulse hover:animate-none"
         aria-label="Chat on WhatsApp"
       >
         <MessageCircle size={20} />

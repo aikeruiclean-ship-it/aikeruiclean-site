@@ -5,8 +5,8 @@
   --foreground: #171717;
   --primary: #1a3a5f;
   --primary-light: #2a5a8f;
-  --accent: #f5a623;
-  --accent-hover: #e0981a;
+  --accent: #b45309;
+  --accent-hover: #92400e;
 }
 
 @theme inline {
@@ -14,8 +14,8 @@
   --color-foreground: var(--foreground);
   --color-primary: #1a3a5f;
   --color-primary-light: #2a5a8f;
-  --color-accent: #f5a623;
-  --color-accent-hover: #e0981a;
+  --color-accent: #b45309;
+  --color-accent-hover: #92400e;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }

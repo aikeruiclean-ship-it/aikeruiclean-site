@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Shield, Truck, HeadphonesIcon, Brush, Factory, CheckCircle, Phone, Video, Award, Globe } from "lucide-react";
