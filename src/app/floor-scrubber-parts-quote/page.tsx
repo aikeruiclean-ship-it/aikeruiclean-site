@@ -68,19 +68,19 @@ const PARTS_TABLE = [
 const FAQ = [
   [
     "Walk-behind or ride-on — which machine do I need?",
-    "Walk-behind scrubbers suit floors under roughly 2,000 sqm and areas with obstacles, aisles or ramps. Ride-on machines cover 3,000-6,000 sqm per hour and are the usual choice for warehouses and large retail floors.",
+    "Walk-behind scrubbers suit floors under roughly 2,000 sqm and areas with obstacles, aisles or ramps. Ride-on machines cover 3,000-6,000 sqm per hour. They are the usual choice for warehouses and large retail floors.",
   ],
   [
     "What is the difference between a scrubber and a sweeper?",
-    "A scrubber applies solution, scrubs and vacuums up the dirty water, so it cleans and leaves the floor dry. A sweeper only collects dry debris. For mixed environments we also supply scrubber-sweeper combination machines.",
+    "A scrubber applies solution, scrubs and vacuums up the dirty water. It cleans the floor and leaves it dry. A sweeper only collects dry debris. For mixed environments we also supply scrubber-sweeper combination machines.",
   ],
   [
     "Can you supply auto scrubber parts and brushes after purchase?",
-    "Yes. We make auto scrubber parts in the same factory as our machines — disc and roller brushes, squeegee blades and pad drivers. Consumables therefore cost less than third-party parts.",
+    "Yes. We make auto scrubber parts in the same factory as our machines. That covers disc and roller brushes, squeegee blades and pad drivers. Consumables therefore cost less than third-party parts.",
   ],
   [
     "How much does a machine or a part cost?",
-    "A walk-behind scrubber runs $3,000-12,000 and a ride-on $9,000-35,000 at dealer prices; our factory-direct price is 30-40% lower. Disc brushes are $45-75 and squeegee blades $10-25. Send your requirement for a fixed quote.",
+    "A walk-behind scrubber runs $3,000-12,000 at dealer prices. A ride-on runs $9,000-35,000. Our factory-direct price is 30-40% lower. Disc brushes are $45-75 and squeegee blades $10-25. Send your requirement for a fixed quote.",
   ],
   [
     "What is the MOQ and lead time?",
@@ -88,7 +88,7 @@ const FAQ = [
   ],
   [
     "Do you offer OEM branding on machines?",
-    "Yes. We apply your brand, colour scheme and specification sheet for volume orders, produced on the same line as our own models. CE certification is included.",
+    "Yes. For volume orders we apply your brand, colour scheme and specification sheet. These run on the same line as our own models. CE certification is included.",
   ],
   [
     "How do I know which model fits my floor area?",
@@ -217,7 +217,7 @@ export default function FloorScrubberQuotePage() {
           </h2>
           <p className="text-gray-600 text-center max-w-3xl mx-auto mb-8">
             These are direct-from-factory ranges, not dealer list prices. Tell us your floor area or
-            the part you need and we confirm the exact model, price and lead time within 24 hours.
+            the part you need. We confirm the exact model, price and lead time within 24 hours.
           </p>
           <div className="overflow-x-auto mb-8">
             <table className="w-full text-sm border-collapse bg-white rounded-xl overflow-hidden border border-gray-200">
@@ -314,8 +314,8 @@ export default function FloorScrubberQuotePage() {
             Built for Your Facility
           </h2>
           <p className="text-gray-600 text-center max-w-2xl mx-auto mb-8">
-            Tell us your environment and we will configure the right machine — deck width, tank size,
-            battery type and brush specification.
+            Tell us your environment and we will configure the right machine. That covers deck
+            width, tank size, battery type and brush specification.
           </p>
           <div className="flex flex-wrap justify-center gap-2 mb-8">
             {APPLICATIONS.map(a => (
@@ -341,13 +341,13 @@ export default function FloorScrubberQuotePage() {
           </h2>
           <p className="text-gray-600 text-center max-w-3xl mx-auto mb-8">
             Auto scrubber parts wear out long before the machine does. Disc and roller brushes,
-            squeegee blades and pad drivers are the parts you replace most often, and they decide
-            how clean the floor looks after every pass. We make these auto scrubber parts on the
-            same line as our machines. A replacement{" "}
+            squeegee blades and pad drivers wear out fastest. You replace them most often, and they
+            decide how clean the floor looks after every pass. We make these auto scrubber parts on
+            the same line as our machines. A replacement{" "}
             <a href="/guides/auto-scrubber-brush-guide" className="text-primary hover:underline">auto scrubber brush</a>{" "}
-            therefore costs well below dealer pricing, with the same lug pattern and bristle
-            specification. Send us your machine brand and model, or a photo of the part you need,
-            and we confirm fit within 24 hours.
+            therefore costs well below dealer pricing. The lug pattern and bristle specification
+            stay the same as the original. Send your machine brand and model, or a photo of the part
+            you need. We confirm fit within 24 hours.
           </p>
           <div className="overflow-x-auto mb-8">
             <table className="w-full text-sm border-collapse bg-white rounded-xl overflow-hidden border border-gray-200">
