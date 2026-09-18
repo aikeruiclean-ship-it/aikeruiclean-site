@@ -1,76 +1,49 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
-import "./globals.css";
+import { notFound } from "next/navigation";
+import "../globals.css";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { FloatingCTA } from "@/components/floating-cta";
 import { AttributionTracker } from "@/components/attribution-tracker";
 import { CartProvider } from "@/lib/cart-context";
+import { translatedLocales, isLocale, isRtl } from "@/i18n/config";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-  display: "optional",
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-  display: "optional",
-});
+const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"], display: "optional" });
+const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"], display: "optional" });
 
 export const metadata: Metadata = {
-  title: "Aikerui - Industrial Floor Cleaning Machines | Scrubbers & Sweepers",
-  description:
-    "Professional manufacturer of industrial floor scrubbers, sweepers, and cleaning accessories. B2B wholesale, custom OEM solutions. Get a quote today.",
-  keywords: [
-    "floor scrubber",
-    "floor sweeper",
-    "industrial cleaning machine",
-    "walk behind scrubber",
-    "ride on scrubber",
-    "Aikerui",
-    "cleaning equipment manufacturer",
-  ],
   metadataBase: new URL("https://aikeruiclean.com"),
-  openGraph: {
-    title: "Aikerui Floor Cleaning Machines",
-    description: "Professional industrial floor scrubbers, sweepers, and cleaning solutions manufacturer.",
-    siteName: "Aikerui",
-    locale: "en_US",
-    type: "website",
-    url: "https://aikeruiclean.com",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Aikerui Industrial Floor Cleaning Machines",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Aikerui Floor Cleaning Machines",
-    description: "Professional industrial floor scrubbers, sweepers, and cleaning solutions manufacturer.",
-    images: ["/og-image.png"],
-  },
 };
 
-export default function RootLayout({
+// 只生成已翻译的 4 个语言首页（es/ar/ru/fr），保持静态预渲染
+export function generateStaticParams() {
+  return translatedLocales.map((locale) => ({ locale }));
+}
+
+export const dynamicParams = false;
+
+export default async function LocaleRootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }>) {
+  const { locale } = await params;
+  if (!isLocale(locale) || locale === "en") notFound();
+
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
+    <html
+      lang={locale}
+      dir={isRtl(locale) ? "rtl" : "ltr"}
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+    >
       <head>
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.google-analytics.com" />
-        {/* Google Search Console verification */}
         <meta name="google-site-verification" content="9n-ScR2ZUM3VI7e8ACJvhSk7hRefGI-XdnihD4DkYx8" />
-        {/* Google Tag (gtag.js) — GA4 + Google Ads 转化（直连，避免 GTM 容器覆盖 window.gtag） */}
         <Script
           id="gtag"
           strategy="lazyOnload"
@@ -83,8 +56,6 @@ export default function RootLayout({
             __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-X8E9TNJ4D2');gtag('config','AW-18359776225');`
           }}
         />
-
-        {/* LocalBusiness Schema */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
@@ -120,8 +91,6 @@ export default function RootLayout({
         }} />
       </head>
       <body className="min-h-full flex flex-col">
-        {/* GTM removed — direct gtag.js only (see head) */}
-        {/* 全局 gclid/UTM 捕获：任何落地页进入都持久化，避免跳转到询盘页时丢失归因 */}
         <AttributionTracker />
         <CartProvider>
           <Header />
