@@ -2,8 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
-import { Search, X } from "lucide-react";
-import { getProducts } from "@/lib/products";
+import { Search, X } from "@/lib/icons";
 import type { Product } from "@/lib/products";
 
 export function SearchBar() {
@@ -11,25 +10,28 @@ export function SearchBar() {
   const [results, setResults] = useState<Product[]>([]);
   const [open, setOpen] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
-  const containerRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLFormElement>(null);
 
   useEffect(() => {
     if (query.trim().length < 2) {
       setResults([]);
+      setOpen(false);
       return;
     }
     const q = query.toLowerCase();
-    const matches = getProducts()
-      .filter(
-        (p) =>
-          p.name.toLowerCase().includes(q) ||
-          p.sku.toLowerCase().includes(q) ||
-          p.category.toLowerCase().includes(q) ||
-          p.tags.some((t) => t.toLowerCase().includes(q))
-      )
-      .slice(0, 6);
-    setResults(matches);
-    setOpen(matches.length > 0);
+    import("@/lib/products").then(({ getProducts }) => {
+      const matches = getProducts()
+        .filter(
+          (p) =>
+            p.name.toLowerCase().includes(q) ||
+            p.sku.toLowerCase().includes(q) ||
+            p.category.toLowerCase().includes(q) ||
+            p.tags.some((t) => t.toLowerCase().includes(q))
+        )
+        .slice(0, 6);
+      setResults(matches);
+      setOpen(matches.length > 0);
+    });
   }, [query]);
 
   useEffect(() => {
@@ -49,9 +51,21 @@ export function SearchBar() {
     }
   };
 
+  // 提交搜索：跳到 /products?q=xxx
+  const handleSubmit = (e?: React.FormEvent) => {
+    if (e) e.preventDefault();
+    const q = query.trim();
+    if (!q) {
+      inputRef.current?.focus();
+      return;
+    }
+    setOpen(false);
+    window.location.href = `/products?q=${encodeURIComponent(q)}`;
+  };
+
   return (
-    <div ref={containerRef} className="relative">
-      <div className="flex items-center bg-gray-100 rounded-lg border border-transparent focus-within:border-primary focus-within:bg-white transition-colors">
+    <form ref={containerRef} onSubmit={handleSubmit} className="relative">
+      <div className="flex items-center bg-gray-100 rounded-lg border border-transparent focus-within:border-primary focus-within:bg-white transition-colors overflow-hidden">
         <Search size={16} className="ml-2.5 text-gray-400 shrink-0" />
         <input
           ref={inputRef}
@@ -61,13 +75,27 @@ export function SearchBar() {
           onFocus={() => results.length > 0 && setOpen(true)}
           onKeyDown={handleKeyDown}
           placeholder="Search products..."
-          className="w-40 lg:w-52 px-2 py-2 bg-transparent text-sm text-gray-700 placeholder-gray-400 outline-none"
+          className="w-32 lg:w-44 px-2 py-2 bg-transparent text-sm text-gray-700 placeholder-gray-400 outline-none"
         />
         {query && (
-          <button onClick={() => { setQuery(""); setResults([]); setOpen(false); }} className="mr-1 p-1 text-gray-400 hover:text-gray-600">
+          <button
+            type="button"
+            onClick={() => { setQuery(""); setResults([]); setOpen(false); inputRef.current?.focus(); }}
+            className="p-1 text-gray-400 hover:text-gray-600 shrink-0"
+            aria-label="Clear search"
+          >
             <X size={14} />
           </button>
         )}
+        {/* 搜索提交按钮 */}
+        <button
+          type="submit"
+          className="shrink-0 px-3 py-2 bg-accent hover:bg-accent-hover text-white text-xs font-semibold transition-colors"
+          aria-label="Search"
+          title="Search"
+        >
+          Search
+        </button>
       </div>
 
       {open && results.length > 0 && (
@@ -103,6 +131,6 @@ export function SearchBar() {
           </Link>
         </div>
       )}
-    </div>
+    </form>
   );
 }

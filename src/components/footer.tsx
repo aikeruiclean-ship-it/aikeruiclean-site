@@ -1,14 +1,14 @@
 import Link from "next/link";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Clock } from "@/lib/icons";
 import { categories, getCategoryCounts } from "@/lib/products";
 
 export function Footer() {
   const counts = getCategoryCounts();
 
   return (
-    <footer className="bg-primary text-white">
+    <footer className="bg-primary text-white">  {/* 字体跟随全局(Geist)，消除 font swap 布局偏移(CLS) */}
       {/* Main footer */}
-      <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
         {/* Company info */}
         <div>
           <div className="flex items-center gap-2 mb-4">
@@ -21,7 +21,7 @@ export function Footer() {
             </div>
           </div>
           <p className="text-sm text-gray-300 leading-relaxed mb-4">
-            Professional manufacturer of industrial floor cleaning machines, sweepers, and accessories. Serving global clients with reliable cleaning solutions since 2015.
+            Professional manufacturer of industrial floor cleaning machines, sweepers, and accessories. Serving global clients with reliable cleaning solutions since 2008.
           </p>
         </div>
 
@@ -44,6 +44,34 @@ export function Footer() {
           </ul>
         </div>
 
+        {/* Solutions */}
+        <div>
+          <h3 className="text-sm font-semibold uppercase tracking-wider mb-4 text-accent">
+            Solutions
+          </h3>
+          <ul className="space-y-2">
+            {[
+              { href: "/solutions/warehouse-floor-cleaning", label: "Warehouse" },
+              { href: "/solutions/factory-floor-cleaning", label: "Factory" },
+              { href: "/solutions/supermarket-floor-cleaning", label: "Supermarket" },
+              { href: "/solutions/airport-floor-cleaning", label: "Airport" },
+              { href: "/solutions/shopping-mall-floor-cleaning", label: "Shopping Mall" },
+              { href: "/solutions/hotel-floor-cleaning", label: "Hotel" },
+              { href: "/solutions/cold-storage-floor-cleaning", label: "Cold Storage" },
+              { href: "/solutions/pharmaceutical-cleanroom-floor-cleaning", label: "Pharma Cleanroom" },
+            ].map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  className="text-sm text-gray-300 hover:text-accent transition-colors"
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
         {/* Quick links */}
         <div>
           <h3 className="text-sm font-semibold uppercase tracking-wider mb-4 text-accent">
@@ -53,6 +81,8 @@ export function Footer() {
             {[
               { href: "/", label: "Home" },
               { href: "/products", label: "All Products" },
+              { href: "/parts", label: "Replacement Parts" },
+              { href: "/guides", label: "Guides" },
               { href: "/about", label: "About Us" },
               { href: "/contact", label: "Contact" },
             ].map((link) => (
@@ -76,7 +106,7 @@ export function Footer() {
           <ul className="space-y-3">
             <li className="flex items-start gap-2 text-sm text-gray-300">
               <MapPin size={16} className="mt-0.5 shrink-0 text-accent" />
-              <span>Industrial Zone, Hefei City, Anhui, China</span>
+              <span>Industrial Zone, Anqing City, Anhui, China</span>
             </li>
             <li>
               <a href="tel:+8619965236428" className="flex items-center gap-2 text-sm text-gray-300 hover:text-accent transition-colors">
@@ -95,6 +125,40 @@ export function Footer() {
               <span>Mon–Fri: 8:30 AM – 6:00 PM (CST)</span>
             </li>
           </ul>
+
+          {/* Social links */}
+          <div className="mt-5 pt-5 border-t border-white/10">
+            <h4 className="text-xs font-semibold uppercase tracking-wider mb-3 text-accent">
+              Follow Us
+            </h4>
+            <ul className="space-y-2">
+              <li>
+                <a href="https://www.linkedin.com/in/mark-wang-213b12427" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-300 hover:text-accent transition-colors">
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@markxu-u8h" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-300 hover:text-accent transition-colors">
+                  YouTube
+                </a>
+              </li>
+              <li>
+                <a href="https://x.com/mark_xu71710" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-300 hover:text-accent transition-colors">
+                  X / Twitter
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/aikeruiclean" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-300 hover:text-accent transition-colors">
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a href="https://www.quora.com/profile/Mark-Xu-110" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-300 hover:text-accent transition-colors">
+                  Quora
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -102,7 +166,7 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
           <p className="text-xs text-gray-400">
-            © {new Date().getFullYear()} Aikerui Cleaning Technology Co., Ltd. All rights reserved. | <Link href="/privacy">Privacy Policy</Link> | <Link href="/terms">Terms &amp; Conditions</Link>
+            © {new Date().getFullYear()} Anhui Aikerui Environmental Protection Technology Co., Ltd. All rights reserved. | <Link href="/privacy">Privacy Policy</Link> | <Link href="/terms">Terms &amp; Conditions</Link>
           </p>
         </div>
       </div>

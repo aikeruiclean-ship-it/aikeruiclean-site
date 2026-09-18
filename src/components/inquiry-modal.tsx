@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { X, Send, CheckCircle } from "lucide-react";
+import { X, Send, CheckCircle } from "@/lib/icons";
 
 interface InquiryModalProps {
   isOpen: boolean;

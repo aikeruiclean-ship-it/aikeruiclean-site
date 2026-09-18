@@ -1,18 +1,11 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { Phone } from "lucide-react";
-import { pickRandom, type SalesPerson } from "@/lib/sales-team";
+import { Phone } from "@/lib/icons";
+
+const MAIN_WHATSAPP = "8619965236428";
 
 export function WhatsAppHeroButton() {
-  const [person, setPerson] = useState<SalesPerson | null>(null);
-
-  useEffect(() => {
-    setPerson(pickRandom());
-  }, []);
-
-  const phone = person?.phone ?? "8619159116875";
-  const name = person?.name ?? "Keke";
+  const phone = MAIN_WHATSAPP;
 
   return (
     <a
@@ -20,7 +13,7 @@ export function WhatsAppHeroButton() {
       className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-green-700 hover:bg-green-800 text-white font-semibold rounded-lg transition-colors text-base min-w-[150px]"
     >
       <Phone size={16} />
-      WhatsApp{name ? ` ${name}` : ""}
+      WhatsApp
     </a>
   );
 }

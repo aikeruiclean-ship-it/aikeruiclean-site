@@ -22,7 +22,12 @@ const DATA_PATH = path.join(process.cwd(), "data", "leads.json");
 
 function ensureDir() {
   const dir = path.dirname(DATA_PATH);
-  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+  try {
+    if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+  } catch (err) {
+    // read-only fs on Vercel serverless — non-fatal
+    console.error("ensureDir skipped (read-only fs):", err);
+  }
 }
 
 function readLeads(): Lead[] {
@@ -37,7 +42,12 @@ function readLeads(): Lead[] {
 
 function writeLeads(leads: Lead[]) {
   ensureDir();
-  fs.writeFileSync(DATA_PATH, JSON.stringify(leads, null, 2));
+  try {
+    fs.writeFileSync(DATA_PATH, JSON.stringify(leads, null, 2));
+  } catch (err) {
+    // Vercel serverless filesystem is read-only — leads persist via Google Sheets/Brevo instead
+    console.error("Failed to persist leads (read-only fs, expected on Vercel):", err);
+  }
 }
 
 export function saveLead(lead: Omit<Lead, "id" | "status" | "notes">): Lead {

@@ -6,18 +6,34 @@ export interface SalesPerson {
 }
 
 const SALES_TEAM: SalesPerson[] = [
-  { id: 1, name: "Keke", phone: "8619159116875", email: "keke@czhclean.com" },
+  { id: 1, name: "Keke", phone: "8619965236428", email: "keke@czhclean.com" },
   { id: 2, name: "Rosy", phone: "8617352977258", email: "wisdom@czhclean.com" },
   { id: 3, name: "Alan", phone: "8618324956076", email: "liv@czhclean.com" },
   { id: 4, name: "Jennifer", phone: "8618133073186", email: "jennifer@czhclean.com" },
 ];
 
+export { SALES_TEAM };
+
 let _roundRobinIndex = 0;
 
-/** Pick a random salesperson (seeded by session hash for consistency within a visit) */
-export function pickRandom(): SalesPerson {
+function pickRandom(): SalesPerson {
   const i = Math.floor(Math.random() * SALES_TEAM.length);
   return SALES_TEAM[i];
+}
+
+/** Pick a random salesperson — stores in sessionStorage so all widgets show the same person */
+export function getOrPickPerson(): SalesPerson {
+  if (typeof window !== "undefined") {
+    const stored = sessionStorage.getItem("aikerui_sales");
+    if (stored) {
+      try { return JSON.parse(stored) as SalesPerson; } catch {}
+    }
+  }
+  const person = pickRandom();
+  if (typeof window !== "undefined") {
+    sessionStorage.setItem("aikerui_sales", JSON.stringify(person));
+  }
+  return person;
 }
 
 /** Round-robin: distribute evenly across form submissions */

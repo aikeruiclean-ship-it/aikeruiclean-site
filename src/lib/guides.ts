@@ -8,6 +8,7 @@ export interface Guide {
   published: string;
   sections: GuideSection[];
   relatedProducts?: string[];
+  relatedGuides?: string[];
   videoUrl?: string;
   videoId?: string;
   thumbnail?: string;
@@ -17,18 +18,484 @@ interface GuideSection {
   heading: string;
   content: string;
   items?: string[];
+  /** Optional data table — rendered as real <table> for AI-citable structured data */
+  table?: { headers: string[]; rows: string[][] };
+  /** Optional image — rendered below content (e.g. product photo) */
+  image?: string;
+  imageAlt?: string;
 }
 
 const guides: Guide[] = [
   {
+    slug: "how-to-assess-floor-scrubber-manufacturer",
+    title: "How to Assess a Floor Scrubber Manufacturer 2026 | Aikerui",
+    description:
+      "Assess an industrial floor scrubber manufacturer across seven dimensions: capacity, certification, OEM capability, lead time, quality control and after-sales.",
+    category: "buying-guide",
+    readTime: "11 min",
+    difficulty: "intermediate",
+    thumbnail: "/images/A50-Scrubber-02.webp",
+    published: "2026-09-16",
+    videoId: "factoryassess0916",
+    sections: [
+      {
+        heading: "Why Capability Beats Price Alone",
+        content:
+          "Every industrial floor scrubber quote looks similar on paper: a machine, a price and a lead time. Capability is what separates a supplier you can scale with from one that stalls your order. It means the ability to produce at the specification and volume you need." +
+          "\n\n" +
+          "A supplier's quoted price reflects its current commercial position, while its manufacturing capability shows what it can consistently deliver as your business grows. That includes production capacity, quality consistency and spare-parts support after the model changes.",
+        image: "/images/A50-Scrubber-03.webp",
+        imageAlt: "Industrial floor scrubber manufacturer production facility",
+      },
+      {
+        heading: "The Seven Assessment Dimensions",
+        content:
+          "Assess an industrial floor scrubber manufacturer across seven dimensions. Score each one out of five, and the weakest dimension will indicate where the greatest supplier risk sits.",
+        items: [
+          "Production capacity. Monthly output, production lines and how much of that capacity they can commit to you.",
+          "Certification. CE, ISO 9001 and any market-specific approvals required at your destination.",
+          "OEM and custom build. Branding, packaging, voltage, plug type and specification changes.",
+          "Lead time and stock. Standard production time, in-stock models and how they handle rush orders.",
+          "After-sales and spare parts. Part availability, warranty terms and response time.",
+          "Payment terms. Deposit percentage, accepted payment methods and whether credit terms are available.",
+          "Batch tracking. Business licence, registered scope, export records and willingness to host an inspection.",
+        ],
+      },
+      {
+        heading: "Production Capacity: How to Read the Numbers",
+        content:
+          "Capacity claims are easy to make and easy to check. Ask for the production line count, shift pattern and monthly output for the model you are buying, rather than relying on the facility's total production capacity.",
+        items: [
+          "Facility area. A 10,000+ square meter plant usually indicates genuine manufacturing rather than simple assembly.",
+          "Production lines. Ask how many lines build this specific machine type and what the takt time is.",
+          "Monthly output. Request the figure for your model, then compare it with your order volume as a share of total capacity.",
+          "Headcount. Production staff numbers should be consistent with the claimed output.",
+          "In-house parts. When the factory manufactures its own brushes, tanks and frames, the machines generally carry lower supply risk than products assembled from imported components.",
+        ],
+      },
+      {
+        heading: "Certification and Compliance",
+        content:
+          "Certificates matter differently depending on your market. Ask for the certificate numbers and the issuing bodies, then verify them independently rather than accepting a scanned PDF at face value.",
+        items: [
+          "CE marking. Required for the European Union. Check whether it is self-declared or issued by a notified body.",
+          "ISO 9001. Quality management certification that indicates documented production and quality processes are in place.",
+          "Electrical safety. Verify voltage, plug type and any regional approvals required in your destination market.",
+          "Battery and transport compliance. Obtain lithium battery shipping documentation if the machine is supplied with one.",
+          "Environmental documentation. Review noise and emissions data where these requirements apply to indoor or municipal projects.",
+        ],
+      },
+      {
+        heading: "OEM and Custom Build Capability",
+        content:
+          "If you sell under your own brand, custom build capability can determine how quickly you can launch. It also affects the tooling, packaging and production costs involved in customization.",
+        items: [
+          "Branding. Decals, silk screening and nameplates applied at the factory rather than by a third party.",
+          "Packaging. Retail-ready cartons, pallet configuration and labelling to meet your market's requirements.",
+          "Specification changes. Voltage, plug, tank size, brush type and control panel language.",
+          "Minimum order for custom build. Typically higher than standard orders because tooling and labelling requirements change for each production run.",
+          "Sample and pre-production units. Confirm that the manufacturer will provide a branding sample before full production begins.",
+        ],
+      },
+      {
+        heading: "Lead Time, Stock and After-Sales",
+        content:
+          "Aikerui manufactures floor scrubbers and sweepers at its own 10,000+ square meter facility in Anqing, Anhui, China. Aikerui started manufacturing in 2008. It holds CE and ISO 9001 certification and has exported to 50+ countries. Actual lead times vary depending on the model and order volume." +
+          "\n\n" +
+          "Walk-behind scrubbers typically range from $1,800 to $7,500, while ride-on units generally range from $6,000 to $24,000. Both price ranges can be 30-50% below comparable Western branded machines because there is no distributor between the factory and the buyer." +
+          "\n\n" +
+          "Standard production lead times generally range from 15 to 30 days, depending on the model and order volume. In-stock models can usually be shipped more quickly." +
+          "\n\n" +
+          "The same production facility manufactures brushes and most spare parts. This gives buyers continued access to consumable components after the machines have been delivered. Compare factory-direct models at aikeruiclean.com/floor-scrubbers or request pricing at aikeruiclean.com/floor-scrubber-parts-quote.",
+      },
+      {
+        heading: "Production and Quality: What to Check",
+        content:
+          "Capacity alone does not protect your order. Look for a factory that controls its own manufacturing processes, from raw materials through to finished goods." +
+          "\n\n" +
+          "Ask how the manufacturer manages quality issues, what corrective actions are taken after a defect is identified and how production cycle time is measured. A supplier that can explain these processes with specific procedures and records is more likely to maintain consistent product quality over the long term. That consistency can directly affect customer satisfaction, warranty costs and repeat orders.",
+        items: [
+          "Raw material control. Ask who supplies the steel, plastics and bristles, and whether incoming materials are inspected before entering production.",
+          "Manufacturing processes. Ask which production steps are handled in-house and which are subcontracted. Greater in-house control can reduce dependence on external suppliers.",
+          "Type of production. Determine whether the factory operates dedicated lines for your model category or mixed lines that frequently switch between products.",
+          "Production scheduling. Ask how far ahead the factory plans its production schedule and how it increases output for rush orders without disrupting existing production runs.",
+          "Cycle time. Review the time required to complete one unit on the production line. Shorter cycle times can increase output without requiring additional equipment.",
+          "Quality control. Confirm that the factory performs in-process inspections as well as final testing on finished units before packing.",
+          "Quality assurance system. Review documented procedures, inspection records and the methods used to trace defects back to specific production batches.",
+          "Industry standards. Check whether the factory builds products according to CE, ISO 9001 or customer-specific requirements, and ask how compliance is demonstrated.",
+          "Corrective actions. Ask what procedure is followed when a quality issue is identified, who is responsible for resolving it and how the corrective action is verified.",
+          "Track record. Ask how long the factory has operated the same production line. Stable production processes can reduce rework and improve consistency over time.",
+        ],
+      },
+      {
+        heading: "Running a Supplier Audit",
+        content:
+          "A supplier audit does not need to take a full week on site. Ask for the following six items, and the responses will reveal much of what you need to know about the manufacturer's operations.",
+        items: [
+          "Business licence showing the registered scope of business. This helps confirm whether the company operates as a manufacturer rather than only as a trading company.",
+          "A live video walkthrough of the production line while workers are building your model, rather than relying on stock photos or generic factory videos.",
+          "A bill of lading from a recent export shipment to confirm that the company has experience shipping internationally.",
+          "Certificate numbers and issuing bodies so you can independently verify CE and ISO 9001 documentation.",
+          "A written spare parts list with prices, allowing you to estimate consumable and maintenance costs before placing an order.",
+          "Confirmation that third-party inspection before shipment is welcome, ideally provided in writing.",
+        ],
+      },
+      {
+        heading: "Frequently Asked Questions",
+        content:
+          "These are the questions buyers ask most often when assessing an industrial floor scrubber manufacturer.",
+        items: [
+          "How do I tell a manufacturer from a trading company? Ask for the business licence and a live production line walkthrough. A genuine manufacturer should be able to provide evidence of its manufacturing operations.",
+          "What monthly output should a manufacturer have? It depends on your order volume. What matters is whether your order can be accommodated comfortably within the manufacturer's committed production capacity.",
+          "Is CE certification enough? For the EU, CE compliance is an important requirement, but you should verify that the manufacturer's declaration and supporting technical documentation are appropriate for the specific machine and application. Other markets may have additional requirements.",
+          "How long should production take? Standard production runs at a Chinese factory generally take 15-30 days, depending on the model and order volume. Faster lead times often indicate that the required models are already in stock.",
+          "Do manufacturers support OEM branding? Many manufacturers support OEM branding, although minimum order quantities are often higher than standard orders because tooling, packaging and labelling requirements can change for each production run.",
+          "What payment terms are normal? A deposit followed by payment of the balance before shipment is common for international orders. Credit terms generally depend on the buyer's order history, volume and relationship with the manufacturer.",
+        ],
+      },
+    ],
+    relatedGuides: [
+      "how-to-verify-floor-scrubber-manufacturer",
+      "industrial-floor-scrubber-buying-guide",
+      "industrial-floor-sweeper-guide",
+    ],
+  },
+  {
+    slug: "industrial-floor-sweeper-guide",
+    title: "Industrial Floor Sweeper Buying Guide 2026 | Aikerui",
+    description:
+      "How to choose an industrial floor sweeper: sweeper vs scrubber, the four machine types, sizing by floor area and factory-direct cost breakdown.",
+    category: "buying-guide",
+    readTime: "10 min",
+    difficulty: "beginner",
+    thumbnail: "/images/A1280-Sweeper-01.webp",
+    published: "2026-09-15",
+    sections: [
+      {
+        heading: "What an Industrial Floor Sweeper Does",
+        content:
+          "An industrial floor sweeper collects dry debris rather than washing the floor. Dust, packaging scraps, grit, sand, metal shavings and light rubbish go into a hopper, while a vacuum-assisted filter keeps fine dust from escaping back into the air.\n\nThat makes an industrial floor sweeper the right machine for warehouses, loading docks, parking areas, factory aisles and outdoor yards. In those settings the daily problem is what sits on the floor rather than what is stuck to it.",
+        image: "/images/A1280-Sweeper-02.webp",
+        imageAlt: "Industrial floor sweeper collecting debris in a warehouse",
+      },
+      {
+        heading: "Industrial Floor Sweepers vs Floor Scrubbers",
+        content:
+          "Sweepers and scrubbers solve different problems, and many facilities end up running both. The quick test is what you are removing.",
+        items: [
+          "Dry debris only — dust, packaging, grit, shavings: an industrial floor sweeper covers far more ground per hour.",
+          "Liquid film or residue — oil, tyre marks, dried spills: a floor scrubber is required, because sweeping spreads the film.",
+          "Mixed conditions — most warehouses: a sweeper for daily debris plus a scrubber for scheduled deep cleaning.",
+          "Outdoor areas — parking, yards, loading bays: a ride-on sweeper with a heavy-duty main broom handles grit and aggregate.",
+          "Food and pharma floors — hygiene rules usually point to a scrubber, with sweepers limited to dry zones.",
+        ],
+      },
+      {
+        heading: "The Four Types of Industrial Floor Sweepers",
+        content:
+          "Most industrial floor sweepers fall into four categories. The right choice depends on floor area, aisle width and how much debris accumulates per shift.",
+        items: [
+          "Walk-behind sweeper — best for aisles, small warehouses and areas under 20,000 sq ft; sweeping widths typically 24 to 36 inches.",
+          "Ride-on sweeper — best for large open floors and outdoor areas above 20,000 sq ft; sweeping widths typically 40 to 60 inches.",
+          "Vacuum sweeper — adds fine-dust filtration for food, packaging and electronics environments where airborne dust is a problem.",
+          "Manual push sweeper — a low-cost option for small workshops and retail back rooms; no power source and no operating cost.",
+        ],
+      },
+      {
+        heading: "Sizing: Match Sweeping Width to Floor Area",
+        content:
+          "Undersizing means multiple passes and wasted labour; oversizing means a machine that cannot turn in your narrowest aisle. Use sweeping width against daily square footage as the first filter.",
+        items: [
+          "Under 10,000 sq ft — manual push or walk-behind, 24-30 inch sweeping width.",
+          "10,000-30,000 sq ft — walk-behind, 30-36 inch sweeping width, battery powered.",
+          "30,000-80,000 sq ft — ride-on, 40-50 inch sweeping width, battery or diesel.",
+          "Over 80,000 sq ft — ride-on 50-60 inch, or two machines covering separate zones.",
+          "Always measure your narrowest aisle before ordering. A 50-inch sweeper will not turn in a 54-inch aisle.",
+        ],
+      },
+      {
+        heading: "What an Industrial Floor Sweeper Costs",
+        content:
+          "Purchase price is typically 35-45 percent of the five-year cost of ownership. A proper total cost of ownership calculation adds filter and brush replacement, battery or fuel, labour and downtime.\n\nFor most industrial floor sweepers, consumables and labour outweigh the machine itself over the long run, which is why the cheapest quote is rarely the most cost effective option.",
+        items: [
+          "Machine purchase — the average cost runs $3,500-9,000 for walk-behind, $12,000-40,000 for ride-on, depending on the type.",
+          "Main brush and side brush replacement — $300-900 per year depending on sweeping hours.",
+          "Filter replacement — $150-600 per year, higher in fine-dust environments; cost includes the filter cartridge and seals.",
+          "Battery or fuel — $400-1,800 per year; diesel models cost more to run than battery powered ones but sweep continuously.",
+          "Labour — usually the largest single line, and the item a wider sweeping width reduces fastest, producing measurable cost savings.",
+          "Total cost of ownership TCO across five years — budget $12,000-90,000 all in. Seeing the full figure is what makes informed decisions possible.",
+        ],
+        image: "/images/A1280-Sweeper-03.webp",
+        imageAlt: "Ride-on industrial floor sweeper cost breakdown",
+      },
+      {
+        heading: "Where to Buy: Factory-Direct or Dealer",
+        content:
+          "Aikerui is an industrial floor sweeper manufacturer operating from its own 10,000+ square meter facility in Anqing, Anhui, China. The company was founded in 2008. It runs its own production line rather than trading. It offers ride-on and walk-behind sweepers alongside floor scrubbers, and has exported to 50+ countries with CE and ISO 9001 certification.\n\nBecause there is no distributor layer in between, factory-direct pricing typically lands 20-40 percent below equivalent Western branded machines. Compare sweepers at aikeruiclean.com/floor-sweepers, or request pricing at aikeruiclean.com/floor-scrubber-parts-quote.",
+      },
+      {
+        heading: "Six Mistakes Buyers Make",
+        content:
+          "These are the recurring issues we see when buyers compare sweeper quotes or replace an existing machine.",
+        items: [
+          "Choosing a scrubber when the actual problem is dry debris, then paying for water and chemicals every shift.",
+          "Sizing by price instead of by square footage, which means two passes where one would do.",
+          "Ignoring aisle width, doorway clearance and ramp angles until delivery day.",
+          "Skipping the dust-suppression check in food, packaging or electronics environments.",
+          "Not confirming brush and filter availability before ordering, then waiting weeks for consumables.",
+          "Not verifying the manufacturer directly. Ask for the production address and request a live video walkthrough before payment.",
+        ],
+      },
+      {
+        heading: "Frequently Asked Questions",
+        content:
+          "These are the questions buyers ask most often before placing an industrial floor sweeper order.",
+        items: [
+          "Do I need a sweeper or a scrubber? — Sweep if the debris is dry; scrub if there is liquid film or residue. Many warehouses run both.",
+          "What sweeping width do I need? — Match width to daily square footage. Under 10,000 sq ft suits 24-30 inch; above 80,000 sq ft needs 50-60 inch.",
+          "How long do sweeper brushes last? — Main brooms typically last 300-800 hours. Hard floors wear them faster than smooth concrete.",
+          "Battery or diesel? — Battery suits indoor work and food environments. Diesel suits outdoor yards where continuous sweeping matters more than emissions.",
+          "What is the lead time from a Chinese factory? — Production usually runs 15-30 days, plus shipping. In-stock models ship faster.",
+          "Can I get OEM branding? — Yes. Custom branding and labelling are available, with minimum order quantities depending on the specification.",
+        ],
+      },
+    ],
+    relatedGuides: [
+      "industrial-floor-scrubber-buying-guide",
+      "how-to-choose-a-floor-scrubber",
+      "top-10-industrial-floor-scrubber-suppliers",
+    ],
+  },
+  {
+    slug: "industrial-floor-scrubber-buying-guide",
+    title: "Industrial Floor Scrubber Buying Guide 2026 | Aikerui",
+    description:
+      "Choose the right industrial floor scrubber: machine types, sizing, power options and factory-direct pricing. Includes a 5-year cost of ownership breakdown.",
+    category: "buying-guide",
+    readTime: "10 min",
+    difficulty: "beginner",
+    thumbnail: "/images/RIDE-ON-A660.webp",
+    published: "2026-09-14",
+    sections: [
+      {
+        heading: "What Counts as an Industrial Floor Scrubber",
+        content:
+          "An industrial floor scrubber is a ride-on or walk-behind machine. It handles repeated, high-volume cleaning in factories, warehouses, retail sites and logistics hubs. Industrial floor scrubbers carry larger solution and recovery tanks. They also use higher-capacity batteries or propane, so a single charge covers a full shift.",
+      },
+      {
+        heading: "Industrial vs Consumer Machines: Three Differences",
+        content:
+          "Three measurable differences separate an industrial machine from a consumer one. A consumer scrubber typically handles 20-40 minutes of occasional use, while an industrial unit runs 4-8 hours per shift.",
+        items: [
+          "Cleaning path — 20 inches and wider on industrial machines.",
+          "Tank capacity — 20 litres and up for both solution and recovery.",
+          "Duty cycle — engineered for continuous shifts rather than occasional jobs.",
+        ],
+      },
+      {
+
+        heading: "The Four Machine Types at a Glance",
+        content:
+          "Most commercial floors are cleaned by one of four machine categories. The right choice depends on floor area, aisle width and how many hours per day you clean.",
+        items: [
+          "Walk-behind, 17-28 inch cleaning path. Best for 2,000-20,000 sq ft and narrow aisles. Typical price $2,000-$8,000.",
+          "Ride-on, 28-50 inch cleaning path. Best for 20,000 sq ft and above with wide aisles. Typical price $8,000-$25,000.",
+          "Stand-on, 20-32 inch cleaning path. A middle option that improves sightlines versus ride-on. Typical price $6,000-$15,000.",
+          "Cylindrical brush models. Best for rough, grouted or textured floors, and for picking up debris in one pass. Pricing follows the equivalent disc model.",
+        ],
+      },
+      {
+        heading: "Sizing: Match the Machine to Your Floor Area",
+        content:
+          "Undersizing means multiple passes and higher labour cost. Oversizing wastes capital and cannot fit narrow aisles. Use cleaning path width against your daily square footage as the first filter.",
+        items: [
+          "Under 5,000 sq ft — walk-behind 17-20 inch, battery powered.",
+          "5,000-20,000 sq ft — walk-behind 20-28 inch, battery powered.",
+          "20,000-50,000 sq ft — ride-on 28-36 inch, battery powered.",
+          "Over 50,000 sq ft — ride-on 36-50 inch, or two machines to cover multiple zones.",
+          "Always measure your narrowest aisle before choosing. A 34-inch machine will not turn in a 36-inch aisle.",
+        ],
+      },
+      {
+        heading: "Power Options: Battery, Corded or Propane",
+        content:
+          "Power source determines run time, noise level and where the machine can legally operate.",
+        items: [
+          "Battery (most common). Quiet, zero emissions, safe for food retail and healthcare. Plan for a battery replacement cost every 3-5 years.",
+          "Corded. Lowest purchase price and unlimited run time. Limited to small areas near a power point, so not suitable for open warehouse floors.",
+          "Propane. Continuous operation without recharging. Used mainly outdoors or in high-draft spaces. Restricted in enclosed food and healthcare environments.",
+        ],
+      },
+      {
+        heading: "What You Will Actually Pay: Total Cost of Ownership",
+        content:
+          "Purchase price is typically 30-40 percent of the five-year cost of ownership. A proper TCO calculation for cleaning equipment adds operating costs, maintenance costs and labor cost. That is why the cheapest quote is rarely the most cost effective option. For most walk behind floor scrubber purchases, consumables and labour outweigh the machine itself over the long run.",
+        items: [
+          "Machine purchase — the average cost runs $2,000-$25,000 depending on type and cleaning width.",
+          "Battery replacement — $800-$3,000 every 3-5 years. The cost includes charging infrastructure and eventual disposal.",
+          "Brush and squeegee consumables — $150-$600 per year depending on hours. A wider machine trims this figure.",
+          "Scheduled maintenance — $300-$900 per year, plus the indirect costs of downtime on a busy shift.",
+          "Labour — usually the largest single line, and the item a broader deck reduces fastest, producing measurable cost savings.",
+          "Total cost of ownership TCO across five years — budget $8,000-$60,000 all in. Seeing the full figure is what makes informed decisions possible before you sign.",
+        ],
+      },
+      {
+        heading: "Where to Buy: Direct from the Manufacturer",
+        content:
+          "Aikerui is a factory-direct manufacturer operating from a 10,000+ square meter facility in Anqing, Anhui, China. Aikerui has manufactured floor cleaning equipment since 2008. It runs its own production line rather than trading. It offers 30+ machine models and has exported to 50+ countries, and holds CE and ISO 9001 certification.",
+      },
+      {
+        heading: "Buying Direct from the Manufacturer",
+        content:
+          "Aikerui is an industrial floor scrubber manufacturer and floor scrubber supplier. It sells direct, with no distributor layer in between. That also means replacement floor scrubber parts, consumables and after-sales come from the same source as the machine.",
+      },
+      {
+        heading: "Where to Go Next",
+        content:
+          "With no dealer layer in between, factory-direct pricing typically lands 20-40 percent below equivalent Western branded machines. Browse the range at aikeruiclean.com/floor-scrubbers or request a floor scrubber quote at aikeruiclean.com/floor-scrubber-parts-quote.",
+        image: "/images/A50-Scrubber-05.webp",
+        imageAlt: "Commercial floor scrubber manufactured at the Aikerui factory in Anqing, China",
+      },
+      {
+        heading: "Six Mistakes Buyers Make",
+        content:
+          "These are the recurring issues we see when buyers compare quotes or replace an existing machine.",
+        items: [
+          "Comparing purchase price only, without the five-year running cost.",
+          "Choosing cleaning width by budget instead of by floor area.",
+          "Ignoring aisle width, doorways and ramps until delivery day.",
+          "Not confirming spare part availability, especially brushes and squeegees.",
+          "Not verifying the manufacturer directly. Ask for the production address. Request a live video walkthrough. Both show how to verify floor scrubber manufacturer before payment.",
+          "Skipping a demonstration on the actual floor surface.",
+          "Mixing battery technologies across a fleet, which complicates charging and replacement.",
+        ],
+      },
+      {
+        heading: "Frequently Asked Questions",
+        content:
+          "Buyers sourcing commercial floor scrubbers usually ask the same four questions before requesting a quote.",
+        items: [
+          "How much does a commercial floor scrubber cost? — Walk-behind machines typically run $2,000-$8,000 and ride-on machines $8,000-$25,000. Batteries, consumables, maintenance and labour usually push five-year cost of ownership to 2.5-3 times the purchase price.",
+          "How do I know what size scrubber I need? — Start with daily square footage and your narrowest aisle. Under 5,000 sq ft suits a 17-20 inch walk-behind; 20,000 sq ft and above generally needs a ride-on with a 28-50 inch path.",
+          "Is a ride-on scrubber worth the extra cost? It is worth it when the floor is over roughly 20,000 sq ft and the aisles are wide. Below that, a walk-behind usually delivers a faster payback. Ride-on machines cannot exploit their width in narrow aisles.",
+          "Should I buy from a manufacturer or a local dealer? — Buying factory-direct typically reduces unit cost and shortens the spare-parts supply chain. Confirm the manufacturer holds stock of brushes and squeegees for your machine model before ordering.",
+        ],
+      },
+    ],
+    relatedGuides: ["a50-walk-behind-scrubber-features", "floor-scrubber-auto-dealership-showroom", "how-to-read-floor-scrubber-specifications"],
+  },
+  {
+    slug: "floor-scrubber-brush-complete-guide",
+    title: "Floor Scrubber Brush: Types & How to Choose",
+    description: "Complete guide to floor scrubber brushes — disc brush vs roller brush, nylon vs PPL vs abrasive materials, compatibility with Tennant/Nilfisk/Karcher",
+    category: "buying-guide",
+    readTime: "7 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/Disc Brush Parts 2.webp",
+    published: "2026-07-30",
+    sections: [
+      {
+        heading: "Why the Right Brush Matters",
+        content: "The brush is the part of your floor scrubber that actually does the cleaning. Choose the wrong type and you'll either damage your floor, leave dirt behind, or wear out the brush in weeks instead of months. A well-chosen brush can extend the life of both your floor and your machine.",
+      },
+      {
+        heading: "The 3 Main Types of Floor Scrubber Brushes",
+        content: "Floor scrubber brushes fall into three categories based on their shape and motion pattern. Each type is designed for specific floor conditions.",
+        items: [
+          "Disc Brushes (Rotary): The most common type. A circular brush spins in one direction to scrub the floor. Best for smooth, flat surfaces like concrete, tile, and epoxy. Available in 13–50 inch diameters. Disc brushes are the most affordable and widely available — we stock 60+ disc brush models compatible with Tennant, Nilfisk, Karcher, Viper, and more.",
+          "Cylindrical Brushes (Roller): Two counter-rotating tube-shaped brushes that lift debris as they scrub. Better for uneven or textured floors. Common on sweeper-scrubber combo machines. Cylindrical brushes can pick up larger debris, reducing the need to sweep before scrubbing.",
+          "Square Oscillating Pads: A flat pad vibrates at high speed instead of spinning. Best for cleaning tight against walls and corners. Less common but growing in popularity for smaller facilities.",
+        ],
+      },
+      {
+        heading: "Brush Material Guide — Which One Do You Need?",
+        content: "The bristle material determines how aggressive the brush is on your floor. Using the wrong material can damage your floor surface.",
+        table: {
+          headers: ["Material", "Stiffness", "Best For", "Price (factory-direct)"],
+          rows: [
+            ["Nylon", "Soft to medium", "Daily cleaning on tile, concrete, epoxy", "$45–75 per brush"],
+            ["Polypropylene (PPL)", "Stiff", "Heavy grease, industrial grime", "$45–75 per brush"],
+            ["Abrasive (SiC / Tynex)", "Very aggressive", "Stripping finish, deep clean", "$55–85 per brush"],
+            ["Steel Wire", "Most aggressive", "Heavy debris on industrial concrete", "$60–90 per brush"],
+            ["Natural Fiber", "Softest", "Polishing wood, marble, linoleum", "$40–70 per brush"],
+          ],
+        },
+        items: [
+          "Nylon: The most common material. Flexible, durable, and safe for most floor types including tile, concrete, and epoxy. Nylon brushes provide a good balance of cleaning power and floor protection. Best for daily general cleaning.",
+          "Polypropylene (PPL): Stiffer than nylon. Provides more scrubbing power for removing stubborn dirt, grease, and grime. Best for industrial floors with heavy soil buildup. Can scratch softer floors.",
+          "Abrasive (Silicon Carbide / Tynex): Extremely aggressive. Used for stripping old floor finish, deep cleaning heavily soiled concrete, and preparing floors for recoating. Not for daily use.",
+          "Steel Wire: Stainless steel or carbon steel wire bristles. Used on sweeper-scrubber combos for heavy debris. Steel wire brushes can damage most floor surfaces — only use on industrial concrete.",
+          "Natural Fiber (Tampico, Horsehair): Softest option. Used for polishing and light cleaning on sensitive floors like wood, marble, and linoleum.",
+        ],
+      },
+      {
+        heading: "How to Choose the Right Brush for Your Floor",
+        content: "Match the brush type and material to your floor surface with this quick reference table:",
+        table: {
+          headers: ["Floor Type", "Recommended Brush", "Avoid"],
+          rows: [
+            ["Smooth concrete", "Nylon disc (medium)", "Abrasive for daily use"],
+            ["Epoxy / sealed", "Nylon disc (soft-medium)", "Abrasive, steel wire"],
+            ["Tile / ceramic", "Nylon disc (soft)", "PPL, abrasive (scratch grout)"],
+            ["Wood / marble", "Natural fiber / soft pad", "Abrasive, steel wire"],
+            ["Textured / rough concrete", "Cylindrical nylon or PPL", "Disc brushes skip surface"],
+            ["Heavy grease / oil", "PPL stiff or abrasive", "Soft nylon"],
+          ],
+        },
+        items: [
+          "Smooth Concrete: Nylon disc brush (medium stiffness). For heavy grease, switch to PPL or abrasive.",
+          "Epoxy / Sealed Concrete: Nylon disc brush (soft to medium). Never use abrasive on epoxy.",
+          "Tile / Ceramic: Nylon disc brush (soft). Avoid PPL and abrasive which can scratch grout.",
+          "Wood / Marble: Natural fiber brush or soft nylon pad. Never use abrasive or steel wire.",
+          "Textured / Rough Concrete: Cylindrical nylon or PPL brush. Disc brushes skip over textured surfaces.",
+          "Rubber / Sport Floors: Soft nylon disc brush. Use gentle down pressure.",
+        ],
+      },
+      {
+        heading: "Compatibility: Which Brands Fit Which Brushes",
+        content: "The key to compatibility is the clutch plate or pad driver connection. Different brands use different lug patterns:",
+        items: [
+          "NP-9200 (2-Lug Universal): Fits Tennant (T5, T7, T300, T500), Viper (AS510B, AS5160, LS160), Nilfisk (SC500, SC600), Comac, IPC, and most Chinese OEM machines.",
+          "3-Lug Center Lock: Fits Advance, older Nilfisk models, older Viper models.",
+          "4-Lug / Magnetic: Fits Karcher (BD50, BD53, B90), Hako (B45, B70, B75R), some Gaomei models.",
+          "If you are unsure, count the lugs on your current brush holder and measure the center hole diameter. A photo of your current brush sent to our sales team gets a compatibility answer within 24 hours.",
+        ],
+      },
+      {
+        heading: "When Should You Replace Your Scrubber Brush?",
+        content: "A worn brush doesn't clean well and can damage your floor. Replace your brush when:",
+        items: [
+          "Bristles are worn to 50% of original length — cleaning effectiveness drops significantly past this point.",
+          "Bristles are bent or frayed unevenly — indicates a pressure or alignment issue.",
+          "The brush leaves streaks or misses spots — the bristles can no longer make proper contact.",
+          "Disc brush bristles are less than 1/2 inch long — replace immediately.",
+          "Cylindrical brush bristles are less than 1/4 inch long — replace immediately.",
+          "General rule: Disc brushes last 6–12 months with daily use. Cylindrical brushes last 8–14 months. Heavier use = shorter life.",
+        ],
+      },
+      {
+        heading: "Factory-Direct Floor Scrubber Brushes",
+        content: "We manufacture 100+ disc brush, cylindrical brush, and pad driver models in our ISO 9001 certified factory in Anqing, China. All brushes are made from virgin nylon, PPL, or abrasive materials — no recycled fillers. Factory-direct pricing means 30–50% less than dealer prices for equivalent OEM quality. Custom sizes and materials available for OEM/ODM orders.",
+      },
+      {
+        heading: "See Our Brushes in Action",
+        content: "Watch our factory demonstration video showing disc brush manufacturing, quality control testing, and compatibility with major floor scrubber brands.",
+      },
+    ],
+    relatedProducts: [],
+    relatedGuides: ["auto-scrubber-brush-guide"],
+  },
+  {
     slug: "how-to-choose-a-floor-scrubber",
     title: "How to Choose a Floor Scrubber: Complete Buying Guide",
     description:
-      "Learn how to select the right floor scrubber for your facility. Compare walk-behind vs ride-on, battery types, cleaning widths, and key specifications to make an informed decision.",
+      "Learn how to select the right floor scrubber for your facility. Compare walk-behind vs ride-on, battery types, cleaning widths",
     category: "buying-guide",
     readTime: "8 min",
     difficulty: "beginner",
+    thumbnail: "/images/B460-Scrubber-01.webp",
     published: "2026-06-01",
+    relatedGuides: ["how-to-set-up-your-floor-scrubber", "floor-scrubber-safety-guide", "used-vs-new-floor-scrubber"],
     sections: [
       {
         heading: "What Type of Floor Scrubber Do You Need?",
@@ -44,6 +511,8 @@ const guides: Guide[] = [
         heading: "Key Specifications to Compare",
         content:
           "When comparing floor scrubbers, focus on the specifications that directly impact cleaning performance and efficiency. The cleaning width determines how much area you can cover per pass, while the tank sizes affect how long you can clean before needing to refill and empty.",
+        image: "/images/B460-Scrubber-01.webp",
+        imageAlt: "how to choose a floor scrubber",
         items: [
           "Cleaning Width: 17–36 inches (walk-behind), 28–48 inches (ride-on)",
           "Solution Tank: 10–30 gallons determines runtime between refills",
@@ -85,70 +554,19 @@ const guides: Guide[] = [
           "Aikerui offers a full range of walk-behind and ride-on scrubbers designed for global industrial applications. Our machines feature durable steel frames, reliable motor systems, and easy-to-service components. With CE certification, competitive pricing, and a 1-year warranty, Aikerui provides excellent value for distributors, rental companies, and facility managers worldwide. All machines come with detailed manuals and video support.",
       },
     ],
-    relatedProducts: [
-      "AK-560B",
-      "AK-700LPG",
-      "K500BT",
-    ],
-  },
-  {
-    slug: "walk-behind-vs-ride-on-scrubber-overview",
-    title: "Walk-Behind vs Ride-On Floor Scrubber: Which Is Better?",
-    description:
-      "A detailed comparison of walk-behind and ride-on floor scrubbers. Compare productivity, cost, operator experience, and find the right match for your facility size and cleaning needs.",
-    category: "comparison",
-    readTime: "6 min",
-    difficulty: "beginner",
-    published: "2026-06-01",
-    sections: [
-      {
-        heading: "Walk-Behind Floor Scrubbers",
-        content:
-          "Walk-behind scrubbers are the most common type of floor scrubber for small to medium facilities. The operator walks behind the machine, guiding it across the floor. They are generally more affordable, easier to transport, and suitable for facilities with narrow aisles and multiple rooms.",
-        items: [
-          "Price Range: $3,000–$15,000",
-          "Cleaning Width: 17–34 inches",
-          "Productivity: 12,000–35,000 sq ft/hour",
-          "Best For: Retail stores, restaurants, small warehouses, clinics",
-          "Pros: Lower cost, maneuverable, easier to transport, simpler maintenance",
-          "Cons: Operator fatigue over long shifts, slower coverage of large areas",
-        ],
-      },
-      {
-        heading: "Ride-On Floor Scrubbers",
-        content:
-          "Ride-on scrubbers allow the operator to sit or stand while cleaning, significantly reducing fatigue and increasing productivity. These machines are built for large facilities where cleaning efficiency and operator comfort are priorities. Most ride-on models offer larger tanks and wider cleaning paths.",
-        items: [
-          "Price Range: $12,000–$40,000+",
-          "Cleaning Width: 28–50 inches",
-          "Productivity: 25,000–80,000 sq ft/hour",
-          "Best For: Warehouses, factories, airports, shopping malls, parking garages",
-          "Pros: High productivity, operator comfort, larger tanks, better water recovery",
-          "Cons: Higher cost, requires more space to maneuver, heavier, difficult to transport",
-        ],
-      },
-      {
-        heading: "Cost Comparison: Total Cost of Ownership",
-        content:
-          "While ride-on scrubbers have a higher upfront cost, they often provide better ROI for large facilities. A ride-on scrubber cleaning 50,000 sq ft per hour vs a walk-behind at 20,000 sq ft per hour means the ride-on pays for itself in labor savings over time. For facilities under 20,000 sq ft, a walk-behind is typically more cost-effective.",
-      },
-      {
-        heading: "Decision Matrix",
-        content:
-          "Use this simple matrix to decide: if your facility is under 20,000 sq ft, has narrow aisles (under 5 ft wide), or requires cleaning across multiple floors, choose a walk-behind. If your facility is over 40,000 sq ft with wide aisles, operates on a single level, and you clean for 4+ hours per day, choose a ride-on. Between 20,000–40,000 sq ft, consider factors like budget, operator availability, and growth plans.",
-      },
-    ],
-    relatedProducts: ["AK-560B", "AK-700LPG", "K500BT", "K300BT"],
+    relatedProducts: [],
   },
   {
     slug: "how-to-maintain-floor-scrubber-battery",
     title: "Floor Scrubber Battery Maintenance Guide",
     description:
-      "Extend the life of your floor scrubber battery with proper maintenance. Step-by-step guide for lead-acid and lithium batteries, including charging, storage, and troubleshooting tips.",
+      "Extend the life of your floor scrubber battery with proper maintenance. Step-by-step guide for lead-acid and lithium batteries, including charging, storage",
     category: "maintenance",
     readTime: "5 min",
     difficulty: "beginner",
+    thumbnail: "/images/B460-Scrubber-02.webp",
     published: "2026-06-01",
+    relatedGuides: ["battery-not-charging-short-runtime", "lead-acid-vs-lithium-battery-scrubber", "how-to-extend-floor-scrubber-lifespan"],
     sections: [
       {
         heading: "Lead-Acid Battery Maintenance",
@@ -166,6 +584,8 @@ const guides: Guide[] = [
         heading: "Lithium Battery Maintenance",
         content:
           "Lithium batteries require significantly less maintenance than lead-acid. They do not need watering, have no memory effect, and can be opportunity charged. However, they are more sensitive to extreme temperatures and require compatible chargers. Store lithium batteries at 50% charge if not used for extended periods, and avoid complete discharge.",
+        image: "/images/B460-Scrubber-03.webp",
+        imageAlt: "how to maintain floor scrubber battery",
         items: [
           "No watering required — zero maintenance",
           "Use only the charger provided with the battery",
@@ -192,7 +612,674 @@ const guides: Guide[] = [
           "If your scrubber runs for less time than usual, check the battery voltage, water levels (lead-acid), and charging cycle. For lead-acid, sulfation from undercharging is the most common failure. For lithium, cell imbalance or BMS failure are more common but rare. A multimeter reading of less than 20V for a 24V system (below 10V per battery) indicates failed cells that need replacement.",
       },
     ],
-    relatedProducts: ["K500BT", "K300BT", "AK-560B", "AK-700LPG"],
+    relatedProducts: [],
+  },
+  {
+    slug: "floor-scrubber-disc-brush-buying-guide",
+    title: "Floor Scrubber Disc Brush Buying Guide",
+    description: "How to choose the right floor scrubber disc brush. Nylon vs PPL vs abrasive materials, disc brush sizes, compatibility with Tennant/Nilfisk/Karcher",
+    category: "buying-guide",
+    readTime: "6 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/Disc Brush Parts 3.webp",
+    published: "2026-07-31",
+    relatedGuides: ["shampoo-disc-brush-guide", "scrubber-leaving-streaks-on-floor", "floor-scrubber-brush-lifespan-and-maintenance"],
+    sections: [
+      {
+        heading: "What Is a Floor Scrubber Disc Brush?",
+        content: "A floor scrubber disc brush (also called a rotary brush) is the round brush that spins on your scrubber's brush deck to agitate dirt and cleaning solution against the floor. It is the most common brush type, used on walk-behind and ride-on scrubbers across all major brands.",
+        items: [
+          "Sizes: 13–50 inch diameters to match your machine's brush deck",
+          "Connection: Mounts to the clutch plate / pad driver (NP-9200, 3-lug, or 4-lug)",
+          "Materials: Nylon, polypropylene (PPL), abrasive, and steel wire",
+          "Best for: Smooth floors — concrete, tile, epoxy, sealed surfaces",
+        ],
+      },
+      {
+        heading: "Disc Brush Materials — Which One Do You Need?",
+        content: "The bristle material determines how aggressively the brush cleans and how safe it is for your floor.",
+        items: [
+          "Nylon: The standard choice. Flexible and durable. Safe for tile, concrete, and epoxy. Good for daily general cleaning. Best value for most facilities.",
+          "Polypropylene (PPL): Stiffer than nylon. More scrubbing power for heavy grease, oil, and industrial grime. Can scratch softer floors — use on concrete only.",
+          "Abrasive (Silicon Carbide / Tynex): Most aggressive. Used for stripping old floor finish, deep cleaning heavily soiled concrete, and preparing floors for recoating. Not for daily use.",
+          "Steel Wire: For heavy debris on industrial concrete. Will damage most finished floors.",
+          "Natural Fiber: Softest. For polishing sensitive floors like wood, marble, linoleum.",
+        ],
+      },
+      {
+        heading: "How to Choose the Right Disc Brush Size",
+        content: "The brush diameter must match your scrubber's brush deck size. Common sizes:",
+        items: [
+          "13–15 inch: Small walk-behind scrubbers, single-disc machines",
+          "16–20 inch: Standard walk-behind scrubbers (most common)",
+          "21–28 inch: Mid-size walk-behind and small ride-on scrubbers",
+          "30–36 inch: Ride-on scrubbers",
+          "40–50 inch: Large industrial ride-on scrubbers",
+          "Check your machine's manual or measure the brush deck opening to confirm the diameter.",
+        ],
+      },
+      {
+        heading: "Compatibility: Which Brands Use Which Disc Brushes",
+        content: "Disc brushes connect to the machine via a clutch plate or pad driver. Different brands use different lug patterns:",
+        items: [
+          "NP-9200 (2-Lug): Tennant T5/T7/T300/T500, Viper AS510B/AS5160/LS160, Nilfisk SC500/SC600, Comac, IPC, most Chinese OEM machines.",
+          "3-Lug Center Lock: Advance, older Nilfisk, older Viper models.",
+          "4-Lug / Magnetic: Karcher BD50/BD53/B90, Hako B45/B70/B75R, some Gaomei models.",
+          "Not sure? Count the lugs and measure the center hole — or send us a photo, we'll confirm within 24 hours.",
+        ],
+      },
+      {
+        heading: "When to Replace Your Disc Brush",
+        content: "A worn disc brush loses cleaning power and can damage your floor. Replace when:",
+        items: [
+          "Bristles worn to less than 1/2 inch (12mm) — cleaning effectiveness drops sharply",
+          "Bristles bent, frayed, or uneven — indicates pressure or alignment issues",
+          "The machine leaves streaks or misses spots despite normal operation",
+          "Typical lifespan: 6–12 months with daily use, longer with lighter use",
+        ],
+      },
+      {
+        heading: "Factory-Direct Disc Brushes — Save 30-50%",
+        content: "We manufacture 98 disc brush models in our ISO 9001 certified factory in Anqing, China. All brushes use virgin nylon, PPL, or abrasive materials, no recycled fillers. Factory-direct pricing: 45 to 75 USD per brush versus 100 to 250 USD at dealers. Custom diameters and materials available for OEM/ODM orders.",
+      },
+      {
+        heading: "See Our Disc Brushes in Action",
+        content: "Watch our disc brush video showing the manufacturing process, quality testing, and compatibility with major floor scrubber brands. New: see our nylon disc brush for daily cleaning with soft brush plate and even liquid output, service life up to 1000 hours - https://youtube.com/shorts/BefigJiHseI",
+      },
+    ],
+    relatedProducts: [],
+  },
+  {
+    slug: "shampoo-disc-brush-guide",
+    title: "Shampoo Disc Brush for Floor Scrubbers",
+    description: "Shampoo disc brush for floor scrubbers — custom nylon and abrasive brushes for deep cleaning and shampoo application.",
+    category: "product-showcase",
+    readTime: "4 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/Shampoo Disc Brush Parts.webp",
+    published: "2026-08-13",
+    relatedGuides: ["floor-scrubber-disc-brush-buying-guide", "floor-scrubber-brush-complete-guide", "custom-scrubber-brush-solutions"],
+    videoId: "shampoo-disc-brush",
+    sections: [
+      {
+        heading: "What Is a Shampoo Disc Brush?",
+        content: "A shampoo disc brush is a floor scrubber brush built for deep cleaning and shampoo application. It mounts on the brush deck, spins at 1000-2800 RPM, and applies cleaning solution evenly while scrubbing dirt from the floor. It is the standard choice for wash and wax programs on tiled, concrete, and sealed floors.",
+        items: [
+          "Deep cleaning for daily and periodic maintenance",
+          "Even shampoo and wax solution application",
+          "Fits most walk-behind and ride-on floor scrubbers",
+          "Custom sizes, materials, and colors available",
+        ],
+      },
+      {
+        heading: "Nylon vs Abrasive Shampoo Brushes",
+        content: "Choose the bristle material by how aggressive your cleaning job is.",
+        table: {
+          headers: ["Material", "Best For", "Notes"],
+          rows: [
+            ["Nylon", "Daily deep cleaning, even liquid application", "Soft and thorough, holds solution evenly"],
+            ["Abrasive", "Stubborn dirt, grease, industrial floors", "Strong scrubbing and cutting power"],
+          ],
+        },
+      },
+      {
+        heading: "Key Specifications",
+        content: "Performance parameters for both material options.",
+        table: {
+          headers: ["Parameter", "Nylon", "Abrasive"],
+          rows: [
+            ["Working temperature", "-10 to 110 C", "-10 to 90 C"],
+            ["Abrasion resistance", "8.2 or higher", "8.8 or higher"],
+            ["Service life", "1000 hours or more", "700 hours or more"],
+            ["Speed range", "1000-2800 RPM", "1000-2800 RPM"],
+          ],
+        },
+      },
+      {
+        heading: "Compatibility",
+        content: "This shampoo disc brush uses the standard NP-9200 2-lug mounting, compatible with most floor scrubber brands.",
+        items: [
+          "NP-9200 2-lug: Tennant, Nilfisk, Viper, and most Chinese OEM machines",
+          "Motor speed: 1000-2800 RPM",
+          "Machine type: walk-behind and ride-on floor scrubbers",
+        ],
+      },
+      {
+        heading: "Custom Options",
+        content: "Every facility has a different floor. We offer custom sizes, bristle materials, and colors for OEM and ODM orders. Tell us your machine model and floor type and we will confirm the right brush within 24 hours.",
+      },
+      {
+        heading: "See the Shampoo Disc Brush in Action",
+        content: "Watch the shampoo disc brush video showing the nylon brush plate, even liquid output, and grinding power for deep cleaning.",
+      },
+    ],
+  },
+  {
+    slug: "top-10-floor-scrubber-disc-brushes",
+    title: "Top 10 Floor Scrubber Disc Brushes 2026",
+    description: "The 10 best floor scrubber disc brushes ranked by material, floor compatibility, and value. Nylon vs PPL vs abrasive for concrete, tile, epoxy.",
+    category: "buying-guide",
+    readTime: "6 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/101705320686.webp",
+    published: "2026-08-04",
+    relatedGuides: ["top-10-floor-scrubber-roller-brushes", "floor-scrubber-disc-brush-buying-guide", "floor-scrubber-brush-complete-guide"],
+    sections: [
+      {
+        heading: "Why a Disc Brush Ranking Matters",
+        content: "The disc brush is the most common brush type on floor scrubbers, and it is the part that actually scrubs your floor. Choosing the right one means cleaner floors, longer brush life, and no floor damage. This ranking covers the 10 best disc brushes for different floor types and budgets, based on material, stiffness, and real-world cleaning performance.",
+      },
+      {
+        heading: "The Top 10 Disc Brushes Ranked",
+        content: "Here are the 10 disc brush categories that cover most facilities, ranked by overall value.",
+        items: [
+          "1. Nylon Medium Disc Brush (17 inch) — The best all-rounder. Safe on concrete, tile, and epoxy. Best for daily general cleaning. The default choice for most facilities.",
+          "2. Nylon Soft Disc Brush (17 inch) — For polished or sealed floors. Gentler bristle tips protect epoxy and coated concrete.",
+          "3. PPL Stiff Disc Brush (20 inch) — For heavy grease and industrial grime. More scrubbing power on concrete. Not for soft floors.",
+          "4. Abrasive Disc Brush (Silicon Carbide) — For stripping old finish and deep cleaning. Use occasionally, never daily.",
+          "5. Nylon Disc Brush (20 inch) — The larger version of the all-rounder. Faster coverage for mid-size walk-behind scrubbers.",
+          "6. Nylon Disc Brush (13 inch) — For small single-disc machines and tight spaces. Same safe nylon material in a compact size.",
+          "7. PPL Medium Disc Brush (17 inch) — A middle ground between nylon and stiff PPL. For moderately soiled industrial floors.",
+          "8. Steel Wire Disc Brush — For heavy debris on rough industrial concrete. The most aggressive option. Not for finished floors.",
+          "9. Tynex Abrasive Disc Brush — A gentler abrasive option. For deep cleaning sealed concrete without harsh scratching.",
+          "10. Custom Disc Brush (any size) — When you need a non-standard size or material. We manufacture custom brushes to your specifications.",
+        ],
+      },
+      {
+        heading: "How to Pick the Right One for Your Floor",
+        content: "Use this quick guide based on your floor type:",
+        items: [
+          "Concrete (smooth): Nylon medium 17 inch — balanced cleaning and floor safety.",
+          "Concrete (heavy grease): PPL stiff 20 inch — maximum scrubbing power.",
+          "Epoxy or sealed: Nylon soft 17 inch — protects the coating.",
+          "Tile or ceramic: Nylon soft — avoids scratching grout.",
+          "Stripping or recoating: Abrasive — removes old finish.",
+          "Rough industrial concrete: Steel wire — handles heavy debris.",
+        ],
+      },
+      {
+        heading: "What You Pay: Factory-Direct vs Dealer",
+        content: "The same quality disc brush costs very different amounts depending on where you buy:",
+        items: [
+          "Dealer price: 100 to 250 USD per disc brush.",
+          "Factory-direct price: 45 to 75 USD for equivalent nylon or PPL.",
+          "Savings: 30 to 50 percent by buying direct from the manufacturer.",
+          "All our brushes use virgin materials, not recycled fillers, and are tested before shipment.",
+        ],
+      },
+      {
+        heading: "Compatibility: Which Machine Fits Which Brush",
+        content: "Disc brushes connect through the clutch plate or pad driver. The lug pattern varies by brand:",
+        items: [
+          "NP-9200 (2-lug): Tennant T5/T7/T300/T500, Viper, Nilfisk SC500/SC600, Comac, most Chinese OEM machines.",
+          "3-lug center lock: Advance, older Nilfisk, older Viper models.",
+          "4-lug magnetic: Karcher BD50/BD53/B90, Hako B45/B70/B75R, some Gaomei models.",
+          "Not sure? Count the lugs and measure the center hole, or send us a photo and we will confirm within 24 hours.",
+        ],
+      },
+      {
+        heading: "When to Replace Your Disc Brush",
+        content: "A worn disc brush loses cleaning power and can damage your floor. Replace it when:",
+        items: [
+          "Bristles are worn to less than 1/2 inch (12 mm).",
+          "Bristles are bent, frayed, or uneven.",
+          "The machine leaves streaks or misses spots.",
+          "Typical lifespan is 6 to 12 months with daily use.",
+        ],
+      },
+      {
+        heading: "Where to Get These Brushes",
+        content: "We manufacture 98 disc brush models in our ISO 9001 certified factory in Anqing, China. All 10 types above are available factory-direct. Custom sizes and materials welcome for OEM and ODM orders.",
+      },
+    ],
+    relatedProducts: [],
+  },
+  {
+    slug: "tennant-scrubber-parts-guide",
+    title: "Tennant Floor Scrubber Parts: Brushes & Squeegees",
+    description: "Find factory-direct Tennant floor scrubber parts. Compatible disc brushes, squeegee blades, pad drivers, and clutch plates for T5, T7, T300, T500.",
+    category: "buying-guide",
+    readTime: "6 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/Pad Driver Parts.webp",
+    published: "2026-08-04",
+    sections: [
+      {
+        heading: "Tennant Floor Scrubber Parts, Without the Dealer Markup",
+        content: "Tennant makes excellent floor scrubbers, but their replacement parts carry a big dealer markup. We manufacture compatible Tennant scrubber parts in our ISO 9001 certified factory: disc brushes, squeegee blades, pad drivers, and clutch plates. Same materials, same specifications, at 30-50% less than dealer prices.",
+      },
+      {
+        heading: "Tennant Scrubber Brushes",
+        content: "We make disc brushes for the most common Tennant models, in nylon, PPL, and abrasive materials.",
+        items: [
+          "Tennant T5 / T5e: 24 inch nylon disc brush, medium stiffness, for daily cleaning.",
+          "Tennant T7: 24 inch nylon disc brush with NP-9200 2-lug connection.",
+          "Tennant T300 / T300e: 28 inch disc brush, nylon or PPL for heavy soil.",
+          "Tennant T500 / T500e: 32 inch disc brush for mid-size facilities.",
+          "All brushes use virgin nylon or PPL with rounded bristle tips to protect your floor.",
+        ],
+      },
+      {
+        heading: "Tennant Squeegee Blades",
+        content: "A worn squeegee blade leaves streaks and wet floors. We manufacture compatible squeegee blades for Tennant machines in natural rubber and polyurethane.",
+        items: [
+          "Natural rubber (NR): for smooth floors, best water pickup.",
+          "Polyurethane (PU): for rough floors, longer wear.",
+          "Straight and curved profiles to match your Tennant squeegee assembly.",
+          "Typical price: 10 to 25 USD factory-direct, versus 25 to 60 USD at dealers.",
+        ],
+      },
+      {
+        heading: "Tennant Pad Drivers and Clutch Plates",
+        content: "The pad driver connects the motor shaft to the brush. Tennant machines use the NP-9200 2-lug standard, which we manufacture directly.",
+        items: [
+          "NP-9200 pad driver: 2-lug, 5/8 inch center hole, fits T5, T7, T300, T500.",
+          "Center lock options for single-disc machines.",
+          "Hardened steel construction, precision-machined to OEM tolerances.",
+        ],
+      },
+      {
+        heading: "How to Check Compatibility",
+        content: "Before ordering, confirm the part fits your machine:",
+        items: [
+          "Count the lugs on your current brush or pad driver. Two lugs means NP-9200.",
+          "Measure the brush diameter to match your model (24, 28, or 32 inch).",
+          "For squeegee blades, measure the length and check the mounting holes.",
+          "Not sure? Send us a photo and we will confirm within 24 hours.",
+        ],
+      },
+      {
+        heading: "Factory-Direct Pricing Comparison",
+        content: "Here is what you save buying Tennant-compatible parts direct:",
+        items: [
+          "Disc brush: dealer 100 to 250 USD, factory-direct 45 to 75 USD.",
+          "Squeegee blade: dealer 25 to 60 USD, factory-direct 10 to 25 USD.",
+          "Pad driver: dealer 40 to 90 USD, factory-direct 15 to 40 USD.",
+          "Savings of 30 to 50 percent on every replacement.",
+        ],
+      },
+      {
+        heading: "Where to Buy",
+        content: "Browse our full parts catalog for Tennant and other brands at aikeruiclean.com/parts. Get a quote at aikeruiclean.com/floor-scrubber-parts-quote. We ship worldwide within 24 hours for in-stock items.",
+      },
+    ],
+    relatedProducts: [],
+    relatedGuides: ["aftermarket-scrubber-brush-compatible-brands"],
+  },
+  {
+    slug: "nilfisk-scrubber-parts-guide",
+    title: "Nilfisk Floor Scrubber Parts: Brushes & Squeegees",
+    description: "Factory-direct Nilfisk floor scrubber parts. Compatible disc brushes, squeegee blades, and pad drivers for SC500, SC600, BA530, BA730.",
+    category: "buying-guide",
+    readTime: "6 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/Squeegee Rubber Parts.webp",
+    published: "2026-08-04",
+    sections: [
+      {
+        heading: "Nilfisk Floor Scrubber Parts, Without the Dealer Markup",
+        content: "Nilfisk machines are reliable, but replacement parts from dealers are expensive. We manufacture compatible Nilfisk floor scrubber parts in our ISO 9001 certified factory: disc brushes, squeegee blades, and pad drivers. Same materials and specifications at 30-50% less than dealer prices.",
+      },
+      {
+        heading: "Nilfisk Scrubber Brushes",
+        content: "We make disc brushes for the most common Nilfisk models in nylon, PPL, and abrasive materials.",
+        items: [
+          "Nilfisk SC500 / SC600: 20 inch nylon disc brush with NP-9200 2-lug connection.",
+          "Nilfisk BA530 / BA730: 3-lug center lock disc brush.",
+          "Nylon for daily general cleaning, PPL for heavy grease, abrasive for stripping.",
+          "Virgin nylon or PPL with rounded bristle tips to protect your floor.",
+        ],
+      },
+      {
+        heading: "Nilfisk Squeegee Blades",
+        content: "A worn squeegee blade causes streaks and wet floors. We manufacture compatible squeegee blades for Nilfisk machines in natural rubber and polyurethane.",
+        items: [
+          "Natural rubber (NR): best water pickup on smooth floors.",
+          "Polyurethane (PU): longer wear on rough floors.",
+          "Straight and curved profiles to match your Nilfisk squeegee assembly.",
+          "Typical price: 10 to 25 USD factory-direct, versus 25 to 60 USD at dealers.",
+        ],
+      },
+      {
+        heading: "Nilfisk Pad Drivers",
+        content: "The pad driver connects the motor shaft to the brush. Nilfisk uses the NP-9200 2-lug standard on SC models and 3-lug center lock on BA models.",
+        items: [
+          "NP-9200 pad driver: 2-lug, fits SC500 and SC600.",
+          "3-lug center lock: fits BA530 and BA730.",
+          "Hardened steel construction, precision-machined to OEM tolerances.",
+        ],
+      },
+      {
+        heading: "How to Check Compatibility",
+        content: "Before ordering, confirm the part fits your machine:",
+        items: [
+          "Count the lugs on your current brush or pad driver. Two lugs means NP-9200, three means center lock.",
+          "Measure the brush diameter to match your model.",
+          "For squeegee blades, measure the length and check the mounting holes.",
+          "Not sure? Send us a photo and we will confirm within 24 hours.",
+        ],
+      },
+      {
+        heading: "Factory-Direct Pricing Comparison",
+        content: "Here is what you save buying Nilfisk-compatible parts direct:",
+        items: [
+          "Disc brush: dealer 100 to 250 USD, factory-direct 45 to 75 USD.",
+          "Squeegee blade: dealer 25 to 60 USD, factory-direct 10 to 25 USD.",
+          "Pad driver: dealer 40 to 90 USD, factory-direct 15 to 40 USD.",
+          "Savings of 30 to 50 percent on every replacement.",
+        ],
+      },
+      {
+        heading: "Where to Buy",
+        content: "Browse our full parts catalog for Nilfisk and other brands at aikeruiclean.com/parts. Get a quote at aikeruiclean.com/floor-scrubber-parts-quote. We ship worldwide within 24 hours for in-stock items.",
+      },
+    ],
+    relatedProducts: [],
+    relatedGuides: ["aftermarket-scrubber-brush-compatible-brands"],
+  },
+  {
+    slug: "karcher-scrubber-parts-guide",
+    title: "Karcher Floor Scrubber Parts: Brushes & Squeegees",
+    description: "Factory-direct Karcher floor scrubber parts. Compatible disc brushes, squeegee blades, and pad drivers for BR 35/40, BR 40/10, BR 50/50, BR 60/40.",
+    category: "buying-guide",
+    readTime: "6 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/Roller Brush Parts.webp",
+    published: "2026-08-04",
+    sections: [
+      {
+        heading: "Karcher Floor Scrubber Parts, Without the Dealer Markup",
+        content: "Karcher is the most common scrubber brand in Europe, and their parts carry a high dealer markup. We manufacture compatible Karcher floor scrubber parts in our ISO 9001 certified factory: disc brushes, squeegee blades, and pad drivers. Same materials, same specifications, at 30-50% less than dealer prices.",
+      },
+      {
+        heading: "Karcher Scrubber Brushes",
+        content: "We make disc brushes for the most common Karcher models in nylon, PPL, and abrasive materials.",
+        items: [
+          "Karcher BR 35/40: 14 inch nylon disc brush with NP-9200 2-lug connection.",
+          "Karcher BR 40/10: 15 inch disc brush with 2-lug connection.",
+          "Karcher BR 50/50: 20 inch disc brush, nylon or PPL for heavy soil.",
+          "Karcher BR 60/40: 24 inch disc brush for mid-size facilities.",
+          "All brushes use virgin nylon or PPL with rounded bristle tips to protect your floor.",
+        ],
+      },
+      {
+        heading: "Karcher Squeegee Blades",
+        content: "A worn squeegee blade leaves streaks and wet floors. We manufacture compatible squeegee blades for Karcher machines in natural rubber and polyurethane.",
+        items: [
+          "Natural rubber (NR): for smooth floors, best water pickup.",
+          "Polyurethane (PU): for rough floors, longer wear.",
+          "Straight and curved profiles to match your Karcher squeegee assembly.",
+          "Typical price: 10 to 25 USD factory-direct, versus 25 to 60 USD at dealers.",
+        ],
+      },
+      {
+        heading: "Karcher Pad Drivers",
+        content: "The pad driver connects the motor shaft to the brush. Karcher machines use the NP-9200 2-lug standard, which we manufacture directly.",
+        items: [
+          "NP-9200 pad driver: 2-lug, 5/8 inch center hole, fits BR 35/40, BR 40/10, BR 50/50, BR 60/40.",
+          "Center lock options for single-disc machines.",
+          "Hardened steel construction, precision-machined to OEM tolerances.",
+        ],
+      },
+      {
+        heading: "How to Check Compatibility",
+        content: "Before ordering, confirm the part fits your machine:",
+        items: [
+          "Count the lugs on your current brush or pad driver. Two lugs means NP-9200.",
+          "Measure the brush diameter to match your model (14, 15, 20, or 24 inch).",
+          "For squeegee blades, measure the length and check the mounting holes.",
+          "Not sure? Send us a photo and we will confirm within 24 hours.",
+        ],
+      },
+      {
+        heading: "Factory-Direct Pricing Comparison",
+        content: "Here is what you save buying Karcher-compatible parts direct:",
+        items: [
+          "Disc brush: dealer 80 to 200 USD, factory-direct 40 to 70 USD.",
+          "Squeegee blade: dealer 20 to 50 USD, factory-direct 10 to 22 USD.",
+          "Pad driver: dealer 35 to 80 USD, factory-direct 15 to 38 USD.",
+          "Savings of 30 to 50 percent on every replacement.",
+        ],
+      },
+      {
+        heading: "Where to Buy",
+        content: "Browse our full parts catalog for Karcher and other brands at aikeruiclean.com/parts. Get a quote at aikeruiclean.com/floor-scrubber-parts-quote. We ship worldwide within 24 hours for in-stock items.",
+      },
+    ],
+    relatedProducts: [],
+    relatedGuides: ["aftermarket-scrubber-brush-compatible-brands"],
+  },
+  {
+    slug: "viper-scrubber-parts-guide",
+    title: "Viper Floor Scrubber Parts: Brushes & Squeegees",
+    description: "Factory-direct Viper floor scrubber parts. Compatible disc brushes, squeegee blades, and pad drivers for Predator, Crowd, Runner, and Dart models.",
+    category: "buying-guide",
+    readTime: "6 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/Sweeper Side Brush Parts.webp",
+    published: "2026-08-04",
+    sections: [
+      {
+        heading: "Viper Floor Scrubber Parts, Without the Dealer Markup",
+        content: "Viper machines are built for tough daily use, but dealer replacement parts are expensive. We manufacture compatible Viper floor scrubber parts in our ISO 9001 certified factory: disc brushes, squeegee blades, and pad drivers. Same materials, same specifications, at 30-50% less than dealer prices.",
+      },
+      {
+        heading: "Viper Scrubber Brushes",
+        content: "We make disc brushes for the most common Viper models in nylon, PPL, and abrasive materials.",
+        items: [
+          "Viper Predator: 28 inch or 32 inch nylon disc brush with NP-9200 2-lug connection.",
+          "Viper Crowd: 20 inch disc brush, 2-lug connection.",
+          "Viper Runner: 20 inch disc brush for compact areas.",
+          "Viper Dart: 17 inch disc brush for small spaces.",
+          "All brushes use virgin nylon or PPL with rounded bristle tips to protect your floor.",
+        ],
+      },
+      {
+        heading: "Viper Squeegee Blades",
+        content: "A worn squeegee blade leaves streaks and wet floors. We manufacture compatible squeegee blades for Viper machines in natural rubber and polyurethane.",
+        items: [
+          "Natural rubber (NR): for smooth floors, best water pickup.",
+          "Polyurethane (PU): for rough floors, longer wear.",
+          "Straight and curved profiles to match your Viper squeegee assembly.",
+          "Typical price: 10 to 25 USD factory-direct, versus 25 to 60 USD at dealers.",
+        ],
+      },
+      {
+        heading: "Viper Pad Drivers",
+        content: "The pad driver connects the motor shaft to the brush. Viper machines use the NP-9200 2-lug standard, which we manufacture directly.",
+        items: [
+          "NP-9200 pad driver: 2-lug, 5/8 inch center hole, fits Predator, Crowd, Runner, and Dart.",
+          "Center lock options for single-disc machines.",
+          "Hardened steel construction, precision-machined to OEM tolerances.",
+        ],
+      },
+      {
+        heading: "How to Check Compatibility",
+        content: "Before ordering, confirm the part fits your machine:",
+        items: [
+          "Count the lugs on your current brush or pad driver. Two lugs means NP-9200.",
+          "Measure the brush diameter to match your model (17, 20, 28, or 32 inch).",
+          "For squeegee blades, measure the length and check the mounting holes.",
+          "Not sure? Send us a photo and we will confirm within 24 hours.",
+        ],
+      },
+      {
+        heading: "Factory-Direct Pricing Comparison",
+        content: "Here is what you save buying Viper-compatible parts direct:",
+        items: [
+          "Disc brush: dealer 90 to 230 USD, factory-direct 40 to 70 USD.",
+          "Squeegee blade: dealer 22 to 55 USD, factory-direct 10 to 24 USD.",
+          "Pad driver: dealer 35 to 85 USD, factory-direct 15 to 38 USD.",
+          "Savings of 30 to 50 percent on every replacement.",
+        ],
+      },
+      {
+        heading: "Where to Buy",
+        content: "Browse our full parts catalog for Viper and other brands at aikeruiclean.com/parts. Get a quote at aikeruiclean.com/floor-scrubber-parts-quote. We ship worldwide within 24 hours for in-stock items.",
+      },
+    ],
+    relatedProducts: [],
+    relatedGuides: ["aftermarket-scrubber-brush-compatible-brands"],
+  },
+  {
+    slug: "top-10-floor-scrubber-roller-brushes",
+    title: "Top 10 Floor Scrubber Roller Brushes 2026",
+    description: "The 10 best floor scrubber roller brushes ranked by material, floor compatibility, and value. Nylon vs PPL vs abrasive for cylindrical brush machines.",
+    category: "buying-guide",
+    readTime: "7 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/101939920202.webp",
+    published: "2026-08-04",
+    relatedGuides: ["top-10-floor-scrubber-disc-brushes", "floor-scrubber-brush-complete-guide", "floor-scrubber-disc-brush-buying-guide"],
+    sections: [
+      {
+        heading: "Why a Roller Brush Ranking Matters",
+        content: "Roller brushes (also called cylindrical brushes) are the second major brush type on floor scrubbers, used on machines like the Tennant T7 and Hako B90. Instead of spinning flat like a disc brush, the roller spins on a horizontal axis and sweeps debris into the recovery tank. Choosing the right roller brush means cleaner floors, longer brush life, and no floor damage. This ranking covers the 10 best roller brushes for different floor types and budgets.",
+      },
+      {
+        heading: "The Top 10 Roller Brushes Ranked",
+        content: "Here are the 10 roller brush categories that cover most facilities, ranked by overall value.",
+        items: [
+          "1. Nylon Medium Roller Brush — The best all-rounder. Safe on concrete, tile, and epoxy. Best for daily general cleaning on cylindrical brush machines.",
+          "2. Nylon Soft Roller Brush — For polished or sealed floors. Gentler bristle tips protect epoxy and coated concrete.",
+          "3. PPL Stiff Roller Brush — For heavy grease and industrial grime. More scrubbing power on concrete. Not for soft floors.",
+          "4. Abrasive Roller Brush (Silicon Carbide) — For stripping old finish and deep cleaning. Use occasionally, never daily.",
+          "5. Nylon Roller Brush with Center Stripe — Two-material roller that scrubs and sweeps debris in one pass. Common on Tennant cylindrical machines.",
+          "6. PPL Medium Roller Brush — A middle ground between nylon and stiff PPL. For moderately soiled industrial floors.",
+          "7. Nylon Roller Brush (wide) — For extra-wide cylindrical machines, faster coverage of open warehouse floors.",
+          "8. Steel Wire Roller Brush — For heavy debris on rough industrial concrete. The most aggressive option. Not for finished floors.",
+          "9. Tynex Abrasive Roller Brush — A gentler abrasive option. For deep cleaning sealed concrete without harsh scratching.",
+          "10. Custom Roller Brush (any size) — When you need a non-standard diameter or length. We manufacture custom brushes to your specifications.",
+        ],
+      },
+      {
+        heading: "How to Pick the Right One for Your Floor",
+        content: "Use this quick guide based on your floor type:",
+        items: [
+          "Concrete (smooth): Nylon medium — balanced cleaning and floor safety.",
+          "Concrete (heavy grease): PPL stiff — maximum scrubbing power.",
+          "Epoxy or sealed: Nylon soft — protects the coating.",
+          "Tile or ceramic: Nylon soft — avoids scratching grout.",
+          "Stripping or recoating: Abrasive — removes old finish.",
+          "Rough industrial concrete: Steel wire — handles heavy debris.",
+        ],
+      },
+      {
+        heading: "Roller Brush vs Disc Brush: What Is the Difference",
+        content: "Both clean floors, but they work differently:",
+        items: [
+          "Disc brush: spins flat on the floor. Better on smooth, even surfaces.",
+          "Roller brush: spins on a horizontal axis and picks up debris while scrubbing. Better on rough concrete and in one-pass sweeping applications.",
+          "Roller brushes last longer on rough floors because the bristles wear evenly.",
+          "Roller machines (cylindrical scrubbers) often do not need a separate sweeping pass.",
+        ],
+      },
+      {
+        heading: "What You Pay: Factory-Direct vs Dealer",
+        content: "The same quality roller brush costs very different amounts depending on where you buy:",
+        items: [
+          "Dealer price: 120 to 300 USD per roller brush.",
+          "Factory-direct price: 55 to 95 USD for equivalent nylon or PPL.",
+          "Savings: 30 to 50 percent by buying direct from the manufacturer.",
+          "All our brushes use virgin materials, not recycled fillers, and are tested before shipment.",
+        ],
+      },
+      {
+        heading: "Compatibility: Which Machine Fits Which Roller Brush",
+        content: "Roller brushes fit by diameter and length, not by lug count. Check your machine model:",
+        items: [
+          "Tennant T7 / T17: 17 inch roller brush with center stripe.",
+          "Hako B90: 28 inch roller brush, nylon or PPL.",
+          "Advance HydroForce: 32 inch cylindrical brush system.",
+          "Measure the roller diameter and length, or send us a photo and we will confirm within 24 hours.",
+        ],
+      },
+      {
+        heading: "Where to Buy",
+        content: "Browse our full roller brush and parts catalog at aikeruiclean.com/parts. Get a quote at aikeruiclean.com/floor-scrubber-parts-quote. We ship worldwide within 24 hours for in-stock items.",
+      },
+    ],
+    relatedProducts: [],
+  },
+  {
+    slug: "floor-scrubber-brush-replacement-guide",
+    title: "Floor Scrubber Brush Replacement: When & How",
+    description: "When to replace your floor scrubber brush, how to know it is worn, and how to replace it in 10 minutes.",
+    category: "maintenance",
+    readTime: "6 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/Disc Brush Parts.webp",
+    published: "2026-08-04",
+    relatedGuides: ["floor-scrubber-parts-guide-types-lifespan-cost", "floor-scrubber-brush-complete-guide", "top-10-floor-scrubber-roller-brushes"],
+    sections: [
+      {
+        heading: "When to Replace Your Floor Scrubber Brush",
+        content: "A worn brush does not clean. It leaves streaks, pushes dirt around, and can even damage your floor. Replacing brushes on time keeps your machine efficient and your floors clean. This guide covers the replacement interval, the wear signs to watch for, and how to swap a brush in about 10 minutes.",
+      },
+      {
+        heading: "How Often to Replace a Floor Scrubber Brush",
+        content: "The replacement interval depends on usage and floor type:",
+        items: [
+          "Daily use on smooth floors: every 3 to 6 months.",
+          "Daily use on rough concrete: every 1 to 3 months.",
+          "Light use (a few times a week): every 6 to 12 months.",
+          "Nylon brushes last longer than PPL on the same floor.",
+          "Check the bristle height monthly: if bristles are worn below 12 mm, replace the brush.",
+        ],
+      },
+      {
+        heading: "7 Signs Your Brush Needs Replacing",
+        content: "Here are the clear signs it is time for a new brush:",
+        items: [
+          "1. Streaks left behind after cleaning, even with a fresh squeegee blade.",
+          "2. Bristles look flattened or broken instead of standing upright.",
+          "3. Bristle height is below 12 mm (half of the original height).",
+          "4. Cleaning time has increased noticeably for the same area.",
+          "5. The machine vibrates more than usual while scrubbing.",
+          "6. The brush no longer picks up ground-in dirt, just pushes it around.",
+          "7. You can see the brush core or backing plate through the bristles.",
+        ],
+      },
+      {
+        heading: "What Happens If You Keep Using a Worn Brush",
+        content: "Running a worn brush costs you more than a replacement:",
+        items: [
+          "Cleaning quality drops, leaving a film of dirt on the floor.",
+          "The brush backing plate can scratch the floor once bristles are gone.",
+          "The motor works harder, increasing battery drain and wear.",
+          "You use more chemical trying to compensate.",
+          "Total cost of a worn brush: far more than the 45 to 75 USD a new one costs.",
+        ],
+      },
+      {
+        heading: "How to Replace a Floor Scrubber Brush in 10 Minutes",
+        content: "Replacement steps for disc brushes:",
+        items: [
+          "1. Turn off the machine and remove the key for safety.",
+          "2. Raise the brush deck using the lift pedal or switch.",
+          "3. Remove the pad driver or brush by rotating it counterclockwise (for 2-lug NP-9200) or releasing the center lock.",
+          "4. Place the new brush, aligning the lugs with the pad driver slots.",
+          "5. Rotate clockwise until it locks, or re-engage the center lock.",
+          "6. Lower the deck and test on a small area before full cleaning.",
+          "For roller brushes: remove the deck cover, slide out the old roller, slide in the new one, and secure the end caps.",
+        ],
+      },
+      {
+        heading: "Replacement Brush Pricing: Factory-Direct vs Dealer",
+        content: "Here is what you pay for replacement brushes:",
+        items: [
+          "Disc brush: dealer 100 to 250 USD, factory-direct 45 to 75 USD.",
+          "Roller brush: dealer 120 to 300 USD, factory-direct 55 to 95 USD.",
+          "Savings of 30 to 50 percent by buying direct from the manufacturer.",
+          "Stock 2 to 3 brushes per machine so you never run with a worn brush.",
+        ],
+      },
+      {
+        heading: "Where to Buy Replacement Brushes",
+        content: "Browse our full brush catalog at aikeruiclean.com/parts. Find your machine brand and size, or send us a photo and we will confirm compatibility within 24 hours. Get a quote at aikeruiclean.com/floor-scrubber-parts-quote. We ship worldwide within 24 hours for in-stock items.",
+      },
+    ],
+    relatedProducts: [],
   },
 ];
 
@@ -219,12 +1306,14 @@ export const guideCategories = [
 const extraGuides: Guide[] = [
   {
     slug: "how-to-set-up-your-floor-scrubber",
-    title: "How to Set Up Your Floor Scrubber: Complete Installation Guide",
-    description: "Step-by-step installation guide for Aikerui floor scrubbers. Learn how to unpack, assemble the squeegee, install brushes, connect the battery, and prepare your machine for first use.",
+    title: "How to Set Up Your Floor Scrubber: Installation Guide",
+    description: "Step-by-step installation guide for Aikerui floor scrubbers. Learn how to unpack, assemble the squeegee, install brushes, connect the battery",
     category: "maintenance",
     readTime: "5 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101711695823.webp",
     published: "2026-06-08",
+    relatedGuides: ["floor-scrubber-clutch-plate-pad-driver-guide", "how-to-choose-a-floor-scrubber", "how-to-maintain-floor-scrubber-battery"],
     videoUrl: "https://youtube.com/shorts/pEDsME4b-98",
     sections: [
       { heading: "Unpacking and Initial Inspection", content: "When your Aikerui floor scrubber arrives, carefully inspect the packaging.", items: ["Inspect packaging for shipping damage before opening", "Verify all components against the packing list", "Check the machine model and serial number match your order"] },
@@ -232,8 +1321,7 @@ const extraGuides: Guide[] = [
       { heading: "Installing Brushes", content: "Install disc brushes or pad drivers depending on your floor type.", items: ["Turn off machine and raise brush deck", "Align brush with drive hub and twist until locked", "Lower deck and test at low speed"] },
       { heading: "Pre-Operation Checklist", content: "Before your first cleaning run, complete this checklist.", items: ["Fill solution tank with water", "Test all controls: drive, brush, squeegee", "Watch the installation video on YouTube for visual guidance"] },
     ],
-    videoId: "BZCQnHQD5tI",
-    relatedProducts: ["K500BT", "A650T", "A380"],
+    relatedProducts: [],
   },
   {
     slug: "floor-scrubber-daily-operation-best-practices",
@@ -242,40 +1330,46 @@ const extraGuides: Guide[] = [
     category: "maintenance",
     readTime: "6 min",
     difficulty: "beginner",
+    thumbnail: "/images/B460-Scrubber-03.webp",
     published: "2026-06-08",
+    relatedGuides: ["how-to-set-up-your-floor-scrubber", "how-to-choose-a-floor-scrubber", "how-to-maintain-floor-scrubber-battery"],
     videoUrl: "https://x.com/mark_xu71710/status/2062744516939919806",
     sections: [
       { heading: "Pre-Operation Daily Checks", content: "A thorough pre-operation check takes just 5 minutes but prevents costly downtime.", items: ["Battery charge: minimum 80%", "Brushes: check for wear", "Squeegee blades: inspect for nicks", "Solution tank: fill with water"] },
-      { heading: "Proper Scrubbing Technique", content: "Overlap each pass by 4-6 inches to avoid streaks.", items: ["Overlap passes by 4-6 inches", "Slow down on heavily soiled areas", "Raise squeegee when turning", "Work from cleanest to dirtiest areas"] },
+      { heading: "Proper Scrubbing Technique", content: "Overlap each pass by 4-6 inches to avoid streaks.", items: ["Overlap passes by 4-6 inches", "Slow down on heavily soiled areas", "Raise squeegee when turning", "Work from cleanest to dirtiest areas"], image: "/images/B460-Scrubber-02.webp", imageAlt: "floor scrubber daily operation best practices" },
       { heading: "Post-Operation Maintenance", content: "After each shift, empty and rinse both tanks.", items: ["Empty and rinse both tanks", "Remove and rinse squeegee blades", "Wipe down machine body", "Charge lead-acid batteries immediately"] },
     ],
-    relatedProducts: ["K500BT", "A500BT", "A1000"],
+    relatedProducts: [],
   },
   {
     slug: "a50-walk-behind-scrubber-features",
     title: "A50 Walk-Behind Floor Scrubber: Features and Capabilities",
-    description: "Discover the key features of the Aikerui A50 walk-behind floor scrubber.",
+    description:
+      "A50 walk-behind floor scrubber: 20 inch cleaning path, 24V battery system, 3-4 hour runtime and key features for warehouses and retail floors.",
     category: "product-showcase",
     readTime: "4 min",
     difficulty: "beginner",
+    thumbnail: "/images/A50-Scrubber-03.webp",
     published: "2026-06-08",
+    relatedGuides: ["industrial-floor-scrubber-buying-guide", "how-to-choose-a-floor-scrubber", "walk-behind-vs-ride-on-scrubber"],
     videoUrl: "https://x.com/mark_xu71710/status/2064637551541878998",
     sections: [
       { heading: "Compact Design", content: "The A50 is designed with a compact footprint of 1300x550x1100mm.", items: ["Dimensions: 1300x550x1100mm", "Cleaning width: 500mm", "Ideal for facilities under 10,000 sq ft"] },
-      { heading: "Cleaning Performance", content: "The 550W brush motor delivers effective scrubbing on various floor types.", items: ["Brush motor: 550W", "Productivity: ~2,200 m²/hour", "Noise level: 65dB"] },
+      { heading: "Cleaning Performance", content: "The 550W brush motor delivers effective scrubbing on various floor types.", items: ["Brush motor: 550W", "Productivity: ~2,200 m²/hour", "Noise level: 65dB"], image: "/images/A50-Scrubber-02.webp", imageAlt: "a50 walk behind scrubber features" },
       { heading: "Battery and Runtime", content: "Powered by a 24V system with maintenance-free battery.", items: ["Voltage: 24V", "Runtime: 3-4 hours", "Charging time: 5-6 hours"] },
     ],
-    relatedProducts: ["A50", "A380", "A330"],
-  }
-,
+    relatedProducts: [],
+  },
   {
     slug: "top-floor-scrubber-brands-buyers-guide",
-    title: "Top 10 Floor Scrubber Manufacturers in 2026 — Complete Comparison",
-    description: "Compare the top 10 floor scrubber manufacturers in 2026. From global brands like Tennant and Karcher to factory-direct options like Aikerui. Find the best manufacturer for your needs.",
+    title: "Floor Scrubber Brands: Global vs Factory-Direct",
+    description: "How to choose between global floor scrubber brands (Tennant, Karcher, Nilfisk) and factory-direct Chinese manufacturers.",
     category: "buying-guide",
     readTime: "10 min",
     difficulty: "beginner",
+    thumbnail: "/images/B460-Scrubber-04.webp",
     published: "2026-06-17",
+    relatedGuides: ["top-10-industrial-floor-scrubber-suppliers", "top-10-floor-scrubber-manufacturers-2026", "floor-scrubber-financing-options", "top-10-industrial-cleaning-equipment-manufacturers"],
     sections: [
       {
         heading: "Introduction",
@@ -283,7 +1377,9 @@ const extraGuides: Guide[] = [
       },
       {
         heading: "How We Selected These Manufacturers",
-        content: "We evaluated manufacturers based on five criteria: production capability (factory size and output), product range (walk-behind, ride-on, sweepers, parts), quality certifications (CE, ISO, SGS), global distribution network, and customer reviews across multiple markets. This list includes both well-known global brands and emerging factory-direct manufacturers."
+        content: "We evaluated manufacturers based on five criteria: production capability (factory size and output), product range (walk-behind, ride-on, sweepers, parts), quality certifications (CE, ISO, SGS), global distribution network, and customer reviews across multiple markets. This list includes both well-known global brands and emerging factory-direct manufacturers.",
+        image: "/images/A1280-Sweeper-01.webp",
+        imageAlt: "top floor scrubber brands buyers guide",
       },
       {
         heading: "1. Tennant (USA)",
@@ -319,7 +1415,7 @@ const extraGuides: Guide[] = [
       },
       {
         heading: "9. Aikerui (China)",
-        content: "Aikerui is a fast-growing Chinese manufacturer operating from a 10,000+ square meter factory in Hefei, Anhui. Unlike many Chinese suppliers, Aikerui owns and operates their own factory — they are not a trading company. They offer 30+ machine models and 360+ spare parts. Key advantages: factory-direct pricing (20-40% less than major brands), CE and ISO certifications, in-house R&D team, and direct WhatsApp/email support. They welcome factory visits and third-party inspections. Aikerui has exported to 50+ countries and serves distributors, rental companies, and facility managers worldwide. Best for: budget-conscious buyers who want quality machines at factory-direct prices."
+        content: "Aikerui is a fast-growing Chinese manufacturer operating from a 10,000+ square meter factory in Anqing, Anhui. Unlike many Chinese suppliers, Aikerui owns and operates their own factory — they are not a trading company. They offer 30+ machine models and 360+ spare parts. Key advantages: factory-direct pricing (20-40% less than major brands), CE and ISO certifications, in-house R&D team, and direct WhatsApp/email support. They welcome factory visits and independent inspections. Aikerui has exported to 50+ countries and serves distributors, rental companies, and facility managers worldwide. Best for: budget-conscious buyers who want quality machines at factory-direct prices."
       },
       {
         heading: "10. Minuteman / Ice (USA)",
@@ -338,18 +1434,20 @@ const extraGuides: Guide[] = [
         content: "The floor scrubber market offers options for every budget and requirement. Established global brands provide peace of mind but at a premium price. Factory-direct manufacturers offer significant savings but require more due diligence. For buyers who value transparency and cost savings, Aikerui offers a compelling combination of quality, factory-direct pricing, and responsive support. Whichever manufacturer you choose, always verify their credentials, request references, and inspect the product before purchasing."
       }
     ],
-    relatedProducts: ["K500BT", "A650T", "K660", "A380"],
+    relatedProducts: [],
   },
   // ── Troubleshooting Guides ──
   {
     slug: "squeegee-not-picking-up-water",
-    title: "Floor Scrubber Squeegee Not Picking Up Water? Fix It in 10 Minutes",
+    title: "Floor Scrubber Squeegee Not Picking Up Water? Fix It",
     description:
-      "Is your floor scrubber leaving puddles? Diagnose and fix squeegee problems — worn blades, incorrect angle, clogged vacuum hose. Step-by-step troubleshooting for all brands.",
+      "Is your floor scrubber leaving puddles? Diagnose and fix squeegee problems — worn blades, incorrect angle, clogged vacuum hose.",
     category: "troubleshooting",
     readTime: "5 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101905818.webp",
     published: "2026-06-26",
+    relatedGuides: ["water-solution-not-dispensing", "top-10-floor-scrubber-squeegee-blades", "brush-motor-not-spinning"],
     sections: [
       {
         heading: "Symptom: Clean Water Left on Floor After Scrubbing",
@@ -393,18 +1491,91 @@ const extraGuides: Guide[] = [
           "If the recovery tank drain valve or hose is partially clogged, water backs up in the tank and overflows onto the floor. Clean the drain thoroughly and check the tank for sludge buildup. A full tank should be emptied when 80% capacity is reached — do not wait until it overflows.",
       },
     ],
-    videoId: "JwAKLzf4JAY",
     relatedProducts: [],
+  },
+  {
+    slug: "top-10-floor-scrubber-squeegee-blades",
+    title: "Top 10 Floor Scrubber Squeegee Blades 2026",
+    description: "The 10 best floor scrubber squeegee blades ranked by material, hardness, and machine compatibility.",
+    category: "buying-guide",
+    readTime: "7 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/101939797515.webp",
+    published: "2026-08-14",
+    videoId: "squeezeblade0915",
+    relatedGuides: ["top-10-floor-scrubber-disc-brushes", "top-10-floor-scrubber-roller-brushes", "top-10-floor-scrubber-brushes-and-parts"],
+    sections: [
+      {
+        heading: "Why a Squeegee Blade Ranking Matters",
+        content: "The squeegee is the part of your floor scrubber that actually picks up the water — a worn or wrong squeegee leaves streaks, wet floors, and re-soiling. Squeegee blades come in natural rubber (NR) and polyurethane (PU), each with a different hardness and service life. This ranking covers the 10 squeegee blade categories that fit most facilities, ranked by value and reliability.",
+      },
+      {
+        heading: "The Top 10 Squeegee Blades Ranked",
+        content: "Here are the 10 squeegee blade categories that cover most facilities, ranked by overall value.",
+        items: [
+          "1. Natural Rubber (NR) Standard Blade — The best all-rounder. Flexible and self-healing, ideal for tile, concrete, and sealed floors. Budget-friendly and easy to replace.",
+          "2. Polyurethane (PU) Blade — For high-abrasion floors. Lasts 2-3x longer than NR and resists chemicals, oils, and wear. Higher upfront cost, lower cost per hour.",
+          "3. NR Soft Front Blade — For polished or coated floors. Softer edge reduces squeal and protects floor finish during recovery.",
+          "4. PU Rear Blade Kit — The workhorse rear blade on ride-on machines. Strong water pickup at speed, common on Tennant and Nilfisk cylindrical scrubbers.",
+          "5. Cold Storage NR Blade — For freezer and cold-room facilities. Stays flexible below freezing where standard rubber hardens and skips.",
+          "6. Heavy-Duty Industrial PU Blade — For warehouses and factories with chemical residue. Maximum chemical resistance and abrasion tolerance.",
+          "7. Streak-Free Dual Hardness Blade — A composite blade with a firm body and soft wiping edge. Minimizes streaks on smooth floors.",
+          "8. Tennant-Compatible Squeegee — Exact-fit blades and assemblies for Tennant walk-behind and ride-on machines, 24-36 inch widths.",
+          "9. Nilfisk / Karcher-Compatible Squeegee — Replacement blades and complete assemblies for Nilfisk and Karcher scrubbers, including clip-on and bolt-on styles.",
+          "10. Custom Length Squeegee Blade — When your machine needs a non-standard width, angle, or material. We manufacture to your original dimensions.",
+        ],
+      },
+      {
+        heading: "NR vs PU: Which Squeegee Material Wins?",
+        content: "Choose squeegee material by your floor type, chemical usage, and how often you replace blades.",
+        table: {
+          headers: ["Material", "Best For", "Notes"],
+          rows: [
+            ["Natural Rubber (NR)", "Tile, concrete, sealed floors", "Flexible, self-healing, low cost, shorter life"],
+            ["Polyurethane (PU)", "Abrasive, chemical-heavy floors", "2-3x longer life, chemical resistant, higher price"],
+          ],
+        },
+      },
+      {
+        heading: "Front vs Rear Squeegee Blades",
+        content: "Most scrubber squeegees use two blades: a front blade that wipes the water forward and a rear blade that lifts it into the vacuum shoe. Replace both at the same time for even pickup.",
+        items: [
+          "Front blade: softer, wipes solution and debris toward the center",
+          "Rear blade: firmer, forms the seal that lifts water into the recovery shoe",
+          "Flip or replace: some blades are double-edged and can be flipped for a second life",
+        ],
+      },
+      {
+        heading: "How to Match a Squeegee to Your Machine",
+        content: "A squeegee is defined by three numbers: width, mounting type, and blade material. Send us your machine model or original part number and we will confirm the exact fit within 24 hours.",
+        items: [
+          "Width in inches (18-48 inch squeegees cover most walk-behind and ride-on machines)",
+          "Mounting: bolt-on, clip-on, or pivot style",
+          "Material: NR or PU based on your floor and chemicals",
+        ],
+      },
+      {
+        heading: "Squeegee Blade Care and Replacement Timing",
+        content: "Replace squeegee blades when you see streaks, squealing, or slower water pickup. On daily operation, NR blades typically last 1-2 months and PU blades 3-6 months. Rotate blades if you run multiple shifts.",
+        items: [
+          "Inspect weekly for nicks, cracks, and worn edges",
+          "Clean the squeegee and vacuum shoe after each shift",
+          "Store spare blades flat, away from sunlight and heat",
+        ],
+      },
+    ],
   },
   {
     slug: "brush-motor-not-spinning",
     title: "Floor Scrubber Brush Not Spinning? Complete Diagnostic Guide",
     description:
-      "Brush motor won't start or makes grinding noise? Diagnose belt drive, electrical, and deck clearance issues. Troubleshooting guide for walk-behind and ride-on scrubbers.",
+      "Brush motor won't start or makes grinding noise? Diagnose belt drive, electrical, and deck clearance issues.",
     category: "troubleshooting",
     readTime: "6 min",
     difficulty: "intermediate",
+    thumbnail: "/images/parts/101440719895.webp",
     published: "2026-06-26",
+    relatedGuides: ["battery-not-charging-short-runtime", "industrial-floor-scrubber-complete-guide", "how-to-choose-a-floor-scrubber"],
     sections: [
       {
         heading: "Symptom: Brush Deck Motor Not Engaging",
@@ -415,6 +1586,8 @@ const extraGuides: Guide[] = [
         heading: "Step 1: Check the Brush Engage Lever / Button",
         content:
           "On walk-behind machines, the brush motor typically activates via a lever on the control handle. On ride-on models, it's a pedal or dashboard switch. Verify the mechanical linkage is intact — a disconnected cable or broken switch will prevent motor activation even if the electronics are fine.",
+        image: "/images/parts/Disc Brush Parts 2.webp",
+        imageAlt: "brush motor not spinning",
         items: [
           "Walk-behind: check the squeeze lever is fully engaged and returns smoothly",
           "Ride-on: check the foot pedal switch is not stuck or obstructed",
@@ -456,13 +1629,15 @@ const extraGuides: Guide[] = [
   },
   {
     slug: "battery-not-charging-short-runtime",
-    title: "Floor Scrubber Battery Not Charging or Short Runtime? Full Troubleshooting Guide",
+    title: "Floor Scrubber Battery Not Charging? Troubleshooting",
     description:
-      "Scrubber battery dies quickly or won't charge? Diagnose charger issues, battery cell failure, and parasitic drain. Covers lead-acid and lithium battery troubleshooting.",
+      "Scrubber battery dies quickly or won't charge? Diagnose charger issues, battery cell failure, and parasitic drain.",
     category: "troubleshooting",
     readTime: "7 min",
     difficulty: "intermediate",
+    thumbnail: "/images/B460-Scrubber-05.webp",
     published: "2026-06-26",
+    relatedGuides: ["how-to-maintain-floor-scrubber-battery", "brush-motor-not-spinning", "lead-acid-vs-lithium-battery-scrubber"],
     sections: [
       {
         heading: "Symptom: Battery Won't Hold a Charge",
@@ -473,6 +1648,8 @@ const extraGuides: Guide[] = [
         heading: "Step 1: Test the Charger Output",
         content:
           "Before assuming the batteries are bad, verify the charger is working. Plug in the charger (not connected to the machine) and use a multimeter to check output voltage at the connector. For a 24V system, the charger should output 28-30V. For 36V, expect 42-44V. If output is zero or significantly low, the charger is faulty.",
+        image: "/images/B460-Scrubber-05.webp",
+        imageAlt: "battery not charging short runtime",
         items: [
           "Check the charger fuse — many chargers have an internal fuse that blows",
           "Check the AC power cord for damage, especially near the plug",
@@ -518,11 +1695,13 @@ const extraGuides: Guide[] = [
     slug: "scrubber-leaving-streaks-on-floor",
     title: "Floor Scrubber Leaving Streaks? 7 Causes and Quick Fixes",
     description:
-      "Why your floor scrubber leaves dirty streaks or swirl marks. Fix brush pressure, solution flow, dirty pads, and pad centering issues. Get streak-free floors in minutes.",
+      "Why your floor scrubber leaves dirty streaks or swirl marks. Fix brush pressure, solution flow, dirty pads, and pad centering issues.",
     category: "troubleshooting",
     readTime: "5 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101521510723.webp",
     published: "2026-06-26",
+    relatedGuides: ["water-solution-not-dispensing", "squeegee-not-picking-up-water", "brush-motor-not-spinning"],
     sections: [
       {
         heading: "Symptom: Streaks or Swirl Marks After Cleaning",
@@ -531,8 +1710,9 @@ const extraGuides: Guide[] = [
       },
       {
         heading: "Cause 1: Dirty or Over-Saturated Pad/Brush",
-        content:
-          "A pad or brush that's loaded with dirt and soap residue will smear rather than scrub. If you're seeing dirty streaks, remove the pad and check it. A pad that's black, heavily matted, or dripping with dirty water needs to be cleaned or replaced. Never scrub with yesterday's dirty pad.",
+        content: "A pad or brush that's loaded with dirt and soap residue will smear rather than scrub. If you're seeing dirty streaks, remove the pad and check it. A pad that's black, heavily matted, or dripping with dirty water needs to be cleaned or replaced. Never scrub with yesterday's dirty pad.",
+        image: "/images/parts/Squeegee Rubber Parts.webp",
+        imageAlt: "scrubber leaving streaks on floor",
       },
       {
         heading: "Cause 2: Incorrect Solution Flow Rate",
@@ -569,13 +1749,15 @@ const extraGuides: Guide[] = [
   },
   {
     slug: "water-solution-not-dispensing",
-    title: "Floor Scrubber Not Dispensing Water? Diagnose and Fix in 15 Minutes",
+    title: "Floor Scrubber Not Dispensing Water? How to Fix It",
     description:
-      "Solution not reaching the brush? Troubleshoot clogged filter, failed solenoid valve, kinked hose, and pump issues. Step-by-step diagnostic with multimeter testing instructions.",
+      "Solution not reaching the brush? Troubleshoot clogged filter, failed solenoid valve, kinked hose, and pump issues.",
     category: "troubleshooting",
     readTime: "6 min",
     difficulty: "intermediate",
+    thumbnail: "/images/B460-Scrubber-06.webp",
     published: "2026-06-26",
+    relatedGuides: ["squeegee-not-picking-up-water", "scrubber-leaving-streaks-on-floor", "brush-motor-not-spinning"],
     sections: [
       {
         heading: "Symptom: No Water / Solution Coming Out of the Brush Deck",
@@ -584,8 +1766,9 @@ const extraGuides: Guide[] = [
       },
       {
         heading: "Step 1: Check the Solution Tank — Is It Empty?",
-        content:
-          "It sounds obvious, but the solution level indicator is often unreliable. Open the fill cap and visually check that the tank has solution. If the tank has a float level sensor, verify it moves freely and isn't stuck in the 'full' position (falsely indicating liquid).",
+        content: "It sounds obvious, but the solution level indicator is often unreliable. Open the fill cap and visually check that the tank has solution. If the tank has a float level sensor, verify it moves freely and isn't stuck in the 'full' position (falsely indicating liquid).",
+        image: "/images/B460-Scrubber-06.webp",
+        imageAlt: "water solution not dispensing",
       },
       {
         heading: "Step 2: Clean the Solution Filter",
@@ -629,13 +1812,15 @@ const extraGuides: Guide[] = [
   // ── Comparison Guides ──
   {
     slug: "walk-behind-vs-ride-on-scrubber",
-    title: "Walk-Behind vs Ride-On Floor Scrubber: Which One Does Your Facility Need?",
+    title: "Walk-Behind vs Ride-On Floor Scrubber: Which Is Better?",
     description:
-      "Compare walk-behind and ride-on floor scrubbers by cost, productivity, maneuverability, and best use cases. Detailed comparison table and decision guide for facility managers.",
+      "Compare walk-behind and ride-on floor scrubbers by cost, productivity, maneuverability, and best use cases.",
     category: "comparison",
     readTime: "6 min",
     difficulty: "beginner",
+    thumbnail: "/images/A50-Scrubber-05.webp",
     published: "2026-06-26",
+    relatedGuides: ["floor-stripping-equipment-finish-removal-guide", "best-floor-scrubber-small-business", "industrial-floor-sweeper-guide"],
     sections: [
       {
         heading: "The Core Difference",
@@ -645,6 +1830,8 @@ const extraGuides: Guide[] = [
       {
         heading: "Comparison Table",
         content: "Here is a head-to-head comparison of the key factors:",
+        image: "/images/A50-Scrubber-05.webp",
+        imageAlt: "walk behind vs ride on scrubber",
         items: [
           "Cost: Walk-behind $3,000-$6,000 | Ride-on $8,000-$25,000+",
           "Productivity: Walk-behind 15,000-35,000 sq ft/hr | Ride-on 30,000-80,000+ sq ft/hr",
@@ -655,6 +1842,11 @@ const extraGuides: Guide[] = [
           "Battery Runtime: Walk-behind 3-4 hours | Ride-on 3-5 hours (larger batteries)",
           "Maintenance Cost: Walk-behind lower (fewer components) | Ride-on moderate",
         ],
+      },
+      {
+        heading: "Cost Comparison: Total Cost of Ownership",
+        content:
+          "While ride-on scrubbers have a higher upfront cost, they often provide better ROI for large facilities. A ride-on scrubber cleaning 50,000 sq ft per hour vs a walk-behind at 20,000 sq ft per hour means the ride-on pays for itself in labor savings over time. For facilities under 20,000 sq ft, a walk-behind is typically more cost-effective.",
       },
       {
         heading: "Choose Walk-Behind If…",
@@ -671,18 +1863,25 @@ const extraGuides: Guide[] = [
         content:
           "Some manufacturers offer a 'stand-on' scrubber that splits the difference — the operator stands on a rear platform rather than sitting. These combine the maneuverability of a walk-behind with the speed of a ride-on, and are increasingly popular for medium-sized facilities. However, they are less common and may have fewer options for attachments and accessories.",
       },
+      {
+        heading: "Decision Matrix",
+        content:
+          "Use this simple matrix to decide: if your facility is under 20,000 sq ft, has narrow aisles (under 5 ft wide), or requires cleaning across multiple floors, choose a walk-behind. If your facility is over 40,000 sq ft with wide aisles, operates on a single level, and you clean for 4+ hours per day, choose a ride-on. Between 20,000–40,000 sq ft, consider factors like budget, operator availability, and growth plans.",
+      },
     ],
-    relatedProducts: ["K500BT", "A660T", "RS32", "K660"],
+    relatedProducts: [],
   },
   {
     slug: "disc-brush-vs-roller-brush-scrubber",
-    title: "Disc Brush vs Roller Brush Scrubber: Complete Performance Comparison",
+    title: "Floor Scrubber Disc Brush vs Roller Brush Compared",
     description:
-      "Disc brush or roller brush for your floor scrubber? Compare cleaning performance, floor type compatibility, maintenance cost, and best applications with detailed comparison table.",
+      "Disc brush or roller brush for your floor scrubber? Compare cleaning performance, floor type compatibility, maintenance cost",
     category: "comparison",
     readTime: "5 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101521634780.webp",
     published: "2026-06-26",
+    relatedGuides: ["walk-behind-vs-ride-on-scrubber", "floor-scrubber-disc-brush-buying-guide"],
     sections: [
       {
         heading: "Two Different Cleaning Mechanisms",
@@ -693,6 +1892,8 @@ const extraGuides: Guide[] = [
         heading: "Disc Brush — Best for Smooth, Even Floors",
         content:
           "Disc brushes excel on smooth surfaces like sealed concrete, polished tile, epoxy, and vinyl. The flat rotating motion provides even pressure distribution for consistent scrubbing. Disc brushes are also easier to change and offer more material options (nylon, PPL, steel-wire mix), making them versatile for different soil types. However, they struggle on uneven surfaces because contact is limited to the flat plane of the brush.",
+        image: "/images/parts/Roller Brush Parts.webp",
+        imageAlt: "disc brush vs roller brush scrubber",
         items: [
           "Best for: supermarkets, hospitals, schools, offices, retail",
           "Advantages: even pressure, easy pad changes, many material options",
@@ -715,17 +1916,19 @@ const extraGuides: Guide[] = [
           "Disc brushes and pads are generally cheaper to replace than roller brushes — typically $30-80 per disc brush versus $150-400 per roller brush. However, roller brushes often last longer on rough floors because the wear is distributed across a larger surface. For most smooth-floor facilities, disc brushes offer the lowest ongoing consumable cost. For textured floors where disc brushes wear quickly, roller brushes are more economical in the long run.",
       },
     ],
-    relatedProducts: ["K500BT", "A660T"],
+    relatedProducts: [],
   },
   {
     slug: "lead-acid-vs-lithium-battery-scrubber",
-    title: "Lead-Acid vs Lithium Battery Floor Scrubber: 5-Year Cost Comparison",
+    title: "Lead-Acid vs Lithium Scrubber Batteries: 5-Year Cost",
     description:
-      "Should you choose lead-acid or lithium batteries for your floor scrubber? Compare upfront cost, lifespan, maintenance, charge time, and total cost of ownership over 5 years.",
+      "Should you choose lead-acid or lithium batteries for your floor scrubber? Compare upfront cost, lifespan, maintenance, charge time",
     category: "comparison",
     readTime: "5 min",
     difficulty: "beginner",
+    thumbnail: "/images/A50-Scrubber-06.webp",
     published: "2026-06-26",
+    relatedGuides: ["how-to-maintain-floor-scrubber-battery", "oem-vs-aftermarket-floor-scrubber-parts", "battery-not-charging-short-runtime"],
     sections: [
       {
         heading: "Why Battery Choice Matters",
@@ -735,6 +1938,8 @@ const extraGuides: Guide[] = [
       {
         heading: "Detailed Comparison",
         content: "A side-by-side evaluation of lead-acid versus lithium battery systems:",
+        image: "/images/A50-Scrubber-06.webp",
+        imageAlt: "lead acid vs lithium battery scrubber",
         items: [
           "Upfront Cost (24V system): Lead-Acid $400-800 | Lithium $1,200-2,400",
           "Lifespan: Lead-Acid 1-3 years (300-500 cycles) | Lithium 3-5 years (1,500-2,000 cycles)",
@@ -762,18 +1967,20 @@ const extraGuides: Guide[] = [
           "Lead-acid batteries remain a good choice for facilities with low daily usage, tight initial budgets, or operations in very cold environments where lithium performance degrades. They're also appropriate for backup or occasional-use machines where the battery sits idle for extended periods — lead-acid tolerates deep discharge better if recharged immediately afterward.",
       },
     ],
-    relatedProducts: ["K500BT", "K660", "A380"],
+    relatedProducts: [],
   },
   // ── Top 10 Article ──
   {
     slug: "top-10-floor-scrubber-manufacturers-2026",
-    title: "Top 10 Floor Scrubber Manufacturers in 2026 — Compared & Ranked",
+    title: "Top 10 Floor Scrubber Manufacturers 2026",
     description:
-      "Comprehensive ranking of the top 10 floor scrubber manufacturers in 2026. Compare Tennant, Nilfisk, Karcher, Aikerui and more by pricing, quality, and global reach. Includes buyer's checklist.",
+      "Comprehensive ranking of the top 10 floor scrubber manufacturers in 2026. Compare Tennant, Nilfisk, Karcher, Aikerui and more by pricing, quality",
     category: "buying-guide",
     readTime: "10 min",
     difficulty: "beginner",
+    thumbnail: "/images/A1280-Sweeper-01.webp",
     published: "2026-07-04",
+    relatedGuides: ["top-10-industrial-floor-scrubber-suppliers", "top-10-industrial-cleaning-equipment-manufacturers", "industrial-floor-scrubber-buying-guide"],
     sections: [
       {
         heading: "How We Evaluated These Manufacturers",
@@ -789,6 +1996,8 @@ const extraGuides: Guide[] = [
       {
         heading: "1. Tennant Company (USA)",
         content: "Founded in 1870, Tennant is the world's largest dedicated floor cleaning equipment manufacturer. Based in Minneapolis, they operate in 15+ countries with an extensive dealer network. Known for innovation including ec-H2O electrolyzed water technology. Tennant machines are premium-priced ($15,000-$45,000+) and built for heavy industrial use.",
+        image: "/images/A1280-Sweeper-02.webp",
+        imageAlt: "top 10 floor scrubber manufacturers 2026",
         items: [
           "Founded: 1870 | HQ: Minneapolis, USA",
           "Key Products: T7, T12, T17 ride-on scrubbers; 5680 walk-behind",
@@ -945,22 +2154,51 @@ const extraGuides: Guide[] = [
         ],
       },
       {
+        heading: "10-Point Buyer's Checklist Before Ordering",
+        content: "Use this checklist every time you evaluate a new manufacturer. Each unchecked box is a risk. Every point below is verifiable — demand proof, not promises.",
+        items: [
+          "☐ Request live video factory tour via WhatsApp — see production lines in real-time",
+          "☐ Verify business registration on government database — match company name, address, scope",
+          "☐ Check ISO 9001 / CE / SGS certification numbers — verify on certifying body's website",
+          "☐ Ask for 3 customer references in your country — call or email them directly",
+          "☐ Order a sample unit first — test quality fit compatibility before volume commitment",
+          "☐ Confirm payment terms — Letter of Credit or Trade Assurance, never 100% upfront to unknown suppliers",
+          "☐ Check shipping logistics — port-to-port transit time, customs clearance support, Incoterms",
+          "☐ Verify spare parts availability — do they stock 360+ parts or just the machine?",
+          "☐ Compare warranty terms — 1yr vs 2yr vs 3yr, what's actually covered in writing",
+          "☐ Calculate total landed cost — machine price + sea freight + customs duty + inland delivery = real cost",
+        ],
+      },
+      {
+        heading: "How Much Should You Actually Pay? TCO by Manufacturer Tier",
+        content: "Based on real market data, here's what each tier costs over a 5-year ownership period for a mid-size ride-on scrubber:",
+        items: [
+          "Premium Tier (Tennant T7): Purchase $22,000 + Annual parts $1,200 × 5 + Battery $1,500 + Service contract $3,000/yr × 5 = 5-Yr TCO $43,500. Best if you have a $18K+/yr cleaning budget.",
+          "Mid-Premium (Nilfisk SC550): Purchase $18,000 + Parts $1,000 × 5 + Battery $1,200 + Service $2,500/yr × 5 = 5-Yr TCO $36,700. Best European option with local support.",
+          "Mid-Range (NSS Champ): Purchase $13,000 + Parts $800 × 5 + Battery $1,000 + Service $1,500/yr × 5 = 5-Yr TCO $25,500. Best US value option.",
+          "Factory-Direct (Aikerui K660): Purchase $9,000 + Parts $500 × 5 + Lithium battery included + Service self-managed = 5-Yr TCO $11,500. Best pure value — saves $12,000-$32,000 over premium brands across 5 years.",
+          "Key insight: The premium brand you're paying for is their dealer network and service contracts — not meaningfully better machine quality. Same steel gauge, same motor types, same brush materials. The price gap is distribution cost, not manufacturing cost.",
+        ],
+      },
+      {
         heading: "Final Recommendation: Which Manufacturer Should You Choose?",
         content: "If you have a large budget, need on-site service contracts, and operate in North America or Western Europe, Tennant or Nilfisk are the safe choices. If you value factory-direct pricing, want OEM flexibility, and are willing to manage international logistics, Aikerui offers comparable quality at 30-50% less. For buyers in emerging markets, Aikerui and Gaomei provide the best value. Always verify certifications, request a factory tour, and start with a sample order — regardless of which manufacturer you choose.",
       },
     ],
-    relatedProducts: ["K500BT", "A660T", "K660", "A650T"],
+    relatedProducts: [],
   },
   // ── Parts Guide ──
   {
     slug: "floor-scrubber-parts-guide-types-lifespan-cost",
-    title: "Floor Scrubber Parts Guide: Types, Lifespan & Replacement Cost (2026)",
+    title: "Floor Scrubber Parts Guide: Types & Replacement Cost",
     description:
-      "Complete guide to floor scrubber replacement parts. Disc brushes, squeegee rubber, pad holders, clutch plates — typical lifespan, when to replace, and OEM vs aftermarket cost comparison. 30-50% savings with factory-direct sourcing.",
+      "Complete guide to floor scrubber replacement parts. Disc brushes, squeegee rubber, pad holders, clutch plates — typical lifespan, when to replace",
     category: "maintenance",
     readTime: "9 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/Pad Center Lock Parts.webp",
     published: "2026-07-04",
+    relatedGuides: ["floor-scrubber-brush-pads-guide", "floor-scrubber-pad-holder-replacement-guide", "top-10-floor-scrubber-brushes-and-parts"],
     sections: [
       {
         heading: "Why Understanding Your Scrubber Parts Matters",
@@ -1112,10 +2350,9 @@ const extraGuides: Guide[] = [
       },
       {
         heading: "Ready to Cut Your Parts Costs?",
-        content: "Browse our full catalog of 360+ replacement parts or send us your part number for a same-day quote. All parts manufactured to OEM specifications in our ISO 9001 certified factory. Compatible with Tennant, Nilfisk, Karcher, Comac, Viper, Hako, Fimap, Dulevo, and 15+ other brands.",
+        content: "Browse our full catalog of 360+ replacement parts or send us your part number for a same-day quote. All parts manufactured to OEM specifications in our ISO 9001 certified factory. Compatible with Tennant, Nilfisk, Karcher, Comac, Viper, Hako, Fimap, Dulevo, flange mounts, clutch plates, and 15+ other brands.",
       },
     ],
-    videoId: "fdISROzR0fQ",
     relatedProducts: [],
   },
   // ── Industrial Floor Scrubber Complete Guide ──
@@ -1123,11 +2360,13 @@ const extraGuides: Guide[] = [
     slug: "industrial-floor-scrubber-complete-guide",
     title: "Industrial Floor Scrubber: The Complete 2026 Buyer's Guide",
     description:
-      "Everything you need to know about industrial floor scrubbers. Compare walk-behind vs ride-on, disc vs roller brush, lead-acid vs lithium. Includes selection checklist, ROI calculator, and industry-specific recommendations.",
+      "Everything you need to know about industrial floor scrubbers. Compare walk-behind vs ride-on, disc vs roller brush, lead-acid vs lithium.",
     category: "buying-guide",
     readTime: "12 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101720530.webp",
     published: "2026-07-04",
+    relatedGuides: ["how-to-choose-a-floor-scrubber", "brush-motor-not-spinning", "best-floor-scrubber-small-business"],
     sections: [
       {
         heading: "What Makes a Floor Scrubber 'Industrial'?",
@@ -1162,35 +2401,51 @@ const extraGuides: Guide[] = [
       },
       {
         heading: "Decision 4: Cleaning Width and Tank Capacity",
-        content: "Match width to your aisle layout. Match tank to your cleaning schedule.",
+        content: "Cleaning width and tank size directly control your cleaning throughput. Match width to aisle layout; match tank to cleaning schedule.",
         items: [
-          "17-20 inch: Small shops, narrow aisles, ~15,000 sq ft/hr",
-          "20-28 inch: Medium warehouses, schools, ~30,000 sq ft/hr",
-          "28-34 inch: Large warehouses, factories, ~50,000 sq ft/hr",
-          "34-50 inch: Logistics centers, airports, ~80,000+ sq ft/hr",
+          "17-20 inch (A500BT, T290): Small shops, narrow aisles, ~15,000 sq ft/hr — 10-15 gal tanks, 20-30 min runtime",
+          "20-28 inch (K500BT, A650T): Medium warehouses, schools, ~25,000 sq ft/hr — 15-25 gal tanks, 30-50 min runtime",
+          "28-34 inch (K660, A660T): Large warehouses, factories, ~50,000 sq ft/hr — 25-35 gal tanks, 50-70 min runtime",
+          "34-50 inch (S1250): Logistics centers, airports, ~80,000+ sq ft/hr — 35-50 gal tanks, 70-90 min runtime",
+          "Tank sizing rule: 10 gal = ~20 min. To clean without interruption, match tank to area: (sq ft ÷ cleaning width ÷ speed) + 20% margin",
         ],
       },
       {
         heading: "Decision 5: Total Cost of Ownership vs Sticker Price",
-        content: "A $6,000 machine with $2,000/year parts costs more over 5 years than a $10,000 machine with $500/year maintenance. Calculate TCO: purchase price + (annual parts × 5) + battery replacements.",
+        content: "A $6,000 machine with $2,000/year parts costs more over 5 years ($16,000) than a $10,000 machine with $500/year maintenance ($12,500). Always calculate 5-year TCO.",
         items: [
-          "Entry-level walk-behind: $3,000-5,000 purchase, ~$500-800/yr maintenance",
-          "Mid-range walk-behind: $5,000-8,000 purchase, ~$600-1,000/yr maintenance",
-          "Compact ride-on: $9,000-15,000 purchase, ~$800-1,500/yr maintenance",
-          "Full-size ride-on: $15,000-35,000 purchase, ~$1,000-2,000/yr maintenance",
-          "Factory-direct: subtract 30-40% from all above ranges",
+          "Entry-level walk-behind (17-20 in): $3,000-5,000 purchase → 5yr TCO ~$5,500-8,000. ROI in 6-10 months vs manual cleaning.",
+          "Mid-range walk-behind (20-28 in): $5,000-8,000 → 5yr TCO ~$8,000-13,000. ROI in 4-8 months.",
+          "Compact ride-on (28-34 in): $9,000-15,000 → 5yr TCO ~$13,000-22,500. ROI in 8-12 months. Maximum value point for most facilities.",
+          "Full-size ride-on (34-50 in): $15,000-35,000 → 5yr TCO ~$20,000-47,000. ROI in 12-18 months. Only makes sense for 100,000+ sq ft.",
+          "Battery cost hidden in TCO: Lead-acid replacement at year 2 ($500-800). Lithium lasts 5+ years ($0 replacement). For multi-shift → lithium saves $800-1,600.",
         ],
       },
       {
-        heading: "Industry-Specific Recommendations",
-        content: "Different industries have different cleaning requirements:",
+        heading: "Industry-Specific Recommendation Details",
+        content: "Each industry has unique cleaning requirements. Here's your cheat sheet with specific Aikerui model matches:",
         items: [
-          "Warehouse: Ride-on disc scrubber, 28-34 inch, sealed concrete, lithium battery",
-          "Manufacturing: Ride-on roller or abrasive disc brush, 28-42 inch, oil-resistant squeegee",
-          "Food Processing: Stainless steel components, wash-down capable, food-grade materials",
-          "Supermarket: Compact walk-behind, <65dB quiet, fast-drying for daytime use",
-          "Hospital: Walk-behind with HEPA, ultra-quiet, chemical-resistant",
-          "Parking Garage: Sweeper-scrubber combo, heavy debris, outdoor-capable",
+          "Warehouse/Distribution: Ride-on disc scrubber, 28-34 inch (K660, A660T), sealed concrete floor, lithium battery for multi-shift operation. Key spec: 60-80 kg brush pressure, 30+ gal tanks. Clean during shift change or at night.",
+          "Manufacturing Plant: Ride-on roller brush or abrasive disc, 28-42 inch (K660 with PPL brush, A660T), oil-resistant squeegee rubber. Key spec: 80-100 kg brush pressure. Requires chemical dosing system for degreasing.",
+          "Food Processing: Walk-behind or compact ride-on with stainless steel frame (K500BT), food-grade wash-down components. Key spec: IP65+ water resistance, HACCP-compliant materials. Floor must dry completely within 5 minutes to prevent slip hazards.",
+          "Automotive Service/Dealership: Heavy-duty ride-on (K660 with abrasive brush), 100 kg brush pressure minimum, oil-resistant everything. Requires: degreasing chemical tank, heavy debris pre-sweep, rapid squeegee blade changes.",
+          "Supermarket/Retail: Compact walk-behind (A500BT, A650T), <65 dB noise level, fast-drying feature for daytime cleaning during open hours. Key spec: maneuverable in tight aisles (35 inch minimum turn radius), quick pad-change system for various floor types.",
+          "Hospital/Healthcare: Walk-behind with HEPA filtration (A650T), <60 dB ultra-quiet, chemical-resistant seals for disinfectant compatibility. Key spec: cordless operation for patient safety, HEPA vacuum for airborne pathogens, low-profile for under-bed cleaning.",
+          "Airport/Convention Center: Full-size ride-on (S1250), 42-50 inch cleaning width, lithium battery mandatory for continuous operation. Key spec: 80,000+ sq ft/hr productivity, 8+ hour runtime, onboard chemical auto-dilution.",
+          "Parking Garage: Ride-on sweeper-scrubber combo, 42-50 inch with heavy debris hopper and dust control system. Key spec: outdoor-capable brush deck, chemical-resistant to road salt and oil, heavy-gauge steel frame for debris impact.",
+          "Cold Storage / Freezer Warehouse: Specialized scrubber with heated solution tank, anti-freeze capable squeegee, and lithium battery rated for -20°C. Key spec: all-weather hydraulic system, non-slip operator platform.",
+          "Pharmaceutical Cleanroom: Small walk-behind (T290), HEPA H14 filtration, stainless steel no-paint construction, ISO Class 5-8 compatible. Key spec: zero particle emission, ESD-safe wheels, fully demountable for autoclave sterilization.",
+        ],
+      },
+      {
+        heading: "Floor Scrubber ROI Calculator — 4-Step Framework",
+        content: "Use this framework to calculate your actual return on investment. Replace the example numbers with your facility's data:",
+        items: [
+          "Step 1: Calculate Current Labor Cost = (hourly janitor wage × hours spent cleaning/day × 260 working days/yr). Example: $18/hr × 6 hrs/day × 260 = $28,080/yr per cleaner. Two cleaners = $56,160/yr.",
+          "Step 2: Calculate Machine 5-Year Cost = purchase price + (annual parts × 5) + battery replacements. Example K660: $12,000 + ($800 × 5) + $0 (lithium) = $16,000 total. Annualized: $3,200/yr.",
+          "Step 3: Calculate New Labor Cost = old cost ÷ productivity multiplier. Ride-on is typically 2-3x faster than manual mopping or walk-behind. Example: $56,160 ÷ 2.5 = $22,464/yr (one operator with ride-on replaces two moppers).",
+          "Step 4: Annual Savings & Payback = (old labor − new labor) − annualized machine cost. Example: ($56,160 − $22,464) − $3,200 = $30,496/yr saved. Payback period = $12,000 ÷ $30,496 = 4.7 months.",
+          "Estimated ROI across industries: Warehouse 4-7 months | Factory 5-9 months | Supermarket 6-10 months | Hospital 8-14 months | Airport 12-18 months. Add 50% to payback time if switching from existing scrubber (not manual).",
         ],
       },
       {
@@ -1209,27 +2464,28 @@ const extraGuides: Guide[] = [
         content: "Browse our factory-direct walk-behind and ride-on scrubbers. Send us your facility details for a personalized recommendation and quote within 24 hours.",
       },
     ],
-    videoId: "aUVk1TcVSwQ",
-    relatedProducts: ["K500BT", "A650T", "A660T", "K660"],
+    relatedProducts: [],
   },
   // ── Floor Scrubber Cost Guide ──
   {
     slug: "how-much-does-floor-scrubber-cost",
-    title: "How Much Does a Floor Scrubber Cost? Complete 2026 Price Breakdown",
+    title: "How Much Does a Floor Scrubber Cost? 2026 Prices",
     description:
-      "Real 2026 floor scrubber prices: walk-behind $3,000-12,000, ride-on $9,000-35,000. TCO analysis including parts, batteries, and maintenance. Factory-direct vs dealer pricing comparison.",
+      "Real 2026 floor scrubber prices: walk-behind $3,000-12,000, ride-on $9,000-35,000. TCO analysis including parts, batteries, and maintenance.",
     category: "buying-guide",
     readTime: "8 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101748253843.webp",
     published: "2026-07-04",
+    relatedGuides: ["how-much-do-floor-scrubber-brushes-cost", "floor-scrubber-roi-calculator-cost-savings", "floor-scrubber-brush-bristle-material-guide"],
     sections: [
       {
         heading: "The Real Cost of a Floor Scrubber — Beyond the Sticker Price",
-        content: "When someone asks 'how much does a floor scrubber cost,' they usually mean the purchase price. But the real cost includes parts, batteries, maintenance, chemicals, and operator training over the machine's 5-10 year lifespan. A $6,000 scrubber that costs $2,000/year to maintain is more expensive than a $10,000 scrubber costing $500/year. This guide breaks down every cost component so you can budget accurately.",
+        content: "When someone asks 'how much does a floor scrubber cost,' they usually mean the purchase price. But purchase prices tell only part of the story, and the unit cost of a machine varies widely depending on the type you choose. The real cost includes parts, batteries, maintenance, chemicals, and operator training over the machine's 5-10 year lifespan. A $6,000 scrubber that costs $2,000 a year to maintain is more expensive than a $10,000 scrubber costing $500 a year. This guide breaks down every cost component so you can budget accurately.",
       },
       {
         heading: "Walk-Behind Floor Scrubber Prices by Tier",
-        content: "Walk-behind scrubbers range from $3,000 for basic models to $12,000 for heavy-duty industrial units. Here's what you get at each price point:",
+        content: "Walk behind floor scrubber prices range from $3,000 for basic models to $12,000 for heavy-duty industrial units. The average cost of a mid-size machine suited to 5,000-20,000 square feet of floor area, a square footage band covering most small factories, sits near $6,000. Here is what you get at each price point:",
         items: [
           "Budget ($3,000-5,000): 17-20 inch, pad-assisted or basic disc brush, lead-acid battery, 10-15 gallon tanks. Best for small shops, restaurants, gas stations.",
           "Mid-Range ($5,000-8,000): 20-28 inch, self-propelled drive, disc or roller brush, 15-25 gallon tanks, optional lithium. Best for medium warehouses, schools, supermarkets.",
@@ -1249,7 +2505,7 @@ const extraGuides: Guide[] = [
       },
       {
         heading: "What Drives the Price Difference Between Models?",
-        content: "Two machines that look similar can differ by $5,000+. These six factors explain why:",
+        content: "Two machines that look similar can differ by $5,000+. Cleaning path width, battery powered versus corded drive systems, and inch machine size all shift the price. These six factors explain why:",
         items: [
           "Cleaning width: Each 2-inch increase in width adds ~$500-1,000 (wider = fewer passes = faster)",
           "Battery type: Lithium adds $800-2,000 upfront vs lead-acid, but saves $1,000+ in maintenance over 5 years",
@@ -1261,7 +2517,7 @@ const extraGuides: Guide[] = [
       },
       {
         heading: "Annual Operating Costs — The Hidden Half of Your Budget",
-        content: "Purchase price is only 40-50% of the 5-year total cost. Here's what you'll spend annually:",
+        content: "Purchase price is only 40-50% of the 5-year total. The running cost of a mid-size machine, including maintenance costs alongside operating costs such as power and chemicals, typically lands between $1,200 and $3,500 a year. That year cost is what most buyers underestimate. Here is what you'll spend annually:",
         items: [
           "Disc brushes: 3-4 replacements/year × $45-75 each = $180-300/year (factory-direct) vs $360-720 (dealer)",
           "Squeegee blades: 4-6 replacements/year × $30-55/set = $180-330/year (factory-direct) vs $320-840 (dealer)",
@@ -1273,7 +2529,9 @@ const extraGuides: Guide[] = [
       },
       {
         heading: "5-Year Total Cost of Ownership Comparison",
-        content: "Let's compare three realistic scenarios for a warehouse running one machine 5 days/week:",
+        image: "/images/A50-Scrubber-05.webp",
+        imageAlt: "Floor scrubber cost breakdown showing machine, parts and operating expenses",
+        content: "Let's compare three realistic scenarios for a warehouse running one machine 5 days a week. Cost of ownership TCO over the long run is what separates them. The gap widens after year two, when cost savings from lower maintenance start to show. Compare the three and the most cost effective option becomes clear:",
         items: [
           "Scenario A — Dealer walk-behind: $6,000 purchase + $2,000/yr parts = $16,000 over 5 years",
           "Scenario B — Factory-direct walk-behind: $3,800 purchase + $1,000/yr parts = $8,800 over 5 years. Saves $7,200.",
@@ -1304,7 +2562,7 @@ const extraGuides: Guide[] = [
       },
       {
         heading: "Hidden Costs First-Time Buyers Miss",
-        content: "These six costs catch new buyers off guard. Budget for them from day one:",
+        content: "These six costs catch new buyers off guard. Indirect costs such as downtime, operator training and battery disposal rarely appear in a written quote. Budget for them from day one:",
         items: [
           "Shipping/freight: $500-2,000 domestic, $1,000-5,000 international (factory-direct from China)",
           "Import duties: 0-10% depending on country and trade agreements — check your local customs",
@@ -1315,23 +2573,48 @@ const extraGuides: Guide[] = [
         ],
       },
       {
+        heading: "Regional Price Differences: What a Scrubber Costs in Your Market",
+        content: "The same machine can cost dramatically different amounts depending on where you buy it. These are real price ranges for a mid-range 20-28 inch walk-behind scrubber in different markets:",
+        items: [
+          "North America: $6,000-12,000 (dealer pricing, includes local service and warranty support). Factory-direct import from China: $3,200-5,000 + $800-1,500 shipping + 0-5% duty = $4,000-6,500 landed.",
+          "Western Europe: €5,500-11,000 (dealer, includes 2-year warranty and CE compliance). Factory-direct: €3,000-4,800 + €700-1,400 shipping + 0-3% EU duty = €3,700-6,200 landed. EU CE certification already included by factory-direct manufacturers who export to Europe.",
+          "Middle East: $5,000-10,000 (dealer, Gulf markets). Factory-direct: $2,800-4,500 + $400-900 shipping (15-20 days to Dubai/Jeddah) + 0-5% duty = $3,200-5,400 landed. Strong Chinese presence means faster shipping and lower freight costs.",
+          "Southeast Asia: $4,000-8,000 (dealer). Factory-direct from China: $2,500-4,200 + $200-600 shipping (5-10 days to Singapore/Bangkok/Jakarta) + 0-10% duty = $2,700-4,800 landed. Shortest shipping times in the world for Chinese-made equipment.",
+          "Africa: $5,000-12,000 (dealer, limited availability in many countries). Factory-direct: $2,800-4,500 + $600-2,000 shipping (25-40 days to major African ports) + 5-25% duty = $3,600-7,500 landed. Duty rates vary significantly by country — Nigeria and Kenya have higher rates than South Africa.",
+          "South America: $6,000-14,000 (dealer, high import taxes in Brazil/Argentina). Factory-direct: $3,000-4,800 + $800-2,500 shipping (30-40 days) + 10-35% duty = $4,500-8,500 landed. Brazil's high import duties make dealer comparison essential.",
+          "Australia/NZ: AUD 9,000-18,000 (dealer). Factory-direct: AUD 4,500-7,500 + AUD 1,200-2,500 shipping + 0-5% duty = AUD 5,700-10,000 landed. Strong Australian dollar makes factory-direct imports increasingly attractive.",
+        ],
+      },
+      {
+        heading: "2026 Floor Scrubber Market Trends: What's Changing This Year",
+        content: "The floor scrubber market is shifting in three significant ways that affect pricing and availability. Smart buyers who understand these trends can save thousands:",
+        items: [
+          "Lithium Battery Adoption Accelerating: In 2024, ~25% of new scrubbers shipped with lithium. In 2026, that's approaching 50%. Lead-acid will still dominate the budget segment, but all mid-range and premium machines are shifting to lithium. If you're buying new in 2026, lithium adds $800-2,000 upfront but eliminates battery maintenance labor and replacement costs. For multi-shift operations, lithium is now the default recommendation.",
+          "Factory-Direct Model Growing: Post-pandemic supply chain lessons + tight budgets are driving more buyers to skip distributors and buy factory-direct. Chinese manufacturers like Aikerui that offer CE/ISO-certified machines at 30-50% less than dealer prices are capturing increasing market share, especially in emerging markets. Expect this trend to continue as shipping costs stabilize and quality perception improves.",
+          "Sustainability Requirements Rising: EU regulations (effective 2025-2026) require commercial cleaning equipment to meet stricter energy efficiency and recyclability standards. Many US states are following suit. Machines with lithium batteries, eco-mode settings, and recyclable components will have a competitive advantage. Buyers in regulated markets should verify compliance before ordering.",
+          "Smart Features Becoming Standard: LCD displays, hour meters, diagnostic codes, and chemical auto-dosing — once premium features — are now trickling down to mid-range machines. In 2026, a $7,000-9,000 walk-behind often has features that required a $12,000+ machine in 2023.",
+          "Parts and Consumables as a Profit Center: Dealers historically made thin margins on machine sales but high margins on parts. Factory-direct parts sourcing is disrupting this model — expect your parts budget to drop 30-50% if you switch from dealer to factory-direct for consumables like brushes, squeegees, and pad holders.",
+        ],
+      },
+      {
         heading: "Get Your Factory-Direct Quote",
-        content: "Tell us your facility size, floor type, and daily cleaning hours. We'll recommend the right machine at factory-direct pricing — typically 30-40% less than your local dealer. Quote within 24 hours. No obligation.",
+        content: "Tell us your facility size, floor type, and daily cleaning hours. We'll recommend the right machine, product or service, and send a factory-direct quote so you can make informed decisions. Aikerui manufactures in its own 10,000+ square meter facility in Anqing, China, founded in 2008, CE and ISO 9001 certified and exporting to 50+ countries, so pricing is typically 30-40% less than your local dealer. Quote within 24 hours, with no obligation. Browse the machine range at aikeruiclean.com/floor-scrubbers, or see replacement parts and consumables at aikeruiclean.com/parts.",
       },
     ],
-    videoId: "DlMt7Q-ncXs",
-    relatedProducts: ["K500BT", "A650T", "A660T", "K660"],
+    relatedProducts: [],
   },
   // ── Small Business Guide ──
   {
     slug: "best-floor-scrubber-small-business",
-    title: "Best Floor Scrubber for Small Business: Top 5 Picks & Buying Guide (2026)",
+    title: "Best Floor Scrubber for Small Business (2026 Guide)",
     description:
-      "The best floor scrubbers for small businesses in 2026. Compact walk-behind models under $5,000 reviewed. Compare features, prices, and best use cases for restaurants, retail shops, small warehouses, and auto shops.",
+      "The best floor scrubbers for small businesses in 2026. Compact walk-behind models under $5,000 reviewed.",
     category: "buying-guide",
     readTime: "7 min",
     difficulty: "beginner",
+    thumbnail: "/images/A1280-Sweeper-02.webp",
     published: "2026-07-04",
+    relatedGuides: ["walk-behind-vs-ride-on-scrubber", "floor-scrubber-gym-fitness-center", "how-to-choose-a-floor-scrubber"],
     sections: [
       {
         heading: "Why a Floor Scrubber Is the Best Investment for Your Small Business",
@@ -1340,6 +2623,8 @@ const extraGuides: Guide[] = [
       {
         heading: "What Makes a Floor Scrubber Right for a Small Business?",
         content: "Small businesses need machines that are compact (fit through standard doorways), simple to operate (minimal training), affordable (under $5,000), and reliable (low maintenance). You don't need a ride-on machine — a quality walk-behind with a 17-20 inch cleaning path is ideal for spaces up to 15,000 sq ft.",
+        image: "/images/A1280-Sweeper-03.webp",
+        imageAlt: "best floor scrubber small business",
         items: [
           "Compact size: Must fit through 32-inch doorways and navigate tight spaces between displays, tables, or equipment",
           "Simple controls: One-button operation preferred — your staff aren't professional cleaners",
@@ -1426,18 +2711,20 @@ const extraGuides: Guide[] = [
         content: "Tell us about your business — floor type, square footage, and cleaning frequency. We'll recommend the right machine at factory-direct pricing. Most small business orders ship within 48 hours.",
       },
     ],
-    relatedProducts: ["K500BT", "A380"],
+    relatedProducts: [],
   },
   // ── Food Processing Guide ──
   {
     slug: "floor-scrubber-food-processing-plants",
-    title: "Floor Scrubber for Food Processing Plants: Sanitary Cleaning Guide (2026)",
+    title: "Floor Scrubber for Food Processing Plants (2026)",
     description:
-      "Food-grade floor scrubbers for meat, dairy, bakery, and beverage plants. Stainless steel components, wash-down capable, HACCP-compliant cleaning. Factory-direct pricing.",
+      "Food-grade floor scrubbers for meat, dairy, bakery, and beverage plants. Stainless steel components, wash-down capable, HACCP-compliant cleaning.",
     category: "buying-guide",
     readTime: "7 min",
     difficulty: "intermediate",
+    thumbnail: "/images/A1280-Sweeper-03.webp",
     published: "2026-07-04",
+    relatedGuides: ["steel-wire-floor-scrubber-brush-guide", "hospital-medical-facility-floor-cleaning-equipment", "hotel-hospitality-floor-cleaning-solutions"],
     sections: [
       {
         heading: "Why Food Processing Floors Demand Specialized Equipment",
@@ -1446,6 +2733,8 @@ const extraGuides: Guide[] = [
       {
         heading: "5 Non-Negotiable Features for Food Plant Scrubbers",
         content: "If your scrubber lacks any of these, it's not food-grade:",
+        image: "/images/A1280-Sweeper-04.webp",
+        imageAlt: "floor scrubber food processing plants",
         items: [
           "Stainless steel components: Brushes, tanks, and frame must resist corrosion from acid-based cleaners and sanitizers. Standard steel rusts within months.",
           "IP65+ water protection: Electrical components sealed against high-pressure wash-down. IP65 minimum; IP67 preferred for areas with standing water.",
@@ -1484,18 +2773,20 @@ const extraGuides: Guide[] = [
         content: "Tell us your food sector, floor area, and sanitation schedule. We'll recommend a food-grade machine with proper certifications. Factory-direct pricing — no dealer markup.",
       },
     ],
-    relatedProducts: ["K500BT"],
+    relatedProducts: [],
   },
   // ── Hospital Guide ──
   {
     slug: "hospital-medical-facility-floor-cleaning-equipment",
-    title: "Hospital Floor Cleaning Equipment: Medical-Grade Scrubbers for Healthcare (2026)",
+    title: "Hospital Floor Scrubbers: Medical-Grade Cleaning (2026)",
     description:
-      "Healthcare floor cleaning equipment guide. Ultra-quiet scrubbers (<60dB) with HEPA filtration for hospitals, clinics, and care homes. Infection control compliant. Factory-direct pricing.",
+      "Healthcare floor cleaning equipment guide. Ultra-quiet scrubbers (<60dB) with HEPA filtration for hospitals, clinics, and care homes.",
     category: "buying-guide",
     readTime: "7 min",
     difficulty: "intermediate",
+    thumbnail: "/images/A1280-Sweeper-04.webp",
     published: "2026-07-04",
+    relatedGuides: ["floor-scrubber-hospital-healthcare-facility", "hotel-hospitality-floor-cleaning-solutions", "floor-scrubber-food-processing-plants"],
     sections: [
       {
         heading: "Why Hospital Floors Are the Highest-Stakes Cleaning Job",
@@ -1504,6 +2795,8 @@ const extraGuides: Guide[] = [
       {
         heading: "5 Requirements for Healthcare-Grade Floor Scrubbers",
         content: "These features separate medical-grade machines from standard commercial scrubbers:",
+        image: "/images/B260R60-Sweeper-00.webp",
+        imageAlt: "hospital medical facility floor cleaning equipment",
         items: [
           "Ultra-quiet operation: <60dB — quieter than a conversation. Must be usable in patient rooms, hallways, and ICUs without disturbing patients or staff.",
           "HEPA filtration: H13 or H14 HEPA filter on vacuum exhaust to capture 99.97% of particles ≥0.3μm. Prevents aerosolized pathogens from being spread by the vacuum system.",
@@ -1543,18 +2836,20 @@ const extraGuides: Guide[] = [
         content: "Tell us your facility type, floor area, and cleaning zones. We'll recommend the right medical-grade machine. Factory-direct pricing saves your facility 30-40% vs. medical equipment suppliers.",
       },
     ],
-    relatedProducts: ["K500BT", "A380"],
+    relatedProducts: [],
   },
   // ── Hotel & Hospitality Guide ──
   {
     slug: "hotel-hospitality-floor-cleaning-solutions",
-    title: "Hotel & Hospitality Floor Cleaning Equipment: Complete Solutions Guide",
+    title: "Hotel & Hospitality Floor Cleaning Equipment",
     description:
-      "Floor scrubbers and cleaning solutions for hotels, resorts, and hospitality. Ultra-quiet operation for guest areas, fast-drying for lobbies, compact for elevators. Factory-direct pricing.",
+      "Floor scrubbers and cleaning solutions for hotels, resorts, and hospitality. Ultra-quiet operation for guest areas, fast-drying for lobbies",
     category: "buying-guide",
     readTime: "6 min",
     difficulty: "beginner",
+    thumbnail: "/images/B260R60-Sweeper-00.webp",
     published: "2026-07-04",
+    relatedGuides: ["school-university-floor-cleaning-equipment", "floor-scrubber-church-event-venue", "hospital-medical-facility-floor-cleaning-equipment"],
     sections: [
       {
         heading: "The Unique Floor Cleaning Challenges of Hotels",
@@ -1563,6 +2858,8 @@ const extraGuides: Guide[] = [
       {
         heading: "Zone-by-Zone Equipment Guide",
         content: "One machine can't handle every hotel zone. Here's what works where:",
+        image: "/images/B260R60-Sweeper-02.webp",
+        imageAlt: "hotel hospitality floor cleaning solutions",
         items: [
           "Lobby & Atrium: Ultra-quiet scrubber (<60dB), fast-drying squeegee. Clean during low-traffic hours (2-5 AM). Marble-safe pads to avoid etching polished stone.",
           "Guest Corridors: Compact walk-behind (17-20 inch), low profile to fit under wall art and handrails. Clean mid-morning when guests are out.",
@@ -1585,18 +2882,20 @@ const extraGuides: Guide[] = [
         content: "Tell us about your property — number of rooms, floor types, and current cleaning schedule. We'll recommend the right equipment mix. Factory-direct pricing for hospitality groups.",
       },
     ],
-    relatedProducts: ["K500BT", "A380", "K660"],
+    relatedProducts: [],
   },
   // ── Import from China Guide ──
   {
     slug: "how-to-import-floor-scrubbers-from-china",
-    title: "How to Import Floor Scrubbers from China: Complete Guide for 2026",
+    title: "How to Import Floor Scrubbers from China (2026)",
     description:
-      "Step-by-step guide to importing floor scrubbers and parts from China. Factory verification, shipping methods, customs, duties, and payment terms. Save 30-50% buying factory-direct.",
+      "Step-by-step guide to importing floor scrubbers and parts from China. Factory verification, shipping methods, customs, duties, and payment terms.",
     category: "buying-guide",
     readTime: "10 min",
     difficulty: "intermediate",
+    thumbnail: "/images/B260R60-Sweeper-02.webp",
     published: "2026-07-04",
+    relatedGuides: ["how-to-buy-floor-scrubber-parts-from-china", "how-to-ship-floor-scrubber-internationally", "hotel-hospitality-floor-cleaning-solutions"],
     sections: [
       {
         heading: "Why Import Floor Scrubbers from China? The Numbers",
@@ -1605,6 +2904,8 @@ const extraGuides: Guide[] = [
       {
         heading: "Step 1: Find and Verify the Right Manufacturer",
         content: "Not all Chinese manufacturers are equal. Distinguish between real factories and trading companies:",
+        image: "/images/B260R60-Sweeper-03.webp",
+        imageAlt: "how to import floor scrubbers from china",
         items: [
           "Real factory indicators: They invite you to video-tour the production line. They have an export license you can verify. Their business license says 'manufacturing' — not 'trading'.",
           "Trading company red flags: They claim to 'represent multiple factories.' They can't show you a production line on video. Their prices are 15-25% higher because they add a middleman markup.",
@@ -1669,18 +2970,20 @@ const extraGuides: Guide[] = [
         content: "Ready to import? Tell us which models you're interested in, your country, and order quantity. We'll provide a detailed quote including shipping and estimated duties. Sample units available for evaluation before committing to volume orders.",
       },
     ],
-    relatedProducts: ["K500BT", "A650T", "A660T", "K660"],
+    relatedProducts: [],
   },
   // ── OEM vs Aftermarket Parts ──
   {
     slug: "oem-vs-aftermarket-floor-scrubber-parts",
-    title: "OEM vs Aftermarket Floor Scrubber Parts: The Truth About Quality and Cost",
+    title: "OEM vs Aftermarket Floor Scrubber Parts: Quality & Cost",
     description:
-      "Should you buy OEM or aftermarket floor scrubber parts? Compare cost, quality, warranty, and compatibility. Aftermarket parts save 30-60% — but here's when OEM is worth the premium.",
+      "Should you buy OEM or aftermarket floor scrubber parts? Compare cost, quality, warranty, and compatibility.",
     category: "comparison",
     readTime: "6 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101793279887.webp",
     published: "2026-07-04",
+    relatedGuides: ["top-10-floor-scrubber-parts-suppliers", "floor-scrubber-parts-guide-types-lifespan-cost", "lead-acid-vs-lithium-battery-scrubber"],
     sections: [
       {
         heading: "The OEM Parts Myth",
@@ -1737,19 +3040,20 @@ const extraGuides: Guide[] = [
         content: "Browse our catalog of 360+ replacement parts — all manufactured to OEM specifications at factory-direct prices. Send us your OEM part number for a same-day quote. Sample quantities available for quality verification.",
       },
     ],
-    videoId: "XZ6n0SreSd0",
     relatedProducts: [],
   },
   // ── School & University Guide ──
   {
     slug: "school-university-floor-cleaning-equipment",
-    title: "School & University Floor Cleaning Equipment: Complete K-12 & Campus Guide",
+    title: "School & University Floor Cleaning Equipment Guide",
     description:
-      "Floor scrubbers for schools, universities, and educational campuses. Quiet operation for classrooms, durable for hallways, compact for restrooms. Factory-direct pricing for education budgets.",
+      "Floor scrubbers for schools, universities, and educational campuses. Quiet operation for classrooms, durable for hallways, compact for restrooms.",
     category: "buying-guide",
     readTime: "6 min",
     difficulty: "beginner",
+    thumbnail: "/images/B260R60-Sweeper-03.webp",
     published: "2026-07-04",
+    relatedGuides: ["floor-scrubber-school-university-cleaning", "hotel-hospitality-floor-cleaning-solutions", "hospital-medical-facility-floor-cleaning-equipment"],
     sections: [
       {
         heading: "The School Cleaning Challenge",
@@ -1758,6 +3062,8 @@ const extraGuides: Guide[] = [
       {
         heading: "Zone-by-Zone Equipment Recommendations",
         content: "Different school zones need different approaches:",
+        image: "/images/B260R60-Sweeper-05.webp",
+        imageAlt: "school university floor cleaning equipment",
         items: [
           "Classrooms: Compact 17-inch scrubber. Ultra-quiet. Clean after hours. Tile and vinyl flooring. Quick-drying to avoid slip hazard for morning classes.",
           "Hallways & Corridors: 20-28 inch walk-behind or compact ride-on. Thousands of students × 180 school days = heavy traffic. Daily cleaning during off-hours essential.",
@@ -1776,18 +3082,20 @@ const extraGuides: Guide[] = [
         content: "Tell us about your campus — building count, floor types, and current cleaning staff. We'll recommend the right equipment mix for your budget. Education discounts available on bulk orders.",
       },
     ],
-    relatedProducts: ["K500BT", "A380", "K660"],
+    relatedProducts: [],
   },
   // ── Parking Garage Guide ──
   {
     slug: "parking-garage-floor-scrubber-guide",
-    title: "Parking Garage Floor Scrubber Guide: Heavy-Duty Cleaning for Multi-Level Garages",
+    title: "Parking Garage Floor Scrubber Guide | Heavy-Duty",
     description:
-      "Best floor scrubbers and sweepers for parking garages. Handle tire marks, oil, salt, and heavy debris. Outdoor-rated machines for covered and open-air structures. Factory-direct pricing.",
+      "Best floor scrubbers and sweepers for parking garages. Handle tire marks, oil, salt, and heavy debris.",
     category: "buying-guide",
     readTime: "5 min",
     difficulty: "intermediate",
+    thumbnail: "/images/B260R60-Sweeper-05.webp",
     published: "2026-07-04",
+    relatedGuides: ["floor-scrubber-logistics-distribution-center", "top-10-industrial-cleaning-equipment-manufacturers", "hotel-hospitality-floor-cleaning-solutions"],
     sections: [
       {
         heading: "Why Parking Garages Need Specialized Equipment",
@@ -1796,6 +3104,8 @@ const extraGuides: Guide[] = [
       {
         heading: "Sweeper-Scrubber Combos: The Best Solution for Garages",
         content: "A sweeper-scrubber combination machine sweeps debris first, then scrubs — all in one pass. This is the ideal tool for parking garages because pre-sweeping prevents gravel and debris from being ground into the concrete by the scrubbing brush. One machine, one pass, one operator.",
+        image: "/images/B260R60-Sweeper-06.webp",
+        imageAlt: "parking garage floor scrubber guide",
         items: [
           "Best for: Multi-level parking structures, open-air lots, airport parking, stadium parking",
           "Price range: $12,000-25,000 dealer; $8,000-16,000 factory-direct",
@@ -1811,18 +3121,20 @@ const extraGuides: Guide[] = [
         content: "Tell us about your facility — number of levels, total square footage, and whether it's open-air or covered. We'll recommend the right machine. Factory-direct pricing for parking operators.",
       },
     ],
-    relatedProducts: ["K660", "A660T"],
+    relatedProducts: [],
   },
   // ── Warehouse Equipment Guide ──
   {
     slug: "warehouse-cleaning-equipment-complete-guide",
-    title: "Warehouse Cleaning Equipment: Complete Setup Guide for Distribution Centers",
+    title: "Warehouse Cleaning Equipment: Setup Guide",
     description:
-      "Complete warehouse cleaning equipment guide. Ride-on scrubbers, sweepers, and sweeper-scrubber combos for distribution centers up to 500,000+ sq ft. Budgeting and fleet planning included.",
+      "Complete warehouse cleaning equipment guide. Ride-on scrubbers, sweepers, and sweeper-scrubber combos for distribution centers up to 500,000+ sq ft.",
     category: "buying-guide",
     readTime: "8 min",
     difficulty: "intermediate",
+    thumbnail: "/images/B260R60-Sweeper-06.webp",
     published: "2026-07-04",
+    relatedGuides: ["floor-scrubber-logistics-distribution-center", "top-10-industrial-cleaning-equipment-manufacturers", "hotel-hospitality-floor-cleaning-solutions"],
     sections: [
       {
         heading: "Why Warehouses Need More Than Just a Scrubber",
@@ -1831,6 +3143,8 @@ const extraGuides: Guide[] = [
       {
         heading: "Building Your Warehouse Cleaning Fleet",
         content: "Based on facility size, here's what a properly equipped warehouse needs:",
+        image: "/images/parts/floor-pad-floor-scrubber-cleaning-pad-for-commercial-use.webp",
+        imageAlt: "warehouse cleaning equipment complete guide",
         items: [
           "Under 50,000 sq ft: 1 ride-on scrubber (28-34 inch) + 1 walk-behind sweeper. Total: $12,000-20,000 factory-direct.",
           "50,000-150,000 sq ft: 1 full-size ride-on scrubber (34-42 inch) + 1 compact ride-on sweeper. Total: $20,000-35,000 factory-direct.",
@@ -1851,18 +3165,20 @@ const extraGuides: Guide[] = [
         content: "Tell us your square footage, number of shifts, and aisle configuration. We'll design a cleaning fleet with the right equipment mix. Fleet discounts available on 3+ machines. Factory-direct pricing.",
       },
     ],
-    relatedProducts: ["K660", "A660T", "RS32"],
+    relatedProducts: [],
   },
   // ── Maintenance Schedule ──
   {
     slug: "floor-scrubber-maintenance-checklist",
-    title: "Floor Scrubber Maintenance Checklist: Daily, Weekly & Monthly Schedule",
+    title: "Floor Scrubber Maintenance Checklist: Daily to Monthly",
     description:
-      "Complete floor scrubber maintenance checklist. Daily (10 min), weekly (30 min), and monthly (1 hour) schedules. Prevent 80% of breakdowns with regular maintenance. Printable checklist included.",
+      "Complete floor scrubber maintenance checklist. Daily (10 min), weekly (30 min), and monthly (1 hour) schedules.",
     category: "maintenance",
     readTime: "7 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101942138567.webp",
     published: "2026-07-04",
+    relatedGuides: ["how-to-extend-floor-scrubber-lifespan", "how-to-maintain-floor-scrubber-battery", "floor-scrubber-daily-operation-best-practices"],
     sections: [
       {
         heading: "Why Maintenance Matters More Than You Think",
@@ -1927,19 +3243,20 @@ const extraGuides: Guide[] = [
         content: "Order a pre-assembled maintenance kit with the most commonly replaced parts — squeegee blades, brushes, filters, and terminal protectors. Have them on your shelf before you need them.",
       },
     ],
-    videoId: "5XoAc6H1Kb0",
     relatedProducts: [],
   },
   // ── Case Study 1: Distribution Center ──
   {
     slug: "case-study-warehouse-distribution-center-floor-scrubbing",
-    title: "Case Study: How a 150,000 Sq Ft Distribution Center Cut Cleaning Costs by 55%",
+    title: "Case Study: Distribution Center Cuts Cleaning Cost 55%",
     description:
-      "Real customer case study: US distribution center replaced outsourced cleaning with in-house ride-on scrubbers. Saved $48,000/year, improved floor cleanliness, and achieved ROI in 4 months.",
+      "Real customer case study: US distribution center replaced outsourced cleaning with in-house ride-on scrubbers.",
     category: "buying-guide",
     readTime: "5 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101530132440.webp",
     published: "2026-07-04",
+    relatedGuides: ["case-study-supermarket-chain-floor-cleaning", "case-study-manufacturing-plant-floor-cleaning", "warehouse-cleaning-equipment-complete-guide"],
     sections: [
       {
         heading: "The Customer",
@@ -1948,6 +3265,8 @@ const extraGuides: Guide[] = [
       {
         heading: "The Problem",
         content: "The facility was paying an external cleaning company $72,000/year for nightly floor cleaning. Despite the cost, results were inconsistent — contractors changed frequently, equipment was poorly maintained, and the facility manager received complaints about tire marks and dust accumulation in pick zones. With the contract up for renewal with a 15% increase proposed, they explored bringing cleaning in-house.",
+        image: "/images/parts/Disc Brush Parts 2.webp",
+        imageAlt: "case study warehouse distribution center floor scrubbing",
       },
       {
         heading: "The Solution",
@@ -1969,18 +3288,20 @@ const extraGuides: Guide[] = [
         content: "For facilities over 50,000 sq ft, in-house cleaning with factory-direct equipment almost always beats outsourced services on both cost and quality. The breakeven point is typically 3-6 months.",
       },
     ],
-    relatedProducts: ["K660", "A660T"],
+    relatedProducts: [],
   },
   // ── Case Study 2: Manufacturing Plant ──
   {
     slug: "case-study-manufacturing-plant-floor-cleaning",
-    title: "Case Study: Automotive Parts Manufacturer Achieves ISO Cleanliness with Factory-Direct Scrubber",
+    title: "Case Study: Auto Plant Hits ISO Cleanliness with Scrubber",
     description:
-      "Real case study: Automotive parts plant switched from manual cleaning to ride-on scrubber with degreasing capability. Passed ISO audit, reduced slip incidents by 80%, operator cleans 3x faster.",
+      "Real case study: Automotive parts plant switched from manual cleaning to ride-on scrubber with degreasing capability.",
     category: "buying-guide",
     readTime: "5 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101534842595.webp",
     published: "2026-07-04",
+    relatedGuides: ["case-study-supermarket-chain-floor-cleaning", "case-study-warehouse-distribution-center-floor-scrubbing", "tennant-scrubber-parts-guide"],
     sections: [
       {
         heading: "The Customer",
@@ -1989,6 +3310,8 @@ const extraGuides: Guide[] = [
       {
         heading: "The Problem",
         content: "The plant relied on 2-3 workers with mops and degreaser to clean production areas between shifts. Each cleaning session took 3 hours and still left visible oil residue. During a supplier audit, the automaker flagged floor cleanliness as a concern. Additionally, the plant recorded 5 slip incidents in 6 months related to oily floors — a serious safety issue.",
+        image: "/images/parts/Roller Brush Parts.webp",
+        imageAlt: "case study manufacturing plant floor cleaning",
       },
       {
         heading: "The Solution",
@@ -2011,18 +3334,20 @@ const extraGuides: Guide[] = [
         content: "For manufacturing plants, a proper ride-on scrubber with degreasing capability isn't just about cleanliness — it's about safety, compliance, and passing supplier audits. The machine paid for itself in reduced labor and eliminated slip incidents within 6 months.",
       },
     ],
-    relatedProducts: ["K660", "A660T"],
+    relatedProducts: [],
   },
   // ── Case Study 3: Supermarket Chain ──
   {
     slug: "case-study-supermarket-chain-floor-cleaning",
-    title: "Case Study: Regional Supermarket Chain Switches to Factory-Direct Scrubbers — Saves $15,000 Per Store",
+    title: "Floor Scrubber Case Study: Supermarket Chain Saves $15K",
     description:
-      "Real case study: 12-store supermarket chain replaced dealer-purchased scrubbers with factory-direct models. Saved $180,000 fleet-wide over 3 years. Quieter operation for daytime cleaning.",
+      "Real case study: 12-store supermarket chain replaced dealer-purchased scrubbers with factory-direct models. Saved $180,000 fleet-wide over 3 years.",
     category: "buying-guide",
     readTime: "5 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101535080815.webp",
     published: "2026-07-04",
+    relatedGuides: ["case-study-warehouse-distribution-center-floor-scrubbing", "case-study-manufacturing-plant-floor-cleaning", "tennant-scrubber-parts-guide"],
     sections: [
       {
         heading: "The Customer",
@@ -2031,6 +3356,8 @@ const extraGuides: Guide[] = [
       {
         heading: "The Problem",
         content: "The chain had been purchasing scrubbers through a local dealer at $8,500-11,000 per machine. With 12 stores each needing one machine, plus replacements every 4-5 years, fleet costs were substantial. Parts prices were equally inflated — $140 for a squeegee set that should cost $45. The chain's operations director researched alternatives and discovered factory-direct sourcing.",
+        image: "/images/parts/Squeegee Rubber Parts.webp",
+        imageAlt: "case study supermarket chain floor cleaning",
       },
       {
         heading: "The Solution",
@@ -2052,18 +3379,20 @@ const extraGuides: Guide[] = [
         content: "For multi-site operations, the savings from factory-direct sourcing multiply dramatically. A $6,500 saving per machine × 12 stores = $78,000 that goes straight to the bottom line. Standardization across locations reduces training time and parts inventory complexity.",
       },
     ],
-    relatedProducts: ["K500BT", "A380"],
+    relatedProducts: [],
   },
   // ── ROI Calculator ──
   {
     slug: "floor-scrubber-roi-calculator-cost-savings",
-    title: "Floor Scrubber ROI Calculator: How Much Can You Save in 2026?",
+    title: "Floor Scrubber ROI Calculator: What Can You Save?",
     description:
-      "Calculate your floor scrubber ROI. Compare in-house cleaning vs outsourcing, factory-direct vs dealer pricing. Real savings examples for warehouses, factories, and retail. Typical payback in 4-12 months.",
+      "Calculate your floor scrubber ROI. Compare in-house cleaning vs outsourcing, factory-direct vs dealer pricing.",
     category: "buying-guide",
     readTime: "7 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101535303149.webp",
     published: "2026-07-10",
+    relatedGuides: ["how-much-does-floor-scrubber-cost", "floor-scrubber-financing-options"],
     sections: [
       {
         heading: "Why ROI Matters for Floor Scrubber Purchases",
@@ -2072,6 +3401,8 @@ const extraGuides: Guide[] = [
       {
         heading: "The ROI Formula",
         content: "Return on Investment for a floor scrubber is calculated as: ROI = (Annual Savings − Annual Machine Cost) ÷ Purchase Price × 100%. The key is identifying all savings — not just labor, but also chemical reduction, water savings, slip-and-fall risk reduction, and improved cleanliness scores.",
+        image: "/images/parts/Pad Driver Parts.webp",
+        imageAlt: "floor scrubber roi calculator cost savings",
         items: [
           "Annual Savings = Labor saved + Chemical saved + Outsourcing eliminated + Risk reduction",
           "Annual Machine Cost = Financing payment + Parts + Maintenance + Battery amortization",
@@ -2143,18 +3474,20 @@ const extraGuides: Guide[] = [
         content: "Tell us your facility size, current cleaning method, and labor costs. We'll calculate your personalized ROI with a factory-direct machine — typically 100-400% annual returns with payback under 12 months. No obligation, just math.",
       },
     ],
-    relatedProducts: ["K500BT", "A660T", "K660"],
+    relatedProducts: [],
   },
   // ── Week 5 Articles ──
   {
     slug: "how-to-extend-floor-scrubber-lifespan",
-    title: "How to Extend Your Floor Scrubber Lifespan: 10 Proven Maintenance Tips",
+    title: "How to Extend Your Floor Scrubber Lifespan: 10 Tips",
     description:
-      "Extend your floor scrubber lifespan from 5 to 10+ years. Daily, weekly, and monthly maintenance tips that prevent 80% of breakdowns. Factory-direct parts save on upkeep.",
+      "Extend your floor scrubber lifespan from 5 to 10+ years. Daily, weekly, and monthly maintenance tips that prevent 80% of breakdowns.",
     category: "maintenance",
     readTime: "6 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101940364715.webp",
     published: "2026-07-11",
+    relatedGuides: ["floor-scrubber-maintenance-checklist", "floor-scrubber-disc-brush-replacement-tips", "floor-scrubber-parts-guide-types-lifespan-cost"],
     sections: [
       {
         heading: "Why Most Floor Scrubbers Die Early",
@@ -2194,13 +3527,15 @@ const extraGuides: Guide[] = [
   },
   {
     slug: "floor-scrubber-safety-guide",
-    title: "Floor Scrubber Safety: OSHA Compliance & Best Practices for 2026",
+    title: "Floor Scrubber Safety: OSHA Compliance Guide",
     description:
-      "Complete floor scrubber safety guide. OSHA compliance, operator training checklist, slip-and-fall prevention, chemical handling, and battery safety. Reduce workplace incidents.",
+      "Complete floor scrubber safety guide. OSHA compliance, operator training checklist, slip-and-fall prevention, chemical handling, and battery safety.",
     category: "maintenance",
     readTime: "6 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/102004841157.webp",
     published: "2026-07-11",
+    relatedGuides: ["oem-vs-aftermarket-floor-scrubber-parts", "tennant-scrubber-parts-guide", "disc-brush-vs-roller-brush-scrubber"],
     sections: [
       {
         heading: "The Hidden Danger of Floor Cleaning",
@@ -2233,20 +3568,20 @@ const extraGuides: Guide[] = [
         content: "All Aikerui scrubbers meet CE and ISO 9001 safety standards. Factory-direct pricing with full documentation for your safety compliance records. Quote within 24 hours.",
       },
     ],
-    videoId: "3a9K54lhhVc",
-    videoId: "-vnsEuzpTAg",
     relatedProducts: [],
   },
   // ── Top 10 Parts Suppliers ──
   {
     slug: "top-10-floor-scrubber-parts-suppliers",
-    title: "Top 10 Floor Scrubber Parts Suppliers in 2026 — Compare OEM & Aftermarket",
+    title: "Top 10 Floor Scrubber Parts Suppliers 2026",
     description:
-      "Compare the top 10 floor scrubber parts suppliers. OEM vs aftermarket pricing, quality, compatibility, and shipping. Find the best supplier for disc brushes, squeegees, and consumables.",
+      "Compare the top 10 floor scrubber parts suppliers. OEM vs aftermarket pricing, quality, compatibility, and shipping.",
     category: "comparison",
     readTime: "8 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101535642567.webp",
     published: "2026-07-13",
+    relatedGuides: ["oem-vs-aftermarket-floor-scrubber-parts", "tennant-scrubber-parts-guide", "top-10-industrial-floor-scrubber-suppliers"],
     sections: [
       {
         heading: "Why Your Parts Supplier Matters",
@@ -2255,6 +3590,8 @@ const extraGuides: Guide[] = [
       {
         heading: "How We Evaluated Suppliers",
         content: "We scored each supplier on five criteria: pricing (factory-direct vs multi-tier), quality (materials and certifications), brand compatibility (how many OEM brands they cover), inventory depth (in-stock SKUs), and shipping/logistics (global reach and speed).",
+        image: "/images/parts/Disc Brush Parts 3.webp",
+        imageAlt: "top 10 floor scrubber parts suppliers",
       },
       {
         heading: "1. Aikerui (China) — Best Overall Value",
@@ -2316,13 +3653,15 @@ const extraGuides: Guide[] = [
   // ── Financing Guide ──
   {
     slug: "floor-scrubber-financing-options",
-    title: "Floor Scrubber Financing: How to Pay for Your Equipment in 2026",
+    title: "Floor Scrubber Financing: How to Pay in 2026",
     description:
-      "Compare floor scrubber financing options: leasing, equipment loans, 30/70 payment terms, and factory-direct savings. Calculate monthly payments and find the best option for your budget.",
+      "Compare floor scrubber financing options: leasing, equipment loans, 30/70 payment terms, and factory-direct savings.",
     category: "buying-guide",
     readTime: "5 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101536037905.webp",
     published: "2026-07-14",
+    relatedGuides: ["top-floor-scrubber-brands-buyers-guide", "floor-scrubber-roi-calculator-cost-savings", "floor-scrubber-gym-fitness-center"],
     sections: [
       {
         heading: "Why Financing Makes Sense for Floor Scrubbers",
@@ -2331,6 +3670,8 @@ const extraGuides: Guide[] = [
       {
         heading: "Option 1: Equipment Leasing",
         content: "Monthly payments, no large upfront cost. At the end of the lease, you can buy the machine for a residual amount, return it, or upgrade to a newer model.",
+        image: "/images/B460-Scrubber-04.webp",
+        imageAlt: "floor scrubber financing options",
         items: [
           "Typical terms: 24-60 months, 5-15% APR",
           "Monthly payment for $10,000 machine: $200-350/month",
@@ -2385,18 +3726,20 @@ const extraGuides: Guide[] = [
         content: "Tell us which machine you're interested in and your preferred payment method. We'll provide a detailed quote with all available payment terms. No obligation, no credit check for quote requests.",
       },
     ],
-    relatedProducts: ["K500BT", "K660"],
+    relatedProducts: [],
   },
   // ── Used vs New ──
   {
     slug: "used-vs-new-floor-scrubber",
-    title: "Used vs New Floor Scrubber: When Buying Used Actually Saves Money (2026)",
+    title: "Used vs New Floor Scrubber: When Is Used Worth It?",
     description:
       "Used or new floor scrubber? Compare real costs, hidden risks, and when a used machine makes sense. Hour meter guide, inspection checklist, and price comparison.",
     category: "comparison",
     readTime: "6 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101536061230.webp",
     published: "2026-07-14",
+    relatedGuides: ["how-to-choose-a-floor-scrubber", "how-much-does-floor-scrubber-cost", "industrial-floor-scrubber-buying-guide"],
     sections: [
       {
         heading: "The Allure of a Used Floor Scrubber",
@@ -2405,6 +3748,8 @@ const extraGuides: Guide[] = [
       {
         heading: "New Floor Scrubber: What You're Really Paying For",
         content: "A new machine gives you: full warranty (1-3 years), zero-hour components, latest battery technology, factory support, and predictable maintenance costs for 3-5 years. Factory-direct pricing makes new machines more accessible than most buyers realize.",
+        image: "/images/A50-Scrubber-03.webp",
+        imageAlt: "used vs new floor scrubber",
         items: [
           "Walk-behind new: $1,800-7,500 factory-direct (dealer: $3,000-12,000)",
           "Ride-on new: $6,000-24,000 factory-direct (dealer: $9,000-35,000)",
@@ -2441,13 +3786,15 @@ const extraGuides: Guide[] = [
   // ── Gym & Fitness ──
   {
     slug: "floor-scrubber-gym-fitness-center",
-    title: "Floor Scrubber for Gyms & Fitness Centers: Keep Your Facility Spotless",
+    title: "Floor Scrubber for Gyms & Fitness Centers",
     description:
-      "Best floor scrubbers for gyms, fitness centers, and health clubs. Clean rubber flooring, locker rooms, and studio spaces. Compact walk-behind models for tight areas. Factory-direct pricing.",
+      "Best floor scrubbers for gyms, fitness centers, and health clubs. Clean rubber flooring, locker rooms, and studio spaces.",
     category: "buying-guide",
     readTime: "5 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101539483146.webp",
     published: "2026-07-14",
+    relatedGuides: ["hotel-hospitality-floor-cleaning-solutions", "floor-scrubber-school-university-cleaning", "floor-scrubber-gym-fitness-center"],
     sections: [
       {
         heading: "Why Gym Floors Need Special Equipment",
@@ -2456,6 +3803,8 @@ const extraGuides: Guide[] = [
       {
         heading: "Zone-by-Zone Gym Cleaning",
         content: "Different gym zones need different approaches:",
+        image: "/images/B460-Scrubber-01.webp",
+        imageAlt: "floor scrubber gym fitness center",
         items: [
           "Weight Room (rubber flooring): Compact walk-behind, 17-20 inch. Daily cleaning essential. Soft brush to avoid damaging rubber mats.",
           "Cardio Area (rubber/tile): Same machine, different pad. Fast-drying critical — members walk here constantly.",
@@ -2473,74 +3822,21 @@ const extraGuides: Guide[] = [
         content: "Tell us your facility size and floor types. We'll recommend the right machine at factory-direct pricing. Most gym orders ship within 48 hours.",
       },
     ],
-    relatedProducts: ["K500BT", "A380"],
+    relatedProducts: [],
   },
   // ── International Shipping ──
-  {
-    slug: "how-to-ship-floor-scrubber-internationally",
-    title: "How to Ship a Floor Scrubber Internationally: Complete Guide for 2026",
-    description:
-      "Complete guide to international floor scrubber shipping. Sea freight vs air freight, customs documentation, import duties by country, packaging requirements, and cost estimates.",
-    category: "buying-guide",
-    readTime: "6 min",
-    difficulty: "intermediate",
-    published: "2026-07-14",
-    sections: [
-      {
-        heading: "The Logistics of Moving Heavy Equipment",
-        content: "A ride-on floor scrubber weighs 400-800 kg and is the size of a small car. Shipping it from China to the US, Europe, or Middle East requires proper planning. This guide covers everything from packaging to customs clearance.",
-      },
-      {
-        heading: "Step 1: Choose Your Shipping Method",
-        content: "Three shipping methods, each for different scenarios:",
-        items: [
-          "Sea Freight FCL (Full Container): 2-8 machines per 20ft container. $2,000-4,000 to US/Europe. 25-40 days transit. Best value for 3+ machines.",
-          "Sea Freight LCL (Shared Container): 1-2 machines. $500-1,000 per machine. 30-45 days transit. Best for single units.",
-          "Air Freight: $3,000-8,000 per ride-on machine. 3-7 days transit. Only worth it for urgent replacements or sample units.",
-          "Express (DHL/FedEx): For parts only. $50-200 per shipment. 3-5 days.",
-        ],
-      },
-      {
-        heading: "Step 2: Packaging Requirements",
-        content: "All Aikerui machines are export-packed in plywood crates with foam protection. Crates are fumigated (ISPM 15 compliant) for international shipping. Each crate includes a desiccant pack to prevent moisture damage during sea transit.",
-      },
-      {
-        heading: "Step 3: Customs Documentation",
-        content: "You need: commercial invoice, packing list, bill of lading (sea) or air waybill (air), certificate of origin (reduces duties in some countries), and CE/ISO certificates. We provide all documentation with every shipment.",
-      },
-      {
-        heading: "Step 4: Import Duties by Country",
-        content: "Floor scrubbers fall under HS code 8479.89. Duties vary:",
-        items: [
-          "USA: 0-2.5%. No special tariffs on cleaning equipment as of 2026.",
-          "EU: 1.7%. CE documentation required.",
-          "UK: 0-2%. UKCA marking may be needed.",
-          "Australia: 0-5%. RCM compliance for electrical safety.",
-          "Middle East (GCC): 5%. SASO/SABER for Saudi Arabia.",
-          "Always confirm with your local customs broker — rates change.",
-        ],
-      },
-      {
-        heading: "Step 5: Receiving Your Machine",
-        content: "When the container arrives at your port, you need a customs broker to clear it. Budget $200-500 for broker fees. After customs clearance, arrange local trucking to your facility. Total door-to-door time from factory to your facility: typically 35-55 days for sea freight.",
-      },
-      {
-        heading: "Get Your Shipping Quote",
-        content: "Tell us which machine, your port, and quantity. We'll provide a detailed CIF (cost, insurance, freight) quote including all shipping and documentation costs. Sample units available for evaluation before container orders.",
-      },
-    ],
-    relatedProducts: ["K500BT", "K660"],
-  },
   // ── Church & Venue ──
   {
     slug: "floor-scrubber-church-event-venue",
-    title: "Floor Scrubber for Churches & Event Venues: Quiet, Compact Cleaning Solutions",
+    title: "Floor Scrubber for Churches & Event Venues",
     description:
-      "Best floor scrubbers for churches, wedding venues, banquet halls, and event spaces. Ultra-quiet operation, compact for pew areas, fast-drying for quick turnaround between events.",
+      "Best floor scrubbers for churches, wedding venues, banquet halls, and event spaces. Ultra-quiet operation, compact for pew areas",
     category: "buying-guide",
     readTime: "5 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101539693092.webp",
     published: "2026-07-14",
+    relatedGuides: ["top-10-floor-scrubber-manufacturers-2026", "top-floor-scrubber-brands-buyers-guide", "warehouse-cleaning-equipment-complete-guide"],
     sections: [
       {
         heading: "The Unique Cleaning Challenge of Churches & Event Venues",
@@ -2549,6 +3845,8 @@ const extraGuides: Guide[] = [
       {
         heading: "Recommended Machine",
         content: "A compact 17-20 inch walk-behind scrubber. Ultra-quiet (<60dB). Lightweight for multi-floor buildings without elevators. Quick-drying squeegee for fast turnaround. Factory-direct price: $1,800-3,200.",
+        image: "/images/A1280-Sweeper-01.webp",
+        imageAlt: "floor scrubber church event venue",
         items: [
           "Sanctuary & Chapel: Polished wood/stone — soft pads only, ultra-quiet mode.",
           "Fellowship Hall & Banquet: Tile/vinyl — fast cleaning between events, quick-drying.",
@@ -2565,18 +3863,230 @@ const extraGuides: Guide[] = [
         content: "Tell us about your facility — floor types, square footage, and cleaning frequency. We'll recommend the right machine. Factory-direct pricing for churches and non-profit organizations.",
       },
     ],
-    relatedProducts: ["K500BT", "A380"],
+    relatedProducts: [],
   },
   // ── Top 10 Industrial Cleaning Equipment Manufacturers ──
   {
-    slug: "top-10-industrial-cleaning-equipment-manufacturers",
-    title: "Top 10 Industrial Cleaning Equipment Manufacturers in 2026 — Complete Guide",
+    slug: "top-10-industrial-floor-scrubber-suppliers",
+    title: "Top 10 Industrial Floor Scrubber Suppliers 2026",
     description:
-      "Top 10 industrial cleaning equipment manufacturers compared. Floor scrubbers, sweepers, and parts from Tennant, Nilfisk, Karcher, Aikerui and more. Pricing, quality, and global reach comparison.",
+      "Top 10 industrial floor scrubber suppliers compared by supply model, price and lead time. Factory-direct vs dealer network, plus a supplier vetting checklist.",
+    category: "comparison",
+    readTime: "9 min",
+    difficulty: "beginner",
+    thumbnail: "/images/RIDE-ON-A660.webp",
+    published: "2026-09-11",
+    relatedGuides: ["top-10-floor-scrubber-manufacturers-2026", "top-10-industrial-cleaning-equipment-manufacturers", "how-to-assess-floor-scrubber-manufacturer"],
+    sections: [
+      {
+        heading: "The 2026 Floor Scrubber Supply Landscape",
+        content:
+          "Where you buy a floor scrubber now matters as much as which machine you buy. Supply chains rebuilt after 2024 shifted buyers away from long dealer chains. Factory-direct suppliers moved from a niche option to a mainstream one. The same machine specification can now cost 40-60% more depending on which layer of the supply chain you buy from.\n\nThis 2026 ranking compares the top 10 floor scrubber manufacturers and suppliers. It looks at supply model, pricing, lead time and spare-parts access rather than specs alone. A commercial floor scrubber for a retail floor and a heavier industrial floor scrubber both need a supply route that fits the budget. The same applies to industrial floor sweepers and carpet extractors.",
+      },
+      {
+        heading: "Ranking Methodology",
+        content:
+          "We assessed suppliers on five factors. Supply model, price level relative to market, lead time, spare-parts access after purchase, and export documentation support. Supply model asks one question: does the supplier own the factory or resell? Spare-parts access covers brushes, squeegee blades and other floor scrubber parts that wear out.\n\nThe list includes both Western brand networks and Chinese factory-direct suppliers. Your budget, volume and service expectations decide which one fits.",
+        image: "/images/RIDE-ON-A650R.webp",
+        imageAlt: "top industrial floor scrubber suppliers 2026",
+      },
+      {
+        heading: "1. Tennant (USA) — Largest Dealer Network",
+        content:
+          "The benchmark for after-sales coverage in North America. Authorized dealers handle all sales and service. That gives fast local response, but it also adds two layers of margin.\n\nec-H2O technology reduces chemical use. Regional stock keeps parts available within 24-48 hours.",
+        items: [
+          "Founded: 1870 | HQ: Minneapolis, USA (Tennant)",
+          "Supply model: Authorized dealer network (no factory-direct sales)",
+          "Price level: $$$$ premium",
+          "Spare parts: Regional stock, 24-48h availability",
+          "Best for: Enterprises needing nationwide service contracts",
+        ],
+      },
+      {
+        heading: "2. Kärcher (Germany) — Widest Global Distribution",
+        content:
+          "The largest cleaning equipment group by revenue, which translates into the widest distributor footprint worldwide. Parts availability is rarely a problem because distribution depth is unmatched. Newer BD and BR models have drawn mixed user reviews, so specify carefully and ask for a demo unit.",
+        items: [
+          "Founded: 1935 | HQ: Winnenden, Germany",
+          "Supply model: Distributor and retail network",
+          "Price level: $$$$ premium",
+          "Spare parts: Very broad global availability",
+          "Best for: Buyers who prioritize local parts access over price",
+        ],
+      },
+      {
+        heading: "3. Nilfisk / Advance (Denmark) — Strong in Europe and North America",
+        content:
+          "A European group with a genuinely dual-continent presence. Commercial contracts specify the SC series widely. Build quality is reliable, pricing is European-premium, and factory-direct options are limited, so expect dealer pricing.",
+        items: [
+          "Founded: 1906 | HQ: Copenhagen, Denmark",
+          "Supply model: Dealer and distributor network",
+          "Price level: $$$$ premium",
+          "Spare parts: Strong in EU and NA",
+          "Best for: global facilities standardizing on one brand",
+        ],
+      },
+      {
+        heading: "4. Hako (Germany) — Industrial and Municipal Specialist",
+        content:
+          "Focused on industrial and municipal cleaning rather than retail. Operators know Scrubmaster machines for durability in harsh environments. Distribution is strongest in Europe and thinner in Asia and North America, which affects service speed outside the EU.",
+        items: [
+          "Founded: 1948 | HQ: Bad Oldesloe, Germany",
+          "Supply model: Regional dealer network",
+          "Price level: $$$$ premium",
+          "Spare parts: Excellent in EU, limited elsewhere",
+          "Best for: European industrial and municipal buyers",
+        ],
+      },
+      {
+        heading: "5. Comac (Italy) — Ergonomic Ride-On Specialist",
+        content:
+          "Italian manufacturer with a strong ride-on range and good operator ergonomics. Well established in Europe and the Middle East. Competitive within the premium tier, though the dealer network is narrower than the German and American giants.",
+        items: [
+          "Founded: 1976 | HQ: Verona, Italy",
+          "Supply model: Dealer network, some OEM",
+          "Price level: $$$ mid-premium",
+          "Spare parts: Good in EU and MENA",
+          "Best for: European and Middle Eastern facilities",
+        ],
+      },
+      {
+        heading: "6. Aikerui (China) — Factory-Direct Supplier",
+        content:
+          "Aikerui owns and operates its own 10,000+ square metre factory in Anqing, China. That makes it an industrial floor scrubber manufacturer selling direct, not a trading company reselling someone else's machines. Removing two layers of margin is what puts pricing 30-50% below Western brands.\n\nBefore ordering you can ask for a live factory video or an independent inspection. You can also request a floor scrubber quote at aikeruiclean.com/floor-scrubber-parts-quote.",
+        items: [
+          "Founded: 2008 | HQ: Anqing, China",
+          "Supply model: Factory-direct — owns the production line",
+          "Price level: $ (30-50% below Western brands)",
+          "Typical pricing: walk-behind $1,800-7,500 | ride-on $6,000-24,000",
+          "Range: 30+ machine models, 360+ spare parts made on the same production line",
+          "Certification: CE, ISO 9001 | Exports to 50+ countries, UAE hub for Middle East and Africa",
+          "MOQ: 1 unit for sample, 5+ units for wholesale pricing",
+          "Lead time: 15-30 days production, plus shipping",
+          "Spare parts: Manufactured in-house, available long term",
+          "Best for: Distributors, rental fleets and facility buyers wanting factory pricing",
+        ],
+      },
+      {
+        heading: "7. Fimap (Italy) — Expanding International Distributor Base",
+        content:
+          "A broad range spanning compact and industrial machines, with a rapidly growing dealer footprint. Competitive European pricing and a good mid-market option, though brand recognition outside Europe is still building.",
+        items: [
+          "Founded: 1977 | HQ: Verona, Italy",
+          "Supply model: Dealer and distributor network",
+          "Price level: $$$ mid-premium",
+          "Spare parts: Good in EU, developing elsewhere",
+          "Best for: European and North African facilities",
+        ],
+      },
+      {
+        heading: "8. IPC Gansow (Italy) — Part of a Larger Cleaning Group",
+        content:
+          "Backed by the wider IPC group with several cleaning brands under one roof. CT series ride-on scrubbers are common in European contracts. A solid mid-range choice where dealer coverage exists.",
+        items: [
+          "Founded: 1969 | HQ: Milan, Italy",
+          "Supply model: Dealer network",
+          "Price level: $$$ mid-premium",
+          "Spare parts: Solid in EU",
+          "Best for: European mid-market buyers",
+        ],
+      },
+      {
+        heading: "9. Gaomei (China) — Budget Factory Supplier",
+        content:
+          "A Chinese manufacturer with growing export volume and aggressive pricing. Build quality sits a step below the top tier. That suits price-sensitive markets and buyers who accept a shorter service life for a lower capital cost.",
+        items: [
+          "Founded: 2005 | HQ: Guangzhou, China",
+          "Supply model: Factory-direct and export trading",
+          "Price level: $ budget",
+          "Spare parts: Available, but fewer long-term guarantees",
+          "Best for: Price-sensitive markets and developing regions",
+        ],
+      },
+      {
+        heading: "10. NSS Enterprises (USA) — No-Frills American Machines",
+        content:
+          "Straightforward, durable machines with low maintenance requirements. Popular in US schools and hospitals where simplicity matters more than feature count. The product range is narrower than the major brands.",
+        items: [
+          "Founded: 1911 | HQ: Toledo, Ohio, USA",
+          "Supply model: Authorized dealer network",
+          "Price level: $$ mid-range",
+          "Spare parts: Good in North America",
+          "Best for: US schools, hospitals and commercial facilities",
+        ],
+      },
+      {
+        heading: "The Real Cost of Buying Through a Middleman",
+        content:
+          "A ride-on scrubber specified at 40 inch working width and 120 L tanks costs roughly $18,000-35,000 through a brand dealer. The same specification from a factory-direct supplier costs roughly $9,000-18,000. The gap is not quality, it is margin: importers and dealers each add a layer.\n\nFor a fleet of three machines the difference typically runs $25,000-50,000. Service reach is the trade-off, and it matters most for commercial floor scrubbers running multi-shift schedules. Buy factory-direct where volume justifies it. Keep a local dealer relationship for emergency parts.",
+      },
+      {
+        heading: "Vetting Checklist Before You Order",
+        content:
+          "Whether you buy Western or factory-direct, these checks separate a real supplier from a reseller. Ask for each one in writing before you pay a deposit.",
+        items: [
+          "Factory ownership. Ask for the business licence and a live video walkthrough of the production line, not a stock photo.",
+          "Certification: request the CE certificate and ISO 9001 document with your company name on the invoice.",
+          "Existing export record: ask which countries they ship to and request a recent bill of lading as proof.",
+          "Spare parts commitment: confirm that consumables and brushes will be available in three years, and at what price.",
+          "Payment terms: be cautious of suppliers demanding 100% advance on a first order. 30/70 or letter of credit is normal for established factories.",
+          "Sample unit: order one machine before committing to a fleet. A real factory will support this.",
+        ],
+      },
+      {
+        heading: "Get Quotes from Three Suppliers",
+        content:
+          "The single most effective way to control equipment cost is to compare. Request quotes from at least three suppliers, and make sure at least one is factory-direct. Compare the same specification, not the same headline price: working width, tank capacity, battery type and brush configuration. Aikerui quotes factory-direct pricing with fit confirmation, usually within 24 hours.",
+      },
+      {
+        heading: "What is the difference between a floor scrubber manufacturer and a supplier?",
+        content:
+          "A manufacturer owns the production line and builds the machines. A supplier may be that manufacturer selling direct, or a trading company that buys from a factory and resells. Trading companies add a margin layer without adding manufacturing capability. Confirm who actually owns the factory before you buy.",
+      },
+      {
+        heading: "How long does delivery take from a Chinese floor scrubber supplier?",
+        content:
+          "Production for stock specifications typically takes 15-30 days after deposit. Sea freight adds 20-40 days depending on destination, while air freight takes 5-10 days at a much higher cost. A UAE hub often serves Middle East and Africa buyers faster.",
+      },
+      {
+        heading: "What MOQ should I expect when buying floor scrubbers direct?",
+        content:
+          "Many factory-direct suppliers accept one unit as a sample and apply wholesale pricing from five units upward. Custom branding and non-standard specifications push the minimum order higher, often to 20-50 units. Tooling and labelling change per production run.",
+      },
+      {
+        heading: "Do factory-direct suppliers offer OEM branding on floor scrubbers?",
+        content:
+          "Yes, and it is one of the main reasons distributors buy direct. A factory can apply your brand, colour scheme and specification sheet, and supply machines on the same line as its own models. Ask for the branding process in writing, including who owns the tooling.",
+      },
+      {
+        heading: "How can I verify that a supplier is a real factory?",
+        content:
+          "Request the business licence to see the registered scope of business. Ask for a live video walkthrough rather than a stock photo. Check for a bill of lading from previous exports. Confirm they welcome third-party inspection. A real factory will agree to all four. A reseller will usually deflect at least one.",
+      },
+      {
+        heading: "Is a factory-direct floor scrubber lower quality than a brand machine?",
+        content:
+          "Not inherently. Quality depends on component choice and production control, not on the country of origin or the sales channel. Service reach is where they differ. Brand networks offer faster local support. Factory-direct suppliers offer lower cost and more configuration flexibility. Many factory-direct machines use the same imported pumps, motors and batteries as brand machines.",
+      },
+      {
+        heading: "How do I find reliable floor scrubber suppliers in China?",
+        content:
+          "Start by separating factories from trading companies. Ask for the business licence so you can check the registered scope of business.\n\nRequest a live video walkthrough of the production line rather than a stock photo. Ask for a bill of lading from a recent export shipment. Suppliers in China that genuinely own their factory will provide all three without hesitation.\n\nThat is how to verify floor scrubber manufacturer claims in practice. Compare the full machine range at aikeruiclean.com/floor-scrubbers.",
+      },
+    ],
+    relatedProducts: [],
+  },
+  {
+    slug: "top-10-industrial-cleaning-equipment-manufacturers",
+    title: "Top 10 Industrial Cleaning Equipment Manufacturers 2026",
+    description:
+      "Top 10 industrial cleaning equipment manufacturers compared. Floor scrubbers, sweepers, and parts from Tennant, Nilfisk, Karcher, Aikerui and more.",
     category: "comparison",
     readTime: "8 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101539965819.webp",
     published: "2026-07-14",
+    relatedGuides: ["top-10-industrial-floor-scrubber-suppliers", "top-10-floor-scrubber-manufacturers-2026", "top-floor-scrubber-brands-buyers-guide", "warehouse-cleaning-equipment-complete-guide"],
     sections: [
       {
         heading: "The Industrial Cleaning Equipment Landscape in 2026",
@@ -2585,12 +4095,14 @@ const extraGuides: Guide[] = [
       {
         heading: "1. Tennant (USA) — Industry Leader",
         content: "World's largest dedicated manufacturer. T7/T12/T17 ride-on scrubbers are the gold standard. Premium pricing ($15,000-45,000). Best dealer network globally. ec-H2O water electrolysis technology eliminates chemical use.",
+        image: "/images/A1280-Sweeper-03.webp",
+        imageAlt: "top 10 industrial cleaning equipment manufacturers",
         items: ["Founded: 1870 | HQ: Minneapolis, USA","Price: $$$$", "Quality: ★★★★★", "Best for: Large corporations with service contracts"],
       },
       {
         heading: "2. Nilfisk (Denmark) — European Powerhouse",
         content: "Strongest in Europe with growing North American presence. SC series scrubbers are widely used. Excellent build quality. Premium European pricing.",
-        items: ["Founded: 1906 | HQ: Copenhagen","Price: $$$$", "Quality: ★★★★★", "Best for: European and multinational operations"],
+        items: ["Founded: 1906 | HQ: Copenhagen","Price: $$$$", "Quality: ★★★★★", "Best for: European and global operations"],
       },
       {
         heading: "3. Kärcher (Germany) — Largest by Revenue",
@@ -2633,6 +4145,19 @@ const extraGuides: Guide[] = [
         items: ["Founded: 2005 | HQ: Guangzhou, China","Price: $", "Quality: ★★★☆☆", "Best for: Asian, African, and Middle Eastern budget buyers"],
       },
       {
+        heading: "US & Regional Players Worth Knowing",
+        content:
+          "Beyond the global brands above, several regional manufacturers and dealers matter if you buy in North America, where domestic-manufacturing claims and local service networks carry real weight in tenders. These are the names that show up most often in US SERPs for industrial cleaning equipment.",
+        items: [
+          "Factory Cat (USA) — builds scrubbers and sweepers domestically; sells on American-made manufacturing and serviceability, which helps in public-sector and municipal tenders.",
+          "Goodway Technologies (USA) — industrial cleaning equipment with a strong service and rental footprint across North America.",
+          "Intelligent Design & Manufacturing (USA) — positions its X-Scrub series on delivering fresh water rather than recirculating dirty water, a differentiator worth understanding when comparing specifications.",
+          "Thesweeper.com (USA) — dealer channel for commercial scrubbers, including certified pre-owned machines for buyers with tight capital budgets.",
+          "DENIOS (Germany / USA) — industrial cleaning and work-safety equipment, strong in food processing and chemical plants with FDA-compliant, metal-detectable tooling.",
+          "Robotics entrants — autonomous scrubbers and sweepers are entering the category. Treat early autonomy claims carefully and verify navigation performance on your own floor plan before committing.",
+        ],
+      },
+      {
         heading: "The Price Reality",
         content: "A ride-on scrubber from Tennant costs $18,000-35,000 through a dealer. The same specifications from a factory-direct manufacturer cost $9,000-18,000. The difference isn't quality — it's the dealer markup. For buyers ordering 3+ machines, factory-direct sourcing saves $25,000-50,000+.",
       },
@@ -2641,18 +4166,20 @@ const extraGuides: Guide[] = [
         content: "We recommend getting quotes from at least 3 manufacturers before buying. Include one factory-direct option in your comparison. You'll be surprised at the price difference for the same specifications.",
       },
     ],
-    relatedProducts: ["K500BT", "A660T", "K660"],
+    relatedProducts: [],
   },
   // ── Niche: Dust/Sand/Soil environments ──
   {
     slug: "floor-scrubber-dust-sand-industrial-cleaning",
-    title: "Floor Scrubber for Sand, Dust & Heavy Soil: Industrial Cleaning Solutions",
+    title: "Floor Scrubber for Sand, Dust & Heavy Soil",
     description:
-      "Best floor scrubbers for dusty, sandy, and heavy-soil industrial environments. Disc brush vs roller brush for sand, dust-proof components, and high-pressure scrubbing for stubborn debris.",
+      "Best floor scrubbers for dusty, sandy, and heavy-soil industrial environments. Disc brush vs roller brush for sand, dust-proof components",
     category: "buying-guide",
     readTime: "5 min",
     difficulty: "intermediate",
+    thumbnail: "/images/parts/101540180217.webp",
     published: "2026-07-14",
+    relatedGuides: ["floor-scrubber-oil-grease-factory-cleaning", "parking-garage-floor-scrubber-guide", "floor-scrubber-construction-site-cleaning"],
     sections: [
       {
         heading: "The Sand & Dust Challenge",
@@ -2661,6 +4188,8 @@ const extraGuides: Guide[] = [
       {
         heading: "Why Standard Scrubbers Fail in Sandy Environments",
         content: "Sand and abrasive dust cause four specific problems: (1) premature brush wear — nylon bristles can wear out in weeks instead of months, (2) squeegee blade scoring — fine particles scratch rubber blades, causing streak marks, (3) filter clogging — dust overwhelms standard vacuum filters, and (4) motor damage — fine dust enters unsealed motors and bearings.",
+        image: "/images/parts/Sweeper Side Brush Parts.webp",
+        imageAlt: "floor scrubber dust sand industrial cleaning",
       },
       {
         heading: "Key Features for Sand & Dust Environments",
@@ -2699,13 +4228,15 @@ const extraGuides: Guide[] = [
   // ── Niche: Carpet Cleaning Equipment ──
   {
     slug: "commercial-carpet-cleaning-equipment-guide",
-    title: "Commercial Carpet Cleaning Equipment: Extractors, Scrubbers & More",
+    title: "Commercial Carpet Cleaning Equipment Guide",
     description:
-      "Complete guide to commercial carpet cleaning equipment. Carpet extractors, bonnet cleaners, and combo machines for hotels, offices, and event spaces. Factory-direct pricing.",
+      "Complete guide to commercial carpet cleaning equipment. Carpet extractors, bonnet cleaners, and combo machines for hotels, offices, and event spaces.",
     category: "buying-guide",
     readTime: "5 min",
     difficulty: "beginner",
+    thumbnail: "/images/parts/101540420408.webp",
     published: "2026-07-14",
+    relatedGuides: ["parking-garage-floor-scrubber-guide", "floor-scrubber-dust-sand-industrial-cleaning", "floor-scrubber-construction-site-cleaning"],
     sections: [
       {
         heading: "Carpet vs Hard Floor: Different Machines Required",
@@ -2714,6 +4245,8 @@ const extraGuides: Guide[] = [
       {
         heading: "Types of Carpet Cleaning Machines",
         content: "Three main types of commercial carpet cleaning equipment:",
+        image: "/images/parts/Wafer Brush Parts.webp",
+        imageAlt: "commercial carpet cleaning equipment guide",
         items: [
           "Carpet Extractor: Injects solution deep into fibers, agitates with brush, then extracts dirty water. Best for deep cleaning. Hotel corridors, office carpets.",
           "Bonnet Cleaner: Uses a rotating absorbent pad to clean carpet surface. Faster than extraction but less deep cleaning. Best for maintenance between deep cleans.",
@@ -2727,4 +4260,1713 @@ const extraGuides: Guide[] = [
     ],
     relatedProducts: [],
   },
+  // ── Niche: Oil & Grease ──
+  {
+    slug: "floor-scrubber-oil-grease-factory-cleaning",
+    title: "Floor Scrubber for Oil & Grease: Factory Cleaning",
+    description:
+      "Best floor scrubbers for oil, grease, and heavy industrial soil. Degreasing machines with high brush pressure (100kg), oil-resistant squeegees",
+    category: "buying-guide",
+    readTime: "5 min",
+    difficulty: "intermediate",
+    thumbnail: "/images/parts/101548652397.webp",
+    published: "2026-07-15",
+    relatedGuides: ["floor-scrubber-parts-guide-types-lifespan-cost", "floor-scrubber-clutch-plate-pad-driver-guide", "floor-scrubber-disc-brush-buying-guide"],
+    sections: [
+      {
+        heading: "Why Oil & Grease Destroy Standard Scrubbers",
+        content: "Standard floor scrubber squeegee rubber degrades within weeks when exposed to oil, grease, and petroleum-based soils. Nylon brushes lose stiffness. Hoses and seals swell and crack. You need a machine specifically engineered for industrial degreasing — oil-resistant materials, higher brush pressure, and chemical-compatible components throughout.",
+      },
+      {
+        heading: "Key Features for Oil & Grease Environments",
+        content: "Look for these four features when selecting a scrubber for oily floors:",
+        image: "/images/parts/disc-brush-custom-nylon-steel-wire-brushes-for-floor-scrubbers.webp",
+        imageAlt: "floor scrubber oil grease factory cleaning",
+        items: [
+          "Oil-resistant squeegee rubber: Linatex or oil-resistant polyurethane. Standard natural rubber deteriorates in weeks.",
+          "High brush pressure (80-100kg): Cuts through caked-on grease that standard 40kg pressure can't touch.",
+          "Degreasing injection system: Injects industrial degreaser directly at the brush deck — no pre-treatment required.",
+          "Stainless steel or coated frame: Carbon steel rusts within months from constant chemical exposure.",
+        ],
+      },
+      {
+        heading: "Industries That Need Oil-Rated Scrubbers",
+        content: "Automotive repair shops, metal fabrication plants, food processing facilities, aircraft hangars, and heavy equipment maintenance bays all need oil-rated scrubbers. For these environments, a standard commercial scrubber is a waste of money — it will fail within 6 months.",
+      },
+      {
+        heading: "Get Your Quote",
+        content: "Tell us your industry and floor type. We'll recommend an oil-rated machine with the right squeegee and brush configuration. Factory-direct pricing.",
+      },
+    ],
+    relatedProducts: [],
+  },
+  // ── Niche: Pad Holder Replacement ──
+  {
+    slug: "floor-scrubber-pad-holder-replacement-guide",
+    title: "Floor Scrubber Pad Holder Replacement Guide",
+    description:
+      "Complete guide to floor scrubber pad holders and drivers. 13-20 inch sizes, center lock vs trimmed, compatibility with major brands.",
+    category: "maintenance",
+    readTime: "5 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/101558246394.webp",
+    published: "2026-07-15",
+    relatedGuides: ["parking-garage-floor-scrubber-guide", "floor-scrubber-oil-grease-factory-cleaning", "steel-wire-floor-scrubber-brush-guide"],
+    sections: [
+      {
+        heading: "What Is a Pad Holder (Pad Driver)?",
+        content: "The pad holder — also called a pad driver — is the rotating plate that attaches to your floor scrubber's brush deck and holds the cleaning pad or brush. It transfers the motor's rotational force to the pad, which scrubs the floor. A worn pad holder slips, wobbles, or fails to center the pad — resulting in uneven cleaning and streaks.",
+      },
+      {
+        heading: "Types of Pad Holders",
+        content: "Three main types, each for different machine configurations:",
+        image: "/images/parts/Pad Driver Parts.webp",
+        imageAlt: "floor scrubber pad holder replacement guide",
+        items: [
+          "Standard Pad Driver: Flat disc with gripping surface. Fits most walk-behind scrubbers. 13-20 inch sizes.",
+          "Center Lock Pad Holder: Has a locking mechanism at the center. Quick-release for fast pad changes. Common on Tennant and Nilfisk machines.",
+          "Trimmed Center Lock: Lock mechanism is recessed (trimmed). Allows full pad contact with the floor — no center gap. Best for even cleaning pressure.",
+        ],
+      },
+      {
+        heading: "How to Identify Your Pad Holder",
+        content: "Before ordering, check: (1) diameter — measure the pad holder from edge to edge, (2) center hole size and mounting type, (3) whether it's center-lock or standard, and (4) your machine brand and model. Send us these details and we'll confirm compatibility within 24 hours.",
+      },
+      {
+        heading: "Cost: Dealer vs Factory-Direct",
+        content: "Dealer-purchased pad holders cost $90-150. Factory-direct: $35-65 — same materials, same quality, no dealer markup. The $55-85 difference is pure distribution cost.",
+      },
+      {
+        heading: "Get Your Quote",
+        content: "Send us your pad holder diameter, type, and machine model. We'll confirm compatibility and pricing within 24 hours. Factory-direct pricing, global shipping.",
+      },
+    ],
+    relatedProducts: [],
+  },
+  // ── Construction Sites ──
+  {
+    slug: "floor-scrubber-construction-site-cleaning",
+    title: "Floor Scrubber for Construction Sites: Post-Build Cleanup",
+    description:
+      "Best floor scrubbers for construction site cleanup. Handle concrete dust, drywall mud, and heavy debris.",
+    category: "buying-guide",
+    readTime: "5 min",
+    difficulty: "intermediate",
+    thumbnail: "/images/parts/101558344300.webp",
+    published: "2026-07-15",
+    relatedGuides: ["floor-scrubber-disc-brush-buying-guide", "floor-scrubber-brush-complete-guide", "top-10-floor-scrubber-disc-brushes"],
+    sections: [
+      {
+        heading: "Why Construction Cleanup Destroys Standard Scrubbers",
+        content: "Post-construction floors are covered in concrete dust, drywall compound, paint splatter, and debris ranging from sawdust to screws. Running a standard floor scrubber over construction debris grinds it into the floor, destroys brushes within days, and clogs filters instantly. You need a machine that sweeps debris first, then scrubs — and is built to handle abrasive construction dust.",
+      },
+      {
+        heading: "The Sweeper-Scrubber Combo: One Machine, One Pass",
+        content: "A sweeper-scrubber combination machine is the ideal tool for construction cleanup. The front sweeper picks up loose debris, dust, and small construction waste. The rear scrubber then cleans the now-clear floor. One machine, one operator, one pass — saves hours compared to sweeping then mopping.",
+        image: "/images/parts/Sweeper Side Brush Parts.webp",
+        imageAlt: "floor scrubber construction site cleaning",
+        items: [
+          "Pre-sweeps: Concrete dust, sawdust, drywall powder, small debris",
+          "Then scrubs: Clean concrete, epoxy, or tile surface",
+          "One pass: No need for separate sweeper and scrubber crews",
+        ],
+      },
+      {
+        heading: "Key Features for Construction Environments",
+        content: "Heavy-duty brush with steel-wire or abrasive filaments for paint and adhesive removal. High brush pressure (80-100kg). Dust-resistant motor seals. Large debris hopper. Reinforced squeegee for uneven post-construction floors.",
+      },
+      {
+        heading: "Get Your Quote",
+        content: "Tell us your project type and floor area. We'll recommend a machine built for construction cleanup. Factory-direct pricing for contractors.",
+      },
+    ],
+    relatedProducts: [],
+  },
+  // ── Brush Bristle Guide ──
+  {
+    slug: "floor-scrubber-brush-bristle-material-guide",
+    title: "Floor Scrubber Brush Bristle Materials Compared",
+    description:
+      "Complete guide to floor scrubber brush bristle materials. Compare nylon, PPL, steel wire, and abrasive filaments.",
+    category: "maintenance",
+    readTime: "5 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/101559266208.webp",
+    published: "2026-07-15",
+    relatedGuides: ["floor-scrubber-brush-complete-guide", "floor-scrubber-disc-brush-buying-guide", "anti-tangle-floor-washer-main-brush"],
+    sections: [
+      {
+        heading: "Why Bristle Material Matters More Than You Think",
+        content: "Using the wrong bristle material on your floor scrubber can scratch polished marble, fail to clean greasy concrete, or wear out in weeks instead of months. The bristle is the only part of the machine that touches your floor — choosing correctly is the single most important maintenance decision you'll make.",
+      },
+      {
+        heading: "Nylon (PA) — Best All-Rounder",
+        content: "Standard nylon bristles work on most sealed floors — tile, sealed concrete, vinyl, and epoxy. Gentle enough for polished surfaces, durable enough for daily commercial use. 1,200+ hour lifespan. Temperature resistant to 120°C. Factory-direct price: $45-60 per disc brush.",
+        image: "/images/parts/Disc Brush Parts 3.webp",
+        imageAlt: "floor scrubber brush bristle material guide",
+        items: ["Best for: Supermarkets, hospitals, schools, offices","Floor types: Tile, vinyl, sealed concrete, epoxy","Lifespan: 3-6 months daily use","Pros: Balanced performance, widely compatible","Cons: Not aggressive enough for heavy soil"],
+      },
+      {
+        heading: "PPL (Polypropylene) — Heavy Soil Champion",
+        content: "PPL bristles are stiffer than nylon, designed for unsealed concrete, factory floors, and heavy soil. They resist oil and chemical degradation better than nylon. Slightly more abrasive — don't use on polished surfaces.",
+        items: ["Best for: Warehouses, factories, loading docks","Floor types: Unsealed concrete, textured surfaces","Lifespan: 4-8 months daily use","Pros: Aggressive cleaning, oil-resistant","Cons: Too abrasive for polished marble or vinyl"],
+      },
+      {
+        heading: "Steel Wire — Extreme Duty",
+        content: "Steel wire bristles for the toughest cleaning jobs: caked-on grease, paint overspray, rust, and adhesive residue. Destroys polished floors — use ONLY on unsealed concrete or outdoor surfaces.",
+        items: ["Best for: Automotive shops, metal fabrication, outdoor areas","Floor types: Unsealed concrete ONLY","Lifespan: 2-4 months heavy use","Pros: Removes anything","Cons: Will scratch sealed/polished surfaces"],
+      },
+      {
+        heading: "Abrasive Filament — Mid-Grade Aggression",
+        content: "Nylon filaments embedded with abrasive particles. More aggressive than standard nylon, less damaging than steel wire. Good for stained concrete and tile with grout.",
+        items: ["Best for: Stained concrete, grouted tile, textured floors","Lifespan: 3-5 months","Pros: Aggressive but won't gouge concrete","Cons: Not for polished surfaces"],
+      },
+      {
+        heading: "Quick Selection Table",
+        content: "Floor Type → Bristle: Polished marble/stone → Nylon only | Sealed concrete → Nylon or PPL | Unsealed concrete → PPL or Steel Wire | Tile with grout → Abrasive or PPL | Epoxy → Nylon | Vinyl → Nylon only | Outdoor concrete → Steel Wire or PPL",
+      },
+    ],
+    relatedProducts: [],
+  },
+  // ── Warranty Guide ──
+  {
+    slug: "floor-scrubber-warranty-comparison",
+    title: "Floor Scrubber Warranty: What's Covered and What's Not",
+    description:
+      "Compare floor scrubber warranties across major brands. What parts are covered, typical warranty lengths",
+    category: "buying-guide",
+    readTime: "5 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/101559442162.webp",
+    published: "2026-07-15",
+    relatedGuides: ["hospital-medical-facility-floor-cleaning-equipment", "floor-scrubber-food-processing-plants", "hotel-hospitality-floor-cleaning-solutions"],
+    sections: [
+      {
+        heading: "The Fine Print That Costs Thousands",
+        content: "A '3-year warranty' sounds great — until you discover it only covers the frame, not the motor, batteries, brushes, or squeegees. Understanding what's actually covered — and what's excluded — can save thousands in unexpected repair costs.",
+      },
+      {
+        heading: "What's Typically Covered (and for How Long)",
+        content: "Most floor scrubber warranties are split into tiered coverage:",
+        image: "/images/B460-Scrubber-02.webp",
+        imageAlt: "floor scrubber warranty comparison",
+        items: [
+          "Frame & chassis: 3-5 years (longest coverage — these rarely fail)",
+          "Motor & drive system: 1-2 years (the expensive components)",
+          "Batteries: 1 year prorated or 6 months full (lead-acid); 2-3 years (lithium)",
+          "Wear parts (brushes, squeegees, hoses): Not covered — these are consumables",
+          "Labor: Dealer warranties include labor. Factory-direct warranties typically cover parts only, with remote support.",
+        ],
+      },
+      {
+        heading: "Dealer vs Factory-Direct Warranties",
+        content: "Dealer warranties (Tennant, Nilfisk, Karcher) include on-site labor through local service networks — but you pay for this in the 30-50% higher purchase price. Factory-direct warranties (Aikerui) cover parts and provide remote technical support. The cost difference typically covers 5-10 years of potential out-of-warranty repairs.",
+      },
+      {
+        heading: "Red Flags in Warranty Terms",
+        content: "Watch for: (1) Prorated battery coverage — you pay 50%+ of replacement after year 1, (2) 'Normal wear and tear' exclusion that's used to deny almost everything, (3) Requirements to use OEM-only parts or void the warranty, (4) Shipping costs not covered for warranty returns.",
+      },
+      {
+        heading: "Get Warranty Details Before You Buy",
+        content: "Always request the full warranty document before purchasing — not just the marketing summary. We provide our complete warranty terms with every quote.",
+      },
+    ],
+    relatedProducts: [],
+  },
+  // ── Hospital Guide ──
+  {
+    slug: "floor-scrubber-hospital-healthcare-facility",
+    title: "Floor Scrubber for Hospitals & Healthcare",
+    description:
+      "Medical-grade floor scrubbers for hospitals and healthcare. Ultra-quiet (<60dB), HEPA-filtered, disinfectant-compatible. JCAHO/CDC compliant.",
+    category: "buying-guide",
+    readTime: "5 min",
+    difficulty: "intermediate",
+    thumbnail: "/images/parts/101559536107.webp",
+    published: "2026-07-15",
+    relatedGuides: ["how-to-choose-a-floor-scrubber", "floor-scrubber-warranty-comparison"],
+    sections: [
+      {
+        heading: "Why Hospital Cleaning Is Unlike Any Other",
+        content: "Hospital floors harbor pathogens that standard commercial cleaning can't address. A proper healthcare scrubber must clean effectively while being quiet enough for patient areas, filtered to prevent aerosol contamination, and compatible with hospital-grade disinfectants.",
+      },
+      {
+        heading: "5 Requirements for Healthcare Scrubbers",
+        content: "Ultra-quiet (<60dB) for patient areas. H13/H14 HEPA filtration on vacuum exhaust. Chemical compatibility with hydrogen peroxide, quaternary ammonium, and bleach. Cordless for no tripping hazards. Sealed smooth surfaces for disinfectant wipe-down.",
+        image: "/images/B260R60-Sweeper-00.webp",
+        imageAlt: "floor scrubber hospital healthcare facility",
+      },
+      {
+        heading: "Zone-Specific Cleaning",
+        content: "OR & ICU: Highest standard, between-case cleaning. Patient rooms: Daily, ultra-quiet. Corridors: Continuous, wider scrubber acceptable. Cafeteria: Food-safe, frequent cycles.",
+      },
+      {
+        heading: "Get Your Quote",
+        content: "Tell us your facility type and cleaning zones. We'll recommend a medical-grade machine. Factory-direct pricing for healthcare facilities.",
+      },
+    ],
+    relatedProducts: [],
+  },
+  // ── Spec Sheet Guide ──
+  {
+    slug: "how-to-read-floor-scrubber-specifications",
+    title: "How to Read a Floor Scrubber Spec Sheet",
+    description:
+      "Learn to decode floor scrubber specification sheets. Understand cleaning width, brush pressure, tank capacity, battery voltage, productivity ratings.",
+    category: "buying-guide",
+    readTime: "6 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/101559806690.webp",
+    published: "2026-07-15",
+    relatedGuides: ["how-to-choose-a-floor-scrubber", "industrial-floor-scrubber-buying-guide", "floor-scrubber-brush-pressure-guide"],
+    sections: [
+      {
+        heading: "Don't Buy Based on Marketing — Buy Based on Specs",
+        content: "Two machines can look identical and cost $5,000 different. The difference is in the specifications. Understanding these 15 numbers helps you compare machines objectively and avoid paying for features you don't need.",
+      },
+      {
+        heading: "The 15 Specs That Matter",
+        content: "Cleaning width (inches), Productivity (sq ft/hr), Brush RPM, Brush pressure (kg), Motor power (HP/W), Battery voltage (V) and type, Runtime (hours), Charge time, Solution tank (gallons), Recovery tank (gallons), Machine weight (lbs), Dimensions, Squeegee width, Noise level (dB), IP rating.",
+        image: "/images/B460-Scrubber-03.webp",
+        imageAlt: "how to read floor scrubber specifications",
+        items: [
+          "Cleaning width x 2.5 ≈ squeegee width. Under 20-inch = compact, 28+ = industrial.",
+          "Productivity is theoretical — real-world is 60-70% of rated number.",
+          "Brush pressure under 40kg = light duty. 60-100kg = industrial degreasing.",
+          "Battery: 24V standard for walk-behind, 36V for ride-on. Lithium vs lead-acid changes everything.",
+          "Tank capacity determines refill frequency. 10 gal = ~25 min runtime; 30 gal = ~75 min.",
+        ],
+      },
+      {
+        heading: "Red Flags in Spec Sheets",
+        content: "Watch for: missing brush pressure (it's weak), 110V corded-only (limited mobility), 'estimated' productivity (likely inflated), no noise rating (it's loud), and weight listed without batteries (common trick to appear lighter).",
+      },
+    ],
+    relatedProducts: [],
+  },
+  // ── Brush Pressure Guide ──
+  {
+    slug: "floor-scrubber-brush-pressure-guide",
+    title: "Floor Scrubber Brush Pressure: How Much Do You Really Need?",
+    description:
+      "Floor scrubber brush pressure guide. 30kg for retail, 60kg for warehouses, 100kg for factories. How brush pressure affects cleaning quality and floor safety.",
+    category: "maintenance",
+    readTime: "4 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/101560194300.webp",
+    published: "2026-07-15",
+    relatedGuides: ["floor-scrubber-brush-complete-guide", "floor-scrubber-brush-lifespan-and-maintenance", "how-to-measure-floor-scrubber-brush-size"],
+    sections: [
+      {
+        heading: "Why Brush Pressure Determines Everything",
+        content: "Brush pressure is the most overlooked spec in floor scrubber shopping. Too little and the machine can't clean. Too much and you'll damage polished floors and wear out brushes 3x faster. Here's your pressure guide by application.",
+      },
+      {
+        heading: "Pressure Guide by Facility Type",
+        content: "Retail/supermarket: 30-40kg — gentle on polished tile, enough for daily dirt. Warehouse: 50-70kg — handles tire marks and light debris. Factory/manufacturing: 80-100kg — cuts through oil, grease, and caked-on soil. Hospital/school: 30-50kg — balanced for tile and vinyl.",
+        image: "/images/parts/Pad Center Lock Parts.webp",
+        imageAlt: "floor scrubber brush pressure guide",
+      },
+      {
+        heading: "Pressure vs Floor Damage",
+        content: "Above 60kg, never use on polished marble, granite, or sealed wood. The pressure will etch or scratch the surface. Always match brush pressure to your softest floor type — not your dirtiest.",
+      },
+    ],
+    relatedProducts: [],
+  },
+  // ── School Guide ──
+  {
+    slug: "floor-scrubber-school-university-cleaning",
+    title: "Floor Scrubber for Schools & Universities",
+    description:
+      "Best floor scrubbers for schools and university campuses. Classroom-safe quiet models, durable for hallways, compact for restrooms.",
+    category: "buying-guide",
+    readTime: "4 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/101562835129.webp",
+    published: "2026-07-15",
+    relatedGuides: ["parking-garage-floor-scrubber-guide", "floor-scrubber-gym-fitness-center", "best-floor-scrubber-small-business"],
+    sections: [
+      {
+        heading: "Why Schools Need Specialized Equipment",
+        content: "A K-12 school combines every floor type — tile classrooms, polished hallways, concrete gyms, vinyl cafeterias, carpeted libraries — with thousands of students tracking dirt daily. One compact walk-behind scrubber ($2,500-4,000 factory-direct) can replace 3 janitors with mops, saving $60,000+ annually in labor.",
+      },
+      {
+        heading: "Recommended Machine",
+        content: "Compact 17-20 inch walk-behind. Ultra-quiet for classroom cleaning during off-hours. Lithium battery for opportunity charging between shifts. Small enough to store in a janitor's closet. Factory-direct price: $1,800-3,200.",
+        image: "/images/B260R60-Sweeper-03.webp",
+        imageAlt: "floor scrubber school university cleaning",
+      },
+    ],
+    relatedProducts: [],
+  },
+  // ── Logistics Center ──
+  {
+    slug: "floor-scrubber-logistics-distribution-center",
+    title: "Floor Scrubber for Logistics & Distribution Centers",
+    description:
+      "Fleet cleaning guide for logistics centers and 3PL warehouses. Ride-on scrubbers, fleet planning, battery strategy. Clean 500,000+ sq ft facilities efficiently.",
+    category: "buying-guide",
+    readTime: "5 min",
+    difficulty: "intermediate",
+    thumbnail: "/images/parts/101570361535.webp",
+    published: "2026-07-15",
+    relatedGuides: ["inside-aikerui-factory-tour", "how-to-choose-a-floor-scrubber", "top-floor-scrubber-brands-buyers-guide"],
+    sections: [
+      {
+        heading: "Logistics Never Stops — Your Scrubbing Shouldn't Either",
+        content: "A 500,000 sq ft distribution center operating 24/7 needs more than one scrubber — it needs a fleet with the right mix of ride-on machines, sweepers, and a battery strategy that supports continuous operation across all shifts.",
+      },
+      {
+        heading: "Fleet Recommendations by Facility Size",
+        content: "Under 100K sq ft: 1 ride-on scrubber + 1 compact walk-behind. 100K-500K sq ft: 2 ride-on scrubbers + 1 sweeper. 500K+ sq ft: 3+ ride-on, dedicated charging station, spare parts inventory.",
+        image: "/images/parts/Disc Brush Parts.webp",
+        imageAlt: "floor scrubber logistics distribution center",
+      },
+      {
+        heading: "Battery Strategy for Multi-Shift",
+        content: "Lithium batteries with opportunity charging eliminate the need for spare batteries and dedicated charging rooms. Charge during operator breaks and shift changes. For lead-acid fleets, budget 1 spare battery per machine plus a ventilated charging room.",
+      },
+    ],
+    relatedProducts: [],
+  },
+  // ── Auto Dealership Guide ──
+  {
+    slug: "floor-scrubber-auto-dealership-showroom",
+    title: "Floor Scrubber for Auto Dealerships & Showrooms",
+    description:
+      "Best floor scrubbers for auto dealership showrooms and service bays. Handle tire marks, oil drips, and foot traffic.",
+    category: "buying-guide",
+    readTime: "4 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/101650654640.webp",
+    published: "2026-07-16",
+    relatedGuides: ["industrial-floor-scrubber-buying-guide", "how-to-choose-a-floor-scrubber", "industrial-floor-sweeper-guide"],
+    sections: [
+      {
+        heading: "Why Dealership Floors Are the First Thing Customers Notice",
+        content: "A customer judges your dealership in seconds — and the first thing they see is the floor. Tire marks on polished concrete, oil spots in the service bay, and foot traffic dirt in the showroom send the wrong message. A compact ride-on scrubber cleans showroom floors in minutes, leaving a mirror finish that sells cars.",
+      },
+      {
+        heading: "Showroom vs Service Bay: Different Machines",
+        content: "Showroom: Ultra-quiet compact scrubber with soft pads for polished concrete/epoxy. Clean daily before opening. Service Bay: Degreasing-capable machine with oil-resistant squeegee and higher brush pressure (60-80kg). Clean after closing.",
+        image: "/images/B460-Scrubber-05.webp",
+        imageAlt: "floor scrubber auto dealership showroom",
+      },
+      {
+        heading: "Recommended Setup",
+        content: "One compact ride-on (28-34 inch) for showroom and customer areas. One walk-behind with degreasing for service bays. Factory-direct pricing for both: $8,000-15,000 total — less than one month's advertising budget.",
+      },
+    ],
+    relatedProducts: [],
+  },
+  // ── OEM Factory Verification ──
+  {
+    slug: "how-to-verify-floor-scrubber-manufacturer",
+    title: "How to Verify a Floor Scrubber Manufacturer: 7 Red Flags",
+    description:
+      "Learn how to verify a floor scrubber manufacturer before sending money. 7 verification steps:",
+    category: "buying-guide",
+    readTime: "6 min",
+    difficulty: "intermediate",
+    thumbnail: "/images/parts/101650838979.webp",
+    published: "2026-07-16",
+    relatedGuides: ["how-to-import-floor-scrubbers-from-china", "how-to-buy-floor-scrubber-parts-from-china", "how-to-assess-floor-scrubber-manufacturer"],
+    sections: [
+      {
+        heading: "The 'Fake Factory' Problem in B2B Equipment",
+        content: "Many 'manufacturers' on Alibaba and B2B platforms are actually trading companies with no factory. They add 15-30% markup, provide inaccurate specs, and disappear when quality issues arise. Before wiring $10,000 to any supplier, verify these 7 things.",
+      },
+      {
+        heading: "7 Verification Steps",
+        content: "1. Request a live video factory tour — real manufacturers say yes immediately. 2. Verify business license on Chinese government database. 3. Check for ISO/CE certifications — request certificate numbers to verify. 4. Ask for 3 customer references in your country. 5. Order a sample unit before committing to a container. 6. Use Trade Assurance or Letter of Credit — never pay 100% upfront. 7. Third-party inspection (SGS/Bureau Veritas) costs $300-500 and saves thousands.",
+        image: "/images/parts/Shampoo Disc Brush Parts.webp",
+        imageAlt: "how to verify floor scrubber manufacturer",
+      },
+      {
+        heading: "We Pass All 7 Checks",
+        content: "Aikerui welcomes live video tours, independent inspections, and sample orders. Our ISO 9001 and CE certificates are verifiable. We provide customer references on request. Factory-direct means you deal directly with the manufacturer — no middlemen.",
+      },
+    ],
+    relatedProducts: [],
+  },
+  // ── Floor Stripping Guide ──
+  {
+    slug: "floor-stripping-equipment-finish-removal-guide",
+    title: "Commercial Floor Stripping Equipment Guide",
+    description:
+      "Complete guide to commercial floor stripping equipment. Floor stripper machines, stripping pads, and techniques for removing old wax, finish, and coatings.",
+    category: "maintenance",
+    readTime: "5 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/101693621322.webp",
+    published: "2026-07-16",
+    relatedGuides: ["commercial-carpet-cleaning-equipment-guide", "top-10-floor-scrubber-roller-brushes"],
+    sections: [
+      {
+        heading: "When Scrubbing Isn't Enough — You Need Stripping",
+        content: "Over time, floor finish builds up in layers — yellowing, trapping dirt, and making floors look dull even after scrubbing. Floor stripping removes all old finish down to bare flooring so a fresh coat can be applied. This requires different equipment than daily scrubbing — higher speed, more aggressive pads, and specialized chemicals.",
+      },
+      {
+        heading: "Stripping Equipment You Need",
+        content: "Floor stripper machine (175-350 RPM, higher speed than scrubbers), stripping pads (black or high-productivity brown), stripping chemical solution, wet/dry vacuum, and mop for solution application. A standard floor scrubber at low speed can also strip with the right pads and chemicals.",
+        image: "/images/parts/floor-pad-floor-scrubber-cleaning-pad-for-commercial-use.webp",
+        imageAlt: "floor stripping equipment finish removal guide",
+      },
+      {
+        heading: "Stripping Pads: Black vs Brown vs Specialty",
+        content: "Black pad: Most aggressive. Removes heavy buildup and old finish quickly. Brown pad: Medium aggression. Good for routine stripping without damaging the floor. White pad: Light scrubbing only — not for stripping.",
+      },
+      {
+        heading: "Order Your Stripping Supplies",
+        content: "We stock stripping pads, chemicals, and compatible machines. Factory-direct pricing with bulk discounts for facility management companies. Quote within 24 hours.",
+      },
+    ],
+    relatedProducts: [],
+  },
+  // ── International Shipping Guide ──
+  {
+    slug: "how-to-ship-floor-scrubber-internationally",
+    title: "How to Ship a Floor Scrubber Internationally (2026 Guide)",
+    description:
+      "Step-by-step guide to importing a floor scrubber from China. Sea freight vs air freight costs, customs clearance, Incoterms, packaging requirements",
+    category: "buying-guide",
+    readTime: "8 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/1000141211365.webp",
+    published: "2026-07-23",
+    relatedGuides: ["floor-scrubber-pad-holder-replacement-guide", "replacement-floor-scrubber-parts-guide", "floor-scrubber-parts-guide-types-lifespan-cost"],
+    sections: [
+      { heading: "Why Importing a Floor Scrubber Directly Saves You Thousands", content: "A dealer-priced ride-on scrubber at $18,000 can be sourced factory-direct for $9,000 — but only if you know how to handle international logistics. The shipping and customs process intimidates many first-time buyers, but it's far simpler than most people think. This guide walks you through the entire process, from factory pickup to your warehouse door." },
+      { heading: "Sea Freight vs Air Freight: Which Should You Choose?", content: "99% of floor scrubber imports use sea freight. Air freight costs 5-8x more and only makes sense for urgent spare parts or single demo units.", image: "/images/A1280-Sweeper-04.webp", imageAlt: "how to ship floor scrubber internationally", items: [
+        "Sea Freight: $800-2,500 per machine (20-40 days). FCL (Full Container) for 10+ machines is cheapest per unit. LCL (Less than Container Load) for 1-5 machines — shared container, slightly longer transit.",
+        "Air Freight: $5,000-15,000 per machine (3-7 days). Only for: rush orders, trade show demo units, or replacement machines when downtime costs exceed air freight premium.",
+        "Recommendation: 1-3 machines = LCL sea freight. 4-10 machines = consider FCL 20ft container. 10+ machines = FCL 40ft container, lowest cost per unit.",
+      ]},
+      { heading: "Understanding Incoterms: Who Pays for What?", content: "Incoterms define exactly where the seller's responsibility ends and yours begins. The two most common for factory-direct scrubber purchases:", items: [
+        "FOB (Free On Board): Factory handles domestic transport + export clearance + loading onto vessel. You pay ocean freight + insurance + import duties + inland delivery. Most common for first-time buyers — clear split of responsibility.",
+        "CIF (Cost, Insurance, Freight): Factory handles everything up to your destination port including ocean freight and insurance. You pay import duties + port handling + inland delivery. Easier for you, but factory typically adds 5-10% to cover freight cost.",
+        "EXW (Ex Works): You handle everything from factory gate. Cheapest factory price, highest logistics burden. Only recommended for experienced importers with their own freight forwarder.",
+      ]},
+      { heading: "Shipping Costs by Destination: Real 2026 Numbers", content: "Estimated door-to-door costs for a single ride-on scrubber (2-3 CBM, ~400-600 kg):", items: [
+        "To USA (West Coast): $800-1,400 sea freight + $300-600 port handling + $200-500 inland trucking + 0-5% duty = $1,300-2,500 total logistics. 18-25 days transit.",
+        "To USA (East Coast): $1,200-2,000 sea freight + $400-700 port handling + $300-800 inland + 0-5% duty = $1,900-3,500 total. 25-35 days transit.",
+        "To Western Europe (Rotterdam/Hamburg): $900-1,600 sea freight + €200-500 port + €300-700 inland + 0-3% EU duty = €1,400-2,800 total. 25-30 days transit.",
+        "To Middle East (Dubai/Jeddah): $400-900 sea freight + $200-500 port + $200-500 inland + 0-5% duty = $800-1,900 total. 15-20 days transit — fastest route from China.",
+        "To Australia/NZ: AUD 1,200-2,500 sea freight + AUD 400-800 port + AUD 300-700 inland + 0-5% duty = AUD 1,900-4,000 total. 20-28 days transit.",
+        "To Africa (Lagos/Mombasa/Durban): $600-2,000 sea freight + highly variable port fees + $300-1,000 inland + 5-25% duty = $1,200-5,000 total. 25-40 days transit. Duty rates vary dramatically by country.",
+      ]},
+      { heading: "Customs Clearance: The 3 Documents You Absolutely Need", content: "Missing paperwork is the #1 cause of shipping delays. Have these three documents ready before the shipment leaves the factory:", items: [
+        "Commercial Invoice: Lists machine model, quantity, unit price, total value, country of origin. Must match exactly what's in the container. Inflated or deflated values = customs problems.",
+        "Packing List: Itemized list of every crate/box with dimensions, weight, and contents. Critical for LCL shipments where your goods share a container with other cargo.",
+        "Bill of Lading (Sea) or Air Waybill (Air): The carrier's receipt and contract of carriage. Original documents needed for cargo release at destination — keep them safe.",
+        "Bonus document — Certificate of Origin: Simplifies customs in countries with China trade agreements. Factory can provide this for ~$30-50.",
+      ]},
+      { heading: "Packaging: How Floor Scrubbers Are Shipped Without Damage", content: "Proper packaging prevents the most expensive shipping mistake — receiving a damaged machine. Factory-direct manufacturers should:", items: [
+        "Crate the machine in a fumigated wooden case (ISPM 15 certified for international shipping)",
+        "Drain all fluids (water, cleaning solution) before packaging — leaking liquids cause container-wide damage claims",
+        "Disconnect and separately wrap batteries — lithium batteries require UN38.3 certification and MSDS documentation",
+        "Protect control panels and LCD screens with foam padding; wrap squeegee assembly separately",
+        "Include a vacuum-sealed bag of desiccant inside the crate to prevent moisture damage during ocean transit",
+        "Affix 'This Side Up' and 'Keep Dry' labels in English + destination language",
+      ]},
+      { heading: "6 Common Shipping Mistakes First-Time Importers Make", content: "Learn from others' expensive errors:", items: [
+        "Not budgeting for port fees: Port handling, terminal charges, documentation fees, and customs broker fees add $300-800 to your expected cost. Budget 15-20% above the freight quote.",
+        "Using the wrong HS code: Floor scrubbers fall under HS 8479.89 (machines with individual functions). Wrong code = customs delays + potential fines. Verify with your freight forwarder.",
+        "Forgetting insurance: Marine cargo insurance costs ~0.3-0.5% of cargo value. On a $10,000 shipment, that's $30-50 — the cheapest peace of mind you'll ever buy.",
+        "Not preparing for customs inspection: ~5-10% of shipments get randomly inspected. This adds 3-7 days and $200-500 in inspection fees. Factor it into your timeline.",
+        "Sending payment before production photos: Always request photos of the crated machine with shipping marks visible before sending the balance payment.",
+        "Neglecting after-sales support plan: Your machine arrives. Now what? Line up a local technician BEFORE ordering, or get remote support commitment from the factory.",
+      ]},
+      { heading: "Your Shipping Timeline: From Order to Your Door", content: "A realistic timeline for a factory-direct import:", items: [
+        "Week 1: Place order + pay deposit (30%). Factory begins production or picks from stock.",
+        "Week 2-3: Machine ready. Factory sends production photos. Pay balance (70%). Book shipping.",
+        "Week 3-4: Container loaded. Vessel departs. Estimated transit time: 15-40 days depending on destination.",
+        "Week 5-8: Container arrives at destination port. Customs clearance (1-3 days). Inland delivery (1-5 days).",
+        "Total: 4-8 weeks from order to your warehouse door. Air freight: 1-2 weeks, at 5-8x the cost.",
+      ]},
+      { heading: "Ready to Import?", content: "We ship floor scrubbers and parts to 50+ countries. All shipments include commercial invoice, packing list, ISPM 15 certified crating, and marine insurance. Tell us your destination port for a door-to-door shipping quote within 24 hours." },
+    ],
+    relatedProducts: [],
+  },
+  {
+    slug: "floor-scrubber-clutch-plate-pad-driver-guide",
+    title: "Floor Scrubber Clutch Plate & Pad Driver Guide",
+    description: "Learn about the different types of floor scrubber clutch plates and pad drivers — NP-9200, 3-lug center lock, 4-lug magnetic buckle.",
+    category: "maintenance",
+    readTime: "5 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/101794807564.webp",
+    published: "2026-07-28",
+    relatedGuides: ["floor-scrubber-pad-holder-replacement-guide", "floor-scrubber-parts-guide-types-lifespan-cost"],
+    sections: [
+      {
+        heading: "What Is a Clutch Plate / Pad Driver?",
+        content: "The clutch plate (also called pad driver or buckle connector) is the metal disc that connects your floor scrubber's motor shaft to the brush or pad. It looks simple — a disc with a few raised lugs — but getting the wrong type means the brush won't spin, costing you hours of downtime.",
+        items: [
+          "Position: Between motor shaft and brush — it transfers rotational force",
+          "Also called: pad driver, clutch plate, buckle adapter, brush driver, center lock plate",
+          "Material: Cast iron or hardened steel — designed to withstand thousands of hours of torque",
+          "Wear signs: Bent lugs, stripped center hole, rust — replace immediately if any are present",
+        ],
+      },
+      {
+        heading: "The 3 Most Common Clutch Plate Types",
+        content: "There are three main types of clutch plates on the market, and they are NOT interchangeable. Identifying yours takes 30 seconds.",
+        items: [
+          "NP-9200 Universal (2-Lug): The most common standard. Two raised nubs lock into matching slots on the brush. Fits Tennant T5/T7/T300, Viper, Nilfisk, Comac, and most Chinese OEM machines. The NP-9200 center hole is 5/8 inch (16mm).",
+          "3-Lug Center Lock: Common on Advance, Nilfisk, and older Viper models. Three lugs with a center screw that secures the brush. More secure against slippage under heavy scrubbing pressure. Requires matching 3-lug brush.",
+          "4-Lug Magnetic or Mechanical Buckle: Used on some European brands like Kärcher and Hako. Some use magnets to hold the brush; others use mechanical clips. Quick-change design but parts are harder to source outside Europe.",
+        ],
+      },
+      {
+        heading: "How to Identify Your Machine's Clutch Plate Type",
+        content: "Don't guess — a 2-minute check saves 2 days of waiting for the wrong part. Here's the process:",
+        items: [
+          "Step 1 — Remove the brush. Look at the metal plate exposed on the motor shaft.",
+          "Step 2 — Count the lugs (raised nubs). 2 lugs = NP-9200. 3 lugs = center lock. 4 lugs = European standard.",
+          "Step 3 — Measure the center hole diameter. NP-9200 is 5/8 inch (16mm). Others vary.",
+          "Step 4 — Check for additional features. Center screw? Magnets? Clips? These tell you the exact type.",
+          "Step 5 — Compare with the machine's model number in our compatibility chart below.",
+        ],
+      },
+      {
+        heading: "Why Ordering the Wrong Clutch Plate Is So Common",
+        content: "We see the same mistake repeatedly: a facility orders 'a clutch plate' without checking the type, gets the wrong one, then has to reorder with rush shipping. The problem is that many sellers list 'universal clutch plate' when they mean 'NP-9200 only.' Our recommendation: count your lugs before ordering — not after.",
+      },
+      {
+        heading: "Compatibility Guide: Which Clutch Plate Fits Which Machine",
+        content: "Quick reference based on our 360+ parts inventory:",
+        items: [
+          "NP-9200 (2-Lug): Fits Tennant T5, T5e, T7, T300, T300e, T500, T500e / Viper AS510B, AS5160, LS160 / Nilfisk SC500, SC600 / Comac Innova 55, Vispa 35B / Most Chinese OEM machines",
+          "3-Lug Center Lock: Fits Advance SC800, SC850 / Nilfisk BA530, BA730 / Older Viper AS4325, AS4335",
+          "4-Lug: Fits Kärcher BD50, BD53, B90 / Hako B45, B70, B75R / Some Gaomei and Dulevo models",
+          "If your machine isn't listed: contact us with a photo of your clutch plate and we'll identify it within 24 hours.",
+        ],
+      },
+      {
+        heading: "When Should You Replace Your Clutch Plate?",
+        content: "A clutch plate should last several years under normal use, but certain conditions accelerate wear:",
+        items: [
+          "Bent or damaged lugs: Usually from dropping the brush or hitting curbs at speed. Replace immediately — a broken lug can damage the brush motor shaft.",
+          "Stripped center hole: The threads strip when the mounting bolt is overtightened or cross-threaded. A stripped hole means the plate won't stay secured.",
+          "Rust or corrosion: Surface rust on the lugs prevents the brush from seating properly. Light rust can be wire-brushed; heavy rust means replacement.",
+          "Worn magnetic grip (4-lug type): Magnets lose strength over 2-3 years. If the brush falls off during operation, replace the plate.",
+        ],
+      },
+      {
+        heading: "Factory-Direct Clutch Plates: Save 30-50% vs Dealer Pricing",
+        content: "As a manufacturer of replacement parts for 40+ scrubber brands, we produce NP-9200, 3-lug, and 4-lug clutch plates in our ISO 9001 certified factory. Factory-direct pricing: NP-9200 universal clutch plates typically cost 30-50% less than dealer prices for equivalent quality. All plates are cast from hardened steel, precision-machined to OEM tolerances, and tested before shipment.",
+      },
+      {
+        heading: "See the Different Types in Action",
+        content: "Watch our short video showing the different clutch plate and pad driver types side by side — NP-9200, 3-lug center lock, and 4-lug European style — so you can identify yours at a glance.",
+      },
+    ],
+    relatedProducts: [],
+  },
+  {
+    slug: "inside-aikerui-factory-tour",
+    title: "Inside Aikerui's Factory: How Scrubbers Are Made",
+    description: "Take a video tour of Aikerui's 10,000+ sqm factory in Anqing, China. See how floor scrubbers and replacement brushes are manufactured, tested",
+    category: "buying-guide",
+    videoId: "factorytour",
+    readTime: "5 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/102004908611.webp",
+    published: "2026-08-05",
+    relatedGuides: ["floor-scrubber-construction-site-cleaning", "parking-garage-floor-scrubber-guide", "floor-scrubber-oil-grease-factory-cleaning"],
+    sections: [
+      {
+        heading: "Why a Factory Tour Video Matters",
+        content: "Most Chinese cleaning equipment suppliers are trading companies. They take your order, buy from a factory, and mark up the price. Aikerui is different: we own and operate our own 10,000+ sqm factory in Anqing, Anhui, China. This video tour shows you exactly where your floor scrubber and replacement brushes are made.",
+      },
+      {
+        heading: "What You See in the Factory Video",
+        content: "The short video walks you through the real production floor:",
+        items: [
+          "Brush production line: nylon and PPL brushes being tufted, trimmed, and inspected.",
+          "Machine assembly area: walk-behind and ride-on scrubbers being built and tested.",
+          "Welding and fabrication: steel frames and tanks made in-house.",
+          "Quality control station: every brush checked for bristle density and lug alignment.",
+          "Warehouse: 360+ replacement parts stocked and ready to ship.",
+        ],
+      },
+      {
+        heading: "How to Verify a Real Factory Yourself",
+        content: "You should not take our word for it. Here is how any buyer can verify a Chinese manufacturer is real:",
+        items: [
+          "1. Ask for a live video call from the factory floor, not a pre-recorded clip.",
+          "2. Check the business license matches the factory address.",
+          "3. Request independent inspection (SGS or BV) before payment.",
+          "4. Ask for export records and customs documentation.",
+          "5. Start with a sample order before a container order.",
+        ],
+      },
+      {
+        heading: "Factory-Direct Benefits",
+        content: "Buying from the real manufacturer, not a trading company, means:",
+        items: [
+          "30-50% lower prices than dealer or brand markups.",
+          "Direct communication with the engineers who make the product.",
+          "Custom OEM/ODM manufacturing to your specifications.",
+          "Full export documentation included with every shipment.",
+          "Factory visits and live video tours welcome anytime.",
+        ],
+      },
+      {
+        heading: "Plan Your Factory Visit",
+        content: "We welcome visits. Aikerui is in Anqing City, Anhui Province, about 3 hours from Shanghai by high-speed rail. We can arrange airport pickup and a factory tour, or schedule a live video call if you cannot travel. No appointment needed, but advance notice helps us prepare.",
+      },
+      {
+        heading: "Talk to the Factory Direct",
+        content: "Browse our machines at aikeruiclean.com/products and replacement parts at aikeruiclean.com/parts. Get factory-direct pricing at aikeruiclean.com/floor-scrubber-parts-quote. We reply within 24 hours.",
+      },
+    ],
+    relatedProducts: [],
+  },
+  {
+    slug: "steel-wire-floor-scrubber-brush-guide",
+    title: "Steel Wire Floor Scrubber Brush for Tough Grime",
+    description: "Steel wire floor scrubber brush for heavy-duty cleaning. Removes tough grime, strips old finish, and deep-cleans rough concrete.",
+    category: "buying-guide",
+    readTime: "4 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/disc-brush-custom-nylon-steel-wire-brushes-for-floor-scrubbers.webp",
+    published: "2026-08-10",
+    relatedGuides: ["how-to-extend-floor-scrubber-lifespan", "how-to-maintain-floor-scrubber-battery", "floor-scrubber-disc-brush-buying-guide"],
+    videoId: "XrHK1POi7yY",
+    sections: [
+      {
+        heading: "What Is a Steel Wire Floor Scrubber Brush?",
+        content: "A steel wire brush uses stiff steel bristles instead of nylon or PPL. It is the most aggressive brush type for floor scrubbers, built for heavy-duty cleaning on rough surfaces. This video shows the brush in action:",
+      },
+      {
+        heading: "When to Use a Steel Wire Brush",
+        content: "Steel wire brushes are not for daily cleaning. Use them for specific heavy jobs:",
+        items: [
+          "Removing heavy grime and stuck-on dirt on industrial concrete.",
+          "Stripping old floor finish before recoating.",
+          "Deep-cleaning rough concrete that nylon brushes cannot handle.",
+          "Cleaning grout and textured surfaces.",
+          "Heavy debris in warehouses, factories, and production areas.",
+        ],
+      },
+      {
+        heading: "When NOT to Use a Steel Wire Brush",
+        content: "Steel wire can damage floors if used wrong:",
+        items: [
+          "Never use on epoxy or sealed floors — it will scratch the coating.",
+          "Never use on tile, wood, marble, or linoleum.",
+          "Do not use daily — it removes floor material over time.",
+          "Do not use on polished or finished concrete.",
+        ],
+      },
+      {
+        heading: "Steel Wire vs Nylon vs PPL Brush",
+        content: "Choose the right bristle for the job:",
+        table: {
+          headers: ["Material", "Aggressiveness", "Best For", "Avoid On"],
+          rows: [
+            ["Nylon", "Soft to medium", "Daily cleaning, most floors", "Nothing major"],
+            ["PPL", "Stiff", "Heavy grease", "Epoxy, sealed floors"],
+            ["Abrasive", "Very aggressive", "Stripping finish", "Daily use"],
+            ["Steel wire", "Most aggressive", "Heavy grime, rough concrete", "Finished floors"],
+          ],
+        },
+      },
+      {
+        heading: "Compatibility",
+        content: "Steel wire brushes fit most floor scrubbers using the NP-9200 2-lug standard. This covers Tennant, Nilfisk, Viper, and most Chinese OEM machines. Check your lug pattern before ordering, or send us a photo and we will confirm within 24 hours.",
+      },
+      {
+        heading: "Factory-Direct Pricing",
+        content: "A steel wire disc brush costs 60 to 90 USD factory-direct, versus 120 to 250 USD at dealers. Same steel, same bristle density, no middleman markup.",
+      },
+      {
+        heading: "Order Yours Today",
+        content: "Browse our full brush range at aikeruiclean.com/parts. Get factory-direct pricing at aikeruiclean.com/floor-scrubber-parts-quote. We ship worldwide within 24 hours for in-stock items.",
+      },
+    ],
+    relatedProducts: [],
+  },
+  {
+    slug: "floor-scrubber-disc-brush-replacement-tips",
+    title: "Floor Scrubber Disc Brush: 5 Tips for Longer Life",
+    description: "Get more life from your floor scrubber disc brush with these 5 factory tips. Proper care, rotation, and storage can double brush life and save money.",
+    category: "maintenance",
+    readTime: "4 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/101705628647.webp",
+    published: "2026-08-11",
+    relatedGuides: ["how-to-extend-floor-scrubber-lifespan", "how-to-maintain-floor-scrubber-battery", "floor-scrubber-disc-brush-buying-guide"],
+    videoId: "IfTGVM4OC_k",
+    sections: [
+      {
+        heading: "Your Disc Brush Is a Wear Part",
+        content: "A floor scrubber disc brush wears down with every pass. But how fast it wears is largely in your control. Watch the video to see a factory disc brush in action, then use these 5 tips to make every brush last longer.",
+      },
+      {
+        heading: "Tip 1: Match the Brush to the Floor",
+        content: "Using the right bristle for your floor is the biggest factor in brush life.",
+        items: [
+          "Nylon medium: daily cleaning on most floors — longest life for daily use.",
+          "PPL stiff: heavy grease only — do not use on sealed floors.",
+          "Abrasive: stripping only — never daily, it grinds away fast.",
+          "Steel wire: heavy grime only — the most aggressive, shortest life.",
+        ],
+      },
+      {
+        heading: "Tip 2: Set Correct Brush Pressure",
+        content: "Too much pressure wears bristles fast and strains the motor. Set brush pressure so the brush just touches the floor. Most machines have a pressure dial — start at the lowest setting that still cleans well, and increase only as needed.",
+      },
+      {
+        heading: "Tip 3: Rotate Two Brushes",
+        content: "If you use your scrubber daily, buy two brushes and rotate them weekly. Each brush wears evenly while the other rests, and the bristles recover their shape. Two brushes rotated last longer than one used continuously.",
+      },
+      {
+        heading: "Tip 4: Rinse and Dry After Use",
+        content: "Chemicals and grime left on the brush eat the bristles and backing. After each shift:",
+        items: [
+          "Rinse the brush with clean water.",
+          "Let it dry completely before storing.",
+          "Store upright so bristles are not compressed.",
+          "Keep out of direct sunlight — UV damages nylon.",
+        ],
+      },
+      {
+        heading: "Tip 5: Know When to Replace",
+        content: "Replacing at the right time saves money. Running a worn brush wastes chemical, strains the motor, and can scratch your floor. Replace when:",
+        items: [
+          "Bristle height is below 12 mm (half of original).",
+          "Bristles are flattened or broken.",
+          "Streaks appear even with a fresh squeegee blade.",
+        ],
+      },
+      {
+        heading: "Brush Life Cheat Sheet",
+        content: "Quick reference for how long a disc brush should last:",
+        table: {
+          headers: ["Usage", "Nylon", "PPL", "Abrasive"],
+          rows: [
+            ["Daily on smooth floors", "3-6 months", "2-4 months", "1-2 months"],
+            ["Daily on rough concrete", "1-3 months", "1-2 months", "2-4 weeks"],
+            ["Light use (weekly)", "6-12 months", "4-8 months", "2-4 months"],
+          ],
+        },
+      },
+      {
+        heading: "Buy Factory-Direct and Save",
+        content: "A disc brush costs 45 to 75 USD factory-direct, versus 100 to 250 USD at dealers. Same nylon, same bristle density, no middleman markup. Browse all brushes at aikeruiclean.com/parts and get pricing at aikeruiclean.com/floor-scrubber-parts-quote.",
+      },
+    ],
+    relatedProducts: [],
+  },
+  {
+    slug: "anti-tangle-floor-washer-main-brush",
+    title: "Anti-Tangle Floor Scrubber Brush: No Hair Tangles",
+    description: "Troubled by hair tangles and poor cleaning from your floor washer main brush? High-density wear-resistant bristles with moderate hardness for deep stain",
+    category: "buying-guide",
+    readTime: "4 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/floor-pad-floor-scrubber-cleaning-pad-for-commercial-use.webp",
+    published: "2026-08-24",
+    relatedGuides: ["steel-wire-floor-scrubber-brush-guide", "custom-scrubber-brush-solutions", "floor-scrubber-oil-grease-factory-cleaning"],
+    videoId: "antibrush24",
+    sections: [
+      {
+        heading: "Why Hair Tangles on Main Brushes",
+        content: "Main brushes on floor washers spin at high speed. Hair, pet fur, and loose fibers wrap around the bristles and build up into tangles. Once tangled, the brush loses cleaning power, leaves streaks, wears unevenly, and forces you to stop and clean it every few minutes. The fix is a brush designed with anti-tangle bristles and the correct density. Watch the video to see the brush in action:",
+      },
+      {
+        heading: "What Makes an Anti-Tangle Main Brush",
+        content: "Four features work together to resist tangling:",
+        items: [
+          "High-density bristles — dense tufting prevents hair from reaching the brush core.",
+          "Moderate hardness — firm enough for deep stains, soft enough to release hair.",
+          "Wear-resistant material — bristles keep their shape, so anti-tangle performance lasts.",
+          "Rounded bristle tips — reduce friction so hair slides off instead of catching.",
+        ],
+      },
+      {
+        heading: "Deep Floor Stain Removal",
+        content: "The bristles are engineered for tough, ground-in dirt:",
+        items: [
+          "Moderate hardness reaches into floor pores and lifts embedded stains.",
+          "High density means more bristle contact per square inch — more scrubbing power per pass.",
+          "Clears wet and dry waste in one go, so you do not need a separate sweeping pass.",
+        ],
+      },
+      {
+        heading: "Custom Options for Multiple Models",
+        content: "The anti-tangle main brush is available for multiple floor washer models. Custom options include diameter, bristle material, bristle hardness, and center core size. Send us your machine model or a photo of your current brush, and we will confirm compatibility within 24 hours.",
+      },
+      {
+        heading: "Easy Replacement",
+        content: "Replacing a tangled main brush takes minutes:",
+        items: [
+          "1. Turn off the machine and remove the key.",
+          "2. Lift the brush deck.",
+          "3. Slide out the old brush.",
+          "4. Slide in the new anti-tangle brush.",
+          "5. Secure the end caps and lower the deck.",
+          "No special tools, no technician needed. A fresh brush restores full cleaning power instantly.",
+        ],
+      },
+      {
+        heading: "Quick Spec Table",
+        content: "Key specifications at a glance:",
+        table: {
+          headers: ["Specification", "Value"],
+          rows: [
+            ["Bristle type", "High-density, wear-resistant"],
+            ["Hardness", "Moderate (custom available)"],
+            ["Anti-tangle", "Yes — resists hair and fiber wrapping"],
+            ["Cleaning", "Deep stain removal, wet and dry waste in one go"],
+            ["Compatibility", "Multiple models, custom sizes"],
+            ["Replacement", "Tool-free, minutes"],
+          ],
+        },
+      },
+      {
+        heading: "Buy Factory-Direct",
+        content: "Browse our full brush range at aikeruiclean.com/parts. Get factory-direct pricing at aikeruiclean.com/floor-scrubber-parts-quote. We ship worldwide within 24 hours for in-stock items.",
+      },
+    ],
+    relatedProducts: [],
+  },
+  {
+    slug: "custom-scrubber-brush-solutions",
+    title: "Custom Floor Scrubber Brushes | OEM & Private Label",
+    description: "Custom floor scrubber brushes made to fit your machine. Nylon, polypropylene, abrasive filament floor scrubber brush options.",
+    category: "buying-guide",
+    readTime: "4 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/102005135851.webp",
+    published: "2026-08-25",
+    relatedGuides: ["tennant-scrubber-parts-guide", "nilfisk-scrubber-parts-guide", "karcher-scrubber-parts-guide"],
+    videoId: "custombrush25",
+    sections: [
+      {
+        heading: "One Floor Scrubber Brush Does Not Fit Every Floor",
+        content: "Every floor is different — different dirt, different surfaces, different machines. A stock floor scrubber brush that works in one facility can fail in another. That is why we offer professional custom-made floor scrubber brushes. Watch the video to see custom brushes in production:",
+      },
+      {
+        heading: "Floor Scrubber Brush Material Options",
+        content: "We support a range of floor scrubber brush materials so you get the right scrubbing action for your floor:",
+        table: {
+          headers: ["Material", "Best For"],
+          rows: [
+            ["Nylon", "Daily cleaning, most floor types, gentle on surfaces"],
+            ["Polypropylene (PPL)", "Heavy grease and industrial grime"],
+            ["Abrasive filament", "Stripping and deep cleaning"],
+            ["Mixed / custom blend", "Your specific cleaning requirement"],
+          ],
+        },
+      },
+      {
+        heading: "Tailored to Your Equipment",
+        content: "Different brush types and sizes can be tailored to match your equipment models. Whether you run a walk-behind or ride-on scrubber, we produce brushes that fit your machine exactly — diameter, lug pattern, and bristle layout all matched to your model.",
+      },
+      {
+        heading: "Built to Last",
+        content: "Our brushes feature great wear resistance and stable performance. High-density tufting and quality materials mean the brush keeps its shape and cleaning power through heavy use, so you replace it less often.",
+      },
+      {
+        heading: "Adjusted to Your Cleaning Needs",
+        content: "Whether for commercial or industrial cleaning scenarios, we can adjust hardness, density, and structure according to your actual needs:",
+        items: [
+          "Hardness — soft for polished floors, stiff for heavy grime.",
+          "Density — more bristles per inch for tougher jobs.",
+          "Structure — custom center cores, diameters, and bristle patterns.",
+          "Size — matched to your specific machine model.",
+        ],
+      },
+      {
+        heading: "How to Order a Custom Brush",
+        content: "Getting the right custom brush is simple:",
+        items: [
+          "1. Tell us your machine model and floor type.",
+          "2. Share a photo of your current brush (diameter, lug pattern).",
+          "3. We recommend the best material, hardness, and density.",
+          "4. We produce and ship — typical lead time 5-15 working days.",
+        ],
+      },
+      {
+        heading: "Contact Us Today",
+        content: "Contact us today for your personalized scrubber brush solutions. Browse our standard range at aikeruiclean.com/parts, or get a custom quote at aikeruiclean.com/floor-scrubber-parts-quote. We reply within 24 hours.",
+      },
+    ],
+    relatedProducts: [],
+  },
+  {
+    slug: "top-10-floor-scrubber-brushes-and-parts",
+    title: "Top 10 Floor Scrubber Brushes & Parts 2026",
+    description: "The 10 most important floor scrubber brushes and parts ranked: disc brush, roller brush, squeegee blade, pad driver, clutch plate. Brand compatibility and",
+    category: "buying-guide",
+    readTime: "8 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/100053360385.webp",
+    published: "2026-08-27",
+    relatedGuides: ["tennant-scrubber-parts-guide", "nilfisk-scrubber-parts-guide", "karcher-scrubber-parts-guide"],
+    sections: [
+      {
+        heading: "The Floor Scrubber Brush & Parts Landscape",
+        content: "Every floor scrubber depends on a set of brushes and parts that do the actual cleaning. The brush scrubs the dirt, the squeegee picks up the water, and the pad driver connects it all to the motor. Choosing the right parts — and buying them at the right price — is the single biggest factor in cleaning performance and operating cost. This guide ranks the 10 most important floor scrubber brushes and parts, explains what each does, and shows what you should pay factory-direct.",
+      },
+      {
+        heading: "1. Floor Scrubber Disc Brush",
+        content: "The most common brush type, used on the majority of walk-behind and ride-on scrubbers. A flat round brush that spins against the floor. Best on smooth floors like sealed concrete, tile, and epoxy. Available in nylon, PPL, and abrasive materials. Factory-direct: 45 to 75 USD per brush, versus 100 to 250 USD at dealers.",
+        image: "/images/parts/Disc Brush Parts.webp",
+        imageAlt: "Floor scrubber disc brush",
+        items: [
+          "Nylon: daily cleaning, gentle on floors.",
+          "PPL: heavy grease and industrial grime.",
+          "Abrasive: stripping old finish and deep cleaning.",
+          "NP-9200 2-lug fits Tennant, Nilfisk, Viper, most Chinese OEM.",
+        ],
+      },
+      {
+        heading: "2. Floor Scrubber Roller Brush",
+        content: "A horizontal cylindrical brush that spins and sweeps debris while scrubbing. Found on machines like the Tennant T7 and Hako B90. Better on rough concrete, and can clean and sweep in one pass. Factory-direct: 55 to 95 USD, versus 120 to 300 USD at dealers.",
+        image: "/images/parts/Roller Brush Parts.webp",
+        imageAlt: "Floor scrubber roller brush",
+        items: [
+          "Nylon or PPL, with or without center stripe.",
+          "Best for rough, uneven concrete floors.",
+          "One-pass sweep and scrub saves labor.",
+        ],
+      },
+      {
+        heading: "3. Cylindrical Brush",
+        content: "Another name for the roller brush, common on cylindrical brush scrubbers. Same function — horizontal rotation, debris sweeping, even bristle wear. Search terms like cylindrical brush floor scrubber point to this part. Custom sizes available for your machine model.",
+      },
+      {
+        heading: "4. Auto Scrubber Brush",
+        content: "Disc brushes for automatic scrubbers, the machines most facilities use daily. The auto scrubber brush needs the right material and diameter for your floor. Check your lug pattern — NP-9200 covers most auto scrubber brands including Tennant, Nilfisk, Viper, and Karcher.",
+      },
+      {
+        heading: "5. Squeegee Blade & Assembly",
+        content: "The squeegee blade picks up the water the brush loosens. A worn blade leaves streaks and wet floors. Choose natural rubber for smooth floors, polyurethane for rough floors. Factory-direct: 10 to 25 USD per blade, versus 25 to 60 USD at dealers.",
+        image: "/images/parts/Squeegee Rubber Parts.webp",
+        imageAlt: "Floor scrubber squeegee blade",
+        items: [
+          "NR (natural rubber): best water pickup on smooth floors.",
+          "PU (polyurethane): longer wear on rough floors.",
+          "Replace when streaks appear even with a fresh blade.",
+        ],
+      },
+      {
+        heading: "6. Pad Driver",
+        content: "The pad driver connects the motor shaft to the brush or pad. Also called pad holder or floor scrubber pad driver. NP-9200 2-lug is the standard for most brands. Factory-direct: 15 to 40 USD, versus 40 to 90 USD at dealers.",
+        image: "/images/parts/Pad Driver Parts.webp",
+        imageAlt: "Floor scrubber pad driver",
+        items: [
+          "NP-9200: 2-lug, fits most machines.",
+          "Center lock: 3-lug, older Advance and Nilfisk.",
+          "Magnetic: 4-lug, Karcher and Hako.",
+        ],
+      },
+      {
+        heading: "7. Clutch Plate",
+        content: "The clutch plate transfers motor power to the brush and protects the drive system. A worn clutch plate causes slipping and poor scrubbing. Available for most disc brush machines in NP-9200 and other standards. Factory-direct pricing on request.",
+      },
+      {
+        heading: "8. Brand-Compatible Brushes (Tennant, Nilfisk, Viper, Karcher)",
+        content: "You do not need to pay the brand premium for replacement brushes. The same nylon or PPL brush with the same spec fits Tennant, Nilfisk, Viper, and Karcher machines at 30-50 percent less than dealer prices.",
+        items: [
+          "Tennant floor scrubber brush: T5, T7, T300, T500.",
+          "Nilfisk floor scrubber brush: SC500, SC600, BA530.",
+          "Viper floor scrubber brush: Predator, Crowd, Runner.",
+          "Karcher floor scrubber brush: BR 35/40 to BR 60/40.",
+        ],
+      },
+      {
+        heading: "9. Floor Scrubber Brush Pads",
+        content: "Brush pads and pad holders for polishing, burnishing, and light scrubbing on delicate floors. Used with a pad driver on single-disc machines. Choose the right pad color and density for your floor finish.",
+      },
+      {
+        heading: "10. Floor Scrubber Parts — the Full Set",
+        content: "Beyond brushes, a complete parts set includes hoses, filters, batteries, chargers, and side brushes. Buying all consumables factory-direct from one source simplifies ordering and cuts costs 30-50 percent. A one-stop replacement floor scrubber parts supplier saves time and money.",
+        items: [
+          "Disc brushes, roller brushes, squeegee blades.",
+          "Pad drivers, clutch plates, side brushes.",
+          "Hoses, filters, batteries, chargers.",
+          "All compatible with major brands.",
+        ],
+      },
+      {
+        heading: "The Price Reality",
+        content: "The cleaning equipment brands do not make their own brushes. They source them from factories and mark them up 2 to 3 times. Buying factory-direct removes the middlemen:",
+        items: [
+          "Disc brush: 45-75 USD factory-direct vs 100-250 USD dealer.",
+          "Roller brush: 55-95 USD vs 120-300 USD.",
+          "Squeegee blade: 10-25 USD vs 25-60 USD.",
+          "Pad driver: 15-40 USD vs 40-90 USD.",
+          "Savings of 30-50 percent on every replacement part.",
+        ],
+      },
+      {
+        heading: "See the Factory in Action",
+        content: "Watch our short factory video to see the production lines, raw materials, and finished brushes. A real factory has visible production — that is the first thing to verify when sourcing.",
+      },
+      {
+        heading: "Get Factory-Direct Quotes",
+        content: "Browse the full floor scrubber brush and parts range at aikeruiclean.com/parts. Get factory-direct pricing at aikeruiclean.com/floor-scrubber-parts-quote. We confirm compatibility within 24 hours and ship worldwide for in-stock items.",
+      },
+    ],
+    relatedProducts: [],
+  },
+  {
+    slug: "aftermarket-scrubber-brush-compatible-brands",
+    title: "Compatible Floor Scrubber Brushes for Top Brands",
+    description: "High-quality aftermarket floor scrubber brushes compatible with Tennant, Nilfisk, Karcher, Hako, Comac, Advance, Viper.",
+    category: "buying-guide",
+    readTime: "8 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/101704011949.webp",
+    published: "2026-08-27",
+    sections: [
+      {
+        heading: "Same Cleaning Power, a Fraction of the Price",
+        content: "The world's top floor scrubber brands make excellent machines. But their replacement brushes carry a heavy markup — often 2 to 3 times the factory cost. The good news: you do not need to pay it. High-quality aftermarket brushes with the same specifications fit the same machines, clean the same floors, and cost 30-50 percent less. This guide covers compatible brushes for the top 10 scrubber brands on the market, and how to buy them factory-direct.",
+      },
+      {
+        heading: "How Compatibility Works",
+        content: "A floor scrubber brush fits a machine by three things: diameter, mounting system, and bristle material. If these match the machine spec, the brush works — regardless of the brand on the label.",
+        image: "/images/parts/Disc Brush Parts.webp",
+        imageAlt: "Compatible floor scrubber disc brush",
+        items: [
+          "Diameter: 17, 20, 24, 28, 32 inch — must match machine width.",
+          "Mounting: NP-9200 2-lug covers most brands; 3-lug and 4-lug for others.",
+          "Material: nylon, PPL, abrasive — choose for your floor type.",
+          "Same spec = same performance, at factory price.",
+        ],
+      },
+      {
+        heading: "1. Compatible Brushes for Tennant Scrubbers",
+        content: "Tennant T5, T7, T300, T500 machines use the NP-9200 2-lug standard. Our compatible disc brushes and squeegee blades match the exact specifications, at 30-50 percent less than dealer pricing. Roller brushes for cylindrical Tennant models also available.",
+        image: "/images/parts/Roller Brush Parts.webp",
+        imageAlt: "Compatible roller brush for Tennant scrubbers",
+        items: [
+          "T5 / T7: 24 inch disc brush.",
+          "T300 / T500: 28-32 inch disc brush.",
+          "Squeegee blades, pad drivers, and clutch plates.",
+        ],
+      },
+      {
+        heading: "2. Compatible Brushes for Nilfisk Scrubbers",
+        content: "Nilfisk SC500, SC600, and BA series machines. Our compatible brushes match Nilfisk specifications with the same cleaning performance. Factory-direct pricing on every replacement part.",
+        items: [
+          "SC500 / SC600: 20 inch disc brush, NP-9200.",
+          "BA530 / BA730: 3-lug center lock.",
+          "Squeegee blades in NR and PU.",
+        ],
+      },
+      {
+        heading: "3. Compatible Brushes for Karcher Scrubbers",
+        content: "Karcher BR 35/40, BR 40/10, BR 50/50, and BR 60/40 machines. Compatible disc brushes and squeegee blades match Karcher specs at a fraction of the dealer price.",
+        items: [
+          "BR 35/40: 14 inch disc brush.",
+          "BR 50/50: 20 inch disc brush.",
+          "BR 60/40: 24 inch disc brush.",
+        ],
+      },
+      {
+        heading: "4. Compatible Brushes for Hako Scrubbers",
+        content: "Hako B45, B70, B75R, and B90 machines. Compatible roller brushes and disc brushes available. Hako's 4-lug magnetic mounting is covered by our catalog.",
+      },
+      {
+        heading: "5. Compatible Brushes for Comac Scrubbers",
+        content: "Comac machines, popular across Europe. Our compatible brushes match Comac specifications, with the same durability at factory-direct pricing.",
+      },
+      {
+        heading: "6. Compatible Brushes for Advance & Viper Scrubbers",
+        content: "Advance and Viper machines share many mounting standards. Viper Predator, Crowd, and Runner; Advance HydroForce and others. Compatible brushes, squeegee blades, and pad drivers available.",
+        items: [
+          "Viper Predator: 28-32 inch disc brush.",
+          "Viper Runner: 20 inch disc brush.",
+          "Advance: 3-lug center lock options.",
+        ],
+      },
+      {
+        heading: "7-10. Other Top Brands Covered",
+        content: "Our compatible range also covers ICE, NSS Enterprises, Gaomei, and other popular scrubber brands. If you run a machine from the top 10 market leaders, we likely have a compatible brush for it.",
+        image: "/images/parts/Sweeper Side Brush Parts.webp",
+        imageAlt: "Compatible side brush for floor scrubbers",
+        items: [
+          "ICE: ride-on and walk-behind models.",
+          "NSS Enterprises: American machines.",
+          "Gaomei: Chinese budget machines.",
+          "Not sure? Send a photo of your brush, we confirm within 24 hours.",
+        ],
+      },
+      {
+        heading: "Why Buy Aftermarket Factory-Direct",
+        content: "Choosing compatible aftermarket brushes from the original manufacturer who makes them gives you:",
+        items: [
+          "Same specifications as brand brushes — same cleaning performance.",
+          "30-50 percent lower cost on every replacement.",
+          "Custom sizes and materials for your floor.",
+          "Private label / OEM options for distributors and brands.",
+          "Direct factory support and fast worldwide shipping.",
+        ],
+      },
+      {
+        heading: "Custom & Private Label Available",
+        content: "As the original manufacturer, we support custom brushes and private label programs. Distributors and cleaning brands can order brushes under their own label, with tailored materials, colors, and packaging. MOQ and lead times on request.",
+      },
+      {
+        heading: "Get Factory-Direct Quotes",
+        content: "Browse compatible brushes at aikeruiclean.com/parts. Get factory-direct pricing at aikeruiclean.com/floor-scrubber-parts-quote. Send us your machine model or a photo of your current brush, and we confirm compatibility within 24 hours.",
+      },
+    ],
+    relatedProducts: [],
+    relatedGuides: [
+      "tennant-scrubber-parts-guide",
+      "nilfisk-scrubber-parts-guide",
+      "karcher-scrubber-parts-guide",
+      "viper-scrubber-parts-guide",
+      "floor-scrubber-brush-complete-guide",
+    ],
+  },
+  {
+    slug: "how-to-buy-floor-scrubber-parts-from-china",
+    title: "How to Buy Floor Scrubber Parts from China",
+    description: "Step-by-step guide to sourcing floor scrubber brushes, squeegee blades, and parts from China.",
+    category: "buying-guide",
+    readTime: "9 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/101711325869.webp",
+    videoId: "factorytour01",
+    published: "2026-09-01",
+    sections: [
+      {
+        heading: "Why Buy Floor Scrubber Parts from China",
+        content: "China manufactures the majority of the world's floor scrubber brushes, squeegee blades, and pad drivers — including the private-label parts sold by Western brands. Buying directly from the factory saves 30-50% versus dealer prices. The challenge is finding a real manufacturer instead of a trading company, and handling the sourcing process safely. This guide walks through each step.",
+      },
+      {
+        heading: "Step 1: Find a Real Manufacturer",
+        content: "Not every supplier on Alibaba or Made-in-China is a factory. Use these verification checks:",
+        image: "/images/parts/Pad Driver Parts.webp",
+        imageAlt: "how to buy floor scrubber parts from china",
+        items: [
+          "Ask for a live video tour of the production floor via WhatsApp or video call.",
+          "Request a business license and match the address to a real industrial area.",
+          "Check if they show molds, raw material stock, and production equipment in photos.",
+          "Ask for the factory's export record or existing customer references.",
+          "Cross-check the company on Google Maps — a real factory has a visible site.",
+        ],
+      },
+      {
+        heading: "Step 2: Confirm Compatibility Before Ordering",
+        content: "A floor scrubber part must match your machine's diameter, mounting system, and specification. The NP-9200 2-lug standard fits most Tennant, Nilfisk, Viper, and Chinese OEM machines. 3-lug center lock fits Advance and older Nilfisk. 4-lug magnetic fits Karcher BD50/53 and Hako B45/70. Always send the factory your machine model or OEM part number, plus a photo of the existing part, before ordering.",
+      },
+      {
+        heading: "Step 3: Order Samples First",
+        content: "Never place a bulk order without testing samples. A reputable factory ships samples within 24-48 hours via DHL or FedEx. Compare the sample against your current part: check bristle density, bristle height, backing plate quality, and fit on your machine. Sample cost is usually deducted from your first bulk order.",
+      },
+      {
+        heading: "Step 4: Compare Factory-Direct Quotes",
+        content: "Get quotes from 2-3 verified factories. Compare price, MOQ, lead time, and payment terms — not just price. A factory-direct disc brush costs 45-75 USD versus 100-250 USD at dealers. Roller brushes cost 55-95 USD factory-direct versus 120-300 USD at dealers. Watch for quotes that are suspiciously low — they often use recycled filler instead of virgin nylon or PPL.",
+      },
+      {
+        heading: "Step 5: Payment and Contract Terms",
+        content: "Standard terms for factory-direct parts:",
+        table: {
+          headers: ["Term", "Typical Arrangement", "Notes"],
+          rows: [
+            ["Deposit", "30% T/T advance", "Required for custom/OEM orders"],
+            ["Balance", "70% before shipment", "After production photos approved"],
+            ["Sample orders", "100% in advance", "Under 500 USD, use PayPal or Trade Assurance"],
+            ["Trade Assurance", "Available on Alibaba", "Free buyer protection up to agreed amount"],
+            ["Inspection", "SGS or BV before shipment", "Optional, at buyer's cost"],
+          ],
+        },
+      },
+      {
+        heading: "Step 6: Shipping and Customs",
+        content: "Parts ship by express courier (DHL/FedEx/UPS, 3-7 days) for small orders, or by sea freight (LCL/FCL, 25-40 days) for bulk. For the US, a commercial invoice with HS Code 8479.90 is typical for scrubber parts. Duties vary by country — check your local import tariff for brush and parts classifications.",
+      },
+      {
+        heading: "Step 7: Build a Long-Term Relationship",
+        content: "The best pricing and priority production come from repeat orders. Keep your drawings, part numbers, and order history with the same factory. Ask about annual volume discounts and consignment stock options for fast-moving parts.",
+      },
+      {
+        heading: "Get a Factory-Direct Quote",
+        content: "We are a verified brush and parts manufacturer in Anqing, China since 2008 (CE, ISO 9001). Send us your machine model or OEM part number at aikeruiclean.com/floor-scrubber-parts-quote, or browse our 360+ parts catalog at aikeruiclean.com/parts. Samples ship within 24-48 hours.",
+      },
+    ],
+    relatedProducts: [],
+    relatedGuides: [
+      "how-to-import-floor-scrubbers-from-china",
+      "oem-vs-aftermarket-floor-scrubber-parts",
+      "floor-scrubber-parts-guide-types-lifespan-cost",
+      "floor-scrubber-brush-complete-guide",
+      "top-10-floor-scrubber-parts-suppliers",
+    ],
+  },
+  {
+    slug: "floor-scrubber-brush-pads-guide",
+    title: "Floor Scrubber Brush Pads: Types, Sizes & How to Choose",
+    description: "Complete guide to floor scrubber brush pads. Learn pad types (non-woven, abrasive, stripping), sizes, color codes",
+    category: "buying-guide",
+    readTime: "6 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/102005253936.webp",
+    published: "2026-09-02",
+    sections: [
+      {
+        heading: "What Are Floor Scrubber Brush Pads?",
+        content: "Floor scrubber brush pads are circular pads that attach under the pad driver of a floor scrubber. They do the final cleaning pass: the brush or pad scrubs the floor, and the pad's fibers trap dirt while the squeegee picks up the water. Pads are cheaper and quicker to change than brushes, which is why many facilities use pads for daily cleaning and reserve brushes for heavy scrubbing.",
+      },
+      {
+        heading: "Pad Types: What Each One Does",
+        content: "Pads are categorized by color, which indicates their aggressiveness. Choose based on your floor type and cleaning job:",
+        table: {
+          headers: ["Color", "Type", "Best For", "Avoid On"],
+          rows: [
+            ["White", "Polishing", "Final buffing, light dust", "None"],
+            ["Red", "Light scrubbing", "Daily cleaning, sealed floors", "Delicate finishes"],
+            ["Blue", "Medium scrubbing", "General purpose, tile, concrete", "Soft finishes"],
+            ["Green", "Heavy scrubbing", "Stubborn dirt, grout lines", "Polished floors"],
+            ["Brown", "Stripping", "Removing old finish", "Sealed floors"],
+            ["Black", "Stripping/burnishing", "Heavy stripping", "Any coated floor"],
+          ],
+        },
+      },
+      {
+        heading: "Pad Sizes: Matching Your Machine",
+        content: "The pad size must match your machine's pad driver diameter. Common sizes:",
+        items: [
+          "13 inch: small walk-behind machines and rotary units.",
+          "17 inch: standard walk-behind scrubbers.",
+          "20 inch: mid-size walk-behind machines.",
+          "24 inch: large walk-behind and small ride-on scrubbers.",
+          "28-32 inch: ride-on machines.",
+        ],
+      },
+      {
+        heading: "How Long Do Pads Last?",
+        content: "A pad's lifespan depends on floor condition and usage. On smooth sealed floors, a red or blue pad lasts 2-4 weeks of daily use. On rough concrete, expect 1-2 weeks. Replace the pad when it stops lifting dirt or looks glazed and flattened. Rotating between two pads can extend their combined life.",
+      },
+      {
+        heading: "Pads vs Brushes: Which to Use?",
+        content: "Brushes scrub aggressively and last longer; pads clean finer and are cheaper to swap. Many facilities use both: brushes for the main scrub pass, pads for finish cleaning or on delicate floors. Your machine's pad driver can accept either, depending on what you attach.",
+      },
+      {
+        heading: "Buy Factory-Direct",
+        content: "A floor scrubber pad costs 5-15 USD factory-direct versus 15-35 USD at dealers. Browse our pad and brush range at aikeruiclean.com/parts, or send your machine model to aikeruiclean.com/floor-scrubber-parts-quote for a quote within 24 hours.",
+      },
+    ],
+    relatedProducts: [],
+    relatedGuides: [
+      "floor-scrubber-brush-complete-guide",
+      "floor-scrubber-pad-holder-replacement-guide",
+      "floor-scrubber-parts-guide-types-lifespan-cost",
+    ],
+  },
+  {
+    slug: "replacement-floor-scrubber-parts-guide",
+    title: "Replacement Floor Scrubber Parts: Complete Buying Guide",
+    description: "Find the right replacement parts for your floor scrubber: brushes, squeegees, pad drivers, hoses, and filters.",
+    category: "buying-guide",
+    readTime: "7 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/102005762209.webp",
+    published: "2026-09-02",
+    sections: [
+      {
+        heading: "Which Floor Scrubber Parts Wear Out First?",
+        content: "Floor scrubbers have a handful of parts that need regular replacement. Knowing which ones wear fastest helps you budget and avoid downtime:",
+        table: {
+          headers: ["Part", "Typical Lifespan", "Replacement Cost (Factory-Direct)"],
+          rows: [
+            ["Squeegee blades", "2-4 months", "10-25 USD"],
+            ["Disc brushes", "3-6 months", "45-75 USD"],
+            ["Roller brushes", "3-6 months", "55-95 USD"],
+            ["Scrubber pads", "2-4 weeks", "5-15 USD"],
+            ["Hoses", "6-12 months", "8-20 USD"],
+            ["Vacuum filters", "3-6 months", "5-15 USD"],
+            ["Pad drivers", "12+ months", "15-40 USD"],
+          ],
+        },
+      },
+      {
+        heading: "How to Identify the Right Part for Your Machine",
+        content: "To order the correct replacement part, collect these details from your machine:",
+        items: [
+          "Machine brand and model number (check the data plate).",
+          "OEM part number printed on the old part.",
+          "Diameter or length of the brush or blade.",
+          "Mounting type: 2-lug, 3-lug, or 4-lug (for brushes and drivers).",
+          "A photo of the old part if you cannot read the numbers.",
+        ],
+      },
+      {
+        heading: "OEM vs Aftermarket Replacement Parts",
+        content: "OEM parts come from the machine brand and carry a heavy markup. Aftermarket parts from a factory with the same specifications fit the same machines, clean the same floors, and cost 30-50 percent less. The key is matching the specification exactly, not the brand on the label. See our aftermarket guide for brand-specific compatibility.",
+      },
+      {
+        heading: "Buying Factory-Direct",
+        content: "Ordering direct from a parts manufacturer gives you the same quality at a fraction of the dealer price. In-stock parts ship within 24-48 hours worldwide. Send us your machine model or OEM part number at aikeruiclean.com/floor-scrubber-parts-quote, or browse 360+ parts at aikeruiclean.com/parts.",
+      },
+    ],
+    relatedProducts: [],
+    relatedGuides: [
+      "oem-vs-aftermarket-floor-scrubber-parts",
+      "floor-scrubber-parts-guide-types-lifespan-cost",
+      "aftermarket-scrubber-brush-compatible-brands",
+      "floor-scrubber-brush-replacement-guide",
+    ],
+  },
+  {
+    slug: "auto-scrubber-brush-guide",
+    title: "Auto Scrubber Brush: Compatible Options & Replacement Guide",
+    description: "Auto scrubber brushes explained: types, brands, and compatibility. Find replacement brushes for your automatic floor scrubber and save 30-50% factory-direct.",
+    category: "buying-guide",
+    readTime: "6 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/102005918795.webp",
+    published: "2026-09-02",
+    sections: [
+      {
+        heading: "What Is an Auto Scrubber Brush?",
+        content: "An auto scrubber (automatic floor scrubber) uses brushes or pads to scrub the floor while a squeegee recovers the water. The brush is the main wear item — it scrubs the dirt loose and must be replaced regularly to keep cleaning performance high. Auto scrubber brushes come in disc, roller, and cylindrical styles depending on the machine.",
+      },
+      {
+        heading: "Disc Brush vs Roller Brush for Auto Scrubbers",
+        content: "Auto scrubbers use one of two brush systems:",
+        table: {
+          headers: ["Type", "Machine Example", "Best For", "Replacement Cost (Factory-Direct)"],
+          rows: [
+            ["Disc brush", "Most walk-behind auto scrubbers", "Smooth floors, sealed concrete, tile", "45-75 USD"],
+            ["Roller brush", "Tennant T7, Hako B90 style machines", "Rough concrete, debris, one-pass cleaning", "55-95 USD"],
+          ],
+        },
+      },
+      {
+        heading: "Brand Compatibility",
+        content: "Most auto scrubber brushes use the NP-9200 2-lug standard, which fits Tennant, Nilfisk, Viper, Comac, Karcher (with adapter), and most Chinese OEM machines. Some machines need 3-lug or 4-lug mounts. Before ordering, send us your machine brand, model, and a photo of the current brush — we confirm compatibility within 24 hours.",
+      },
+      {
+        heading: "Signs Your Brush Needs Replacing",
+        content: "Replace the brush when you notice:",
+        items: [
+          "Streaks or a film left after cleaning.",
+          "Bristles flattened or shorter than 12 mm.",
+          "The machine vibrates more than usual.",
+          "Cleaning time has increased for the same result.",
+          "You can see the backing plate through the bristles.",
+        ],
+      },
+      {
+        heading: "Buy Auto Scrubber Brushes Factory-Direct",
+        content: "A replacement auto scrubber brush costs 45-95 USD factory-direct versus 100-250 USD at dealers. Browse compatible brushes at aikeruiclean.com/parts, or get a quote at aikeruiclean.com/floor-scrubber-parts-quote. In-stock brushes ship within 24-48 hours.",
+      },
+    ],
+    relatedProducts: [],
+    relatedGuides: ["floor-scrubber-brush-complete-guide", "cylindrical-brush-floor-scrubber-guide", "floor-scrubber-brush-lifespan-and-maintenance"],
+  },
+  {
+    slug: "cylindrical-brush-floor-scrubber-guide",
+    title: "Cylindrical Brush Floor Scrubber: How It Works",
+    description: "Cylindrical brush floor scrubbers explained: how roller brushes work, which machines use them, and how to buy replacement cylindrical brushes factory-direct.",
+    category: "buying-guide",
+    readTime: "6 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/102012701424.webp",
+    published: "2026-09-02",
+    sections: [
+      {
+        heading: "What Is a Cylindrical Brush Floor Scrubber?",
+        content: "A cylindrical brush floor scrubber uses horizontal roller brushes instead of flat disc brushes. The cylinder spins against the floor, scrubbing dirt loose while the squeegee collects the water. Because the bristles contact more surface area and wear evenly, cylindrical machines handle rough concrete and uneven floors better than disc machines.",
+      },
+      {
+        heading: "Cylindrical vs Disc Brush Machines",
+        content: "Choose based on your floor and cleaning needs:",
+        table: {
+          headers: ["Factor", "Cylindrical (Roller)", "Disc"],
+          rows: [
+            ["Floor type", "Rough, uneven, grout lines", "Smooth, sealed, tile"],
+            ["Debris handling", "Sweeps and scrubs in one pass", "Requires pre-sweeping"],
+            ["Bristle wear", "Even wear, longer life", "Edge wear on rough floors"],
+            ["Machine cost", "Higher", "Lower"],
+            ["Brush cost (factory-direct)", "55-95 USD", "45-75 USD"],
+          ],
+        },
+      },
+      {
+        heading: "Which Machines Use Cylindrical Brushes?",
+        content: "Common cylindrical brush machines include the Tennant T7, Hako B90, and several compact ride-on models. Brush fit is determined by the roller's diameter and length, plus the drive configuration. Always check the machine model and measure the old roller before ordering.",
+      },
+      {
+        heading: "How Long Does a Cylindrical Brush Last?",
+        content: "A cylindrical brush typically lasts 3-6 months with daily use, longer than a disc brush on the same floor because bristles wear evenly. On very abrasive floors, expect 1-3 months. Replace it when cleaning quality drops or bristles are visibly flattened.",
+      },
+      {
+        heading: "Buy Cylindrical Brushes Factory-Direct",
+        content: "A cylindrical floor scrubber brush costs 55-95 USD factory-direct versus 120-300 USD at dealers. Send us your machine model and roller dimensions at aikeruiclean.com/floor-scrubber-parts-quote, or browse our roller brush range at aikeruiclean.com/parts.",
+      },
+    ],
+    relatedProducts: [],
+    relatedGuides: [
+      "disc-brush-vs-roller-brush-scrubber",
+      "top-10-floor-scrubber-roller-brushes",
+      "floor-scrubber-brush-complete-guide",
+      "floor-scrubber-brush-replacement-guide",
+    ],
+  },
+  {
+    slug: "how-much-do-floor-scrubber-brushes-cost",
+    title: "How Much Do Floor Scrubber Brushes Cost? (2026 Price Guide)",
+    description: "Real 2026 prices for floor scrubber brushes: disc, roller, side, and pad brushes. Factory-direct vs dealer pricing, what drives cost, and how to budget.",
+    category: "buying-guide",
+    readTime: "7 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/102012819567.webp",
+    published: "2026-09-02",
+    sections: [
+      {
+        heading: "What Does a Floor Scrubber Brush Cost in 2026?",
+        content: "A floor scrubber brush costs 45 to 95 USD factory-direct, or 100 to 250 USD from a dealer. The exact price depends on brush type, size, and bristle material. This guide breaks down real prices so you know what to budget and what is a fair price.",
+        table: {
+          headers: ["Brush Type", "Factory-Direct Price", "Dealer Price", "Typical Lifespan"],
+          rows: [
+            ["Disc brush (17-24 inch)", "45-75 USD", "100-200 USD", "3-6 months"],
+            ["Roller brush", "55-95 USD", "120-300 USD", "3-6 months"],
+            ["Side brush", "15-30 USD", "40-80 USD", "6-12 months"],
+            ["Pad driver brush", "15-40 USD", "40-90 USD", "12+ months"],
+            ["Abrasive/strip brush", "50-85 USD", "110-220 USD", "1-3 months"],
+          ],
+        },
+      },
+      {
+        heading: "Why Dealer Prices Are 2-3x Higher",
+        content: "The machine brands do not make their own brushes. They source them from factories, add branding, and mark them up. A disc brush that costs 50 USD from the factory sells for 120-200 USD at a dealer because you are paying for the brand, distribution network, and dealer margin — not for a better brush.",
+      },
+      {
+        heading: "What Drives the Price?",
+        content: "Three factors determine what a brush costs:",
+        items: [
+          "Bristle material: nylon is the standard, PPL costs slightly more, abrasive (silicon carbide) is the most expensive.",
+          "Size: larger brushes (24+ inch) cost more than small ones (13-17 inch) due to more material.",
+          "Bristle density and quality: virgin nylon with dense tufting costs more than recycled filler — and lasts longer.",
+        ],
+      },
+      {
+        heading: "How to Avoid Overpaying",
+        content: "Buy by specification, not by brand. A brush fits a machine by diameter, mounting system (NP-9200 2-lug covers most), and bristle material. If these match, the brush works — the logo on the box does not affect cleaning. Ordering factory-direct or from a parts specialist saves 30-50 percent on every replacement.",
+      },
+      {
+        heading: "Budgeting for Brush Replacement",
+        content: "A single machine uses roughly 300 to 800 USD of brushes per year depending on usage and floor type. Budget accordingly:",
+        items: [
+          "Light use (2-3x/week, smooth floors): 200-400 USD/year per machine.",
+          "Daily use (smooth floors): 400-600 USD/year.",
+          "Heavy use (rough concrete): 600-1,000 USD/year.",
+          "Buying 2-3 brushes at once usually earns a bulk discount.",
+        ],
+      },
+      {
+        heading: "Get Factory-Direct Pricing",
+        content: "Browse our full brush range at aikeruiclean.com/parts. Send your machine model or OEM part number to aikeruiclean.com/floor-scrubber-parts-quote and get factory-direct pricing within 24 hours. In-stock brushes ship in 24-48 hours worldwide.",
+      },
+    ],
+    relatedProducts: [],
+    relatedGuides: [
+      "floor-scrubber-brush-complete-guide",
+      "floor-scrubber-brush-replacement-guide",
+      "floor-scrubber-parts-guide-types-lifespan-cost",
+      "how-much-does-floor-scrubber-cost",
+      "top-10-floor-scrubber-brushes-and-parts",
+    ],
+
+  },
+{
+    slug: "floor-scrubber-brush-lifespan-and-maintenance",
+    title: "Floor Scrubber Brush Lifespan: When to Replace",
+    description: "How long do floor scrubber brushes really last? Disc, roller, side and cylindrical brush lifespan by usage — plus 8 maintenance tips to extend brush life and",
+    category: "buying-guide",
+    readTime: "8 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/sweeper-main-brush-ride-on-walk-behind-sweeper-core-brush-for-commercial-use.webp",
+    published: "2026-09-08",
+    sections: [
+      {
+        heading: "How Long Does a Floor Scrubber Brush Last?",
+        content: "A floor scrubber brush typically lasts 3 to 12 months of normal operation. Disc brushes on smooth floors last 6-12 months, while abrasive or stripping brushes wear in 1-3 months on rough concrete. The real answer depends on four things: floor type, daily run time, bristle material, and maintenance habits.",
+        table: {
+          headers: ["Brush Type", "Typical Lifespan", "Best Floor Use"],
+          rows: [
+            ["Disc brush (nylon)", "6-12 months", "Tile, epoxy, sealed concrete"],
+            ["Disc brush (abrasive)", "1-3 months", "Stripping, heavy grime"],
+            ["Cylindrical / roller brush", "3-6 months", "Unsealed concrete, textured floors"],
+            ["Side / edge brush", "6-12 months", "Edges, corners, sweepers"],
+            ["Steel wire brush", "2-4 months", "Deep stripping, heavy buildup"],
+          ],
+        },
+      },
+      {
+        heading: "Signs Your Brush Needs Replacing",
+        content: "A worn brush does more than clean poorly — it can damage your floor and overload the machine motor. Replace the brush when you notice any of these signs:",
+        items: [
+          "Bristles are worn below roughly one-third of their original length.",
+          "Streaks or water marks appear even after the machine passes.",
+          "The brush no longer lifts dirt; the machine leaves a film.",
+          "Bristles are bent, matted, or missing in patches.",
+          "Cleaning time increases because you must go over the same area twice.",
+          "The motor sounds strained or the machine vibrates more than usual.",
+        ],
+      },
+      {
+        heading: "Why Replacing Brushes on Time Saves Money",
+        content: "Running a brush past its useful life does not save money — it costs more. A worn brush forces the operator to slow down and re-clean, which burns labor hours. It also pushes debris into the squeegee and can scratch coated floors. In practice, replacing a brush at the right time is cheaper than the extra labor and floor damage caused by a brush that should have been swapped weeks earlier.",
+      },
+      {
+        heading: "8 Tips to Extend Brush Life",
+        content: "With simple habits, most facilities extend brush life by 30-40 percent and cut annual brush spending noticeably:",
+        items: [
+          "1. Match the brush to the floor: nylon for smooth sealed floors, abrasive only when actually stripping. The wrong brush wears out early.",
+          "2. Keep brushes off the floor when parked: raise the head or block the brush so it does not spin in place.",
+          "3. Rinse brushes after use: dried chemicals and grit accelerate wear.",
+          "4. Rotate disc brushes: flip or swap left/right position regularly for even wear.",
+          "5. Remove large debris first: sweep or pre-clean metal shavings and gravel that shred bristles.",
+          "6. Check water flow and squeegee: a dry run or leaking squeegee forces the brush to overwork.",
+          "7. Store brushes flat and dry, never stacked under heavy weight.",
+          "8. Train operators to avoid harsh chemicals on nylon — strong solvents soften and deform bristles.",
+        ],
+      },
+      {
+        heading: "When to Inspect Brushes (Maintenance Schedule)",
+        content: "Build brush inspection into your routine so wear is caught early:",
+        table: {
+          headers: ["Frequency", "Check"],
+          rows: [
+            ["Daily", "Look for wrapped debris, hair, or string on the brush after use."],
+            ["Weekly", "Measure bristle length; compare against a new brush."],
+            ["Monthly", "Rotate brushes; check for uneven wear or bent tufts."],
+            ["Quarterly", "Full replacement review; order spares before the brush fails."],
+          ],
+        },
+      },
+      {
+        heading: "Replace or Refurbish?",
+        content: "Some roller and cylindrical brushes can be re-tufted or re-filled by the factory at a lower cost than a new brush, which is worth considering for large or odd-size brushes. Disc brushes are usually cheaper to replace than to re-fill. If you buy factory-direct from a brush manufacturer, ask about re-tufting options and about matching the original bristle spec — a good supplier will tell you honestly whether replacement or re-fill makes more sense for your usage.",
+      },
+      {
+        heading: "Ordering Replacement Brushes",
+        content: "To order the right replacement, you need three numbers: brush diameter (for disc brushes) or length (for cylindrical/roller brushes), the mounting system (such as a 2-lug or 3-lug driver plate), and the bristle material. If you are not sure, measure the old brush and send a photo — a factory-direct supplier can match it by spec, not by brand name. Buying by specification opens the door to OEM-compatible brushes at 30-50 percent below dealer pricing.",
+      },
+    ],
+},
+{
+    slug: "how-to-measure-floor-scrubber-brush-size",
+    title: "How to Measure a Floor Scrubber Brush: Size Chart",
+    description: "Measure your floor scrubber brush in 3 steps — diameter, center hole, bristle length. Includes a brush size chart by machine brand (Tennant, Karcher, Nilfisk",
+    category: "buying-guide",
+    readTime: "7 min",
+    difficulty: "beginner",
+    thumbnail: "/images/parts/shampoo-disc-brush-custom-nylon-abrasive-brushes-for-floor-scrubbers.webp",
+    published: "2026-09-10",
+    videoId: "fuP35AeMNGk",
+    sections: [
+      {
+        heading: "Why the Right Brush Size Matters",
+        content: "A floor scrubber brush that is the wrong size does not simply clean worse — it can damage the machine. A brush that is too large will not seat on the driver plate, wobbles during rotation, and overloads the brush motor. A brush that is too small leaves uncleaned strips along the edges and forces the operator to make extra passes. Getting the size right the first time is the difference between a brush that lasts six months and one that fails in six weeks.",
+      },
+      {
+        heading: "The Three Measurements You Need",
+        content: "Every replacement brush is defined by three numbers. Write all three down before you order.",
+        table: {
+          headers: ["Measurement", "What It Means", "How It Is Written"],
+          rows: [
+            ["Brush diameter", "Overall width across the brush face (disc brushes)", "17 in / 430 mm"],
+            ["Brush length", "Total length for cylindrical and roller brushes", "26 in / 660 mm"],
+            ["Center hole and lug pattern", "The hole diameter plus the number of drive lugs", "3.5 in hole, 3-lug"],
+            ["Bristle length", "Bristle trim height, which affects pressure and scrubbing", "1.5 in / 38 mm"],
+          ],
+        },
+      },
+      {
+        heading: "How to Measure Your Brush (5 Steps)",
+        content: "You do not need special tools. A tape measure and a marker are enough.",
+        items: [
+          "1. Remove the brush from the machine. Raise the deck or release the retainer clip first — never measure while the brush is mounted.",
+          "2. Measure the diameter across the center for disc brushes. Lay the brush flat and measure the widest point straight across the middle.",
+          "3. Measure the length for cylindrical and roller brushes. Measure tip to tip along the brush body, not the shaft.",
+          "4. Measure the center hole. Measure the inside diameter of the mounting hole, then count the drive lugs (the raised tabs that lock into the driver plate).",
+          "5. Photograph the brush next to the tape measure. A photo with the measurement visible lets any supplier confirm the spec, even without a brand name.",
+        ],
+      },
+      {
+        heading: "Brush Size Chart: Common Diameters",
+        content: "Most floor scrubber brushes fall into a small number of standard diameters. Match your measurement to the nearest value below.",
+        table: {
+          headers: ["Imperial", "Metric", "Typical Machine Class"],
+          rows: [
+            ["13 in", "330 mm", "Compact battery scrubbers"],
+            ["14 in", "355 mm", "Small walk-behind"],
+            ["15 in", "380 mm", "Small walk-behind"],
+            ["16 in", "410 mm", "Mid-size walk-behind"],
+            ["17 in", "430 mm", "Most common walk-behind size"],
+            ["18 in", "460 mm", "Mid-size walk-behind"],
+            ["20 in", "510 mm", "Large walk-behind"],
+            ["24 in", "610 mm", "Ride-on scrubbers"],
+            ["26 in", "660 mm", "Ride-on scrubbers"],
+            ["28 in", "710 mm", "Heavy-duty ride-on"],
+          ],
+        },
+      },
+      {
+        heading: "Brush Size by Machine Brand (Reference)",
+        content: "These are the most common brush diameters for popular scrubber models. Always confirm against your machine manual or the number moulded on the old brush — the same machine series can ship with different deck sizes.",
+        table: {
+          headers: ["Machine / Series", "Typical Brush Diameter"],
+          rows: [
+            ["Tennant T3 / T3e", "17 in (430 mm)"],
+            ["Tennant T5 / T5e", "20 in (510 mm)"],
+            ["Tennant T7", "26 in (660 mm)"],
+            ["Tennant T300 / T500", "20 in (510 mm)"],
+            ["Karcher B 40 / BR 40", "16 in (410 mm)"],
+            ["Karcher B 60 / BR 60", "20 in (510 mm)"],
+            ["Nilfisk SC250", "13 in (330 mm)"],
+            ["Nilfisk SC400 / SC500", "17 in (430 mm)"],
+            ["Viper AS430B", "17 in (430 mm)"],
+            ["Viper AS510B / AS5160", "20 in (510 mm)"],
+            ["Clarke CS20 / CS20B", "20 in (510 mm)"],
+            ["Advance SC750", "26 in (660 mm)"],
+          ],
+        },
+      },
+      {
+        heading: "Five Sizing Mistakes That Cost Money",
+        content: "These are the mistakes we see most often when customers order replacement brushes.",
+        items: [
+          "1. Measuring the machine, not the brush. The deck opening is larger than the brush. Always measure the brush itself.",
+          "2. Forgetting the lug pattern. Two brushes can share a diameter but use a different number of drive lugs and will not fit.",
+          "3. Confusing diameter with radius. A 10 in radius is a 20 in brush, not a 10 in brush.",
+          "4. Ordering by machine brand only. Brands change suppliers between production years — a 2021 T5 and a 2024 T5 may use different mountings.",
+          "5. Ignoring bristle length. A longer trim changes brush pressure and can overload the motor on some decks.",
+        ],
+      },
+      {
+        heading: "A 60-Second Checklist Before You Order",
+        content: "Run through this list once and you will not need to return a brush.",
+        items: [
+          "Diameter or length measured (in inches and millimetres)",
+          "Center hole diameter measured",
+          "Drive lug count recorded (for example, 3-lug)",
+          "Bristle material identified: nylon, polypropylene, abrasive, or steel wire",
+          "Bristle trim length noted",
+          "Photo taken with the tape measure in frame",
+          "Machine model and year written down",
+        ],
+      },
+      {
+        heading: "Send Us Your Measurement, We Match the Brush",
+        content: "You do not need to know a part number. Send the diameter (or length), the hole and lug pattern, and a photo with the tape measure, and we will match a factory-direct replacement brush for your machine. As a brush manufacturer we build to specification rather than to brand, so an OEM-compatible brush typically costs 30-50 percent less than the dealer price. Custom diameters, custom bristle materials, and private-label branding are available on request.",
+      },
+    ],
+},
 ];

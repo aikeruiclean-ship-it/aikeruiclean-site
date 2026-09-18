@@ -1,0 +1,35 @@
+# aikeruiclean.com — Disavow 名单（2026-08-05 补充）
+# 来源：反向链接检测报告的 23 个垃圾域名
+# 用途：上传到 Google Search Console → Disavow Links 工具
+# 格式说明：# 开头为注释，domain: 表示整个域名
+
+# ── 1. PBN 链接农场（"Premium PBN & Link Building" Fiverr 服务持续发送）──
+domain:hotonlinegaming.com
+domain:bisprofit.com
+domain:soulvocable.com
+domain:hostprinter.com
+domain:wecelebrities.com
+domain:cindylaup.com
+domain:exotichealths.com
+domain:ggmap.us.com
+domain:daechul.co.com
+domain:nivira.shop
+domain:juaralaundry.com
+domain:plrdownloadshub.com
+domain:onlyhealthydeals.com
+domain:newblogerseo.com
+domain:digitalseotool.com
+
+# ── 2. Fiverr 卖家自夸软文（把 aikeruiclean.com 当案例）──
+domain:fiverr-seo-for-small-businesses.site
+
+# ── 3. 域名报告/统计站（无实际外链价值）──
+domain:drjack.world
+domain:screenshots.wiki
+domain:quero.party
+domain:ready.pro
+
+# ── 4. 通用链接列表/域名收集站 ──
+domain:8coint.com
+domain:toplikevideo.com
+domain:domaindexer.com

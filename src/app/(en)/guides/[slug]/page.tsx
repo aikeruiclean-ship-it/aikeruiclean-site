@@ -1,0 +1,531 @@
+import { notFound } from "next/navigation";
+import Link from "next/link";
+import Image from "next/image";
+import { getGuideBySlug, getGuides, guideCategories } from "@/lib/guides";
+import { Clock, BookOpen, ArrowLeft, Tag } from "@/lib/icons";
+import type { Metadata } from "next";
+import { YouTubeLink } from "@/components/youtube-link";
+
+/** Local video paths (must match youtube-link.tsx LOCAL_VIDEOS) */
+const LOCAL_VIDEO_PATHS: Record<string, string> = {
+  antibrush24: "/videos/anti-tangle-brush.mp4",
+  custombrush25: "/videos/custom-brush.mp4",
+  IfTGVM4OC_k: "/videos/disc-brush-buying.mp4",
+  factorytour01: "/videos/factorytour01.mp4",
+  squeezeblade0915: "/videos/squeegee-blade.mp4",
+  factoryassess0916: "/videos/factory-assess.mp4",
+  factorytour: "/videos/factory-tour.mp4",
+  "shampoo-disc-brush": "/videos/shampoo-disc-brush.mp4",
+  XrHK1POi7yY: "/videos/steel-wire-brush.mp4",
+  fuP35AeMNGk: "/videos/disc-brush.mp4",
+};
+
+interface Props {
+  params: Promise<{ slug: string }>;
+}
+
+export async function generateStaticParams() {
+  return getGuides().map((guide) => ({ slug: guide.slug }));
+}
+
+// 未预生成的 slug 直接返回真 404（消除 soft-404）
+export const dynamicParams = false;
+
+/** 把 meta description 压到 <= 160 字符（Google 展示宽度）——优先句末截断，其次词边界，不加 "..." */
+function clampDescription(s: string, max = 160): string {
+  const text = (s || "").trim();
+  if (text.length <= max) return text;
+  const cut = text.slice(0, max);
+  const lastStop = Math.max(cut.lastIndexOf(". "), cut.lastIndexOf("? "), cut.lastIndexOf("! "));
+  if (lastStop > max * 0.6) return cut.slice(0, lastStop + 1).trim();
+  const lastSpace = cut.lastIndexOf(" ");
+  return cut.slice(0, lastSpace > 0 ? lastSpace : max).trim().replace(/[,;:\-—]+$/, "");
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const guide = getGuideBySlug(slug);
+  if (!guide) return { title: "Guide Not Found" };
+
+  // 标题策略：完整保留 guide.title（不硬截断，避免 "Manufactur..." 这种断词）
+  // 仅当「标题 + 品牌后缀」不超 60 字符时才加后缀，防止超出 Google 展示宽度
+  const suffix = " | Aikerui Guides";
+  const fullTitle = guide.title + suffix;
+  const description = clampDescription(guide.description);
+  return {
+    title: fullTitle.length <= 60 ? fullTitle : guide.title,
+    description,
+    alternates: { canonical: `https://aikeruiclean.com/guides/${slug}` },
+    authors: [{ name: "Mark Xu", url: "https://aikeruiclean.com/about/mark-xu" }],
+    openGraph: {
+      title: guide.title,
+      description,
+      type: "article",
+      publishedTime: guide.published ? new Date(guide.published).toISOString() : undefined,
+      authors: ["https://aikeruiclean.com/about/mark-xu"],
+      siteName: "Aikerui",
+      url: `https://aikeruiclean.com/guides/${guide.slug}`,
+      images: ["https://aikeruiclean.com/og-image.png"],
+    },
+  };
+}
+
+export default async function GuideDetailPage({ params }: Props) {
+  const { slug } = await params;
+  const guide = getGuideBySlug(slug);
+
+  if (!guide) notFound();
+
+  const categoryLabel =
+    guideCategories.find((c) => c.slug === guide.category)?.label ||
+    guide.category;
+
+  // HowTo schema for step-by-step guides
+  const hasSteps = guide.sections.some((s) => s.items && s.items.length > 0);
+  const howToJsonLd = hasSteps
+    ? {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        name: guide.title,
+        description: guide.description,
+        totalTime: guide.readTime,
+        step: guide.sections
+          .filter((s) => s.items && s.items.length > 0)
+          .map((s) => ({
+            "@type": "HowToStep",
+            name: s.heading,
+            text: s.items?.join(". ") || s.content.replace(/\\n+/g, " "),
+          })),
+      }
+    : null;
+
+  // Generate FAQPage schema from guide sections that look like questions or problem descriptions
+  const faqSection = guide.sections.filter(
+    (s) =>
+      s.heading.includes("?") ||
+      s.heading.includes("How ") ||
+      s.heading.includes("Why ") ||
+      s.heading.includes("What ") ||
+      s.heading.includes("Which ") ||
+      s.heading.includes("When ") ||
+      s.heading.includes("Symptom") ||
+      s.heading.includes("Cause")
+  );
+  const faqJsonLd =
+    faqSection.length >= 2
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqSection.slice(0, 10).map((s) => ({
+            "@type": "Question",
+            name: s.heading.replace(/\d+分钟|Step \d+:?\s*/g, "").trim(),
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: (s.content.replace(/\\n+/g, " ") + (s.items ? " " + s.items.join(" ") : "")).slice(0, 500),
+            },
+          })),
+        }
+      : null;
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://aikeruiclean.com/" },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Guides",
+        item: "https://aikeruiclean.com/guides",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: guide.title,
+      },
+    ],
+  };
+
+  return (
+    <div>
+      {/* Floating Get Quote button — always visible on mobile & desktop */}
+      <div className="fixed bottom-0 inset-x-0 z-40 p-3 bg-white/95 backdrop-blur border-t border-gray-200 md:hidden">
+        <div className="max-w-4xl mx-auto grid grid-cols-2 gap-2">
+          <a
+            href="https://api.whatsapp.com/send?phone=8619965236428&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20brushes%20and%20parts."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-1.5 px-4 py-3 bg-green-600 text-white text-sm font-bold rounded-lg"
+          >
+            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.497.1-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+          <Link
+            href="/floor-scrubber-parts-quote"
+            className="flex items-center justify-center gap-1.5 px-4 py-3 bg-accent text-white text-sm font-bold rounded-lg"
+          >
+            Get Quote Now
+          </Link>
+        </div>
+      </div>
+      {/* JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbJsonLd),
+        }}
+      />
+      {howToJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
+        />
+      )}
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
+
+      {/* VideoObject schema when guide has a video */}
+      {guide.videoId && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              (() => {
+                // Local videos (in /videos/): point contentUrl to the real mp4
+                const isLocal = [
+                  "antibrush24",
+                  "custombrush25",
+                  "IfTGVM4OC_k",
+                  "shampoo-disc-brush",
+                  "XrHK1POi7yY",
+                  "fuP35AeMNGk",
+                ].includes(guide.videoId as string);
+                const base = {
+                  "@context": "https://schema.org",
+                  "@type": "VideoObject",
+                  name: guide.title,
+                  description: guide.description,
+                  uploadDate: guide.published || "2026-01-01",
+                  publisher: {
+                    "@type": "Organization",
+                    name: "Aikerui",
+                    logo: { "@type": "ImageObject", url: "https://aikeruiclean.com/og-image.png" },
+                  },
+                };
+                if (isLocal) {
+                  return {
+                    ...base,
+                    contentUrl: `https://aikeruiclean.com${LOCAL_VIDEO_PATHS[guide.videoId as string] || ""}`,
+                    thumbnailUrl: `https://aikeruiclean.com/og-image.png`,
+                  };
+                }
+                return {
+                  ...base,
+                  thumbnailUrl: `https://img.youtube.com/vi/${guide.videoId}/mqdefault.jpg`,
+                  contentUrl: `https://www.youtube.com/shorts/${guide.videoId}`,
+                  embedUrl: `https://www.youtube.com/embed/${guide.videoId}`,
+                };
+              })()
+            ),
+          }}
+        />
+      )}
+
+      {/* Article schema — author & date for AI citation */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: guide.title,
+            description: guide.description,
+            datePublished: guide.published ? new Date(guide.published).toISOString() : undefined,
+            dateModified: guide.published ? new Date(guide.published).toISOString() : undefined,
+            author: {
+              "@type": "Person",
+              name: "Mark Xu",
+              url: "https://aikeruiclean.com/about/mark-xu",
+              jobTitle: "Sales Director",
+              worksFor: {
+                "@type": "Organization",
+                name: "Anhui Aikerui Environmental Protection Technology Co., Ltd.",
+              },
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "Aikerui",
+              logo: { "@type": "ImageObject", url: "https://aikeruiclean.com/og-image.png" },
+            },
+            mainEntityOfPage: `https://aikeruiclean.com/guides/${guide.slug}`,
+            image: "https://aikeruiclean.com/og-image.png",
+          }),
+        }}
+      />
+
+      {/* Top navigation */}
+      <div className="bg-gray-50 border-b border-gray-200">
+        <div className="max-w-4xl mx-auto px-4 py-3">
+          <nav className="flex items-center gap-2 text-sm text-gray-500">
+            <Link href="/" className="hover:text-primary transition-colors">
+              Home
+            </Link>
+            <span>/</span>
+            <Link
+              href="/guides"
+              className="hover:text-primary transition-colors"
+            >
+              Guides
+            </Link>
+            <span>/</span>
+            <span className="text-gray-900 truncate">{guide.title}</span>
+          </nav>
+        </div>
+      </div>
+
+      <article className="py-12 pb-36 md:pb-12">
+        <div className="max-w-4xl mx-auto px-4">
+          {/* Meta */}
+          <div className="flex flex-wrap items-center gap-3 mb-4">
+            <span className="px-3 py-1 bg-primary/10 text-primary text-xs font-medium rounded-full capitalize flex items-center gap-1">
+              <Tag size={12} />
+              {categoryLabel}
+            </span>
+            <span className="flex items-center gap-1 text-xs text-gray-500">
+              <Clock size={12} />
+              {guide.readTime} read
+            </span>
+            <span className="text-xs text-gray-400">{guide.published}</span>
+          </div>
+
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            {guide.title}
+          </h1>
+          <p className="text-lg text-gray-600 leading-relaxed mb-10">
+            {guide.description}
+          </p>
+
+          {/* Table of Contents */}
+          <div className="p-6 bg-gray-50 rounded-xl border border-gray-200 mb-10">
+            <h2 className="font-bold text-gray-900 mb-3">
+              In This Guide
+            </h2>
+            <ul className="space-y-2">
+              {guide.sections.map((section, i) => (
+                <li key={i}>
+                  <a
+                    href={`#section-${i}`}
+                    className="text-sm text-primary hover:text-primary-light transition-colors"
+                  >
+                    {section.heading}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Video embed */}
+          {guide.videoId && (
+            <div className="mt-6">
+              <YouTubeLink videoId={guide.videoId} title={guide.title} />
+            </div>
+          )}
+
+          {/* Cover image (when no video) */}
+          {!guide.videoId && guide.thumbnail && (
+            <div className="mt-6">
+              <Image
+                src={guide.thumbnail}
+                alt={guide.title}
+                width={1200}
+                height={675}
+                className="w-full max-w-xl rounded-xl border border-gray-200 object-cover mx-auto"
+                priority
+              />
+            </div>
+          )}
+
+          {/* Content sections */}
+          <div className="space-y-10">
+            {guide.sections.map((section, i) => (
+              <section key={i} id={`section-${i}`}>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                  {section.heading}
+                </h2>
+                {section.content.split(/\n\n+/).map((para, pi) => (
+                  <p
+                    key={pi}
+                    className="text-gray-600 leading-relaxed mb-4"
+                  >
+                    {para}
+                  </p>
+                ))}
+                {section.image && (
+                  <div className="my-5">
+                    <Image
+                      src={section.image}
+                      alt={section.imageAlt || section.heading}
+                      width={800}
+                      height={800}
+                      className="rounded-xl border border-gray-200 w-full max-w-md mx-auto"
+                    />
+                  </div>
+                )}
+                {section.items && section.items.length > 0 && (
+                  <ul className="space-y-2 pl-5">
+                    {section.items.map((item, j) => (
+                      <li
+                        key={j}
+                        className="text-gray-600 leading-relaxed list-disc"
+                      >
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+                {section.table && (
+                  <div className="overflow-x-auto my-5">
+                    <table className="w-full text-sm border-collapse">
+                      <thead>
+                        <tr>
+                          {section.table.headers.map((h, j) => (
+                            <th
+                              key={j}
+                              className="border border-gray-300 bg-gray-100 px-3 py-2 text-left font-semibold text-gray-800"
+                            >
+                              {h}
+                            </th>
+                          ))}
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {section.table.rows.map((row, j) => (
+                          <tr key={j} className={j % 2 ? "bg-gray-50" : ""}>
+                            {row.map((cell, k) => (
+                              <td
+                                key={k}
+                                className="border border-gray-300 px-3 py-2 text-gray-700"
+                              >
+                                {cell}
+                              </td>
+                            ))}
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                )}
+              </section>
+            ))}
+          </div>
+
+          {/* Related products */}
+          {guide.relatedProducts && guide.relatedProducts.length > 0 && (
+            <div className="mt-12 p-6 bg-blue-50 rounded-xl border border-blue-100">
+              <h3 className="font-bold text-gray-900 mb-3">
+                Related Products
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {guide.relatedProducts.map((sku) => (
+                  <Link
+                    key={sku}
+                    href={`/products?q=${encodeURIComponent(sku)}`}
+                    className="px-3 py-1.5 bg-white text-sm text-primary rounded-lg border border-blue-100 hover:border-primary transition-colors"
+                  >
+                    {sku}
+                  </Link>
+                ))}
+              </div>
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 mt-4 text-sm font-medium text-primary hover:text-primary-light transition-colors"
+              >
+                <BookOpen size={14} />
+                Get a Quote for These Products
+              </Link>
+            </div>
+          )}
+
+          {/* Related guides */}
+          {guide.relatedGuides && guide.relatedGuides.length > 0 && (
+            <div className="mt-6 p-6 bg-emerald-50 rounded-xl border border-emerald-100">
+              <h3 className="font-bold text-gray-900 mb-3">
+                Related Guides
+              </h3>
+              <div className="space-y-2">
+                {guide.relatedGuides.map((slug) => {
+                  const related = getGuides().find((g) => g.slug === slug);
+                  return (
+                    <Link
+                      key={slug}
+                      href={`/guides/${slug}`}
+                      className="block px-4 py-2.5 bg-white text-sm text-gray-800 rounded-lg border border-emerald-100 hover:border-emerald-400 hover:text-primary transition-colors"
+                    >
+                      {related?.title || slug}
+                    </Link>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
+          {/* CTA Section */}
+          <div className="mt-12 p-8 bg-primary text-white rounded-2xl text-center">
+            <h2 className="text-2xl font-bold mb-3">
+              Ready to Get Factory-Direct Pricing?
+            </h2>
+            <p className="text-gray-200 mb-6 max-w-lg mx-auto">
+              Get a quote within 24 hours. No middlemen — buy direct from the
+              manufacturer and save 30-50%.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link
+                href="/floor-scrubber-parts-quote"
+                className="inline-flex items-center gap-2 px-8 py-3.5 bg-accent hover:bg-accent-hover text-white font-bold rounded-lg transition-colors"
+              >
+                Get Your Quote Now
+              </Link>
+              <a
+                href="https://api.whatsapp.com/send?phone=8619965236428&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20pricing."
+                className="inline-flex items-center gap-2 px-8 py-3.5 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-colors"
+              >
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      
+
+      {/* Author Bio */}
+      <div className="border-t border-gray-200 pt-6 mt-12">
+        <p className="text-sm font-semibold text-gray-900">About the Author</p>
+        <p className="text-sm text-gray-600 mt-1 leading-relaxed">
+          <Link href="/about/mark-xu" className="text-primary hover:underline font-medium">Mark Xu</Link> is Sales Director at Aikerui with 15+ years of experience in industrial floor cleaning equipment. He has helped 2,000+ facilities across 50+ countries source factory-direct cleaning equipment.
+        </p>
+      </div></article>
+
+      {/* Back to guides */}
+      <section className="py-12 bg-gray-50 border-t border-gray-200">
+        <div className="max-w-4xl mx-auto px-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <Link
+            href="/guides"
+            className="inline-flex items-center gap-2 text-sm font-medium text-gray-700 hover:text-primary transition-colors"
+          >
+            <ArrowLeft size={16} />
+            Back to all guides
+          </Link>
+          <Link
+            href="/parts"
+            className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover transition-colors"
+          >
+            Browse 360+ floor scrubber parts →
+          </Link>
+        </div>
+      </section>
+    </div>
+  );
+}

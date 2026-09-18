@@ -1,10 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
-import { pickRoundRobin } from "@/lib/sales-team";
+import { assignSalesperson } from "@/lib/lead-assignment";
 import { saveLead } from "@/lib/lead-store";
-
-const SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbwx7qOuIXLQSGv7UbDxyDNXsFcxi9i3TMuICL0FKnRJpLUFoFbsw2mm1zaTbOftOqFC/exec";
-const BREVO_API_URL = "https://api.brevo.com/v3/smtp/email";
+import { syncLeadToHubSpot } from "@/lib/hubspot-sync";
+import { sendInquiryEmail } from "@/lib/email-notify";
 
 // ── Validation ──────────────────────────────────────────────
 const MAX_LENGTHS: Record<string, number> = {
@@ -25,7 +23,7 @@ function validate(body: Record<string, unknown>): {
   error?: string;
   data?: Record<string, string>;
 } {
-  const fields = ["name", "email", "message"];
+  const fields = ["name", "email"];
   for (const f of fields) {
     const v = body[f];
     if (typeof v !== "string" || v.trim().length === 0) {
@@ -67,16 +65,6 @@ function validate(body: Record<string, unknown>): {
   };
 
   return { valid: true, data };
-}
-
-// ── HTML entity escaping ────────────────────────────────────
-function escHtml(s: string): string {
-  return s
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#39;");
 }
 
 // ── Rate limiting (in-memory) ───────────────────────────────
@@ -153,62 +141,26 @@ export async function POST(request: NextRequest) {
 
     const data = validation.data;
 
-    // Assign to salesperson (round-robin) — used for both Sheets and email
-    const assigned = pickRoundRobin();
+    // Assign to salesperson (same email → same person; new → round-robin)
+    const assigned = assignSalesperson(data.email);
 
-    // 1) Forward to Google Apps Script (Google Sheets)
-    await fetch(SCRIPT_URL, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      redirect: "follow",
-      body: JSON.stringify({
-        ...data,
-        assignedTo: assigned.name,
-        assignedEmail: assigned.email,
-        timestamp: new Date().toISOString(),
-      }),
-    }).catch((err) => console.error("Google Script error:", err));
-
-    // 2) Also send email via Brevo if configured
-    if (process.env.BREVO_API_KEY) {
-      const emailHtml = `
-        <html><body style="font-family:Arial,sans-serif;padding:20px">
-          <h2>New Product Inquiry</h2>
-          <table style="border-collapse:collapse;width:100%">
-            <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold;background:#f5f5f5">Name</td><td style="padding:8px;border:1px solid #ddd">${escHtml(data.name)}</td></tr>
-            <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold;background:#f5f5f5">Email</td><td style="padding:8px;border:1px solid #ddd">${escHtml(data.email)}</td></tr>
-            <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold;background:#f5f5f5">Phone</td><td style="padding:8px;border:1px solid #ddd">${escHtml(data.phone)}</td></tr>
-            <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold;background:#f5f5f5">Company</td><td style="padding:8px;border:1px solid #ddd">${escHtml(data.company)}</td></tr>
-            <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold;background:#f5f5f5">Country</td><td style="padding:8px;border:1px solid #ddd">${escHtml(data.country)}</td></tr>
-            <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold;background:#f5f5f5">Product</td><td style="padding:8px;border:1px solid #ddd">${escHtml(data.product)}</td></tr>
-            <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold;background:#f5f5f5">Quantity</td><td style="padding:8px;border:1px solid #ddd">${escHtml(data.quantity)}</td></tr>
-            <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold;background:#f5f5f5">Message</td><td style="padding:8px;border:1px solid #ddd;white-space:pre-wrap">${escHtml(data.message)}</td></tr>
-          </table>
-          <p style="color:#666;font-size:12px">Received: ${new Date().toISOString()}</p>
-        </body></html>
-      `;
-
-      const res = await fetch(BREVO_API_URL, {
-        method: "POST",
-        headers: {
-          "api-key": process.env.BREVO_API_KEY,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          sender: { name: "Aikerui Website", email: "noreply@aikeruiclean.com" },
-          to: [{ email: "info@aikeruiclean.com" }],
-          cc: [{ email: assigned.email, name: assigned.name }],
-          replyTo: { email: data.email },
-          subject: `[${assigned.name}] New Inquiry: ${data.product}`,
-          htmlContent: emailHtml,
-        }),
-      });
-
-      if (!res.ok) {
-        const err = await res.text();
-        console.error("Brevo API error:", res.status, err);
-      }
-    }
+    // 2) Notify info@ via Namecheap SMTP (no IP whitelist issue like Brevo).
+    //    Route B: salesperson routing is manual in HubSpot — email is info@ only.
+    await sendInquiryEmail({
+      name: data.name,
+      email: data.email,
+      phone: data.phone,
+      company: data.company,
+      country: data.country,
+      product: data.product,
+      quantity: data.quantity,
+      message: data.message,
+      assignedTo: assigned.name,
+      gclid: typeof body.gclid === "string" ? body.gclid : undefined,
+      landing_page: typeof body.landing_page === "string" ? body.landing_page : undefined,
+      utm_source: typeof body.utm_source === "string" ? body.utm_source : undefined,
+      utm_campaign: typeof body.utm_campaign === "string" ? body.utm_campaign : undefined,
+    });
 
     // Save locally for admin panel
     saveLead({
@@ -224,6 +176,38 @@ export async function POST(request: NextRequest) {
       assignedEmail: assigned.email,
       timestamp: new Date().toISOString(),
     });
+
+    // 3) Sync to HubSpot CRM (free tier via Private App token)
+    // Await with internal 4s timeout — guarantees execution before the
+    // serverless function is frozen after the response (fire-and-forget gets killed).
+    if (process.env.HUBSPOT_API_TOKEN) {
+      try {
+        await syncLeadToHubSpot({
+          name: data.name,
+          email: data.email,
+          phone: data.phone,
+          company: data.company,
+          country: data.country,
+          product: data.product,
+          quantity: data.quantity,
+          message: data.message,
+          assignedTo: assigned.name,
+          source: "website-quote",
+          timestamp: new Date().toISOString(),
+          // Google Ads attribution passthrough (from attribution.ts)
+          gclid: typeof body.gclid === "string" ? body.gclid.slice(0, 200) : undefined,
+          utm_source: typeof body.utm_source === "string" ? body.utm_source.slice(0, 100) : undefined,
+          utm_medium: typeof body.utm_medium === "string" ? body.utm_medium.slice(0, 100) : undefined,
+          utm_campaign: typeof body.utm_campaign === "string" ? body.utm_campaign.slice(0, 100) : undefined,
+          utm_term: typeof body.utm_term === "string" ? body.utm_term.slice(0, 100) : undefined,
+          utm_content: typeof body.utm_content === "string" ? body.utm_content.slice(0, 100) : undefined,
+          landing_page: typeof body.landing_page === "string" ? body.landing_page.slice(0, 200) : undefined,
+        });
+      } catch (syncErr) {
+        // Never let HubSpot failure fail the inquiry response
+        console.error("[HubSpot] sync failed:", syncErr);
+      }
+    }
 
     return NextResponse.json({
       success: true,

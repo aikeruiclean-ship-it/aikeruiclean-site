@@ -2,9 +2,10 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { ShoppingCart } from "lucide-react";
+import { ShoppingCart } from "@/lib/icons";
 import type { Product } from "@/lib/products";
 import { useCart } from "@/lib/cart-context";
+import { formatPrice } from "@/lib/price-ranges";
 
 interface ProductCardProps {
   product: Product;
@@ -59,9 +60,9 @@ export function ProductCard({ product }: ProductCardProps) {
           </h3>
         </Link>
 
-        {/* Price */}
+        {/* Price：仅明确价显示（无价不显示，区间仅供 Schema） */}
         {canBuy && (
-          <p className="text-lg font-bold text-primary mt-1">${product.price!.toFixed(2)}</p>
+          <p className="text-lg font-bold text-primary mt-1">{formatPrice(product)}</p>
         )}
 
         {/* Quick specs */}

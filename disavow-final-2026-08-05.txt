@@ -1,0 +1,37 @@
+# Aikeruiclean.com 垃圾外链拒绝清单（最终合并版）
+# 生成时间：2026-08-05
+# 合并自：2026-07-31 第一份（17 域名）+ 2026-08-05 第二份（23 域名）
+# 合并后唯一域名：23 个（第一份全部包含在内，第二份新增 6 个）
+# 提交到 Google Disavow Tool: https://search.google.com/search-console/disavow-links
+# 使用说明：选择 aikeruiclean.com，上传本文件（会替换旧文件，本文件已包含全部旧域名）
+
+# ===== PBN 链接农场（Fiverr 服务持续发送，有害性 70-100）=====
+domain:hotonlinegaming.com
+domain:bisprofit.com
+domain:soulvocable.com
+domain:hostprinter.com
+domain:wecelebrities.com
+domain:cindylaup.com
+domain:exotichealths.com
+domain:ggmap.us.com
+domain:daechul.co.com
+domain:nivira.shop
+domain:juaralaundry.com
+domain:plrdownloadshub.com
+domain:onlyhealthydeals.com
+domain:newblogerseo.com
+domain:digitalseotool.com
+
+# ===== Fiverr 假好评/外链软文站 =====
+domain:fiverr-seo-for-small-businesses.site
+
+# ===== 自动域名报告站（有害性 30-39）=====
+domain:drjack.world
+domain:screenshots.wiki
+domain:quero.party
+domain:ready.pro
+domain:domaindexer.com
+
+# ===== 外链服务列表页 =====
+domain:8coint.com
+domain:toplikevideo.com
