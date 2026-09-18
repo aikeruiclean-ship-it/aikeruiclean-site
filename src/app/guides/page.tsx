@@ -3,6 +3,9 @@ import Link from "next/link";
 import { getGuides } from "@/lib/guides";
 import { JsonLd } from "@/components/json-ld";
 
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 export const metadata: Metadata = {
   title: "Floor Scrubber Guides & Resources | Buying Tips, Maintenance & Comparison | Aikerui",
   description:
@@ -23,6 +26,14 @@ const CATEGORY_LABELS: Record<string, { label: string; icon: string }> = {
   comparison: { label: "Comparisons", icon: "⚖️" },
   troubleshooting: { label: "Troubleshooting", icon: "🩺" },
   "product-showcase": { label: "Product Showcase", icon: "🏭" },
+};
+
+const CATEGORY_STYLES: Record<string, { gradient: string; icon: string }> = {
+  "buying-guide": { gradient: "from-blue-600 to-blue-800", icon: "📖" },
+  maintenance: { gradient: "from-emerald-600 to-emerald-800", icon: "🔧" },
+  comparison: { gradient: "from-purple-600 to-purple-800", icon: "⚖️" },
+  troubleshooting: { gradient: "from-amber-500 to-amber-700", icon: "🩺" },
+  "product-showcase": { gradient: "from-rose-600 to-rose-800", icon: "🏭" },
 };
 
 export default function GuidesPage() {
@@ -54,7 +65,7 @@ export default function GuidesPage() {
       </section>
 
       <div className="max-w-7xl mx-auto px-4 py-12">
-        {["buying-guide", "maintenance", "troubleshooting", "comparison"].map(
+        {["buying-guide", "maintenance", "troubleshooting", "comparison", "product-showcase"].map(
           (cat) => {
             const catGuides = guides.filter((g) => g.category === cat);
             if (catGuides.length === 0) return null;
@@ -72,22 +83,50 @@ export default function GuidesPage() {
                     <Link
                       key={guide.slug}
                       href={`/guides/${guide.slug}`}
-                      className="group p-6 bg-white rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition-all"
+                      className="group bg-white rounded-xl border border-gray-200 hover:border-primary hover:shadow-md transition-all overflow-hidden"
                     >
-                      <div className="flex items-center justify-between mb-3">
-                        <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded">
-                          {guide.difficulty}
-                        </span>
-                        <span className="text-xs text-gray-400">
-                          {guide.readTime}
-                        </span>
+                      <div className="relative aspect-[2/1] bg-gray-100 overflow-hidden">
+                        {guide.videoId ? (
+                          <img
+                            src={`https://img.youtube.com/vi/${guide.videoId}/mqdefault.jpg`}
+                            alt=""
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                            loading="lazy"
+                          />
+                        ) : guide.thumbnail ? (
+                          <img
+                            src={guide.thumbnail}
+                            alt=""
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                            loading="lazy"
+                          />
+                        ) : (
+                          <div className={`w-full h-full bg-gradient-to-br ${(CATEGORY_STYLES[guide.category] || CATEGORY_STYLES["buying-guide"]).gradient} flex items-center justify-center`}>
+                            <span className="text-5xl opacity-90">{(CATEGORY_STYLES[guide.category] || CATEGORY_STYLES["buying-guide"]).icon}</span>
+                          </div>
+                        )}
+                        {guide.videoId && (
+                          <div className="absolute top-2 right-2 bg-red-600 text-white text-xs px-2 py-0.5 rounded-full font-medium">
+                            ▶ Video
+                          </div>
+                        )}
                       </div>
-                      <h3 className="font-bold text-gray-900 group-hover:text-primary transition-colors mb-2 line-clamp-2">
-                        {guide.title}
-                      </h3>
-                      <p className="text-sm text-gray-600 line-clamp-2">
-                        {guide.description}
-                      </p>
+                      <div className="p-5">
+                        <div className="flex items-center justify-between mb-3">
+                          <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded">
+                            {guide.difficulty}
+                          </span>
+                          <span className="text-xs text-gray-400">
+                            {guide.readTime}
+                          </span>
+                        </div>
+                        <h3 className="font-bold text-gray-900 group-hover:text-primary transition-colors mb-2 line-clamp-2">
+                          {guide.title}
+                        </h3>
+                        <p className="text-sm text-gray-600 line-clamp-2">
+                          {guide.description}
+                        </p>
+                      </div>
                     </Link>
                   ))}
                 </div>

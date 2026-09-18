@@ -65,6 +65,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
       <head>
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
         {/* Google Search Console verification */}
         <meta name="google-site-verification" content="9n-ScR2ZUM3VI7e8ACJvhSk7hRefGI-XdnihD4DkYx8" />
         {/* Google Tag Manager */}
@@ -94,7 +96,16 @@ export default function RootLayout({
             url: "https://aikeruiclean.com",
             description: "Professional manufacturer of industrial floor scrubbers, sweepers, and cleaning accessories. Factory-direct pricing, CE certified.",
             areaServed: { "@type": "Country", name: "Worldwide" },
-            priceRange: "$$"
+            priceRange: "$$",
+            sameAs: [
+              "https://youtube.com/@markxu-u8h",
+              "https://x.com/mark_xu71710",
+              "https://instagram.com/aikeruiclean",
+              "https://instagram.com/aikerui",
+              "https://quora.com/profile/Mark-Xu-110",
+              "https://www.wikidata.org/wiki/Q140546242",
+              "https://aikeruiclean.com",
+            ]
           })
         }} />
       </head>

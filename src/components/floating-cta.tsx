@@ -34,6 +34,7 @@ export function FloatingCTA() {
       {/* Quote */}
       <Link
         href="/floor-scrubber-parts-quote"
+        aria-label="Get a quote"
         className="flex items-center gap-2 px-4 py-3 bg-accent hover:bg-accent-hover text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all"
       >
         <Send size={18} />

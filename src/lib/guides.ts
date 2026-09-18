@@ -2,12 +2,15 @@ export interface Guide {
   slug: string;
   title: string;
   description: string;
-  category: "buying-guide" | "maintenance" | "comparison" | "troubleshooting";
+  category: "buying-guide" | "maintenance" | "comparison" | "troubleshooting" | "product-showcase" | "installation";
   readTime: string;
   difficulty: "beginner" | "intermediate" | "advanced";
   published: string;
   sections: GuideSection[];
   relatedProducts?: string[];
+  videoUrl?: string;
+  videoId?: string;
+  thumbnail?: string;
 }
 
 interface GuideSection {
@@ -194,28 +197,31 @@ const guides: Guide[] = [
 ];
 
 export function getGuides(): Guide[] {
-  return guides;
+  return [...guides, ...extraGuides];
 }
 
 export function getGuideBySlug(slug: string): Guide | undefined {
-  return guides.find((g) => g.slug === slug);
+  return [...guides, ...extraGuides].find((g) => g.slug === slug);
 }
 
 export function getGuidesByCategory(category: Guide["category"]): Guide[] {
-  return guides.filter((g) => g.category === category);
+  return [...guides, ...extraGuides].filter((g) => g.category === category);
 }
 
 export const guideCategories = [
   { slug: "buying-guide" as const, label: "Buying Guides" },
   { slug: "maintenance" as const, label: "Maintenance" },
   { slug: "comparison" as const, label: "Comparisons" },
-  { slug: "troubleshooting" as const, label: "Troubleshooting" }
-,
+  { slug: "troubleshooting" as const, label: "Troubleshooting" },
+];
+
+// Additional guides (content sprint)
+const extraGuides: Guide[] = [
   {
     slug: "how-to-set-up-your-floor-scrubber",
     title: "How to Set Up Your Floor Scrubber: Complete Installation Guide",
     description: "Step-by-step installation guide for Aikerui floor scrubbers. Learn how to unpack, assemble the squeegee, install brushes, connect the battery, and prepare your machine for first use.",
-    category: "installation",
+    category: "maintenance",
     readTime: "5 min",
     difficulty: "beginner",
     published: "2026-06-08",
@@ -226,6 +232,7 @@ export const guideCategories = [
       { heading: "Installing Brushes", content: "Install disc brushes or pad drivers depending on your floor type.", items: ["Turn off machine and raise brush deck", "Align brush with drive hub and twist until locked", "Lower deck and test at low speed"] },
       { heading: "Pre-Operation Checklist", content: "Before your first cleaning run, complete this checklist.", items: ["Fill solution tank with water", "Test all controls: drive, brush, squeegee", "Watch the installation video on YouTube for visual guidance"] },
     ],
+    videoId: "BZCQnHQD5tI",
     relatedProducts: ["K500BT", "A650T", "A380"],
   },
   {
@@ -386,6 +393,7 @@ export const guideCategories = [
           "If the recovery tank drain valve or hose is partially clogged, water backs up in the tank and overflows onto the floor. Clean the drain thoroughly and check the tank for sludge buildup. A full tank should be emptied when 80% capacity is reached — do not wait until it overflows.",
       },
     ],
+    videoId: "JwAKLzf4JAY",
     relatedProducts: [],
   },
   {
@@ -1104,9 +1112,10 @@ export const guideCategories = [
       },
       {
         heading: "Ready to Cut Your Parts Costs?",
-        content: "Browse our full catalog of 360+ replacement parts or send us your part number for a same-day quote. All parts manufactured to OEM specifications in our ISO 9001 certified factory. Compatible with Tennant, Nilfisk, Karcher, Comac, Viper, Hako, Fimap, and 15+ other brands.",
+        content: "Browse our full catalog of 360+ replacement parts or send us your part number for a same-day quote. All parts manufactured to OEM specifications in our ISO 9001 certified factory. Compatible with Tennant, Nilfisk, Karcher, Comac, Viper, Hako, Fimap, Dulevo, and 15+ other brands.",
       },
     ],
+    videoId: "fdISROzR0fQ",
     relatedProducts: [],
   },
   // ── Industrial Floor Scrubber Complete Guide ──
@@ -1200,6 +1209,7 @@ export const guideCategories = [
         content: "Browse our factory-direct walk-behind and ride-on scrubbers. Send us your facility details for a personalized recommendation and quote within 24 hours.",
       },
     ],
+    videoId: "aUVk1TcVSwQ",
     relatedProducts: ["K500BT", "A650T", "A660T", "K660"],
   },
   // ── Floor Scrubber Cost Guide ──
@@ -1309,6 +1319,7 @@ export const guideCategories = [
         content: "Tell us your facility size, floor type, and daily cleaning hours. We'll recommend the right machine at factory-direct pricing — typically 30-40% less than your local dealer. Quote within 24 hours. No obligation.",
       },
     ],
+    videoId: "DlMt7Q-ncXs",
     relatedProducts: ["K500BT", "A650T", "A660T", "K660"],
   },
   // ── Small Business Guide ──
@@ -1726,6 +1737,7 @@ export const guideCategories = [
         content: "Browse our catalog of 360+ replacement parts — all manufactured to OEM specifications at factory-direct prices. Send us your OEM part number for a same-day quote. Sample quantities available for quality verification.",
       },
     ],
+    videoId: "XZ6n0SreSd0",
     relatedProducts: [],
   },
   // ── School & University Guide ──
@@ -1915,6 +1927,7 @@ export const guideCategories = [
         content: "Order a pre-assembled maintenance kit with the most commonly replaced parts — squeegee blades, brushes, filters, and terminal protectors. Have them on your shelf before you need them.",
       },
     ],
+    videoId: "5XoAc6H1Kb0",
     relatedProducts: [],
   },
   // ── Case Study 1: Distribution Center ──
@@ -2131,5 +2144,587 @@ export const guideCategories = [
       },
     ],
     relatedProducts: ["K500BT", "A660T", "K660"],
+  },
+  // ── Week 5 Articles ──
+  {
+    slug: "how-to-extend-floor-scrubber-lifespan",
+    title: "How to Extend Your Floor Scrubber Lifespan: 10 Proven Maintenance Tips",
+    description:
+      "Extend your floor scrubber lifespan from 5 to 10+ years. Daily, weekly, and monthly maintenance tips that prevent 80% of breakdowns. Factory-direct parts save on upkeep.",
+    category: "maintenance",
+    readTime: "6 min",
+    difficulty: "beginner",
+    published: "2026-07-11",
+    sections: [
+      {
+        heading: "Why Most Floor Scrubbers Die Early",
+        content: "The average floor scrubber lasts 5-7 years, but most failures after year 3 are caused by skipped maintenance — not manufacturing defects. A $20 squeegee blade ignored for an extra month damages the $200 squeegee assembly. A recovery tank never rinsed breeds bacteria that corrode the vacuum motor. Ten minutes of daily care prevents thousands in repairs.",
+      },
+      {
+        heading: "Tip 1: Empty and Rinse the Recovery Tank After Every Use",
+        content: "This is the #1 most-skipped maintenance step — and the most damaging. Dirty water left overnight breeds bacteria, corrodes metal components, and creates odors. Flush with clean water until it runs clear. For food processing facilities, add a sanitizing rinse.",
+      },
+      {
+        heading: "Tip 2: Check Squeegee Blades Weekly",
+        content: "Run your finger along the blade edge. A sharp, square edge = good. A rounded or rippled edge = replace. Most blades can be rotated once before replacement, doubling their lifespan. Factory-direct replacement blades cost $30-55/set vs $80-140 from a dealer.",
+      },
+      {
+        heading: "Tip 3: Never Store Batteries Discharged",
+        content: "Lead-acid batteries left discharged for more than 24 hours suffer permanent capacity loss (sulfation). Lithium batteries discharged below 20% degrade faster. Plug in the charger after every use — even if the machine will sit for only a day.",
+      },
+      {
+        heading: "Tip 4-10: Quick Checklist",
+        content: "The remaining tips that take under 5 minutes each but dramatically extend machine life:",
+        items: [
+          "Tip 4: Clean solution filter monthly — a clogged filter starves the pump and burns out the solenoid.",
+          "Tip 5: Check brush bristle length — replace when below 10mm. Worn brushes reduce cleaning quality and strain the motor.",
+          "Tip 6: Inspect hoses for cracks — a leaking vacuum hose reduces suction by 50%+ before you notice.",
+          "Tip 7: Tighten all bolts quarterly — vibration loosens brush deck, squeegee, and wheel mounts.",
+          "Tip 8: Grease pivot points every 3 months — squeaky squeegee linkage = metal-on-metal wear.",
+          "Tip 9: Use manufacturer-recommended chemicals — wrong detergents degrade seals and hoses.",
+          "Tip 10: Keep a maintenance log — warranty claims and resale value depend on documented service history.",
+        ],
+      },
+      {
+        heading: "Get Factory-Direct Parts for Long-Term Savings",
+        content: "Browse our 360+ replacement parts catalog. Factory-direct pricing saves 30-50% on every maintenance item — brushes, squeegees, filters, and more. Quote within 24 hours.",
+      },
+    ],
+    relatedProducts: [],
+  },
+  {
+    slug: "floor-scrubber-safety-guide",
+    title: "Floor Scrubber Safety: OSHA Compliance & Best Practices for 2026",
+    description:
+      "Complete floor scrubber safety guide. OSHA compliance, operator training checklist, slip-and-fall prevention, chemical handling, and battery safety. Reduce workplace incidents.",
+    category: "maintenance",
+    readTime: "6 min",
+    difficulty: "beginner",
+    published: "2026-07-11",
+    sections: [
+      {
+        heading: "The Hidden Danger of Floor Cleaning",
+        content: "Floor scrubbers make floors safer by removing slip hazards — but improperly operated or maintained machines create new risks. Battery acid spills, chemical burns, electrical shocks, and machine collisions cause hundreds of workplace injuries annually. OSHA fines for floor safety violations start at $15,000 per incident.",
+      },
+      {
+        heading: "Operator Training: The First Line of Defense",
+        content: "Every operator must complete training covering: machine controls and emergency stops, proper chemical handling and dilution, battery charging safety, squeegee and brush maintenance, and spill response procedures. Document all training — OSHA inspectors ask for records.",
+        items: [
+          "Initial training: 1-2 hours (walk-behind) or 2-4 hours (ride-on)",
+          "Annual refresher: 30 minutes",
+          "New machine orientation: 1 hour",
+          "Keep training logs for at least 3 years",
+        ],
+      },
+      {
+        heading: "Chemical Safety: What Most Operators Get Wrong",
+        content: "The most common chemical mistakes: mixing incompatible cleaners (bleach + acid = toxic chlorine gas), using undiluted concentrate (damages floors, burns skin), and not wearing PPE. Always use manufacturer-recommended chemicals at the correct dilution. Auto-dosing systems eliminate manual mixing errors.",
+      },
+      {
+        heading: "Battery Safety: Lead-Acid vs Lithium",
+        content: "Lead-acid batteries produce hydrogen gas during charging — always charge in well-ventilated areas, no open flames. Battery acid causes severe burns — keep an eyewash station and neutralizing agent nearby. Lithium batteries are safer (no gas, no acid) but must use the manufacturer-approved charger to prevent thermal runaway.",
+      },
+      {
+        heading: "Slip-and-Fall Prevention While Scrubbing",
+        content: "Irony: the machine meant to prevent slips can cause them. Post 'wet floor' signs during operation. Ensure the squeegee is in good condition — a worn blade leaves water trails. Clean up any drips from the machine immediately. Train operators to check behind them periodically for water trails.",
+      },
+      {
+        heading: "Get Compliant Equipment",
+        content: "All Aikerui scrubbers meet CE and ISO 9001 safety standards. Factory-direct pricing with full documentation for your safety compliance records. Quote within 24 hours.",
+      },
+    ],
+    videoId: "3a9K54lhhVc",
+    videoId: "-vnsEuzpTAg",
+    relatedProducts: [],
+  },
+  // ── Top 10 Parts Suppliers ──
+  {
+    slug: "top-10-floor-scrubber-parts-suppliers",
+    title: "Top 10 Floor Scrubber Parts Suppliers in 2026 — Compare OEM & Aftermarket",
+    description:
+      "Compare the top 10 floor scrubber parts suppliers. OEM vs aftermarket pricing, quality, compatibility, and shipping. Find the best supplier for disc brushes, squeegees, and consumables.",
+    category: "comparison",
+    readTime: "8 min",
+    difficulty: "beginner",
+    published: "2026-07-13",
+    sections: [
+      {
+        heading: "Why Your Parts Supplier Matters",
+        content: "Parts are the largest ongoing cost of owning a floor scrubber. A ride-on scrubber consumes $700-1,700/year in wear parts depending on your supplier. Choosing the right supplier can save $1,000+ per machine per year — without sacrificing quality. Here are the top 10 suppliers ranked by price, quality, compatibility, and global reach.",
+      },
+      {
+        heading: "How We Evaluated Suppliers",
+        content: "We scored each supplier on five criteria: pricing (factory-direct vs multi-tier), quality (materials and certifications), brand compatibility (how many OEM brands they cover), inventory depth (in-stock SKUs), and shipping/logistics (global reach and speed).",
+      },
+      {
+        heading: "1. Aikerui (China) — Best Overall Value",
+        content: "Factory-direct manufacturer with 360+ parts in stock. CE & ISO 9001 certified. Disc brushes $45-75, squeegee rubber $30-55/set — 30-50% less than dealer pricing. Compatible with Tennant, Nilfisk, Karcher, Comac, Viper, Hako, Dulevo and 15+ brands. Ships to 50+ countries. 24-hour quote response.",
+        items: ["Price: $ (Budget)", "Quality: ★★★★☆", "Compatibility: 20+ brands", "SKUs: 360+", "Best for: Buyers who want factory-direct pricing without sacrificing quality"],
+      },
+      {
+        heading: "2. Tennant (USA) — Best for OEM Purists",
+        content: "Tennant sells genuine OEM parts through its global dealer network. Quality is guaranteed, but pricing is premium — $120-180 for a disc brush that costs $35-45 to manufacture. Best for facilities under warranty or with service contracts.",
+        items: ["Price: $$$$ (Premium)", "Quality: ★★★★★", "Compatibility: Tennant only", "Availability: Dealer network", "Best for: Warranty-covered machines, service contracts"],
+      },
+      {
+        heading: "3. Nilfisk (Denmark) — Best European OEM",
+        content: "Nilfisk's genuine parts program covers their full SC and BR series. Strong European distribution. Parts pricing is premium but supported by local dealer inventory. Squeegee sets $90-130.",
+        items: ["Price: $$$$ (Premium)", "Quality: ★★★★★", "Compatibility: Nilfisk only", "Availability: Strong in Europe", "Best for: European Nilfisk machine owners"],
+      },
+      {
+        heading: "4. Powr-Flite (USA) — Best Aftermarket Value",
+        content: "US-based aftermarket supplier with competitive pricing. Covers major brands including Tennant, Nilfisk, and Advance. Online ordering with US domestic shipping. Mid-range pricing — typically 20-30% less than OEM.",
+        items: ["Price: $$$ (Mid-Range)", "Quality: ★★★☆☆", "Compatibility: 10+ brands", "Availability: US-focused", "Best for: US buyers wanting domestic shipping"],
+      },
+      {
+        heading: "5. Factory Cat (USA) — Industrial Focus",
+        content: "Specializes in heavy-duty industrial scrubber parts. Higher-quality materials for demanding environments. Pricing is mid-to-premium range. Excellent for manufacturing plants and automotive facilities.",
+        items: ["Price: $$$ (Mid-Premium)", "Quality: ★★★★☆", "Compatibility: Industrial brands", "Availability: US", "Best for: Heavy industrial applications"],
+      },
+      {
+        heading: "6. Kärcher (Germany) — Best German Engineering",
+        content: "Kärcher OEM parts through their massive global distribution network. Parts available in 60+ countries. Premium pricing but fast local availability. BD series parts widely stocked.",
+        items: ["Price: $$$$ (Premium)", "Quality: ★★★★★", "Compatibility: Kärcher only", "Availability: 60+ countries", "Best for: Kärcher machine owners requiring fast local parts"],
+      },
+      {
+        heading: "7. IPC/Euromop (Italy) — European Value",
+        content: "Italian manufacturer with comprehensive parts catalog. Competitive pricing within Europe. Strong in Mediterranean and Middle Eastern markets. Good balance of quality and cost.",
+        items: ["Price: $$$ (Mid-Range)", "Quality: ★★★★☆", "Compatibility: IPC + select brands", "Availability: Europe + Middle East", "Best for: European/Middle Eastern buyers"],
+      },
+      {
+        heading: "8. RA Smith (USA) — Specialist Distributor",
+        content: "US-based distributor carrying multiple aftermarket brands. Wide compatibility across American brands. Decent pricing for domestic buyers. Online catalog with easy ordering.",
+        items: ["Price: $$$ (Mid-Range)", "Quality: ★★★☆☆", "Compatibility: US brands", "Availability: US only", "Best for: US small-to-medium facilities"],
+      },
+      {
+        heading: "9. Gaomei (China) — Budget-Friendly",
+        content: "Chinese manufacturer offering competitive pricing on standard parts. Lower MOQ requirements. Quality is improving but less consistent than tier-1 suppliers. Best for buyers in developing markets or those prioritizing cost over premium quality.",
+        items: ["Price: $ (Budget)", "Quality: ★★★☆☆", "Compatibility: 10+ brands", "Availability: Asia-focused", "Best for: Budget-conscious buyers in developing markets"],
+      },
+      {
+        heading: "10. Cleaning Equipment Services (UK) — European Service",
+        content: "UK-based supplier with strong domestic and European coverage. Good for urgent replacement needs in the UK. Mid-range pricing with next-day delivery options. Limited international shipping.",
+        items: ["Price: $$$ (Mid-Range)", "Quality: ★★★★☆", "Compatibility: UK/EU brands", "Availability: UK + Europe", "Best for: UK facilities needing fast delivery"],
+      },
+      {
+        heading: "Final Recommendation",
+        content: "For most buyers, the optimal strategy is a two-tier approach: use factory-direct suppliers (Aikerui) for planned maintenance and bulk orders to save 30-50%, and keep a local OEM relationship for emergency same-day needs. The cost difference on a single ride-on scrubber's annual parts spend is $700-1,000 — enough to buy a new machine every 5 years.",
+      },
+    ],
+    relatedProducts: [],
+  },
+  // ── Financing Guide ──
+  {
+    slug: "floor-scrubber-financing-options",
+    title: "Floor Scrubber Financing: How to Pay for Your Equipment in 2026",
+    description:
+      "Compare floor scrubber financing options: leasing, equipment loans, 30/70 payment terms, and factory-direct savings. Calculate monthly payments and find the best option for your budget.",
+    category: "buying-guide",
+    readTime: "5 min",
+    difficulty: "beginner",
+    published: "2026-07-14",
+    sections: [
+      {
+        heading: "Why Financing Makes Sense for Floor Scrubbers",
+        content: "A quality ride-on floor scrubber costs $9,000-35,000 — too much for many businesses to pay upfront. But the machine pays for itself in labor savings within 12-18 months. Financing lets you capture those savings immediately without draining cash reserves.",
+      },
+      {
+        heading: "Option 1: Equipment Leasing",
+        content: "Monthly payments, no large upfront cost. At the end of the lease, you can buy the machine for a residual amount, return it, or upgrade to a newer model.",
+        items: [
+          "Typical terms: 24-60 months, 5-15% APR",
+          "Monthly payment for $10,000 machine: $200-350/month",
+          "Best for: Businesses that want to upgrade equipment regularly",
+          "Tax benefit: Lease payments are typically fully deductible as operating expenses",
+        ],
+      },
+      {
+        heading: "Option 2: Equipment Loan",
+        content: "Borrow the full purchase price and pay it back over time. You own the machine from day one.",
+        items: [
+          "Typical terms: 12-60 months, 6-12% APR",
+          "Monthly payment for $10,000 machine: $200-500/month",
+          "Best for: Businesses that want to own the asset and claim depreciation",
+          "Tax benefit: Depreciation (Section 179) allows full deduction in year one",
+        ],
+      },
+      {
+        heading: "Option 3: Factory-Direct 30/70 Payment Terms",
+        content: "The most common payment method for international factory-direct orders. Pay 30% to start production, and the remaining 70% before shipment. No interest, no bank involvement.",
+        items: [
+          "30% deposit: Locks in your order and starts production",
+          "70% before shipment: Paid after quality inspection, before container leaves port",
+          "Best for: International buyers purchasing directly from manufacturers",
+          "Advantage: No interest, no credit check, flexible negotiation",
+        ],
+      },
+      {
+        heading: "Option 4: Letter of Credit (L/C)",
+        content: "Bank-guaranteed payment for orders over $10,000. Your bank guarantees payment to the manufacturer once shipping documents are verified. This protects both buyer and seller in international transactions.",
+        items: [
+          "Cost: 0.5-2% of the transaction value",
+          "Best for: First-time international buyers or large orders",
+          "Advantage: Payment only released when shipping documents confirmed",
+        ],
+      },
+      {
+        heading: "Option 5: Trade Assurance (Alibaba)",
+        content: "Payment held in escrow by Alibaba until you confirm delivery. Provides protection against non-delivery or quality issues.",
+        items: [
+          "Cost: Free for buyers",
+          "Best for: Sample orders or first-time purchases from a new supplier",
+          "Advantage: Payment only released after you confirm receipt",
+        ],
+      },
+      {
+        heading: "Factory-Direct vs Dealer: The Financing Advantage",
+        content: "A $15,000 dealer-purchased machine financed at 10% over 48 months costs $381/month. The same machine factory-direct at $9,500 financed identically costs $241/month. That's $140/month saved — $6,720 over the loan term. Factory-direct purchasing reduces your financing burden by 30-40% before you even negotiate terms.",
+      },
+      {
+        heading: "Get Your Quote with Payment Options",
+        content: "Tell us which machine you're interested in and your preferred payment method. We'll provide a detailed quote with all available payment terms. No obligation, no credit check for quote requests.",
+      },
+    ],
+    relatedProducts: ["K500BT", "K660"],
+  },
+  // ── Used vs New ──
+  {
+    slug: "used-vs-new-floor-scrubber",
+    title: "Used vs New Floor Scrubber: When Buying Used Actually Saves Money (2026)",
+    description:
+      "Used or new floor scrubber? Compare real costs, hidden risks, and when a used machine makes sense. Hour meter guide, inspection checklist, and price comparison.",
+    category: "comparison",
+    readTime: "6 min",
+    difficulty: "beginner",
+    published: "2026-07-14",
+    sections: [
+      {
+        heading: "The Allure of a Used Floor Scrubber",
+        content: "A 2-year-old ride-on scrubber sells for 50-60% of its original price. On paper, that's a $7,000-15,000 saving. But the wrong used machine can cost more in repairs than a new one within 6 months. This guide helps you decide when the savings are real and when they're an illusion.",
+      },
+      {
+        heading: "New Floor Scrubber: What You're Really Paying For",
+        content: "A new machine gives you: full warranty (1-3 years), zero-hour components, latest battery technology, factory support, and predictable maintenance costs for 3-5 years. Factory-direct pricing makes new machines more accessible than most buyers realize.",
+        items: [
+          "Walk-behind new: $1,800-7,500 factory-direct (dealer: $3,000-12,000)",
+          "Ride-on new: $6,000-24,000 factory-direct (dealer: $9,000-35,000)",
+          "Full warranty + no hidden damage + latest technology",
+        ],
+      },
+      {
+        heading: "Used Floor Scrubber: The True Cost Equation",
+        content: "The sticker price is just the beginning. A $5,000 used machine that needs $3,000 in batteries, $500 in squeegees, and $1,000 in repairs within 6 months actually costs $9,500 — nearly what a factory-direct new machine costs.",
+        items: [
+          "Used walk-behind: $1,500-4,000 (50-60% of new dealer price)",
+          "Used ride-on: $5,000-12,000",
+          "Budget additional $1,000-3,000 for immediate repairs and wear parts",
+        ],
+      },
+      {
+        heading: "The 5-Point Used Machine Inspection Checklist",
+        content: "Before buying any used scrubber, check these 5 things. Any one of them can turn a bargain into a money pit.",
+        items: [
+          "1. Hour meter: 3,000+ hours on ride-on or 1,500+ on walk-behind = end of life. Expect major repairs.",
+          "2. Battery age: Lead-acid over 2 years old or lithium over 4 years = budget $500-2,400 for replacement.",
+          "3. Squeegee deck: Bent or repaired = machine was driven into obstacles. Check frame alignment.",
+          "4. Recovery tank: Rust inside = stored wet = vacuum motor likely compromised.",
+          "5. Service records: No records = assume no maintenance was done.",
+        ],
+      },
+      {
+        heading: "When Used Makes Sense",
+        content: "Used machines are a good choice for: backup/second units, facilities with in-house maintenance capability, short-term projects, and buyers who can personally inspect and test the machine before purchase. For primary production machines with zero-downtime requirements, new factory-direct is almost always the better long-term value.",
+      },
+    ],
+    relatedProducts: [],
+  },
+  // ── Gym & Fitness ──
+  {
+    slug: "floor-scrubber-gym-fitness-center",
+    title: "Floor Scrubber for Gyms & Fitness Centers: Keep Your Facility Spotless",
+    description:
+      "Best floor scrubbers for gyms, fitness centers, and health clubs. Clean rubber flooring, locker rooms, and studio spaces. Compact walk-behind models for tight areas. Factory-direct pricing.",
+    category: "buying-guide",
+    readTime: "5 min",
+    difficulty: "beginner",
+    published: "2026-07-14",
+    sections: [
+      {
+        heading: "Why Gym Floors Need Special Equipment",
+        content: "Gym floors are a unique challenge: sweat on rubber flooring, chalk dust on studio floors, tracked-in dirt on lobby tile, and locker room humidity. A standard mop pushes sweat around; a floor scrubber extracts it. Clean floors are the #1 factor in member retention after equipment quality.",
+      },
+      {
+        heading: "Zone-by-Zone Gym Cleaning",
+        content: "Different gym zones need different approaches:",
+        items: [
+          "Weight Room (rubber flooring): Compact walk-behind, 17-20 inch. Daily cleaning essential. Soft brush to avoid damaging rubber mats.",
+          "Cardio Area (rubber/tile): Same machine, different pad. Fast-drying critical — members walk here constantly.",
+          "Studio/Yoga Room (hardwood/sprung floor): Ultra-soft pad only. Minimum moisture. Clean between every class.",
+          "Locker Room (tile): Chemical-resistant machine. Bleach-compatible. Squeegee must handle standing water.",
+          "Lobby & Entrance (tile/stone): High-traffic area. Clean twice daily. First impression matters for membership sales.",
+        ],
+      },
+      {
+        heading: "Recommended Machine",
+        content: "For most gyms (5,000-20,000 sq ft), a compact 17-20 inch walk-behind scrubber is ideal. Quiet enough for daytime operation. Small enough to store in a maintenance closet. Lithium battery for opportunity charging between shifts. Factory-direct price: $1,800-3,000.",
+      },
+      {
+        heading: "Get Your Gym Scrubber Quote",
+        content: "Tell us your facility size and floor types. We'll recommend the right machine at factory-direct pricing. Most gym orders ship within 48 hours.",
+      },
+    ],
+    relatedProducts: ["K500BT", "A380"],
+  },
+  // ── International Shipping ──
+  {
+    slug: "how-to-ship-floor-scrubber-internationally",
+    title: "How to Ship a Floor Scrubber Internationally: Complete Guide for 2026",
+    description:
+      "Complete guide to international floor scrubber shipping. Sea freight vs air freight, customs documentation, import duties by country, packaging requirements, and cost estimates.",
+    category: "buying-guide",
+    readTime: "6 min",
+    difficulty: "intermediate",
+    published: "2026-07-14",
+    sections: [
+      {
+        heading: "The Logistics of Moving Heavy Equipment",
+        content: "A ride-on floor scrubber weighs 400-800 kg and is the size of a small car. Shipping it from China to the US, Europe, or Middle East requires proper planning. This guide covers everything from packaging to customs clearance.",
+      },
+      {
+        heading: "Step 1: Choose Your Shipping Method",
+        content: "Three shipping methods, each for different scenarios:",
+        items: [
+          "Sea Freight FCL (Full Container): 2-8 machines per 20ft container. $2,000-4,000 to US/Europe. 25-40 days transit. Best value for 3+ machines.",
+          "Sea Freight LCL (Shared Container): 1-2 machines. $500-1,000 per machine. 30-45 days transit. Best for single units.",
+          "Air Freight: $3,000-8,000 per ride-on machine. 3-7 days transit. Only worth it for urgent replacements or sample units.",
+          "Express (DHL/FedEx): For parts only. $50-200 per shipment. 3-5 days.",
+        ],
+      },
+      {
+        heading: "Step 2: Packaging Requirements",
+        content: "All Aikerui machines are export-packed in plywood crates with foam protection. Crates are fumigated (ISPM 15 compliant) for international shipping. Each crate includes a desiccant pack to prevent moisture damage during sea transit.",
+      },
+      {
+        heading: "Step 3: Customs Documentation",
+        content: "You need: commercial invoice, packing list, bill of lading (sea) or air waybill (air), certificate of origin (reduces duties in some countries), and CE/ISO certificates. We provide all documentation with every shipment.",
+      },
+      {
+        heading: "Step 4: Import Duties by Country",
+        content: "Floor scrubbers fall under HS code 8479.89. Duties vary:",
+        items: [
+          "USA: 0-2.5%. No special tariffs on cleaning equipment as of 2026.",
+          "EU: 1.7%. CE documentation required.",
+          "UK: 0-2%. UKCA marking may be needed.",
+          "Australia: 0-5%. RCM compliance for electrical safety.",
+          "Middle East (GCC): 5%. SASO/SABER for Saudi Arabia.",
+          "Always confirm with your local customs broker — rates change.",
+        ],
+      },
+      {
+        heading: "Step 5: Receiving Your Machine",
+        content: "When the container arrives at your port, you need a customs broker to clear it. Budget $200-500 for broker fees. After customs clearance, arrange local trucking to your facility. Total door-to-door time from factory to your facility: typically 35-55 days for sea freight.",
+      },
+      {
+        heading: "Get Your Shipping Quote",
+        content: "Tell us which machine, your port, and quantity. We'll provide a detailed CIF (cost, insurance, freight) quote including all shipping and documentation costs. Sample units available for evaluation before container orders.",
+      },
+    ],
+    relatedProducts: ["K500BT", "K660"],
+  },
+  // ── Church & Venue ──
+  {
+    slug: "floor-scrubber-church-event-venue",
+    title: "Floor Scrubber for Churches & Event Venues: Quiet, Compact Cleaning Solutions",
+    description:
+      "Best floor scrubbers for churches, wedding venues, banquet halls, and event spaces. Ultra-quiet operation, compact for pew areas, fast-drying for quick turnaround between events.",
+    category: "buying-guide",
+    readTime: "5 min",
+    difficulty: "beginner",
+    published: "2026-07-14",
+    sections: [
+      {
+        heading: "The Unique Cleaning Challenge of Churches & Event Venues",
+        content: "Churches and event venues host hundreds of people at a time, often with polished stone, wood, and tile flooring throughout. Between weddings, services, and community events, cleaning windows are short. A floor scrubber must be ultra-quiet (no one wants to hear a machine during a wedding reception), compact enough for narrow pew aisles, and fast-drying so floors are ready for the next event.",
+      },
+      {
+        heading: "Recommended Machine",
+        content: "A compact 17-20 inch walk-behind scrubber. Ultra-quiet (<60dB). Lightweight for multi-floor buildings without elevators. Quick-drying squeegee for fast turnaround. Factory-direct price: $1,800-3,200.",
+        items: [
+          "Sanctuary & Chapel: Polished wood/stone — soft pads only, ultra-quiet mode.",
+          "Fellowship Hall & Banquet: Tile/vinyl — fast cleaning between events, quick-drying.",
+          "Classrooms & Offices: Multi-surface capability, compact storage.",
+          "Kitchen: Degreasing capable, stainless steel components.",
+        ],
+      },
+      {
+        heading: "Cost-Saving Tip",
+        content: "Most churches clean 2-3 times per week. A $2,500 scrubber replaces 3-4 hours of volunteer mopping per session. Over 5 years, that's thousands of volunteer hours saved. Plus, mechanical scrubbing produces noticeably cleaner floors — important for wedding venues where appearance directly impacts bookings.",
+      },
+      {
+        heading: "Get Your Quote",
+        content: "Tell us about your facility — floor types, square footage, and cleaning frequency. We'll recommend the right machine. Factory-direct pricing for churches and non-profit organizations.",
+      },
+    ],
+    relatedProducts: ["K500BT", "A380"],
+  },
+  // ── Top 10 Industrial Cleaning Equipment Manufacturers ──
+  {
+    slug: "top-10-industrial-cleaning-equipment-manufacturers",
+    title: "Top 10 Industrial Cleaning Equipment Manufacturers in 2026 — Complete Guide",
+    description:
+      "Top 10 industrial cleaning equipment manufacturers compared. Floor scrubbers, sweepers, and parts from Tennant, Nilfisk, Karcher, Aikerui and more. Pricing, quality, and global reach comparison.",
+    category: "comparison",
+    readTime: "8 min",
+    difficulty: "beginner",
+    published: "2026-07-14",
+    sections: [
+      {
+        heading: "The Industrial Cleaning Equipment Landscape in 2026",
+        content: "The global industrial cleaning equipment market is dominated by a handful of established Western brands and a growing number of factory-direct Chinese manufacturers. The biggest shift in 2026: factory-direct pricing has made industrial-grade equipment accessible to facilities that previously couldn't afford it. Here's our ranking based on quality, pricing, innovation, and global availability.",
+      },
+      {
+        heading: "1. Tennant (USA) — Industry Leader",
+        content: "World's largest dedicated manufacturer. T7/T12/T17 ride-on scrubbers are the gold standard. Premium pricing ($15,000-45,000). Best dealer network globally. ec-H2O water electrolysis technology eliminates chemical use.",
+        items: ["Founded: 1870 | HQ: Minneapolis, USA","Price: $$$$", "Quality: ★★★★★", "Best for: Large corporations with service contracts"],
+      },
+      {
+        heading: "2. Nilfisk (Denmark) — European Powerhouse",
+        content: "Strongest in Europe with growing North American presence. SC series scrubbers are widely used. Excellent build quality. Premium European pricing.",
+        items: ["Founded: 1906 | HQ: Copenhagen","Price: $$$$", "Quality: ★★★★★", "Best for: European and multinational operations"],
+      },
+      {
+        heading: "3. Kärcher (Germany) — Largest by Revenue",
+        content: "World's largest cleaning equipment company. BD series walk-behind scrubbers dominate European market. Massive distribution network means parts are always available.",
+        items: ["Founded: 1935 | HQ: Winnenden, Germany","Price: $$$$", "Quality: ★★★★★", "Best for: Facilities needing fast local parts access"],
+      },
+      {
+        heading: "4. Hako (Germany) — Industrial Specialist",
+        content: "Strong in European industrial and logistics sectors. Scrubmaster series known for durability. Expanding in Asian markets.",
+        items: ["Founded: 1948 | HQ: Bad Oldesloe, Germany","Price: $$$$", "Quality: ★★★★☆", "Best for: European industrial facilities"],
+      },
+      {
+        heading: "5. Comac (Italy) — Italian Engineering",
+        content: "Ride-on scrubber specialist with excellent ergonomics. Strong in Europe and Middle East. Competitive within premium segment.",
+        items: ["Founded: 1976 | HQ: Verona, Italy","Price: $$$", "Quality: ★★★★☆", "Best for: European and Middle Eastern markets"],
+      },
+      {
+        heading: "6. Aikerui (China) — Best Value, Factory-Direct",
+        content: "Factory-direct manufacturer with 30-50% cost advantage over Western brands. Same CE/ISO certifications. Walk-behind ($1,800-7,500) and ride-on ($6,000-24,000) at factory pricing. 360+ parts in stock. 10,000+ sqm facility.",
+        items: ["Founded: 2008 | HQ: Anqing, China","Price: $", "Quality: ★★★★☆", "Best for: Buyers who want OEM quality at factory-direct pricing"],
+      },
+      {
+        heading: "7. IPC Gansow (Italy) — Part of IPC Group",
+        content: "Large Italian group with multiple cleaning equipment brands. CT series ride-on scrubbers popular in Europe. Good mid-range option.",
+        items: ["Founded: 1969 | HQ: Milan, Italy","Price: $$$", "Quality: ★★★★☆", "Best for: European mid-market buyers"],
+      },
+      {
+        heading: "8. Fimap (Italy) — Growing International Presence",
+        content: "Comprehensive range from compact to industrial machines. Rapidly expanding dealer network. Competitive European pricing.",
+        items: ["Founded: 1977 | HQ: Verona, Italy","Price: $$$", "Quality: ★★★★☆", "Best for: European and North African facilities"],
+      },
+      {
+        heading: "9. NSS Enterprises (USA) — American Reliability",
+        content: "No-frills, durable American machines. Popular in US schools and hospitals. Lower maintenance costs than premium brands.",
+        items: ["Founded: 1911 | HQ: Toledo, Ohio","Price: $$", "Quality: ★★★★☆", "Best for: US schools, hospitals, and commercial facilities"],
+      },
+      {
+        heading: "10. Gaomei (China) — Budget Alternative",
+        content: "Chinese manufacturer with growing export presence. Budget-friendly pricing. Best for buyers in developing markets or those with tight budgets.",
+        items: ["Founded: 2005 | HQ: Guangzhou, China","Price: $", "Quality: ★★★☆☆", "Best for: Asian, African, and Middle Eastern budget buyers"],
+      },
+      {
+        heading: "The Price Reality",
+        content: "A ride-on scrubber from Tennant costs $18,000-35,000 through a dealer. The same specifications from a factory-direct manufacturer cost $9,000-18,000. The difference isn't quality — it's the dealer markup. For buyers ordering 3+ machines, factory-direct sourcing saves $25,000-50,000+.",
+      },
+      {
+        heading: "Get Quotes to Compare",
+        content: "We recommend getting quotes from at least 3 manufacturers before buying. Include one factory-direct option in your comparison. You'll be surprised at the price difference for the same specifications.",
+      },
+    ],
+    relatedProducts: ["K500BT", "A660T", "K660"],
+  },
+  // ── Niche: Dust/Sand/Soil environments ──
+  {
+    slug: "floor-scrubber-dust-sand-industrial-cleaning",
+    title: "Floor Scrubber for Sand, Dust & Heavy Soil: Industrial Cleaning Solutions",
+    description:
+      "Best floor scrubbers for dusty, sandy, and heavy-soil industrial environments. Disc brush vs roller brush for sand, dust-proof components, and high-pressure scrubbing for stubborn debris.",
+    category: "buying-guide",
+    readTime: "5 min",
+    difficulty: "intermediate",
+    published: "2026-07-14",
+    sections: [
+      {
+        heading: "The Sand & Dust Challenge",
+        content: "Industrial facilities handling sand, cement, mining materials, or agricultural products face a unique challenge: abrasive dust and fine particles that destroy standard cleaning equipment. Sand acts like sandpaper on brushes and squeegees, clogging standard filters and scoring floor surfaces if not properly managed. You need a machine built specifically for abrasive environments.",
+      },
+      {
+        heading: "Why Standard Scrubbers Fail in Sandy Environments",
+        content: "Sand and abrasive dust cause four specific problems: (1) premature brush wear — nylon bristles can wear out in weeks instead of months, (2) squeegee blade scoring — fine particles scratch rubber blades, causing streak marks, (3) filter clogging — dust overwhelms standard vacuum filters, and (4) motor damage — fine dust enters unsealed motors and bearings.",
+      },
+      {
+        heading: "Key Features for Sand & Dust Environments",
+        content: "Look for these features when selecting a scrubber for abrasive environments:",
+        items: [
+          "Roller/cylindrical brush: Sweeps debris before scrubbing — prevents sand from being ground into floors by a disc brush.",
+          "Sweeper-scrubber combo: Pre-sweeps sand and debris, then scrubs — one machine, one pass.",
+          "Dust-resistant seals: IP65+ rated motors and electronics to prevent dust ingress.",
+          "Heavy-duty squeegee: Oil-resistant polyurethane or Linatex blades with 2x normal lifespan in abrasive conditions.",
+          "Large debris hopper: Holds sand and gravel without frequent emptying.",
+          "High brush pressure (80-100kg): Cuts through caked-on mud and soil.",
+        ],
+      },
+      {
+        heading: "Recommended Machine",
+        content: "For most sand/dust environments (construction yards, cement plants, mining facilities, agricultural warehouses), a ride-on sweeper-scrubber combination machine is ideal. It sweeps abrasive debris first, then scrubs — preventing brush and squeegee damage. For smaller facilities, a walk-behind with pre-sweep capability works well. Factory-direct pricing: $8,000-18,000 for ride-on combos.",
+      },
+      {
+        heading: "Maintenance Tips for Sandy Environments",
+        content: "Double your machine's lifespan in abrasive conditions with these practices:",
+        items: [
+          "Pre-sweep or vacuum loose debris before scrubbing — never scrub over sand.",
+          "Inspect squeegee blades weekly — rotate or replace at first sign of scoring.",
+          "Clean vacuum filter daily — compressed air works best.",
+          "Grease bearings monthly — abrasive dust accelerates wear.",
+          "Check brush bristle length bi-weekly — sand environments cut lifespan by 50%.",
+        ],
+      },
+      {
+        heading: "Get Your Quote",
+        content: "Tell us about your facility — floor type, debris type, and square footage. We'll recommend a machine built for abrasive environments. Factory-direct pricing with parts support.",
+      },
+    ],
+    relatedProducts: [],
+  },
+  // ── Niche: Carpet Cleaning Equipment ──
+  {
+    slug: "commercial-carpet-cleaning-equipment-guide",
+    title: "Commercial Carpet Cleaning Equipment: Extractors, Scrubbers & More",
+    description:
+      "Complete guide to commercial carpet cleaning equipment. Carpet extractors, bonnet cleaners, and combo machines for hotels, offices, and event spaces. Factory-direct pricing.",
+    category: "buying-guide",
+    readTime: "5 min",
+    difficulty: "beginner",
+    published: "2026-07-14",
+    sections: [
+      {
+        heading: "Carpet vs Hard Floor: Different Machines Required",
+        content: "Carpet cleaning is fundamentally different from hard floor scrubbing. Carpet fibers trap dirt below the surface — a standard floor scrubber just pushes dirt around on carpet. You need extraction equipment that injects cleaning solution deep into fibers, agitates, and then vacuums the dirty solution back out. Aikerui offers carpet extractors alongside our hard floor scrubbers for facilities with mixed flooring.",
+      },
+      {
+        heading: "Types of Carpet Cleaning Machines",
+        content: "Three main types of commercial carpet cleaning equipment:",
+        items: [
+          "Carpet Extractor: Injects solution deep into fibers, agitates with brush, then extracts dirty water. Best for deep cleaning. Hotel corridors, office carpets.",
+          "Bonnet Cleaner: Uses a rotating absorbent pad to clean carpet surface. Faster than extraction but less deep cleaning. Best for maintenance between deep cleans.",
+          "Carpet Scrubber: Combines scrubbing with extraction. Best for heavily soiled commercial carpet. Airports, convention centers, high-traffic retail.",
+        ],
+      },
+      {
+        heading: "Get Your Quote",
+        content: "Tell us your carpet area and traffic level. We'll recommend the right machine. Factory-direct pricing for hospitality and commercial facilities.",
+      },
+    ],
+    relatedProducts: [],
   },
 ];
