@@ -21,6 +21,10 @@ export const metadata: Metadata = {
     "floor sweeper manufacturer",
     "industrial floor cleaning machine",
     "floor scrubber manufacturer",
+    "cleaning equipment manufacturer",
+    "industrial cleaning machine manufacturer",
+    "industrial cleaning equipment manufacturer",
+    "commercial floor stripping machine",
     "Aikerui",
   ],
   alternates: {
@@ -334,10 +338,10 @@ export default function HomePage() {
         <div className="max-w-5xl mx-auto px-4">
           <div className="text-sm text-gray-600 leading-relaxed space-y-4">
             <p>
-              Aikerui is a professional floor scrubber manufacturer and industrial cleaning equipment supplier based in Anhui, China.
-              Since 2008, our factory has designed and produced walk-behind floor scrubbers, ride-on scrubber dryers, industrial sweepers,
-              and a complete range of floor scrubber replacement parts — including floor scrubber brushes, disc brushes, cylindrical brushes,
-              roller brushes, squeegee blades, pad drivers, and other cleaning machine accessories.
+              Aikerui is a professional floor scrubber manufacturer, cleaning equipment manufacturer, and industrial cleaning machine manufacturer
+              based in Anhui, China. Since 2008, our factory has designed and produced walk-behind floor scrubbers, ride-on scrubber dryers,
+              industrial sweepers, carpet extractors, and a complete range of floor scrubber replacement parts — including floor scrubber brushes,
+              disc brushes, cylindrical brushes, roller brushes, squeegee blades, pad drivers, and other cleaning machine accessories.
             </p>
             <p>
               Our floor scrubber brushes and spare parts are engineered as direct replacement options compatible with leading brands such as
