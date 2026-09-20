@@ -680,7 +680,7 @@
     "intent": "commercial",
     "businessValue": "B",
     "isPrimary": true,
-    "targetUrl": "/guides/walk-behind-vs-ride-on-scrubber-overview",
+    "targetUrl": "/guides/walk-behind-vs-ride-on-scrubber",
     "pageType": "Comparison",
     "status": "published",
     "title": "Walk-Behind vs Ride-On Floor Scrubber: Which Is Better?"
@@ -1197,10 +1197,10 @@
     "intent": "commercial",
     "businessValue": "A",
     "isPrimary": true,
-    "targetUrl": "/guides/warehouse-floor-cleaning-equipment-guide",
-    "pageType": "guide",
-    "status": "planned",
-    "title": "（本周第 2 篇待写）"
+    "targetUrl": "/guides/warehouse-cleaning-equipment-complete-guide",
+    "pageType": "Buying Guide",
+    "status": "published",
+    "title": "Warehouse Cleaning Equipment: Complete Setup Guide"
   },
   {
     "keyword": "warehouse floor scrubber",
@@ -1208,10 +1208,10 @@
     "intent": "commercial",
     "businessValue": "A",
     "isPrimary": false,
-    "targetUrl": "/guides/warehouse-floor-cleaning-equipment-guide",
-    "pageType": "guide",
-    "status": "planned",
-    "title": "（本周第 2 篇待写）"
+    "targetUrl": "/guides/warehouse-cleaning-equipment-complete-guide",
+    "pageType": "Buying Guide",
+    "status": "published",
+    "title": "Warehouse Cleaning Equipment: Complete Setup Guide"
   },
   {
     "keyword": "industrial floor scrubber buying guide",

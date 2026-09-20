@@ -5859,6 +5859,8 @@ const extraGuides: Guide[] = [
         content: "To order the right replacement, you need three numbers: brush diameter (for disc brushes) or length (for cylindrical/roller brushes), the mounting system (such as a 2-lug or 3-lug driver plate), and the bristle material. If you are not sure, measure the old brush and send a photo — a factory-direct supplier can match it by spec, not by brand name. Buying by specification opens the door to OEM-compatible brushes at 30-50 percent below dealer pricing.",
       },
     ],
+    relatedProducts: [],
+    relatedGuides: ["floor-scrubber-brush-complete-guide", "floor-scrubber-brush-replacement-guide", "how-to-measure-floor-scrubber-brush-size"],
 },
 {
     slug: "how-to-measure-floor-scrubber-brush-size",
@@ -5968,5 +5970,7 @@ const extraGuides: Guide[] = [
         content: "You do not need to know a part number. Send the diameter (or length), the hole and lug pattern, and a photo with the tape measure, and we will match a factory-direct replacement brush for your machine. As a brush manufacturer we build to specification rather than to brand, so an OEM-compatible brush typically costs 30-50 percent less than the dealer price. Custom diameters, custom bristle materials, and private-label branding are available on request.",
       },
     ],
+    relatedProducts: [],
+    relatedGuides: ["floor-scrubber-brush-complete-guide", "floor-scrubber-disc-brush-buying-guide", "floor-scrubber-brush-lifespan-and-maintenance"],
 },
 ];
