@@ -323,6 +323,7 @@ export default function HomePage() {
               <Video size={18} /> Request Live Video Tour
             </Link>
             <Link href="/products" className="inline-flex items-center gap-2 px-8 py-3.5 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg border border-white/20 transition-colors">Browse Products</Link>
+            <Link href="/floor-scrubber-supplier" className="inline-flex items-center gap-2 px-8 py-3.5 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg border border-white/20 transition-colors">Why Buy Direct from the Supplier</Link>
           </div>
           <p className="text-gray-400 text-sm mt-6">Or call us directly: <a href="https://api.whatsapp.com/send?phone=8619965236428&text=Hi%2C%20I%27m%20interested%20in%20floor%20scrubber%20pricing." className="text-white underline font-semibold">WhatsApp Sales Team</a></p>
         </div>

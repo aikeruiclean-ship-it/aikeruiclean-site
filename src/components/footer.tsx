@@ -82,6 +82,7 @@ export function Footer() {
               { href: "/", label: "Home" },
               { href: "/products", label: "All Products" },
               { href: "/parts", label: "Replacement Parts" },
+              { href: "/floor-scrubber-supplier", label: "Floor Scrubber Supplier" },
               { href: "/guides", label: "Guides" },
               { href: "/about", label: "About Us" },
               { href: "/contact", label: "Contact" },
