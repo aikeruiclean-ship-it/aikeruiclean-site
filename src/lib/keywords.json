@@ -1223,5 +1223,55 @@
     "pageType": "Buying Guide",
     "status": "published",
     "title": "Industrial Floor Scrubber Buying Guide 2026"
+  },
+  {
+    "keyword": "cleaning equipment manufacturer",
+    "cluster": "Manufacturers & Suppliers",
+    "intent": "transactional",
+    "businessValue": "A",
+    "targetUrl": "/",
+    "pageType": "Homepage",
+    "isPrimary": false,
+    "status": "published"
+  },
+  {
+    "keyword": "industrial cleaning machine manufacturer",
+    "cluster": "Manufacturers & Suppliers",
+    "intent": "transactional",
+    "businessValue": "A",
+    "targetUrl": "/",
+    "pageType": "Homepage",
+    "isPrimary": false,
+    "status": "published"
+  },
+  {
+    "keyword": "industrial cleaning equipment manufacturers",
+    "cluster": "Manufacturers & Suppliers",
+    "intent": "transactional",
+    "businessValue": "B",
+    "targetUrl": "/guides/top-10-industrial-cleaning-equipment-manufacturers",
+    "pageType": "Buying Guide",
+    "isPrimary": false,
+    "status": "published"
+  },
+  {
+    "keyword": "floor scrubber manufacturers",
+    "cluster": "Manufacturers & Suppliers",
+    "intent": "transactional",
+    "businessValue": "A",
+    "targetUrl": "/guides/top-10-floor-scrubber-manufacturers-2026",
+    "pageType": "Buying Guide",
+    "isPrimary": false,
+    "status": "published"
+  },
+  {
+    "keyword": "commercial floor stripping machines",
+    "cluster": "Floor Scrubbers",
+    "intent": "commercial",
+    "businessValue": "B",
+    "targetUrl": "/floor-scrubbers",
+    "pageType": "Category",
+    "isPrimary": false,
+    "status": "published"
   }
 ]
