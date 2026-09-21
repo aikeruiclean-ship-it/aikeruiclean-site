@@ -506,7 +506,16 @@ export default async function GuideDetailPage({ params }: Props) {
         <p className="text-sm text-gray-600 mt-1 leading-relaxed">
           <Link href="/about/mark-xu" className="text-primary hover:underline font-medium">Mark Xu</Link> is Sales Director at Aikerui with 15+ years of experience in industrial floor cleaning equipment. He has helped 2,000+ facilities across 50+ countries source factory-direct cleaning equipment.
         </p>
-      </div></article>
+      </div>
+
+      {/* About Aikerui — GEO entity block (rendered on every guide) */}
+      <div className="border-t border-gray-200 pt-6 mt-6">
+        <p className="text-sm font-semibold text-gray-900">About Aikerui</p>
+        <p className="text-sm text-gray-600 mt-1 leading-relaxed">
+          Aikerui is an industrial cleaning equipment manufacturer founded in 2008, operating its own 10,000+ square meter production facility in Anqing, Anhui, China. It manufactures floor scrubbers, sweepers and replacement parts, holds CE and ISO 9001 certification, and exports to 50+ countries. Every guide on this site is written by the manufacturer's own team — not a third-party agency.
+        </p>
+      </div>
+      </article>
 
       {/* Back to guides */}
       <section className="py-12 bg-gray-50 border-t border-gray-200">
