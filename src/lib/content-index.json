@@ -1,31 +1,31 @@
 {
- "generatedAt": "2026-09-15",
- "totalGuides": 87,
+ "generatedAt": "2026-10-09",
+ "totalGuides": 88,
  "orphans": [],
  "hubs": [
   {
    "slug": "floor-scrubber-brush-complete-guide",
-   "inLinks": 13
+   "inLinks": 15
   },
   {
    "slug": "how-to-choose-a-floor-scrubber",
    "inLinks": 12
   },
   {
+   "slug": "floor-scrubber-disc-brush-buying-guide",
+   "inLinks": 10
+  },
+  {
    "slug": "floor-scrubber-parts-guide-types-lifespan-cost",
    "inLinks": 10
   },
   {
-   "slug": "floor-scrubber-disc-brush-buying-guide",
-   "inLinks": 9
+   "slug": "industrial-floor-scrubber-buying-guide",
+   "inLinks": 8
   },
   {
    "slug": "hotel-hospitality-floor-cleaning-solutions",
    "inLinks": 8
-  },
-  {
-   "slug": "industrial-floor-scrubber-buying-guide",
-   "inLinks": 7
   },
   {
    "slug": "how-to-maintain-floor-scrubber-battery",
@@ -45,6 +45,28 @@
   }
  ],
  "guides": [
+  {
+   "slug": "cleaning-equipment-manufacturer-guide",
+   "url": "/guides/cleaning-equipment-manufacturer-guide",
+   "title": "Cleaning Equipment Manufacturer Guide: Floor Scrubbers 2026",
+   "category": "buying-guide",
+   "published": "2026-10-09",
+   "thumbnail": "/images/aikerui-showroom.webp",
+   "wordCount": 1217,
+   "relatedGuides": [
+    "industrial-floor-scrubber-buying-guide",
+    "how-to-read-floor-scrubber-specifications",
+    "floor-scrubber-safety-guide"
+   ],
+   "bodyLinks": [],
+   "outLinks": 3,
+   "inLinks": 3,
+   "inLinkFrom": [
+    "industrial-floor-scrubber-buying-guide",
+    "how-to-choose-a-floor-scrubber",
+    "top-10-industrial-cleaning-equipment-manufacturers"
+   ]
+  },
   {
    "slug": "how-to-assess-floor-scrubber-manufacturer",
    "url": "/guides/how-to-assess-floor-scrubber-manufacturer",
@@ -97,14 +119,15 @@
    "thumbnail": "/images/RIDE-ON-A660.webp",
    "wordCount": 1053,
    "relatedGuides": [
-    "a50-walk-behind-scrubber-features",
+    "cleaning-equipment-manufacturer-guide",
     "floor-scrubber-auto-dealership-showroom",
     "how-to-read-floor-scrubber-specifications"
    ],
    "bodyLinks": [],
    "outLinks": 3,
-   "inLinks": 7,
+   "inLinks": 8,
    "inLinkFrom": [
+    "cleaning-equipment-manufacturer-guide",
     "how-to-assess-floor-scrubber-manufacturer",
     "industrial-floor-sweeper-guide",
     "a50-walk-behind-scrubber-features",
@@ -127,7 +150,7 @@
    ],
    "bodyLinks": [],
    "outLinks": 1,
-   "inLinks": 13,
+   "inLinks": 15,
    "inLinkFrom": [
     "shampoo-disc-brush-guide",
     "top-10-floor-scrubber-disc-brushes",
@@ -141,7 +164,9 @@
     "floor-scrubber-brush-pads-guide",
     "auto-scrubber-brush-guide",
     "cylindrical-brush-floor-scrubber-guide",
-    "how-much-do-floor-scrubber-brushes-cost"
+    "how-much-do-floor-scrubber-brushes-cost",
+    "floor-scrubber-brush-lifespan-and-maintenance",
+    "how-to-measure-floor-scrubber-brush-size"
    ]
   },
   {
@@ -151,11 +176,11 @@
    "category": "buying-guide",
    "published": "2026-06-01",
    "thumbnail": "/images/B460-Scrubber-01.webp",
-   "wordCount": 609,
+   "wordCount": 606,
    "relatedGuides": [
-    "how-to-set-up-your-floor-scrubber",
-    "floor-scrubber-safety-guide",
-    "used-vs-new-floor-scrubber"
+    "used-vs-new-floor-scrubber",
+    "a50-walk-behind-scrubber-features",
+    "cleaning-equipment-manufacturer-guide"
    ],
    "bodyLinks": [],
    "outLinks": 3,
@@ -216,7 +241,7 @@
    ],
    "bodyLinks": [],
    "outLinks": 3,
-   "inLinks": 9,
+   "inLinks": 10,
    "inLinkFrom": [
     "shampoo-disc-brush-guide",
     "top-10-floor-scrubber-disc-brushes",
@@ -226,7 +251,8 @@
     "floor-scrubber-construction-site-cleaning",
     "floor-scrubber-brush-bristle-material-guide",
     "steel-wire-floor-scrubber-brush-guide",
-    "floor-scrubber-disc-brush-replacement-tips"
+    "floor-scrubber-disc-brush-replacement-tips",
+    "how-to-measure-floor-scrubber-brush-size"
    ]
   },
   {
@@ -392,11 +418,12 @@
    ],
    "bodyLinks": [],
    "outLinks": 3,
-   "inLinks": 3,
+   "inLinks": 4,
    "inLinkFrom": [
     "replacement-floor-scrubber-parts-guide",
     "cylindrical-brush-floor-scrubber-guide",
-    "how-much-do-floor-scrubber-brushes-cost"
+    "how-much-do-floor-scrubber-brushes-cost",
+    "floor-scrubber-brush-lifespan-and-maintenance"
    ]
   },
   {
@@ -414,9 +441,8 @@
    ],
    "bodyLinks": [],
    "outLinks": 3,
-   "inLinks": 2,
+   "inLinks": 1,
    "inLinkFrom": [
-    "how-to-choose-a-floor-scrubber",
     "floor-scrubber-daily-operation-best-practices"
    ]
   },
@@ -447,7 +473,7 @@
    "category": "product-showcase",
    "published": "2026-06-08",
    "thumbnail": "/images/A50-Scrubber-03.webp",
-   "wordCount": 130,
+   "wordCount": 138,
    "relatedGuides": [
     "industrial-floor-scrubber-buying-guide",
     "how-to-choose-a-floor-scrubber",
@@ -457,7 +483,7 @@
    "outLinks": 3,
    "inLinks": 1,
    "inLinkFrom": [
-    "industrial-floor-scrubber-buying-guide"
+    "how-to-choose-a-floor-scrubber"
    ]
   },
   {
@@ -476,11 +502,10 @@
    ],
    "bodyLinks": [],
    "outLinks": 4,
-   "inLinks": 4,
+   "inLinks": 3,
    "inLinkFrom": [
     "floor-scrubber-financing-options",
     "floor-scrubber-church-event-venue",
-    "top-10-industrial-cleaning-equipment-manufacturers",
     "floor-scrubber-logistics-distribution-center"
    ]
   },
@@ -1118,7 +1143,7 @@
    "outLinks": 3,
    "inLinks": 1,
    "inLinkFrom": [
-    "how-to-choose-a-floor-scrubber"
+    "cleaning-equipment-manufacturer-guide"
    ]
   },
   {
@@ -1256,11 +1281,11 @@
    "category": "comparison",
    "published": "2026-07-14",
    "thumbnail": "/images/parts/101539965819.webp",
-   "wordCount": 803,
+   "wordCount": 801,
    "relatedGuides": [
     "top-10-industrial-floor-scrubber-suppliers",
     "top-10-floor-scrubber-manufacturers-2026",
-    "top-floor-scrubber-brands-buyers-guide",
+    "cleaning-equipment-manufacturer-guide",
     "warehouse-cleaning-equipment-complete-guide"
    ],
    "bodyLinks": [],
@@ -1456,8 +1481,9 @@
    ],
    "bodyLinks": [],
    "outLinks": 3,
-   "inLinks": 1,
+   "inLinks": 2,
    "inLinkFrom": [
+    "cleaning-equipment-manufacturer-guide",
     "industrial-floor-scrubber-buying-guide"
    ]
   },
@@ -1907,15 +1933,20 @@
    "category": "buying-guide",
    "published": "2026-09-08",
    "thumbnail": "/images/parts/sweeper-main-brush-ride-on-walk-behind-sweeper-core-brush-for-commercial-use.webp",
-   "wordCount": 713,
-   "relatedGuides": [],
+   "wordCount": 732,
+   "relatedGuides": [
+    "floor-scrubber-brush-complete-guide",
+    "floor-scrubber-brush-replacement-guide",
+    "how-to-measure-floor-scrubber-brush-size"
+   ],
    "bodyLinks": [],
-   "outLinks": 0,
-   "inLinks": 3,
+   "outLinks": 3,
+   "inLinks": 4,
    "inLinkFrom": [
     "floor-scrubber-disc-brush-buying-guide",
     "floor-scrubber-brush-pressure-guide",
-    "auto-scrubber-brush-guide"
+    "auto-scrubber-brush-guide",
+    "how-to-measure-floor-scrubber-brush-size"
    ]
   },
   {
@@ -1925,13 +1956,18 @@
    "category": "buying-guide",
    "published": "2026-09-10",
    "thumbnail": "/images/parts/shampoo-disc-brush-custom-nylon-abrasive-brushes-for-floor-scrubbers.webp",
-   "wordCount": 802,
-   "relatedGuides": [],
+   "wordCount": 821,
+   "relatedGuides": [
+    "floor-scrubber-brush-complete-guide",
+    "floor-scrubber-disc-brush-buying-guide",
+    "floor-scrubber-brush-lifespan-and-maintenance"
+   ],
    "bodyLinks": [],
-   "outLinks": 0,
-   "inLinks": 1,
+   "outLinks": 3,
+   "inLinks": 2,
    "inLinkFrom": [
-    "floor-scrubber-brush-pressure-guide"
+    "floor-scrubber-brush-pressure-guide",
+    "floor-scrubber-brush-lifespan-and-maintenance"
    ]
   }
  ]
