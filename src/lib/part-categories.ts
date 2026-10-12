@@ -100,25 +100,25 @@ export const PART_CATEGORIES: PartCategoryDef[] = [
     ],
   },
   {
-    slug: "pad-holders",
-    subcategory: "Pad Holder / 针盘",
-    h1: "Floor Scrubber Pad Holders",
-    breadcrumb: "Pad Holders",
-    title: "Floor Scrubber Pad Drivers & Holders | Aikerui",
+    slug: "pad-drivers",
+    subcategory: "Pad Driver / 驱动盘",
+    h1: "Floor Machine Pad Drivers & Holders",
+    breadcrumb: "Pad Drivers",
+    title: "Pad Drivers & Holders | Floor Machine Pad Driver | Aikerui",
     description:
-      "Replacement pad holders and pad drivers for floor scrubbers — universal and machine-specific lug patterns, riser styles, factory direct pricing.",
+      "Pad drivers and pad holders hold the cleaning pad on a floor machine for normal cleaning, polishing and stripping. Factory direct, all standard sizes.",
     intro: [
-      "Pad holders (also called pad drivers) carry the abrasive pad on a scrubber deck. We manufacture holders matched to common scrubber drive lugs and center-lock systems, in all standard diameters.",
-      "Available styles include standard riser, low-profile and center-lock versions. Custom lug patterns and sizes can be tooled for volume orders.",
+      "A pad driver (also called a pad holder) holds the cleaning pad on a floor machine so it can do normal cleaning, polishing and stripping. We manufacture pad drivers matched to common machine drive lugs and center-lock systems, in all standard diameters.",
+      "Available styles include standard riser, low-profile and center-lock versions, in 13, 15, 16, 17, 19 and 20 inch sizes. Custom lug patterns can be tooled for volume orders, and factory-direct pricing keeps replacement pad drivers well below dealer cost.",
     ],
     faq: [
       {
-        q: "How do I identify my pad holder type?",
-        a: "Note the drive lug pattern (three-lug, five-lug or center-lock), the block diameter, and your machine brand. Send a photo or the model number and we will confirm.",
+        q: "What is a pad driver used for?",
+        a: "A pad driver (pad holder) holds the cleaning pad on a floor machine. It drives the pad for normal cleaning, polishing and stripping across hard floors, and is a common replacement part on single-disc machines and auto scrubbers.",
       },
       {
-        q: "Are your pad holders compatible with standard floor pads?",
-        a: "Yes. Our holders accept standard industry pad diameters — tell us your pad size and we will match the holder.",
+        q: "How do I identify my pad driver type?",
+        a: "Note the drive lug pattern (three-lug, five-lug or center-lock), the block diameter, and your machine brand. Send a photo or the model number and we will confirm the correct pad driver.",
       },
     ],
   },
