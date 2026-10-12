@@ -1659,7 +1659,7 @@ const extraGuides: Guide[] = [
         content:
           "If the brush is pressed too hard against the floor or caught on an obstacle, the motor's overload protection will cut power to prevent damage. Raise the brush deck using the lift pedal/lever and try again. Inspect the area around the brush for debris, tangled string, or plastic wrap that may be binding the brush.",
         items: [
-          "Remove the brush/pad holder and check for foreign objects wrapped around the drive hub",
+          "Remove the brush/pad driver and check for foreign objects wrapped around the drive hub",
           "Check that the brush or pad driver is properly seated and centered",
           "Try spinning the brush by hand — it should rotate freely with slight resistance",
         ],
@@ -2252,7 +2252,7 @@ const extraGuides: Guide[] = [
     slug: "floor-scrubber-parts-guide-types-lifespan-cost",
     title: "Floor Scrubber Parts Guide: Types & Replacement Cost",
     description:
-      "Complete guide to floor scrubber replacement parts. Disc brushes, squeegee rubber, pad holders, clutch plates — typical lifespan, when to replace",
+      "Complete guide to floor scrubber replacement parts. Disc brushes, squeegee rubber, pad drivers, clutch plates — typical lifespan, when to replace",
     category: "maintenance",
     readTime: "9 min",
     difficulty: "beginner",
@@ -2291,19 +2291,19 @@ const extraGuides: Guide[] = [
         ],
       },
       {
-        heading: "3. Pad Holders / Pad Drivers",
-        content: "The pad holder (also called pad driver) attaches to the brush deck and holds the cleaning pad or brush. Over time, the gripping surface wears down and the pad slips during operation. The centering ring on the pad holder can also bend from impact.",
+        heading: "3. Pad Drivers",
+        content: "The pad driver (also called a pad driver) attaches to the brush deck and holds the cleaning pad or brush. Over time, the gripping surface wears down and the pad slips during operation. The centering ring on the pad driver can also bend from impact.",
         items: [
           "Typical lifespan: 6-12 months",
           "Replacement sign: Pad slips or wobbles during operation, visible wear on gripping surface, bent centering ring",
-          "OEM dealer price: $90-150 per pad holder",
+          "OEM dealer price: $90-150 per pad driver",
           "Factory-direct price: $35-65 — saving ~55%",
           "Sizes: 13-inch to 20-inch — measure your existing holder before ordering",
         ],
       },
       {
         heading: "4. Clutch Plates",
-        content: "The clutch plate connects the drive motor to the brush or pad holder. It transmits rotational force and also acts as a safety mechanism — if the brush jams, the clutch plate absorbs the shock rather than damaging the motor.",
+        content: "The clutch plate connects the drive motor to the brush or pad driver. It transmits rotational force and also acts as a safety mechanism — if the brush jams, the clutch plate absorbs the shock rather than damaging the motor.",
         items: [
           "Typical lifespan: 12-18 months, longer if the machine rarely hits obstacles",
           "Replacement sign: Brush stops spinning but motor runs, grinding noise when brush is engaged, visible cracks in the plate",
@@ -2368,7 +2368,7 @@ const extraGuides: Guide[] = [
         items: [
           "Disc Brush: Every 3-6 months | Cost: $45-75 fd | Warning sign: Bristles < 10mm",
           "Squeegee Rubber: Every 2-4 months | Cost: $30-55 fd | Warning sign: Rounded edge, streaks",
-          "Pad Holder: Every 6-12 months | Cost: $35-65 fd | Warning sign: Pad slipping, wobbling",
+          "Pad Driver: Every 6-12 months | Cost: $35-65 fd | Warning sign: Pad slipping, wobbling",
           "Clutch Plate: Every 12-18 months | Cost: $15-30 fd | Warning sign: Grinding noise, brush stops",
           "Roller Brush: Every 4-8 months | Cost: $80-200 fd | Warning sign: Bald spots, poor debris pickup",
           "Side Brush: Every 2-4 months | Cost: $20-45 fd | Warning sign: 50% bristle loss",
@@ -2653,7 +2653,7 @@ const extraGuides: Guide[] = [
           "Factory-Direct Model Growing: Post-pandemic supply chain lessons + tight budgets are driving more buyers to skip distributors and buy factory-direct. Chinese manufacturers like Aikerui that offer CE/ISO-certified machines at 30-50% less than dealer prices are capturing increasing market share, especially in emerging markets. Expect this trend to continue as shipping costs stabilize and quality perception improves.",
           "Sustainability Requirements Rising: EU regulations (effective 2025-2026) require commercial cleaning equipment to meet stricter energy efficiency and recyclability standards. Many US states are following suit. Machines with lithium batteries, eco-mode settings, and recyclable components will have a competitive advantage. Buyers in regulated markets should verify compliance before ordering.",
           "Smart Features Becoming Standard: LCD displays, hour meters, diagnostic codes, and chemical auto-dosing — once premium features — are now trickling down to mid-range machines. In 2026, a $7,000-9,000 walk-behind often has features that required a $12,000+ machine in 2023.",
-          "Parts and Consumables as a Profit Center: Dealers historically made thin margins on machine sales but high margins on parts. Factory-direct parts sourcing is disrupting this model — expect your parts budget to drop 30-50% if you switch from dealer to factory-direct for consumables like brushes, squeegees, and pad holders.",
+          "Parts and Consumables as a Profit Center: Dealers historically made thin margins on machine sales but high margins on parts. Factory-direct parts sourcing is disrupting this model — expect your parts budget to drop 30-50% if you switch from dealer to factory-direct for consumables like brushes, squeegees, and pad drivers.",
         ],
       },
       {
@@ -3078,8 +3078,8 @@ const extraGuides: Guide[] = [
         heading: "Side-by-Side Cost Comparison: Annual Parts for One Ride-On Scrubber",
         content: "Running one ride-on scrubber 5 days/week, here's the annual parts spend:",
         items: [
-          "OEM path: 4 disc brushes ($150 each) + 6 squeegee sets ($110 each) + 2 filters ($45 each) + 2 pad holders ($120 each) + misc = $1,710/year",
-          "Aftermarket factory-direct: 4 disc brushes ($60 each) + 6 squeegee sets ($42 each) + 2 filters ($22 each) + 2 pad holders ($50 each) + misc = $726/year",
+          "OEM path: 4 disc brushes ($150 each) + 6 squeegee sets ($110 each) + 2 filters ($45 each) + 2 pad drivers ($120 each) + misc = $1,710/year",
+          "Aftermarket factory-direct: 4 disc brushes ($60 each) + 6 squeegee sets ($42 each) + 2 filters ($22 each) + 2 pad drivers ($50 each) + misc = $726/year",
           "Annual savings: $984 per machine — nearly $1,000",
           "10-machine fleet: $9,840 saved every year — enough to buy a new scrubber",
         ],
@@ -3252,7 +3252,7 @@ const extraGuides: Guide[] = [
           "☐ Empty solution tank — residual chemicals can crystallize and clog lines",
           "☐ Rinse squeegee assembly — remove debris caught between blades",
           "☐ Check squeegee blade edges — look for rounded edges, cracks, or uneven wear",
-          "☐ Remove and rinse brush/pad holder — debris left on brush hardens overnight",
+          "☐ Remove and rinse brush/pad driver — debris left on brush hardens overnight",
           "☐ Check for debris wrapped around brush drive hub — string, plastic, tape",
           "☐ Wipe down machine exterior — prevents chemical residue buildup",
           "☐ Plug in charger (lead-acid) or connect lithium charger — never store batteries discharged",
@@ -4360,12 +4360,12 @@ const extraGuides: Guide[] = [
     ],
     relatedProducts: [],
   },
-  // ── Niche: Pad Holder Replacement ──
+  // ── Niche: Pad Driver Replacement ──
   {
     slug: "floor-scrubber-pad-holder-replacement-guide",
-    title: "Floor Scrubber Pad Holder Replacement Guide",
+    title: "Floor Scrubber Pad Driver Replacement Guide",
     description:
-      "Complete guide to floor scrubber pad holders and drivers. 13-20 inch sizes, center lock vs trimmed, compatibility with major brands.",
+      "Complete guide to floor scrubber pad drivers and holders. 13-20 inch sizes, center lock vs trimmed, compatibility with major brands.",
     category: "maintenance",
     readTime: "5 min",
     difficulty: "beginner",
@@ -4374,31 +4374,31 @@ const extraGuides: Guide[] = [
     relatedGuides: ["parking-garage-floor-scrubber-guide", "floor-scrubber-oil-grease-factory-cleaning", "steel-wire-floor-scrubber-brush-guide"],
     sections: [
       {
-        heading: "What Is a Pad Holder (Pad Driver)?",
-        content: "The pad holder — also called a pad driver — is the rotating plate that attaches to your floor scrubber's brush deck and holds the cleaning pad or brush. It transfers the motor's rotational force to the pad, which scrubs the floor. A worn pad holder slips, wobbles, or fails to center the pad — resulting in uneven cleaning and streaks.",
+        heading: "What Is a Pad Driver?",
+        content: "The pad driver — also called a pad driver — is the rotating plate that attaches to your floor scrubber's brush deck and holds the cleaning pad or brush. It transfers the motor's rotational force to the pad, which scrubs the floor. A worn pad driver slips, wobbles, or fails to center the pad — resulting in uneven cleaning and streaks.",
       },
       {
-        heading: "Types of Pad Holders",
+        heading: "Types of Pad Drivers",
         content: "Three main types, each for different machine configurations:",
         image: "/images/parts/Pad Driver Parts.webp",
-        imageAlt: "floor scrubber pad holder replacement guide",
+        imageAlt: "floor scrubber pad driver replacement guide",
         items: [
           "Standard Pad Driver: Flat disc with gripping surface. Fits most walk-behind scrubbers. 13-20 inch sizes.",
-          "Center Lock Pad Holder: Has a locking mechanism at the center. Quick-release for fast pad changes. Common on Tennant and Nilfisk machines.",
+          "Center Lock Pad Driver: Has a locking mechanism at the center. Quick-release for fast pad changes. Common on Tennant and Nilfisk machines.",
           "Trimmed Center Lock: Lock mechanism is recessed (trimmed). Allows full pad contact with the floor — no center gap. Best for even cleaning pressure.",
         ],
       },
       {
-        heading: "How to Identify Your Pad Holder",
-        content: "Before ordering, check: (1) diameter — measure the pad holder from edge to edge, (2) center hole size and mounting type, (3) whether it's center-lock or standard, and (4) your machine brand and model. Send us these details and we'll confirm compatibility within 24 hours.",
+        heading: "How to Identify Your Pad Driver",
+        content: "Before ordering, check: (1) diameter — measure the pad driver from edge to edge, (2) center hole size and mounting type, (3) whether it's center-lock or standard, and (4) your machine brand and model. Send us these details and we'll confirm compatibility within 24 hours.",
       },
       {
         heading: "Cost: Dealer vs Factory-Direct",
-        content: "Dealer-purchased pad holders cost $90-150. Factory-direct: $35-65 — same materials, same quality, no dealer markup. The $55-85 difference is pure distribution cost.",
+        content: "Dealer-purchased pad drivers cost $90-150. Factory-direct: $35-65 — same materials, same quality, no dealer markup. The $55-85 difference is pure distribution cost.",
       },
       {
         heading: "Get Your Quote",
-        content: "Send us your pad holder diameter, type, and machine model. We'll confirm compatibility and pricing within 24 hours. Factory-direct pricing, global shipping.",
+        content: "Send us your pad driver diameter, type, and machine model. We'll confirm compatibility and pricing within 24 hours. Factory-direct pricing, global shipping.",
       },
     ],
     relatedProducts: [],
@@ -5318,7 +5318,7 @@ const extraGuides: Guide[] = [
       },
       {
         heading: "6. Pad Driver",
-        content: "The pad driver connects the motor shaft to the brush or pad. Also called pad holder or floor scrubber pad driver. NP-9200 2-lug is the standard for most brands. Factory-direct: 15 to 40 USD, versus 40 to 90 USD at dealers.",
+        content: "The pad driver connects the motor shaft to the brush or pad. Also called a floor scrubber pad driver. NP-9200 2-lug is the standard for most brands. Factory-direct: 15 to 40 USD, versus 40 to 90 USD at dealers.",
         image: "/images/parts/Pad Driver Parts.webp",
         imageAlt: "Floor scrubber pad driver",
         items: [
@@ -5343,7 +5343,7 @@ const extraGuides: Guide[] = [
       },
       {
         heading: "9. Floor Scrubber Brush Pads",
-        content: "Brush pads and pad holders for polishing, burnishing, and light scrubbing on delicate floors. Used with a pad driver on single-disc machines. Choose the right pad color and density for your floor finish.",
+        content: "Brush pads and pad drivers for polishing, burnishing, and light scrubbing on delicate floors. Used with a pad driver on single-disc machines. Choose the right pad color and density for your floor finish.",
       },
       {
         heading: "10. Floor Scrubber Parts — the Full Set",
