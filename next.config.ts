@@ -59,6 +59,8 @@ async redirects() {
     { source: "/industrial-floor-scrubber-quote", destination: "/floor-scrubber-parts-quote", permanent: true },
     // 类目改名：Pad Holder → Pad Driver（旧类目 URL 301 到新页）
     { source: "/parts/pad-holders", destination: "/parts/pad-drivers", permanent: true },
+    // 类目合并：Brush / 刷类 并入 Disc Brush / 盘刷
+    { source: "/parts/scrubber-brushes", destination: "/parts/disc-brushes", permanent: true },
     { source: "/products/62276226", destination: "/products/weizhuo-auto-scrubber-x3b-3d-floor-rotary-brush-and-pad-drive", permanent: true },
     { source: "/products/62675375", destination: "/products/ice-ride-scrubber-dryer-rs32-floor-rotary-brush", permanent: true },
     { source: "/products/63279046", destination: "/products/floor-scrubber-spare-parts-center-lock-pad-retainer", permanent: true },

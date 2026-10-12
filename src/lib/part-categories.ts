@@ -54,29 +54,6 @@ export const PART_CATEGORIES: PartCategoryDef[] = [
     ],
   },
   {
-    slug: "scrubber-brushes",
-    subcategory: "Brush / 刷类",
-    h1: "Floor Scrubber Brushes",
-    breadcrumb: "All Brushes",
-    title: "Floor Scrubber Brushes | Replacement Brush | Aikerui",
-    description:
-      "Replacement floor scrubber brushes for all major brands — disc, roller, side and specialty brushes. Factory direct, custom OEM, 30-50% below dealer price.",
-    intro: [
-      "This is our general catalogue of floor scrubber brushes — the replacement brushes that fit walk-behind and ride-on scrubbers across all major brands. If you are not sure which specific type you need, start here and we will match your machine.",
-      "Aikerui has manufactured cleaning brushes since 2008 in our own Anhui factory. We produce nylon, PP, abrasive and hybrid bristle brushes, with custom block tooling available for volume orders.",
-    ],
-    faq: [
-      {
-        q: "How often should floor scrubber brushes be replaced?",
-        a: "Replace when bristles wear to about 1/4 inch (6mm) or roughly half their original length. Most commercial scrubbers need new brushes every 3-6 months depending on use hours and floor type.",
-      },
-      {
-        q: "Can you supply brushes for a specific machine model?",
-        a: "Yes. Send us the brand and model (for example Tennant T300 or Nilfisk SC250) and we will confirm the exact brush spec, or produce it as a custom item.",
-      },
-    ],
-  },
-  {
     slug: "squeegee-blades",
     subcategory: "Squeegee / 吸水胶条",
     h1: "Floor Scrubber Squeegee Blades",

@@ -9,7 +9,6 @@ export interface PriceRange {
 
 export const PART_PRICE_RANGES: Record<string, PriceRange> = {
   "Disc Brush / 盘刷": { low: 5, high: 60, count: 95 },
-  "Brush / 刷类": { low: 5, high: 60, count: 37 },
   "Squeegee / 吸水胶条": { low: 3, high: 40, count: 31 },
   "Pad Driver / 驱动盘": { low: 15, high: 80, count: 27 },
   "Clutch Plate / 离合器盘": { low: 10, high: 60, count: 24 },
