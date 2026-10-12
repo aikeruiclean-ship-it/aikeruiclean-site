@@ -10225,7 +10225,7 @@
   },
   {
     "id": 90007,
-    "name": "S 48 Side Brush",
+    "name": "S48 Sweeper Side Brush (Fits Tianjie S48)",
     "slug": "s-48-side-brush",
     "sku": "AK-SB-018",
     "type": "simple",
@@ -10235,8 +10235,8 @@
     "category": "Parts",
     "categoryFull": "Parts > Side Brush / 边刷",
     "partSubcategory": "Side Brush / 边刷",
-    "shortDescription": "S 48 Side Brush — factory-direct replacement side brush for S 48. CE & ISO 9001 factory. Compatible replacement, not OEM-branded.",
-    "description": "<h3>Overview</h3>\n<div>S 48 Side Brush for S 48. Factory-direct replacement part manufactured in our Anqing facility. Engineered to match OEM dimensions and bristle specs — not an OEM-branded item.</div>\n<h3>Key Features</h3>\n<ul><li>Black PET Straight Filament + Copper-plated Fine Steel Wire bristles for consistent scrubbing performance</li><li>Hard Composite / Black PP backing for stable bristle anchoring</li><li>Specification: 328*550 1.2 Black PET Straight Filament + 0.4 Copper-plated Fine Steel Wire Single Wave</li><li>Replacement consumable — keep spares on hand to avoid downtime</li></ul>\n<h3>Specifications</h3>\n<div>328*550 1.2 Black PET Straight Filament + 0.4 Copper-plated Fine Steel Wire Single Wave. Filament: Black PET Straight Filament + Copper-plated Fine Steel Wire. Block: Hard Composite / Black PP. Fits: S 48.</div>\n<h3>Compatibility Notes</h3>\n<div>Mounting style and centre hole may vary between machine generations. Send your machine model and OEM part number and we will confirm fitment within 24 hours.</div>",
+    "shortDescription": "S48 sweeper side brush, 328x550 mm, black PET straight filament with copper-plated steel wire single wave. Fits Tianjie S48. Factory-direct, CE & ISO 9001.",
+    "description": "<h3>Overview</h3>\n<div>S48 sweeper side brush for the Tianjie S48 road sweeper. It measures 328 x 550 mm and uses 2-ply black PET straight filament plus 0.4 mm copper-plated fine steel wire (single wave) for aggressive edge sweeping. Factory-direct replacement part manufactured in our Anqing facility — engineered to match OEM dimensions, not an OEM-branded item.</div>\n<h3>Key Features</h3>\n<ul><li>2-ply black PET straight filament + 0.4 mm copper-plated fine steel wire (single wave) for hard edge debris</li><li>Hard composite / black PP block for stable bristle anchoring</li><li>328 x 550 mm, 175 tuft holes, 1.95 kg filament, 3 kg total weight</li><li>Direct fit for the Tianjie S48 sweeper — keep spares on hand to avoid downtime</li></ul>\n<h3>Specifications</h3>\n<div>Size: 328 x 550 mm. Filament: 2-ply black PET straight filament + 0.4 mm copper-plated fine steel wire (single wave). Block: hard composite / black PP. Tuft holes: 175. Filament weight: 1.95 kg. Total weight: 3 kg. Fits: Tianjie S48.</div>\n<h3>Compatibility Notes</h3>\n<div>Designed for the Tianjie S48 sweeper. Mounting style and centre hole may vary between machine generations. Send your machine model and OEM part number and we will confirm fitment within 24 hours.</div>",
     "price": 57,
     "salePrice": null,
     "stock": null,
@@ -10253,16 +10253,22 @@
     "brand": "Aikerui",
     "tags": [
       "parts",
-      "floor scrubber",
-      "48",
-      "side",
-      "brush"
+      "side brush",
+      "s48",
+      "tianjie",
+      "sweeper side brush",
+      "road sweeper",
+      "floor scrubber"
     ],
     "specs": {
-      "Specification": "328*550 1.2 Black PET Straight Filament + 0.4 Copper-plated Fine Steel Wire Single Wave",
-      "Filament": "Black PET Straight Filament + Copper-plated Fine Steel Wire",
+      "Size": "328 x 550 mm",
+      "Filament": "2-ply Black PET Straight Filament + 0.4 mm Copper-plated Fine Steel Wire (Single Wave)",
       "Block": "Hard Composite / Black PP",
-      "Fits": "S 48"
+      "Fits": "Tianjie S48",
+      "Weight": "3 kg",
+      "Tuft Holes": "175",
+      "Filament Weight": "1.95 kg",
+      "Specification": "328 x 550 mm — 2-ply Black PET Straight Filament + 0.4 mm Copper-plated Fine Steel Wire (Single Wave)"
     },
     "inStock": true
   }
