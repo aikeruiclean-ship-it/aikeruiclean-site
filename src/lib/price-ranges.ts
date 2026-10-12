@@ -27,6 +27,7 @@ export const PART_PRICE_RANGES: Record<string, PriceRange> = {
   "Carbon Brush / 碳刷": { low: 3, high: 20, count: 1 },
   "Lock & Flange / 锁扣·法兰": { low: 5, high: 50, count: 1 },
   "Bumper / 保险杠": { low: 10, high: 60, count: 1 },
+  "Pad Centering Devices / 中心定位器": { low: 5, high: 60, count: 3 },
   "Other / 其他": { low: 5, high: 100, count: 1 },
 };
 
