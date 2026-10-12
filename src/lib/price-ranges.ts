@@ -16,6 +16,7 @@ export const PART_PRICE_RANGES: Record<string, PriceRange> = {
   "Hose / 水管": { low: 5, high: 50, count: 20 },
   "Roller Brush / 滚刷": { low: 15, high: 100, count: 15 },
   "Side Brush / 边刷": { low: 5, high: 40, count: 14 },
+  "Shampoo Brush / 泡槽刷": { low: 10, high: 80, count: 6 },
   "Vacuum Motor / 真空电机": { low: 50, high: 200, count: 5 },
   "Solenoid Valve / 电磁阀": { low: 15, high: 80, count: 4 },
   "Filter / 过滤器": { low: 5, high: 50, count: 3 },

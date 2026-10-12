@@ -214,4 +214,27 @@ export const PART_CATEGORIES: PartCategoryDef[] = [
       },
     ],
   },
+  {
+    slug: "shampoo-brushes",
+    subcategory: "Shampoo Brush / 泡槽刷",
+    h1: "Carpet Shampoo Brushes",
+    breadcrumb: "Shampoo Brushes",
+    title: "Carpet Shampoo Brushes | Shampoo Brush for Floor Machine",
+    description:
+      "Carpet shampoo brushes for single-disc floor machines and scrubbers. Nylon and mixed bristle, shower-feed options. Factory direct, 30-50% below dealer price.",
+    intro: [
+      "Shampoo brushes are the agitation brush used in carpet cleaning — they work shampoo or cleaning solution into the carpet fibres and lift dirt before extraction. We manufacture carpet shampoo brushes for single-disc floor machines, rotary polishers and carpet scrubbers, in nylon and mixed bristle.",
+      "Our shampoo brushes fit popular machines and come in shower-feed (solution-feed) and standard block styles, in 15, 17 and 19 inch diameters. Because we sell factory-direct, replacement shampoo brushes cost 30-50% less than dealer pricing, with custom block tooling available for volume orders.",
+    ],
+    faq: [
+      {
+        q: "What is a shampoo brush used for?",
+        a: "A shampoo brush is used on carpet cleaning — it agitates shampoo or cleaning solution deep into the carpet fibres to lift embedded dirt, then the machine extracts it. It fits single-disc floor machines, rotary polishers and carpet scrubbers.",
+      },
+      {
+        q: "Do you offer shower-feed (solution-feed) shampoo brushes?",
+        a: "Yes. We supply both standard and shower-feed shampoo brushes, where solution feeds through holes in the brush block. Tell us your machine model and brush diameter and we will confirm fitment.",
+      },
+    ],
+  },
 ];
