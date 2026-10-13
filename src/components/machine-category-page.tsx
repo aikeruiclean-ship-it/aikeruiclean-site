@@ -151,6 +151,46 @@ export function MachineCategoryPage({ def }: { def: MachineCategoryDef }) {
         )}
       </section>
 
+      {/* Why Aikerui — E-E-A-T / authority block */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <h2 className="text-2xl font-bold text-primary mb-6">
+          Why Buy {def.breadcrumb} Direct from Aikerui
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="space-y-4 text-gray-700 leading-relaxed">
+            <p>
+              Anhui Aikerui Environmental Protection Technology Co., Ltd. has manufactured floor
+              scrubbers and cleaning equipment since 2008, from our own 10,000+ sqm factory in
+              Anqing, Anhui, China. We hold CE and ISO 9001 certification and export to more than
+              50 countries.
+            </p>
+            <p>
+              Because we build both the machines and the brushes, squeegees and pad drivers that go
+              on them, you buy replacement consumables direct from the same production line —
+              usually 30-50% below dealer pricing, with no middle-man markup.
+            </p>
+          </div>
+          <ul className="grid grid-cols-2 gap-3 text-sm">
+            {[
+              "Founded 2008",
+              "10,000+ sqm factory",
+              "CE & ISO 9001 certified",
+              "Exports to 50+ countries",
+              "Own brush production line",
+              "OEM & private label",
+            ].map((t) => (
+              <li
+                key={t}
+                className="flex items-center gap-2 bg-gray-50 rounded-lg px-3 py-2.5 border border-gray-200"
+              >
+                <span className="text-accent font-bold">+</span>
+                <span className="text-gray-700">{t}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
