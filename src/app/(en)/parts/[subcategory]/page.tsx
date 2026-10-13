@@ -119,7 +119,7 @@ export default async function PartSubcategoryPage({
           </nav>
           <h1 className="text-3xl md:text-5xl font-bold mb-4">{cat.h1}</h1>
           <p className="text-lg text-gray-200 max-w-3xl">
-            {products.length} replacement parts in this category — factory direct, OEM &amp; custom available.
+            {products.length} replacement parts in this category — factory direct, Customization available.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
