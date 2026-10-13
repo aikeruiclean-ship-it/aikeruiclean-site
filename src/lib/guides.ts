@@ -323,7 +323,7 @@ const guides: Guide[] = [
     relatedGuides: [
       "industrial-floor-scrubber-buying-guide",
       "how-to-choose-a-floor-scrubber",
-      "top-10-industrial-floor-scrubber-suppliers",
+      "top-10-floor-sweeper-manufacturers-2026",
     ],
   },
   {
