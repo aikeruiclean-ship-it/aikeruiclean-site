@@ -6043,7 +6043,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/floor-sweepers.webp",
     published: "2026-10-13",
-    relatedGuides: ["top-10-industrial-cleaning-equipment-manufacturers", "industrial-floor-sweeper-guide", "top-10-floor-scrubber-manufacturers-2026"],
+    relatedGuides: ["top-10-industrial-cleaning-equipment-manufacturers", "industrial-floor-sweeper-guide", "top-10-floor-sweeper-brushes-2026"],
     sections: [
       {
         heading: "The Industrial Floor Sweeper Market in 2026",
