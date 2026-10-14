@@ -6145,7 +6145,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/RIDE-ON-A1350.webp",
     published: "2026-10-14",
-    relatedGuides: ["walk-behind-vs-ride-on-scrubber", "top-10-floor-scrubber-manufacturers-2026", "industrial-floor-scrubber-buying-guide"],
+    relatedGuides: ["walk-behind-vs-ride-on-scrubber", "top-10-floor-scrubber-manufacturers-2026", "top-10-walk-behind-floor-scrubbers-2026"],
     sections: [
       {
         heading: "The Ride-On Floor Scrubber Market in 2026",
