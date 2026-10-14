@@ -1880,7 +1880,7 @@ const extraGuides: Guide[] = [
     difficulty: "beginner",
     thumbnail: "/images/A50-Scrubber-05.webp",
     published: "2026-06-26",
-    relatedGuides: ["floor-stripping-equipment-finish-removal-guide", "best-floor-scrubber-small-business", "industrial-floor-sweeper-guide"],
+    relatedGuides: ["floor-stripping-equipment-finish-removal-guide", "best-floor-scrubber-small-business", "top-10-ride-on-floor-scrubbers-2026"],
     sections: [
       {
         heading: "The Core Difference",
