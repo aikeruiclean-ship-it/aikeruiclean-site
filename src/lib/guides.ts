@@ -6041,7 +6041,7 @@ const extraGuides: Guide[] = [
     category: "comparison",
     readTime: "8 min",
     difficulty: "beginner",
-    thumbnail: "/images/floor-sweepers.webp",
+    thumbnail: "/images/A1280-Sweeper-01.webp",
     published: "2026-10-13",
     relatedGuides: ["top-10-industrial-cleaning-equipment-manufacturers", "industrial-floor-sweeper-guide", "top-10-floor-sweeper-brushes-2026"],
     sections: [
