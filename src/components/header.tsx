@@ -4,26 +4,25 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { Menu, X, Phone, Mail, ChevronDown, ShoppingCart } from "@/lib/icons";
-import { categories, categoryCounts } from "@/lib/header-data";
+import { machineNav, partSubcategories } from "@/lib/header-data";
 import { cn } from "@/lib/utils";
 import { SearchBar } from "@/components/search-bar";
 import { LanguageSwitcher } from "@/components/language-switcher";
 
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const counts = categoryCounts;
 
   const navLinks = [
     { href: "/", label: "Home" },
     {
       href: "/products",
       label: "Products",
-      children: categories
-        .filter((cat) => cat !== "Parts")
-        .map((cat) => ({
-          href: `/products?category=${encodeURIComponent(cat)}`,
-          label: `${cat} (${counts[cat] || 0})`,
-        })),
+      // 指向顶层静态页而非 /products?category=X —— 带参 URL 权重传递差，
+      // 且 walk-behind / ride-on 两条产品线需要独立入口（见 header-data.ts 的 machineNav）
+      children: machineNav.map((m) => ({
+        href: m.href,
+        label: m.count ? `${m.label} (${m.count})` : m.label,
+      })),
     },
     { href: "/parts", label: "Parts" },
     { href: "/guides", label: "Guides" },

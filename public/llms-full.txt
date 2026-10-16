@@ -21,6 +21,8 @@
 
 ## Product Line
 
+**Category pages (static, indexable):** [All scrubbers](/floor-scrubbers) · [Walk-behind scrubbers](/walk-behind-floor-scrubbers) · [Ride-on scrubbers](/ride-on-floor-scrubbers) · [Sweepers](/floor-sweepers) · [Carpet extractors](/carpet-extractors) · [Dust carts](/dust-carts) · [Replacement parts](/parts)
+
 ### Floor Scrubbers (Walk-Behind)
 - **K500 / K500BT** — 20 inch walk-behind scrubber, 24V battery, 55L solution tank. Price: $1,800-2,500 factory-direct.
 - **A500BT / A650T** — 20 inch walk-behind, lithium battery option. Price: $2,000-3,200 factory-direct.

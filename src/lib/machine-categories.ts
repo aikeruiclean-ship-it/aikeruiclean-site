@@ -7,6 +7,14 @@ export interface MachineCategoryDef {
   slug: string;
   /** products.json 里 category 的精确值（用于筛产品） */
   category: string;
+  /**
+   * 可选二级筛选：在同一 category 内按产品 slug 再过滤。
+   * 用于 walk-behind / ride-on 这类「同一个 category、不同产品线」的子类页。
+   * 不填则取该 category 下全部产品（原行为）。
+   */
+  slugFilter?: RegExp;
+  /** 可选：父分类 slug。子类页面会显示「返回父类」链接，用于建立内链层级 */
+  parentSlug?: string;
   /** 页面 H1 */
   h1: string;
   /** 面包屑名称 */
@@ -50,6 +58,82 @@ export const MACHINE_CATEGORIES: MachineCategoryDef[] = [
       {
         q: "What is the MOQ and lead time for scrubbers?",
         a: "For stock models, MOQ is typically 1 unit for sample evaluation and 5+ units for wholesale pricing. Lead time is 15-30 days depending on model and customization.",
+      },
+    ],
+  },
+  {
+    // 子类页：与 /floor-scrubbers 共享 category，靠 slugFilter 分出 walk-behind 产品线
+    // 目标词：walk behind floor scrubber (6,600/KD31/CPC$5.50)、walk behind automatic scrubber (4,400/KD21)、
+    //         walk behind auto scrubber (1,600/KD20)、walk behind floor scrubber machine (1,600/KD17)
+    // 差异化要点：不重复父页的"全系概览"，改写「空间受限场景 + 人工操作」这条线
+    slug: "walk-behind-floor-scrubbers",
+    category: "Floor Scrubbers",
+    slugFilter: /^walk-behind-/,
+    parentSlug: "floor-scrubbers",
+    h1: "Walk-Behind Floor Scrubbers",
+    breadcrumb: "Walk-Behind Scrubbers",
+    title: "Walk-Behind Floor Scrubbers | Battery & Corded | Aikerui",
+    description:
+      "Walk-behind floor scrubbers for narrow aisles, ramps and obstacle-heavy floors — 17\"-24\" decks, battery or corded, CE certified. Factory-direct from our own plant.",
+    intro: [
+      "Walk-behind floor scrubbers are the right machine when a ride-on cannot physically get there. Narrow aisles, U-shaped racking, ramps, mezzanine access, lift doors and shop floors crowded with machinery all rule out a seated machine — a walk-behind still scrubs and dries the full width in one pass.",
+      "The trade-off is productivity per hour, so the deciding numbers are deck width and tank size. Our walk-behind range runs from compact 17-inch units for back-of-house and retail, up to 24-inch battery machines that hold enough solution for a full shift without a refill stop.",
+      "We build these on the same line as our ride-on machines, which means the disc brushes, squeegees and pad drivers you replace later come from the same factory — not from a third-party parts channel.",
+    ],
+    faq: [
+      {
+        q: "What floor area suits a walk-behind scrubber?",
+        a: "As a working rule, walk-behind scrubbers are the better value below roughly 2,000 sqm of cleanable area, or wherever the layout prevents a ride-on from manoeuvring. Above that, a ride-on usually pays for itself through labour hours saved.",
+      },
+      {
+        q: "Battery or corded walk-behind scrubber?",
+        a: "Corded units cost less up front and suit fixed routes near a power point. Battery models remove the trip hazard and cable management entirely, which is why most commercial buyers choose battery for anything above occasional use. We supply both lead-acid and lithium variants.",
+      },
+      {
+        q: "How wide are your walk-behind scrubber decks?",
+        a: "Our walk-behind models cover 17 to 24 inch working widths. Narrower decks fit tight aisles and doorways; wider decks cut the number of passes on open shop floors. Tell us your aisle width and we will match the model.",
+      },
+      {
+        q: "Can a walk-behind scrubber climb a ramp?",
+        a: "Traction is the limiting factor rather than power. For ramps and dock levellers we recommend the drive-assisted models, and we will ask for the gradient so we can confirm the specification before quoting.",
+      },
+    ],
+  },
+  {
+    // 子类页：同上，分出 ride-on 产品线
+    // 目标词：ride on floor scrubber (2,900/KD13/CPC$5.62)、ride-on floor scrubber (260/KD14)、
+    //         ride on floor scrubber machine (390/KD20)、industrial ride on floor scrubber (110/KD17)
+    // 差异化要点：主打「大面积效率 + 单位时间成本」，与父页概览和 walk-behind 页互补
+    slug: "ride-on-floor-scrubbers",
+    category: "Floor Scrubbers",
+    slugFilter: /^ride-on-/,
+    parentSlug: "floor-scrubbers",
+    h1: "Ride-On Floor Scrubbers",
+    breadcrumb: "Ride-On Scrubbers",
+    title: "Ride-On Floor Scrubbers | Industrial Scrubber Machines",
+    description:
+      "Ride-on floor scrubbers for warehouses, logistics centres and large retail floors — 28\"-40\" decks, 3,000-6,000 sqm/h, CE certified. Factory-direct B2B pricing.",
+    intro: [
+      "A ride-on floor scrubber is bought for throughput, not for the specification sheet. Once cleanable area passes roughly 2,000-3,000 sqm, the labour cost of walking a machine behind you overtakes the price difference, and a seated machine typically covers 3,000 to 6,000 sqm per hour against a fraction of that for a walk-behind.",
+      "That changes what matters in the specification: larger solution and recovery tanks to avoid dump-and-refill stops, wider decks to reduce pass count, and a serviceability layout that lets one operator keep the machine running across a shift. We build ride-on scrubbers for warehouses, distribution centres, airports, supermarkets and factory floors.",
+      "OEM branding, private label and fleet configurations are available on volume orders, with spare brushes, squeegees and pad drivers supplied from the same production line.",
+    ],
+    faq: [
+      {
+        q: "How much area can a ride-on floor scrubber clean per hour?",
+        a: "Typically 3,000-6,000 sqm per hour depending on deck width, travel speed and the number of dump-and-refill stops. On large open floors the practical limit is usually tank capacity rather than the machine's speed.",
+      },
+      {
+        q: "At what floor size does a ride-on become worth it?",
+        a: "The economics usually flip somewhere between 2,000 and 3,000 sqm of regularly cleaned area. Below that a walk-behind is generally the better buy; above it, the operator hours saved by not walking behind the machine exceed the price difference fairly quickly.",
+      },
+      {
+        q: "What deck widths do your ride-on scrubbers come in?",
+        a: "Our ride-on range runs from compact machines around 28 inch up to 40 inch decks for wide-aisle warehouses. Deck width is the biggest single lever on productivity, so we size it against your aisle width and racking layout.",
+      },
+      {
+        q: "Do ride-on scrubbers work on rough or uneven concrete?",
+        a: "Yes, with the right brush and squeegee setup. Industrial concrete with expansion joints and uneven patches needs a more compliant squeegee and often a heavier brush pressure, which is why we ask about surface condition before recommending a model.",
       },
     ],
   },

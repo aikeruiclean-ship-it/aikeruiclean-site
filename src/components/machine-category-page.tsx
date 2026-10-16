@@ -10,9 +10,13 @@ import { Send } from "@/lib/icons";
 
 const SITE_URL = "https://aikeruiclean.com";
 
-/** 整机分类页共享渲染（/floor-scrubbers、/floor-sweepers 等 4 个顶层静态页复用） */
+/** 整机分类页共享渲染（/floor-scrubbers、/floor-sweepers 等顶层静态页复用） */
 export function MachineCategoryPage({ def }: { def: MachineCategoryDef }) {
-  const products = getProductsByCategory(def.category);
+  const inCategory = getProductsByCategory(def.category);
+  // 子类页（walk-behind / ride-on）在同一 category 内再按 slug 过滤
+  const products = def.slugFilter
+    ? inCategory.filter((p) => def.slugFilter!.test(p.slug))
+    : inCategory;
   const groups = buildVariantGroups(products);
   const groupedIds = new Set(groups.flatMap((g) => g.products.map((p) => p.id)));
   const standalone = products.filter((p) => !groupedIds.has(p.id));
@@ -53,6 +57,10 @@ export function MachineCategoryPage({ def }: { def: MachineCategoryDef }) {
   };
 
   const otherCats = MACHINE_CATEGORIES.filter((c) => c.slug !== def.slug);
+  // 子类页（walk-behind / ride-on）回链父分类，建立层级内链
+  const parentCat = def.parentSlug
+    ? MACHINE_CATEGORIES.find((c) => c.slug === def.parentSlug)
+    : undefined;
 
   return (
     <div>
@@ -101,6 +109,16 @@ export function MachineCategoryPage({ def }: { def: MachineCategoryDef }) {
           {def.intro.map((p, i) => (
             <p key={i}>{p}</p>
           ))}
+          {parentCat && (
+            <p className="text-sm pt-2">
+              <Link
+                href={`/${parentCat.slug}`}
+                className="text-primary font-medium hover:underline"
+              >
+                ← View all {parentCat.breadcrumb}
+              </Link>
+            </p>
+          )}
         </div>
         <div className="mt-8">
           <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">
