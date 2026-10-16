@@ -178,7 +178,7 @@ async function findContactByEmail(
 }
 
 // Map our salesperson names to HubSpot users.
-// Owners resolved at runtime; falls back to the account admin (mark xu) so every
+// Owners resolved at runtime; falls back to the account admin (mark wang) so every
 // contact still gets an owner even before sales-user accounts are created.
 let ownerCache: Record<string, string> = {};
 
@@ -240,7 +240,7 @@ async function resolveOwnerId(
       }
     }
 
-    // 3) Fallback: account admin (mark xu) — first PERSON owner in the list
+    // 3) Fallback: account admin (mark wang) — first PERSON owner in the list
     const admin = owners.find((o) => o.type === "PERSON");
     if (admin) {
       ownerCache[nameLower] = admin.id;

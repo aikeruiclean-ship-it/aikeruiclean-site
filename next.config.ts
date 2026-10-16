@@ -48,6 +48,8 @@ const nextConfig: NextConfig = {
 
 async redirects() {
   return [
+    // 作者页改名：Mark Xu -> Mark Wang（2026-10-16，站点所有人统一署名）
+    { source: "/about/mark-xu", destination: "/about/mark-wang", permanent: true },
     { source: "/guides/commercial-floor-scrubber-buying-guide", destination: "/guides/industrial-floor-scrubber-buying-guide", permanent: true },
     // 询价页旧的错误内链目标（外部可能仍在引用）→ 301 到正确页面
     { source: "/guides/industrial-floor-scrubber-buyers-guide", destination: "/guides/industrial-floor-scrubber-complete-guide", permanent: true },

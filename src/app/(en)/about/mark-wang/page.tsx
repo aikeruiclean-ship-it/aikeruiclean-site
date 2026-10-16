@@ -3,10 +3,10 @@ import Link from "next/link";
 import { JsonLd } from "@/components/json-ld";
 
 export const metadata: Metadata = {
-  title: "Mark Xu — Floor Cleaning Equipment Expert | Aikerui",
+  title: "Mark Wang — Floor Cleaning Equipment Expert | Aikerui",
   description:
-    "Mark Xu, Sales Director at Anhui Aikerui Environmental Protection Technology Co., Ltd. 15+ years in industrial floor cleaning equipment manufacturing and OEM parts.",
-  alternates: { canonical: "https://aikeruiclean.com/about/mark-xu" },
+    "Mark Wang, Sales Director at Anhui Aikerui Environmental Protection Technology Co., Ltd. 15+ years in industrial floor cleaning equipment and OEM parts.",
+  alternates: { canonical: "https://aikeruiclean.com/about/mark-wang" },
 };
 
 export default function AuthorPage() {
@@ -16,7 +16,7 @@ export default function AuthorPage() {
         data={{
           "@context": "https://schema.org",
           "@type": "Person",
-          name: "Mark Xu",
+          name: "Mark Wang",
           jobTitle: "Sales Director",
           worksFor: {
             "@type": "Organization",
@@ -24,7 +24,7 @@ export default function AuthorPage() {
           },
           description:
             "Sales Director with 15+ years experience in industrial floor cleaning equipment manufacturing, OEM parts, and global B2B equipment sales.",
-          url: "https://aikeruiclean.com/about/mark-xu",
+          url: "https://aikeruiclean.com/about/mark-wang",
           sameAs: [
             "https://youtube.com/@markxu-u8h",
             "https://x.com/mark_xu71710",
@@ -38,10 +38,10 @@ export default function AuthorPage() {
         <div className="max-w-4xl mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="w-32 h-32 rounded-full bg-white/20 flex items-center justify-center text-5xl shrink-0">
-              MX
+              MW
             </div>
             <div>
-              <h1 className="text-3xl md:text-4xl font-bold mb-2">Mark Xu</h1>
+              <h1 className="text-3xl md:text-4xl font-bold mb-2">Mark Wang</h1>
               <p className="text-xl text-gray-200 mb-1">Sales Director</p>
               <p className="text-gray-300">
                 Anhui Aikerui Environmental Protection Technology Co., Ltd.
@@ -100,7 +100,7 @@ export default function AuthorPage() {
 
         <section className="mb-10">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            Articles by Mark Xu
+            Articles by Mark Wang
           </h2>
           <p className="text-gray-600 leading-relaxed mb-3">
             I write all the technical guides and buying advice on this site.

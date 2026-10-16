@@ -56,13 +56,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: fullTitle.length <= 60 ? fullTitle : guide.title,
     description,
     alternates: { canonical: `https://aikeruiclean.com/guides/${slug}` },
-    authors: [{ name: "Mark Xu", url: "https://aikeruiclean.com/about/mark-xu" }],
+    authors: [{ name: "Mark Wang", url: "https://aikeruiclean.com/about/mark-wang" }],
     openGraph: {
       title: guide.title,
       description,
       type: "article",
       publishedTime: guide.published ? new Date(guide.published).toISOString() : undefined,
-      authors: ["https://aikeruiclean.com/about/mark-xu"],
+      authors: ["https://aikeruiclean.com/about/mark-wang"],
       siteName: "Aikerui",
       url: `https://aikeruiclean.com/guides/${guide.slug}`,
       images: ["https://aikeruiclean.com/og-image.png"],
@@ -248,8 +248,8 @@ export default async function GuideDetailPage({ params }: Props) {
             dateModified: guide.published ? new Date(guide.published).toISOString() : undefined,
             author: {
               "@type": "Person",
-              name: "Mark Xu",
-              url: "https://aikeruiclean.com/about/mark-xu",
+              name: "Mark Wang",
+              url: "https://aikeruiclean.com/about/mark-wang",
               jobTitle: "Sales Director",
               worksFor: {
                 "@type": "Organization",
@@ -504,7 +504,7 @@ export default async function GuideDetailPage({ params }: Props) {
       <div className="border-t border-gray-200 pt-6 mt-12">
         <p className="text-sm font-semibold text-gray-900">About the Author</p>
         <p className="text-sm text-gray-600 mt-1 leading-relaxed">
-          <Link href="/about/mark-xu" className="text-primary hover:underline font-medium">Mark Xu</Link> is Sales Director at Aikerui with 15+ years of experience in industrial floor cleaning equipment. He has helped 2,000+ facilities across 50+ countries source factory-direct cleaning equipment.
+          <Link href="/about/mark-wang" className="text-primary hover:underline font-medium">Mark Wang</Link> is Sales Director at Aikerui with 15+ years of experience in industrial floor cleaning equipment. He has helped 2,000+ facilities across 50+ countries source factory-direct cleaning equipment.
         </p>
       </div>
 
